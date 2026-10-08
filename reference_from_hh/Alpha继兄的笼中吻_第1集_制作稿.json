@@ -1,0 +1,436 @@
+{
+  "schema": "h3-production-draft",
+  "version": 1,
+  "title": "Alpha继兄的笼中吻｜第1集｜禁忌的更衣室",
+  "dialogue_language": "zh",
+  "style": "Photorealistic live-action romantic thriller with a glossy, high-end drama look. Warm tungsten key light with a soft cool fill, shallow depth of field, rich natural skin texture with visible pores, luxurious cream-and-gold interiors, restrained cinematic color grading, and tight, intimate framing.",
+  "assets": [
+    {
+      "key": "lily",
+      "kind": "image",
+      "role": "character",
+      "label": "莉莉",
+      "description": {
+        "en": "Lily, an adult woman in her mid-twenties with long wavy chestnut-brown hair, fair skin, large hazel-green eyes and a slender build, wearing an ivory silk wedding gown with a fitted bodice and a long zipper down the back. The portrait fixes her identity and gown; the opening frame and shot description fix her pose and position.",
+        "zh": "莉莉，二十五岁左右的成年女性，栗棕色长卷发、白皙皮肤、浅褐绿色大眼睛、身形纤细，穿象牙白真丝婚纱，合身上身，背后一条长拉链。人物图固定身份与婚纱，开场图和镜头正文决定姿势与位置。"
+      },
+      "generate": {
+        "image_prompt": "A photorealistic half-body portrait of an adult woman in her mid-twenties with long wavy chestnut-brown hair, fair skin and large hazel-green eyes, wearing an ivory silk wedding gown with a fitted bodice and delicate shoulders. She faces the camera with a calm, slightly nervous expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+        "reference_keys": []
+      }
+    },
+    {
+      "key": "killian",
+      "kind": "image",
+      "role": "character",
+      "label": "基利安",
+      "description": {
+        "en": "Killian, a very tall, broad-shouldered adult man in his early thirties with short swept-back black hair, a sharp jawline, light stubble and cold dark-gray eyes, wearing a tailored black three-piece suit, white shirt and dark tie, with a platinum luxury wristwatch on his left wrist. He stands a head and a half taller than Lily. The portrait fixes his identity and clothes, not staging.",
+        "zh": "基利安，三十出头的成年男性，身材极高、肩膀宽阔，黑色短发向后梳，下颌线锋利，有浅胡茬，眼睛是冷冽的深灰色，穿剪裁合身的黑色三件套西装、白衬衫、深色领带，左腕戴铂金色名表。比莉莉高出一个半头。人物图固定身份与衣服，不固定站位。"
+      },
+      "generate": {
+        "image_prompt": "A photorealistic half-body portrait of a very tall, broad-shouldered adult man in his early thirties with short swept-back black hair, a sharp jawline, light stubble and cold dark-gray eyes, wearing a tailored black three-piece suit, white shirt and dark tie, a platinum luxury wristwatch on his left wrist. He faces the camera with a cold, composed expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+        "reference_keys": []
+      }
+    },
+    {
+      "key": "room",
+      "kind": "image",
+      "role": "scene",
+      "label": "婚纱店VIP更衣室",
+      "description": {
+        "en": "The private VIP fitting room of a high-end bridal boutique: cream walls with gold molding, a heavy dark-wood door with a brass handle in the left wall, a tall gold-framed standing mirror on the right wall, a rack of long white gowns in garment covers along the back wall, an ivory velvet couch and thick carpet, lit warmly by a crystal chandelier and wall sconces. The reference fixes the room layout and decor, not any people.",
+        "zh": "高端婚纱店的VIP私人更衣室：奶油色墙面配金色线脚，左墙一扇带黄铜把手的厚重深色木门，右墙一面金框落地试衣镜，后墙挂着一排罩着防尘袋的白色长婚纱，象牙色丝绒沙发和厚地毯，水晶吊灯与壁灯的暖光。参考图固定房间布局与陈设，不带入任何人物。"
+      },
+      "generate": {
+        "image_prompt": "A photorealistic wide shot of an empty luxury VIP fitting room in a high-end bridal boutique: cream walls with gold molding, a heavy dark-wood door with a brass handle on the left wall, a tall gold-framed standing mirror on the right wall, a rack of long white wedding gowns in garment covers along the back wall, an ivory velvet couch, thick carpet, warm light from a crystal chandelier and wall sconces. No people.",
+        "reference_keys": []
+      }
+    }
+  ],
+  "characters": {
+    "Lily": {
+      "image_keys": [
+        "lily"
+      ],
+      "voice_description": {
+        "en": "A young adult female voice, light and slightly breathy, speaking clear Mandarin. She keeps her volume low because she must not be overheard, but every word is fully voiced and audible, tight and trembling with fear, anger and humiliation.",
+        "zh": "年轻成年女声，轻而略带气息，普通话清楚。因为不能被人听见而压低音量，但每个字都正常发声、清晰可辨，声音紧绷颤抖，带着恐惧、愤怒和屈辱。"
+      }
+    },
+    "Killian": {
+      "image_keys": [
+        "killian"
+      ],
+      "voice_description": {
+        "en": "A mature adult male voice in a deep chest register, low and unhurried with a husky edge, speaking clear Mandarin in a quiet, controlled, menacing tone. He never shouts, and every word is fully voiced and audible.",
+        "zh": "成熟成年男声，深沉的胸腔音，低缓不急，带沙哑质感，普通话清楚。语气安静、克制、带压迫感，从不喊叫，每个字都正常发声、清晰可辨。"
+      }
+    },
+    "Paul": {
+      "image_keys": [],
+      "voice_description": {
+        "en": "A young adult male voice, light, casual and slightly smug, speaking clear Mandarin at ordinary conversational volume. He is outside a closed door, so his voice reaches the room muffled by the wood.",
+        "zh": "年轻成年男声，轻松随意、略带轻浮，普通话清楚，正常交谈音量。他在紧闭的门外，声音隔着木门略显闷。"
+      }
+    }
+  },
+  "episodes": [
+    {
+      "title": "第1集：禁忌的更衣室",
+      "summary": "婚纱店VIP更衣室里，五年未见的继兄基利安突然撕开莉莉的婚纱拉链，把她按在镜前，在她即将嫁给保罗之际宣示占有。保罗在门外敲门，门把手被拧动，基利安不仅不放手，还逼近她的唇低语，门在最后一刻被推开。",
+      "script": "更衣室里，一只戴着铂金腕表的大手猛地拉开婚纱的拉链。基利安把莉莉按在试衣镜前，反剪她的双手，埋进她的颈窝。\nKillian：“五年没见，我的好妹妹……”\nKillian：“你身上的味道，还是这么让我发疯。”\n莉莉压低声音质问，挣扎。基利安听到保罗的名字，动作一顿，冷笑。\nLily：“基利安！你疯了吗？你放开我！”\nLily：“我是你妹妹，而且……而且我马上就要嫁给保罗了！”\n基利安掐住她的腰贴紧，眼底闪过暗金色，犬齿在她颈侧轻轻刮过。\nKillian：“妹妹？没有任何血缘关系的妹妹？”\nKillian：“至于保罗那个废物……他配不上你。”\n更衣室外响起敲门声，门把手被拧动。莉莉吓得魂飞魄散，哀求地摇头。\nPaul：“莉莉？宝贝你换好了吗？”\nPaul：“我进来了哦？”\n基利安捏住她的下巴逼她转头，唇几乎贴上她的唇。门被推开。\nKillian：“猜猜看，如果他现在推开门，”\nKillian：“看到他纯洁的未婚妻，正在被她的哥哥……”",
+      "segments": [
+        {
+          "title": "01｜拉链声",
+          "duration_seconds": 15,
+          "generation_seconds": 15,
+          "continuity": "cut",
+          "depends_on_previous": false,
+          "use_previous_episode_state": false,
+          "characters": [
+            "Lily",
+            "Killian"
+          ],
+          "asset_keys": [
+            "room",
+            "lily",
+            "killian"
+          ],
+          "image_reference_keys": [
+            "room"
+          ],
+          "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the room, and the character portraits define only the named people. Extreme close-up on the back of an ivory silk wedding gown worn by a woman with chestnut hair in a loose low chignon. The long zipper is fully closed from the nape to the waist. A large masculine hand with a platinum luxury wristwatch on the left wrist grips the zipper pull at the nape. Warm chandelier light, the cream and gold fitting room softly blurred behind. No faces are visible.",
+          "visual_zh": "婚纱后背特写，戴铂金腕表的大手猛地拉开拉链；基利安把莉莉按在镜前，反剪她的双手，在她颈边深吸一口气，说出第一句话。",
+          "camera_zh": "0—4.5秒婚纱后背极特写，镜头随手下摇；4.5—13秒镜子位置中近景，缓慢推进（基利安说话）；13—15秒莉莉眼睛极特写。",
+          "dialogue": [
+            {
+              "speaker": "Killian",
+              "text": "五年没见，我的好妹妹……",
+              "start_seconds": 5.2,
+              "end_seconds": 7.9,
+              "language": "zh"
+            },
+            {
+              "speaker": "Killian",
+              "text": "你身上的味道，还是这么让我发疯。",
+              "start_seconds": 8.4,
+              "end_seconds": 12.6,
+              "language": "zh"
+            }
+          ],
+          "shots": [
+            {
+              "start_seconds": 0,
+              "end_seconds": 4.5,
+              "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting. An extreme close-up opens from the adopted first frame in [[asset:room]]: the back of [[asset:lily]]'s ivory silk wedding gown, the zipper closed from the nape to the waist, a few loose strands of chestnut hair at the edge of her neck. A large man's hand wearing a platinum wristwatch, belonging to [[asset:killian]], closes around the zipper pull at the nape. Without warning the hand yanks the zipper down in one hard, fast pull; the teeth part with a sharp rasp and the gown falls open to her waist, showing her shoulder blades and the line of her spine as she clutches the front of the gown to her chest. The camera tilts down with the hand at fast speed, then settles.",
+              "visual_zh": "真人电影质感。从开场图继续，极特写：莉莉象牙白婚纱的后背，拉链从颈后闭合到腰，脖颈边有几缕散落的栗色发丝。基利安戴铂金腕表的大手握住颈后的拉链头，毫无预兆地一把狠狠拉到底；拉链齿带着清脆的刺啦声分开，婚纱后背敞开到腰际，露出肩胛和脊背线条，她双手把前襟按在胸前。镜头随手快速下摇后稳住。",
+              "dialogue_indices": []
+            },
+            {
+              "start_seconds": 4.5,
+              "end_seconds": 13.0,
+              "visual_en": "the camera cuts to a medium close-up from the mirror's position, so both faces are seen directly: [[asset:lily]] faces the camera, pressed forward against the glass with her chin lifted, her wrists pinned together above her head under one of [[asset:killian]]'s large hands, the open back of her gown held against her chest. Killian stands tight behind her, a head and a half taller, his dark-suited shoulder framing hers. He lowers his face to the curve of her neck and breathes in slowly with his eyes half closed, then lifts his gaze toward the camera with a dangerous, hungry calm. Lily's eyes are wide and wet and her breath is shallow. The camera pushes in with small amplitude at slow speed. Killian speaks close to her ear in a low, fully voiced, husky tone.",
+              "visual_zh": "切到镜子位置的中近景，直接拍到两人的脸：莉莉面向镜头、身体前倾贴着玻璃、下巴微抬，双手腕被基利安一只大手并拢压在头顶，另一只手把敞开的婚纱后背按在胸前。基利安紧贴在她身后，高出一个半头，深色西装肩膀框住她的肩。他低头埋进她的颈窝缓缓吸气、眼睛半阖，再抬眼望向镜头，带着危险而饥渴的平静。莉莉睁大湿润的眼睛，呼吸很浅。镜头小幅缓慢推进。基利安贴着她耳边，用低沉沙哑、正常发声的声音说话。",
+              "dialogue_indices": [
+                0,
+                1
+              ]
+            },
+            {
+              "start_seconds": 13.0,
+              "end_seconds": 15.0,
+              "visual_en": "the camera cuts to an extreme close-up of [[asset:lily]]'s eyes, wide and glistening, as her gaze flicks sideways toward the man behind her; a tear gathers at the lower lid and holds. The camera holds a static shot.",
+              "visual_zh": "切到莉莉眼睛的极特写，睁大、闪着水光，视线向身后的男人侧移，一滴泪聚在下眼睑上没有落下。镜头固定。",
+              "dialogue_indices": []
+            }
+          ],
+          "sound_en": "A crisp zipper rasp, a heavy rustle of silk and Lily's sharp gasp in the first seconds. Then a hush of room tone, shallow breathing and a faint brush of fabric against glass. Voices stay close and clear.",
+          "sound_zh": "开头清脆的拉链刺啦声、厚重丝绸摩擦声和莉莉倒吸一口气的惊呼；随后是安静的房间底噪、浅促的呼吸和衣料轻擦玻璃的声音。人声近而清楚。",
+          "dialogue_language": "zh"
+        },
+        {
+          "title": "02｜我是你妹妹",
+          "duration_seconds": 15,
+          "generation_seconds": 15,
+          "continuity": "cut",
+          "depends_on_previous": false,
+          "use_previous_episode_state": false,
+          "characters": [
+            "Lily",
+            "Killian"
+          ],
+          "asset_keys": [
+            "room",
+            "lily",
+            "killian"
+          ],
+          "image_reference_keys": [
+            "room"
+          ],
+          "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the room, and the character portraits define only the named people. Frontal close-up of Lily's face and shoulders, shot from straight ahead: her chestnut hair is coming loose from its chignon, her cheeks are flushed, her large hazel-green eyes are wide with fear and her mouth is closed. Her wrists are held together above her head by one large hand entering from the top edge of the frame. The open back of her ivory gown is held against her chest. Behind her, out of focus, the shoulder of a black suit. Warm luxurious light, the fitting room blurred behind.",
+          "visual_zh": "莉莉挣扎着压低声音质问；基利安听到“保罗”的名字，动作一顿，冷笑。",
+          "camera_zh": "0—10.8秒莉莉正面近景，缓慢推进（莉莉说话）；10.8—15秒基利安过肩近景，缓慢推进，冷笑。",
+          "dialogue": [
+            {
+              "speaker": "Lily",
+              "text": "基利安！你疯了吗？你放开我！",
+              "start_seconds": 0.5,
+              "end_seconds": 4.1,
+              "language": "zh"
+            },
+            {
+              "speaker": "Lily",
+              "text": "我是你妹妹，而且……而且我马上就要嫁给保罗了！",
+              "start_seconds": 4.7,
+              "end_seconds": 10.3,
+              "language": "zh"
+            }
+          ],
+          "shots": [
+            {
+              "start_seconds": 0,
+              "end_seconds": 10.8,
+              "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting. A close-up opens from the adopted first frame in [[asset:room]], shot from the mirror's position: [[asset:lily]] faces the camera with her face filling the frame, hair coming loose from its chignon, cheeks flushed, her wrists held together above her head by a large hand at the top edge of the frame, the shoulder of a black suit blurred behind her. She twists her shoulders and strains against the grip, then looks back over her shoulder at the man behind her with terror and anger mixed together. She speaks in a tight, trembling, low voice, fully voiced and aimed at him, her eyes brimming; in the second line her voice catches on the repeated word before she pushes on to the end. The camera pushes in with small amplitude at slow speed.",
+              "visual_zh": "真人电影质感。从开场图继续，镜子位置的近景：莉莉面向镜头、脸占满画面，发髻松散、脸颊泛红，双手腕被画面上缘一只大手并拢压在头顶，身后虚化出黑色西装的肩膀。她扭动肩膀、用力挣脱，回头看向身后的男人，恐惧和愤怒交织。她用紧绷、颤抖、压低但正常发声的声音对他说话，眼里含泪；第二句里在重复的词上声音哽住，再硬撑着说完。镜头小幅缓慢推进。",
+              "dialogue_indices": [
+                0,
+                1
+              ]
+            },
+            {
+              "start_seconds": 10.8,
+              "end_seconds": 15.0,
+              "visual_en": "the camera cuts to a close-up of [[asset:killian]] seen over Lily's shoulder, his face sharp and unreadable. At the mention of her fiancé his whole body stills; the corner of his mouth lifts slowly into a cold, mocking smile and a soft, low laugh escapes him. His eyes lift slowly toward the camera and darken. The camera pushes in with small amplitude at slow speed.",
+              "visual_zh": "切到基利安的过肩近景，他的脸轮廓锋利、看不出情绪。听到“未婚夫”的瞬间他整个人定住，嘴角缓缓挑起一抹冷冷的嘲弄，喉间溢出一声低低的轻笑，目光缓缓抬向镜头、变得更暗。镜头小幅缓慢推进。",
+              "dialogue_indices": []
+            }
+          ],
+          "sound_en": "Quiet room tone, quick shallow breaths and the strained rustle of silk as she struggles. A soft, low laugh from Killian near the end. Her voice stays close and clear.",
+          "sound_zh": "安静的房间底噪、急促浅促的呼吸，以及她挣扎时丝绸绷紧的摩擦声；结尾基利安一声低低的轻笑。她的声音近而清楚。",
+          "dialogue_language": "zh"
+        },
+        {
+          "title": "03｜没有血缘的妹妹",
+          "duration_seconds": 15,
+          "generation_seconds": 15,
+          "continuity": "cut",
+          "depends_on_previous": false,
+          "use_previous_episode_state": false,
+          "characters": [
+            "Lily",
+            "Killian"
+          ],
+          "asset_keys": [
+            "room",
+            "lily",
+            "killian"
+          ],
+          "image_reference_keys": [
+            "room"
+          ],
+          "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the room, and the character portraits define only the named people. Close-up over Lily's shoulder (her blurred cheek and chestnut hair in the foreground) of Killian's face just behind and above her shoulder, looking straight into the lens with a cold, unreadable stare, mouth closed. One of his large hands grips her waist at the edge of the frame. Warm luxurious light, the fitting room blurred behind.",
+          "visual_zh": "基利安掐住她的腰贴紧，冷笑着反问“没有血缘的妹妹”，犬齿在她颈侧轻刮咬了一口，再说保罗配不上她。",
+          "camera_zh": "0—5.2秒基利安过肩近景（说话）；5.2—8.4秒颈侧极特写；8.4—13.7秒基利安近景（说话）；13.7—15秒莉莉近景。",
+          "dialogue": [
+            {
+              "speaker": "Killian",
+              "text": "妹妹？没有任何血缘关系的妹妹？",
+              "start_seconds": 0.5,
+              "end_seconds": 4.8,
+              "language": "zh"
+            },
+            {
+              "speaker": "Killian",
+              "text": "至于保罗那个废物……他配不上你。",
+              "start_seconds": 9.0,
+              "end_seconds": 13.2,
+              "language": "zh"
+            }
+          ],
+          "shots": [
+            {
+              "start_seconds": 0,
+              "end_seconds": 5.2,
+              "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting. A close-up opens from the adopted first frame in [[asset:room]], shot from the mirror's position: [[asset:killian]]'s face just behind and above [[asset:lily]]'s shoulder, her blurred cheek in the foreground, one of his large hands clamped at her waist and drawing her hard against him. His cold smile fades. He speaks in a low, mocking, fully voiced tone with a faint disbelieving curl of the lip. On the last words his dark eyes flash a glint of amber-gold at the edge of the iris, then settle back to dark. The camera pushes in with small amplitude at slow speed.",
+              "visual_zh": "真人电影质感。从开场图继续，镜子位置的近景：基利安的脸在莉莉肩后上方，她模糊的侧脸在前景，他一只大手扣住她的腰、把她狠狠拉向自己。他脸上的冷笑褪去，用低沉嘲弄、正常发声的声音说话，嘴角带一丝难以置信的弧度。说到最后几个字时，深色瞳孔边缘闪过一抹琥珀金色，随即恢复深色。镜头小幅缓慢推进。",
+              "dialogue_indices": [
+                0
+              ]
+            },
+            {
+              "start_seconds": 5.2,
+              "end_seconds": 8.4,
+              "visual_en": "the camera cuts to an extreme close-up at the curve of Lily's neck and shoulder: Killian's lips hover against her skin, and the edge of one sharpened canine grazes along her neck and presses in for an instant without breaking the skin. Lily's eyes squeeze shut, her breath catches and her shoulder jerks. The camera holds a static shot.",
+              "visual_zh": "切到莉莉颈肩曲线的极特写：基利安的唇贴近她的皮肤，一颗尖利犬齿的边缘沿着她的脖颈刮过、短暂压进去但没有刺破皮肤。莉莉紧紧闭上眼，呼吸一滞，肩膀抖了一下。镜头固定。",
+              "dialogue_indices": []
+            },
+            {
+              "start_seconds": 8.4,
+              "end_seconds": 13.7,
+              "visual_en": "the camera cuts back to the close-up of [[asset:killian]] over her shoulder. His voice drops colder and flatter, his gaze fixed on the side of her face, contempt in every syllable. He speaks in a low, fully voiced tone and lets the ellipsis hang in a short pause before the last phrase. The camera holds a static shot.",
+              "visual_zh": "切回基利安的过肩近景。他的声音更冷更平，目光落在她的侧脸上，每个字都带着轻蔑。他用低沉、正常发声的声音说话，在省略号处停顿片刻，再说出最后一句。镜头固定。",
+              "dialogue_indices": [
+                1
+              ]
+            },
+            {
+              "start_seconds": 13.7,
+              "end_seconds": 15.0,
+              "visual_en": "the camera cuts to a close-up of [[asset:lily]]'s face: she bites her lower lip against the pain, a tear slides down her cheek, and her eyes open slowly toward the camera in fear and shame. The camera holds a static shot.",
+              "visual_zh": "切到莉莉脸部近景：她咬住下唇忍痛，一滴泪滑过脸颊，眼睛带着恐惧与羞耻缓缓睁向镜头。镜头固定。",
+              "dialogue_indices": []
+            }
+          ],
+          "sound_en": "A soft intake of breath, a faint brush of fabric and a quiet swallow. Room tone stays low and hushed under his close, clear voice.",
+          "sound_zh": "轻轻倒吸一口气的声音、衣料的轻擦和一次安静的吞咽。房间底噪很低、很静，他的声音近而清楚。",
+          "dialogue_language": "zh"
+        },
+        {
+          "title": "04｜门外的敲门声",
+          "duration_seconds": 15,
+          "generation_seconds": 15,
+          "continuity": "cut",
+          "depends_on_previous": false,
+          "use_previous_episode_state": false,
+          "characters": [
+            "Lily",
+            "Killian"
+          ],
+          "asset_keys": [
+            "room",
+            "lily",
+            "killian"
+          ],
+          "image_reference_keys": [
+            "room"
+          ],
+          "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the room, and the character portraits define only the named people. Medium-wide shot toward the heavy dark-wood door with a brass handle at frame left, closed. In the mid-ground Lily stands in the ivory wedding gown, its back open, clutching its front to her chest; Killian stands pressed close behind her in his black three-piece suit, one hand at her waist. Both look toward the door with rigid, frozen expressions, mouths closed. Warm chandelier light.",
+          "visual_zh": "门外传来敲门声和保罗的声音，门把手被拧动，莉莉惊恐地哀求。",
+          "camera_zh": "0—3.2秒中远景，双人僵住；3.2—9.5秒门的近景（保罗声音在门外）；9.5—12秒门把手极特写；12—15秒莉莉惊恐近景。",
+          "dialogue": [
+            {
+              "speaker": "Paul",
+              "text": "莉莉？宝贝你换好了吗？",
+              "start_seconds": 3.4,
+              "end_seconds": 6.6,
+              "language": "zh"
+            },
+            {
+              "speaker": "Paul",
+              "text": "我进来了哦？",
+              "start_seconds": 7.1,
+              "end_seconds": 9.1,
+              "language": "zh"
+            }
+          ],
+          "shots": [
+            {
+              "start_seconds": 0,
+              "end_seconds": 3.2,
+              "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting. A medium-wide shot opens from the adopted first frame in [[asset:room]], looking toward the heavy dark-wood door with its brass handle at frame left: [[asset:lily]] stands in the open-backed ivory gown, clutching its front, with [[asset:killian]] pressed close behind her, one hand at her waist, both lit by the warm chandelier. Three sharp knocks sound on the door; at the first one both of them go completely still and their heads snap toward it. The camera holds a static shot.",
+              "visual_zh": "真人电影质感。从开场图继续，中远景朝向画左的厚重深色木门（黄铜把手）：莉莉穿着后背敞开的婚纱、双手按住前襟，基利安紧贴在她身后、一只手放在她腰上，水晶吊灯暖光照着两人。门上响起三下清脆的敲门声；第一下响起时两人同时僵住、齐刷刷看向门。镜头固定。",
+              "dialogue_indices": []
+            },
+            {
+              "start_seconds": 3.2,
+              "end_seconds": 9.5,
+              "visual_en": "the camera cuts to a close-up of the closed door from inside the room, with the brass handle in sharp focus. A young man named Paul speaks from the corridor outside; his voice reaches the room muffled by the wood, casual and lightly smug, and he is never visible. The handle stays still while he speaks. The camera holds a static shot.",
+              "visual_zh": "切到从房间内看向紧闭木门的近景，黄铜把手清晰对焦。名叫保罗的年轻男人在门外走廊说话，声音隔着木门略显闷，随意而带点轻浮，他全程不出现在画面里。他说话时把手保持不动。镜头固定。",
+              "dialogue_indices": [
+                0,
+                1
+              ]
+            },
+            {
+              "start_seconds": 9.5,
+              "end_seconds": 12.0,
+              "visual_en": "the camera cuts to an extreme close-up of the brass door handle: it turns slowly downward with a loud, magnified metallic click and stops against the latch, the door still shut. The camera pushes in with small amplitude at slow speed.",
+              "visual_zh": "切到黄铜门把手的极特写：把手缓缓向下转动，发出被放大的清晰金属咔哒声，卡在锁舌上停住，门仍然关着。镜头小幅缓慢推进。",
+              "dialogue_indices": []
+            },
+            {
+              "start_seconds": 12.0,
+              "end_seconds": 15.0,
+              "visual_en": "the camera cuts to a close-up of [[asset:lily]]'s face in panic: her eyes dart from the door to the man behind her, wide and pleading, and her head shakes in tiny rapid movements with her lips pressed tightly together. A large hand rests at the edge of the frame near her jaw. The camera pushes in with small amplitude at slow speed.",
+              "visual_zh": "切到莉莉惊恐的脸部近景：她的目光从门飞快转向身后的男人，睁大、哀求，脑袋做着细小而急促的摇动，嘴唇紧紧抿住。画面边缘靠近她下颌处有一只大手。镜头小幅缓慢推进。",
+              "dialogue_indices": []
+            }
+          ],
+          "sound_en": "Three sharp knocks, then the muffled corridor voice. A loud, magnified metallic click as the handle turns, with Lily's shallow, frightened breathing underneath.",
+          "sound_zh": "三下清脆的敲门声，随后是走廊里闷闷的人声。门把手转动时被放大的金属咔哒声，底下是莉莉浅促恐惧的呼吸。",
+          "dialogue_language": "zh"
+        },
+        {
+          "title": "05｜猜猜看",
+          "duration_seconds": 15,
+          "generation_seconds": 15,
+          "continuity": "cut",
+          "depends_on_previous": false,
+          "use_previous_episode_state": false,
+          "characters": [
+            "Lily",
+            "Killian"
+          ],
+          "asset_keys": [
+            "room",
+            "lily",
+            "killian"
+          ],
+          "image_reference_keys": [
+            "room"
+          ],
+          "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the room, and the character portraits define only the named people. Close side-profile two-shot with faces inches apart: Killian's large hand holds Lily's chin and tilts her face up toward his; her eyes are full of tears and fear, her lips closed and trembling; he looks down at her with a cruel, amused half smile, mouth closed. Her hair is loosened and the open back of her gown is held against her chest. Warm luxurious light, the fitting room softly blurred behind.",
+          "visual_zh": "基利安捏住她的下巴逼她转头，贴着她的嘴唇低语，话没说完，门被推开。",
+          "camera_zh": "0—10秒侧面近景双人，缓慢推进（基利安说话）；10—13.3秒门被推开；13.3—15秒莉莉眼睛极特写，白光涌入。",
+          "dialogue": [
+            {
+              "speaker": "Killian",
+              "text": "猜猜看，如果他现在推开门，",
+              "start_seconds": 0.5,
+              "end_seconds": 3.8,
+              "language": "zh"
+            },
+            {
+              "speaker": "Killian",
+              "text": "看到他纯洁的未婚妻，正在被她的哥哥……",
+              "start_seconds": 4.3,
+              "end_seconds": 9.6,
+              "language": "zh"
+            }
+          ],
+          "shots": [
+            {
+              "start_seconds": 0,
+              "end_seconds": 10.0,
+              "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting. A close side-profile two-shot opens from the adopted first frame in [[asset:room]]: [[asset:killian]]'s large hand holds [[asset:lily]]'s chin and tilts her face up toward his, their faces inches apart, her lips almost touching his, her eyes full of tears and fear. He wears a cruel, amused half smile. He speaks to her lips in a low, slow, fully voiced tone, each word deliberate, and lets the last phrase trail off unfinished. Lily trembles and keeps shaking her head slightly. The camera pushes in with small amplitude at slow speed.",
+              "visual_zh": "真人电影质感。从开场图继续，侧面近景双人：基利安的大手捏住莉莉的下巴、把她的脸扳向自己，两人脸相距只有几寸，她的唇几乎碰到他的唇，眼里满是泪水和恐惧。他带着残忍而玩味的半笑，贴着她的嘴唇用低沉、缓慢、正常发声的声音一字一顿地说话，最后一句没说完就拖了下去。莉莉发抖，小幅不停地摇头。镜头小幅缓慢推进。",
+              "dialogue_indices": [
+                0,
+                1
+              ]
+            },
+            {
+              "start_seconds": 10.0,
+              "end_seconds": 13.3,
+              "visual_en": "the camera cuts to the door: the brass handle completes its turn, the latch releases and the heavy door begins to swing inward with a long creak, a widening blade of bright white corridor light cutting across the carpet. The camera holds a static shot.",
+              "visual_zh": "切到门：黄铜把手转到底，锁舌弹开，厚重的门带着一声悠长的吱呀向内推开，一道明亮的白色走廊光线沿着地毯越拉越宽。镜头固定。",
+              "dialogue_indices": []
+            },
+            {
+              "start_seconds": 13.3,
+              "end_seconds": 15.0,
+              "visual_en": "the camera cuts to an extreme close-up of [[asset:lily]]'s eyes, wide with terror, the white light flooding her face until the frame is nearly washed out. The camera holds a static shot.",
+              "visual_zh": "切到莉莉眼睛的极特写，眼里满是恐惧，白光涌满她的脸，画面几乎被光洗白。镜头固定。",
+              "dialogue_indices": []
+            }
+          ],
+          "sound_en": "A held breath, then the latch releasing and a long, slow creak as the heavy door swings open. Room tone drops to near silence just before the end.",
+          "sound_zh": "屏住的呼吸，随后是锁舌弹开声和厚重门扇被推开的悠长吱呀声。结尾前房间底噪降到近乎无声。",
+          "dialogue_language": "zh"
+        }
+      ],
+      "dialogue_language": "zh"
+    }
+  ]
+}

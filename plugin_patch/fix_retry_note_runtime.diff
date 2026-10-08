@@ -1,0 +1,37 @@
+--- z836/ComfyUI-H3-AutoDrama-Standalone/production_draft/runtime.py	2026-10-06 17:36:38.000000000 +0000
++++ z836p/ComfyUI-H3-AutoDrama-Standalone/production_draft/runtime.py	2026-10-07 22:38:29.458051790 +0000
+@@ -11,6 +11,16 @@
+ 
+ active = ContextVar('h3_production_draft_active', default=False)
+ 
++# The app writes its own NG diagnosis into clip['redo_feedback'] on every automatic retry. In draft mode no
++# language model rewrites the prompt, so H3 used to receive that Chinese note verbatim inside the video prompt:
++# it read the note aloud as garbled speech *before* the scripted line, pushed the real line toward the end of
++# the clip (where it was cut) and acted on the note. Only feedback a person typed may reach the models.
++AUTO_DIAGNOSTIC_PREFIXES = ('修正视频/对白核对发现的问题',)
++
++def user_feedback(clip):
++    text = str(clip.get('redo_feedback') or '').strip()
++    return '' if text.startswith(AUTO_DIAGNOSTIC_PREFIXES) else text
++
+ def materialize(project):
+     d=project['production_draft'];mapping=project['draft_asset_bindings']
+     return schema.bind_episode(d,d['episodes'][0],mapping)
+@@ -40,7 +50,7 @@
+             'voices':{line['speaker']:d['characters'][line['speaker']]['voice_description'] for line in clip['dialogue']},
+             'shots':shots,'sound_en':replace(clip['sound_en']),'sound_zh':replace(clip['sound_zh'])}
+     out=compiler.compile_prompt(result,assets,media,clip,axis,project.get('character_bindings',{}))
+-    feedback='\n'.join(x for x in (project.get('instructions','').strip(),clip.get('redo_feedback','').strip()) if x)
++    feedback='\n'.join(x for x in (project.get('instructions','').strip(),user_feedback(clip)) if x)
+     if feedback:
+         # Verbatim diagnostic feedback, without an extra design/translation request.
+         import re
+@@ -122,7 +132,7 @@
+         capacity=min(8,wf.get('metadata',{}).get('reference_capacity',8)) if wf else 8
+         if len(ref_paths)>capacity: raise ValueError(f'制作稿第{index+1}段需要{len(ref_paths)}张生图参考，当前工作流容量为{capacity}；请修改制作稿或工作流，不会丢弃参考。')
+         prompt=clip['image_prompt']+'\nProduction style: '+p['plan']['style']+'\n'+p.get('instructions','')+'\n'+NO_SUBTITLES
+-        if clip.get('redo_feedback'): prompt+='\nCorrection: '+clip['redo_feedback']
++        if user_feedback(clip): prompt+='\nCorrection: '+user_feedback(clip)
+         if state: prompt+='\nThe previous adopted frame defines positions and props only. Follow the new composition; preserve identity from fixed character references. Do not copy malformed anatomy or text.'
+         aid=clip.get('image_asset_id') or hashlib.sha256(f'{identity}:clip:{index}:v{clip["generation"]}'.encode()).hexdigest()[:40]
+         engine.clip_set(identity,index,image_asset_id=aid)

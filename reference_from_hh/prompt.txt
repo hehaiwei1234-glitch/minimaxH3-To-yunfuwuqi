@@ -1,0 +1,28 @@
+subject_definitions:
+<Subject 1>: The adopted opening composition for this shot. Preserve the supplied character identities, clothing and environment. Reference: <Picture 1>.
+<Subject 2>: The same private lounge in the fictional Juniper House boutique hotel in Chicago: a round walnut table at center, two cream lounge chairs, a navy sofa farther back, a brass wall lamp, muted plaster walls, a tall city-facing window on the camera-right wall, and one entrance behind the table on camera left. Preserve room geometry and furniture, adapting light to the authored time of day. Reference is an empty set, not a requirement to keep the target scene empty. Reference: <Picture 2>.
+<Subject 3>: Nora Hayes, a 30-year-old American woman with warm olive skin, dark brown eyes, a shoulder-length dark wavy bob, an off-white silk blouse with sleeves to the wrists, deep teal tailored trousers and a small silver oval pendant. Preserve the same face, hairstyle and wardrobe. She wears no finger rings. Reference: <Picture 3>.
+<Subject 4>: Ethan Reed, a 35-year-old Black American man with warm medium-brown skin, deep brown eyes, short neatly shaped black curls, light close stubble, a navy tailored suit and an open-collar white shirt without a tie. Preserve the same face, hair and wardrobe. Reference: <Picture 4>.
+(S1) is Ethan. Ethan has a warm resonant adult male baritone, native General American English, clear consonants, calm conversational delivery and occasional dry humor. Speak with warmth and restraint, never a trailer-announcer voice. This speaker has no audio reference; generate the voice described here consistently.
+(S2) is Nora. Nora has a clear, warm adult female voice, native General American English with a natural Chicago-neutral accent, medium-low register, steady conversational pace and understated emotional detail. No Mandarin accent, narration voice or exaggerated whisper. This speaker has no audio reference; generate the voice described here consistently.
+
+summary:
+[reference generation] A 10.000-second dramatic scene preserving the supplied identities and storyboard.
+
+retention_analysis:
+<Subject 1>: partially_preserved - preserve the referenced environment, objects and visual style; actions follow this target shot.
+<Subject 2>: partially_preserved - preserve the referenced environment, objects and visual style; actions follow this target shot.
+<Subject 3>: fully_preserved - keep the same character identity; pose and framing follow the new storyboard.
+<Subject 4>: fully_preserved - keep the same character identity; pose and framing follow the new storyboard.
+
+detailed_description:
+No subtitles, captions, or on-screen dialogue text. Dialogue is spoken audio only.
+At 0.917s, the new content follows the opening composition from <Picture 1>. The interval before 0.917s is continuation guidance only, with no new dialogue. All new content ends by 10.917s; later alignment frames only hold the final state.
+
+[Shot 1] Continue the prior adopted framing without a cut or a new camera side. Photorealistic cinematic American live-action romantic suspense, vertical 9:16, grounded adult acting. Exactly 2 visible adults: Nora, Ethan. All other people are outside the frame. Reflections never add a person. No duplicate faces or bodies. Late-night interior with warm practical light and subdued cool window light. Preserve fixed faces, wardrobe, geography and current prop state. Ethan keeps his gaze on Nora as he explains his authority over the proposed funding. He does not touch Luke's statement. Nora points toward the unsigned statement, then lowers her hand. She asks him to stop the false story, not to trust her without proof. Keep a stable medium composition; movement is small and physically natural. Only assigned speakers speak; other mouths stay closed. Speech follows the exact authored time windows; gestures and gaze changes happen concurrently, without a silent preamble. Natural speech, never accelerated. From 1.167s to 6.167s, <Subject 4> (S1) says <d>[English] The sale pays Northline again. I can withhold approval.</d>. From 6.500s to 10.042s, <Subject 3> (S2) says <d>[English] Then don't fund a lie.</d>. After the final complete word, allow a natural release and hold through 10.917s; the sentence must not spill into alignment frames.
+
+overall_soundscape:
+Quiet lounge ventilation, very faint distant city traffic, subtle cloth and paper sounds when handled. Only authored intelligible dialogue in American English, at natural conversational speed. No narrator or background music. Spoken dialogue and natural ambience only.
+
+non_diegetic_music:
+N/A

@@ -1,0 +1,28 @@
+--- /mnt/user-data/uploads/media_tools.py	2026-10-06 23:20:31.410745000 +0000
++++ deliver/media_tools.py	2026-10-06 23:35:57.734417437 +0000
+@@ -93,6 +93,25 @@
+     os.replace(temp,target)
+     return target,checked
+ 
++async def keep_full(source,seconds,config):
++    """Keep everything H3 generated (no cut of the tail); only fail if the file is shorter than planned.
++
++    Continued clips are generated with extra alignment frames after the planned end. Cutting them
++    at the planned length removed the last syllables of lines the model was still speaking.
++    If the audio stream overhangs the picture by more than a frame-ish (0.02s) the file is remuxed
++    with stream copy so both streams end together: later steps seek to "duration - 0.08s" for the
++    last frame and would otherwise land after the final picture.
++    """
++    source=Path(source);meta=await probe(source,config)
++    video=float(meta['video'].get('duration') or meta['duration'])
++    if video+1/24<seconds:
++        raise RuntimeError(f'工作流输出仅{video:.3f}秒，短于本段所需{seconds:.3f}秒；请检查时长关联和输出帧率。原生成文件已保留。')
++    audio=float((meta['audio'] or {}).get('duration') or 0)
++    if audio<=video+.02:return source,meta
++    temp=source.with_name(source.stem+'_对齐.mp4')
++    await command([config['ffmpeg'],'-y','-v','error','-i',source,'-map','0:v:0','-map','0:a:0?','-c','copy','-t',f'{video:.6f}','-movflags','+faststart',temp])
++    return temp,await probe(temp,config)
++
+ def signature(meta):
+     v=meta['video'];a=meta['audio'] or {}
+     return tuple(v.get(k) for k in ('codec_name','width','height','pix_fmt','r_frame_rate','time_base','codec_tag_string','profile','level'))+tuple(a.get(k) for k in ('codec_name','sample_rate','channels','channel_layout','time_base'))

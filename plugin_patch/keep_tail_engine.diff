@@ -1,0 +1,56 @@
+--- /mnt/user-data/uploads/engine.py	2026-10-06 23:20:14.662654000 +0000
++++ deliver/engine.py	2026-10-06 23:22:01.234605405 +0000
+@@ -12,7 +12,7 @@
+ from .domain import DEFAULTS, PREFIX, build_graph, dependent_indices, media_state, validate_plan, validate_rewrite, validate_settings, video_timing
+ from .providers import AIClient, APIError
+ from .comfy_client import ComfyClient, SubmissionUnknown, SubmissionRejected, ExecutionFailed, TaskMissing
+-from .media_tools import command, merge, probe, resolve_tools, keep_duration
++from .media_tools import command, merge, probe, resolve_tools, keep_duration, keep_full
+ from . import workflows
+ from . import timing_policy
+ from . import image_workflows
+@@ -27,6 +27,24 @@
+ 
+ class Paused(RuntimeError):pass
+ 
++# --- keep the generated tail -------------------------------------------------------------
++# For a continued clip H3 generates 12 alignment frames (0.5s) after the planned end, the Trim node
++# dropped them, and keep_duration then cut another 0-14 frames with ffmpeg -t. The model was often
++# still speaking there, so the last 1-5 characters of the line vanished no matter how long the
++# clip was made. True = keep everything the model generated and never cut the tail.
++# Set False to restore the old behaviour exactly.
++KEEP_ALIGNMENT_TAIL=True
++TRIM_NODE_CLASSES={'H3ContinueTrim','H3ADv1Trim'}
++TRIM_KEEP_ALL=1000   # > any frame count (15s ~ 360 frames); node does min(images, start+count)
++
++def keep_alignment_tail(graph):
++    """Make every Trim node keep frames/audio through the end of the generated timeline."""
++    changed=0
++    for node in graph.values():
++        if isinstance(node,dict) and node.get('class_type') in TRIM_NODE_CLASSES and 'trim_output_frames' in node.get('inputs',{}):
++            node['inputs']['trim_output_frames']=TRIM_KEEP_ALL;changed+=1
++    return changed
++
+ PLAN_INSTRUCTIONS='''你是短剧分镜导演。把用户剧本拆成可自动执行的H3视频片段，保留情节顺序，所有台词必须逐字取自剧本，不能省略、改写或新增台词。短剧默认无背景音乐，H3本身生成中文说话声音，有声音参考时跟随人物声音参考。
+ 每段2至15秒；台词按正常说话速度安排，不要把太长台词挤进短视频。一个片段可含少量紧密相关小镜头。明确同一时间地点且需接上一段动作时continuity=continue，切换场景/时间/视角时cut，首段cut。不能把整集一律续接。
+ 优先使用已有角色、场景、道具、声音参考。角色和场景缺少图片时才放入assets_to_create，生成一次，多段复用。不生成声音。图片prompt用英文，画面说明用中文。不使用真实人名冒充未知人物。
+@@ -402,7 +420,9 @@
+         suffix=f'_r{clip["retry_count"]}' if clip.get('retry_count') else ''
+         prefix=clip.get('output_prefix') or f'{PREFIX}/projects/{id}/片段_{index+1:03d}_v{clip["generation"]}{suffix}'
+         snapshot=p.get('workflow_snapshot')
++        fresh=not clip.get('api_graph')
+         graph=clip.get('api_graph') or (workflows.instantiate(snapshot,clip,media,previous,prefix) if snapshot else build_graph(self.template,clip,cfg,media,previous,prefix))
++        if fresh and KEEP_ALIGNMENT_TAIL and keep_alignment_tail(graph):self.store.event(id,f'第{index+1}段：已取消ComfyUI裁尾，保留模型生成的完整尾部。')
+         output_node_id=clip.get('output_node_id') or (snapshot['output_node_id'] if snapshot else '20')
+         job=clip.get('job_id') or uuid.uuid4().hex
+         # A durable intent is committed before POST, so a crash cannot cause an
+@@ -445,7 +465,8 @@
+         if clip.get('dialogue') and not meta['audio']:raise RuntimeError('此片段有台词，但ComfyUI输出没有音轨。请检查H3声音输出后重做此片段。')
+         if clip.get('timing_version'):
+             target=path.with_name(path.stem+'_保留.mp4')
+-            path,meta=await keep_duration(path,target,clip['duration_seconds'],cfg)
++            if KEEP_ALIGNMENT_TAIL:path,meta=await keep_full(path,clip['duration_seconds'],cfg)
++            else:path,meta=await keep_duration(path,target,clip['duration_seconds'],cfg)
+             output=self.files.descriptor(path)
+         self.clip_set(id,index,output=output,meta=meta,status='complete',finished_at=time.time())
+         self.store.event(id,f'第{index+1}段已完成，时长{meta["duration"]:.2f}秒。')

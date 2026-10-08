@@ -1,0 +1,633 @@
+{
+ "schema": "h3-production-draft",
+ "version": 1,
+ "title": "H3试验片｜第3轮",
+ "dialogue_language": "zh",
+ "style": "Photorealistic live-action romantic thriller with a glossy, high-end drama look. Warm tungsten key light with a soft cool fill, shallow depth of field, rich natural skin texture with visible pores, luxurious cream-and-gold interiors, restrained cinematic color grading, and an ultra-wide 8:3 cinemascope frame in which the people are placed deliberately and the room is visible around them.",
+ "assets": [
+  {
+   "key": "lily",
+   "kind": "image",
+   "role": "character",
+   "label": "莉莉",
+   "description": {
+    "en": "Lily, an adult woman in her mid-twenties with long wavy chestnut-brown hair, fair skin, large hazel-green eyes and a slender build, wearing an ivory silk wedding gown with a fitted bodice and a long zipper down the back. The portrait fixes her identity and gown; the opening frame and shot description fix her pose and position.",
+    "zh": "莉莉，二十五岁左右的成年女性，栗棕色长卷发、白皙皮肤、浅褐绿色大眼睛、身形纤细，穿象牙白真丝婚纱，合身上身，背后一条长拉链。人物图固定身份与婚纱，开场图和镜头正文决定姿势与位置。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of an adult woman in her mid-twenties with long wavy chestnut-brown hair, fair skin and large hazel-green eyes, wearing an ivory silk wedding gown with a fitted bodice and delicate shoulders. She faces the camera with a calm, slightly nervous expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "killian",
+   "kind": "image",
+   "role": "character",
+   "label": "基利安",
+   "description": {
+    "en": "Killian, a very tall, broad-shouldered adult man in his early thirties with short swept-back black hair, a sharp jawline, light stubble and cold dark-gray eyes, wearing a tailored black three-piece suit, white shirt and dark tie, with a platinum luxury wristwatch on his left wrist. He stands a head and a half taller than Lily. The portrait fixes his identity and clothes, not staging.",
+    "zh": "基利安，三十出头的成年男性，身材极高、肩膀宽阔，黑色短发向后梳，下颌线锋利，有浅胡茬，眼睛是冷冽的深灰色，穿剪裁合身的黑色三件套西装、白衬衫、深色领带，左腕戴铂金色名表。比莉莉高出一个半头。人物图固定身份与衣服，不固定站位。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of a very tall, broad-shouldered adult man in his early thirties with short swept-back black hair, a sharp jawline, light stubble and cold dark-gray eyes, wearing a tailored black three-piece suit, white shirt and dark tie, a platinum luxury wristwatch on his left wrist. He faces the camera with a cold, composed expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "room",
+   "kind": "image",
+   "role": "scene",
+   "label": "婚纱店VIP更衣室",
+   "description": {
+    "en": "The private VIP fitting room of a high-end bridal boutique: cream walls with gold molding, a heavy dark-wood door with a brass handle in the left wall, a tall gold-framed standing mirror on the right wall, a rack of long white gowns in garment covers along the back wall, an ivory velvet couch and thick carpet, lit warmly by a crystal chandelier and wall sconces. The reference fixes the room layout and decor, not any people.",
+    "zh": "高端婚纱店的VIP私人更衣室：奶油色墙面配金色线脚，左墙一扇带黄铜把手的厚重深色木门，右墙一面金框落地试衣镜，后墙挂着一排罩着防尘袋的白色长婚纱，象牙色丝绒沙发和厚地毯，水晶吊灯与壁灯的暖光。参考图固定房间布局与陈设，不带入任何人物。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic wide shot of an empty luxury VIP fitting room in a high-end bridal boutique: cream walls with gold molding, a heavy dark-wood door with a brass handle on the left wall, a tall gold-framed standing mirror on the right wall, a rack of long white wedding gowns in garment covers along the back wall, an ivory velvet couch, thick carpet, warm light from a crystal chandelier and wall sconces. No people.",
+    "reference_keys": []
+   }
+  }
+ ],
+ "characters": {
+  "Lily": {
+   "image_keys": [
+    "lily"
+   ],
+   "voice_description": {
+    "en": "A young adult female voice, light and slightly breathy, speaking clear Mandarin. She keeps her volume low because she must not be overheard, but every word is fully voiced and audible, tight and trembling with fear, anger and humiliation.",
+    "zh": "年轻成年女声，轻而略带气息，普通话清楚。因为不能被人听见而压低音量，但每个字都正常发声、清晰可辨，声音紧绷颤抖，带着恐惧、愤怒和屈辱。"
+   }
+  },
+  "Killian": {
+   "image_keys": [
+    "killian"
+   ],
+   "voice_description": {
+    "en": "A mature adult male voice in a deep chest register, low and unhurried with a husky edge, speaking clear Mandarin in a quiet, controlled, menacing tone. He never shouts, and every word is fully voiced and audible.",
+    "zh": "成熟成年男声，深沉的胸腔音，低缓不急，带沙哑质感，普通话清楚。语气安静、克制、带压迫感，从不喊叫，每个字都正常发声、清晰可辨。"
+   }
+  },
+  "Paul": {
+   "image_keys": [],
+   "voice_description": {
+    "en": "A young adult male voice, light, casual and slightly smug, speaking clear Mandarin at ordinary conversational volume. He is outside a closed door, so his voice reaches the room muffled by the wood.",
+    "zh": "年轻成年男声，轻松随意、略带轻浮，普通话清楚，正常交谈音量。他在紧闭的门外，声音隔着木门略显闷。"
+   }
+  }
+ },
+ "episodes": [
+  {
+   "title": "试验片第3轮｜种子1001",
+   "summary": "第3轮试验片，共12个任务，全部使用种子1001，按手册6.7的新规则重写，并测台词开口时间随任务时长的变化。",
+   "script": "E1 两人面对面站着互相看对方，基利安说一句短台词。\nKillian：“走吧，车在楼下。”\nE2 基利安单人居中，视线落在左边的门上，说一句短台词。\nKillian：“你逃不掉的。”\nP3 手腕握住，握人的人的肩、臂、手都在画面里。\nLily：“你放开我！”\nT3 姿势已经在开场图里，莉莉面向基利安，只说话。台词里的名字，基利安。\nLily：“基利安，你疯了吗？”\nN2 姿势已经在开场图里，莉莉面向基利安，只说话。台词里的名字，凯文。\nLily：“凯文，你疯了吗？”\nM3 不用镜子，基利安俯身耳语，莉莉视线落在地毯上。\nKillian：“别动，看着我。”\nD1 同一句台词放进6秒的任务，量开口时间和结束时间。\nKillian：“你养父母欠了我三千万美金。”\nD3 同一句台词放进5秒的任务，量开口时间和结束时间。\nKillian：“你养父母欠了我三千万美金。”\nD4 同一句台词放进8秒的任务，量开口时间和结束时间。\nKillian：“你养父母欠了我三千万美金。”\nD2 同一句台词，第一镜 0—4.2 秒基利安说话，第二镜 4.2—6 秒切到莉莉的反应，不说话。\nKillian：“你养父母欠了我三千万美金。”\nS1 无台词片，声音描述里明确写了没有任何人声。\nS2 无台词片，沿用旧的声音描述（对照用）。",
+   "segments": [
+    {
+     "title": "E1 互相对视",
+     "duration_seconds": 6,
+     "generation_seconds": 6,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "Lily",
+      "Killian"
+     ],
+     "asset_keys": [
+      "room",
+      "lily",
+      "killian"
+     ],
+     "image_reference_keys": [
+      "room"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the room, and the character portraits define only the named people. Wide two-shot at eye level: Lily in her ivory silk gown on the left and Killian in his black suit on the right stand about one stride apart, turned toward each other in near-profile, each looking at the other's face. Both fully visible from head to knees, centered in the frame as a pair. Their hands hang at their sides. Warm luxurious light, the fitting room softly blurred behind.",
+     "visual_zh": "两人面对面站着互相看对方，基利安说一句短台词。",
+     "camera_zh": "0—6秒宽双人镜头，镜头固定。",
+     "dialogue": [
+      {
+       "speaker": "Killian",
+       "text": "走吧，车在楼下。",
+       "start_seconds": 0.5,
+       "end_seconds": 3.2,
+       "language": "zh"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 6,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady wide two-shot opens from the adopted first frame in [[asset:room]]: [[asset:killian]] and [[asset:lily]] face each other about one stride apart, each looking at the other's face. [[asset:killian]] speaks calmly in a low voice. [[asset:lily]] listens with her lips pressed together and a slight tension in her jaw. Both keep their positions. The camera holds still.",
+       "visual_zh": "宽双人镜头，面对面互相看，基利安说话，莉莉听。",
+       "dialogue_indices": [
+        0
+       ]
+      }
+     ],
+     "sound_en": "Quiet room tone and a faint brush of fabric. Voices stay close and clear.",
+     "sound_zh": "安静的房间底噪和轻微的衣料摩擦声。人声近而清楚。",
+     "seed": 1001,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "E2 单人看门",
+     "duration_seconds": 6,
+     "generation_seconds": 6,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "Killian"
+     ],
+     "asset_keys": [
+      "room",
+      "lily",
+      "killian"
+     ],
+     "image_reference_keys": [
+      "room"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the room, and the character portraits define only the named people. Medium shot of Killian alone in the center of the frame, in his black suit, his body angled slightly to the left, his eyes fixed on the closed dark door at the left side of the room. Nobody else is in the frame. His hands hang at his sides. Warm luxurious light, the fitting room softly blurred behind.",
+     "visual_zh": "基利安单人居中，视线落在左边的门上，说一句短台词。",
+     "camera_zh": "0—6秒中景单人居中，镜头固定。",
+     "dialogue": [
+      {
+       "speaker": "Killian",
+       "text": "你逃不掉的。",
+       "start_seconds": 0.5,
+       "end_seconds": 2.8,
+       "language": "zh"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 6,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady medium shot opens from the adopted first frame in [[asset:room]]: [[asset:killian]] alone in the center of the frame, eyes fixed on the door at the left side of the room. No one else is visible. His jaw is tight and his mouth set in a flat line; he speaks in a quiet, low, menacing voice without moving his gaze from the door. The camera holds still.",
+       "visual_zh": "基利安居中，视线落在门上，说话。",
+       "dialogue_indices": [
+        0
+       ]
+      }
+     ],
+     "sound_en": "Quiet room tone and a faint brush of fabric. Voices stay close and clear.",
+     "sound_zh": "安静的房间底噪和轻微的衣料摩擦声。人声近而清楚。",
+     "seed": 1001,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "P3 手腕握住",
+     "duration_seconds": 6,
+     "generation_seconds": 6,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "Lily",
+      "Killian"
+     ],
+     "asset_keys": [
+      "room",
+      "lily",
+      "killian"
+     ],
+     "image_reference_keys": [
+      "room"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the room, and the character portraits define only the named people. Side-on wide two-shot at eye level, the pair centered in the frame: Killian in a black suit and Lily in her ivory gown stand facing each other. His right hand, with his whole arm and shoulder fully visible, holds her left wrist at chest height. Both faces are visible in profile, her eyes fixed on his face. Warm luxurious light, the fitting room softly blurred behind.",
+     "visual_zh": "手腕握住：握人的人的肩、臂、手都在画面里。",
+     "camera_zh": "0—6秒侧面宽双人镜头，镜头固定。",
+     "dialogue": [
+      {
+       "speaker": "Lily",
+       "text": "你放开我！",
+       "start_seconds": 0.5,
+       "end_seconds": 2.5,
+       "language": "zh"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 6,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on wide two-shot opens from the adopted first frame in [[asset:room]]: [[asset:killian]] stands facing [[asset:lily]]; his right hand, with his whole arm and shoulder visible in the frame, holds her left wrist at chest height and keeps the same grip. Her eyes stay on his face. She speaks in a tight, trembling, low voice. [[asset:killian]] looks down at her with his jaw tight. The camera holds still.",
+       "visual_zh": "侧面宽双人，基利安右手握住莉莉左手腕，莉莉看着他说话。",
+       "dialogue_indices": [
+        0
+       ]
+      }
+     ],
+     "sound_en": "Quiet room tone and a faint brush of fabric. Voices stay close and clear.",
+     "sound_zh": "安静的房间底噪和轻微的衣料摩擦声。人声近而清楚。",
+     "seed": 1001,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "T3 姿势在开场图·名字基利安",
+     "duration_seconds": 6,
+     "generation_seconds": 6,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "Lily",
+      "Killian"
+     ],
+     "asset_keys": [
+      "room",
+      "lily",
+      "killian"
+     ],
+     "image_reference_keys": [
+      "room"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the room, and the character portraits define only the named people. Wide two-shot at eye level: Lily in her ivory silk gown on the left, her body angled toward Killian and her face turned toward him; Killian in his black suit on the right, looking at her. They stand about one stride apart, centered in the frame as a pair. Warm luxurious light, the fitting room softly blurred behind.",
+     "visual_zh": "姿势已经在开场图里：莉莉面向基利安，只说话。台词里的名字：基利安。",
+     "camera_zh": "0—6秒宽双人镜头，镜头固定。",
+     "dialogue": [
+      {
+       "speaker": "Lily",
+       "text": "基利安，你疯了吗？",
+       "start_seconds": 0.5,
+       "end_seconds": 3.0,
+       "language": "zh"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 6,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady wide two-shot opens from the adopted first frame in [[asset:room]]: [[asset:lily]] stands angled toward [[asset:killian]], her face turned to him, her eyes wide; [[asset:killian]] looks back at her. They keep their positions and posture. She speaks in a tight, trembling, low voice. The camera holds still.",
+       "visual_zh": "莉莉面向基利安，保持姿势，说话。",
+       "dialogue_indices": [
+        0
+       ]
+      }
+     ],
+     "sound_en": "Quiet room tone and a faint brush of fabric. Voices stay close and clear.",
+     "sound_zh": "安静的房间底噪和轻微的衣料摩擦声。人声近而清楚。",
+     "seed": 1001,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "N2 同T3·名字换成凯文",
+     "duration_seconds": 6,
+     "generation_seconds": 6,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "Lily",
+      "Killian"
+     ],
+     "asset_keys": [
+      "room",
+      "lily",
+      "killian"
+     ],
+     "image_reference_keys": [
+      "room"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the room, and the character portraits define only the named people. Wide two-shot at eye level: Lily in her ivory silk gown on the left, her body angled toward Killian and her face turned toward him; Killian in his black suit on the right, looking at her. They stand about one stride apart, centered in the frame as a pair. Warm luxurious light, the fitting room softly blurred behind.",
+     "visual_zh": "姿势已经在开场图里：莉莉面向基利安，只说话。台词里的名字：凯文。",
+     "camera_zh": "0—6秒宽双人镜头，镜头固定。",
+     "dialogue": [
+      {
+       "speaker": "Lily",
+       "text": "凯文，你疯了吗？",
+       "start_seconds": 0.5,
+       "end_seconds": 3.0,
+       "language": "zh"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 6,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady wide two-shot opens from the adopted first frame in [[asset:room]]: [[asset:lily]] stands angled toward [[asset:killian]], her face turned to him, her eyes wide; [[asset:killian]] looks back at her. They keep their positions and posture. She speaks in a tight, trembling, low voice. The camera holds still.",
+       "visual_zh": "莉莉面向基利安，保持姿势，说话。",
+       "dialogue_indices": [
+        0
+       ]
+      }
+     ],
+     "sound_en": "Quiet room tone and a faint brush of fabric. Voices stay close and clear.",
+     "sound_zh": "安静的房间底噪和轻微的衣料摩擦声。人声近而清楚。",
+     "seed": 1001,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "M3 俯身耳语",
+     "duration_seconds": 6,
+     "generation_seconds": 6,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "Lily",
+      "Killian"
+     ],
+     "asset_keys": [
+      "room",
+      "lily",
+      "killian"
+     ],
+     "image_reference_keys": [
+      "room"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the room, and the character portraits define only the named people. Wide two-shot in three-quarter view from the side, the pair centered in the frame: Lily on the left looks down at the carpet with tense shoulders; Killian stands close behind her and slightly to the right, his head bent toward her ear. Warm luxurious light, the fitting room softly blurred behind.",
+     "visual_zh": "不用镜子：基利安俯身耳语，莉莉视线落在地毯上。",
+     "camera_zh": "0—6秒宽双人镜头，镜头固定。",
+     "dialogue": [
+      {
+       "speaker": "Killian",
+       "text": "别动，看着我。",
+       "start_seconds": 0.5,
+       "end_seconds": 2.8,
+       "language": "zh"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 6,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady wide two-shot opens from the adopted first frame in [[asset:room]]: [[asset:lily]] stands in front with her eyes on the carpet, her shoulders tense and her breathing short; [[asset:killian]] stands close behind her and slightly to her right. He lowers his head toward her ear and speaks in a low voice. She keeps her eyes on the carpet. The camera holds still.",
+       "visual_zh": "基利安俯身对着莉莉耳边说话，莉莉看着地毯。",
+       "dialogue_indices": [
+        0
+       ]
+      }
+     ],
+     "sound_en": "Quiet room tone and a faint brush of fabric. Voices stay close and clear.",
+     "sound_zh": "安静的房间底噪和轻微的衣料摩擦声。人声近而清楚。",
+     "seed": 1001,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "D1 同一句话·6秒",
+     "duration_seconds": 6,
+     "generation_seconds": 6,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "Killian"
+     ],
+     "asset_keys": [
+      "room",
+      "lily",
+      "killian"
+     ],
+     "image_reference_keys": [
+      "room"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the room, and the character portraits define only the named people. Medium shot of Killian alone in the center of the frame, in his black suit, his body angled slightly to the left, his eyes fixed on the closed dark door at the left side of the room. Nobody else is in the frame. His hands hang at his sides. Warm luxurious light, the fitting room softly blurred behind.",
+     "visual_zh": "同一句台词放进6秒的任务，量开口时间和结束时间。",
+     "camera_zh": "0—6秒中景单人居中，镜头固定。",
+     "dialogue": [
+      {
+       "speaker": "Killian",
+       "text": "你养父母欠了我三千万美金。",
+       "start_seconds": 0.5,
+       "end_seconds": 3.8,
+       "language": "zh"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 6,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady medium shot opens from the adopted first frame in [[asset:room]]: [[asset:killian]] alone in the center of the frame, eyes fixed on the door at the left side of the room. No one else is visible. His jaw is tight and his mouth set in a flat line; he speaks in a quiet, low, menacing voice without moving his gaze from the door. The camera holds still.",
+       "visual_zh": "基利安居中，视线落在门上，说话。",
+       "dialogue_indices": [
+        0
+       ]
+      }
+     ],
+     "sound_en": "Quiet room tone and a faint brush of fabric. Voices stay close and clear.",
+     "sound_zh": "安静的房间底噪和轻微的衣料摩擦声。人声近而清楚。",
+     "seed": 1001,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "D3 同一句话·5秒",
+     "duration_seconds": 5,
+     "generation_seconds": 5,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "Killian"
+     ],
+     "asset_keys": [
+      "room",
+      "lily",
+      "killian"
+     ],
+     "image_reference_keys": [
+      "room"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the room, and the character portraits define only the named people. Medium shot of Killian alone in the center of the frame, in his black suit, his body angled slightly to the left, his eyes fixed on the closed dark door at the left side of the room. Nobody else is in the frame. His hands hang at his sides. Warm luxurious light, the fitting room softly blurred behind.",
+     "visual_zh": "同一句台词放进5秒的任务，量开口时间和结束时间。",
+     "camera_zh": "0—5秒中景单人居中，镜头固定。",
+     "dialogue": [
+      {
+       "speaker": "Killian",
+       "text": "你养父母欠了我三千万美金。",
+       "start_seconds": 0.5,
+       "end_seconds": 3.8,
+       "language": "zh"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 5,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady medium shot opens from the adopted first frame in [[asset:room]]: [[asset:killian]] alone in the center of the frame, eyes fixed on the door at the left side of the room. No one else is visible. His jaw is tight and his mouth set in a flat line; he speaks in a quiet, low, menacing voice without moving his gaze from the door. The camera holds still.",
+       "visual_zh": "基利安居中，视线落在门上，说话。",
+       "dialogue_indices": [
+        0
+       ]
+      }
+     ],
+     "sound_en": "Quiet room tone and a faint brush of fabric. Voices stay close and clear.",
+     "sound_zh": "安静的房间底噪和轻微的衣料摩擦声。人声近而清楚。",
+     "seed": 1001,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "D4 同一句话·8秒",
+     "duration_seconds": 8,
+     "generation_seconds": 8,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "Killian"
+     ],
+     "asset_keys": [
+      "room",
+      "lily",
+      "killian"
+     ],
+     "image_reference_keys": [
+      "room"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the room, and the character portraits define only the named people. Medium shot of Killian alone in the center of the frame, in his black suit, his body angled slightly to the left, his eyes fixed on the closed dark door at the left side of the room. Nobody else is in the frame. His hands hang at his sides. Warm luxurious light, the fitting room softly blurred behind.",
+     "visual_zh": "同一句台词放进8秒的任务，量开口时间和结束时间。",
+     "camera_zh": "0—8秒中景单人居中，镜头固定。",
+     "dialogue": [
+      {
+       "speaker": "Killian",
+       "text": "你养父母欠了我三千万美金。",
+       "start_seconds": 0.5,
+       "end_seconds": 3.8,
+       "language": "zh"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 8,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady medium shot opens from the adopted first frame in [[asset:room]]: [[asset:killian]] alone in the center of the frame, eyes fixed on the door at the left side of the room. No one else is visible. His jaw is tight and his mouth set in a flat line; he speaks in a quiet, low, menacing voice without moving his gaze from the door. The camera holds still.",
+       "visual_zh": "基利安居中，视线落在门上，说话。",
+       "dialogue_indices": [
+        0
+       ]
+      }
+     ],
+     "sound_en": "Quiet room tone and a faint brush of fabric. Voices stay close and clear.",
+     "sound_zh": "安静的房间底噪和轻微的衣料摩擦声。人声近而清楚。",
+     "seed": 1001,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "D2 同一句话·6秒·第4.2秒切镜",
+     "duration_seconds": 6,
+     "generation_seconds": 6,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "Lily",
+      "Killian"
+     ],
+     "asset_keys": [
+      "room",
+      "lily",
+      "killian"
+     ],
+     "image_reference_keys": [
+      "room"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the room, and the character portraits define only the named people. Medium shot of Killian alone in the center of the frame, in his black suit, his body angled slightly to the left, his eyes fixed on the closed dark door at the left side of the room. Nobody else is in the frame. His hands hang at his sides. Warm luxurious light, the fitting room softly blurred behind.",
+     "visual_zh": "同一句台词，第一镜 0—4.2 秒基利安说话，第二镜 4.2—6 秒切到莉莉的反应，不说话。",
+     "camera_zh": "0—4.2秒基利安中景；4.2—6秒莉莉近景。",
+     "dialogue": [
+      {
+       "speaker": "Killian",
+       "text": "你养父母欠了我三千万美金。",
+       "start_seconds": 0.5,
+       "end_seconds": 3.8,
+       "language": "zh"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 4.2,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady medium shot opens from the adopted first frame in [[asset:room]]: [[asset:killian]] alone in the center of the frame, eyes fixed on the door at the left side of the room. No one else is visible. His jaw is tight and his mouth set in a flat line; he speaks in a quiet, low, menacing voice without moving his gaze from the door. The camera holds still.",
+       "visual_zh": "基利安居中，视线落在门上，说话。",
+       "dialogue_indices": [
+        0
+       ]
+      },
+      {
+       "start_seconds": 4.2,
+       "end_seconds": 6,
+       "visual_en": "The camera cuts to a medium close-up of [[asset:lily]] in the center of the frame, her eyes wide and her lips parted. She does not speak. She keeps her eyes on the door at the left side of the room. The camera holds still.",
+       "visual_zh": "切到莉莉近景，眼睛睁大，不说话，视线落在门上。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "Quiet room tone and a faint brush of fabric. Voices stay close and clear.",
+     "sound_zh": "安静的房间底噪和轻微的衣料摩擦声。人声近而清楚。",
+     "seed": 1001,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "S1 无台词·明确无人声",
+     "duration_seconds": 6,
+     "generation_seconds": 6,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "Lily"
+     ],
+     "asset_keys": [
+      "room",
+      "lily",
+      "killian"
+     ],
+     "image_reference_keys": [
+      "room"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the room, and the character portraits define only the named people. Medium shot of Lily alone in her ivory silk gown, standing near the center of the frame with her back half turned, her head turned over her shoulder toward the door at the left side of the room, her hands reaching behind her back toward the zipper. Nobody else is in the frame. Warm luxurious light, the fitting room softly blurred behind.",
+     "visual_zh": "无台词片：声音描述里明确写了没有任何人声。",
+     "camera_zh": "0—6秒中景单人，镜头固定。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 6,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady medium shot opens from the adopted first frame in [[asset:room]]: [[asset:lily]] alone, no one else visible. She reaches behind her back and pulls the zipper of her gown up to the nape. Nothing else moves. Nobody speaks. The camera holds still.",
+       "visual_zh": "莉莉独自拉上婚纱拉链，没有人说话。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "Only the faint rustle of silk and quiet room tone. The recording is completely free of voices: no speech, no humming, no sighs, no vocal sounds of any kind.",
+     "sound_zh": "只有丝绸的轻微摩擦声和安静的房间底噪。录音里完全没有人声：没有说话、哼声、叹息或任何发声。",
+     "seed": 1001,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "S2 无台词·旧写法",
+     "duration_seconds": 6,
+     "generation_seconds": 6,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "Lily"
+     ],
+     "asset_keys": [
+      "room",
+      "lily",
+      "killian"
+     ],
+     "image_reference_keys": [
+      "room"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the room, and the character portraits define only the named people. Medium shot of Lily alone in her ivory silk gown, standing near the center of the frame with her back half turned, her head turned over her shoulder toward the door at the left side of the room, her hands reaching behind her back toward the zipper. Nobody else is in the frame. Warm luxurious light, the fitting room softly blurred behind.",
+     "visual_zh": "无台词片：沿用旧的声音描述（对照用）。",
+     "camera_zh": "0—6秒中景单人，镜头固定。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 6,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady medium shot opens from the adopted first frame in [[asset:room]]: [[asset:lily]] alone, no one else visible. She reaches behind her back and pulls the zipper of her gown up to the nape. Nothing else moves. Nobody speaks. The camera holds still.",
+       "visual_zh": "莉莉独自拉上婚纱拉链，没有人说话。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "Quiet room tone and a faint brush of fabric. Voices stay close and clear.",
+     "sound_zh": "安静的房间底噪和轻微的衣料摩擦声。人声近而清楚。",
+     "seed": 1001,
+     "dialogue_language": "zh"
+    }
+   ],
+   "dialogue_language": "zh"
+  }
+ ]
+}
