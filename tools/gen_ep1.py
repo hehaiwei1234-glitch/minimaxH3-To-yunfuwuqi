@@ -3,14 +3,14 @@
 
 按 CLAUDE.md 第 4 节的写稿规则：一个任务一个连续镜头、一人一句短台词、不用镜子、视线有具体目标、
 抓人者的手臂入画、姿势放进开场图、镜头固定。台词一字不改，长句按语气拆成几个任务。
-用法:  python3 tools/gen_ep1.py      （写出 outbox/ 下的 JSON 和 txt）
+用法:  python3 tools/gen_ep1.py      （写出 Alpha继兄的笼中吻/ 下的 JSON 和 txt）
 """
 import json, re, copy, os
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE = os.path.join(ROOT, 'packs', '改进稿_12任务', '改进稿_制作稿.json')
-OUT_JSON = os.path.join(ROOT, 'outbox', '2026-10-08_第1集_制作稿.json')
-OUT_TXT = os.path.join(ROOT, 'outbox', '2026-10-08_第1集_制作稿_全选复制粘贴.txt')
+OUT_JSON = os.path.join(ROOT, 'Alpha继兄的笼中吻', '2026-10-08_第1集_制作稿.json')
+OUT_TXT = os.path.join(ROOT, 'Alpha继兄的笼中吻', '2026-10-08_第1集_制作稿_全选复制粘贴.txt')
 
 base = json.load(open(BASE, encoding='utf-8'))
 d = copy.deepcopy(base)
