@@ -1,0 +1,621 @@
+{
+ "schema": "h3-production-draft",
+ "version": 1,
+ "title": "Alpha继兄的笼中吻｜第2集｜门后的狂想",
+ "dialogue_language": "en",
+ "style": "Photorealistic live-action romantic thriller with a glossy, high-end drama look. Warm tungsten key light with a soft cool fill, shallow depth of field, rich natural skin texture with visible pores, luxurious cream-and-gold interiors, restrained cinematic color grading, and an ultra-wide 8:3 cinemascope frame in which the people are placed deliberately and the room is visible around them.",
+ "assets": [
+  {
+   "key": "lily",
+   "kind": "image",
+   "role": "character",
+   "label": "莉莉",
+   "description": {
+    "en": "Lily, an adult woman in her mid-twenties with long wavy chestnut-brown hair, fair skin, large hazel-green eyes and a slender build, wearing an ivory silk wedding gown with a fitted bodice and a long zipper down the back. The portrait fixes her identity and gown; the opening frame and shot description fix her pose and position.",
+    "zh": "莉莉，二十五岁左右的成年女性，栗棕色长卷发、白皙皮肤、浅褐绿色大眼睛、身形纤细，穿象牙白真丝婚纱，合身上身，背后一条长拉链。人物图固定身份与婚纱，开场图和镜头正文决定姿势与位置。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of an adult woman in her mid-twenties with long wavy chestnut-brown hair, fair skin and large hazel-green eyes, wearing an ivory silk wedding gown with a fitted bodice and delicate shoulders. She faces the camera with a calm, slightly nervous expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "killian",
+   "kind": "image",
+   "role": "character",
+   "label": "基利安",
+   "description": {
+    "en": "Killian, a very tall, broad-shouldered adult man in his early thirties with short swept-back black hair, a sharp jawline, light stubble and cold dark-gray eyes, wearing a tailored black three-piece suit, white shirt and dark tie, with a platinum luxury wristwatch on his left wrist. He stands a head and a half taller than Lily. The portrait fixes his identity and clothes, not staging.",
+    "zh": "基利安，三十出头的成年男性，身材极高、肩膀宽阔，黑色短发向后梳，下颌线锋利，有浅胡茬，眼睛是冷冽的深灰色，穿剪裁合身的黑色三件套西装、白衬衫、深色领带，左腕戴铂金色名表。比莉莉高出一个半头。人物图固定身份与衣服，不固定站位。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of a very tall, broad-shouldered adult man in his early thirties with short swept-back black hair, a sharp jawline, light stubble and cold dark-gray eyes, wearing a tailored black three-piece suit, white shirt and dark tie, a platinum luxury wristwatch on his left wrist. He faces the camera with a cold, composed expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "room",
+   "kind": "image",
+   "role": "scene",
+   "label": "婚纱店VIP更衣室",
+   "description": {
+    "en": "The private VIP fitting room of a high-end bridal boutique: cream walls with gold molding, a heavy dark-wood door with a brass handle in the left wall, a rack of long white gowns in garment covers along the back wall, a wide bare stretch of plain cream panelled wall to the right of the gown rack, an ivory velvet couch against the right wall and thick carpet, lit warmly by a crystal chandelier and wall sconces. The reference fixes the room layout and decor, not any people.",
+    "zh": "高端婚纱店的VIP私人更衣室：奶油色墙面配金色线脚，左墙一扇带黄铜把手的厚重深色木门，后墙挂着一排罩着防尘袋的白色长婚纱，婚纱架右边是一大段空白的奶油色护墙板墙面，右墙边有象牙色丝绒沙发和厚地毯，水晶吊灯与壁灯的暖光。参考图固定房间布局与陈设，不带入任何人物。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic wide shot of an empty luxury VIP fitting room in a high-end bridal boutique: cream walls with gold molding, a heavy dark-wood door with a brass handle on the left wall, a rack of long white wedding gowns in garment covers along the back wall, a wide bare stretch of plain cream panelled wall to the right of the gown rack, an ivory velvet couch against the right wall, thick carpet, warm light from a crystal chandelier and wall sconces. No people.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "alcove",
+   "kind": "image",
+   "role": "scene",
+   "label": "更衣室婚纱架后的隔间",
+   "description": {
+    "en": "A narrow dressing alcove at the back of the private fitting room: a dense row of long white gowns in garment covers hanging close together on a rail along one side, and a heavy cream floor-length velvet curtain on a ceiling track, drawn half open across the front. Dim warm light with soft shadows. The reference fixes the look of the alcove, not any people.",
+    "zh": "更衣室最里面的狭窄隔间：一侧是紧挨着挂在横杆上、罩着防尘袋的白色长婚纱，正面是一道挂在顶轨上的奶油色厚重丝绒落地帘，拉开了一半。光线昏暗温暖，阴影柔和。参考图固定隔间的样子，不带入任何人物。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic shot of an empty narrow dressing alcove at the back of a luxury fitting room: a dense row of long white gowns in garment covers hanging close together on a rail along one side, a heavy cream floor-length velvet curtain on a ceiling track drawn half open across the front, dim warm light with soft shadows, thick carpet. No people.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "paul",
+   "kind": "image",
+   "role": "character",
+   "label": "保罗",
+   "description": {
+    "en": "Paul, an adult man in his late twenties with neatly combed light-brown hair, a clean-shaven friendly boyish face and warm brown eyes, of average build, wearing a navy blazer over a white open-collared shirt. He is a head shorter than Killian. The portrait fixes his identity and clothes, not staging.",
+    "zh": "保罗，二十八岁左右的成年男性，浅棕色头发梳得整齐，脸干净、友善、带点孩子气，暖棕色眼睛，身材普通，穿海军蓝西装外套配白色敞领衬衫。比基利安矮一个头。人物图固定身份与衣服，不固定站位。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of an adult man in his late twenties with neatly combed light-brown hair, a clean-shaven friendly boyish face and warm brown eyes, wearing a navy blazer over a white open-collared shirt. He faces the camera with a mild, relaxed expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  }
+ ],
+ "characters": {
+  "Lily": {
+   "image_keys": [
+    "lily"
+   ],
+   "voice_description": {
+    "en": "A young adult female voice, light and slightly breathy, speaking clear American English. She keeps her volume low because she must not be overheard, but every word is fully voiced and audible, tight and trembling with fear, anger and humiliation.",
+    "zh": "年轻成年女声，轻而略带气息，说清楚的美式英语。因为不能被人听见而压低音量，但每个字都正常发声、清晰可辨，声音紧绷颤抖，带着恐惧、愤怒和屈辱。"
+   }
+  },
+  "Killian": {
+   "image_keys": [
+    "killian"
+   ],
+   "voice_description": {
+    "en": "A mature adult male voice in a deep chest register, low and unhurried with a husky edge, speaking clear American English in a quiet, controlled, menacing tone. He never shouts, and every word is fully voiced and audible.",
+    "zh": "成熟成年男声，深沉的胸腔音，低缓不急，带沙哑质感，说清楚的美式英语。语气安静、克制、带压迫感，从不喊叫，每个字都正常发声、清晰可辨。"
+   }
+  },
+  "Paul": {
+   "image_keys": [],
+   "voice_description": {
+    "en": "A young adult male voice, light, casual and slightly smug, speaking clear American English at ordinary conversational volume. He is outside a closed door, so his voice reaches the room muffled by the wood.",
+    "zh": "年轻成年男声，轻松随意、略带轻浮，说清楚的美式英语，正常交谈音量。他在紧闭的门外，声音隔着木门略显闷。"
+   }
+  },
+  "PaulOnScreen": {
+   "image_keys": [
+    "paul"
+   ],
+   "voice_description": {
+    "en": "A young adult male voice, light, casual and slightly smug, speaking clear American English at ordinary conversational volume.",
+    "zh": "年轻成年男声，轻松随意、略带轻浮，说清楚的美式英语，正常交谈音量。"
+   }
+  }
+ },
+ "episodes": [
+  {
+   "title": "第2集｜门后的狂想",
+   "summary": "门被推开的瞬间，基利安带着莉莉躲进婚纱堆后的隔间，捂住她的嘴。保罗在帘外走近、起疑、一把拉开帘子，看到的只有衣冠楚楚的基利安——他说，他是来接他的“未婚妻”。",
+   "script": "躲进婚纱架，门被推开，冷光射进来。基利安搂住莉莉的腰，带着她退一步躲进婚纱堆里。\n捂住嘴，基利安捂住莉莉的嘴，另一只手圈着她。莉莉睁大眼睛看着他。门外传来保罗的声音。\nPaulOnScreen：“Lily? Where'd you go? Still changing?”\n惊恐的眼睛，特写，莉莉惊恐睁大的眼睛，基利安近在咫尺的眼睛。帘外有脚步声。\n耳边的呼吸，基利安低头贴近莉莉的耳边，莉莉闭紧眼睛，流下眼泪。（暗示，不露骨）\n保罗起疑，基利安抬起一点头，看着莉莉发红的眼角，喉结滚动。帘外保罗起了疑心。\nPaulOnScreen：“Weird. I swear I heard something.”\n帘外的手影，从隔间里看帘子，帘子上出现保罗伸手的剪影。\n拉开帘子，保罗皱着眉抓住帘子，一把拉开，帘后站着衣冠楚楚的基利安，莉莉看不见。\n保罗吓一跳，保罗倒退半步，结结巴巴地问基利安什么时候回来的。\nPaulOnScreen：“Killian? When did you get back?”\n你怎么在这里，保罗追问基利安为什么在莉莉的更衣室里。基利安不动声色。\nPaulOnScreen：“Why are you in Lily's fitting room?”\n刚下飞机，基利安低头看着保罗，冷冷地回答。\nKillian：“Just landed.”\n来接我的未婚妻，基利安居高临下地看着保罗，慢慢说出最后一句，眼角往自己身后的西装下摆扫了一眼。\nKillian：“Came to pick up my... fiancée.”\n保罗错愕，保罗错愕的特写。（无台词，成片里在这里黑屏、接重音效）",
+   "segments": [
+    {
+     "title": "01｜躲进婚纱架",
+     "duration_seconds": 6,
+     "generation_seconds": 6,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "Lily",
+      "Killian"
+     ],
+     "asset_keys": [
+      "room",
+      "alcove",
+      "lily",
+      "killian"
+     ],
+     "image_reference_keys": [
+      "alcove"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the room, and the character portraits define only the named people. Wide-medium side-on two-shot at the edge of the rack of hanging gowns, both people centered in the middle third of the frame. A strip of cold bright light from the open door at frame-left lies across the carpet. Lily stands in profile in the ivory wedding gown with its back open, both hands holding the front of the bodice at her chest, her eyes on the door at frame-left; Killian stands directly behind her, very close, in his black three-piece suit, his right arm around her waist and his left hand at his side. The long white gowns in garment covers hang close behind them. Both are fully visible from head to knees. Nobody else is in the frame. Warm dim light, the alcove softly blurred behind.",
+     "visual_zh": "门被推开，冷光射进来。基利安搂住莉莉的腰，带着她退一步躲进婚纱堆里。",
+     "camera_zh": "0—6秒侧面中景，两人居中，镜头固定。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 6,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady wide-medium side-on two-shot opens from the adopted first frame in [[asset:alcove]]: [[asset:lily]] in profile with her eyes on the open door at frame-left, [[asset:killian]] directly behind her with his right arm around her waist, a strip of cold light across the carpet. In one smooth movement he draws her one step backward into the row of hanging gowns, and the heavy white garment covers swing together in front of them until only the white gowns are visible. Nobody speaks. The camera holds still.",
+       "visual_zh": "从开场图继续，侧面中景：莉莉侧身、眼睛看着左边敞开的门，基利安紧贴在她身后，右臂搂着她的腰，地毯上有一道冷光。他一气呵成地带着她向后退一步，进到成排的婚纱里，厚重的白色防尘袋晃动合拢，把两人挡住，最后只剩白色婚纱。无人说话。镜头固定。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "Heavy fabric rustling as the garment covers swing closed. The recording is completely free of voices: no speech, no humming, no sighs, no vocal sounds of any kind.",
+     "sound_zh": "厚重的衣料晃动合拢的沙沙声。 录音里完全没有人声：没有说话、哼声、叹息或任何发声。",
+     "seed": 3101,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "02｜捂住嘴",
+     "duration_seconds": 6,
+     "generation_seconds": 6,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "Lily",
+      "Killian"
+     ],
+     "asset_keys": [
+      "room",
+      "alcove",
+      "lily",
+      "killian"
+     ],
+     "image_reference_keys": [
+      "alcove"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the room, and the character portraits define only the named people. Medium two-shot, waist-up, in profile inside a narrow dim dressing alcove between long white gowns in garment covers, both people centered in the middle third of the frame. Lily stands with her back against the hanging gowns, her ivory gown open at the back and held at her chest by her left hand, her eyes wide and fixed on Killian's face; Killian stands facing her, very close, his right hand pressed over her mouth and his left arm around her back, his eyes on her face. Nobody else is in the frame. Warm dim light, the alcove softly blurred behind.",
+     "visual_zh": "基利安捂住莉莉的嘴，另一只手圈着她。莉莉睁大眼睛看着他。门外传来保罗的声音。",
+     "camera_zh": "0—6秒侧面中景，两人居中，镜头固定。",
+     "dialogue": [
+      {
+       "speaker": "PaulOnScreen",
+       "text": "Lily? Where'd you go? Still changing?",
+       "start_seconds": 1.2,
+       "end_seconds": 4.79,
+       "language": "en"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 6,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady medium two-shot in profile opens from the adopted first frame in [[asset:alcove]]: [[asset:lily]] with her back against the hanging gowns, her eyes wide and fixed on [[asset:killian]]'s face; [[asset:killian]] close in front of her, his right hand over her mouth and his left arm around her back. Her breathing is fast and she does not move. A young man named Paul speaks from the fitting room outside the drapes; his voice is casual, muffled by the heavy fabric, and he is never visible. Killian's eyes stay on her face, narrowed, one brow lifting slightly. The camera holds still.",
+       "visual_zh": "从开场图继续，侧面中景：莉莉背靠成排的婚纱，眼睛睁大、盯着基利安的脸；基利安紧贴在她面前，右手捂着她的嘴，左臂圈着她的背。她呼吸很快，一动不动。保罗在帘外的更衣室里说话，声音随意、被厚布隔得发闷，他全程不出现。基利安的眼睛一直看着她的脸，微微眯起，一边眉毛轻轻抬起。镜头固定。",
+       "dialogue_indices": [
+        0
+       ]
+      }
+     ],
+     "sound_en": "Soft rustle of heavy fabric. The man's voice outside is muffled by thick drapes. Voices stay close and clear.",
+     "sound_zh": "厚重衣料的轻微摩擦声。帘外男人的声音被厚布隔得发闷。人声近而清楚。",
+     "seed": 3102,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "03｜惊恐的眼睛",
+     "duration_seconds": 5,
+     "generation_seconds": 5,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "Lily",
+      "Killian"
+     ],
+     "asset_keys": [
+      "room",
+      "alcove",
+      "lily",
+      "killian"
+     ],
+     "image_reference_keys": [
+      "alcove"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the room, and the character portraits define only the named people. Tight side-profile two-shot of heads and shoulders inside the dim alcove, both people centered in the middle third of the frame. Lily's eyes are wide with fear and fixed on Killian's face above his large right hand covering her mouth, his forearm and shoulder in the frame; Killian's face is a hand's width from hers, his eyes narrowed on her face, his jaw tight. Nobody else is in the frame. Warm dim light, the alcove softly blurred behind.",
+     "visual_zh": "特写：莉莉惊恐睁大的眼睛，基利安近在咫尺的眼睛。帘外有脚步声。",
+     "camera_zh": "0—5秒侧面近景，两人头肩居中，镜头固定。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 5,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady tight side-profile two-shot opens from the adopted first frame in [[asset:alcove]]: [[asset:lily]]'s eyes wide and fixed on [[asset:killian]]'s face above his right hand over her mouth; [[asset:killian]] a hand's width from her, his eyes narrowed on her face, his jaw tight. Her eyes shine and her chest rises fast. His eyes stay on her face, unhurried. Slow footsteps move across the carpet outside the drapes. Nobody speaks. The camera holds still.",
+       "visual_zh": "从开场图继续，侧面近景：莉莉睁大眼睛盯着基利安的脸，他的右手捂在她嘴上；基利安离她只有一掌宽，眼睛眯起看着她的脸，下颌收紧。她眼睛发亮，胸口起伏很快。他的目光不慌不忙地停在她脸上。帘外的地毯上传来缓慢的脚步声。无人说话。镜头固定。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "Slow, soft footsteps on carpet outside the drapes. The recording is completely free of voices: no speech, no humming, no sighs, no vocal sounds of any kind.",
+     "sound_zh": "帘外地毯上缓慢轻柔的脚步声。 录音里完全没有人声：没有说话、哼声、叹息或任何发声。",
+     "seed": 3103,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "04｜耳边的呼吸",
+     "duration_seconds": 6,
+     "generation_seconds": 6,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "Lily",
+      "Killian"
+     ],
+     "asset_keys": [
+      "room",
+      "alcove",
+      "lily",
+      "killian"
+     ],
+     "image_reference_keys": [
+      "alcove"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the room, and the character portraits define only the named people. Tight side-profile two-shot of heads and shoulders inside the dim alcove, both people centered in the middle third of the frame. Killian's head is lowered beside Lily's ear with his lips an inch from it, his right hand still over her mouth, his forearm in the frame; Lily's eyes are squeezed shut, tears on her lashes, her cheeks flushed. Nobody else is in the frame. Warm dim light, the alcove softly blurred behind.",
+     "visual_zh": "基利安低头贴近莉莉的耳边，莉莉闭紧眼睛，流下眼泪。（暗示，不露骨）",
+     "camera_zh": "0—6秒侧面近景，两人头肩居中，镜头固定。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 6,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady tight side-profile two-shot opens from the adopted first frame in [[asset:alcove]]: [[asset:killian]]'s head lowered beside [[asset:lily]]'s ear, his right hand over her mouth; [[asset:lily]]'s eyes squeezed shut, tears on her lashes. He lowers his face the last inch until his breath brushes her ear. A shudder runs through her whole body; her eyes squeeze tighter and a tear rolls down her cheek, her jaw tightening against his palm. He does not move. Nobody speaks. The camera holds still.",
+       "visual_zh": "从开场图继续，侧面近景：基利安的头低在莉莉耳边，右手捂着她的嘴；莉莉紧闭双眼，睫毛上有泪。他把脸再靠近最后一寸，呼吸拂过她的耳朵。她全身一颤，眼睛闭得更紧，一滴泪滑下脸颊，下颌在他掌心下绷紧。他一动不动。无人说话。镜头固定。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "Slow footsteps outside the drapes and a faint rustle of silk. The recording is completely free of voices: no speech, no humming, no sighs, no vocal sounds of any kind.",
+     "sound_zh": "帘外缓慢的脚步声和轻微的丝绸摩擦声。 录音里完全没有人声：没有说话、哼声、叹息或任何发声。",
+     "seed": 3104,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "05｜保罗起疑",
+     "duration_seconds": 6,
+     "generation_seconds": 6,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "Lily",
+      "Killian"
+     ],
+     "asset_keys": [
+      "room",
+      "alcove",
+      "lily",
+      "killian"
+     ],
+     "image_reference_keys": [
+      "alcove"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the room, and the character portraits define only the named people. Tight side-profile two-shot of heads and shoulders inside the dim alcove, both people centered in the middle third of the frame. Killian's head is lifted slightly from Lily's ear, his eyes on the reddened corner of her eye, his throat visible above his collar, his right hand still over her mouth; Lily's eyes are shut, a tear on her cheek, her shoulders shaking. Nobody else is in the frame. Warm dim light, the alcove softly blurred behind.",
+     "visual_zh": "基利安抬起一点头，看着莉莉发红的眼角，喉结滚动。帘外保罗起了疑心。",
+     "camera_zh": "0—6秒侧面近景，两人头肩居中，镜头固定。",
+     "dialogue": [
+      {
+       "speaker": "PaulOnScreen",
+       "text": "Weird. I swear I heard something.",
+       "start_seconds": 1.5,
+       "end_seconds": 4.55,
+       "language": "en"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 6,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady tight side-profile two-shot opens from the adopted first frame in [[asset:alcove]]: [[asset:killian]]'s head slightly lifted, his eyes on the reddened corner of [[asset:lily]]'s closed eye, his right hand over her mouth. His throat moves once as he swallows. A young man named Paul speaks from outside the drapes, muffled by the heavy fabric, sounding impatient; he is never visible. Her eyes stay shut and her shoulders shake. The camera holds still.",
+       "visual_zh": "从开场图继续，侧面近景：基利安的头微微抬起，眼睛看着莉莉紧闭的、发红的眼角，右手捂着她的嘴。他的喉结滚动了一下。保罗在帘外说话，声音被厚布隔得发闷，听起来不耐烦，他全程不出现。她始终闭着眼，肩膀在发抖。镜头固定。",
+       "dialogue_indices": [
+        0
+       ]
+      }
+     ],
+     "sound_en": "Soft rustle of heavy fabric. The man's voice outside is muffled by thick drapes. Voices stay close and clear.",
+     "sound_zh": "厚重衣料的轻微摩擦声。帘外男人的声音被厚布隔得发闷。人声近而清楚。",
+     "seed": 3105,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "06｜帘外的手影",
+     "duration_seconds": 5,
+     "generation_seconds": 5,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [],
+     "asset_keys": [
+      "alcove"
+     ],
+     "image_reference_keys": [
+      "alcove"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the room, and the character portraits define only the named people. Medium shot from inside the alcove looking at the closed heavy cream floor-length curtain, lit brightly from behind, the curtain centered in the middle third of the frame. On the curtain, the dark silhouette of a man's shoulder and arm, his hand raised toward the edge of the drape. Nobody else is in the frame. Warm dim light, the alcove softly blurred behind.",
+     "visual_zh": "从隔间里看帘子：帘子上出现保罗伸手的剪影。",
+     "camera_zh": "0—5秒帘子中景，镜头固定。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 5,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady medium shot opens from the adopted first frame in [[asset:alcove]]: the closed heavy cream curtain lit brightly from behind, the dark silhouette of a man's arm and shoulder on the fabric. The silhouetted hand reaches slowly toward the edge of the curtain and its fingers close on the fabric. Nobody speaks. The camera holds still.",
+       "visual_zh": "从开场图继续，中景：从隔间里看向紧闭的奶油色厚帘，帘后有强光，布上有一个男人手臂和肩膀的黑色剪影。剪影的手缓缓伸向帘子边缘，手指抓住了布。无人说话。镜头固定。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "The soft rasp of a hand brushing velvet, then a single footstep stopping. The recording is completely free of voices: no speech, no humming, no sighs, no vocal sounds of any kind.",
+     "sound_zh": "手掌擦过丝绒的轻响，然后一声脚步停住。 录音里完全没有人声：没有说话、哼声、叹息或任何发声。",
+     "seed": 3106,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "07｜拉开帘子",
+     "duration_seconds": 6,
+     "generation_seconds": 6,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "PaulOnScreen",
+      "Killian"
+     ],
+     "asset_keys": [
+      "alcove",
+      "paul",
+      "killian"
+     ],
+     "image_reference_keys": [
+      "alcove"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the room, and the character portraits define only the named people. Medium shot from outside the alcove, side-on, Paul centered in the middle third of the frame. Paul stands in profile in his navy blazer, frowning, his right hand gripping the edge of the closed heavy cream floor-length velvet curtain at shoulder height, his eyes on the curtain. Nobody else is in the frame. Warm dim light, the alcove softly blurred behind.",
+     "visual_zh": "保罗皱着眉抓住帘子，一把拉开，帘后站着衣冠楚楚的基利安，莉莉看不见。",
+     "camera_zh": "0—6秒侧面中景，镜头固定。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 6,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady medium shot opens from the adopted first frame in [[asset:alcove]]: [[asset:paul]] in profile, frowning, his right hand gripping the edge of the closed cream curtain at shoulder height. He sweeps the curtain aside along its ceiling track with one hard pull of his arm, and bright light falls into the alcove: [[asset:killian]] stands there alone, upright and composed in his black suit, his right fingers adjusting the cuff at his left wrist, his eyes on Paul's face. Paul freezes, his eyes widening. Nobody speaks. The camera holds still.",
+       "visual_zh": "从开场图继续，中景：保罗侧身、皱着眉，右手在肩高处抓着紧闭的奶油色厚帘的边缘。他用力一拉，把帘子沿顶轨拉到一边，亮光照进隔间：基利安一个人站在那里，穿着黑西装，笔挺从容，右手整理左手腕的袖口，眼睛看着保罗的脸。保罗僵住，眼睛越睁越大。无人说话。镜头固定。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "A sharp rasp of the curtain rings sliding along a metal track. The recording is completely free of voices: no speech, no humming, no sighs, no vocal sounds of any kind.",
+     "sound_zh": "窗帘环在金属轨道上猛地滑过的刺啦声。 录音里完全没有人声：没有说话、哼声、叹息或任何发声。",
+     "seed": 3107,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "08｜保罗吓一跳",
+     "duration_seconds": 6,
+     "generation_seconds": 6,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "PaulOnScreen"
+     ],
+     "asset_keys": [
+      "room",
+      "paul"
+     ],
+     "image_reference_keys": [
+      "room"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the room, and the character portraits define only the named people. Medium close-up of Paul alone, waist-up, in profile facing frame-right, centered in the middle third of the frame, in his navy blazer, his eyes wide and fixed on a man standing in front of him at frame-right, just outside the frame, his mouth slightly open. Nobody else is in the frame. Warm dim light, the alcove softly blurred behind.",
+     "visual_zh": "保罗倒退半步，结结巴巴地问基利安什么时候回来的。",
+     "camera_zh": "0—6秒保罗侧面中近景，镜头固定。",
+     "dialogue": [
+      {
+       "speaker": "PaulOnScreen",
+       "text": "Killian? When did you get back?",
+       "start_seconds": 1.2,
+       "end_seconds": 4.61,
+       "language": "en"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 6,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady medium close-up opens from the adopted first frame in [[asset:room]]: [[asset:paul]] in profile facing frame-right, his eyes wide and fixed on the man in front of him at frame-right, just outside the frame. He takes half a step back and speaks haltingly, his voice thin with shock. The camera holds still.",
+       "visual_zh": "从开场图继续，保罗中近景：侧脸朝右，眼睛睁大，盯着右边画面外站在他面前的男人。他向后退半步，结结巴巴地说话，声音因为震惊发虚。镜头固定。",
+       "dialogue_indices": [
+        0
+       ]
+      }
+     ],
+     "sound_en": "Quiet room tone and a faint brush of fabric. Voices stay close and clear.",
+     "sound_zh": "安静的房间底噪和轻微的衣料摩擦声。人声近而清楚。",
+     "seed": 3108,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "09｜你怎么在这里",
+     "duration_seconds": 6,
+     "generation_seconds": 6,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "PaulOnScreen",
+      "Killian"
+     ],
+     "asset_keys": [
+      "alcove",
+      "paul",
+      "killian"
+     ],
+     "image_reference_keys": [
+      "alcove"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the room, and the character portraits define only the named people. Wide-medium side-on two-shot, both people centered in the middle third of the frame. Paul stands at frame-left in profile in his navy blazer, half a step back, his eyes on Killian's face; Killian stands at frame-right in the opening of the alcove in his black three-piece suit, composed, his right fingers at his left cuff, his eyes on Paul's face, the cream curtain pulled fully to one side behind him and the dark space between the hanging gowns empty behind him. Both are fully visible from head to knees. Nobody else is in the frame. Warm dim light, the alcove softly blurred behind.",
+     "visual_zh": "保罗追问基利安为什么在莉莉的更衣室里。基利安不动声色。",
+     "camera_zh": "0—6秒侧面中景，两人居中，镜头固定。",
+     "dialogue": [
+      {
+       "speaker": "PaulOnScreen",
+       "text": "Why are you in Lily's fitting room?",
+       "start_seconds": 1.2,
+       "end_seconds": 4.93,
+       "language": "en"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 6,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady wide-medium side-on two-shot opens from the adopted first frame in [[asset:alcove]]: [[asset:paul]] at frame-left in profile, half a step back, his eyes on [[asset:killian]]'s face; [[asset:killian]] at frame-right in the opening of the alcove, composed, his right fingers at his left cuff, his eyes on Paul. Paul speaks, his voice rising with confusion. Killian does not move and does not answer. The camera holds still.",
+       "visual_zh": "从开场图继续，侧面中景：保罗在左边，侧身、后退半步，眼睛看着基利安的脸；基利安在右边，站在隔间口，从容，右手指尖碰着左手袖口，眼睛看着保罗。保罗说话，声音因为困惑而拔高。基利安不动，也不回答。镜头固定。",
+       "dialogue_indices": [
+        0
+       ]
+      }
+     ],
+     "sound_en": "Quiet room tone and a faint brush of fabric. Voices stay close and clear.",
+     "sound_zh": "安静的房间底噪和轻微的衣料摩擦声。人声近而清楚。",
+     "seed": 3109,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "10｜刚下飞机",
+     "duration_seconds": 5,
+     "generation_seconds": 5,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "Killian"
+     ],
+     "asset_keys": [
+      "alcove",
+      "killian"
+     ],
+     "image_reference_keys": [
+      "alcove"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the room, and the character portraits define only the named people. Medium shot of Killian alone, waist-up, in profile facing frame-left, centered in the middle third of the frame, composed in his black three-piece suit, his right hand finishing the adjustment of the cuff at his left wrist, his eyes lowered on a man standing in front of him at frame-left, just outside the frame, his face cold and unreadable, his lips pressed together. Behind him the dark alcove between the hanging gowns. Nobody else is in the frame. Warm dim light, the alcove softly blurred behind.",
+     "visual_zh": "基利安低头看着保罗，冷冷地回答。",
+     "camera_zh": "0—5秒基利安侧面中景，镜头固定。",
+     "dialogue": [
+      {
+       "speaker": "Killian",
+       "text": "Just landed.",
+       "start_seconds": 1.4,
+       "end_seconds": 2.45,
+       "language": "en"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 5,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady medium shot opens from the adopted first frame in [[asset:alcove]]: [[asset:killian]] in profile facing frame-left, finishing the adjustment of his cuff, his eyes lowered on the man in front of him at frame-left, just outside the frame. He speaks flatly and without hurry, his voice low and cold. His hands stay still. The camera holds still.",
+       "visual_zh": "从开场图继续，基利安中景：侧脸朝左，整理完袖口，目光低下去看着左边画面外站在他面前的男人。他平平淡淡、不慌不忙地开口，声音低而冷。手不再动。镜头固定。",
+       "dialogue_indices": [
+        0
+       ]
+      }
+     ],
+     "sound_en": "Quiet room tone and a faint brush of fabric. Voices stay close and clear.",
+     "sound_zh": "安静的房间底噪和轻微的衣料摩擦声。人声近而清楚。",
+     "seed": 3110,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "11｜来接我的未婚妻",
+     "duration_seconds": 6,
+     "generation_seconds": 6,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "Killian"
+     ],
+     "asset_keys": [
+      "alcove",
+      "killian"
+     ],
+     "image_reference_keys": [
+      "alcove"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the room, and the character portraits define only the named people. Medium shot of Killian alone, waist-up, in profile facing frame-left, centered in the middle third of the frame, in his black three-piece suit, his hands at his sides, his eyes lowered on a man standing in front of him at frame-left, just outside the frame, his face cold and unreadable, his jaw tight. Behind him the dark alcove between the hanging gowns. Nobody else is in the frame. Warm dim light, the alcove softly blurred behind.",
+     "visual_zh": "基利安居高临下地看着保罗，慢慢说出最后一句，眼角往自己身后的西装下摆扫了一眼。",
+     "camera_zh": "0—6秒基利安侧面中景，镜头固定。",
+     "dialogue": [
+      {
+       "speaker": "Killian",
+       "text": "Came to pick up my... fiancée.",
+       "start_seconds": 1.3,
+       "end_seconds": 4.85,
+       "language": "en"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 6,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady medium shot opens from the adopted first frame in [[asset:alcove]]: [[asset:killian]] in profile facing frame-left, his hands at his sides, his eyes on the man in front of him at frame-left, just outside the frame. He speaks slowly and quietly, and while he speaks his eyes flick once sideways toward the hem of his own jacket behind him, then return to the man at frame-left; his expression does not change. The camera holds still.",
+       "visual_zh": "从开场图继续，基利安中景：侧脸朝左，双手垂在身侧，目光看着左边画面外站在他面前的男人。他慢慢地、压低声音说话，说话时目光往自己身后的西装下摆扫了一下，又回到左边的男人身上；表情不变。镜头固定。",
+       "dialogue_indices": [
+        0
+       ]
+      }
+     ],
+     "sound_en": "Quiet room tone and a faint brush of fabric. Voices stay close and clear.",
+     "sound_zh": "安静的房间底噪和轻微的衣料摩擦声。人声近而清楚。",
+     "seed": 3111,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "12｜保罗错愕",
+     "duration_seconds": 5,
+     "generation_seconds": 5,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "PaulOnScreen"
+     ],
+     "asset_keys": [
+      "room",
+      "paul"
+     ],
+     "image_reference_keys": [
+      "room"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the room, and the character portraits define only the named people. Close-up of Paul's face alone, centered in the middle third of the frame, his brows raised and his mouth slightly open, his eyes wide and fixed on a man at frame-right, just outside the frame. Nobody else is in the frame. Warm dim light, the alcove softly blurred behind.",
+     "visual_zh": "保罗错愕的特写。（无台词，成片里在这里黑屏、接重音效）",
+     "camera_zh": "0—5秒保罗面部特写，镜头固定。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 5,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady close-up opens from the adopted first frame in [[asset:room]]: [[asset:paul]]'s face, his brows raised, his mouth slightly open, his eyes wide and fixed on the man at frame-right, just outside the frame. His eyes widen further and his face loses its colour. He does not speak. The camera holds still.",
+       "visual_zh": "从开场图继续，保罗面部特写：眉毛抬起，嘴微张，睁大眼睛盯着右边画面外的男人。他的眼睛睁得更大，脸色发白。他不说话。镜头固定。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "Tense, near-silent room tone. The recording is completely free of voices: no speech, no humming, no sighs, no vocal sounds of any kind.",
+     "sound_zh": "紧绷、几乎无声的房间底噪。 录音里完全没有人声：没有说话、哼声、叹息或任何发声。",
+     "seed": 3112,
+     "dialogue_language": "en"
+    }
+   ],
+   "dialogue_language": "en"
+  }
+ ]
+}
