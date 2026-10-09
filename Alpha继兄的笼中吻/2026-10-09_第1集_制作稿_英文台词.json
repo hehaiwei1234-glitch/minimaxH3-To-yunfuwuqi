@@ -2,7 +2,7 @@
  "schema": "h3-production-draft",
  "version": 1,
  "title": "Alpha继兄的笼中吻｜第1集｜禁忌的更衣室（精修版）",
- "dialogue_language": "zh",
+ "dialogue_language": "en",
  "style": "Photorealistic live-action romantic thriller with a glossy, high-end drama look. Warm tungsten key light with a soft cool fill, shallow depth of field, rich natural skin texture with visible pores, luxurious cream-and-gold interiors, restrained cinematic color grading, and an ultra-wide 8:3 cinemascope frame in which the people are placed deliberately and the room is visible around them.",
  "assets": [
   {
@@ -54,8 +54,8 @@
     "lily"
    ],
    "voice_description": {
-    "en": "A young adult female voice, light and slightly breathy, speaking clear Mandarin. She keeps her volume low because she must not be overheard, but every word is fully voiced and audible, tight and trembling with fear, anger and humiliation.",
-    "zh": "年轻成年女声，轻而略带气息，普通话清楚。因为不能被人听见而压低音量，但每个字都正常发声、清晰可辨，声音紧绷颤抖，带着恐惧、愤怒和屈辱。"
+    "en": "A young adult female voice, light and slightly breathy, speaking clear American English. She keeps her volume low because she must not be overheard, but every word is fully voiced and audible, tight and trembling with fear, anger and humiliation.",
+    "zh": "年轻成年女声，轻而略带气息，说清楚的美式英语。因为不能被人听见而压低音量，但每个字都正常发声、清晰可辨，声音紧绷颤抖，带着恐惧、愤怒和屈辱。"
    }
   },
   "Killian": {
@@ -63,15 +63,15 @@
     "killian"
    ],
    "voice_description": {
-    "en": "A mature adult male voice in a deep chest register, low and unhurried with a husky edge, speaking clear Mandarin in a quiet, controlled, menacing tone. He never shouts, and every word is fully voiced and audible.",
-    "zh": "成熟成年男声，深沉的胸腔音，低缓不急，带沙哑质感，普通话清楚。语气安静、克制、带压迫感，从不喊叫，每个字都正常发声、清晰可辨。"
+    "en": "A mature adult male voice in a deep chest register, low and unhurried with a husky edge, speaking clear American English in a quiet, controlled, menacing tone. He never shouts, and every word is fully voiced and audible.",
+    "zh": "成熟成年男声，深沉的胸腔音，低缓不急，带沙哑质感，说清楚的美式英语。语气安静、克制、带压迫感，从不喊叫，每个字都正常发声、清晰可辨。"
    }
   },
   "Paul": {
    "image_keys": [],
    "voice_description": {
-    "en": "A young adult male voice, light, casual and slightly smug, speaking clear Mandarin at ordinary conversational volume. He is outside a closed door, so his voice reaches the room muffled by the wood.",
-    "zh": "年轻成年男声，轻松随意、略带轻浮，普通话清楚，正常交谈音量。他在紧闭的门外，声音隔着木门略显闷。"
+    "en": "A young adult male voice, light, casual and slightly smug, speaking clear American English at ordinary conversational volume. He is outside a closed door, so his voice reaches the room muffled by the wood.",
+    "zh": "年轻成年男声，轻松随意、略带轻浮，说清楚的美式英语，正常交谈音量。他在紧闭的门外，声音隔着木门略显闷。"
    }
   }
  },
@@ -79,7 +79,7 @@
   {
    "title": "第1集｜禁忌的更衣室",
    "summary": "高端婚纱店VIP更衣室里，基利安当着门外未婚夫的面逼近莉莉，敲门声、门把手转动，最后一秒门被推开。",
-   "script": "拉链声，基利安站在莉莉身后，一把拉开婚纱拉链，莉莉惊呼回头。\nLily：“啊！”\n五年没见，基利安把莉莉按在墙上，埋在她颈边深吸一口气，低声说话。\nKillian：“五年没见，我的好妹妹……”\n这么让我发疯，基利安贴在莉莉颈边，低声说出第二句。\nKillian：“你身上的味道，还是这么让我发疯。”\n你放开我，莉莉抬头看着基利安，压低声音怒斥，右手抵着他的胸口。\nLily：“基利安！你疯了吗？你放开我！”\n我是你妹妹，莉莉含着泪说“我是你妹妹，而且……”，说不下去。\nLily：“我是你妹妹，而且……”\n马上要嫁给保罗，莉莉含着泪说出“我马上就要嫁给保罗了”，基利安听到名字，整个人一顿。\nLily：“而且我马上就要嫁给保罗了！”\n没有血缘的妹妹，基利安冷冷地看着莉莉，反问“没有任何血缘关系的妹妹”。\nKillian：“妹妹？没有任何血缘关系的妹妹？”\n颈侧，基利安搂紧她的腰，头低到她颈边；莉莉身体一僵、闭眼偏头。（无台词）\n他配不上你，基利安抬起头，冷冷地说“保罗配不上你”；莉莉闭眼皱眉，手按着颈侧。\nKillian：“至于保罗那个废物……他配不上你。”\n敲门声，门上响起三下敲门声，两人同时僵住，转头看向门。（无台词）\n门外的保罗，紧闭的木门近景，保罗在门外说话，他全程不出现在画面里。\nPaul：“莉莉？宝贝你换好了吗？”\n门把手，黄铜门把手被缓缓拧动，保罗在门外说“我进来了哦”。\nPaul：“我进来了哦？”\n哀求，莉莉睁大眼睛看着基利安，哀求地快速摇头。（无台词）\n猜猜看，基利安捏住莉莉的下巴逼她看着自己，低声说“猜猜看，如果他现在推开门”。\nKillian：“猜猜看，如果他现在推开门，”\n纯洁的未婚妻，基利安继续低语“看到他纯洁的未婚妻”，莉莉流着泪看着他。\nKillian：“看到他纯洁的未婚妻，”\n她的哥哥，基利安的脸逼近到几乎碰到她的嘴唇，说出没说完的“她的哥哥……”。\nKillian：“正在被她的哥哥……”\n门被推开，门被缓缓推开一道缝，走廊的冷光涌进来。（无台词，成片里在这里黑屏、接重音效）",
+   "script": "拉链声，基利安站在莉莉身后，一把拉开婚纱拉链，莉莉惊呼回头。\nLily：“Ah!”\n五年没见，基利安把莉莉按在墙上，埋在她颈边深吸一口气，低声说话。\nKillian：“Five years, my dear sister...”\n这么让我发疯，基利安贴在莉莉颈边，低声说出第二句。\nKillian：“Your scent still drives me insane.”\n你放开我，莉莉抬头看着基利安，压低声音怒斥，右手抵着他的胸口。\nLily：“Killian! Are you crazy? Let go!”\n我是你妹妹，莉莉含着泪说话，说到一半说不下去。\nLily：“I'm your sister, and...”\n马上要嫁给保罗，莉莉含着泪继续说话，基利安听到那个名字，整个人一顿。\nLily：“And I'm about to marry Paul!”\n没有血缘的妹妹，基利安冷冷地看着莉莉，低声反问。\nKillian：“Sister? A sister without blood ties?”\n颈侧，基利安搂紧她的腰，头低到她颈边；莉莉身体一僵、闭眼偏头。（无台词）\n他配不上你，基利安抬起头，冷冷地开口；莉莉闭眼皱眉，手按着颈侧。\nKillian：“Paul? That loser doesn't deserve you.”\n敲门声，门上响起三下敲门声，两人同时僵住，转头看向门。（无台词）\n门外的保罗，紧闭的木门近景，保罗在门外说话，他全程不出现在画面里。\nPaul：“Lily? Baby, are you done changing?”\n门把手，黄铜门把手被缓缓拧动，保罗在门外说话。\nPaul：“I'm coming in, okay?”\n哀求，莉莉睁大眼睛看着基利安，哀求地快速摇头。（无台词）\n猜猜看，基利安捏住莉莉的下巴逼她看着自己，低声开口。\nKillian：“Guess what happens if he walks in,”\n纯洁的未婚妻，基利安继续低语，莉莉流着泪看着他。\nKillian：“and sees his pure fiancée,”\n她的哥哥，基利安的脸逼近到几乎碰到她的嘴唇，话说到一半停住。\nKillian：“with her own brother...”\n门被推开，门被缓缓推开一道缝，走廊的冷光涌进来。（无台词，成片里在这里黑屏、接重音效）",
    "segments": [
     {
      "title": "01｜拉链声",
@@ -106,10 +106,10 @@
      "dialogue": [
       {
        "speaker": "Lily",
-       "text": "啊！",
+       "text": "Ah!",
        "start_seconds": 1.4,
-       "end_seconds": 1.88,
-       "language": "zh"
+       "end_seconds": 2.13,
+       "language": "en"
       }
      ],
      "shots": [
@@ -126,7 +126,7 @@
      "sound_en": "A sharp, clear zipper rasp from top to bottom. Quiet room tone and a faint brush of fabric. Voices stay close and clear.",
      "sound_zh": "一声清脆的拉链声，从上拉到下。 安静的房间底噪和轻微的衣料摩擦声。人声近而清楚。",
      "seed": 3001,
-     "dialogue_language": "zh"
+     "dialogue_language": "en"
     },
     {
      "title": "02｜五年没见",
@@ -153,10 +153,10 @@
      "dialogue": [
       {
        "speaker": "Killian",
-       "text": "五年没见，我的好妹妹……",
+       "text": "Five years, my dear sister...",
        "start_seconds": 1.5,
-       "end_seconds": 3.92,
-       "language": "zh"
+       "end_seconds": 4.17,
+       "language": "en"
       }
      ],
      "shots": [
@@ -173,7 +173,7 @@
      "sound_en": "Quiet room tone and a faint brush of fabric. Voices stay close and clear.",
      "sound_zh": "安静的房间底噪和轻微的衣料摩擦声。人声近而清楚。",
      "seed": 3002,
-     "dialogue_language": "zh"
+     "dialogue_language": "en"
     },
     {
      "title": "03｜这么让我发疯",
@@ -200,10 +200,10 @@
      "dialogue": [
       {
        "speaker": "Killian",
-       "text": "你身上的味道，还是这么让我发疯。",
+       "text": "Your scent still drives me insane.",
        "start_seconds": 1.8,
-       "end_seconds": 5.65,
-       "language": "zh"
+       "end_seconds": 4.85,
+       "language": "en"
       }
      ],
      "shots": [
@@ -220,7 +220,7 @@
      "sound_en": "Quiet room tone and a faint brush of fabric. Voices stay close and clear.",
      "sound_zh": "安静的房间底噪和轻微的衣料摩擦声。人声近而清楚。",
      "seed": 3003,
-     "dialogue_language": "zh"
+     "dialogue_language": "en"
     },
     {
      "title": "04｜你放开我",
@@ -247,10 +247,10 @@
      "dialogue": [
       {
        "speaker": "Lily",
-       "text": "基利安！你疯了吗？你放开我！",
+       "text": "Killian! Are you crazy? Let go!",
        "start_seconds": 1.5,
-       "end_seconds": 4.84,
-       "language": "zh"
+       "end_seconds": 5.09,
+       "language": "en"
       }
      ],
      "shots": [
@@ -267,7 +267,7 @@
      "sound_en": "Quiet room tone and a faint brush of fabric. Voices stay close and clear.",
      "sound_zh": "安静的房间底噪和轻微的衣料摩擦声。人声近而清楚。",
      "seed": 3004,
-     "dialogue_language": "zh"
+     "dialogue_language": "en"
     },
     {
      "title": "05｜我是你妹妹",
@@ -289,15 +289,15 @@
       "room"
      ],
      "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the room, and the character portraits define only the named people. Wide-medium side-on three-quarter two-shot, both people centered in the middle third of the frame. Lily stands with her back flat against the bare cream panelled wall; Killian stands facing her, very close, a head and a half taller, his right hand holding her left wrist against the wall at shoulder height and his left forearm braced on the wall beside her head. Lily's head is tilted up and her eyes are on Killian's face, her lips trembling; her right hand rests flat on his chest. Killian looks down at her face, his expression hard. Both are fully visible from head to knees. Nobody else is in the frame. Warm luxurious light, the fitting room softly blurred behind.",
-     "visual_zh": "莉莉含着泪说“我是你妹妹，而且……”，说不下去。",
+     "visual_zh": "莉莉含着泪说话，说到一半说不下去。",
      "camera_zh": "0—6秒侧面中景，两人居中，镜头固定。",
      "dialogue": [
       {
        "speaker": "Lily",
-       "text": "我是你妹妹，而且……",
+       "text": "I'm your sister, and...",
        "start_seconds": 1.5,
-       "end_seconds": 3.42,
-       "language": "zh"
+       "end_seconds": 3.67,
+       "language": "en"
       }
      ],
      "shots": [
@@ -314,7 +314,7 @@
      "sound_en": "Quiet room tone and a faint brush of fabric. Voices stay close and clear.",
      "sound_zh": "安静的房间底噪和轻微的衣料摩擦声。人声近而清楚。",
      "seed": 3005,
-     "dialogue_language": "zh"
+     "dialogue_language": "en"
     },
     {
      "title": "06｜马上要嫁给保罗",
@@ -336,15 +336,15 @@
       "room"
      ],
      "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the room, and the character portraits define only the named people. Wide-medium side-on three-quarter two-shot, both people centered in the middle third of the frame. Lily stands with her back flat against the bare cream panelled wall; Killian stands facing her, very close, a head and a half taller, his right hand holding her left wrist against the wall at shoulder height and his left forearm braced on the wall beside her head. Lily's head is tilted up and her eyes are on Killian's face, tears on her lashes; her right hand rests flat on his chest. Killian looks down at her face, his expression hard. Both are fully visible from head to knees. Nobody else is in the frame. Warm luxurious light, the fitting room softly blurred behind.",
-     "visual_zh": "莉莉含着泪说出“我马上就要嫁给保罗了”，基利安听到名字，整个人一顿。",
+     "visual_zh": "莉莉含着泪继续说话，基利安听到那个名字，整个人一顿。",
      "camera_zh": "0—7秒侧面中景，两人居中，镜头固定。",
      "dialogue": [
       {
        "speaker": "Lily",
-       "text": "而且我马上就要嫁给保罗了！",
+       "text": "And I'm about to marry Paul!",
        "start_seconds": 1.5,
        "end_seconds": 4.73,
-       "language": "zh"
+       "language": "en"
       }
      ],
      "shots": [
@@ -361,7 +361,7 @@
      "sound_en": "Quiet room tone and a faint brush of fabric. Voices stay close and clear.",
      "sound_zh": "安静的房间底噪和轻微的衣料摩擦声。人声近而清楚。",
      "seed": 3006,
-     "dialogue_language": "zh"
+     "dialogue_language": "en"
     },
     {
      "title": "07｜没有血缘的妹妹",
@@ -383,15 +383,15 @@
       "room"
      ],
      "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the room, and the character portraits define only the named people. Wide-medium side-on three-quarter two-shot, both people centered in the middle third of the frame. Lily stands with her back flat against the bare cream panelled wall; Killian stands facing her, very close, a head and a half taller, his right hand holding her left wrist against the wall at shoulder height and his left forearm braced on the wall beside her head. Killian's head is lifted and he looks down into Lily's face, his jaw tight, his irises edged with a faint amber-gold glow. Lily looks up at him, afraid, her lips pressed together. Both are fully visible from head to knees. Nobody else is in the frame. Warm luxurious light, the fitting room softly blurred behind.",
-     "visual_zh": "基利安冷冷地看着莉莉，反问“没有任何血缘关系的妹妹”。",
+     "visual_zh": "基利安冷冷地看着莉莉，低声反问。",
      "camera_zh": "0—7秒侧面中景，两人居中，镜头固定。",
      "dialogue": [
       {
        "speaker": "Killian",
-       "text": "妹妹？没有任何血缘关系的妹妹？",
+       "text": "Sister? A sister without blood ties?",
        "start_seconds": 1.8,
-       "end_seconds": 5.46,
-       "language": "zh"
+       "end_seconds": 5.21,
+       "language": "en"
       }
      ],
      "shots": [
@@ -408,7 +408,7 @@
      "sound_en": "Quiet room tone and a faint brush of fabric. Voices stay close and clear.",
      "sound_zh": "安静的房间底噪和轻微的衣料摩擦声。人声近而清楚。",
      "seed": 3007,
-     "dialogue_language": "zh"
+     "dialogue_language": "en"
     },
     {
      "title": "08｜颈侧",
@@ -445,7 +445,7 @@
      "sound_en": "Only the faint rustle of silk and quiet room tone. The recording is completely free of voices: no speech, no humming, no sighs, no vocal sounds of any kind.",
      "sound_zh": "只有丝绸的轻微摩擦声和安静的房间底噪。 录音里完全没有人声：没有说话、哼声、叹息或任何发声。",
      "seed": 3008,
-     "dialogue_language": "zh"
+     "dialogue_language": "en"
     },
     {
      "title": "09｜他配不上你",
@@ -467,15 +467,15 @@
       "room"
      ],
      "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the room, and the character portraits define only the named people. Wide-medium side-on three-quarter two-shot, both people centered in the middle third of the frame. Lily stands with her back flat against the bare cream panelled wall, her eyes shut and wincing, the fingertips of her right hand pressed to the side of her neck; Killian stands facing her, very close, his head lifted from her neck and looking down at her face, his irises edged with a faint amber-gold glow, his right hand at her waist and his left forearm braced on the wall beside her head. Both are fully visible from head to knees. Nobody else is in the frame. Warm luxurious light, the fitting room softly blurred behind.",
-     "visual_zh": "基利安抬起头，冷冷地说“保罗配不上你”；莉莉闭眼皱眉，手按着颈侧。",
+     "visual_zh": "基利安抬起头，冷冷地开口；莉莉闭眼皱眉，手按着颈侧。",
      "camera_zh": "0—7秒侧面中景，两人居中，镜头固定。",
      "dialogue": [
       {
        "speaker": "Killian",
-       "text": "至于保罗那个废物……他配不上你。",
+       "text": "Paul? That loser doesn't deserve you.",
        "start_seconds": 1.8,
-       "end_seconds": 5.28,
-       "language": "zh"
+       "end_seconds": 5.03,
+       "language": "en"
       }
      ],
      "shots": [
@@ -492,7 +492,7 @@
      "sound_en": "Quiet room tone and a faint brush of fabric. Voices stay close and clear.",
      "sound_zh": "安静的房间底噪和轻微的衣料摩擦声。人声近而清楚。",
      "seed": 3009,
-     "dialogue_language": "zh"
+     "dialogue_language": "en"
     },
     {
      "title": "10｜敲门声",
@@ -529,7 +529,7 @@
      "sound_en": "Three sharp knocks on a wooden door, then quiet room tone. The recording is completely free of voices: no speech, no humming, no sighs, no vocal sounds of any kind.",
      "sound_zh": "三下清脆的敲门声，随后是安静的房间底噪。 录音里完全没有人声：没有说话、哼声、叹息或任何发声。",
      "seed": 3010,
-     "dialogue_language": "zh"
+     "dialogue_language": "en"
     },
     {
      "title": "11｜门外的保罗",
@@ -551,10 +551,10 @@
      "dialogue": [
       {
        "speaker": "Paul",
-       "text": "莉莉？宝贝你换好了吗？",
+       "text": "Lily? Baby, are you done changing?",
        "start_seconds": 1.2,
-       "end_seconds": 3.86,
-       "language": "zh"
+       "end_seconds": 4.73,
+       "language": "en"
       }
      ],
      "shots": [
@@ -571,7 +571,7 @@
      "sound_en": "A muffled young male voice through the wooden door, with quiet room tone.",
      "sound_zh": "隔着木门的闷闷男声，底下是安静的房间底噪。",
      "seed": 3011,
-     "dialogue_language": "zh"
+     "dialogue_language": "en"
     },
     {
      "title": "12｜门把手",
@@ -588,15 +588,15 @@
       "room"
      ],
      "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the room, and the character portraits define only the named people. Close-up of the brass door handle on the heavy dark-wood door, seen from inside the room, the handle centered in the middle third of the frame. Nobody is in the frame. Warm luxurious light, the fitting room softly blurred behind.",
-     "visual_zh": "黄铜门把手被缓缓拧动，保罗在门外说“我进来了哦”。",
+     "visual_zh": "黄铜门把手被缓缓拧动，保罗在门外说话。",
      "camera_zh": "0—6秒门把手近景，镜头固定。",
      "dialogue": [
       {
        "speaker": "Paul",
-       "text": "我进来了哦？",
+       "text": "I'm coming in, okay?",
        "start_seconds": 1.2,
-       "end_seconds": 2.68,
-       "language": "zh"
+       "end_seconds": 3.55,
+       "language": "en"
       }
      ],
      "shots": [
@@ -613,7 +613,7 @@
      "sound_en": "A muffled young male voice through the wooden door, then a loud, magnified metallic click as the handle turns.",
      "sound_zh": "隔着木门的闷闷男声，随后是门把手转动时被放大的金属咔哒声。",
      "seed": 3012,
-     "dialogue_language": "zh"
+     "dialogue_language": "en"
     },
     {
      "title": "13｜哀求",
@@ -650,7 +650,7 @@
      "sound_en": "Quiet room tone and a faint brush of silk. The recording is completely free of voices: no speech, no humming, no sighs, no vocal sounds of any kind.",
      "sound_zh": "安静的房间底噪和轻微的丝绸摩擦声。 录音里完全没有人声：没有说话、哼声、叹息或任何发声。",
      "seed": 3013,
-     "dialogue_language": "zh"
+     "dialogue_language": "en"
     },
     {
      "title": "14｜猜猜看",
@@ -672,15 +672,15 @@
       "room"
      ],
      "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the room, and the character portraits define only the named people. Medium two-shot, waist-up, both people centered in the middle third of the frame. Lily stands with her back flat against the bare cream panelled wall; Killian stands facing her, very close, his right hand under her chin tilting her face up toward his, his left forearm braced on the wall beside her head. Their faces are about a hand's width apart. Her eyes are locked on his. Nobody else is in the frame. Warm luxurious light, the fitting room softly blurred behind.",
-     "visual_zh": "基利安捏住莉莉的下巴逼她看着自己，低声说“猜猜看，如果他现在推开门”。",
+     "visual_zh": "基利安捏住莉莉的下巴逼她看着自己，低声开口。",
      "camera_zh": "0—7秒侧面中景，两人居中，镜头固定。",
      "dialogue": [
       {
        "speaker": "Killian",
-       "text": "猜猜看，如果他现在推开门，",
+       "text": "Guess what happens if he walks in,",
        "start_seconds": 1.8,
-       "end_seconds": 4.84,
-       "language": "zh"
+       "end_seconds": 5.47,
+       "language": "en"
       }
      ],
      "shots": [
@@ -697,7 +697,7 @@
      "sound_en": "Quiet room tone and a faint brush of fabric. Voices stay close and clear.",
      "sound_zh": "安静的房间底噪和轻微的衣料摩擦声。人声近而清楚。",
      "seed": 3014,
-     "dialogue_language": "zh"
+     "dialogue_language": "en"
     },
     {
      "title": "15｜纯洁的未婚妻",
@@ -719,15 +719,15 @@
       "room"
      ],
      "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the room, and the character portraits define only the named people. Medium two-shot, waist-up, both people centered in the middle third of the frame. Lily stands with her back flat against the bare cream panelled wall; Killian stands facing her, very close, his right hand under her chin holding her face toward his, his left forearm braced on the wall beside her head. Their faces are a short hand's width apart. A tear shines on her cheek and her eyes are locked on his. Nobody else is in the frame. Warm luxurious light, the fitting room softly blurred behind.",
-     "visual_zh": "基利安继续低语“看到他纯洁的未婚妻”，莉莉流着泪看着他。",
+     "visual_zh": "基利安继续低语，莉莉流着泪看着他。",
      "camera_zh": "0—6秒侧面中景，两人居中，镜头固定。",
      "dialogue": [
       {
        "speaker": "Killian",
-       "text": "看到他纯洁的未婚妻，",
+       "text": "and sees his pure fiancée,",
        "start_seconds": 1.5,
-       "end_seconds": 3.92,
-       "language": "zh"
+       "end_seconds": 4.67,
+       "language": "en"
       }
      ],
      "shots": [
@@ -744,7 +744,7 @@
      "sound_en": "Quiet room tone and a faint brush of fabric. Voices stay close and clear.",
      "sound_zh": "安静的房间底噪和轻微的衣料摩擦声。人声近而清楚。",
      "seed": 3015,
-     "dialogue_language": "zh"
+     "dialogue_language": "en"
     },
     {
      "title": "16｜她的哥哥",
@@ -766,15 +766,15 @@
       "room"
      ],
      "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the room, and the character portraits define only the named people. Medium two-shot, waist-up, both people centered in the middle third of the frame. Lily stands with her back flat against the bare cream panelled wall; Killian stands facing her, very close, his right hand under her chin holding her face toward his, his left forearm braced on the wall beside her head. Their faces are a short hand's width apart. Her eyes are locked on his. Nobody else is in the frame. Warm luxurious light, the fitting room softly blurred behind.",
-     "visual_zh": "基利安的脸逼近到几乎碰到她的嘴唇，说出没说完的“她的哥哥……”。",
+     "visual_zh": "基利安的脸逼近到几乎碰到她的嘴唇，话说到一半停住。",
      "camera_zh": "0—6秒侧面中景，两人居中，镜头固定。",
      "dialogue": [
       {
        "speaker": "Killian",
-       "text": "正在被她的哥哥……",
+       "text": "with her own brother...",
        "start_seconds": 1.5,
-       "end_seconds": 3.3,
-       "language": "zh"
+       "end_seconds": 3.55,
+       "language": "en"
       }
      ],
      "shots": [
@@ -791,7 +791,7 @@
      "sound_en": "Quiet room tone and a faint brush of fabric. Voices stay close and clear.",
      "sound_zh": "安静的房间底噪和轻微的衣料摩擦声。人声近而清楚。",
      "seed": 3016,
-     "dialogue_language": "zh"
+     "dialogue_language": "en"
     },
     {
      "title": "17｜门被推开",
@@ -823,10 +823,10 @@
      "sound_en": "A long, low wooden creak of a door swinging open. The recording is completely free of voices: no speech, no humming, no sighs, no vocal sounds of any kind.",
      "sound_zh": "门被推开时长而低的木头吱呀声。 录音里完全没有人声：没有说话、哼声、叹息或任何发声。",
      "seed": 3017,
-     "dialogue_language": "zh"
+     "dialogue_language": "en"
     }
    ],
-   "dialogue_language": "zh"
+   "dialogue_language": "en"
   }
  ]
 }
