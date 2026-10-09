@@ -1,7 +1,7 @@
 {
  "schema": "h3-production-draft",
  "version": 1,
- "title": "Alpha继兄的笼中吻｜第5集｜信息素失控",
+ "title": "Alpha继兄的笼中吻｜第2集｜门后的狂想",
  "dialogue_language": "en",
  "style": "Photorealistic live-action romantic thriller with a glossy, high-end drama look. Warm tungsten key light with a soft cool fill, shallow depth of field, rich natural skin texture with visible pores, luxurious cream-and-gold interiors, restrained cinematic color grading, and an ultra-wide 8:3 cinemascope frame in which the people are placed deliberately and the room is visible around them.",
  "assets": [
@@ -141,11 +141,11 @@
    "role": "scene",
    "label": "庄园主卧",
    "description": {
-    "en": "The master bedroom of a dark luxurious mansion: a huge dark-wood bed with charcoal-grey linen against the left wall, a tall single dark-wood door with a brass handle in the right wall, floor-to-ceiling windows with heavy dark curtains at the back, a dark rug, bedside lamps giving a low amber light, and a small bar cart with crystal glasses near the door. The reference fixes the layout and decor, not any people.",
-    "zh": "阴暗奢华的庄园主卧：左墙边是一张巨大的深色实木床，配炭灰色床品；右墙有一扇带黄铜把手的高大单扇深色木门；后面是落地窗和厚重的深色窗帘；深色地毯，床头灯发出低低的琥珀色光；门边有一个放着水晶杯的小酒车。参考图固定布局与陈设，不带入任何人物。"
+    "en": "The master bedroom of a dark luxurious mansion: a huge dark-wood bed with charcoal-grey linen against the left wall, a tall single dark-wood door with a brass handle in the right wall, floor-to-ceiling windows with heavy dark curtains at the back, a dark rug, bedside lamps giving a low amber light, and a small bar cart with crystal glasses near the door. The reference fixes the layout and decor.",
+    "zh": "阴暗奢华的庄园主卧：左墙边是一张巨大的深色实木床，配炭灰色床品；右墙有一扇带黄铜把手的高大单扇深色木门；后面是落地窗和厚重的深色窗帘；深色地毯，床头灯发出低低的琥珀色光；门边有一个放着水晶杯的小酒车。参考图固定布局与陈设。"
    },
    "generate": {
-    "image_prompt": "A photorealistic wide shot of an empty master bedroom of a dark luxurious mansion: a huge dark-wood bed with charcoal-grey linen against the left wall, a tall single dark-wood door with a brass handle in the right wall, floor-to-ceiling windows with heavy dark curtains at the back, a dark rug, bedside lamps giving a low amber light, a small bar cart with crystal glasses near the door. No people.",
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of the master bedroom of a dark luxurious mansion: a huge dark-wood bed with charcoal-grey linen against the left wall, a tall single dark-wood door with a brass handle in the right wall, floor-to-ceiling windows with heavy dark curtains at the back, a dark rug, bedside lamps giving a low amber light, a small bar cart with crystal glasses near the door. The frame holds the bed, the door, the windows and the bar cart.",
     "reference_keys": []
    }
   },
@@ -155,11 +155,11 @@
    "role": "character",
    "label": "莉莉（宽大男士衬衫）",
    "description": {
-    "en": "Lily, the same adult woman in her mid-twenties as in the reference, with long wavy chestnut-brown hair damp and loose around her shoulders, fair skin and large hazel-green eyes, no makeup, wearing an oversized white men's cotton dress shirt that falls to mid-thigh with the sleeves too long, buttoned to the collarbone. The portrait fixes her identity and clothes, not staging.",
-    "zh": "莉莉，和参考图是同一个二十五岁左右的成年女性，栗棕色长卷发半湿地披在肩上，白皙皮肤、浅褐绿色大眼睛，没化妆，穿一件宽大的白色男士棉质衬衫，下摆到大腿中部，袖子太长，扣子扣到锁骨。人物图固定身份与衣服，不固定站位。"
+    "en": "Lily, the same adult woman in her mid-twenties as in the reference, with long wavy chestnut-brown hair damp and loose around her shoulders, fair skin and large hazel-green eyes, a bare face, wearing an oversized white men's cotton dress shirt that falls to mid-thigh with the sleeves too long, buttoned to the collarbone. The portrait fixes her identity and clothes, not staging.",
+    "zh": "莉莉，和参考图是同一个二十五岁左右的成年女性，栗棕色长卷发半湿地披在肩上，白皙皮肤、浅褐绿色大眼睛，素颜，穿一件宽大的白色男士棉质衬衫，下摆到大腿中部，袖子太长，扣子扣到锁骨。人物图固定身份与衣服，不固定站位。"
    },
    "generate": {
-    "image_prompt": "A photorealistic half-body portrait of the same woman as in the reference image, long wavy chestnut-brown hair damp and loose around her shoulders, no makeup, wearing an oversized white men's cotton dress shirt buttoned to the collarbone with sleeves too long. She faces the camera with a nervous expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "image_prompt": "A photorealistic half-body portrait of the same woman as in the reference image, long wavy chestnut-brown hair damp and loose around her shoulders, a bare face, wearing an oversized white men's cotton dress shirt buttoned to the collarbone with sleeves too long. She faces the camera with a nervous expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
     "reference_keys": [
      "lily"
     ]
@@ -171,11 +171,11 @@
    "role": "character",
    "label": "基利安（失控）",
    "description": {
-    "en": "Killian, the same very tall, broad-shouldered adult man in his early thirties as in the reference, with short black hair, a sharp jawline and light stubble, wearing a black silk robe tied at the waist, his eyes now glowing a dark gold, with slightly elongated sharp canine teeth and dark claw-like nails. The portrait fixes his identity, clothes and features, not staging.",
-    "zh": "基利安，和参考图是同一个三十出头、身材极高、肩膀宽阔的成年男性，黑色短发，下颌线锋利，有浅胡茬，穿黑色真丝睡袍、腰间系带，这次眼睛发出暗金色的光，犬齿略长而尖，指甲像深色的利爪。人物图固定身份、衣服和特征，不固定站位。"
+    "en": "Killian, the same very tall, broad-shouldered adult man in his early thirties as in the reference, with short black hair, a sharp jawline and light stubble, wearing a black silk robe tied at the waist, his eyes glowing a dark gold, with sharp canine teeth and dark claw-like nails. The portrait fixes his identity, clothes and features, not staging.",
+    "zh": "基利安，和参考图是同一个三十出头、身材极高、肩膀宽阔的成年男性，黑色短发，下颌线锋利，有浅胡茬，穿黑色真丝睡袍、腰间系带，这次眼睛发出暗金色的光，犬齿尖利，指甲像深色的利爪。人物图固定身份、衣服和特征，不固定站位。"
    },
    "generate": {
-    "image_prompt": "A photorealistic half-body portrait of the same man as in the reference image, short black hair, sharp jawline, light stubble, wearing a black silk robe tied at the waist, his eyes glowing a dark gold, slightly elongated sharp canine teeth just visible, dark claw-like nails. He faces the camera with an intense, barely restrained expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "image_prompt": "A photorealistic half-body portrait of the same man as in the reference image, short black hair, sharp jawline, light stubble, wearing a black silk robe tied at the waist, his eyes glowing a dark gold, sharp canine teeth just visible, dark claw-like nails. He faces the camera with an intense, barely restrained expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
     "reference_keys": [
      "killian"
     ]
@@ -267,7 +267,7 @@
   {
    "title": "第5集｜信息素失控",
    "summary": "主卧里，刚洗完澡、穿着基利安宽大衬衫的莉莉紧张地坐在床边。基利安走进来，闻到她身上的香味，眼睛变成发光的暗金色，指甲长成利爪，捏碎了手里的酒杯。莉莉尖叫着缩向床头，他像野兽一样扑上来按住她，用低吼说出“五年了，我每天都在想把你吞下去”，尖牙抵在她的脖子上。她绝望地闭上眼，一滴泪滑落；他的头压了下去。",
-   "script": "床沿，莉莉刚洗完澡，穿着宽大的男士衬衫，紧张地坐在大床边缘，看着右边的门。\n门口，基利安站在打开的门口，左手扶着门，右手端着威士忌杯，目光落在左边画面外的莉莉身上。\n僵住，莉莉僵在床边，手指抓紧床沿，嘴唇微张，看着右边画面外的基利安。\n深吸一口气，基利安闭着眼，鼻翼微张，深深吸了一口气。\n暗金色的眼睛，基利安睁开眼，瞳孔变成发光的暗金色，盯着左边画面外的莉莉。\n酒杯碎裂，基利安右手握着威士忌杯，深色的利爪压进玻璃，杯子裂开、碎掉，酒流下他的手指。\n你的眼睛，莉莉缩在床头，双手揪紧衬衫领口，吓得睁大眼睛，看着右边画面外的基利安，喊出声。\nLilyShirt：“Killian! Your eyes!”\n按在床上，基利安已经压在莉莉身上，双手把她的手腕按在床垫上，发光的暗金色眼睛盯着她。她睁大眼睛看着他。\n你好香，基利安低头贴近莉莉的颈侧，用野兽般的低吼开口，莉莉闭紧眼睛。\nKillianWolf：“You smell so good.”\n五年，基利安的尖牙抵在莉莉的脖子上，没有刺破，用低吼说出下半句。\nKillianWolf：“Five years dreaming of devouring you.”\n一滴泪，莉莉的脸特写，闭着眼，一滴泪从眼角滑落。\n低下头，基利安的头压向莉莉的脖子，她下巴抬起、闭紧眼睛。（成片里在这里黑屏、接重音效）",
+   "script": "床沿，莉莉刚洗完澡，穿着宽大的男士衬衫，紧张地坐在大床边缘，看着右边的门。\n门口，基利安站在打开的门口，左手扶着门，右手端着威士忌杯，目光落在左边画面外的莉莉身上。\n深吸一口气，基利安闭着眼，鼻翼张开，深深吸了一口气。\n暗金色的眼睛，基利安睁开眼，瞳孔变成发光的暗金色，盯着左边画面外的莉莉。\n酒杯碎裂，基利安右手握着威士忌杯，深色的利爪压进玻璃，杯子裂开、碎掉，酒流下他的手指。\n你的眼睛，莉莉缩在床头，双手揪紧衬衫领口，吓得睁大眼睛，看着右边画面外的基利安，喊出声。\nLilyShirt：“Killian! Your eyes!”\n按在床上，基利安已经压在莉莉身上，一只手把她的手腕按在床垫上，发光的暗金色眼睛盯着她。她睁大眼睛看着他。\n你好香，基利安低头贴近莉莉的颈侧，用野兽般的低吼开口，莉莉闭紧眼睛。\nKillianWolf：“You smell so good.”\n五年，基利安的尖牙抵在莉莉的脖子上，用低吼说出下半句。\nKillianWolf：“Five years dreaming of devouring you.”\n低下头，基利安的头压向莉莉的脖子，她下巴抬起、闭紧眼睛，一滴泪滑进头发。（成片里在这里黑屏、接重音效）",
    "segments": [
     {
      "title": "01｜床沿",
@@ -286,7 +286,7 @@
      "image_reference_keys": [
       "bedroom"
      ],
-     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium shot of Lily alone, full body, sitting on the edge of the huge dark-wood bed at frame-left, centered in the middle third of the frame, in profile facing frame-right, in the oversized white men's shirt, her damp hair loose, both hands pressed between her knees, her eyes on the dark door at frame-right. Nobody else is in the frame. Fixed stage layout: the huge dark-wood bed is at frame-left; the single dark-wood door is at frame-right; Lily is always at frame-left of Killian. Low amber lamp light, the bedroom softly blurred behind.",
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium shot of Lily alone, full body, sitting on the edge of the huge dark-wood bed at frame-left, in the middle third of the frame, in profile facing frame-right, in the oversized white men's shirt, her damp hair loose, both hands pressed between her knees, her eyes on the dark door at frame-right. The frame holds exactly one person, Lily. Low amber lamp light, the bedroom softly blurred behind. Fixed stage layout: the huge dark-wood bed is at frame-left; the single dark-wood door is at frame-right.",
      "visual_zh": "莉莉刚洗完澡，穿着宽大的男士衬衫，紧张地坐在大床边缘，看着右边的门。",
      "camera_zh": "0—6秒莉莉侧面中景，镜头固定。",
      "dialogue": [],
@@ -294,8 +294,8 @@
       {
        "start_seconds": 0,
        "end_seconds": 6,
-       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady medium shot opens from the adopted first frame in [[asset:bedroom]]: [[asset:lily_shirt]] alone on the edge of the bed, in profile facing frame-right, her hands pressed between her knees, her eyes on the door at frame-right. She swallows and her shoulders rise slightly. Her body stays where it is. The camera holds still.",
-       "visual_zh": "从开场图继续，莉莉中景：一个人坐在床沿，侧脸朝右，双手夹在膝盖之间，目光落在右边的门上。她咽了一下，肩膀微微抬起。身体不动。镜头固定。",
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady medium shot opens from the adopted first frame in [[asset:bedroom]]: [[asset:lily_shirt]] alone on the edge of the bed, in profile facing frame-right, her hands pressed between her knees, her eyes on the door at frame-right. She swallows and her shoulders rise. Her body stays where it is. The camera holds still.",
+       "visual_zh": "一个稳定的中景，从已采用的开场图继续，场景是主卧：莉莉一个人坐在床沿，侧身朝画面右边，双手夹在膝盖之间，眼睛看着画面右边的门。她咽了一下，肩膀抬起。身体留在原处。镜头固定不动。",
        "dialogue_indices": []
       }
      ],
@@ -321,7 +321,7 @@
      "image_reference_keys": [
       "bedroom"
      ],
-     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium shot of Killian alone, full body, standing just inside the open doorway at frame-right, centered in the middle third of the frame, in profile facing frame-left, in the black silk robe, a crystal whiskey tumbler in his right hand, his left hand resting on the edge of the open door, his eyes fixed on a woman sitting at frame-left, just outside the frame. Nobody else is in the frame. Fixed stage layout: the huge dark-wood bed is at frame-left; the single dark-wood door is at frame-right; Lily is always at frame-left of Killian. Low amber lamp light, the bedroom softly blurred behind.",
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium shot of Killian alone, full body, standing just inside the open doorway at frame-right, in the middle third of the frame, in profile facing frame-left, in the black silk robe, a crystal whiskey tumbler in his right hand, his left hand resting on the edge of the open door, his eyes fixed on a woman sitting at frame-left, just outside the frame. The frame holds exactly one person, Killian. Low amber lamp light, the bedroom softly blurred behind. Fixed stage layout: the huge dark-wood bed is at frame-left; the single dark-wood door is at frame-right.",
      "visual_zh": "基利安站在打开的门口，左手扶着门，右手端着威士忌杯，目光落在左边画面外的莉莉身上。",
      "camera_zh": "0—6秒基利安侧面中景，镜头固定。",
      "dialogue": [],
@@ -329,57 +329,22 @@
       {
        "start_seconds": 0,
        "end_seconds": 6,
-       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady medium shot opens from the adopted first frame in [[asset:bedroom]]: [[asset:killian_robe]] in profile facing frame-left in the open doorway, the tumbler in his right hand, his left hand on the door edge, his eyes fixed on the woman at frame-left, just outside the frame. He stands motionless and only his jaw tightens. Nobody speaks. The camera holds still.",
-       "visual_zh": "从开场图继续，基利安中景：侧脸朝左站在打开的门口，右手端着酒杯，左手扶着门边，目光盯着左边画面外的女人。他一动不动，只有下颌收紧。无人说话。镜头固定。",
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady medium shot opens from the adopted first frame in [[asset:bedroom]]: [[asset:killian_robe]] in profile facing frame-left in the open doorway, the tumbler in his right hand, his left hand on the door edge, his eyes fixed on the woman at frame-left, just outside the frame. He stands motionless and his jaw tightens. The camera holds still.",
+       "visual_zh": "一个稳定的中景，从已采用的开场图继续，场景是主卧：基利安侧身朝画面左边站在敞开的门口，右手端着酒杯，左手扶着门边，眼睛盯着画面左边、画面之外的女人。他一动不动，下颌收紧。镜头固定不动。",
        "dialogue_indices": []
       }
      ],
-     "sound_en": "A heavy, low stillness in the room, the faint clink of ice in the glass. The recording is completely free of voices: no speech, no humming, no sighs, no breathing sounds, no vocal sounds of any kind.",
+     "sound_en": "A heavy, low stillness in the room and the faint clink of ice in the glass. The recording is completely free of voices: no speech, no humming, no sighs, no breathing sounds, no vocal sounds of any kind.",
      "sound_zh": "房间里沉重的、低低的静，杯中冰块轻轻的碰撞声。 录音里完全没有人声：没有说话、哼声、叹息、呼吸声或任何发声。",
      "seed": 3402,
      "dialogue_language": "en"
     },
     {
-     "title": "03｜僵住",
+     "title": "03｜深吸一口气",
      "duration_seconds": 5,
      "generation_seconds": 5,
      "continuity": "cut",
-     "depends_on_previous": false,
-     "use_previous_episode_state": false,
-     "characters": [
-      "LilyShirt"
-     ],
-     "asset_keys": [
-      "bedroom",
-      "lily_shirt"
-     ],
-     "image_reference_keys": [
-      "bedroom"
-     ],
-     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium close-up of Lily alone, chest-up, in profile facing frame-right, centered in the middle third of the frame, in the oversized white men's shirt, her lips parted, her fingers gripping the edge of the mattress at the bottom of the frame, her eyes fixed on a man standing at frame-right, just outside the frame. Nobody else is in the frame. Fixed stage layout: the huge dark-wood bed is at frame-left; the single dark-wood door is at frame-right; Lily is always at frame-left of Killian. Low amber lamp light, the bedroom softly blurred behind.",
-     "visual_zh": "莉莉僵在床边，手指抓紧床沿，嘴唇微张，看着右边画面外的基利安。",
-     "camera_zh": "0—5秒莉莉侧面中近景，镜头固定。",
-     "dialogue": [],
-     "shots": [
-      {
-       "start_seconds": 0,
-       "end_seconds": 5,
-       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady medium close-up opens from the adopted first frame in [[asset:bedroom]]: [[asset:lily_shirt]] in profile facing frame-right, her fingers gripping the mattress edge, her eyes fixed on the man at frame-right, just outside the frame. She goes completely still, only her chest rising and falling fast. Nobody speaks. The camera holds still.",
-       "visual_zh": "从开场图继续，莉莉近景：侧脸朝右，手指抓着床沿，目光盯着右边画面外的男人。她彻底僵住，只有胸口起伏很快。无人说话。镜头固定。",
-       "dialogue_indices": []
-      }
-     ],
-     "sound_en": "A heavy, low stillness in the room. The recording is completely free of voices: no speech, no humming, no sighs, no breathing sounds, no vocal sounds of any kind.",
-     "sound_zh": "房间里沉重的、低低的静。 录音里完全没有人声：没有说话、哼声、叹息、呼吸声或任何发声。",
-     "seed": 3403,
-     "dialogue_language": "en"
-    },
-    {
-     "title": "04｜深吸一口气",
-     "duration_seconds": 5,
-     "generation_seconds": 5,
-     "continuity": "cut",
-     "depends_on_previous": false,
+     "depends_on_previous": true,
      "use_previous_episode_state": false,
      "characters": [
       "KillianRobe"
@@ -391,30 +356,30 @@
      "image_reference_keys": [
       "bedroom"
      ],
-     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Close-up of Killian's face alone, chest-up, in profile facing frame-left, centered in the middle third of the frame, in the black silk robe, his eyes closed, his nostrils slightly flared, his jaw tight. Nobody else is in the frame. Fixed stage layout: the huge dark-wood bed is at frame-left; the single dark-wood door is at frame-right; Lily is always at frame-left of Killian. Low amber lamp light, the bedroom softly blurred behind.",
-     "visual_zh": "基利安闭着眼，鼻翼微张，深深吸了一口气。",
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Close-up of Killian alone, chest-up, in profile facing frame-left, in the middle third of the frame, in the black silk robe, his eyes closed, his nostrils flared, his jaw tight. The frame holds exactly one person, Killian. Low amber lamp light, the bedroom softly blurred behind. Fixed stage layout: the huge dark-wood bed is at frame-left; the single dark-wood door is at frame-right.",
+     "visual_zh": "基利安闭着眼，鼻翼张开，深深吸了一口气。",
      "camera_zh": "0—5秒基利安侧面近景，镜头固定。",
      "dialogue": [],
      "shots": [
       {
        "start_seconds": 0,
        "end_seconds": 5,
-       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady close-up opens from the adopted first frame in [[asset:bedroom]]: [[asset:killian_robe]]'s face in profile facing frame-left, his eyes closed. His chest rises slowly with one deep breath and his jaw tightens further. His eyes stay closed. Nobody speaks. The camera holds still.",
-       "visual_zh": "从开场图继续，基利安面部近景：侧脸朝左，闭着眼。他的胸口随一次深呼吸慢慢抬起，下颌收得更紧。眼睛一直闭着。无人说话。镜头固定。",
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady close-up opens from the adopted first frame in [[asset:bedroom]]: [[asset:killian_robe]]'s face in profile facing frame-left, his eyes closed. His chest rises with one slow deep breath and his jaw tightens. His eyes stay closed. The camera holds still.",
+       "visual_zh": "一个稳定的近景，从已采用的开场图继续，场景是主卧：基利安侧脸朝画面左边，闭着眼。他的胸口随一次缓慢的深呼吸抬起，下颌收紧。眼睛一直闭着。镜头固定不动。",
        "dialogue_indices": []
       }
      ],
      "sound_en": "A heavy, low stillness in the room. The recording is completely free of voices: no speech, no humming, no sighs, no breathing sounds, no vocal sounds of any kind.",
      "sound_zh": "房间里沉重的、低低的静。 录音里完全没有人声：没有说话、哼声、叹息、呼吸声或任何发声。",
-     "seed": 3404,
+     "seed": 3403,
      "dialogue_language": "en"
     },
     {
-     "title": "05｜暗金色的眼睛",
+     "title": "04｜暗金色的眼睛",
      "duration_seconds": 5,
      "generation_seconds": 5,
      "continuity": "cut",
-     "depends_on_previous": false,
+     "depends_on_previous": true,
      "use_previous_episode_state": false,
      "characters": [
       "KillianWolf"
@@ -426,7 +391,7 @@
      "image_reference_keys": [
       "bedroom"
      ],
-     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Close-up of Killian's face alone, chest-up, in profile facing frame-left, centered in the middle third of the frame, his eyes open and glowing a dark gold, his jaw tight, his lips pressed together, his gaze fixed on a woman at frame-left, just outside the frame. Nobody else is in the frame. Fixed stage layout: the huge dark-wood bed is at frame-left; the single dark-wood door is at frame-right; Lily is always at frame-left of Killian. Low amber lamp light, the bedroom softly blurred behind.",
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Close-up of Killian alone, chest-up, in profile facing frame-left, in the middle third of the frame, his eyes open and glowing a dark gold, his jaw tight, his lips pressed together, his gaze fixed on a woman at frame-left, just outside the frame. The frame holds exactly one person, Killian. Low amber lamp light, the bedroom softly blurred behind. Fixed stage layout: the huge dark-wood bed is at frame-left; the single dark-wood door is at frame-right.",
      "visual_zh": "基利安睁开眼，瞳孔变成发光的暗金色，盯着左边画面外的莉莉。",
      "camera_zh": "0—5秒基利安侧面近景，镜头固定。",
      "dialogue": [],
@@ -434,22 +399,22 @@
       {
        "start_seconds": 0,
        "end_seconds": 5,
-       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady close-up opens from the adopted first frame in [[asset:bedroom]]: [[asset:killian_wolf]]'s face in profile facing frame-left, his eyes glowing a dark gold, fixed on the woman at frame-left, just outside the frame. His gaze does not waver and his nostrils flare once. Nobody speaks. The camera holds still.",
-       "visual_zh": "从开场图继续，基利安面部近景：侧脸朝左，眼睛发出暗金色的光，盯着左边画面外的女人。目光一动不动，鼻翼张了一下。无人说话。镜头固定。",
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady close-up opens from the adopted first frame in [[asset:bedroom]]: [[asset:killian_wolf]]'s face in profile facing frame-left, his eyes glowing a dark gold, fixed on the woman at frame-left, just outside the frame. His gaze holds steady and his nostrils flare once. The camera holds still.",
+       "visual_zh": "一个稳定的近景，从已采用的开场图继续，场景是主卧：基利安侧脸朝画面左边，眼睛发出暗金色的光，盯着画面左边、画面之外的女人。目光稳稳不动，鼻翼张了一下。镜头固定不动。",
        "dialogue_indices": []
       }
      ],
      "sound_en": "A low, trembling stillness in the room. The recording is completely free of voices: no speech, no humming, no sighs, no breathing sounds, no vocal sounds of any kind.",
      "sound_zh": "房间里低低的、发颤的静。 录音里完全没有人声：没有说话、哼声、叹息、呼吸声或任何发声。",
-     "seed": 3405,
+     "seed": 3404,
      "dialogue_language": "en"
     },
     {
-     "title": "06｜酒杯碎裂",
+     "title": "05｜酒杯碎裂",
      "duration_seconds": 5,
      "generation_seconds": 5,
      "continuity": "cut",
-     "depends_on_previous": false,
+     "depends_on_previous": true,
      "use_previous_episode_state": false,
      "characters": [
       "KillianWolf"
@@ -461,7 +426,7 @@
      "image_reference_keys": [
       "bedroom"
      ],
-     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Close-up of Killian's right hand holding a crystal whiskey tumbler at chest height, centered in the middle third of the frame, long dark claw-like nails pressing into the glass, the black silk sleeve, his forearm and part of his chest in the frame so the hand clearly belongs to him. Nobody else is in the frame. Fixed stage layout: the huge dark-wood bed is at frame-left; the single dark-wood door is at frame-right; Lily is always at frame-left of Killian. Low amber lamp light, the bedroom softly blurred behind.",
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Close-up of Killian's right hand holding a crystal whiskey tumbler at chest height, in the middle third of the frame, long dark claw-like nails pressing into the glass, the black silk sleeve, his forearm and part of his chest in the frame so the hand clearly belongs to him. The frame holds exactly one person, Killian. Low amber lamp light, the bedroom softly blurred behind. Fixed stage layout: the huge dark-wood bed is at frame-left; the single dark-wood door is at frame-right.",
      "visual_zh": "基利安右手握着威士忌杯，深色的利爪压进玻璃，杯子裂开、碎掉，酒流下他的手指。",
      "camera_zh": "0—5秒基利安的手和酒杯特写，手臂和胸口入画，镜头固定。",
      "dialogue": [],
@@ -469,18 +434,18 @@
       {
        "start_seconds": 0,
        "end_seconds": 5,
-       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady close-up opens from the adopted first frame in [[asset:bedroom]]: [[asset:killian_wolf]]'s right hand around the crystal tumbler, the dark claws pressing into the glass. The glass cracks across, bursts into pieces and falls, and amber whiskey runs over his fingers. His hand stays clenched. Nobody speaks. The camera holds still.",
-       "visual_zh": "从开场图继续，基利安的右手握着水晶酒杯，深色利爪压进玻璃。杯子裂开，碎成几块落下，琥珀色的酒流过他的手指。手一直握紧。无人说话。镜头固定。",
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady close-up opens from the adopted first frame in [[asset:bedroom]]: [[asset:killian_wolf]]'s right hand around the crystal tumbler, the dark claws pressing into the glass. The glass cracks across, bursts into pieces and falls, and amber whiskey runs over his fingers. His hand stays clenched. The camera holds still.",
+       "visual_zh": "一个稳定的特写，从已采用的开场图继续，场景是主卧：基利安的右手握着水晶酒杯，深色利爪压进玻璃。杯子裂开，碎成几块落下，琥珀色的酒流过他的手指。手一直握紧。镜头固定不动。",
        "dialogue_indices": []
       }
      ],
      "sound_en": "One sharp crack, then crystal glass shattering and the patter of whiskey on the floor. The recording is completely free of voices: no speech, no humming, no sighs, no breathing sounds, no vocal sounds of any kind.",
      "sound_zh": "一声尖锐的裂响，然后水晶玻璃碎裂，酒液滴落在地上的声音。 录音里完全没有人声：没有说话、哼声、叹息、呼吸声或任何发声。",
-     "seed": 3406,
+     "seed": 3405,
      "dialogue_language": "en"
     },
     {
-     "title": "07｜你的眼睛",
+     "title": "06｜你的眼睛",
      "duration_seconds": 6,
      "generation_seconds": 6,
      "continuity": "cut",
@@ -496,7 +461,7 @@
      "image_reference_keys": [
       "bedroom"
      ],
-     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium close-up of Lily alone, chest-up, pressed back against the dark headboard of the bed at frame-left, centered in the middle third of the frame, in profile facing frame-right, in the oversized white men's shirt, both hands clutching the collar closed at her throat, her knees drawn up, her eyes wide with terror on a man at frame-right, just outside the frame. Nobody else is in the frame. Fixed stage layout: the huge dark-wood bed is at frame-left; the single dark-wood door is at frame-right; Lily is always at frame-left of Killian. Low amber lamp light, the bedroom softly blurred behind.",
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium close-up of Lily alone, chest-up, pressed back against the dark headboard of the bed at frame-left, in the middle third of the frame, in profile facing frame-right, in the oversized white men's shirt, both hands clutching the collar closed at her throat, her knees drawn up, her eyes wide with terror on a man at frame-right, just outside the frame. The frame holds exactly one person, Lily. Low amber lamp light, the bedroom softly blurred behind. Fixed stage layout: the huge dark-wood bed is at frame-left; the single dark-wood door is at frame-right.",
      "visual_zh": "莉莉缩在床头，双手揪紧衬衫领口，吓得睁大眼睛，看着右边画面外的基利安，喊出声。",
      "camera_zh": "0—6秒莉莉侧面中近景，镜头固定。",
      "dialogue": [
@@ -513,7 +478,7 @@
        "start_seconds": 0,
        "end_seconds": 6,
        "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady medium close-up opens from the adopted first frame in [[asset:bedroom]]: [[asset:lily_shirt]] pressed back against the headboard, her hands clutching her collar, her eyes wide with terror on the man at frame-right, just outside the frame. She cries out in a high, shaking voice. Her body stays pressed back. The camera holds still.",
-       "visual_zh": "从开场图继续，莉莉近景：背紧贴着床头，双手揪着领口，吓得睁大眼睛，盯着右边画面外的男人。她用又高又抖的声音喊出来。身体一直紧贴着床头。镜头固定。",
+       "visual_zh": "一个稳定的中近景，从已采用的开场图继续，场景是主卧：莉莉背紧贴着床头，双手揪着领口，吓得睁大眼睛，盯着画面右边、画面之外的男人。她用又高又抖的声音喊出来。身体一直紧贴着床头。镜头固定不动。",
        "dialogue_indices": [
         0
        ]
@@ -521,11 +486,11 @@
      ],
      "sound_en": "Quiet room tone. Voices stay close and clear.",
      "sound_zh": "安静的房间底噪。人声近而清楚。",
-     "seed": 3407,
+     "seed": 3406,
      "dialogue_language": "en"
     },
     {
-     "title": "08｜按在床上",
+     "title": "07｜按在床上",
      "duration_seconds": 6,
      "generation_seconds": 6,
      "continuity": "cut",
@@ -543,30 +508,30 @@
      "image_reference_keys": [
       "bedroom"
      ],
-     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium two-shot from the side, both people centered in the middle third of the frame. Lily lies on her back on the charcoal bedding with her head at frame-left, her chestnut hair spread on the pillow, in the oversized white men's shirt, her eyes wide and fixed on Killian's face; Killian kneels over her at frame-right in the black silk robe, both his hands pressing her wrists into the mattress on either side of her head, both his whole arms in the frame, his glowing dark-gold eyes fixed on her face. Nobody else is in the frame. Fixed stage layout: the huge dark-wood bed is at frame-left; the single dark-wood door is at frame-right; Lily is always at frame-left of Killian. Low amber lamp light, the bedroom softly blurred behind.",
-     "visual_zh": "基利安已经压在莉莉身上，双手把她的手腕按在床垫上，发光的暗金色眼睛盯着她。她睁大眼睛看着他。",
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium two-shot from the side, both people in the middle third of the frame. Lily lies on her back on the charcoal bedding with her head at frame-left, her chestnut hair spread on the pillow, in the oversized white men's shirt, her eyes wide and fixed on Killian's face, her free hand open on the pillow; Killian kneels over her at frame-right in the black silk robe, his right hand holding her wrist pressed into the mattress beside her head, his left hand braced flat on the mattress beside her shoulder, both his whole forearms in the frame, his glowing dark-gold eyes fixed on her face. The frame holds exactly two people: Lily and Killian. Low amber lamp light, the bedroom softly blurred behind. Fixed stage layout: the huge dark-wood bed is at frame-left; the single dark-wood door is at frame-right. Lily is always at frame-left of Killian.",
+     "visual_zh": "基利安已经压在莉莉身上，一只手把她的手腕按在床垫上，发光的暗金色眼睛盯着她。她睁大眼睛看着他。",
      "camera_zh": "0—6秒侧面中景，两人居中，莉莉在左、基利安在右，镜头固定。",
      "dialogue": [],
      "shots": [
       {
        "start_seconds": 0,
        "end_seconds": 6,
-       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady medium two-shot opens from the adopted first frame in [[asset:bedroom]]: [[asset:lily_shirt]] on her back on the bed, her wrists pinned to the mattress by [[asset:killian_wolf]], her eyes wide and fixed on his face; his glowing dark-gold eyes fixed on hers. Neither changes position. Her chest rises and falls fast; his shoulders heave with each heavy breath. Nobody speaks. The camera holds still.",
-       "visual_zh": "从开场图继续，侧面中景：莉莉仰躺在床上，手腕被基利安按在床垫上，睁大眼睛盯着他的脸；他发光的暗金色眼睛盯着她的眼睛。两人姿势都不变。她的胸口起伏很快；他的肩膀随着粗重的呼吸起伏。无人说话。镜头固定。",
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady medium two-shot opens from the adopted first frame in [[asset:bedroom]]: [[asset:lily_shirt]] on her back on the bed, her wrist held to the mattress by [[asset:killian_wolf]]'s right hand, her eyes wide and fixed on his face; his glowing dark-gold eyes fixed on hers. Her chest rises and falls fast; his shoulders heave with each heavy breath. Both stay in place. The camera holds still.",
+       "visual_zh": "一个稳定的侧面中景双人镜头，从已采用的开场图继续，场景是主卧：莉莉仰躺在床上，手腕被基利安的右手按在床垫上，睁大眼睛盯着他的脸；他发光的暗金色眼睛盯着她的眼睛。她的胸口起伏很快；他的肩膀随着粗重的呼吸起伏。两人都留在原处。镜头固定不动。",
        "dialogue_indices": []
       }
      ],
      "sound_en": "The slow creak of bedsprings settling, then a heavy silence. The recording is completely free of voices: no speech, no humming, no sighs, no breathing sounds, no vocal sounds of any kind.",
      "sound_zh": "床垫慢慢落定的吱呀声，然后沉重的寂静。 录音里完全没有人声：没有说话、哼声、叹息、呼吸声或任何发声。",
-     "seed": 3408,
+     "seed": 3407,
      "dialogue_language": "en"
     },
     {
-     "title": "09｜你好香",
+     "title": "08｜你好香",
      "duration_seconds": 5,
      "generation_seconds": 5,
      "continuity": "cut",
-     "depends_on_previous": false,
+     "depends_on_previous": true,
      "use_previous_episode_state": false,
      "characters": [
       "LilyShirt",
@@ -580,9 +545,9 @@
      "image_reference_keys": [
       "bedroom"
      ],
-     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Tight side-profile two-shot of heads and shoulders, both people centered in the middle third of the frame. Killian's face at frame-right is lowered beside Lily's neck, his lips an inch from her skin, his glowing dark-gold eyes open; Lily at frame-left lies with her head turned away on the pillow, her eyes squeezed shut. No hands are visible. Nobody else is in the frame. Fixed stage layout: the huge dark-wood bed is at frame-left; the single dark-wood door is at frame-right; Lily is always at frame-left of Killian. Low amber lamp light, the bedroom softly blurred behind.",
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Tight side-profile two-shot, chest-up, both people in the middle third of the frame. Killian's face at frame-right is lowered beside Lily's neck, his lips an inch from her skin, his glowing dark-gold eyes open, his right hand holding her wrist pressed into the mattress beside her head, his left hand braced flat on the mattress beside her shoulder, both his whole forearms in the frame; Lily at frame-left lies with her head turned away on the pillow, her eyes squeezed shut, her free hand open on the pillow. The frame holds exactly two people: Lily and Killian. Low amber lamp light, the bedroom softly blurred behind. Fixed stage layout: the huge dark-wood bed is at frame-left; the single dark-wood door is at frame-right. Lily is always at frame-left of Killian.",
      "visual_zh": "基利安低头贴近莉莉的颈侧，用野兽般的低吼开口，莉莉闭紧眼睛。",
-     "camera_zh": "0—5秒侧面近景，两人头肩居中，莉莉在左、基利安在右，镜头固定。",
+     "camera_zh": "0—5秒侧面近景，两人居中，莉莉在左、基利安在右，镜头固定。",
      "dialogue": [
       {
        "speaker": "KillianWolf",
@@ -596,8 +561,8 @@
       {
        "start_seconds": 0,
        "end_seconds": 5,
-       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady tight side-profile two-shot opens from the adopted first frame in [[asset:bedroom]]: [[asset:killian_wolf]]'s face beside [[asset:lily_shirt]]'s neck, his lips an inch from her skin, his eyes glowing dark gold. He speaks in a deep, rough, growling voice. She does not move; her eyes stay squeezed shut. The camera holds still.",
-       "visual_zh": "从开场图继续，侧面近景：基利安的脸贴在莉莉颈边，嘴唇离她的皮肤只有一寸，眼睛发出暗金色的光。他用低沉粗糙的、野兽般的声音说话。她不动，眼睛一直紧闭。镜头固定。",
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady tight side-profile two-shot opens from the adopted first frame in [[asset:bedroom]]: [[asset:killian_wolf]]'s face beside [[asset:lily_shirt]]'s neck, his lips an inch from her skin, his eyes glowing dark gold. He speaks in a deep, rough, growling voice. Her eyes stay squeezed shut. The camera holds still.",
+       "visual_zh": "一个稳定的侧面近景双人镜头，从已采用的开场图继续，场景是主卧：基利安的脸贴在莉莉颈边，嘴唇离她的皮肤只有一寸，眼睛发出暗金色的光。他用低沉粗糙的、野兽般的声音说话。她的眼睛一直紧闭。镜头固定不动。",
        "dialogue_indices": [
         0
        ]
@@ -605,15 +570,15 @@
      ],
      "sound_en": "A low, trembling stillness in the room. Voices stay close and clear.",
      "sound_zh": "房间里低低的、发颤的静。人声近而清楚。",
-     "seed": 3409,
+     "seed": 3408,
      "dialogue_language": "en"
     },
     {
-     "title": "10｜五年",
+     "title": "09｜五年",
      "duration_seconds": 6,
      "generation_seconds": 6,
      "continuity": "cut",
-     "depends_on_previous": false,
+     "depends_on_previous": true,
      "use_previous_episode_state": false,
      "characters": [
       "LilyShirt",
@@ -627,9 +592,9 @@
      "image_reference_keys": [
       "bedroom"
      ],
-     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Tight side-profile two-shot of heads and shoulders, both people centered in the middle third of the frame. Killian's face at frame-right is lowered at the side of Lily's throat, his lips drawn back from sharp canine teeth that rest against her skin without breaking it, his glowing dark-gold eyes open; Lily at frame-left lies with her chin tilted up and her eyes squeezed shut. No hands are visible. Nobody else is in the frame. Fixed stage layout: the huge dark-wood bed is at frame-left; the single dark-wood door is at frame-right; Lily is always at frame-left of Killian. Low amber lamp light, the bedroom softly blurred behind.",
-     "visual_zh": "基利安的尖牙抵在莉莉的脖子上，没有刺破，用低吼说出下半句。",
-     "camera_zh": "0—6秒侧面近景，两人头肩居中，莉莉在左、基利安在右，镜头固定。",
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Tight side-profile two-shot, chest-up, both people in the middle third of the frame. Killian's face at frame-right is lowered at the side of Lily's throat, his lips drawn back from sharp canine teeth that rest against her skin, his glowing dark-gold eyes open, his right hand holding her wrist pressed into the mattress beside her head, his left hand braced flat on the mattress beside her shoulder, both his whole forearms in the frame; Lily at frame-left lies with her chin tilted up and her eyes squeezed shut, her free hand open on the pillow. The frame holds exactly two people: Lily and Killian. Low amber lamp light, the bedroom softly blurred behind. Fixed stage layout: the huge dark-wood bed is at frame-left; the single dark-wood door is at frame-right. Lily is always at frame-left of Killian.",
+     "visual_zh": "基利安的尖牙抵在莉莉的脖子上，用低吼说出下半句。",
+     "camera_zh": "0—6秒侧面近景，两人居中，莉莉在左、基利安在右，镜头固定。",
      "dialogue": [
       {
        "speaker": "KillianWolf",
@@ -643,8 +608,8 @@
       {
        "start_seconds": 0,
        "end_seconds": 6,
-       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady tight side-profile two-shot opens from the adopted first frame in [[asset:bedroom]]: [[asset:killian_wolf]]'s sharp teeth resting against the side of [[asset:lily_shirt]]'s throat, his eyes glowing dark gold, her chin tilted up, her eyes squeezed shut. He speaks in the same deep, rough, growling voice, his teeth never breaking her skin. She does not move. The camera holds still.",
-       "visual_zh": "从开场图继续，侧面近景：基利安的尖牙抵在莉莉脖子的一侧，眼睛发出暗金色的光；她下巴抬起，眼睛紧闭。他用同样低沉粗糙的、野兽般的声音说话，牙齿始终没有刺破她的皮肤。她不动。镜头固定。",
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady tight side-profile two-shot opens from the adopted first frame in [[asset:bedroom]]: [[asset:killian_wolf]]'s sharp teeth resting against the side of [[asset:lily_shirt]]'s throat, his eyes glowing dark gold, her chin tilted up, her eyes squeezed shut. He speaks in the same deep, rough, growling voice, his teeth resting on her skin. She stays still. The camera holds still.",
+       "visual_zh": "一个稳定的侧面近景双人镜头，从已采用的开场图继续，场景是主卧：基利安的尖牙抵在莉莉脖子的一侧，眼睛发出暗金色的光；她下巴抬起，眼睛紧闭。他用同样低沉粗糙的、野兽般的声音说话，牙齿一直抵在她的皮肤上。她一动不动。镜头固定不动。",
        "dialogue_indices": [
         0
        ]
@@ -652,50 +617,15 @@
      ],
      "sound_en": "A low, trembling stillness in the room. Voices stay close and clear.",
      "sound_zh": "房间里低低的、发颤的静。人声近而清楚。",
-     "seed": 3410,
+     "seed": 3409,
      "dialogue_language": "en"
     },
     {
-     "title": "11｜一滴泪",
+     "title": "10｜低下头",
      "duration_seconds": 5,
      "generation_seconds": 5,
      "continuity": "cut",
-     "depends_on_previous": false,
-     "use_previous_episode_state": false,
-     "characters": [
-      "LilyShirt"
-     ],
-     "asset_keys": [
-      "bedroom",
-      "lily_shirt"
-     ],
-     "image_reference_keys": [
-      "bedroom"
-     ],
-     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Close-up of Lily's face alone, lying with her head on the pillow at frame-left, centered in the middle third of the frame, her eyes closed, tears on her lashes, her lips pressed together, her chestnut hair spread on the pillow. Nobody else is in the frame. Fixed stage layout: the huge dark-wood bed is at frame-left; the single dark-wood door is at frame-right; Lily is always at frame-left of Killian. Low amber lamp light, the bedroom softly blurred behind.",
-     "visual_zh": "莉莉的脸特写，闭着眼，一滴泪从眼角滑落。",
-     "camera_zh": "0—5秒莉莉面部特写，镜头固定。",
-     "dialogue": [],
-     "shots": [
-      {
-       "start_seconds": 0,
-       "end_seconds": 5,
-       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady close-up opens from the adopted first frame in [[asset:bedroom]]: [[asset:lily_shirt]]'s face on the pillow, her eyes closed, tears on her lashes. A single tear runs from the corner of her eye down her temple into her hair. Her face stays still. Nobody speaks. The camera holds still.",
-       "visual_zh": "从开场图继续，莉莉面部特写：脸靠在枕头上，闭着眼，睫毛上有泪。一滴泪从眼角滑下，经过太阳穴滑进头发里。脸不动。无人说话。镜头固定。",
-       "dialogue_indices": []
-      }
-     ],
-     "sound_en": "A low, trembling stillness in the room. The recording is completely free of voices: no speech, no humming, no sighs, no breathing sounds, no vocal sounds of any kind.",
-     "sound_zh": "房间里低低的、发颤的静。 录音里完全没有人声：没有说话、哼声、叹息、呼吸声或任何发声。",
-     "seed": 3411,
-     "dialogue_language": "en"
-    },
-    {
-     "title": "12｜低下头",
-     "duration_seconds": 5,
-     "generation_seconds": 5,
-     "continuity": "cut",
-     "depends_on_previous": false,
+     "depends_on_previous": true,
      "use_previous_episode_state": false,
      "characters": [
       "LilyShirt",
@@ -709,22 +639,22 @@
      "image_reference_keys": [
       "bedroom"
      ],
-     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Tight side-profile two-shot of heads and shoulders, both people centered in the middle third of the frame. Killian's face at frame-right is a hand's width above the side of Lily's throat, his lips drawn back from sharp canine teeth, his glowing dark-gold eyes open; Lily at frame-left lies with her chin tilted up and her eyes squeezed shut, a tear on her temple. No hands are visible. Nobody else is in the frame. Fixed stage layout: the huge dark-wood bed is at frame-left; the single dark-wood door is at frame-right; Lily is always at frame-left of Killian. Low amber lamp light, the bedroom softly blurred behind.",
-     "visual_zh": "基利安的头压向莉莉的脖子，她下巴抬起、闭紧眼睛。（成片里在这里黑屏、接重音效）",
-     "camera_zh": "0—5秒侧面近景，两人头肩居中，莉莉在左、基利安在右，镜头固定。",
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Tight side-profile two-shot, chest-up, both people in the middle third of the frame. Killian's face at frame-right is a hand's width above the side of Lily's throat, his lips drawn back from sharp canine teeth, his glowing dark-gold eyes open, his right hand holding her wrist pressed into the mattress beside her head, his left hand braced flat on the mattress beside her shoulder, both his whole forearms in the frame; Lily at frame-left lies with her chin tilted up and her eyes squeezed shut, a tear on her temple, her free hand open on the pillow. The frame holds exactly two people: Lily and Killian. Low amber lamp light, the bedroom softly blurred behind. Fixed stage layout: the huge dark-wood bed is at frame-left; the single dark-wood door is at frame-right. Lily is always at frame-left of Killian.",
+     "visual_zh": "基利安的头压向莉莉的脖子，她下巴抬起、闭紧眼睛，一滴泪滑进头发。（成片里在这里黑屏、接重音效）",
+     "camera_zh": "0—5秒侧面近景，两人居中，莉莉在左、基利安在右，镜头固定。",
      "dialogue": [],
      "shots": [
       {
        "start_seconds": 0,
        "end_seconds": 5,
-       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady tight side-profile two-shot opens from the adopted first frame in [[asset:bedroom]]: [[asset:killian_wolf]]'s face a hand's width above the side of [[asset:lily_shirt]]'s throat, his eyes glowing dark gold, her eyes squeezed shut. His head lowers the last few centimetres toward her neck and her chin tilts further up and away. Nobody speaks. The camera holds still.",
-       "visual_zh": "从开场图继续，侧面近景：基利安的脸在莉莉脖子一侧上方一掌宽的地方，眼睛发出暗金色的光，她闭紧眼睛。他的头朝她的脖子又低下最后几厘米，她的下巴抬得更高、偏向一边。无人说话。镜头固定。",
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady tight side-profile two-shot opens from the adopted first frame in [[asset:bedroom]]: [[asset:killian_wolf]]'s face a hand's width above the side of [[asset:lily_shirt]]'s throat, his eyes glowing dark gold, her eyes squeezed shut. His head lowers the last few centimetres toward her neck and her chin tilts up and away; a tear runs from the corner of her eye into her hair. The camera holds still.",
+       "visual_zh": "一个稳定的侧面近景双人镜头，从已采用的开场图继续，场景是主卧：基利安的脸在莉莉脖子一侧上方一掌宽的地方，眼睛发出暗金色的光，她闭紧眼睛。他的头朝她的脖子又低下最后几厘米，她的下巴抬起、偏向一边；一滴泪从她的眼角滑进头发里。镜头固定不动。",
        "dialogue_indices": []
       }
      ],
      "sound_en": "A low, trembling stillness, then dead silence. The recording is completely free of voices: no speech, no humming, no sighs, no breathing sounds, no vocal sounds of any kind.",
      "sound_zh": "房间里低低的、发颤的静，然后死寂。 录音里完全没有人声：没有说话、哼声、叹息、呼吸声或任何发声。",
-     "seed": 3412,
+     "seed": 3410,
      "dialogue_language": "en"
     }
    ],
