@@ -161,7 +161,7 @@
      "duration_seconds": 6,
      "generation_seconds": 6,
      "continuity": "cut",
-     "depends_on_previous": false,
+     "depends_on_previous": true,
      "use_previous_episode_state": false,
      "characters": [
       "Lily",
@@ -209,7 +209,7 @@
      "duration_seconds": 5,
      "generation_seconds": 5,
      "continuity": "cut",
-     "depends_on_previous": false,
+     "depends_on_previous": true,
      "use_previous_episode_state": false,
      "characters": [
       "Lily",
@@ -247,7 +247,7 @@
      "duration_seconds": 6,
      "generation_seconds": 6,
      "continuity": "cut",
-     "depends_on_previous": false,
+     "depends_on_previous": true,
      "use_previous_episode_state": false,
      "characters": [
       "Lily",
@@ -285,7 +285,7 @@
      "duration_seconds": 6,
      "generation_seconds": 6,
      "continuity": "cut",
-     "depends_on_previous": false,
+     "depends_on_previous": true,
      "use_previous_episode_state": false,
      "characters": [
       "Lily",
@@ -333,7 +333,7 @@
      "duration_seconds": 5,
      "generation_seconds": 5,
      "continuity": "cut",
-     "depends_on_previous": false,
+     "depends_on_previous": true,
      "use_previous_episode_state": false,
      "characters": [],
      "asset_keys": [
@@ -365,7 +365,7 @@
      "duration_seconds": 6,
      "generation_seconds": 6,
      "continuity": "cut",
-     "depends_on_previous": false,
+     "depends_on_previous": true,
      "use_previous_episode_state": false,
      "characters": [
       "PaulOnScreen",
@@ -402,7 +402,7 @@
      "duration_seconds": 6,
      "generation_seconds": 6,
      "continuity": "cut",
-     "depends_on_previous": false,
+     "depends_on_previous": true,
      "use_previous_episode_state": false,
      "characters": [
       "PaulOnScreen"
@@ -447,7 +447,7 @@
      "duration_seconds": 6,
      "generation_seconds": 6,
      "continuity": "cut",
-     "depends_on_previous": false,
+     "depends_on_previous": true,
      "use_previous_episode_state": false,
      "characters": [
       "PaulOnScreen",
@@ -494,7 +494,7 @@
      "duration_seconds": 5,
      "generation_seconds": 5,
      "continuity": "cut",
-     "depends_on_previous": false,
+     "depends_on_previous": true,
      "use_previous_episode_state": false,
      "characters": [
       "Killian"
@@ -539,7 +539,7 @@
      "duration_seconds": 6,
      "generation_seconds": 6,
      "continuity": "cut",
-     "depends_on_previous": false,
+     "depends_on_previous": true,
      "use_previous_episode_state": false,
      "characters": [
       "Killian"
@@ -584,7 +584,7 @@
      "duration_seconds": 5,
      "generation_seconds": 5,
      "continuity": "cut",
-     "depends_on_previous": false,
+     "depends_on_previous": true,
      "use_previous_episode_state": false,
      "characters": [
       "PaulOnScreen"
