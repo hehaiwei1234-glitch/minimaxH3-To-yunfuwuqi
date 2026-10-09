@@ -1,267 +1,219 @@
 #!/usr/bin/env python3
-"""生成《Alpha继兄的笼中吻》第 3 集“更衣室惊魂”制作稿（模式 3，追加批次，英语台词，美式口语）。
+"""第 3 集“更衣室惊魂”制作稿（追加批次，英语台词）——按 8 条通用规律重写（2026-10-09 16:40）。
+替换掉原来的 15 任务版（那版写在规律整理之前）。素材和角色从第 2 集 JSON 复制（手册 F11），没有新素材。
 
-规则同 CLAUDE.md 第 4 节。追加批次（手册 F11）：style、素材、角色逐字复制第 2 集 JSON（它又复制自第 1 集）；本集没有新素材、没有新角色。
-本集用来验证手册 7.10 的假设（写稿时当作要验证的写法，不是已证实的规则）：
-  H14 画外的声音不要放在“有人的手在附近”的画面里（脚步声等放在人不动的镜头里）；
-  H15 每个开场图提示词写死方位：门在画面左边，莉莉在左、基利安在右（近景也一样）；
-  H16 门把手、门的镜头：门明确关着，门板占满画面，不露出门后的房间。
-用法: 先有第 2 集的 JSON，再  python3 tools/gen_ep3.py
+这一版用到的规律（对话里 hh 看过的那 8 条）：
+ 1 只写想要的，不提不想要的（不写 Nobody speaks / no mirror；人数写成 exactly N people）
+ 2 H3 只认动词不认程度词（不写 slightly / only / small）
+ 3 开场图决定一切（人数、位置、手、门全写进开场图；固定布局句子；承接前段只在“同一批人、同一地点”时打开）
+ 4 每个动作和声音要有看得见的来源（关门、拿文件夹都写出是谁的手）
+ 5 声音不听画面的话（台词后留 1 秒以上；一个任务一句）
+ 6 提示词里除了台词不放像话的句子（动作描述不转述台词）
+ 7 一个任务一个镜头
+ 8 稳的写法：侧面中景、双方身体入画、手的位置写清楚
 """
-import json, re, copy, os
+import json, os, sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from _h3draft import Batch, FOLDER, silent, voiced
 
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-FOLDER = os.path.join(ROOT, 'Alpha继兄的笼中吻')
-BASE = os.path.join(FOLDER, '2026-10-09_第2集_制作稿_英文台词_追加.json')
-OUT_JSON = os.path.join(FOLDER, '2026-10-09_第3集_制作稿_英文台词_追加.json')
-OUT_TXT = os.path.join(FOLDER, '2026-10-09_第3集_制作稿_英文台词_追加_全选复制粘贴.txt')
+BASE = '2026-10-09_第2集_制作稿_英文台词_追加.json'
+OUT = '2026-10-09_第3集_制作稿_英文台词_追加'
+b = Batch(BASE, json.load(open(os.path.join(FOLDER, BASE), encoding='utf-8'))['title'], 3200)
 
-d = copy.deepcopy(json.load(open(BASE, encoding='utf-8')))
-d['title'] = 'Alpha继兄的笼中吻｜第3集｜更衣室惊魂'
-
-LEAD = "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. "
-IMG = ("One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. "
-       "Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. ")
-# H15：固定方位（每个开场图提示词都带）
-LAY_ROOM = " Fixed stage layout: the single heavy dark-wood door is at frame-left; Lily is always at frame-left of Killian."
-LAY_ALC = " Fixed stage layout: the cream velvet curtain is at frame-left; Lily is always at frame-left of Killian, Killian at frame-right."
-END_ROOM = " Warm luxurious light, the fitting room softly blurred behind."
-END_ALC = " Warm dim light, the alcove softly blurred behind."
-END_DOOR = " Warm luxurious light on the wood."
-NOVOICE_EN = "The recording is completely free of voices: no speech, no humming, no sighs, no breathing sounds, no vocal sounds of any kind."
-NOVOICE_ZH = "录音里完全没有人声：没有说话、哼声、叹息、呼吸声或任何发声。"
 K = '[[asset:killian]]'; L = '[[asset:lily]]'; P = '[[asset:paul]]'; R = '[[asset:room]]'; A = '[[asset:alcove]]'
+LAY_DOOR = " Fixed stage layout: the heavy dark-wood door is at frame-left."
+LAY_PAIR = " Fixed stage layout: Lily is always at frame-left of Killian, Killian at frame-right."
+LAY_ROOM = " Fixed stage layout: the heavy dark-wood door is at frame-left; Lily is always at frame-left of Killian."
+END_ROOM = " Warm light from the chandelier and wall sconces."
+END_ALC = " Warm dim light, the layers of white gowns softly blurred behind them."
+ZH = []      # 每个任务开场图提示词的中文全译（写进说明）
+CHAIN = []   # 每个任务是否承接前段
 
 
-def line_seconds(text):
-    words = len(re.findall(r"[A-Za-z0-9]+(?:['’][A-Za-z0-9]+)*", text))
-    pauses = len(re.findall(r'[,;:]', text)) * .12 + len(re.findall(r'[!?]', text)) * .18
-    return max(.35, words / 2.0 + min(pauses, 1.5))
+def T(flag, title, dur, chars, assets, refs, img, end, img_zh, vis_zh, cam_zh, dlg, shot_en, shot_zh, sound):
+    b.task(title, dur, chars, assets, refs, img, end, vis_zh, cam_zh, dlg, shot_en, shot_zh, sound)
+    b.tasks[-1]['depends_on_previous'] = flag
+    ZH.append(img_zh); CHAIN.append(flag)
 
 
-tasks = []
-seed = [3200]
+# 01 ------------------------------------------------------------------------------------------------
+T(False, '01｜门把手转动，保罗进屋', 6, ['PaulOnScreen'], ('room', 'paul'), ['room'],
+  "Wide shot from inside the fitting room: the closed heavy dark-wood door with its brass lever handle at frame-left, seen at an angle, the rack of long white gowns in garment covers along the back wall, the ivory velvet couch at frame-right, thick carpet in the foreground. The frame holds the room, the door and the gowns.",
+  END_ROOM + LAY_DOOR,
+  "试衣间里的广角镜头：画面左边是关着的厚重深色木门，铜色压杆门把手清晰可见，门斜着入画；靠后墙是一排装在防尘罩里的长白婚纱，画面右边是象牙色丝绒沙发，前景是厚地毯。画面里是房间、门和婚纱。吊灯和壁灯的暖光。固定布局：厚重深色木门在画面左边。",
+  "门把手压下，门被推开，保罗走进来，叫莉莉。", "0—6秒广角固定镜头，门在画面左边。",
+  ('PaulOnScreen', 'Lily? Where are you?', 2.4),
+  f"A steady wide shot opens from the adopted first frame in {R}: the closed heavy dark-wood door at frame-left with its brass lever handle in view, the rack of white gowns at the back wall. The handle presses down and the door swings inward; {P} steps through the doorway in his navy blazer, his right hand on the handle, his eyes on the room. The camera holds still.",
+  "一个稳定的广角镜头，从已采用的开场图继续，场景是试衣间：画面左边是关着的厚重深色木门，铜色压杆门把手清晰可见，后墙是一排白色婚纱。门把手压下，门向里打开；保罗穿着藏青色西装外套走进门口，右手还握在门把手上，眼睛看着房间。镜头固定不动。",
+  voiced("The brass handle clicks and the door swings open; soft footsteps on thick carpet.", "铜把手咔哒一声，门打开；脚步轻轻落在厚地毯上。"))
 
+# 02 ------------------------------------------------------------------------------------------------
+T(True, '02｜保罗环顾房间', 5, ['PaulOnScreen'], ('room', 'paul'), ['room'],
+  "Medium shot of Paul standing on the carpet at the centre of the fitting room, centered in the middle third of the frame, in profile facing frame-right, in his navy blazer, his brows drawn together, his eyes on the rack of long white gowns at the back wall. The heavy dark-wood door stands open at frame-left behind him. The frame holds exactly one person, Paul.",
+  END_ROOM + LAY_DOOR,
+  "中景：保罗站在试衣间中央的地毯上，在画面中间三分之一，侧身朝画面右边，穿藏青色西装外套，眉头皱起，眼睛看着后墙那排长白婚纱。厚重深色木门敞开着，在他身后的画面左边。画面里恰好一个人：保罗。吊灯和壁灯的暖光。固定布局：门在画面左边。",
+  "保罗站在房间中央，皱着眉环顾，目光扫过婚纱架。", "0—5秒中景固定镜头。", None,
+  f"A steady medium shot opens from the adopted first frame in {R}: {P} in profile on the carpet, brows drawn together, his eyes on the rack of long white gowns at the back wall. His eyes travel along the rack from one end to the other and his jaw tightens. The camera holds still.",
+  "一个稳定的中景，从已采用的开场图继续，场景是试衣间：保罗侧身站在地毯上，眉头皱起，眼睛看着后墙那排长白婚纱。他的目光沿着婚纱架从一头扫到另一头，下颌收紧。镜头固定不动。",
+  silent("Faint room tone and the soft hum of the chandelier.", "淡淡的房间底噪和吊灯的轻响。"))
 
-def task(title, dur, chars, assets, refs, img, end, vis_zh, cam_zh, dlg, shot_en, shot_zh, sound):
-    seed[0] += 1
-    s = {'title': title, 'duration_seconds': dur, 'generation_seconds': dur, 'continuity': 'cut', 'depends_on_previous': False,
-         'use_previous_episode_state': False, 'characters': chars, 'asset_keys': list(assets), 'image_reference_keys': list(refs),
-         'image_prompt': IMG + img + end, 'visual_zh': vis_zh, 'camera_zh': cam_zh,
-         'dialogue': [], 'shots': [], 'sound_en': sound[0], 'sound_zh': sound[1], 'seed': seed[0], 'dialogue_language': 'en'}
-    if dlg:
-        sp, tx, start = dlg
-        end_t = round(start + line_seconds(tx) + 0.05, 2)
-        assert end_t <= dur - 1.0, (title, end_t, dur)   # 台词后至少留 1 秒
-        s['dialogue'].append({'speaker': sp, 'text': tx, 'start_seconds': start, 'end_seconds': end_t, 'language': 'en'})
-    s['shots'].append({'start_seconds': 0, 'end_seconds': dur, 'visual_en': LEAD + shot_en, 'visual_zh': shot_zh, 'dialogue_indices': [0] if dlg else []})
-    tasks.append(s)
+# 03 ------------------------------------------------------------------------------------------------
+T(False, '03｜缝隙里的两人', 5, ['Lily', 'Killian'], ('alcove', 'lily', 'killian'), ['alcove'],
+  "Side-on medium two-shot in a narrow gap between rows of huge hanging white gowns, both people centered in the middle third of the frame. Lily stands with her back against the cream wall at frame-left in the ivory wedding gown with its back open, her eyes wide and fixed on Killian's face. Killian stands facing her at frame-right in his black three-piece suit, his right hand over her mouth and his left arm around her waist, his eyes lowered on her. Both are fully visible from head to knees. The frame holds exactly two people: Lily and Killian.",
+  END_ALC + LAY_PAIR,
+  "侧面中景双人镜头，在一排排巨大的悬挂白婚纱之间的狭窄缝隙里，两个人都在画面中间三分之一。莉莉背靠奶油色的墙站在画面左边，穿象牙色露背婚纱，睁大眼睛看着基利安的脸。基利安面对她站在画面右边，穿黑色三件套西装，右手捂住她的嘴，左臂搂着她的腰，眼睛垂下看着她。两人从头到膝盖完整出镜。画面里恰好两个人：莉莉和基利安。暖色昏暗的光，层层白婚纱在他们身后柔和虚化。固定布局：莉莉始终在基利安左边，基利安在右边。",
+  "基利安把莉莉按在墙上，右手捂住她的嘴，左臂搂着她的腰；莉莉睁大眼睛，胸口剧烈起伏。", "0—5秒侧面中景，两人居中，镜头固定。", None,
+  f"A steady side-on medium two-shot opens from the adopted first frame in {A}: {L} with her back against the cream wall at frame-left, her eyes wide and fixed on {K}'s face; {K} at frame-right, his right hand over her mouth and his left arm around her waist, his eyes lowered on her. Her chest rises and falls fast and her right hand grips his left forearm. The camera holds still.",
+  "一个稳定的侧面中景双人镜头，从已采用的开场图继续，场景是更衣隔间：莉莉背靠奶油色的墙在画面左边，睁大眼睛看着基利安的脸；基利安在画面右边，右手捂着她的嘴，左臂搂着她的腰，眼睛垂下看着她。她的胸口剧烈起伏，右手抓住他的左前臂。镜头固定不动。",
+  silent("Soft rustling of heavy fabric.", "厚重布料的轻轻摩擦声。"))
 
+# 04 ------------------------------------------------------------------------------------------------
+T(True, '04｜气声警告一', 6, ['Lily', 'Killian'], ('alcove', 'lily', 'killian'), ['alcove'],
+  "Tight side-profile two-shot of heads and shoulders in the gap between the hanging gowns, both people centered in the middle third of the frame. Lily at frame-left with her back against the cream wall, her eyes wide and wet, Killian's right hand over her mouth. Killian at frame-right, his head lowered beside her ear, his eyes on her face. The frame holds exactly two people: Lily and Killian.",
+  END_ALC + LAY_PAIR,
+  "头肩的侧面近景双人镜头，在悬挂的婚纱之间的缝隙里，两个人都在画面中间三分之一。莉莉在画面左边背靠奶油色的墙，睁大湿润的眼睛，基利安的右手捂着她的嘴。基利安在画面右边，头低下贴在她耳边，眼睛看着她的脸。画面里恰好两个人：莉莉和基利安。暖色昏暗的光，层层白婚纱在他们身后柔和虚化。固定布局：莉莉始终在基利安左边，基利安在右边。",
+  "基利安贴着莉莉的耳朵，用极低的气声说话，右手仍捂着她的嘴。", "0—6秒侧面近景，两人居中，镜头固定。",
+  ('Killian', 'Make one sound.', 1.0),
+  f"A steady tight side-profile two-shot opens from the adopted first frame in {A}: {K}'s head lowered beside {L}'s ear, his right hand over her mouth; {L}'s eyes wide and wet, fixed on his face. He speaks in a very low, breathy whisper, his eyes on her face. The camera holds still.",
+  "一个稳定的侧面近景双人镜头，从已采用的开场图继续，场景是更衣隔间：基利安的头低下贴在莉莉耳边，右手捂着她的嘴；莉莉睁大湿润的眼睛，看着他的脸。他用极低的气声说话，眼睛看着她的脸。镜头固定不动。",
+  voiced("He speaks in a very low, breathy whisper close to her ear.", "他贴着她的耳朵，用极低的气声说话。"))
 
-def silent(sfx_en, sfx_zh):
-    return (sfx_en + ' ' + NOVOICE_EN, sfx_zh + ' ' + NOVOICE_ZH)
+# 05 ------------------------------------------------------------------------------------------------
+T(True, '05｜气声警告二', 6, ['Lily', 'Killian'], ('alcove', 'lily', 'killian'), ['alcove'],
+  "Tight side-profile two-shot of heads and shoulders in the gap between the hanging gowns, both people centered in the middle third of the frame. Lily at frame-left with her back against the cream wall, her eyes squeezed shut, a tear on her cheek, Killian's right hand over her mouth. Killian at frame-right, his head lowered beside her ear, his eyes on her closed eyes. The frame holds exactly two people: Lily and Killian.",
+  END_ALC + LAY_PAIR,
+  "头肩的侧面近景双人镜头，在悬挂的婚纱之间的缝隙里，两个人都在画面中间三分之一。莉莉在画面左边背靠奶油色的墙，紧紧闭着眼睛，脸颊上有一滴泪，基利安的右手捂着她的嘴。基利安在画面右边，头低下贴在她耳边，眼睛看着她紧闭的双眼。画面里恰好两个人：莉莉和基利安。暖色昏暗的光，层层白婚纱在他们身后柔和虚化。固定布局：莉莉始终在基利安左边，基利安在右边。",
+  "莉莉紧闭双眼，一滴泪滑下脸颊，肩膀发抖；基利安贴着她的耳朵低声说话。", "0—6秒侧面近景，两人居中，镜头固定。",
+  ('Killian', "I'll take you in front of him.", 1.0),
+  f"A steady tight side-profile two-shot opens from the adopted first frame in {A}: {K}'s head lowered beside {L}'s ear, his right hand over her mouth; {L}'s eyes squeezed shut and a tear running down her cheek. He speaks in a very low, breathy whisper. Her shoulders shake. The camera holds still.",
+  "一个稳定的侧面近景双人镜头，从已采用的开场图继续，场景是更衣隔间：基利安的头低下贴在莉莉耳边，右手捂着她的嘴；莉莉紧闭双眼，一滴泪滑下脸颊。他用极低的气声说话。她的肩膀发抖。镜头固定不动。",
+  voiced("He speaks in a very low, breathy whisper close to her ear.", "他贴着她的耳朵，用极低的气声说话。"))
 
+# 06 ------------------------------------------------------------------------------------------------
+T(False, '06｜保罗嘟囔', 5, ['PaulOnScreen'], ('room', 'paul'), ['room'],
+  "Medium shot of Paul in profile facing frame-right, standing in the open doorway at frame-left in his navy blazer, his right hand on the edge of the door, his brows drawn together, his eyes moving over the fitting room at frame-right. The frame holds exactly one person, Paul.",
+  END_ROOM + LAY_DOOR,
+  "中景：保罗侧身朝画面右边，站在画面左边敞开的门口，穿藏青色西装外套，右手扶着门的边缘，眉头皱起，眼睛扫视着画面右边的试衣间。画面里恰好一个人：保罗。吊灯和壁灯的暖光。固定布局：门在画面左边。",
+  "保罗站在门口，皱着眉看房间，嘟囔了一句。", "0—5秒中景固定镜头。",
+  ('PaulOnScreen', "Where'd she go?", 0.8),
+  f"A steady medium shot opens from the adopted first frame in {R}: {P} in profile in the open doorway at frame-left, his right hand on the edge of the door, his brows drawn together, his eyes on the fitting room at frame-right. He speaks with a puzzled frown, his eyes moving over the room. The camera holds still.",
+  "一个稳定的中景，从已采用的开场图继续，场景是试衣间：保罗侧身站在画面左边敞开的门口，右手扶着门的边缘，眉头皱起，眼睛看着画面右边的试衣间。他带着困惑的皱眉说话，目光在房间里移动。镜头固定不动。",
+  voiced("Soft room tone.", "轻轻的房间底噪。"))
 
-def voiced(extra_en, extra_zh):
-    return (extra_en + ' Voices stay close and clear.', extra_zh + '人声近而清楚。')
+# 07 ------------------------------------------------------------------------------------------------
+T(True, '07｜保罗关门离开', 5, ['PaulOnScreen'], ('room', 'paul'), ['room'],
+  "Medium shot of Paul in profile in the doorway at frame-left, his right hand on the edge of the open heavy dark-wood door, one foot on the threshold, his eyes on the fitting room at frame-right. The frame holds exactly one person, Paul.",
+  END_ROOM + LAY_DOOR,
+  "中景：保罗侧身站在画面左边的门口，右手扶着敞开的厚重深色木门的边缘，一只脚踩在门槛上，眼睛看着画面右边的试衣间。画面里恰好一个人：保罗。吊灯和壁灯的暖光。固定布局：门在画面左边。",
+  "保罗退出门外，用手把门拉上。", "0—5秒中景固定镜头。", None,
+  f"A steady medium shot opens from the adopted first frame in {R}: {P} in profile in the doorway at frame-left, his right hand on the edge of the open door. He steps backward out through the doorway and pulls the heavy dark-wood door closed with his right hand until it shuts. The camera holds still.",
+  "一个稳定的中景，从已采用的开场图继续，场景是试衣间：保罗侧身站在画面左边的门口，右手扶着敞开的门的边缘。他向后退出门外，右手把厚重的深色木门拉上，直到关严。镜头固定不动。",
+  silent("The door shuts with a solid latch click.", "门关上，锁舌发出沉实的咔哒声。"))
 
+# 08 ------------------------------------------------------------------------------------------------
+T(False, '08｜莉莉瘫坐在地', 6, ['Lily', 'Killian'], ('room', 'killian', 'lily'), ['room'],
+  "Side-on medium two-shot in the fitting room, both people centered in the middle third of the frame. Lily stands with her back against the cream wall at frame-left in the ivory wedding gown, her shoulders heaving, her eyes wide. Killian stands facing her at frame-right in his black three-piece suit, his right hand at his side and his eyes lowered on her. The closed heavy dark-wood door is at the far left edge of the frame. Both are fully visible from head to knees. The frame holds exactly two people: Lily and Killian.",
+  END_ROOM + LAY_ROOM,
+  "试衣间里的侧面中景双人镜头，两个人都在画面中间三分之一。莉莉背靠奶油色的墙站在画面左边，穿象牙色露背婚纱，肩膀剧烈起伏，睁大眼睛。基利安面对她站在画面右边，穿黑色三件套西装，右手垂在身侧，眼睛垂下看着她。关着的厚重深色木门在画面最左边缘。两人从头到膝盖完整出镜。画面里恰好两个人：莉莉和基利安。吊灯和壁灯的暖光。固定布局：门在画面左边，莉莉始终在基利安左边。",
+  "门关上后，莉莉脱力，顺着墙滑坐到地毯上，大口喘气；基利安站着看着她。", "0—6秒侧面中景，两人居中，镜头固定。", None,
+  f"A steady side-on medium two-shot opens from the adopted first frame in {R}: {L} with her back against the cream wall at frame-left, shoulders heaving, {K} at frame-right with his eyes lowered on her. {L} slides down the wall until she sits on the carpet, her gown spreading around her, her chest heaving, her eyes on the floor; {K} stays standing at frame-right, his eyes following her down. The camera holds still.",
+  "一个稳定的侧面中景双人镜头，从已采用的开场图继续，场景是试衣间：莉莉背靠奶油色的墙在画面左边，肩膀剧烈起伏，基利安在画面右边，眼睛垂下看着她。莉莉顺着墙滑下去，坐在地毯上，婚纱在她周围铺开，胸口剧烈起伏，眼睛看着地面；基利安仍站在画面右边，目光跟着她落下去。镜头固定不动。",
+  silent("The soft rustle of a heavy gown settling on the carpet.", "厚重婚纱落在地毯上的轻轻摩擦声。"))
 
-ROOM = ('room', 'killian', 'lily')
-ALC = ('alcove', 'lily', 'killian')
-ROOMP = ('room', 'paul')
+# 09 ------------------------------------------------------------------------------------------------
+T(True, '09｜三千万美金', 6, ['Lily', 'Killian'], ('room', 'killian', 'lily'), ['room'],
+  "Side-on medium two-shot in the fitting room, both people centered in the middle third of the frame. Lily sits on the carpet at frame-left with her back against the cream wall, her palms on the carpet, her eyes lifted to Killian. Killian stands at frame-right looking down at her in his black three-piece suit, his right hand at his tie, a document folder held in his left hand at his side. Both are fully visible. The frame holds exactly two people: Lily and Killian.",
+  END_ROOM + LAY_ROOM,
+  "试衣间里的侧面中景双人镜头，两个人都在画面中间三分之一。莉莉坐在画面左边的地毯上，背靠奶油色的墙，手掌按在地毯上，眼睛抬起看着基利安。基利安站在画面右边，穿黑色三件套西装，低头看着她，右手放在领带上，左手垂在身侧拿着一个文件夹。两人完整出镜。画面里恰好两个人：莉莉和基利安。吊灯和壁灯的暖光。固定布局：门在画面左边，莉莉始终在基利安左边。",
+  "基利安居高临下整理领带，松手把文件夹丢在莉莉面前的地毯上，说出债务。", "0—6秒侧面中景，两人居中，镜头固定。",
+  ('Killian', 'Your foster parents owe me thirty million.', 1.2),
+  f"A steady side-on medium two-shot opens from the adopted first frame in {R}: {K} stands at frame-right looking down at {L}, his right hand straightening his tie, a document folder in his left hand; {L} sits on the carpet at frame-left, her palms on the carpet, her eyes lifted to his face. His left hand opens and the folder drops onto the carpet in front of her. The camera holds still.",
+  "一个稳定的侧面中景双人镜头，从已采用的开场图继续，场景是试衣间：基利安站在画面右边低头看着莉莉，右手整理领带，左手拿着一个文件夹；莉莉坐在画面左边的地毯上，手掌按着地毯，眼睛抬起看着他的脸。他的左手松开，文件夹掉在她面前的地毯上。镜头固定不动。",
+  voiced("A soft thud as the folder lands on the carpet.", "文件夹落在地毯上，发出一声轻响。"))
 
-# 01 门把手（H16：门明确关着、门板占满画面；门外的人不入画，只有把手在动）
-task('01｜门把手', 5, [], ('room',), ['room'],
-     "Close-up of the middle of the closed heavy dark-wood door, seen from inside the room. The dark wood panel fills the whole frame edge to edge with nothing else visible, no wall, no floor, no ceiling, no room beside it. "
-     "The brass lever handle is centered in the middle third of the frame, level.",
-     END_DOOR,
-     "门板占满整个画面，门关着。门把手慢慢被压下，咔哒一声，停住。", "0—5秒门板近景，镜头固定。",
-     None,
-     f"A steady close-up opens from the adopted first frame in {R}: the closed dark-wood door filling the whole frame, the brass lever handle in the centre. "
-     "The lever presses slowly downward with a loud, magnified metallic click and holds against the latch. The door stays shut. Nothing else moves. The camera holds still.",
-     "从开场图继续，近景：关着的深色木门占满整个画面，黄铜压杆把手在正中。把手慢慢被压下，发出响亮的、被放大的金属咔哒声，停在锁舌上。门一直关着。其他什么都不动。镜头固定。",
-     silent("One loud metallic click of a door lever.", "一声响亮的门把手金属咔哒声。"))
+# 10 ------------------------------------------------------------------------------------------------
+T(True, '10｜搬进我的别墅', 6, ['Killian'], ('room', 'killian'), ['room'],
+  "Medium close-up of Killian alone, in profile facing frame-left, centered in the middle third of the frame, in his black three-piece suit, his right hand in his trouser pocket, his eyes lowered on a woman sitting on the carpet at frame-left, just outside the frame, his face cold and unreadable. Behind him the cream panelled wall. The frame holds exactly one person, Killian.",
+  END_ROOM + LAY_ROOM,
+  "中近景：基利安一个人，侧身朝画面左边，在画面中间三分之一，穿黑色三件套西装，右手插在裤兜里，眼睛垂下看着坐在地毯上的女人（在画面左边、画面之外），脸冷淡、看不出情绪。他身后是奶油色的镶板墙。画面里恰好一个人：基利安。吊灯和壁灯的暖光。固定布局：门在画面左边，莉莉始终在基利安左边。",
+  "基利安冷冷地低头看着地上的莉莉，说出要求。", "0—6秒中近景固定镜头。",
+  ('Killian', 'Move into my villa. Starting today.', 1.0),
+  f"A steady medium close-up opens from the adopted first frame in {R}: {K} in profile facing frame-left, one hand in his trouser pocket, his eyes lowered on the woman sitting on the carpet at frame-left, just outside the frame, his jaw tight. The camera holds still.",
+  "一个稳定的中近景，从已采用的开场图继续，场景是试衣间：基利安侧身朝画面左边，一只手插在裤兜里，眼睛垂下看着坐在地毯上的女人（在画面左边、画面之外），下颌收紧。镜头固定不动。",
+  voiced("Cold, controlled room tone.", "冷静克制的房间底噪。"))
 
-# 02 保罗进屋找人
-task('02｜保罗进屋', 6, ['PaulOnScreen'], ROOMP, ['room'],
-     "Wide-medium shot of Paul alone, full body, standing in the middle of the empty fitting room, centered in the middle third of the frame, in profile facing frame-right, "
-     "his eyes on the rack of white gowns at frame-right. The heavy dark-wood door is at frame-left behind him. Nobody else is in the frame." + LAY_ROOM,
-     END_ROOM,
-     "保罗一个人站在空荡荡的更衣室中央，看着右边的婚纱架，喊莉莉。", "0—6秒保罗侧面中景，镜头固定。",
-     ('PaulOnScreen', "Lily? Where are you?", 1.2),
-     f"A steady wide-medium shot opens from the adopted first frame in {R}: {P} alone in the middle of the empty fitting room, in profile facing frame-right, his eyes on the rack of gowns at frame-right. "
-     "He calls out in a casual, puzzled voice, turning only his head slightly to look along the rack. His body stays where it is. The camera holds still.",
-     "从开场图继续，保罗中景：一个人站在空荡荡的更衣室中央，侧脸朝右，目光落在右边的婚纱架上。他随意而疑惑地喊着，只把头微微转动、沿着婚纱架看过去。身体不动。镜头固定。",
-     voiced("Quiet room tone, a faint creak of the floor.", "安静的房间底噪，地板轻微的吱呀声。"))
+# 11 ------------------------------------------------------------------------------------------------
+T(True, '11｜保罗会失去一切', 6, ['Killian'], ('room', 'killian'), ['room'],
+  "Medium close-up of Killian alone, in profile facing frame-left, centered in the middle third of the frame, in his black three-piece suit, his right hand in his trouser pocket, his chin lifted, his eyes narrowed and fixed on a woman sitting on the carpet at frame-left, just outside the frame. Behind him the cream panelled wall. The frame holds exactly one person, Killian.",
+  END_ROOM + LAY_ROOM,
+  "中近景：基利安一个人，侧身朝画面左边，在画面中间三分之一，穿黑色三件套西装，右手插在裤兜里，下巴抬起，眯着眼睛盯着坐在地毯上的女人（在画面左边、画面之外）。他身后是奶油色的镶板墙。画面里恰好一个人：基利安。吊灯和壁灯的暖光。固定布局：门在画面左边，莉莉始终在基利安左边。",
+  "基利安抬着下巴、眯着眼，说出最后通牒。", "0—6秒中近景固定镜头。",
+  ('Killian', 'Or Paul loses everything by morning.', 1.0),
+  f"A steady medium close-up opens from the adopted first frame in {R}: {K} in profile facing frame-left, one hand in his trouser pocket, his chin lifted, his eyes narrowed and fixed on the woman sitting on the carpet at frame-left, just outside the frame. The camera holds still.",
+  "一个稳定的中近景，从已采用的开场图继续，场景是试衣间：基利安侧身朝画面左边，一只手插在裤兜里，下巴抬起，眯着眼睛盯着坐在地毯上的女人（在画面左边、画面之外）。镜头固定不动。",
+  voiced("Cold, controlled room tone.", "冷静克制的房间底噪。"))
 
-# 03 婚纱后的缝隙：基利安把莉莉按在墙上
-task('03｜缝隙里的两人', 5, ['Lily', 'Killian'], ALC, ['alcove'],
-     "Medium two-shot, waist-up, in profile inside a narrow dim gap behind a wall of enormous layered ivory gown skirts hanging from a rail, both people centered in the middle third of the frame. "
-     "Lily stands with her back flat against the wall at frame-left, her eyes wide and fixed on Killian's face, her hands at her sides; "
-     "Killian stands facing her at frame-right, very close, in his black three-piece suit, his right hand pressed flat on her shoulder pinning her to the wall, his whole right arm in the frame, his left hand at his side. Nobody else is in the frame." + LAY_ALC,
-     END_ALC,
-     "婚纱裙摆后面狭窄的缝隙里，基利安一只手按着莉莉的肩，把她压在墙上。", "0—5秒侧面中景，两人居中，莉莉在左、基利安在右，镜头固定。",
-     None,
-     f"A steady medium two-shot in profile opens from the adopted first frame in {A}: {L} with her back against the wall, her eyes wide and fixed on {K}'s face; {K} facing her very close, his right hand pressed flat on her shoulder. "
-     "Neither moves. Her chest rises and falls fast. His eyes stay on her face. The camera holds still.",
-     "从开场图继续，侧面中景：莉莉背靠墙，睁大眼睛盯着基利安的脸；基利安紧贴着她面对她，右手按在她的肩上。两人都不动。她的胸口起伏很快。他的目光一直停在她脸上。镜头固定。",
-     silent("Faint rustle of heavy fabric settling.", "厚重衣料轻轻落定的沙沙声。"))
+# 12 ------------------------------------------------------------------------------------------------
+T(False, '12｜颤抖着捡起文件', 5, ['Lily'], ('room', 'lily'), ['room'],
+  "Medium close-up of Lily alone, in profile facing frame-right, centered in the middle third of the frame, sitting on the carpet in the ivory wedding gown, both hands holding an open document folder at chest height, her eyes on the page, her lips trembling. Behind her the cream panelled wall. The frame holds exactly one person, Lily.",
+  END_ROOM + LAY_DOOR,
+  "中近景：莉莉一个人，侧身朝画面右边，在画面中间三分之一，穿象牙色露背婚纱坐在地毯上，双手在胸前拿着一份翻开的文件夹，眼睛看着纸页，嘴唇发抖。她身后是奶油色的镶板墙。画面里恰好一个人：莉莉。吊灯和壁灯的暖光。固定布局：门在画面左边。",
+  "莉莉颤抖着拿起文件夹，翻开，看着上面的内容。", "0—5秒中近景固定镜头。", None,
+  f"A steady medium close-up opens from the adopted first frame in {R}: {L} in profile facing frame-right on the carpet, both hands holding the open document folder at chest height, her eyes on the page. Her hands tremble and her eyes move across the page. The camera holds still.",
+  "一个稳定的中近景，从已采用的开场图继续，场景是试衣间：莉莉侧身朝画面右边坐在地毯上，双手在胸前拿着翻开的文件夹，眼睛看着纸页。她的手在发抖，目光在纸页上移动。镜头固定不动。",
+  silent("Faint paper rustle and quiet room tone.", "淡淡的纸张摩擦声和安静的房间底噪。"))
 
-# 04 捂嘴、揽腰、提起来（大姿势放进开场图，文字只写“不动”）
-task('04｜捂住嘴', 6, ['Lily', 'Killian'], ALC, ['alcove'],
-     "Medium two-shot, waist-up, in profile inside the narrow dim gap behind the enormous layered ivory gown skirts, both people centered in the middle third of the frame. "
-     "Killian at frame-right holds Lily at frame-left against the wall: his left arm is around her waist lifting her so that her toes only just touch the floor, his right hand is over her mouth, both his arms fully in the frame; "
-     "her hands are pressed flat against his chest and her eyes are wide and fixed on his face. Nobody else is in the frame." + LAY_ALC,
-     END_ALC,
-     "基利安一手捂住莉莉的嘴，一手揽着她的腰把她提起来，她的脚尖刚刚碰到地。门外是保罗的脚步声。", "0—6秒侧面中景，两人居中，莉莉在左、基利安在右，镜头固定。",
-     None,
-     f"A steady medium two-shot in profile opens from the adopted first frame in {A}: {K} holding {L} against the wall, his right hand over her mouth and his left arm around her waist, her hands flat on his chest, her eyes wide and fixed on his face. "
-     "Neither changes position. Her breathing is fast against his hand. His eyes stay on her face. The camera holds still.",
-     "从开场图继续，侧面中景：基利安抱着莉莉靠在墙上，右手捂着她的嘴，左臂揽着她的腰，她的双手平按在他胸口，睁大眼睛盯着他的脸。两人姿势都不变。她的呼吸在他手下很快。他的目光一直停在她脸上。镜头固定。",
-     silent("Slow footsteps on carpet a short distance away, outside the gowns.", "不远处、婚纱外面地毯上缓慢的脚步声。"))
+# 13 ------------------------------------------------------------------------------------------------
+T(True, '13｜莉莉抬头', 5, ['Lily'], ('room', 'lily'), ['room'],
+  "Medium close-up of Lily alone, in profile facing frame-right, centered in the middle third of the frame, the document folder held against her chest, her eyes lifted to a man standing above her at frame-right, just outside the frame, tears on her lashes. The frame holds exactly one person, Lily.",
+  END_ROOM + LAY_DOOR,
+  "中近景：莉莉一个人，侧身朝画面右边，在画面中间三分之一，文件夹抱在胸前，眼睛抬起看着站在她上方的男人（在画面右边、画面之外），睫毛上挂着泪。画面里恰好一个人：莉莉。吊灯和壁灯的暖光。固定布局：门在画面左边。",
+  "莉莉抬起头，含泪看向基利安。", "0—5秒中近景固定镜头。", None,
+  f"A steady medium close-up opens from the adopted first frame in {R}: {L} in profile facing frame-right, the folder held against her chest. Her chin lifts and her eyes rise from the page to the man above her at frame-right, just outside the frame; tears gather on her lower lashes. The camera holds still.",
+  "一个稳定的中近景，从已采用的开场图继续，场景是试衣间：莉莉侧身朝画面右边，文件夹抱在胸前。她的下巴抬起，目光从纸页上升起，看向站在她上方的男人（在画面右边、画面之外）；泪水聚在她的下睫毛上。镜头固定不动。",
+  silent("Quiet room tone.", "安静的房间底噪。"))
 
-# 05 气声（上半句）
-task('05｜贴着耳朵的气声', 6, ['Lily', 'Killian'], ALC, ['alcove'],
-     "Tight side-profile two-shot of heads and shoulders inside the dim gap, both people centered in the middle third of the frame. "
-     "Killian's head at frame-right is lowered beside Lily's ear with his lips an inch from it, his right hand still over her mouth, his forearm in the frame; "
-     "Lily at frame-left has her eyes wide and her chest rising fast. Nobody else is in the frame." + LAY_ALC,
-     END_ALC,
-     "基利安把嘴唇贴近莉莉的耳边，压低声音说话。", "0—6秒侧面近景，两人头肩居中，莉莉在左、基利安在右，镜头固定。",
-     ('Killian', "One sound, and I'll take you here,", 1.0),
-     f"A steady tight side-profile two-shot opens from the adopted first frame in {A}: {K}'s lips an inch from {L}'s ear, his right hand over her mouth. "
-     "He speaks in a very low, breathy whisper, his eyes lowered. She does not move; her eyes stay wide. The camera holds still.",
-     "从开场图继续，侧面近景：基利安的嘴唇离莉莉的耳朵只有一寸，右手捂着她的嘴。他用极低的气声说话，目光低垂。她不动，眼睛一直睁大。镜头固定。",
-     voiced("Quiet fabric rustle. The whisper is very low and breathy.", "安静的衣料摩擦声。耳语极低，带气声。"))
+# 14 ------------------------------------------------------------------------------------------------
+T(False, '14｜掠夺的眼神', 5, ['Killian'], ('room', 'killian'), ['room'],
+  "Close-up of Killian's face alone, in profile facing frame-left, centered in the middle third of the frame, his eyes fixed on the woman on the carpet at frame-left, just outside the frame, a cold glint in his eyes, his lips pressed together. The frame holds exactly one person, Killian.",
+  END_ROOM + LAY_ROOM,
+  "特写：基利安的脸，只有他一个人，侧面朝画面左边，在画面中间三分之一，眼睛盯着地毯上的女人（在画面左边、画面之外），眼里一道冷光，嘴唇抿紧。画面里恰好一个人：基利安。吊灯和壁灯的暖光。固定布局：门在画面左边，莉莉始终在基利安左边。",
+  "基利安的特写，眼神带着掠夺的光。（成片里在这里黑屏）", "0—5秒面部特写，镜头固定。", None,
+  f"A steady close-up opens from the adopted first frame in {R}: {K}'s face in profile facing frame-left, his eyes fixed on the woman at frame-left, just outside the frame. His eyes narrow and the warm chandelier light catches them. The camera holds still.",
+  "一个稳定的特写，从已采用的开场图继续，场景是试衣间：基利安的侧脸朝画面左边，眼睛盯着画面左边、画面之外的女人。他的眼睛眯起，吊灯的暖光落在他眼里。镜头固定不动。",
+  silent("A low, tense hum of room tone.", "低沉紧绷的房间底噪。"))
 
-# 06 气声（下半句）
-task('06｜当着他的面', 5, ['Lily', 'Killian'], ALC, ['alcove'],
-     "Tight side-profile two-shot of heads and shoulders inside the dim gap, both people centered in the middle third of the frame. "
-     "Killian's head at frame-right is lowered beside Lily's ear with his lips an inch from it, his right hand still over her mouth, his forearm in the frame; "
-     "Lily at frame-left has her eyes squeezed shut, tears on her lashes. Nobody else is in the frame." + LAY_ALC,
-     END_ALC,
-     "基利安继续贴着耳朵说下半句，莉莉闭紧眼睛，眼泪流下来。", "0—5秒侧面近景，两人头肩居中，莉莉在左、基利安在右，镜头固定。",
-     ('Killian', "in front of him.", 0.8),
-     f"A steady tight side-profile two-shot opens from the adopted first frame in {A}: {K}'s lips an inch from {L}'s ear, his right hand over her mouth. "
-     "He speaks in the same very low, breathy whisper. A tear runs down her cheek and her eyes stay squeezed shut. The camera holds still.",
-     "从开场图继续，侧面近景：基利安的嘴唇离莉莉的耳朵只有一寸，右手捂着她的嘴。他用同样极低的气声说话。一滴眼泪从她脸颊滑下，她的眼睛一直紧闭。镜头固定。",
-     voiced("Quiet fabric rustle. The whisper is very low and breathy.", "安静的衣料摩擦声。耳语极低，带气声。"))
+# ---- 汇总 -----------------------------------------------------------------------------------------
+b.finish('第3集｜更衣室惊魂',
+         '保罗推门进来找莉莉，基利安捂住她的嘴躲在婚纱缝隙里，用气声威胁她。保罗找不到人，嘟囔着关门离开。莉莉瘫坐在地，基利安丢下一份文件：你养父母欠我三千万，搬进我的别墅，否则保罗明天就会失去一切。',
+         OUT)
 
-# 07 保罗嘟囔（只转头）
-task('07｜去哪了', 5, ['PaulOnScreen'], ROOMP, ['room'],
-     "Medium shot of Paul alone, waist-up, in profile facing frame-right, centered in the middle third of the frame, in the fitting room, one hand scratching the back of his neck, "
-     "his brows drawn together, his eyes on the rack of white gowns at frame-right. The heavy dark-wood door is at frame-left behind him. Nobody else is in the frame." + LAY_ROOM,
-     END_ROOM,
-     "保罗一只手挠着后颈，皱着眉，嘟囔了一句。", "0—5秒保罗侧面中景，镜头固定。",
-     ('PaulOnScreen', "Where'd she go?", 0.8),
-     f"A steady medium shot opens from the adopted first frame in {R}: {P} in profile facing frame-right, one hand at the back of his neck, his brows drawn together, his eyes on the rack of gowns at frame-right. "
-     "He mutters the words, then turns only his head toward the door at frame-left. His body stays where it is. The camera holds still.",
-     "从开场图继续，保罗中景：侧脸朝右，一只手放在后颈，眉头皱着，目光落在右边的婚纱架上。他嘟囔着说话，然后只把头转向左边的门。身体不动。镜头固定。",
-     voiced("Quiet room tone.", "安静的房间底噪。"))
-
-# 08 关着的门（H16：门板占满画面；关门的瞬间用剪辑交代，只留一声锁舌轻响）
-task('08｜门关上了', 5, [], ('room',), ['room'],
-     "Close-up of the middle of the closed heavy dark-wood door, seen from inside the room. The dark wood panel fills the whole frame edge to edge with nothing else visible, no wall, no floor, no ceiling, no room beside it. "
-     "The brass lever handle is centered in the middle third of the frame, level and still.",
-     END_DOOR,
-     "门已经关上，门板占满画面，门把手不动。一声轻轻的锁舌声，然后安静。", "0—5秒门板近景，镜头固定。",
-     None,
-     f"A steady close-up opens from the adopted first frame in {R}: the closed dark-wood door filling the whole frame, the brass lever handle in the centre, still. "
-     "After a moment a soft latch click is heard, then silence. Nothing moves. The camera holds still.",
-     "从开场图继续，近景：关着的深色木门占满整个画面，黄铜压杆把手在正中，不动。片刻之后听到一声轻轻的锁舌声，然后安静。什么都不动。镜头固定。",
-     silent("One soft latch click, then silence.", "一声轻轻的锁舌声，然后安静。"))
-
-# 09 脱力滑落（姿势在开场图里：莉莉已经坐在地上）
-task('09｜瘫坐在地', 6, ['Lily', 'Killian'], ROOM, ['room'],
-     "Wide-medium two-shot, both people fully visible, centered in the middle third of the frame. "
-     "Lily sits on the carpet with her back against the bare cream wall at frame-left, her ivory gown pooled around her, one hand at her throat, her eyes on the floor in front of her; "
-     "Killian stands a step away at frame-right in his black three-piece suit, both hands at the knot of his tie, straightening it, his eyes lowered on her. Nobody else is in the frame." + LAY_ROOM,
-     END_ROOM,
-     "莉莉脱力地坐在地上，背靠着墙，手按着脖子。基利安站在旁边，整理领带，低头看她。", "0—6秒两人中景，莉莉在左、基利安在右，镜头固定。",
-     None,
-     f"A steady wide-medium two-shot opens from the adopted first frame in {R}: {L} sitting on the carpet against the wall, one hand at her throat, her eyes on the floor; {K} standing a step away, both hands at his tie. "
-     "Her shoulders rise and fall with fast breaths. He finishes straightening the knot, his eyes on her. The camera holds still.",
-     "从开场图继续，两人中景：莉莉坐在地毯上靠着墙，一只手按着脖子，目光落在地面；基利安站在一步之外，双手在领带结上。她的肩膀随着急促的呼吸起伏。他把领带结整理好，目光一直在她身上。镜头固定。",
-     silent("Faint fabric rustle and the soft tick of a tie being straightened.", "轻微的衣料摩擦声，领带被理好的细响。"))
-
-# 10-12 基利安的三句话（原长句拆开）
-task('10｜三千万美金', 6, ['Lily', 'Killian'], ROOM, ['room'],
-     "Wide-medium two-shot, both people fully visible, centered in the middle third of the frame. "
-     "Lily sits on the carpet against the bare cream wall at frame-left, her ivory gown pooled around her, her eyes on a thick cream document folder lying on the carpet in front of her knees; "
-     "Killian stands a step away at frame-right in his black three-piece suit, his right hand in his trouser pocket and his left hand at his side, his eyes lowered on her. Nobody else is in the frame." + LAY_ROOM,
-     END_ROOM,
-     "莉莉坐在地上，面前地毯上放着一份厚厚的文件。基利安站在旁边，低头看着她，开口。", "0—6秒两人中景，莉莉在左、基利安在右，镜头固定。",
-     ('Killian', "Your foster parents owe me thirty million.", 1.2),
-     f"A steady wide-medium two-shot opens from the adopted first frame in {R}: {L} sitting on the carpet, her eyes on the document folder in front of her knees; {K} standing a step away, his eyes on her. "
-     "He speaks flatly and without hurry, his voice low and cold, his hands staying where they are. She does not look up. The camera holds still.",
-     "从开场图继续，两人中景：莉莉坐在地毯上，目光落在膝前的文件夹上；基利安站在一步之外，目光落在她身上。他平平淡淡、不慌不忙地开口，声音低而冷，手不动。她没有抬头。镜头固定。",
-     voiced("Quiet room tone.", "安静的房间底噪。"))
-
-task('11｜搬进我的别墅', 6, ['Killian'], ('room', 'killian'), ['room'],
-     "Medium shot of Killian alone, waist-up, in profile facing frame-left, centered in the middle third of the frame, in his black three-piece suit, one hand in his trouser pocket, "
-     "his eyes lowered on a woman sitting on the floor at frame-left, just outside the frame, his face cold and unreadable, his jaw tight. Nobody else is in the frame." + LAY_ROOM,
-     END_ROOM,
-     "基利安一个人入画，侧脸朝左，低头看着画面外坐在地上的莉莉，继续说。", "0—6秒基利安侧面中景，镜头固定。",
-     ('Killian', "Move into my villa. Starting today.", 1.0),
-     f"A steady medium shot opens from the adopted first frame in {R}: {K} in profile facing frame-left, one hand in his trouser pocket, his eyes lowered on the woman sitting on the floor at frame-left, just outside the frame. "
-     "He speaks slowly and quietly, his voice low and cold. His hands stay still. The camera holds still.",
-     "从开场图继续，基利安中景：侧脸朝左，一只手插在裤兜里，目光低下去看着左边画面外坐在地上的女人。他慢慢地、压低声音说话，声音低而冷。手不动。镜头固定。",
-     voiced("Quiet room tone.", "安静的房间底噪。"))
-
-task('12｜保罗会失去一切', 6, ['Killian'], ('room', 'killian'), ['room'],
-     "Medium close-up of Killian alone, chest-up, in profile facing frame-left, centered in the middle third of the frame, in his black three-piece suit, "
-     "his eyes lowered on a woman sitting on the floor at frame-left, just outside the frame, his face cold and unreadable, his jaw tight. Nobody else is in the frame." + LAY_ROOM,
-     END_ROOM,
-     "基利安的侧脸近一点，目光还是落在画面外的莉莉身上，说出最后一句。", "0—6秒基利安侧面中近景，镜头固定。",
-     ('Killian', "Or Paul loses everything by morning.", 1.0),
-     f"A steady medium close-up opens from the adopted first frame in {R}: {K} in profile facing frame-left, his eyes lowered on the woman sitting on the floor at frame-left, just outside the frame. "
-     "He speaks slowly and quietly, his voice low and cold. Only his lips move. The camera holds still.",
-     "从开场图继续，基利安中近景：侧脸朝左，目光低下去看着左边画面外坐在地上的女人。他慢慢地、压低声音说话，声音低而冷。只有嘴唇在动。镜头固定。",
-     voiced("Quiet room tone.", "安静的房间底噪。"))
-
-# 13 莉莉拿着文件
-task('13｜颤抖的文件', 5, ['Lily'], ('room', 'lily'), ['room'],
-     "Medium close-up of Lily alone, chest-up, sitting against the bare cream wall, centered in the middle third of the frame, in the ivory wedding gown, "
-     "both hands holding a thick cream document folder open at chest height, her whole forearms in the frame, her eyes lowered on the page, her lips pressed together. Nobody else is in the frame." + LAY_ROOM,
-     END_ROOM,
-     "莉莉双手捧着打开的文件，低头看，手在发抖。", "0—5秒莉莉近景，镜头固定。",
-     None,
-     f"A steady medium close-up opens from the adopted first frame in {R}: {L} holding the open document folder in both hands at chest height, her eyes on the page. "
-     "Her hands tremble and the page shivers. Her eyes move once along the page and stop. The camera holds still.",
-     "从开场图继续，莉莉近景：双手在胸口高度捧着打开的文件夹，目光落在纸页上。她的手在发抖，纸页跟着颤。她的视线沿着纸页移动一下就停住了。镜头固定。",
-     silent("Faint rustle of paper.", "纸张轻轻的沙沙声。"))
-
-# 14 莉莉抬头
-task('14｜抬起头', 5, ['Lily'], ('room', 'lily'), ['room'],
-     "Medium close-up of Lily alone, chest-up, in profile facing frame-right, centered in the middle third of the frame, in the ivory wedding gown, "
-     "the document folder held against her chest in both hands, her head lifted and her eyes fixed on a man standing above her at frame-right, just outside the frame, her eyes wet, her lips parted. Nobody else is in the frame." + LAY_ROOM,
-     END_ROOM,
-     "莉莉抱着文件抬起头，眼睛湿着，盯着右边画面外的基利安。", "0—5秒莉莉侧面近景，镜头固定。",
-     None,
-     f"A steady medium close-up opens from the adopted first frame in {R}: {L} in profile facing frame-right, the folder held against her chest, her eyes fixed on the man above her at frame-right, just outside the frame. "
-     "Her eyes shine and a tear gathers and runs down. Her hands stay holding the folder. The camera holds still.",
-     "从开场图继续，莉莉近景：侧脸朝右，文件夹抱在胸前，目光盯着右边画面外站在她上方的男人。她的眼睛发亮，一滴泪聚起来滑下。双手一直抱着文件夹。镜头固定。",
-     silent("Faint fabric rustle, then near silence.", "轻微的衣料摩擦声，然后几乎无声。"))
-
-# 15 基利安的眼神（成片里在这里黑屏）
-task('15｜掠夺的眼神', 5, ['Killian'], ('room', 'killian'), ['room'],
-     "Close-up of Killian's face alone, in profile facing frame-left, centered in the middle third of the frame, his eyes lowered on a woman sitting on the floor at frame-left, just outside the frame, "
-     "his eyes narrowed and unblinking, his jaw tight, his lips pressed together. Nobody else is in the frame." + LAY_ROOM,
-     END_ROOM,
-     "基利安的侧脸特写，眼睛眯起，目光落在画面外的莉莉身上。（成片里在这里黑屏）", "0—5秒基利安侧面特写，镜头固定。",
-     None,
-     f"A steady close-up opens from the adopted first frame in {R}: {K}'s face in profile facing frame-left, his eyes narrowed and fixed on the woman on the floor at frame-left, just outside the frame. "
-     "His gaze does not waver and his jaw tightens slowly. He does not speak. The camera holds still.",
-     "从开场图继续，基利安面部特写：侧脸朝左，眼睛眯起，盯着左边画面外坐在地上的女人。目光一动不动，下颌慢慢收紧。他不说话。镜头固定。",
-     silent("Tense, near-silent room tone.", "紧绷、几乎无声的房间底噪。"))
-
-lines = []
-for t in tasks:
-    lines.append((t['title'].split('｜')[1] + '，' + t['visual_zh']).replace('：', '，'))
-    for x in t['dialogue']:
-        lines.append(f"{x['speaker']}：“{x['text']}”")
-d['episodes'] = [{'title': '第3集｜更衣室惊魂',
-                  'summary': '保罗推门进来找莉莉，更衣室中央空无一人。基利安把莉莉按在婚纱裙摆后面狭窄的缝隙里，捂住她的嘴，用气声威胁。保罗嘟囔着离开、关上门，莉莉脱力坐倒。基利安丢下一份《债务重组及个人抵押协议》，要她搬进别墅，否则保罗明天就会破产。',
-                  'script': '\n'.join(lines), 'segments': tasks, 'dialogue_language': 'en'}]
-json.dump(d, open(OUT_JSON, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
-open(OUT_TXT, 'w', encoding='utf-8').write(json.dumps(d, ensure_ascii=False, indent=1))
-print(f'{len(tasks)} 个任务，合计约 {sum(t["duration_seconds"] for t in tasks)} 秒 → {OUT_JSON}')
+# ---- 说明（含每个任务英文提示词的中文全译）-----------------------------------------------------------
+d = b.d
+segs = d['episodes'][0]['segments']
+md = []
+md.append("# 第 3 集制作稿（英语台词、追加批次）：怎么用（2026-10-09 16:40，按 8 条通用规律重写）\n")
+md.append(f"文件：`{OUT}_全选复制粘贴.txt`（和同名 `.json` 内容一样）。**14 个任务，8:3 宽屏，合计 {sum(s['duration_seconds'] for s in segs)} 秒，种子 3201–3214。** 这一版**替换**了之前的 15 任务版（那版写在规律整理之前，请不要再用）。\n")
+md.append("## 一、怎么跑\n")
+md.append("1. 接在第 2 集之后追加，素材和角色沿用第 2 集（没有新素材，和第 2 集的声明逐字相同）。\n2. 设置照旧：视频/对白共用次数 = 1，对白时间余量 = 0。追加窗口不要勾“每集／总／任务秒数”。\n3. 这一集里有 8 个任务打开了“承接前段”（见下表“承接”一列）：**只在“前一个任务和这一个是同一批人、同一个地点”时才打开**，换人或换地点时关掉，避免把上一段的人带进来；这样链条也短，重做时连带重做的段落少。**承接前段是否有用，还在等第 2 集重跑的结果。**\n4. 重做某一段，会连带重做它后面“承接”的段落。\n")
+md.append("## 二、14 个任务\n")
+md.append("| 号 | 名字 | 秒 | 在场 | 承接 | 英语台词 | 种子 |\n|---|---|---|---|---|---|---|")
+for i, s in enumerate(segs):
+    dl = f"{s['dialogue'][0]['speaker']}：{s['dialogue'][0]['text']}" if s['dialogue'] else '（无台词）'
+    md.append(f"| {i+1:02d} | {s['title'].split('｜')[1]} | {s['duration_seconds']} | {len(s['characters'])} | {'是' if CHAIN[i] else '否'} | {dl} | {s['seed']} |")
+md.append("\n## 三、给 H3 的提示词（中文全译，一个字不漏）\n")
+md.append("每个任务的视频提示词前面还会加这句固定的风格话：**“真人实拍，电影感，写实，皮肤有自然质感，浅景深，温暖奢华的光线，超宽 8:3 宽银幕画面。”** 开场图提示词前面也有一段固定的开头：**“一张来自写实真人浪漫惊悚片的完整首帧，超宽 8:3 宽银幕构图。皮肤自然，能看到毛孔，布料和材质真实。固定的场景参考图决定地点，人物肖像只决定被点名的人。”** 下面不再重复。\n")
+for i, s in enumerate(segs):
+    md.append(f"### {i+1:02d}｜{s['title'].split('｜')[1]}（{s['duration_seconds']} 秒）")
+    md.append(f"- **开场图：** {ZH[i]}")
+    md.append(f"- **视频：** {s['shots'][0]['visual_zh']}")
+    md.append(f"- **声音：** {s['sound_zh']}")
+    if s['dialogue']:
+        md.append(f"- **台词（单独传给插件）：** {s['dialogue'][0]['speaker']}：“{s['dialogue'][0]['text']}”")
+    md.append("")
+md.append("## 四、这一版写法上和旧版的区别（对应 8 条规律）\n")
+md.append("- 不再写 “Nobody speaks / Nobody else is in the frame”，人数改写成 “The frame holds exactly N people”。\n- 不再写 “slightly / only / small” 这类程度词。\n- 保罗进屋并入 01 号（门把手压下、门打开、保罗走进来是同一个镜头），保罗关门（07 号）写明是他的右手拉上的；旧版里没有人的“关门声”任务已去掉。\n- 原剧本里“把她整个人提起来、双脚悬空”的动作没有拍（H3 做不稳），改成她背靠墙、被捂住嘴；亲密威胁按美国平台惯例保持暗示。\n- 威胁那句原来拆成两个任务，改成两句完整的话：“Make one sound.” 和 “I'll take you in front of him.”。\n- 开场图里把门的位置、两人的左右位置都写成固定布局。\n")
+md.append("## 五、我预计会出问题的地方（没试过，只是判断）\n")
+md.append("- **08 号“顺着墙滑坐到地上”**是整集最难的动作，可能出现身体穿插或下落不自然。\n- **01 号**开场图里没有保罗，保罗的脸来自他的人物图，进门后是否像他要看。\n- **同一批 6 秒的台词任务**，声音常常到片尾才结束，验收时听结尾（04、05、09、10、11 号）。\n- **承接前段**的效果还没验证，如果开场图里被带进了不该有的人，请告诉我号码。\n")
+open(os.path.join(FOLDER, '2026-10-09_第3集_说明_英文台词_追加.md'), 'w', encoding='utf-8').write('\n'.join(md))
+print('说明已写')
