@@ -46,19 +46,33 @@ class Batch:
     def character(self, name, image_key, voice_en, voice_zh):
         self.d['characters'][name] = {'image_keys': [image_key], 'voice_description': {'en': voice_en, 'zh': voice_zh}}
 
-    def task(self, title, dur, chars, assets, refs, img, end, vis_zh, cam_zh, dlg, shot_en, shot_zh, sound):
+    def task(self, title, dur, chars, assets, refs, img, end, vis_zh, cam_zh, dlg, shot_en, shot_zh, sound,
+             lines=None, shots=None, frame=None, cont=False):
+        """dlg = (说话人, 台词, 开口秒) 或 None（老用法）。
+        可选：lines=[(说话人, 台词, 开口秒), ...] 一个任务多句台词（对比测试用）；
+              shots=[(起, 止, 英文, 中文, [台词序号]), ...] 一个任务多个镜头（对比测试用，此时 shot_en/shot_zh 不用）；
+              frame='素材键' 用现成图片当开场图（opening_frame_key）；cont=True 为续接（continue，同时必须承接前段）。"""
         self.seed += 1
-        s = {'title': title, 'duration_seconds': dur, 'generation_seconds': dur, 'continuity': 'cut', 'depends_on_previous': False,
-             'use_previous_episode_state': False, 'characters': chars, 'asset_keys': list(assets), 'image_reference_keys': list(refs),
+        s = {'title': title, 'duration_seconds': dur, 'generation_seconds': dur, 'continuity': 'continue' if cont else 'cut',
+             'depends_on_previous': bool(cont), 'use_previous_episode_state': False, 'characters': chars,
+             'asset_keys': list(assets), 'image_reference_keys': list(refs),
              'image_prompt': IMG + img + end, 'visual_zh': vis_zh, 'camera_zh': cam_zh,
              'dialogue': [], 'shots': [], 'sound_en': sound[0], 'sound_zh': sound[1], 'seed': self.seed, 'dialogue_language': 'en'}
-        if dlg:
-            sp, tx, start = dlg
+        if frame:
+            s['opening_frame_key'] = frame
+        spoken = list(lines) if lines else ([dlg] if dlg else [])
+        for sp, tx, start in spoken:
             end_t = round(start + line_seconds(tx) + 0.05, 2)
             assert end_t <= dur - 1.0, (title, end_t, dur)   # 台词后至少留 1 秒
             s['dialogue'].append({'speaker': sp, 'text': tx, 'start_seconds': start, 'end_seconds': end_t, 'language': 'en'})
-        s['shots'].append({'start_seconds': 0, 'end_seconds': dur, 'visual_en': LEAD + shot_en, 'visual_zh': shot_zh, 'dialogue_indices': [0] if dlg else []})
+        if shots:
+            for a, z, en, zh, idx in shots:
+                s['shots'].append({'start_seconds': a, 'end_seconds': z, 'visual_en': LEAD + en, 'visual_zh': zh, 'dialogue_indices': idx})
+        else:
+            s['shots'].append({'start_seconds': 0, 'end_seconds': dur, 'visual_en': LEAD + shot_en, 'visual_zh': shot_zh,
+                               'dialogue_indices': list(range(len(spoken)))})
         self.tasks.append(s)
+        return s
 
     def finish(self, ep_title, summary, out_name):
         lines = []
