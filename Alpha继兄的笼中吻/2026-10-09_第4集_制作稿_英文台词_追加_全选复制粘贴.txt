@@ -1,0 +1,614 @@
+{
+ "schema": "h3-production-draft",
+ "version": 1,
+ "title": "Alpha继兄的笼中吻｜第4集｜羊入虎口",
+ "dialogue_language": "en",
+ "style": "Photorealistic live-action romantic thriller with a glossy, high-end drama look. Warm tungsten key light with a soft cool fill, shallow depth of field, rich natural skin texture with visible pores, luxurious cream-and-gold interiors, restrained cinematic color grading, and an ultra-wide 8:3 cinemascope frame in which the people are placed deliberately and the room is visible around them.",
+ "assets": [
+  {
+   "key": "lily",
+   "kind": "image",
+   "role": "character",
+   "label": "莉莉",
+   "description": {
+    "en": "Lily, an adult woman in her mid-twenties with long wavy chestnut-brown hair, fair skin, large hazel-green eyes and a slender build, wearing an ivory silk wedding gown with a fitted bodice and a long zipper down the back. The portrait fixes her identity and gown; the opening frame and shot description fix her pose and position.",
+    "zh": "莉莉，二十五岁左右的成年女性，栗棕色长卷发、白皙皮肤、浅褐绿色大眼睛、身形纤细，穿象牙白真丝婚纱，合身上身，背后一条长拉链。人物图固定身份与婚纱，开场图和镜头正文决定姿势与位置。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of an adult woman in her mid-twenties with long wavy chestnut-brown hair, fair skin and large hazel-green eyes, wearing an ivory silk wedding gown with a fitted bodice and delicate shoulders. She faces the camera with a calm, slightly nervous expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "killian",
+   "kind": "image",
+   "role": "character",
+   "label": "基利安",
+   "description": {
+    "en": "Killian, a very tall, broad-shouldered adult man in his early thirties with short swept-back black hair, a sharp jawline, light stubble and cold dark-gray eyes, wearing a tailored black three-piece suit, white shirt and dark tie, with a platinum luxury wristwatch on his left wrist. He stands a head and a half taller than Lily. The portrait fixes his identity and clothes, not staging.",
+    "zh": "基利安，三十出头的成年男性，身材极高、肩膀宽阔，黑色短发向后梳，下颌线锋利，有浅胡茬，眼睛是冷冽的深灰色，穿剪裁合身的黑色三件套西装、白衬衫、深色领带，左腕戴铂金色名表。比莉莉高出一个半头。人物图固定身份与衣服，不固定站位。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of a very tall, broad-shouldered adult man in his early thirties with short swept-back black hair, a sharp jawline, light stubble and cold dark-gray eyes, wearing a tailored black three-piece suit, white shirt and dark tie, a platinum luxury wristwatch on his left wrist. He faces the camera with a cold, composed expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "room",
+   "kind": "image",
+   "role": "scene",
+   "label": "婚纱店VIP更衣室",
+   "description": {
+    "en": "The private VIP fitting room of a high-end bridal boutique: cream walls with gold molding, a heavy dark-wood door with a brass handle in the left wall, a rack of long white gowns in garment covers along the back wall, a wide bare stretch of plain cream panelled wall to the right of the gown rack, an ivory velvet couch against the right wall and thick carpet, lit warmly by a crystal chandelier and wall sconces. The reference fixes the room layout and decor, not any people.",
+    "zh": "高端婚纱店的VIP私人更衣室：奶油色墙面配金色线脚，左墙一扇带黄铜把手的厚重深色木门，后墙挂着一排罩着防尘袋的白色长婚纱，婚纱架右边是一大段空白的奶油色护墙板墙面，右墙边有象牙色丝绒沙发和厚地毯，水晶吊灯与壁灯的暖光。参考图固定房间布局与陈设，不带入任何人物。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic wide shot of an empty luxury VIP fitting room in a high-end bridal boutique: cream walls with gold molding, a heavy dark-wood door with a brass handle on the left wall, a rack of long white wedding gowns in garment covers along the back wall, a wide bare stretch of plain cream panelled wall to the right of the gown rack, an ivory velvet couch against the right wall, thick carpet, warm light from a crystal chandelier and wall sconces. No people.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "alcove",
+   "kind": "image",
+   "role": "scene",
+   "label": "更衣室婚纱架后的隔间",
+   "description": {
+    "en": "A narrow dressing alcove at the back of the private fitting room: a dense row of long white gowns in garment covers hanging close together on a rail along one side, and a heavy cream floor-length velvet curtain on a ceiling track, drawn half open across the front. Dim warm light with soft shadows. The reference fixes the look of the alcove, not any people.",
+    "zh": "更衣室最里面的狭窄隔间：一侧是紧挨着挂在横杆上、罩着防尘袋的白色长婚纱，正面是一道挂在顶轨上的奶油色厚重丝绒落地帘，拉开了一半。光线昏暗温暖，阴影柔和。参考图固定隔间的样子，不带入任何人物。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic shot of an empty narrow dressing alcove at the back of a luxury fitting room: a dense row of long white gowns in garment covers hanging close together on a rail along one side, a heavy cream floor-length velvet curtain on a ceiling track drawn half open across the front, dim warm light with soft shadows, thick carpet. No people.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "paul",
+   "kind": "image",
+   "role": "character",
+   "label": "保罗",
+   "description": {
+    "en": "Paul, an adult man in his late twenties with neatly combed light-brown hair, a clean-shaven friendly boyish face and warm brown eyes, of average build, wearing a navy blazer over a white open-collared shirt. He is a head shorter than Killian. The portrait fixes his identity and clothes, not staging.",
+    "zh": "保罗，二十八岁左右的成年男性，浅棕色头发梳得整齐，脸干净、友善、带点孩子气，暖棕色眼睛，身材普通，穿海军蓝西装外套配白色敞领衬衫。比基利安矮一个头。人物图固定身份与衣服，不固定站位。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of an adult man in his late twenties with neatly combed light-brown hair, a clean-shaven friendly boyish face and warm brown eyes, wearing a navy blazer over a white open-collared shirt. He faces the camera with a mild, relaxed expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "villa_front",
+   "kind": "image",
+   "role": "scene",
+   "label": "半山庄园门前",
+   "description": {
+    "en": "The gravel forecourt of a gloomy luxurious hillside mansion at dusk: a dark stone facade with tall narrow windows, a wide flight of stone entrance steps on the right, a second-floor stone balcony with a balustrade above the entrance, tall black iron gates and dark pine trees behind, a black Maybach sedan parked on the gravel on the left, cold blue dusk light with warm lamps glowing in the windows. The reference fixes the layout and decor, not any people.",
+    "zh": "黄昏时阴森奢华的半山庄园门前碎石场地：深色石头外墙配高窄窗，右边是宽阔的石头台阶，台阶上方二楼有一座带栏杆的石头阳台，后面是高大的黑色铁门和深色松树，左边碎石地上停着一辆黑色迈巴赫轿车，冷蓝的暮色里窗内亮着暖灯。参考图固定布局与陈设，不带入任何人物。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic wide shot of the empty gravel forecourt of a gloomy luxurious hillside mansion at dusk: a dark stone facade with tall narrow windows, a wide flight of stone entrance steps on the right, a second-floor stone balcony with a balustrade above the entrance, tall black iron gates and dark pine trees behind, a black Maybach sedan parked on the gravel on the left, cold blue dusk light with warm lamps in the windows. No people.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "butler",
+   "kind": "image",
+   "role": "character",
+   "label": "老管家",
+   "description": {
+    "en": "The butler, an elderly man in his sixties with neatly combed silver hair, a lined, dignified face and kind pale-blue eyes, wearing a black tailcoat, white shirt, grey waistcoat, black tie and white gloves. The portrait fixes his identity and clothes, not staging.",
+    "zh": "老管家，六十多岁的老人，银发梳得整齐，脸上有皱纹、端庄，眼睛是温和的浅蓝色，穿黑色燕尾服、白衬衫、灰色马甲、黑领带，戴白手套。人物图固定身份与衣服，不固定站位。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of an elderly man in his sixties with neatly combed silver hair, a lined, dignified face and kind pale-blue eyes, wearing a black tailcoat, white shirt, grey waistcoat, black tie and white gloves. He faces the camera with a calm, courteous expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "lily_coat",
+   "kind": "image",
+   "role": "character",
+   "label": "莉莉（旅途装）",
+   "description": {
+    "en": "Lily, the same adult woman in her mid-twenties as in the reference, with long wavy chestnut-brown hair pulled into a low loose ponytail held by a small silver hair clip, fair skin and large hazel-green eyes, now wearing a faded grey wool coat over a plain navy dress, tired but proud. The portrait fixes her identity and clothes, not staging.",
+    "zh": "莉莉，和参考图是同一个二十五岁左右的成年女性，栗棕色长卷发低低地扎成松散的马尾，用一枚小银发卡固定，白皙皮肤、浅褐绿色大眼睛，这次穿褪色的灰色羊毛外套配朴素的藏青连衣裙，疲惫却倔强。人物图固定身份与衣服，不固定站位。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of the same woman as in the reference image, long wavy chestnut-brown hair pulled into a low loose ponytail held by a small silver hair clip, wearing a faded grey wool coat over a plain navy dress. She faces the camera with a tired but proud expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": [
+     "lily"
+    ]
+   }
+  },
+  {
+   "key": "killian_robe",
+   "kind": "image",
+   "role": "character",
+   "label": "基利安（黑丝绸睡袍）",
+   "description": {
+    "en": "Killian, the same very tall, broad-shouldered adult man in his early thirties as in the reference, with short swept-back black hair, a sharp jawline, light stubble and cold dark-gray eyes, now wearing a black silk robe tied at the waist over dark trousers, the collar open at the base of the throat, a platinum luxury wristwatch on his left wrist. The portrait fixes his identity and clothes, not staging.",
+    "zh": "基利安，和参考图是同一个三十出头、身材极高、肩膀宽阔的成年男性，黑色短发向后梳，下颌线锋利，有浅胡茬，眼睛是冷冽的深灰色，这次穿黑色真丝睡袍，腰间系带，里面是深色长裤，领口开到喉咙下方，左腕戴铂金色名表。人物图固定身份与衣服，不固定站位。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of the same man as in the reference image, short swept-back black hair, sharp jawline, light stubble and cold dark-gray eyes, wearing a black silk robe tied at the waist, the collar open at the base of the throat, a platinum luxury wristwatch on his left wrist. He faces the camera with a cold, composed expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": [
+     "killian"
+    ]
+   }
+  }
+ ],
+ "characters": {
+  "Lily": {
+   "image_keys": [
+    "lily"
+   ],
+   "voice_description": {
+    "en": "A young adult female voice, light and slightly breathy, speaking clear American English. She keeps her volume low because she must not be overheard, but every word is fully voiced and audible, tight and trembling with fear, anger and humiliation.",
+    "zh": "年轻成年女声，轻而略带气息，说清楚的美式英语。因为不能被人听见而压低音量，但每个字都正常发声、清晰可辨，声音紧绷颤抖，带着恐惧、愤怒和屈辱。"
+   }
+  },
+  "Killian": {
+   "image_keys": [
+    "killian"
+   ],
+   "voice_description": {
+    "en": "A mature adult male voice in a deep chest register, low and unhurried with a husky edge, speaking clear American English in a quiet, controlled, menacing tone. He never shouts, and every word is fully voiced and audible.",
+    "zh": "成熟成年男声，深沉的胸腔音，低缓不急，带沙哑质感，说清楚的美式英语。语气安静、克制、带压迫感，从不喊叫，每个字都正常发声、清晰可辨。"
+   }
+  },
+  "Paul": {
+   "image_keys": [],
+   "voice_description": {
+    "en": "A young adult male voice, light, casual and slightly smug, speaking clear American English at ordinary conversational volume. He is outside a closed door, so his voice reaches the room muffled by the wood.",
+    "zh": "年轻成年男声，轻松随意、略带轻浮，说清楚的美式英语，正常交谈音量。他在紧闭的门外，声音隔着木门略显闷。"
+   }
+  },
+  "PaulOnScreen": {
+   "image_keys": [
+    "paul"
+   ],
+   "voice_description": {
+    "en": "A young adult male voice, light, casual and slightly smug, speaking clear American English at ordinary conversational volume.",
+    "zh": "年轻成年男声，轻松随意、略带轻浮，说清楚的美式英语，正常交谈音量。"
+   }
+  },
+  "Butler": {
+   "image_keys": [
+    "butler"
+   ],
+   "voice_description": {
+    "en": "An elderly adult male voice, courteous, measured and warm, speaking clear American English at ordinary conversational volume with careful politeness.",
+    "zh": "年迈的成年男声，彬彬有礼、不急不缓、带着温和，说清楚的美式英语，正常交谈音量，措辞谨慎有礼。"
+   }
+  },
+  "LilyCoat": {
+   "image_keys": [
+    "lily_coat"
+   ],
+   "voice_description": {
+    "en": "A young adult female voice, light and slightly breathy, speaking clear American English. Every word is fully voiced and audible, tight and shaky with nerves, alarm and wounded pride.",
+    "zh": "年轻成年女声，轻而略带气息，说清楚的美式英语。每个字都正常发声、清晰可辨，声音紧绷发颤，带着紧张、惊慌和受伤的自尊。"
+   }
+  },
+  "KillianRobe": {
+   "image_keys": [
+    "killian_robe"
+   ],
+   "voice_description": {
+    "en": "A mature adult male voice in a deep chest register, low and unhurried with a husky edge, speaking clear American English in a quiet, controlled, menacing tone. He never shouts, and every word is fully voiced and audible.",
+    "zh": "成熟成年男声，深沉的胸腔音，低缓不急，带沙哑质感，说清楚的美式英语。语气安静、克制、带压迫感，从不喊叫，每个字都正常发声、清晰可辨。"
+   }
+  }
+ },
+ "episodes": [
+  {
+   "title": "第4集｜羊入虎口",
+   "summary": "黑色迈巴赫驶入阴森的半山庄园，莉莉提着旧行李箱下车。老管家称她“女主人”，她慌乱地纠正；二楼阳台上的基利安说“她就是”，要她住进他的房间。她抗议协议里没写，他却转眼出现在她面前，把她逼到车门上，说她抵押的是“全部”，抽走她的发卡，低头埋进她的颈窝。",
+   "script": "驶入庄园，黄昏，黑色迈巴赫开进阴森的半山庄园，慢慢停在碎石地上。没有人入画。\n旧行李箱，莉莉一个人站在车旁，提着旧行李箱，看着右边庄园的大门。\n老管家，老管家站在莉莉面前，双手交叠，恭敬地开口。莉莉愣愣地看着他。\nButler：“Madam, your room is ready.”\n我不是女主人，莉莉慌乱地看着右边画面外的管家，开口纠正。\nLilyCoat：“No, I'm not the mistress. I'm just...”\n二楼的基利安，基利安穿着黑色真丝睡袍，端着威士忌，站在二楼阳台上，冷冷地低头看着楼下画面外的莉莉，开口。\nKillianRobe：“She is. Take her to my room.”\n协议里没说，莉莉抬起头，瞪大眼睛看着右上方画面外阳台上的基利安，说话。\nLilyCoat：“Your room? The contract never said that!”\n阳台空了，二楼阳台上已经没有人了，石栏杆上只留着那只威士忌酒杯。\n你抵押的全部，基利安已经站在莉莉面前，把她逼到车门上，一只手撑在车顶，低头看着她，开口。\nKillianRobe：“Read it again. You pledged everything.”\n抽走发卡，基利安伸手把莉莉发间的发卡抽走，她的长发散落下来。\n颈窝，基利安低头埋进莉莉的颈窝，深深吸了一口气，再睁开眼，眼神变得极其危险。（成片里在这里切断）",
+   "segments": [
+    {
+     "title": "01｜驶入庄园",
+     "duration_seconds": 5,
+     "generation_seconds": 5,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [],
+     "asset_keys": [
+      "villa_front"
+     ],
+     "image_reference_keys": [
+      "villa_front"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Wide shot of the gravel forecourt of the dark hillside mansion at dusk, the black Maybach centered in the middle third of the frame, stopped on the gravel with its headlights on, the mansion's entrance steps at frame-right. Nobody is visible. Fixed stage layout: the black Maybach is at frame-left; the mansion's entrance steps and the balcony above them are at frame-right; Lily is always at frame-left of Killian and of the butler. Cold blue dusk light with warm window lamps, the forecourt softly blurred behind.",
+     "visual_zh": "黄昏，黑色迈巴赫开进阴森的半山庄园，慢慢停在碎石地上。没有人入画。",
+     "camera_zh": "0—5秒庄园门前全景，镜头固定。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 5,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady wide shot opens from the adopted first frame in [[asset:villa_front]]: the black Maybach rolling the last few metres across the gravel and coming to a stop, its headlights lighting the stones, the dark mansion at frame-right. Nobody is visible. The camera holds still.",
+       "visual_zh": "从开场图继续，全景：黑色迈巴赫在碎石地上滑完最后几米，停下，车灯照亮碎石，深色庄园在右边。没有人入画。镜头固定。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "A low engine idling down to silence and tyres crunching slowly on gravel. The recording is completely free of voices: no speech, no humming, no sighs, no breathing sounds, no vocal sounds of any kind.",
+     "sound_zh": "低沉的引擎声渐渐熄灭，轮胎在碎石上缓慢碾过。 录音里完全没有人声：没有说话、哼声、叹息、呼吸声或任何发声。",
+     "seed": 3301,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "02｜旧行李箱",
+     "duration_seconds": 6,
+     "generation_seconds": 6,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "LilyCoat"
+     ],
+     "asset_keys": [
+      "villa_front",
+      "lily_coat"
+     ],
+     "image_reference_keys": [
+      "villa_front"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium shot of Lily alone, full body, standing on the gravel beside the open rear door of the black Maybach, centered in the middle third of the frame, in profile facing frame-right, a battered brown leather suitcase in her right hand, her eyes on the mansion's entrance at frame-right. Nobody else is in the frame. Fixed stage layout: the black Maybach is at frame-left; the mansion's entrance steps and the balcony above them are at frame-right; Lily is always at frame-left of Killian and of the butler. Cold blue dusk light with warm window lamps, the forecourt softly blurred behind.",
+     "visual_zh": "莉莉一个人站在车旁，提着旧行李箱，看着右边庄园的大门。",
+     "camera_zh": "0—6秒莉莉侧面中景，镜头固定。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 6,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady medium shot opens from the adopted first frame in [[asset:villa_front]]: [[asset:lily_coat]] alone on the gravel in profile facing frame-right, the battered suitcase in her right hand, her eyes on the mansion's entrance at frame-right. Wind stirs her hair and her knuckles whiten on the suitcase handle. Her feet do not move. The camera holds still.",
+       "visual_zh": "从开场图继续，莉莉中景：一个人站在碎石地上，侧脸朝右，右手提着旧行李箱，目光落在右边的庄园大门上。风吹动她的头发，握着行李箱把手的指节发白。脚不动。镜头固定。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "Cold wind in the pine trees and a faint creak of leather. The recording is completely free of voices: no speech, no humming, no sighs, no breathing sounds, no vocal sounds of any kind.",
+     "sound_zh": "冷风吹过松林的声音，皮革轻轻的吱呀声。 录音里完全没有人声：没有说话、哼声、叹息、呼吸声或任何发声。",
+     "seed": 3302,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "03｜老管家",
+     "duration_seconds": 6,
+     "generation_seconds": 6,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "Butler",
+      "LilyCoat"
+     ],
+     "asset_keys": [
+      "villa_front",
+      "butler",
+      "lily_coat"
+     ],
+     "image_reference_keys": [
+      "villa_front"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium two-shot, waist-up, in profile, both people centered in the middle third of the frame. Lily stands at frame-left in profile facing frame-right, her battered brown suitcase on the gravel at her feet; the elderly butler in his black tailcoat and white gloves stands at frame-right facing her, his hands clasped in front of him, his eyes on her face. Nobody else is in the frame. Fixed stage layout: the black Maybach is at frame-left; the mansion's entrance steps and the balcony above them are at frame-right; Lily is always at frame-left of Killian and of the butler. Cold blue dusk light with warm window lamps, the forecourt softly blurred behind.",
+     "visual_zh": "老管家站在莉莉面前，双手交叠，恭敬地开口。莉莉愣愣地看着他。",
+     "camera_zh": "0—6秒侧面中景，两人居中，莉莉在左、管家在右，镜头固定。",
+     "dialogue": [
+      {
+       "speaker": "Butler",
+       "text": "Madam, your room is ready.",
+       "start_seconds": 1.0,
+       "end_seconds": 3.67,
+       "language": "en"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 6,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady medium two-shot in profile opens from the adopted first frame in [[asset:villa_front]]: [[asset:lily_coat]] at frame-left, the suitcase at her feet; [[asset:butler]] at frame-right facing her, his gloved hands clasped in front of him. He speaks with a courteous, measured politeness and inclines only his head slightly. She stares at him, startled. His hands stay clasped. The camera holds still.",
+       "visual_zh": "从开场图继续，侧面中景：莉莉在左，行李箱放在脚边；管家在右面对她，戴着白手套的双手交叠在身前。他有礼、不急不缓地说话，只把头微微一低。她吃惊地看着他。他的手一直交叠。镜头固定。",
+       "dialogue_indices": [
+        0
+       ]
+      }
+     ],
+     "sound_en": "Cold wind and a faint rustle of cloth. Voices stay close and clear.",
+     "sound_zh": "冷风声和轻微的衣料沙沙声。人声近而清楚。",
+     "seed": 3303,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "04｜我不是女主人",
+     "duration_seconds": 6,
+     "generation_seconds": 6,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "LilyCoat"
+     ],
+     "asset_keys": [
+      "villa_front",
+      "lily_coat"
+     ],
+     "image_reference_keys": [
+      "villa_front"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium close-up of Lily alone, chest-up, in profile facing frame-right, centered in the middle third of the frame, in the faded grey wool coat, her eyes on an old man standing at frame-right, just outside the frame, her brows drawn together, her lips parted. Nobody else is in the frame. Fixed stage layout: the black Maybach is at frame-left; the mansion's entrance steps and the balcony above them are at frame-right; Lily is always at frame-left of Killian and of the butler. Cold blue dusk light with warm window lamps, the forecourt softly blurred behind.",
+     "visual_zh": "莉莉慌乱地看着右边画面外的管家，开口纠正。",
+     "camera_zh": "0—6秒莉莉侧面中近景，镜头固定。",
+     "dialogue": [
+      {
+       "speaker": "LilyCoat",
+       "text": "No, I'm not the mistress. I'm just...",
+       "start_seconds": 0.8,
+       "end_seconds": 4.47,
+       "language": "en"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 6,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady medium close-up opens from the adopted first frame in [[asset:villa_front]]: [[asset:lily_coat]] in profile facing frame-right, her eyes on the old man at frame-right, just outside the frame. She speaks in a flustered, shaky voice and her words trail off. Her hand stays on the suitcase handle. The camera holds still.",
+       "visual_zh": "从开场图继续，莉莉近景：侧脸朝右，目光落在右边画面外的老人身上。她慌乱地、声音发颤地说话，话说到一半断了。手一直握着行李箱把手。镜头固定。",
+       "dialogue_indices": [
+        0
+       ]
+      }
+     ],
+     "sound_en": "Cold wind and a faint rustle of cloth. Voices stay close and clear.",
+     "sound_zh": "冷风声和轻微的衣料沙沙声。人声近而清楚。",
+     "seed": 3304,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "05｜二楼的基利安",
+     "duration_seconds": 6,
+     "generation_seconds": 6,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "KillianRobe"
+     ],
+     "asset_keys": [
+      "villa_front",
+      "killian_robe"
+     ],
+     "image_reference_keys": [
+      "villa_front"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium shot of Killian alone, waist-up, standing at the stone balustrade of the second-floor balcony above the entrance steps, centered in the middle third of the frame, in profile facing frame-left, a crystal whiskey tumbler in his right hand, in the black silk robe tied at the waist, his eyes lowered on a woman standing below at frame-left, just outside the frame, his face cold and unreadable. Nobody else is in the frame. Fixed stage layout: the black Maybach is at frame-left; the mansion's entrance steps and the balcony above them are at frame-right; Lily is always at frame-left of Killian and of the butler. Cold blue dusk light with warm window lamps, the forecourt softly blurred behind.",
+     "visual_zh": "基利安穿着黑色真丝睡袍，端着威士忌，站在二楼阳台上，冷冷地低头看着楼下画面外的莉莉，开口。",
+     "camera_zh": "0—6秒基利安侧面中景，镜头固定。",
+     "dialogue": [
+      {
+       "speaker": "KillianRobe",
+       "text": "She is. Take her to my room.",
+       "start_seconds": 1.0,
+       "end_seconds": 4.55,
+       "language": "en"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 6,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady medium shot opens from the adopted first frame in [[asset:villa_front]]: [[asset:killian_robe]] in profile facing frame-left at the stone balustrade, the whiskey tumbler in his right hand, his eyes lowered on the woman below at frame-left, just outside the frame. He speaks slowly and without hurry, his voice low and cold. The glass stays still in his hand. The camera holds still.",
+       "visual_zh": "从开场图继续，基利安中景：侧脸朝左站在石栏杆边，右手端着威士忌杯，目光低下去看着左边画面外楼下的女人。他慢慢地、不急不缓地开口，声音低而冷。酒杯在手里不动。镜头固定。",
+       "dialogue_indices": [
+        0
+       ]
+      }
+     ],
+     "sound_en": "Cold wind and a faint clink of ice in the glass. Voices stay close and clear.",
+     "sound_zh": "冷风声和杯中冰块轻轻的碰撞声。人声近而清楚。",
+     "seed": 3305,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "06｜协议里没说",
+     "duration_seconds": 6,
+     "generation_seconds": 6,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "LilyCoat"
+     ],
+     "asset_keys": [
+      "villa_front",
+      "lily_coat"
+     ],
+     "image_reference_keys": [
+      "villa_front"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium close-up of Lily alone, chest-up, in profile facing frame-right, centered in the middle third of the frame, in the faded grey wool coat, her chin lifted and her eyes fixed on a man on the balcony above at frame-right, just outside the frame, her eyes wide and her lips parted. Nobody else is in the frame. Fixed stage layout: the black Maybach is at frame-left; the mansion's entrance steps and the balcony above them are at frame-right; Lily is always at frame-left of Killian and of the butler. Cold blue dusk light with warm window lamps, the forecourt softly blurred behind.",
+     "visual_zh": "莉莉抬起头，瞪大眼睛看着右上方画面外阳台上的基利安，说话。",
+     "camera_zh": "0—6秒莉莉侧面中近景，镜头固定。",
+     "dialogue": [
+      {
+       "speaker": "LilyCoat",
+       "text": "Your room? The contract never said that!",
+       "start_seconds": 0.8,
+       "end_seconds": 4.71,
+       "language": "en"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 6,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady medium close-up opens from the adopted first frame in [[asset:villa_front]]: [[asset:lily_coat]] in profile facing frame-right, her chin lifted, her eyes fixed on the man above at frame-right, just outside the frame. She speaks sharply, her voice shaking with alarm and anger. Only her head and lips move. The camera holds still.",
+       "visual_zh": "从开场图继续，莉莉近景：侧脸朝右，下巴抬起，目光盯着右上方画面外的男人。她尖声说话，声音因惊慌和愤怒而发颤。只有头和嘴唇在动。镜头固定。",
+       "dialogue_indices": [
+        0
+       ]
+      }
+     ],
+     "sound_en": "Cold wind. Voices stay close and clear.",
+     "sound_zh": "冷风声。人声近而清楚。",
+     "seed": 3306,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "07｜阳台空了",
+     "duration_seconds": 5,
+     "generation_seconds": 5,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [],
+     "asset_keys": [
+      "villa_front"
+     ],
+     "image_reference_keys": [
+      "villa_front"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium shot of the empty second-floor stone balcony above the entrance steps, the stone balustrade centered in the middle third of the frame, a crystal whiskey tumbler with amber whiskey standing on the balustrade, nobody there. Fixed stage layout: the black Maybach is at frame-left; the mansion's entrance steps and the balcony above them are at frame-right; Lily is always at frame-left of Killian and of the butler. Cold blue dusk light with warm window lamps, the forecourt softly blurred behind.",
+     "visual_zh": "二楼阳台上已经没有人了，石栏杆上只留着那只威士忌酒杯。",
+     "camera_zh": "0—5秒空阳台中景，镜头固定。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 5,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady medium shot opens from the adopted first frame in [[asset:villa_front]]: the empty stone balcony, the whiskey tumbler standing on the balustrade. The glass stays perfectly still. Cold wind stirs the dark pine trees behind. Nobody is visible. The camera holds still.",
+       "visual_zh": "从开场图继续，中景：空的石头阳台，威士忌酒杯放在栏杆上。酒杯一动不动。冷风吹动后面的深色松树。没有人入画。镜头固定。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "Cold wind in the pine trees, then a sudden low rush of air. The recording is completely free of voices: no speech, no humming, no sighs, no breathing sounds, no vocal sounds of any kind.",
+     "sound_zh": "冷风吹过松林，然后一阵突然的低沉气流声。 录音里完全没有人声：没有说话、哼声、叹息、呼吸声或任何发声。",
+     "seed": 3307,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "08｜你抵押的全部",
+     "duration_seconds": 6,
+     "generation_seconds": 6,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "LilyCoat",
+      "KillianRobe"
+     ],
+     "asset_keys": [
+      "villa_front",
+      "lily_coat",
+      "killian_robe"
+     ],
+     "image_reference_keys": [
+      "villa_front"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium two-shot, waist-up, in profile, both people centered in the middle third of the frame. Lily stands at frame-left with her back flat against the black door of the Maybach, her eyes wide and fixed on Killian's face, her battered suitcase on the gravel at her feet; Killian stands at frame-right facing her, very close, in the black silk robe, his right forearm braced on the car roof above and beside her head, his whole right arm in the frame, his left hand at his side, his eyes lowered on her face. Nobody else is in the frame. Fixed stage layout: the black Maybach is at frame-left; the mansion's entrance steps and the balcony above them are at frame-right; Lily is always at frame-left of Killian and of the butler. Cold blue dusk light with warm window lamps, the forecourt softly blurred behind.",
+     "visual_zh": "基利安已经站在莉莉面前，把她逼到车门上，一只手撑在车顶，低头看着她，开口。",
+     "camera_zh": "0—6秒侧面中景，两人居中，莉莉在左、基利安在右，镜头固定。",
+     "dialogue": [
+      {
+       "speaker": "KillianRobe",
+       "text": "Read it again. You pledged everything.",
+       "start_seconds": 1.0,
+       "end_seconds": 4.05,
+       "language": "en"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 6,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady medium two-shot in profile opens from the adopted first frame in [[asset:villa_front]]: [[asset:lily_coat]] with her back against the car door, her eyes wide and fixed on [[asset:killian_robe]]'s face; [[asset:killian_robe]] close in front of her, his right forearm braced on the car roof. He speaks low and slowly, his eyes on her face. She does not move. The camera holds still.",
+       "visual_zh": "从开场图继续，侧面中景：莉莉背靠车门，睁大眼睛盯着基利安的脸；基利安紧贴在她面前，右前臂撑在车顶。他低声缓慢地说话，目光落在她脸上。她不动。镜头固定。",
+       "dialogue_indices": [
+        0
+       ]
+      }
+     ],
+     "sound_en": "Cold wind and a faint creak of the car body. Voices stay close and clear.",
+     "sound_zh": "冷风声和车身轻微的吱呀声。人声近而清楚。",
+     "seed": 3308,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "09｜抽走发卡",
+     "duration_seconds": 6,
+     "generation_seconds": 6,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "LilyCoat",
+      "KillianRobe"
+     ],
+     "asset_keys": [
+      "villa_front",
+      "lily_coat",
+      "killian_robe"
+     ],
+     "image_reference_keys": [
+      "villa_front"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Tight side-profile two-shot of heads and shoulders, both people centered in the middle third of the frame. Lily at frame-left has her back against the black car door, her low ponytail held by a small silver hair clip, her eyes fixed on Killian's face; Killian at frame-right faces her very close, his right hand raised to the silver clip behind her ear, his whole right forearm in the frame, his eyes on her face. Nobody else is in the frame. Fixed stage layout: the black Maybach is at frame-left; the mansion's entrance steps and the balcony above them are at frame-right; Lily is always at frame-left of Killian and of the butler. Cold blue dusk light with warm window lamps, the forecourt softly blurred behind.",
+     "visual_zh": "基利安伸手把莉莉发间的发卡抽走，她的长发散落下来。",
+     "camera_zh": "0—6秒侧面近景，两人头肩居中，莉莉在左、基利安在右，镜头固定。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 6,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady tight side-profile two-shot opens from the adopted first frame in [[asset:villa_front]]: [[asset:killian_robe]]'s right hand at the silver clip in [[asset:lily_coat]]'s hair, her eyes fixed on his face. He draws the clip out between two fingers and her long hair falls loose around her shoulders. Her eyes stay on his. Nobody speaks. The camera holds still.",
+       "visual_zh": "从开场图继续，侧面近景：基利安的右手在莉莉发间的银发卡上，她的眼睛盯着他的脸。他用两根手指把发卡抽出来，她的长发散落在肩上。她的目光一直停在他眼睛上。无人说话。镜头固定。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "A tiny click of the clip and the soft rustle of hair falling. The recording is completely free of voices: no speech, no humming, no sighs, no breathing sounds, no vocal sounds of any kind.",
+     "sound_zh": "发卡轻轻的咔哒声和头发散落的沙沙声。 录音里完全没有人声：没有说话、哼声、叹息、呼吸声或任何发声。",
+     "seed": 3309,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "10｜颈窝",
+     "duration_seconds": 6,
+     "generation_seconds": 6,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "LilyCoat",
+      "KillianRobe"
+     ],
+     "asset_keys": [
+      "villa_front",
+      "lily_coat",
+      "killian_robe"
+     ],
+     "image_reference_keys": [
+      "villa_front"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Tight side-profile two-shot of heads and shoulders, both people centered in the middle third of the frame. Killian's face at frame-right is lowered into the curve of Lily's neck, his eyes closed; Lily at frame-left has her long loose chestnut hair around her shoulders and her eyes wide, her head turned slightly away. No hands are visible. Nobody else is in the frame. Fixed stage layout: the black Maybach is at frame-left; the mansion's entrance steps and the balcony above them are at frame-right; Lily is always at frame-left of Killian and of the butler. Cold blue dusk light with warm window lamps, the forecourt softly blurred behind.",
+     "visual_zh": "基利安低头埋进莉莉的颈窝，深深吸了一口气，再睁开眼，眼神变得极其危险。（成片里在这里切断）",
+     "camera_zh": "0—6秒侧面近景，两人头肩居中，莉莉在左、基利安在右，镜头固定。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 6,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady tight side-profile two-shot opens from the adopted first frame in [[asset:villa_front]]: [[asset:killian_robe]]'s face lowered into the curve of [[asset:lily_coat]]'s neck, his eyes closed, her loose hair around her shoulders. He draws one long slow breath, then his eyes open, dark and intent, his face still against her neck. She does not move. Nobody speaks. The camera holds still.",
+       "visual_zh": "从开场图继续，侧面近景：基利安的脸埋在莉莉的颈窝里，闭着眼，她的长发散在肩上。他慢慢吸了一口长气，然后睁开眼，眼神深沉而危险，脸仍贴在她的颈边。她不动。无人说话。镜头固定。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "Faint rustle of hair and cloth, then near silence. The recording is completely free of voices: no speech, no humming, no sighs, no breathing sounds, no vocal sounds of any kind.",
+     "sound_zh": "头发和衣料轻轻的沙沙声，然后几乎无声。 录音里完全没有人声：没有说话、哼声、叹息、呼吸声或任何发声。",
+     "seed": 3310,
+     "dialogue_language": "en"
+    }
+   ],
+   "dialogue_language": "en"
+  }
+ ]
+}
