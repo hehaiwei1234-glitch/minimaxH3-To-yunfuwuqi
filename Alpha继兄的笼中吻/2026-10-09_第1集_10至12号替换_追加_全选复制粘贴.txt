@@ -1,0 +1,287 @@
+{
+ "schema": "h3-production-draft",
+ "version": 1,
+ "title": "Alpha继兄的笼中吻｜第1集｜10至12号替换",
+ "dialogue_language": "en",
+ "style": "Photorealistic live-action romantic thriller with a glossy, high-end drama look. Warm tungsten key light with a soft cool fill, shallow depth of field, rich natural skin texture with visible pores, luxurious cream-and-gold interiors, restrained cinematic color grading, and an ultra-wide 8:3 cinemascope frame in which the people are placed deliberately and the room is visible around them.",
+ "assets": [
+  {
+   "key": "lily",
+   "kind": "image",
+   "role": "character",
+   "label": "莉莉",
+   "description": {
+    "en": "Lily, an adult woman in her mid-twenties with long wavy chestnut-brown hair, fair skin, large hazel-green eyes and a slender build, wearing an ivory silk wedding gown with a fitted bodice and a long zipper down the back. The portrait fixes her identity and gown; the opening frame and shot description fix her pose and position.",
+    "zh": "莉莉，二十五岁左右的成年女性，栗棕色长卷发、白皙皮肤、浅褐绿色大眼睛、身形纤细，穿象牙白真丝婚纱，合身上身，背后一条长拉链。人物图固定身份与婚纱，开场图和镜头正文决定姿势与位置。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of an adult woman in her mid-twenties with long wavy chestnut-brown hair, fair skin and large hazel-green eyes, wearing an ivory silk wedding gown with a fitted bodice and delicate shoulders. She faces the camera with a calm, slightly nervous expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "killian",
+   "kind": "image",
+   "role": "character",
+   "label": "基利安",
+   "description": {
+    "en": "Killian, a very tall, broad-shouldered adult man in his early thirties with short swept-back black hair, a sharp jawline, light stubble and cold dark-gray eyes, wearing a tailored black three-piece suit, white shirt and dark tie, with a platinum luxury wristwatch on his left wrist. He stands a head and a half taller than Lily. The portrait fixes his identity and clothes, not staging.",
+    "zh": "基利安，三十出头的成年男性，身材极高、肩膀宽阔，黑色短发向后梳，下颌线锋利，有浅胡茬，眼睛是冷冽的深灰色，穿剪裁合身的黑色三件套西装、白衬衫、深色领带，左腕戴铂金色名表。比莉莉高出一个半头。人物图固定身份与衣服，不固定站位。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of a very tall, broad-shouldered adult man in his early thirties with short swept-back black hair, a sharp jawline, light stubble and cold dark-gray eyes, wearing a tailored black three-piece suit, white shirt and dark tie, a platinum luxury wristwatch on his left wrist. He faces the camera with a cold, composed expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "room",
+   "kind": "image",
+   "role": "scene",
+   "label": "婚纱店VIP更衣室",
+   "description": {
+    "en": "The private VIP fitting room of a high-end bridal boutique: cream walls with gold molding, a heavy dark-wood door with a brass handle in the left wall, a rack of long white gowns in garment covers along the back wall, a wide bare stretch of plain cream panelled wall to the right of the gown rack, an ivory velvet couch against the right wall and thick carpet, lit warmly by a crystal chandelier and wall sconces. The reference fixes the room layout and decor, not any people.",
+    "zh": "高端婚纱店的VIP私人更衣室：奶油色墙面配金色线脚，左墙一扇带黄铜把手的厚重深色木门，后墙挂着一排罩着防尘袋的白色长婚纱，婚纱架右边是一大段空白的奶油色护墙板墙面，右墙边有象牙色丝绒沙发和厚地毯，水晶吊灯与壁灯的暖光。参考图固定房间布局与陈设，不带入任何人物。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic wide shot of an empty luxury VIP fitting room in a high-end bridal boutique: cream walls with gold molding, a heavy dark-wood door with a brass handle on the left wall, a rack of long white wedding gowns in garment covers along the back wall, a wide bare stretch of plain cream panelled wall to the right of the gown rack, an ivory velvet couch against the right wall, thick carpet, warm light from a crystal chandelier and wall sconces. No people.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "paul",
+   "kind": "image",
+   "role": "character",
+   "label": "保罗",
+   "description": {
+    "en": "Paul, an adult man in his late twenties with neatly combed light-brown hair, a clean-shaven friendly boyish face and warm brown eyes, of average build, wearing a navy blazer over a white open-collared shirt. He is a head shorter than Killian. The portrait fixes his identity and clothes, not staging.",
+    "zh": "保罗，二十八岁左右的成年男性，浅棕色头发梳得整齐，脸干净、友善、带点孩子气，暖棕色眼睛，身材普通，穿海军蓝西装外套配白色敞领衬衫。比基利安矮一个头。人物图固定身份与衣服，不固定站位。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of an adult man in his late twenties with neatly combed light-brown hair, a clean-shaven friendly boyish face and warm brown eyes, wearing a navy blazer over a white open-collared shirt. He faces the camera with a mild, relaxed expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "corridor",
+   "kind": "image",
+   "role": "scene",
+   "label": "更衣室门外的走廊",
+   "description": {
+    "en": "A quiet luxury hotel corridor outside the private fitting room: cream panelled walls with thin gold trim, warm wall sconces, plush beige carpet, and a single heavy dark-wood door with a brass lever handle, closed, on the right side of the frame. The reference fixes the look of the corridor, not any people.",
+    "zh": "私人更衣室门外安静的豪华酒店走廊：奶油色护墙板配细金边，暖色壁灯，米色厚地毯，画面右侧是一扇关着的单扇深色实木大门，带黄铜压杆把手。参考图固定走廊的样子，不带入任何人物。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic shot of an empty quiet luxury hotel corridor: cream panelled walls with thin gold trim, warm wall sconces, plush beige carpet, and on the right a single heavy dark-wood door with a brass lever handle, closed. No people.",
+    "reference_keys": []
+   }
+  }
+ ],
+ "characters": {
+  "Lily": {
+   "image_keys": [
+    "lily"
+   ],
+   "voice_description": {
+    "en": "A young adult female voice, light and slightly breathy, speaking clear American English. She keeps her volume low because she must not be overheard, but every word is fully voiced and audible, tight and trembling with fear, anger and humiliation.",
+    "zh": "年轻成年女声，轻而略带气息，说清楚的美式英语。因为不能被人听见而压低音量，但每个字都正常发声、清晰可辨，声音紧绷颤抖，带着恐惧、愤怒和屈辱。"
+   }
+  },
+  "Killian": {
+   "image_keys": [
+    "killian"
+   ],
+   "voice_description": {
+    "en": "A mature adult male voice in a deep chest register, low and unhurried with a husky edge, speaking clear American English in a quiet, controlled, menacing tone. He never shouts, and every word is fully voiced and audible.",
+    "zh": "成熟成年男声，深沉的胸腔音，低缓不急，带沙哑质感，说清楚的美式英语。语气安静、克制、带压迫感，从不喊叫，每个字都正常发声、清晰可辨。"
+   }
+  },
+  "Paul": {
+   "image_keys": [],
+   "voice_description": {
+    "en": "A young adult male voice, light, casual and slightly smug, speaking clear American English at ordinary conversational volume. He is outside a closed door, so his voice reaches the room muffled by the wood.",
+    "zh": "年轻成年男声，轻松随意、略带轻浮，说清楚的美式英语，正常交谈音量。他在紧闭的门外，声音隔着木门略显闷。"
+   }
+  },
+  "PaulOnScreen": {
+   "image_keys": [
+    "paul"
+   ],
+   "voice_description": {
+    "en": "A young adult male voice, light, casual and slightly smug, speaking clear American English at ordinary conversational volume.",
+    "zh": "年轻成年男声，轻松随意、略带轻浮，说清楚的美式英语，正常交谈音量。"
+   }
+  }
+ },
+ "episodes": [
+  {
+   "title": "第1集｜10至12号替换（走廊一侧拍保罗）",
+   "summary": "替换第 1 集的 10、11、12 号：保罗在走廊里敲门、说话、拧门把手（人和手都入画）；室内两人听见后僵住（没有敲击声，手不贴墙）。",
+   "script": "走廊敲门，走廊里，保罗站在门前，右手握拳抬到胸口，敲门三下。门没有开。\n两人僵住，室内，两人听见门外的动静，同时僵住，只把头转向门。没有敲击声，手不贴墙。\n门外的保罗，走廊里，保罗对着关着的门说话，双手垂在身侧。\nPaulOnScreen：“Lily? Baby, are you done changing?”\n门把手，走廊里，保罗的右手搭在门把手上，说话，然后把把手慢慢按到底，门没开。\nPaulOnScreen：“I'm coming in, okay?”",
+   "segments": [
+    {
+     "title": "10A｜走廊敲门",
+     "duration_seconds": 5,
+     "generation_seconds": 5,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "PaulOnScreen"
+     ],
+     "asset_keys": [
+      "corridor",
+      "paul"
+     ],
+     "image_reference_keys": [
+      "corridor"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the corridor, and the character portrait defines only the named person. Medium side-on shot of Paul alone, waist-up, in profile facing frame-right, centered in the middle third of the frame, in the corridor in front of a single heavy dark-wood door with a brass lever handle at frame-right. His right fist is raised at chest height just in front of the door, his left hand in his trouser pocket, his eyes on the door, his face relaxed and patient. His right arm, shoulder and whole fist are in the frame. Nobody else is in the frame. Warm dim light, the corridor softly blurred behind.",
+     "visual_zh": "走廊里，保罗站在门前，右手握拳抬到胸口，敲门三下。门没有开。",
+     "camera_zh": "0—5秒保罗侧面中景，镜头固定。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 5,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady medium side-on shot opens from the adopted first frame in [[asset:corridor]]: [[asset:paul]] alone in the corridor, in profile facing frame-right toward the closed single dark-wood door, his right fist raised at chest height in front of it. He knocks on the door three times, slowly and evenly, his whole right forearm moving, his eyes on the door. The door stays shut. Nobody speaks. The camera holds still.",
+       "visual_zh": "从开场图继续，保罗侧面中景：站在走廊里，侧脸朝右、面对关着的单扇深色木门，右拳抬到胸口、在门前。他缓慢均匀地敲门三下，整条右前臂在动，目光落在门上。门没有开。无人说话。镜头固定。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "Exactly three knocks on a heavy wooden door, slow and evenly spaced, about three-quarters of a second apart, the first after a short pause. The recording is completely free of voices: no speech, no humming, no sighs, no vocal sounds of any kind.",
+     "sound_zh": "厚重木门上恰好三声敲门声，缓慢均匀，每声间隔约四分之三秒，第一声前先停一小会儿。录音里完全没有人声：没有说话、哼声、叹息或任何发声。",
+     "seed": 3201,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "10B｜两人僵住",
+     "duration_seconds": 5,
+     "generation_seconds": 5,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "Lily",
+      "Killian"
+     ],
+     "asset_keys": [
+      "room",
+      "lily",
+      "killian"
+     ],
+     "image_reference_keys": [
+      "room"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the room, and the character portraits define only the named people. Wide-medium three-quarter two-shot toward the single heavy dark-wood door at frame-left, both people centered in the middle third of the frame. Lily stands with her back flat against the bare cream panelled wall, between the door and Killian; Killian stands facing her, very close, both his arms hanging at his sides, no hand touching the wall or her. They are looking at each other, both still. The closed door with its brass handle is visible at the left of the frame. Both are fully visible from head to knees. Nobody else is in the frame. Warm luxurious light, the fitting room softly blurred behind.",
+     "visual_zh": "室内，两人听见门外的动静，同时僵住，只把头转向门。没有敲击声，手不贴墙。",
+     "camera_zh": "0—5秒室内三分之二侧面中景，两人居中，门在左，镜头固定。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 5,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady wide-medium three-quarter two-shot opens from the adopted first frame in [[asset:room]]: [[asset:lily]] against the bare cream wall, [[asset:killian]] facing her very close with both arms hanging at his sides, the closed single door with its brass handle at frame-left. Both go completely still and turn only their heads toward the door, their eyes fixed on it. Neither touches the wall. The door stays shut. Nobody speaks. The camera holds still.",
+       "visual_zh": "从开场图继续，室内三分之二侧面中景：莉莉背靠空白的奶油色墙，基利安紧贴着她面对她，双臂垂在身侧；关着的单扇门在画面左边。两人同时僵住，只把头转向门，眼睛盯着门。谁的手都不碰墙。门一直关着。无人说话。镜头固定。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "The room is completely quiet, only a faint hush of room tone. The recording is completely free of voices: no speech, no humming, no sighs, no vocal sounds of any kind.",
+     "sound_zh": "房间里一片安静，只有极轻的底噪。录音里完全没有人声：没有说话、哼声、叹息或任何发声。",
+     "seed": 3202,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "11｜门外的保罗",
+     "duration_seconds": 6,
+     "generation_seconds": 6,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "PaulOnScreen"
+     ],
+     "asset_keys": [
+      "corridor",
+      "paul"
+     ],
+     "image_reference_keys": [
+      "corridor"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the corridor, and the character portrait defines only the named person. Medium side-on shot of Paul alone, waist-up, in profile facing frame-right, centered in the middle third of the frame, in the corridor in front of a single heavy dark-wood door with a brass lever handle at frame-right, both hands at his sides, his eyes on the door, his face relaxed, his brows slightly raised. Nobody else is in the frame. Warm dim light, the corridor softly blurred behind.",
+     "visual_zh": "走廊里，保罗对着关着的门说话，双手垂在身侧。",
+     "camera_zh": "0—6秒保罗侧面中景，镜头固定。",
+     "dialogue": [
+      {
+       "speaker": "PaulOnScreen",
+       "text": "Lily? Baby, are you done changing?",
+       "start_seconds": 1.2,
+       "end_seconds": 4.73,
+       "language": "en"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 6,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady medium side-on shot opens from the adopted first frame in [[asset:corridor]]: [[asset:paul]] alone in the corridor, in profile facing frame-right toward the closed single dark-wood door, both hands at his sides. He speaks to the door in a casual, lightly smug voice, his eyes on the door, his lips moving with the words. His hands stay at his sides. The door stays shut. The camera holds still.",
+       "visual_zh": "从开场图继续，保罗侧面中景：站在走廊里，侧脸朝右、面对关着的单扇深色木门，双手垂在身侧。他对着门说话，声音随意、略带轻浮，目光落在门上，嘴唇随着说话在动。手不动。门没有开。镜头固定。",
+       "dialogue_indices": [
+        0
+       ]
+      }
+     ],
+     "sound_en": "Quiet corridor room tone. Voices stay close and clear.",
+     "sound_zh": "安静的走廊底噪。人声近而清楚。",
+     "seed": 3203,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "12｜门把手",
+     "duration_seconds": 6,
+     "generation_seconds": 6,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "PaulOnScreen"
+     ],
+     "asset_keys": [
+      "corridor",
+      "paul"
+     ],
+     "image_reference_keys": [
+      "corridor"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the corridor, and the character portrait defines only the named person. Medium side-on shot of Paul alone, waist-up, in profile facing frame-right, centered in the middle third of the frame, in the corridor in front of a single heavy dark-wood door with a brass lever handle at frame-right. His right hand rests on the lever handle, his whole right arm and shoulder in the frame, his left hand at his side, his eyes on the door. Nobody else is in the frame. Warm dim light, the corridor softly blurred behind.",
+     "visual_zh": "走廊里，保罗的右手搭在门把手上，说话，然后把把手慢慢按到底，门没开。",
+     "camera_zh": "0—6秒保罗侧面中景，镜头固定。",
+     "dialogue": [
+      {
+       "speaker": "PaulOnScreen",
+       "text": "I'm coming in, okay?",
+       "start_seconds": 0.8,
+       "end_seconds": 3.15,
+       "language": "en"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 6,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady medium side-on shot opens from the adopted first frame in [[asset:corridor]]: [[asset:paul]] alone in the corridor, in profile facing frame-right, his right hand on the brass lever handle of the closed single dark-wood door. He speaks to the door in a casual voice, his eyes on it. Then his right hand presses the lever slowly downward with a loud, magnified metallic click and holds it against the latch. The door stays shut. The camera holds still.",
+       "visual_zh": "从开场图继续，保罗侧面中景：站在走廊里，侧脸朝右，右手搭在关着的单扇深色木门的黄铜压杆把手上。他对着门随意地说话，目光落在门上。然后右手把压杆慢慢按下，发出响亮的、被放大的金属咔哒声，停在锁舌上。门没有开。镜头固定。",
+       "dialogue_indices": [
+        0
+       ]
+      }
+     ],
+     "sound_en": "Quiet corridor room tone, then one loud metallic click of the lever. Voices stay close and clear.",
+     "sound_zh": "安静的走廊底噪，然后一声响亮的压杆金属咔哒声。人声近而清楚。",
+     "seed": 3204,
+     "dialogue_language": "en"
+    }
+   ],
+   "dialogue_language": "en"
+  }
+ ]
+}
