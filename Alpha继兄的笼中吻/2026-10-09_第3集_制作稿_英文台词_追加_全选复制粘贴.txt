@@ -135,7 +135,7 @@
      "image_reference_keys": [
       "room"
      ],
-     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Wide shot from inside the fitting room: the closed heavy dark-wood door with its brass lever handle at frame-left, seen at an angle, the rack of long white gowns in garment covers along the back wall, the ivory velvet couch at frame-right, thick carpet in the foreground. The frame holds the room, the door and the gowns. Warm light from the chandelier and wall sconces. Fixed stage layout: the heavy dark-wood door is at frame-left.",
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Wide shot from inside the fitting room: the closed heavy dark-wood door with its brass lever handle at frame-left, seen at an angle, the rack of long white gowns in garment covers centered in the middle third of the frame along the back wall, the ivory velvet couch at frame-right, thick carpet in the foreground. The frame holds the room, the door and the gowns. Warm light from the chandelier and wall sconces. Fixed stage layout: the heavy dark-wood door is at frame-left.",
      "visual_zh": "门把手压下，门被推开，保罗走进来，叫莉莉。",
      "camera_zh": "0—6秒广角固定镜头，门在画面左边。",
      "dialogue": [
@@ -346,7 +346,7 @@
      "image_reference_keys": [
       "room"
      ],
-     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium shot of Paul in profile facing frame-right, standing in the open doorway at frame-left in his navy blazer, his right hand on the edge of the door, his brows drawn together, his eyes moving over the fitting room at frame-right. The frame holds exactly one person, Paul. Warm light from the chandelier and wall sconces. Fixed stage layout: the heavy dark-wood door is at frame-left.",
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium shot of Paul in profile facing frame-right, centered in the middle third of the frame, standing in the open doorway in his navy blazer, the edge of the open door at frame-left beside him, his right hand on the edge of the door, his brows drawn together, his eyes moving over the fitting room at frame-right. The frame holds exactly one person, Paul. Warm light from the chandelier and wall sconces. Fixed stage layout: the heavy dark-wood door is at frame-left.",
      "visual_zh": "保罗站在门口，皱着眉看房间，嘟囔了一句。",
      "camera_zh": "0—5秒中景固定镜头。",
      "dialogue": [
@@ -362,8 +362,8 @@
       {
        "start_seconds": 0,
        "end_seconds": 5,
-       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady medium shot opens from the adopted first frame in [[asset:room]]: [[asset:paul]] in profile in the open doorway at frame-left, his right hand on the edge of the door, his brows drawn together, his eyes on the fitting room at frame-right. He speaks with a puzzled frown, his eyes moving over the room. The camera holds still.",
-       "visual_zh": "一个稳定的中景，从已采用的开场图继续，场景是试衣间：保罗侧身站在画面左边敞开的门口，右手扶着门的边缘，眉头皱起，眼睛看着画面右边的试衣间。他带着困惑的皱眉说话，目光在房间里移动。镜头固定不动。",
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady medium shot opens from the adopted first frame in [[asset:room]]: [[asset:paul]] in profile in the open doorway, the edge of the door at frame-left beside him, his right hand on the edge of the door, his brows drawn together, his eyes on the fitting room at frame-right. He speaks with a puzzled frown, his eyes moving over the room. The camera holds still.",
+       "visual_zh": "一个稳定的中景，从已采用的开场图继续，场景是试衣间：保罗侧身站在敞开的门口，门的边缘在他身旁的画面左边，右手扶着门的边缘，眉头皱起，眼睛看着画面右边的试衣间。他带着困惑的皱眉说话，目光在房间里移动。镜头固定不动。",
        "dialogue_indices": [
         0
        ]
@@ -391,7 +391,7 @@
      "image_reference_keys": [
       "room"
      ],
-     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium shot of Paul in profile in the doorway at frame-left, his right hand on the edge of the open heavy dark-wood door, one foot on the threshold, his eyes on the fitting room at frame-right. The frame holds exactly one person, Paul. Warm light from the chandelier and wall sconces. Fixed stage layout: the heavy dark-wood door is at frame-left.",
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium shot of Paul in profile facing frame-right, centered in the middle third of the frame, in the doorway, his right hand on the edge of the open heavy dark-wood door at frame-left beside him, one foot on the threshold, his eyes on the fitting room at frame-right. The frame holds exactly one person, Paul. Warm light from the chandelier and wall sconces. Fixed stage layout: the heavy dark-wood door is at frame-left.",
      "visual_zh": "保罗退出门外，用手把门拉上。",
      "camera_zh": "0—5秒中景固定镜头。",
      "dialogue": [],
@@ -399,8 +399,8 @@
       {
        "start_seconds": 0,
        "end_seconds": 5,
-       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady medium shot opens from the adopted first frame in [[asset:room]]: [[asset:paul]] in profile in the doorway at frame-left, his right hand on the edge of the open door. He steps backward out through the doorway and pulls the heavy dark-wood door closed with his right hand until it shuts. The camera holds still.",
-       "visual_zh": "一个稳定的中景，从已采用的开场图继续，场景是试衣间：保罗侧身站在画面左边的门口，右手扶着敞开的门的边缘。他向后退出门外，右手把厚重的深色木门拉上，直到关严。镜头固定不动。",
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady medium shot opens from the adopted first frame in [[asset:room]]: [[asset:paul]] in profile in the doorway, his right hand on the edge of the open door at frame-left beside him. He steps backward out through the doorway and pulls the heavy dark-wood door closed with his right hand until it shuts. The camera holds still.",
+       "visual_zh": "一个稳定的中景，从已采用的开场图继续，场景是试衣间：保罗侧身站在门口，右手扶着他身旁画面左边敞开的门的边缘。他向后退出门外，右手把厚重的深色木门拉上，直到关严。镜头固定不动。",
        "dialogue_indices": []
       }
      ],

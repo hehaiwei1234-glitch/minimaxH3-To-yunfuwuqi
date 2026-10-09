@@ -38,9 +38,9 @@ def T(flag, title, dur, chars, assets, refs, img, end, img_zh, vis_zh, cam_zh, d
 
 # 01 ------------------------------------------------------------------------------------------------
 T(False, '01｜门把手转动，保罗进屋', 6, ['PaulOnScreen'], ('room', 'paul'), ['room'],
-  "Wide shot from inside the fitting room: the closed heavy dark-wood door with its brass lever handle at frame-left, seen at an angle, the rack of long white gowns in garment covers along the back wall, the ivory velvet couch at frame-right, thick carpet in the foreground. The frame holds the room, the door and the gowns.",
+  "Wide shot from inside the fitting room: the closed heavy dark-wood door with its brass lever handle at frame-left, seen at an angle, the rack of long white gowns in garment covers centered in the middle third of the frame along the back wall, the ivory velvet couch at frame-right, thick carpet in the foreground. The frame holds the room, the door and the gowns.",
   END_ROOM + LAY_DOOR,
-  "试衣间里的广角镜头：画面左边是关着的厚重深色木门，铜色压杆门把手清晰可见，门斜着入画；靠后墙是一排装在防尘罩里的长白婚纱，画面右边是象牙色丝绒沙发，前景是厚地毯。画面里是房间、门和婚纱。吊灯和壁灯的暖光。固定布局：厚重深色木门在画面左边。",
+  "试衣间里的广角镜头：画面左边是关着的厚重深色木门，铜色压杆门把手清晰可见，门斜着入画；靠后墙、在画面中间三分之一是一排装在防尘罩里的长白婚纱，画面右边是象牙色丝绒沙发，前景是厚地毯。画面里是房间、门和婚纱。吊灯和壁灯的暖光。固定布局：厚重深色木门在画面左边。",
   "门把手压下，门被推开，保罗走进来，叫莉莉。", "0—6秒广角固定镜头，门在画面左边。",
   ('PaulOnScreen', 'Lily? Where are you?', 2.4),
   f"A steady wide shot opens from the adopted first frame in {R}: the closed heavy dark-wood door at frame-left with its brass lever handle in view, the rack of white gowns at the back wall. The handle presses down and the door swings inward; {P} steps through the doorway in his navy blazer, his right hand on the handle, his eyes on the room. The camera holds still.",
@@ -91,23 +91,23 @@ T(True, '05｜气声警告二', 6, ['Lily', 'Killian'], ('alcove', 'lily', 'kill
 
 # 06 ------------------------------------------------------------------------------------------------
 T(False, '06｜保罗嘟囔', 5, ['PaulOnScreen'], ('room', 'paul'), ['room'],
-  "Medium shot of Paul in profile facing frame-right, standing in the open doorway at frame-left in his navy blazer, his right hand on the edge of the door, his brows drawn together, his eyes moving over the fitting room at frame-right. The frame holds exactly one person, Paul.",
+  "Medium shot of Paul in profile facing frame-right, centered in the middle third of the frame, standing in the open doorway in his navy blazer, the edge of the open door at frame-left beside him, his right hand on the edge of the door, his brows drawn together, his eyes moving over the fitting room at frame-right. The frame holds exactly one person, Paul.",
   END_ROOM + LAY_DOOR,
-  "中景：保罗侧身朝画面右边，站在画面左边敞开的门口，穿藏青色西装外套，右手扶着门的边缘，眉头皱起，眼睛扫视着画面右边的试衣间。画面里恰好一个人：保罗。吊灯和壁灯的暖光。固定布局：门在画面左边。",
+  "中景：保罗侧身朝画面右边，在画面中间三分之一，站在敞开的门口，穿藏青色西装外套，敞开的门的边缘在他身旁的画面左边，右手扶着门的边缘，眉头皱起，眼睛扫视着画面右边的试衣间。画面里恰好一个人：保罗。吊灯和壁灯的暖光。固定布局：门在画面左边。",
   "保罗站在门口，皱着眉看房间，嘟囔了一句。", "0—5秒中景固定镜头。",
   ('PaulOnScreen', "Where'd she go?", 0.8),
-  f"A steady medium shot opens from the adopted first frame in {R}: {P} in profile in the open doorway at frame-left, his right hand on the edge of the door, his brows drawn together, his eyes on the fitting room at frame-right. He speaks with a puzzled frown, his eyes moving over the room. The camera holds still.",
-  "一个稳定的中景，从已采用的开场图继续，场景是试衣间：保罗侧身站在画面左边敞开的门口，右手扶着门的边缘，眉头皱起，眼睛看着画面右边的试衣间。他带着困惑的皱眉说话，目光在房间里移动。镜头固定不动。",
+  f"A steady medium shot opens from the adopted first frame in {R}: {P} in profile in the open doorway, the edge of the door at frame-left beside him, his right hand on the edge of the door, his brows drawn together, his eyes on the fitting room at frame-right. He speaks with a puzzled frown, his eyes moving over the room. The camera holds still.",
+  "一个稳定的中景，从已采用的开场图继续，场景是试衣间：保罗侧身站在敞开的门口，门的边缘在他身旁的画面左边，右手扶着门的边缘，眉头皱起，眼睛看着画面右边的试衣间。他带着困惑的皱眉说话，目光在房间里移动。镜头固定不动。",
   voiced("Soft room tone.", "轻轻的房间底噪。"))
 
 # 07 ------------------------------------------------------------------------------------------------
 T(True, '07｜保罗关门离开', 5, ['PaulOnScreen'], ('room', 'paul'), ['room'],
-  "Medium shot of Paul in profile in the doorway at frame-left, his right hand on the edge of the open heavy dark-wood door, one foot on the threshold, his eyes on the fitting room at frame-right. The frame holds exactly one person, Paul.",
+  "Medium shot of Paul in profile facing frame-right, centered in the middle third of the frame, in the doorway, his right hand on the edge of the open heavy dark-wood door at frame-left beside him, one foot on the threshold, his eyes on the fitting room at frame-right. The frame holds exactly one person, Paul.",
   END_ROOM + LAY_DOOR,
-  "中景：保罗侧身站在画面左边的门口，右手扶着敞开的厚重深色木门的边缘，一只脚踩在门槛上，眼睛看着画面右边的试衣间。画面里恰好一个人：保罗。吊灯和壁灯的暖光。固定布局：门在画面左边。",
+  "中景：保罗侧身朝画面右边，在画面中间三分之一，站在门口，右手扶着他身旁画面左边敞开的厚重深色木门的边缘，一只脚踩在门槛上，眼睛看着画面右边的试衣间。画面里恰好一个人：保罗。吊灯和壁灯的暖光。固定布局：门在画面左边。",
   "保罗退出门外，用手把门拉上。", "0—5秒中景固定镜头。", None,
-  f"A steady medium shot opens from the adopted first frame in {R}: {P} in profile in the doorway at frame-left, his right hand on the edge of the open door. He steps backward out through the doorway and pulls the heavy dark-wood door closed with his right hand until it shuts. The camera holds still.",
-  "一个稳定的中景，从已采用的开场图继续，场景是试衣间：保罗侧身站在画面左边的门口，右手扶着敞开的门的边缘。他向后退出门外，右手把厚重的深色木门拉上，直到关严。镜头固定不动。",
+  f"A steady medium shot opens from the adopted first frame in {R}: {P} in profile in the doorway, his right hand on the edge of the open door at frame-left beside him. He steps backward out through the doorway and pulls the heavy dark-wood door closed with his right hand until it shuts. The camera holds still.",
+  "一个稳定的中景，从已采用的开场图继续，场景是试衣间：保罗侧身站在门口，右手扶着他身旁画面左边敞开的门的边缘。他向后退出门外，右手把厚重的深色木门拉上，直到关严。镜头固定不动。",
   silent("The door shuts with a solid latch click.", "门关上，锁舌发出沉实的咔哒声。"))
 
 # 08 ------------------------------------------------------------------------------------------------
