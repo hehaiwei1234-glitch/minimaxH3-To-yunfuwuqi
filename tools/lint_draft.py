@@ -19,6 +19,8 @@ def bad(seg, msg):
     print(f'  ✗ {seg}: {msg}')
 
 d = json.load(open(sys.argv[1], encoding='utf-8'))
+for name, c in d.get('characters', {}).items():
+    if d.get('dialogue_language') == 'en' and re.search(r'Mandarin|Chinese', c['voice_description']['en'], re.I): bad(name, '人物声音描述还是普通话')
 for ep in d['episodes']:
     for s in ep['segments']:
         t = s['title']
@@ -35,12 +37,18 @@ for ep in d['episodes']:
             if m: bad(t, f'开场图提示词：{why}（命中“{m.group(0)}”）')
         if 'middle third' not in ip: bad(t, '开场图提示词没写 centered / middle third')
         if len(s['characters']) > 2: bad(t, '在场人数超过 2')
+        if d.get('dialogue_language') == 'en' and re.search(r'Mandarin|Chinese', s['sound_en'] + s['shots'][0]['visual_en'] + s['image_prompt'], re.I): bad(t, '提示词里出现 Mandarin/Chinese')
         dl = s['dialogue']
         if len(dl) > 1: bad(t, '一个任务多于一句台词')
         if len({x['speaker'] for x in dl}) > 1: bad(t, '一个任务多于一个说话人')
         for x in dl:
-            n = len(re.findall(r'[㐀-鿿]', x['text']))
-            if n > 14: bad(t, f'台词 {n} 个字，超过约 13 字')
+            han = len(re.findall(r'[\u3400-\u9fff]', x['text']))
+            lang = x.get('language') or s.get('dialogue_language') or d.get('dialogue_language')
+            if lang == 'en':
+                if han: bad(t, '英语台词里出现汉字')
+                words = len(re.findall(r"[A-Za-z0-9]+(?:['’][A-Za-z0-9]+)*", x['text']))
+                if words > 7: bad(t, f'英语台词 {words} 个单词，超过 7 个')
+            elif han > 14: bad(t, f'台词 {han} 个字，超过约 13 字')
             if s['duration_seconds'] - x['end_seconds'] < 1.0: bad(t, '台词后余量不足 1 秒')
         if not dl:
             if 'free of voices' not in s['sound_en'] and 'no vocal' not in s['sound_en']: bad(t, '无台词片没写“完全没有人声”')
