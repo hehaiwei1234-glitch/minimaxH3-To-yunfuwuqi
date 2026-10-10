@@ -16,8 +16,8 @@ import json, os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from _h3draft import Batch, FOLDER, silent, voiced
 
-BASE = '2026-10-09_第2集_制作稿_英文台词_追加.json'
-OUT = '2026-10-09_第3集_制作稿_英文台词_追加'
+BASE = '第02集/第02集_制作稿_追加.json'
+OUT = '第03集/第03集_制作稿_追加'
 b = Batch(BASE, json.load(open(os.path.join(FOLDER, BASE), encoding='utf-8'))['title'], 3200)
 
 K = '[[asset:killian]]'; L = '[[asset:lily]]'; P = '[[asset:paul]]'; R = '[[asset:room]]'; A = '[[asset:alcove]]'
@@ -215,5 +215,5 @@ md.append("## 四、这一版写法上和旧版的区别（对应 8 条规律）
 md.append("- 不再写 “Nobody speaks / Nobody else is in the frame”，人数改写成 “The frame holds exactly N people”。\n- 不再写 “slightly / only / small” 这类程度词。\n- 保罗进屋并入 01 号（门把手压下、门打开、保罗走进来是同一个镜头），保罗关门（07 号）写明是他的右手拉上的；旧版里没有人的“关门声”任务已去掉。\n- 原剧本里“把她整个人提起来、双脚悬空”的动作没有拍（H3 做不稳），改成她背靠墙、被捂住嘴；亲密威胁按美国平台惯例保持暗示。\n- 威胁那句原来拆成两个任务，改成两句完整的话：“Make one sound.” 和 “I'll take you in front of him.”。\n- 开场图里把门的位置、两人的左右位置都写成固定布局。\n")
 md.append("## 五、我预计会出问题的地方（没试过，只是判断）\n")
 md.append("- **08 号“顺着墙滑坐到地上”**是整集最难的动作，可能出现身体穿插或下落不自然。\n- **01 号**开场图里没有保罗，保罗的脸来自他的人物图，进门后是否像他要看。\n- **同一批 6 秒的台词任务**，声音常常到片尾才结束，验收时听结尾（04、05、09、10、11 号）。\n- **承接前段**的效果还没验证，如果开场图里被带进了不该有的人，请告诉我号码。\n")
-open(os.path.join(FOLDER, '2026-10-09_第3集_说明_英文台词_追加.md'), 'w', encoding='utf-8').write('\n'.join(md))
+open(os.path.join(FOLDER, '第03集/第03集_说明.md'), 'w', encoding='utf-8').write('\n'.join(md))
 print('说明已写')

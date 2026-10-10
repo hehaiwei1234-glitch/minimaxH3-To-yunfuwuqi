@@ -13,10 +13,10 @@ import json, os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from _h3draft import Batch, FOLDER, silent, voiced
 
-BASE = '2026-10-09_第3集_制作稿_英文台词_追加.json'
-OUT_A = '2026-10-09_第4集_制作稿_英文台词_追加'
-OUT_B = '2026-10-09_第4集B_对比测试_长片段与现成开场图'
-OUT_C = '2026-10-09_第4集C_对比测试_续接'
+BASE = '第03集/第03集_制作稿_追加.json'
+OUT_A = '第04集/第04集_制作稿_追加'
+OUT_B = '第04集/第04集B_对比测试_长片段与现成开场图'
+OUT_C = '第04集/第04集C_对比测试_续接'
 SERIES_TITLE = json.load(open(os.path.join(FOLDER, BASE), encoding='utf-8'))['title']
 
 V = '[[asset:villa_front]]'; LC = '[[asset:lily_coat]]'; KR = '[[asset:killian_robe]]'; BU = '[[asset:butler]]'
@@ -446,5 +446,5 @@ md.append("""
 """)
 md.append("### C 版：给 H3 的提示词（中文全译）\n")
 md.append(prompts(C))
-open(os.path.join(FOLDER, '2026-10-09_第4集_说明_英文台词_追加.md'), 'w', encoding='utf-8').write('\n'.join(md))
+open(os.path.join(FOLDER, '第04集/第04集_说明.md'), 'w', encoding='utf-8').write('\n'.join(md))
 print('说明已写')

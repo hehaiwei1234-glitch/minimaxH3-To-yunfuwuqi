@@ -11,9 +11,9 @@ import json, re, copy, os
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 FOLDER = os.path.join(ROOT, 'Alpha继兄的笼中吻')
-BASE = os.path.join(FOLDER, '2026-10-09_第1集_制作稿_英文台词.json')
-OUT_JSON = os.path.join(FOLDER, '2026-10-09_第2集_制作稿_英文台词_追加.json')
-OUT_TXT = os.path.join(FOLDER, '2026-10-09_第2集_制作稿_英文台词_追加_全选复制粘贴.txt')
+BASE = os.path.join(FOLDER, '第01集/第01集_制作稿.json')
+OUT_JSON = os.path.join(FOLDER, '第02集/第02集_制作稿_追加.json')
+OUT_TXT = os.path.join(FOLDER, '第02集/第02集_制作稿_追加_全选复制粘贴.txt')
 
 base = json.load(open(BASE, encoding='utf-8'))
 d = copy.deepcopy(base)

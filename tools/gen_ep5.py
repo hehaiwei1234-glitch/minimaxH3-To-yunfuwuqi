@@ -12,8 +12,8 @@ import json, os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from _h3draft import Batch, FOLDER, silent, voiced
 
-BASE = '2026-10-09_第4集_制作稿_英文台词_追加.json'
-OUT = '2026-10-09_第5集_制作稿_英文台词_追加'
+BASE = '第04集/第04集_制作稿_追加.json'
+OUT = '第05集/第05集_制作稿_追加'
 SERIES_TITLE = json.load(open(os.path.join(FOLDER, BASE), encoding='utf-8'))['title']
 b = Batch(BASE, SERIES_TITLE, 3400)
 
@@ -220,5 +220,5 @@ md.append("## 五、和旧版的区别\n")
 md.append("- 去掉“莉莉僵住”和“莉莉流泪”两个任务（泪并进最后一个任务的开场图），情节、台词不变。\n- 不再写 “Nobody else / No hands are visible”，人数写成 “exactly N people”；去掉 slightly / only 这类程度词。\n- 贴身镜头每只手都写清楚：基利安的右手按着她的手腕、左手平撑床垫，莉莉的另一只手摊开在枕头上。\n- 亲密场面保持不露骨：全程穿着衣服，只有按住手腕、牙齿贴着脖子；咬下去的一瞬由成片里的黑屏表现。\n- “扑上床”的动作不拍（H3 做不稳），起始姿势直接放进开场图。\n")
 md.append("## 六、我预计会出问题的地方（没试过，只是判断）\n")
 md.append("- **05 号酒杯碎裂**要靠 H3 把“利爪压进玻璃”做对，可能是杯子自己碎或手穿过杯子。\n- **04 号**用另一张人物图（失控版），承接前段的位置参考来自闭着眼的 03 号，眼睛颜色是否对要看开场图。\n- **07–10 号**是贴身镜头，没有试验数据；尖牙抵脖子这一类可能出现牙齿或手变形。\n- **台词**照旧：声音常常到片尾才结束，验收时听结尾（06、08、09 号）。\n")
-open(os.path.join(FOLDER, '2026-10-09_第5集_说明_英文台词_追加.md'), 'w', encoding='utf-8').write('\n'.join(md))
+open(os.path.join(FOLDER, '第05集/第05集_说明.md'), 'w', encoding='utf-8').write('\n'.join(md))
 print('说明已写')

@@ -14,9 +14,9 @@ import json, os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from _h3draft import Batch, FOLDER, silent, voiced
 
-BASE = '2026-10-09_第5集_制作稿_英文台词_追加.json'
-OUT_A = '2026-10-09_第6集_制作稿_英文台词_追加'
-OUT_B = '2026-10-09_第6集B_对比测试_表情_退场_背景人群_补拍候选'
+BASE = '第05集/第05集_制作稿_追加.json'
+OUT_A = '第06集/第06集_制作稿_追加'
+OUT_B = '第06集/第06集B_对比测试_表情_退场_背景人群_补拍候选'
 SERIES_TITLE = json.load(open(os.path.join(FOLDER, BASE), encoding='utf-8'))['title']
 
 
@@ -367,5 +367,5 @@ md.append("## 五、我预计会出问题的地方（没试过，只是判断）
 md.append("- **A05 红酒泼裙**：液体加手抓手腕，可能酒不泼、杯子穿手，或泼到别处。\n- **A02、A03 玛丽贴近基利安**：近身双人，可能手臂穿插；玛丽的笑可能“传染”给基利安。\n- **A08 保罗大喊**：喊叫时嘴型和台词能不能对上（第 3 集 6/7 句对得上）。\n- **玛丽是新人物（没有参考图）**，A02 以后每个任务里她的脸是否一致要看。\n- **B 的 X1、X2** 是第 3 集 07 号失败后的两种新写法，可能仍然失败，这本身是有用的结论。\n- **台词**照旧：声音常常到片尾才结束，验收时听结尾（A02、A06、A08）。\n")
 md.append("## 六、和第 3 集的区别（已按“Claude 易错点自查清单”）\n")
 md.append("- 每个人物每个任务都写了表情；没有“画外的人”，视线目标都在画面里。\n- 有台词的任务都是 6 秒、≤6 个单词；没有 5 秒任务放台词。\n- 承接前段只在同一对人、同一地点、人数不变的 03、06；人数一变（A04、A05、A07、A08）就关掉。\n- 没有“人走出画面”的动作；离场写法放进 B 的 X1、X2 单独测。\n")
-open(os.path.join(FOLDER, '2026-10-09_第6集_说明_英文台词_追加.md'), 'w', encoding='utf-8').write('\n'.join(md))
+open(os.path.join(FOLDER, '第06集/第06集_说明.md'), 'w', encoding='utf-8').write('\n'.join(md))
 print('说明已写')

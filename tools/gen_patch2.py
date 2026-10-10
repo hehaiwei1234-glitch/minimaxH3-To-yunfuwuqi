@@ -11,8 +11,8 @@ import json, os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from _h3draft import Batch, FOLDER
 
-BASE = '2026-10-09_第5集+第6集A+第6集B_合并_制作稿_追加.json'
-OUT = '2026-10-10_补拍包2_大冲突表演重拍_追加'
+BASE = '合并稿/合并_第5集+第6集A+第6集B_制作稿_追加.json'
+OUT = '补拍/补拍包2_大冲突表演重拍_追加'
 SERIES_TITLE = json.load(open(os.path.join(FOLDER, BASE), encoding='utf-8'))['title']
 
 b = Batch(BASE, SERIES_TITLE, 3710)
@@ -119,5 +119,5 @@ for s, zh in zip(segs, ZH):
     md.append(f"- **声音：** {s['sound_zh']}\n")
 md.append("## 三、预计会出问题的地方\n")
 md.append("- **补11：** “手把杯子打在她胸口”是近身接触动作，H3 可能还是画成她自己倒、或者手没碰到杯子；红酒可能不泼在裙子上。开场图先看：玛丽必须在笑、基利安的手垂在身侧。\n- **补10：** 杯子碎裂可能还是慢；尖牙是不是出现（上次出现了）；**这次写了允许低吼，可能会出现像说话的声音**，验收时听。\n- **补9：** 床头板、门的位置每次都可能变；两个人的朝向（莉莉朝右、基利安朝左）看开场图。\n- 写法检查报了 3 条“无台词片没写完全没有人声”：**是故意的**（这次要测允许呼吸声）。\n- 三个片的开场图都是重新生成的，**脸和房间可能和原来略有不同**，拼起来不顺眼就不要。\n")
-open(os.path.join(FOLDER, '2026-10-10_补拍包2_说明.md'), 'w', encoding='utf-8').write('\n'.join(md))
+open(os.path.join(FOLDER, '补拍/补拍包2_说明.md'), 'w', encoding='utf-8').write('\n'.join(md))
 print('说明已写')
