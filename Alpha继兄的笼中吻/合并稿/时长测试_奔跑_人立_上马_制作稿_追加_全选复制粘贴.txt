@@ -1,0 +1,792 @@
+{
+ "schema": "h3-production-draft",
+ "version": 1,
+ "title": "Alpha继兄的笼中吻｜第2集｜门后的狂想",
+ "dialogue_language": "en",
+ "style": "Photorealistic live-action romantic thriller with a glossy, high-end drama look. Warm tungsten key light with a soft cool fill, shallow depth of field, rich natural skin texture with visible pores, luxurious cream-and-gold interiors, restrained cinematic color grading, and an ultra-wide 8:3 cinemascope frame in which the people are placed deliberately and the room is visible around them.",
+ "assets": [
+  {
+   "key": "lily",
+   "kind": "image",
+   "role": "character",
+   "label": "莉莉",
+   "description": {
+    "en": "Lily, an adult woman in her mid-twenties with long wavy chestnut-brown hair, fair skin, large hazel-green eyes and a slender build, wearing an ivory silk wedding gown with a fitted bodice and a long zipper down the back. The portrait fixes her identity and gown; the opening frame and shot description fix her pose and position.",
+    "zh": "莉莉，二十五岁左右的成年女性，栗棕色长卷发、白皙皮肤、浅褐绿色大眼睛、身形纤细，穿象牙白真丝婚纱，合身上身，背后一条长拉链。人物图固定身份与婚纱，开场图和镜头正文决定姿势与位置。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of an adult woman in her mid-twenties with long wavy chestnut-brown hair, fair skin and large hazel-green eyes, wearing an ivory silk wedding gown with a fitted bodice and delicate shoulders. She faces the camera with a calm, slightly nervous expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "killian",
+   "kind": "image",
+   "role": "character",
+   "label": "基利安",
+   "description": {
+    "en": "Killian, a very tall, broad-shouldered adult man in his early thirties with short swept-back black hair, a sharp jawline, light stubble and cold dark-gray eyes, wearing a tailored black three-piece suit, white shirt and dark tie, with a platinum luxury wristwatch on his left wrist. He stands a head and a half taller than Lily. The portrait fixes his identity and clothes, not staging.",
+    "zh": "基利安，三十出头的成年男性，身材极高、肩膀宽阔，黑色短发向后梳，下颌线锋利，有浅胡茬，眼睛是冷冽的深灰色，穿剪裁合身的黑色三件套西装、白衬衫、深色领带，左腕戴铂金色名表。比莉莉高出一个半头。人物图固定身份与衣服，不固定站位。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of a very tall, broad-shouldered adult man in his early thirties with short swept-back black hair, a sharp jawline, light stubble and cold dark-gray eyes, wearing a tailored black three-piece suit, white shirt and dark tie, a platinum luxury wristwatch on his left wrist. He faces the camera with a cold, composed expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "room",
+   "kind": "image",
+   "role": "scene",
+   "label": "婚纱店VIP更衣室",
+   "description": {
+    "en": "The private VIP fitting room of a high-end bridal boutique: cream walls with gold molding, a heavy dark-wood door with a brass handle in the left wall, a rack of long white gowns in garment covers along the back wall, a wide bare stretch of plain cream panelled wall to the right of the gown rack, an ivory velvet couch against the right wall and thick carpet, lit warmly by a crystal chandelier and wall sconces. The reference fixes the room layout and decor, not any people.",
+    "zh": "高端婚纱店的VIP私人更衣室：奶油色墙面配金色线脚，左墙一扇带黄铜把手的厚重深色木门，后墙挂着一排罩着防尘袋的白色长婚纱，婚纱架右边是一大段空白的奶油色护墙板墙面，右墙边有象牙色丝绒沙发和厚地毯，水晶吊灯与壁灯的暖光。参考图固定房间布局与陈设，不带入任何人物。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic wide shot of an empty luxury VIP fitting room in a high-end bridal boutique: cream walls with gold molding, a heavy dark-wood door with a brass handle on the left wall, a rack of long white wedding gowns in garment covers along the back wall, a wide bare stretch of plain cream panelled wall to the right of the gown rack, an ivory velvet couch against the right wall, thick carpet, warm light from a crystal chandelier and wall sconces. No people.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "alcove",
+   "kind": "image",
+   "role": "scene",
+   "label": "更衣室婚纱架后的隔间",
+   "description": {
+    "en": "A narrow dressing alcove at the back of the private fitting room: a dense row of long white gowns in garment covers hanging close together on a rail along one side, and a heavy cream floor-length velvet curtain on a ceiling track, drawn half open across the front. Dim warm light with soft shadows. The reference fixes the look of the alcove, not any people.",
+    "zh": "更衣室最里面的狭窄隔间：一侧是紧挨着挂在横杆上、罩着防尘袋的白色长婚纱，正面是一道挂在顶轨上的奶油色厚重丝绒落地帘，拉开了一半。光线昏暗温暖，阴影柔和。参考图固定隔间的样子，不带入任何人物。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic shot of an empty narrow dressing alcove at the back of a luxury fitting room: a dense row of long white gowns in garment covers hanging close together on a rail along one side, a heavy cream floor-length velvet curtain on a ceiling track drawn half open across the front, dim warm light with soft shadows, thick carpet. No people.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "paul",
+   "kind": "image",
+   "role": "character",
+   "label": "保罗",
+   "description": {
+    "en": "Paul, an adult man in his late twenties with neatly combed light-brown hair, a clean-shaven friendly boyish face and warm brown eyes, of average build, wearing a navy blazer over a white open-collared shirt. He is a head shorter than Killian. The portrait fixes his identity and clothes, not staging.",
+    "zh": "保罗，二十八岁左右的成年男性，浅棕色头发梳得整齐，脸干净、友善、带点孩子气，暖棕色眼睛，身材普通，穿海军蓝西装外套配白色敞领衬衫。比基利安矮一个头。人物图固定身份与衣服，不固定站位。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of an adult man in his late twenties with neatly combed light-brown hair, a clean-shaven friendly boyish face and warm brown eyes, wearing a navy blazer over a white open-collared shirt. He faces the camera with a mild, relaxed expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "villa_front",
+   "kind": "image",
+   "role": "scene",
+   "label": "半山庄园门前",
+   "description": {
+    "en": "The gravel forecourt of a gloomy luxurious hillside mansion at dusk: a dark stone facade with tall narrow windows, a wide flight of stone entrance steps on the right, a second-floor stone balcony with a balustrade above the entrance, tall black iron gates and dark pine trees behind, a black Maybach sedan parked on the gravel on the left, cold blue dusk light with warm lamps glowing in the windows. The reference fixes the layout and decor.",
+    "zh": "黄昏时阴森奢华的半山庄园门前碎石场地：深色石头外墙配高窄窗，右边是宽阔的石头台阶，台阶上方二楼有一座带栏杆的石头阳台，后面是高大的黑色铁门和深色松树，左边碎石地上停着一辆黑色迈巴赫轿车，冷蓝的暮色里窗内亮着暖灯。参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of the gravel forecourt of a gloomy luxurious hillside mansion at dusk: a dark stone facade with tall narrow windows, a wide flight of stone entrance steps on the right, a second-floor stone balcony with a balustrade above the entrance, tall black iron gates and dark pine trees behind, a black Maybach sedan parked on the gravel on the left, cold blue dusk light with warm lamps in the windows. The frame holds the mansion, the gravel, the car and the pines.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "butler",
+   "kind": "image",
+   "role": "character",
+   "label": "老管家",
+   "description": {
+    "en": "The butler, an elderly man in his sixties with neatly combed silver hair, a lined, dignified face and kind pale-blue eyes, wearing a black tailcoat, white shirt, grey waistcoat, black tie and white gloves. The portrait fixes his identity and clothes, not staging.",
+    "zh": "老管家，六十多岁的老人，银发梳得整齐，脸上有皱纹、端庄，眼睛是温和的浅蓝色，穿黑色燕尾服、白衬衫、灰色马甲、黑领带，戴白手套。人物图固定身份与衣服，不固定站位。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of an elderly man in his sixties with neatly combed silver hair, a lined, dignified face and kind pale-blue eyes, wearing a black tailcoat, white shirt, grey waistcoat, black tie and white gloves. He faces the camera with a calm, courteous expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "lily_coat",
+   "kind": "image",
+   "role": "character",
+   "label": "莉莉（旅途装）",
+   "description": {
+    "en": "Lily, the same adult woman in her mid-twenties as in the reference, with long wavy chestnut-brown hair pulled into a low loose ponytail held by a small silver hair clip, fair skin and large hazel-green eyes, now wearing a faded grey wool coat over a plain navy dress, tired but proud. The portrait fixes her identity and clothes, not staging.",
+    "zh": "莉莉，和参考图是同一个二十五岁左右的成年女性，栗棕色长卷发低低地扎成松散的马尾，用一枚小银发卡固定，白皙皮肤、浅褐绿色大眼睛，这次穿褪色的灰色羊毛外套配朴素的藏青连衣裙，疲惫却倔强。人物图固定身份与衣服，不固定站位。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of the same woman as in the reference image, long wavy chestnut-brown hair pulled into a low loose ponytail held by a small silver hair clip, wearing a faded grey wool coat over a plain navy dress. She faces the camera with a tired but proud expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": [
+     "lily"
+    ]
+   }
+  },
+  {
+   "key": "killian_robe",
+   "kind": "image",
+   "role": "character",
+   "label": "基利安（黑丝绸睡袍）",
+   "description": {
+    "en": "Killian, the same very tall, broad-shouldered adult man in his early thirties as in the reference, with short swept-back black hair, a sharp jawline, light stubble and cold dark-gray eyes, now wearing a black silk robe tied at the waist over dark trousers, the collar open at the base of the throat, a platinum luxury wristwatch on his left wrist. The portrait fixes his identity and clothes, not staging.",
+    "zh": "基利安，和参考图是同一个三十出头、身材极高、肩膀宽阔的成年男性，黑色短发向后梳，下颌线锋利，有浅胡茬，眼睛是冷冽的深灰色，这次穿黑色真丝睡袍，腰间系带，里面是深色长裤，领口开到喉咙下方，左腕戴铂金色名表。人物图固定身份与衣服，不固定站位。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of the same man as in the reference image, short swept-back black hair, sharp jawline, light stubble and cold dark-gray eyes, wearing a black silk robe tied at the waist, the collar open at the base of the throat, a platinum luxury wristwatch on his left wrist. He faces the camera with a cold, composed expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": [
+     "killian"
+    ]
+   }
+  },
+  {
+   "key": "bedroom",
+   "kind": "image",
+   "role": "scene",
+   "label": "庄园主卧",
+   "description": {
+    "en": "The master bedroom of a dark luxurious mansion: a huge dark-wood bed with charcoal-grey linen against the left wall, a tall single dark-wood door with a brass handle in the right wall, floor-to-ceiling windows with heavy dark curtains at the back, a dark rug, bedside lamps giving a low amber light, and a small bar cart with crystal glasses near the door. The reference fixes the layout and decor.",
+    "zh": "阴暗奢华的庄园主卧：左墙边是一张巨大的深色实木床，配炭灰色床品；右墙有一扇带黄铜把手的高大单扇深色木门；后面是落地窗和厚重的深色窗帘；深色地毯，床头灯发出低低的琥珀色光；门边有一个放着水晶杯的小酒车。参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of the master bedroom of a dark luxurious mansion: a huge dark-wood bed with charcoal-grey linen against the left wall, a tall single dark-wood door with a brass handle in the right wall, floor-to-ceiling windows with heavy dark curtains at the back, a dark rug, bedside lamps giving a low amber light, a small bar cart with crystal glasses near the door. The frame holds the bed, the door, the windows and the bar cart.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "lily_shirt",
+   "kind": "image",
+   "role": "character",
+   "label": "莉莉（宽大男士衬衫）",
+   "description": {
+    "en": "Lily, the same adult woman in her mid-twenties as in the reference, with long wavy chestnut-brown hair damp and loose around her shoulders, fair skin and large hazel-green eyes, a bare face, wearing an oversized white men's cotton dress shirt that falls to mid-thigh with the sleeves too long, buttoned to the collarbone. The portrait fixes her identity and clothes, not staging.",
+    "zh": "莉莉，和参考图是同一个二十五岁左右的成年女性，栗棕色长卷发半湿地披在肩上，白皙皮肤、浅褐绿色大眼睛，素颜，穿一件宽大的白色男士棉质衬衫，下摆到大腿中部，袖子太长，扣子扣到锁骨。人物图固定身份与衣服，不固定站位。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of the same woman as in the reference image, long wavy chestnut-brown hair damp and loose around her shoulders, a bare face, wearing an oversized white men's cotton dress shirt buttoned to the collarbone with sleeves too long. She faces the camera with a nervous expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": [
+     "lily"
+    ]
+   }
+  },
+  {
+   "key": "killian_wolf",
+   "kind": "image",
+   "role": "character",
+   "label": "基利安（失控）",
+   "description": {
+    "en": "Killian, the same very tall, broad-shouldered adult man in his early thirties as in the reference, with short black hair, a sharp jawline and light stubble, wearing a black silk robe tied at the waist, his eyes glowing a dark gold, with sharp canine teeth and dark claw-like nails. The portrait fixes his identity, clothes and features, not staging.",
+    "zh": "基利安，和参考图是同一个三十出头、身材极高、肩膀宽阔的成年男性，黑色短发，下颌线锋利，有浅胡茬，穿黑色真丝睡袍、腰间系带，这次眼睛发出暗金色的光，犬齿尖利，指甲像深色的利爪。人物图固定身份、衣服和特征，不固定站位。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of the same man as in the reference image, short black hair, sharp jawline, light stubble, wearing a black silk robe tied at the waist, his eyes glowing a dark gold, sharp canine teeth just visible, dark claw-like nails. He faces the camera with an intense, barely restrained expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": [
+     "killian"
+    ]
+   }
+  },
+  {
+   "key": "ballroom",
+   "kind": "image",
+   "role": "scene",
+   "label": "财团晚宴大厅",
+   "description": {
+    "en": "A grand gala ballroom: a polished cream marble floor, a dark-red carpet runway down the middle, tall gold-trimmed columns, huge crystal chandeliers, a wide marble staircase on the left and a long banquet table with white linen and champagne towers on the right, warm golden light. The reference fixes the layout and decor.",
+    "zh": "盛大的晚宴大厅：抛光的奶油色大理石地面，中间一条深红色的地毯，高大的镶金边柱子，巨大的水晶吊灯，左边是宽阔的大理石楼梯，右边是铺着白桌布、摆着香槟塔的长长的宴会桌，温暖的金色灯光。参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a grand gala ballroom: a polished cream marble floor, a dark-red carpet runway down the middle, tall gold-trimmed columns, huge crystal chandeliers, a wide marble staircase on the left and a long banquet table with white linen and champagne towers on the right, warm golden light. The frame holds the staircase, the carpet, the columns, the chandeliers and the banquet table.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "lily_red",
+   "kind": "image",
+   "role": "character",
+   "label": "莉莉（红色晚礼服）",
+   "description": {
+    "en": "Lily, the same adult woman in her mid-twenties as in the reference, with long wavy chestnut-brown hair pinned in a loose low twist with a few strands falling free, fair skin and large hazel-green eyes, wearing a floor-length red satin evening gown with thin straps and a small beige adhesive bandage on the left side of her neck. The portrait fixes her identity, gown and bandage, not staging.",
+    "zh": "莉莉，和参考图是同一个二十五岁左右的成年女性，栗棕色长卷发松松地盘成低髻、有几缕散落，白皙皮肤、浅褐绿色大眼睛，穿及地的红色缎面细肩带晚礼服，脖子左侧贴着一块小小的米色创可贴。人物图固定身份、礼服和创可贴，不固定站位。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of the same woman as in the reference image, long wavy chestnut-brown hair pinned in a loose low twist, wearing a floor-length red satin evening gown with thin straps and a small beige adhesive bandage on the left side of her neck. She faces the camera with a composed, slightly nervous expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": [
+     "lily"
+    ]
+   }
+  },
+  {
+   "key": "killian_tux",
+   "kind": "image",
+   "role": "character",
+   "label": "基利安（黑色无尾礼服）",
+   "description": {
+    "en": "Killian, the same very tall, broad-shouldered adult man in his early thirties as in the reference, with short swept-back black hair, a sharp jawline, light stubble and cold dark-gray eyes, wearing a black tuxedo with a white shirt, a black bow tie and a white silk pocket square, a platinum luxury wristwatch on his left wrist. The portrait fixes his identity and clothes, not staging.",
+    "zh": "基利安，和参考图是同一个三十出头、身材极高、肩膀宽阔的成年男性，黑色短发向后梳，下颌线锋利，有浅胡茬，眼睛是冷冷的深灰色，穿黑色无尾礼服，配白衬衫、黑色领结和白色丝质胸袋巾，左手腕戴铂金名表。人物图固定身份和衣服，不固定站位。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of the same man as in the reference image, short swept-back black hair, sharp jawline, light stubble, cold dark-gray eyes, wearing a black tuxedo with a white shirt, a black bow tie and a white silk pocket square, a platinum luxury wristwatch on his left wrist. He faces the camera with a cold, composed expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": [
+     "killian"
+    ]
+   }
+  },
+  {
+   "key": "mary",
+   "kind": "image",
+   "role": "character",
+   "label": "玛丽（保罗的妹妹）",
+   "description": {
+    "en": "Mary, an adult woman in her mid-twenties with sleek honey-blonde hair in an elegant updo, flawless makeup, glossy red lips and sharp green eyes, wearing a white satin cocktail dress with a sweetheart neckline, a pearl necklace and pearl drop earrings. The portrait fixes her identity and dress, not staging.",
+    "zh": "玛丽，二十五岁左右的成年女性，光滑的蜜金色头发盘成优雅的发髻，妆容无瑕，嘴唇红亮，一双锐利的绿眼睛，穿白色缎面心形领鸡尾酒裙，戴珍珠项链和珍珠垂坠耳环。人物图固定身份和裙子，不固定站位。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of an adult woman in her mid-twenties with sleek honey-blonde hair in an elegant updo, flawless makeup, glossy red lips and sharp green eyes, wearing a white satin cocktail dress with a sweetheart neckline, a pearl necklace and pearl drop earrings. She faces the camera with a sweet, coy expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "car_back",
+   "kind": "image",
+   "role": "scene",
+   "label": "轿车后座",
+   "description": {
+    "en": "The rear seat of a luxury black sedan at dusk: cream leather seat, dark wood trim, a wide side window with cold blue dusk light and warm lights glowing far away. The reference fixes the cabin and the light.",
+    "zh": "黄昏时一辆豪华黑色轿车的后座：奶油色真皮座椅，深色木饰板，宽大的侧车窗，窗外是冷蓝色的暮光和远处亮着的暖色灯光。参考图固定车内布置和光线。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of the empty rear seat of a luxury black sedan at dusk: a cream leather seat, dark wood trim, a wide side window with cold blue dusk light and warm lights glowing far away, nobody in the car. The frame holds the seat, the door panel and the side window.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "ranch",
+   "kind": "image",
+   "role": "scene",
+   "label": "私人跑马场",
+   "description": {
+    "en": "A private equestrian ranch on a bright sunny day: a raised wooden grandstand with a roof and a railing on the left, a long white wooden fence and a wide green riding field on the right, a packed-earth track in front, dark pine trees along the far edge, a clear blue sky. The reference fixes the layout and decor.",
+    "zh": "晴朗明亮的一天里的私人马术跑马场：左边是带屋顶和栏杆的凸起木制看台，右边是长长的白色木栅栏和开阔的绿色跑马场，前面是一条夯实的泥土跑道，远处边缘是深色的松树，晴朗的蓝天。参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a private equestrian ranch on a bright sunny day: a raised wooden grandstand with a roof and a railing on the left, a long white wooden fence and a wide green riding field on the right, a packed-earth track in front, dark pine trees along the far edge, a clear blue sky with a few white clouds. The frame holds the grandstand, the white fence, the green field and the pine trees.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "killian_coat",
+   "kind": "image",
+   "role": "character",
+   "label": "基利安（炭灰长大衣）",
+   "description": {
+    "en": "Killian, the same very tall, broad-shouldered adult man in his early thirties as in the reference, with short swept-back black hair, a sharp jawline, light stubble and cold dark-gray eyes, wearing a long charcoal-gray wool overcoat over a black shirt, black trousers and black leather riding boots. The portrait fixes his identity and clothes, not staging.",
+    "zh": "基利安，和参考图是同一个三十出头、身材极高、肩膀宽阔的成年男性，黑色短发向后梳，下颌线锋利，有浅胡茬，眼睛是冷冷的深灰色，穿长款炭灰色羊毛大衣，里面是黑衬衫，配黑色长裤和黑色皮质马靴。人物图固定身份和衣服，不固定站位。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of the same man as in the reference image, short swept-back black hair, sharp jawline, light stubble, cold dark-gray eyes, wearing a long charcoal-gray wool overcoat over a black shirt. He faces the camera with a cold, composed expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": [
+     "killian"
+    ]
+   }
+  },
+  {
+   "key": "lily_riding",
+   "kind": "image",
+   "role": "character",
+   "label": "莉莉（马术装）",
+   "description": {
+    "en": "Lily, the same adult woman in her mid-twenties as in the reference, with long wavy chestnut-brown hair tied back in a low ponytail, fair skin and large hazel-green eyes, wearing a fitted cream blouse, tan riding breeches, tall brown leather riding boots and a thin brown belt. The portrait fixes her identity and clothes, not staging.",
+    "zh": "莉莉，和参考图是同一个二十五岁左右的成年女性，栗棕色长卷发在脑后扎成低马尾，白皙皮肤、浅褐绿色大眼睛，穿合身的奶油色衬衫、棕黄色马裤、高筒棕色皮质马靴，系一条细棕色皮带。人物图固定身份和衣服，不固定站位。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of the same woman as in the reference image, long wavy chestnut-brown hair tied back in a low ponytail, wearing a fitted cream blouse and a thin brown belt. She faces the camera with a composed, slightly nervous expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": [
+     "lily"
+    ]
+   }
+  },
+  {
+   "key": "mary_riding",
+   "kind": "image",
+   "role": "character",
+   "label": "玛丽（马术装）",
+   "description": {
+    "en": "Mary, the same adult woman in her mid-twenties as in the reference, with sleek honey-blonde hair in a tight low bun, flawless makeup, glossy red lips and sharp green eyes, wearing a fitted ivory riding jacket over a white blouse, white riding breeches, tall black leather riding boots and small pearl earrings. The portrait fixes her identity and clothes, not staging.",
+    "zh": "玛丽，和参考图是同一个二十五岁左右的成年女性，光滑的蜜金色头发在脑后盘成紧实的低髻，妆容无瑕，嘴唇红亮，一双锐利的绿眼睛，穿合身的象牙色马术外套、里面是白衬衫，配白色马裤、高筒黑色皮质马靴，戴小小的珍珠耳环。人物图固定身份和衣服，不固定站位。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of the same woman as in the reference image, sleek honey-blonde hair in a tight low bun, glossy red lips, sharp green eyes, wearing a fitted ivory riding jacket over a white blouse and small pearl earrings. She faces the camera with a sweet, coy expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": [
+     "mary"
+    ]
+   }
+  },
+  {
+   "key": "trainer",
+   "kind": "image",
+   "role": "character",
+   "label": "驯马师",
+   "description": {
+    "en": "Trainer, a stocky adult man in his late forties with a tanned, lined face, short gray-brown stubble and small shrewd eyes, wearing a worn brown leather vest over a rolled-sleeve plaid shirt, dark jeans, leather work boots and a flat tweed cap. The portrait fixes his identity and clothes, not staging.",
+    "zh": "驯马师，一个四十多岁、敦实的成年男性，晒得黝黑、满是皱纹的脸，短短的灰褐色胡茬，精明的小眼睛，穿磨旧的棕色皮背心、里面是卷起袖子的格子衬衫，配深色牛仔裤、皮质工作靴和一顶平顶花呢帽。人物图固定身份和衣服，不固定站位。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of a stocky adult man in his late forties with a tanned, lined face, short gray-brown stubble and small shrewd eyes, wearing a worn brown leather vest over a rolled-sleeve plaid shirt and a flat tweed cap. He faces the camera with a flat, guarded expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "black_horse",
+   "kind": "image",
+   "role": "prop",
+   "label": "纯黑烈马",
+   "description": {
+    "en": "A tall, powerfully built jet-black stallion with a glossy coat, a thick black mane, wide flared nostrils and a wild white-ringed eye, wearing a plain brown leather bridle with brown reins and a plain brown leather English saddle with stirrups. The portrait fixes the horse's coat, build and tack, not staging.",
+    "zh": "一匹高大、强壮的纯黑种马，皮毛油亮，鬃毛浓密，鼻孔宽大张开，眼睛带一圈白、透着野性，戴着朴素的棕色皮质笼头和棕色缰绳，背上是朴素的棕色皮质英式马鞍和马镫。人物图固定马的毛色、体型和马具，不固定站位。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic full-body side-profile photograph of a tall, powerfully built jet-black stallion with a glossy coat, a thick black mane, wide flared nostrils and a wild white-ringed eye, wearing a plain brown leather bridle with brown reins and a plain brown leather English saddle with stirrups, standing on bare ground. Soft even studio light, plain neutral gray background, natural coat texture, four legs clearly visible.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "woods_edge",
+   "kind": "image",
+   "role": "scene",
+   "label": "树林边缘的草地",
+   "description": {
+    "en": "The edge of a pine forest beside a wide sunlit meadow: tall green grass with a dirt path on the left, a rough wooden fence with sharp pointed posts on the right, a dense wall of dark pine trees behind the fence, a clear blue sky. The reference fixes the layout and decor.",
+    "zh": "阳光下的开阔草地旁边的松林边缘：左边是高高的绿草和一条土路，右边是带尖桩的粗木栅栏，栅栏后面是一整排密密的深色松树，晴朗的蓝天。参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of the edge of a pine forest beside a wide sunlit meadow: tall green grass and a dirt path on the left, a rough wooden fence with sharp pointed posts on the right, a dense wall of dark pine trees behind the fence, a clear blue sky with a few white clouds. The frame holds the meadow, the path, the fence and the pine forest.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "bodyguard",
+   "kind": "image",
+   "role": "character",
+   "label": "黑衣保镖",
+   "description": {
+    "en": "Bodyguard, a tall, broad-shouldered adult man in his thirties with a shaved head and a stern, impassive face, wearing a black suit, a white shirt, a black tie and a clear coiled earpiece. The portrait fixes his identity and clothes, not staging.",
+    "zh": "黑衣保镖，一个三十多岁、身材高大、肩膀宽阔的成年男性，剃着光头，面容严厉、毫无表情，穿黑色西装、白衬衫、黑领带，戴一只透明的螺旋线耳机。人物图固定身份和衣服，不固定站位。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of a tall, broad-shouldered adult man in his thirties with a shaved head and a stern, impassive face, wearing a black suit, a white shirt, a black tie and a clear coiled earpiece. He faces the camera with a stern, impassive expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  }
+ ],
+ "characters": {
+  "Lily": {
+   "image_keys": [
+    "lily"
+   ],
+   "voice_description": {
+    "en": "A young adult female voice, light and slightly breathy, speaking clear American English. She keeps her volume low because she must not be overheard, but every word is fully voiced and audible, tight and trembling with fear, anger and humiliation.",
+    "zh": "年轻成年女声，轻而略带气息，说清楚的美式英语。因为不能被人听见而压低音量，但每个字都正常发声、清晰可辨，声音紧绷颤抖，带着恐惧、愤怒和屈辱。"
+   }
+  },
+  "Killian": {
+   "image_keys": [
+    "killian"
+   ],
+   "voice_description": {
+    "en": "A mature adult male voice in a deep chest register, low and unhurried with a husky edge, speaking clear American English in a quiet, controlled, menacing tone. He never shouts, and every word is fully voiced and audible.",
+    "zh": "成熟成年男声，深沉的胸腔音，低缓不急，带沙哑质感，说清楚的美式英语。语气安静、克制、带压迫感，从不喊叫，每个字都正常发声、清晰可辨。"
+   }
+  },
+  "Paul": {
+   "image_keys": [],
+   "voice_description": {
+    "en": "A young adult male voice, light, casual and slightly smug, speaking clear American English at ordinary conversational volume. He is outside a closed door, so his voice reaches the room muffled by the wood.",
+    "zh": "年轻成年男声，轻松随意、略带轻浮，说清楚的美式英语，正常交谈音量。他在紧闭的门外，声音隔着木门略显闷。"
+   }
+  },
+  "PaulOnScreen": {
+   "image_keys": [
+    "paul"
+   ],
+   "voice_description": {
+    "en": "A young adult male voice, light, casual and slightly smug, speaking clear American English at ordinary conversational volume.",
+    "zh": "年轻成年男声，轻松随意、略带轻浮，说清楚的美式英语，正常交谈音量。"
+   }
+  },
+  "Butler": {
+   "image_keys": [
+    "butler"
+   ],
+   "voice_description": {
+    "en": "An elderly adult male voice, courteous, measured and warm, speaking clear American English at ordinary conversational volume with careful politeness.",
+    "zh": "年迈的成年男声，彬彬有礼、不急不缓、带着温和，说清楚的美式英语，正常交谈音量，措辞谨慎有礼。"
+   }
+  },
+  "LilyCoat": {
+   "image_keys": [
+    "lily_coat"
+   ],
+   "voice_description": {
+    "en": "A young adult female voice, light and slightly breathy, speaking clear American English. Every word is fully voiced and audible, tight and shaky with nerves, alarm and wounded pride.",
+    "zh": "年轻成年女声，轻而略带气息，说清楚的美式英语。每个字都正常发声、清晰可辨，声音紧绷发颤，带着紧张、惊慌和受伤的自尊。"
+   }
+  },
+  "KillianRobe": {
+   "image_keys": [
+    "killian_robe"
+   ],
+   "voice_description": {
+    "en": "A mature adult male voice in a deep chest register, low and unhurried with a husky edge, speaking clear American English in a quiet, controlled, menacing tone. He never shouts, and every word is fully voiced and audible.",
+    "zh": "成熟成年男声，深沉的胸腔音，低缓不急，带沙哑质感，说清楚的美式英语。语气安静、克制、带压迫感，从不喊叫，每个字都正常发声、清晰可辨。"
+   }
+  },
+  "LilyShirt": {
+   "image_keys": [
+    "lily_shirt"
+   ],
+   "voice_description": {
+    "en": "A young adult female voice, light and slightly breathy, speaking clear American English. Every word is fully voiced and audible, tight and trembling with fear; her voice rises sharply when she is frightened.",
+    "zh": "年轻成年女声，轻而略带气息，说清楚的美式英语。每个字都正常发声、清晰可辨，声音紧绷发颤、带着恐惧；受惊时声音会猛地拔高。"
+   }
+  },
+  "KillianWolf": {
+   "image_keys": [
+    "killian_wolf"
+   ],
+   "voice_description": {
+    "en": "A mature adult male voice, extremely deep and rough, like a low animal growl shaped into words, speaking clear American English, hoarse and shaking with barely held restraint. Every word is fully voiced and audible.",
+    "zh": "成熟成年男声，极其低沉粗糙，像野兽的低吼被压成了字句，说清楚的美式英语，沙哑、因勉强压住的克制而发抖。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "LilyRed": {
+   "image_keys": [
+    "lily_red"
+   ],
+   "voice_description": {
+    "en": "A young adult female voice, light and slightly breathy, speaking clear American English. Every word is fully voiced and audible, tight and shaky with nerves, alarm and wounded pride.",
+    "zh": "年轻成年女声，轻而略带气息，说清楚的美式英语。每个字都正常发声、清晰可辨，声音紧绷发颤，带着紧张、惊慌和受伤的自尊。"
+   }
+  },
+  "KillianTux": {
+   "image_keys": [
+    "killian_tux"
+   ],
+   "voice_description": {
+    "en": "A mature adult male voice in a deep chest register, low and unhurried with a husky edge, speaking clear American English in a quiet, controlled, menacing tone. He never shouts, and every word is fully voiced and audible.",
+    "zh": "成熟成年男声，深沉的胸腔音，低缓不急，带沙哑质感，说清楚的美式英语。语气安静、克制、带压迫感，从不喊叫，每个字都正常发声、清晰可辨。"
+   }
+  },
+  "Mary": {
+   "image_keys": [
+    "mary"
+   ],
+   "voice_description": {
+    "en": "A young adult female voice, sugary and syrupy with a coy, breathy lilt, speaking clear American English. Every word is fully voiced and audible.",
+    "zh": "年轻成年女声，甜得发腻，带着娇滴滴的、有气息的上扬语调，说清楚的美式英语。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "LilyRiding": {
+   "image_keys": [
+    "lily_riding"
+   ],
+   "voice_description": {
+    "en": "A young adult female voice, light and slightly breathy, speaking clear American English. Every word is fully voiced and audible, tight and shaky with nerves, alarm and wounded pride.",
+    "zh": "年轻成年女声，轻而略带气息，说清楚的美式英语。每个字都正常发声、清晰可辨，声音紧绷发颤，带着紧张、惊慌和受伤的自尊。"
+   }
+  },
+  "KillianCoat": {
+   "image_keys": [
+    "killian_coat"
+   ],
+   "voice_description": {
+    "en": "A mature adult male voice in a deep chest register, low and unhurried with a husky edge, speaking clear American English in a quiet, controlled, menacing tone. He never shouts, and every word is fully voiced and audible.",
+    "zh": "成熟成年男声，深沉的胸腔音，低缓不急，带沙哑质感，说清楚的美式英语。语气安静、克制、带压迫感，从不喊叫，每个字都正常发声、清晰可辨。"
+   }
+  },
+  "MaryRiding": {
+   "image_keys": [
+    "mary_riding"
+   ],
+   "voice_description": {
+    "en": "A young adult female voice, sugary and syrupy with a coy, breathy lilt, speaking clear American English. Every word is fully voiced and audible.",
+    "zh": "年轻成年女声，甜得发腻，带着娇滴滴的、有气息的上扬语调，说清楚的美式英语。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "Trainer": {
+   "image_keys": [
+    "trainer"
+   ],
+   "voice_description": {
+    "en": "A middle-aged adult male voice, gravelly and flat with a rural American drawl, a little nervous, speaking clear American English at ordinary conversational volume. Every word is fully voiced and audible.",
+    "zh": "中年成年男声，沙哑平淡，带乡村美式拖腔，有一点紧张，说清楚的美式英语，正常交谈音量。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "Bodyguard": {
+   "image_keys": [
+    "bodyguard"
+   ],
+   "voice_description": {
+    "en": "A deep adult male voice, flat and calm, speaking clear American English. Every word is fully voiced and audible.",
+    "zh": "低沉的成年男声，平淡冷静，说清楚的美式英语。每个字都正常发声、清晰可辨。"
+   }
+  }
+ },
+ "episodes": [
+  {
+   "title": "剧本第7–8集｜时长测试（奔跑／马人立／上马）",
+   "summary": "同样的文字，只改任务时长：奔跑、马人立各 2／3／5 秒，上马 3 秒；看动作会不会变快、能不能在时间内做完。",
+   "script": "奔跑2秒，黑马载着伏在马脖子上的莉莉，朝着右边的松树狂奔。\n奔跑3秒，黑马载着伏在马脖子上的莉莉，朝着右边的松树狂奔。\n奔跑5秒，黑马载着伏在马脖子上的莉莉，朝着右边的松树狂奔。\n马人立2秒，黑马猛地后腿站起，前蹄抬高，然后重重落回四蹄；莉莉抱紧马脖子。\n马人立3秒，黑马猛地后腿站起，前蹄抬高，然后重重落回四蹄；莉莉抱紧马脖子。\n马人立5秒，黑马猛地后腿站起，前蹄抬高，然后重重落回四蹄；莉莉抱紧马脖子。\n上马3秒，莉莉咬着牙，抓着马鞍把自己撑上马背。",
+   "segments": [
+    {
+     "title": "01｜奔跑2秒",
+     "duration_seconds": 2,
+     "generation_seconds": 2,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "LilyRiding"
+     ],
+     "asset_keys": [
+      "ranch",
+      "lily_riding",
+      "black_horse"
+     ],
+     "image_reference_keys": [
+      "ranch"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on wide shot, in the middle third of the frame, on the green riding field. The tall jet-black horse is in profile facing frame-right in a full gallop, all four hooves off the ground, dust rising behind it. Lily on its back is low over its neck, in the cream blouse and tan riding breeches, both hands tangled in the black mane, her face pale, her lips pressed tight, her eyes squeezed shut. The dark pine trees line the far edge at frame-right. The frame holds exactly one person, Lily, and one black horse. Bright midday sunlight, a clear blue sky, the ranch softly blurred behind. Fixed stage layout: the raised wooden grandstand is at frame-left; the white fence and the green field are at frame-right; dark pine trees line the far edge.",
+     "visual_zh": "黑马载着伏在马脖子上的莉莉，朝着右边的松树狂奔。",
+     "camera_zh": "0—5秒侧面宽景，镜头固定。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 2,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on wide shot opens from the adopted first frame in [[asset:ranch]]: [[asset:black_horse]] gallops across the green field toward the dark pine trees at frame-right with [[asset:lily_riding]] low over its neck, her hands tangled in the mane, her face pale and her lips pressed tight. The horse keeps galloping. The camera holds still.",
+       "visual_zh": "一个稳定的侧面宽景镜头，从已采用的开场图继续，场景是私人跑马场：黑马载着伏在脖子上的莉莉，朝着画面右边的深色松树奔过绿色的跑马场，她的双手缠在鬃毛里，脸色苍白，嘴唇紧紧抿着。马一直在奔跑。镜头固定不动。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "Fast, pounding hoofbeats on dry earth and the creak of leather. The recording is completely free of voices: no speech, no humming, no sighs, no breathing sounds, no vocal sounds of any kind.",
+     "sound_zh": "急促沉重的马蹄声踏在干土上，和皮革马具的吱嘎声。 录音里完全没有人声：没有说话、哼声、叹息、呼吸声或任何发声。",
+     "seed": 4901,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "02｜奔跑3秒",
+     "duration_seconds": 3,
+     "generation_seconds": 3,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "LilyRiding"
+     ],
+     "asset_keys": [
+      "ranch",
+      "lily_riding",
+      "black_horse"
+     ],
+     "image_reference_keys": [
+      "ranch"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on wide shot, in the middle third of the frame, on the green riding field. The tall jet-black horse is in profile facing frame-right in a full gallop, all four hooves off the ground, dust rising behind it. Lily on its back is low over its neck, in the cream blouse and tan riding breeches, both hands tangled in the black mane, her face pale, her lips pressed tight, her eyes squeezed shut. The dark pine trees line the far edge at frame-right. The frame holds exactly one person, Lily, and one black horse. Bright midday sunlight, a clear blue sky, the ranch softly blurred behind. Fixed stage layout: the raised wooden grandstand is at frame-left; the white fence and the green field are at frame-right; dark pine trees line the far edge.",
+     "visual_zh": "黑马载着伏在马脖子上的莉莉，朝着右边的松树狂奔。",
+     "camera_zh": "0—5秒侧面宽景，镜头固定。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 3,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on wide shot opens from the adopted first frame in [[asset:ranch]]: [[asset:black_horse]] gallops across the green field toward the dark pine trees at frame-right with [[asset:lily_riding]] low over its neck, her hands tangled in the mane, her face pale and her lips pressed tight. The horse keeps galloping. The camera holds still.",
+       "visual_zh": "一个稳定的侧面宽景镜头，从已采用的开场图继续，场景是私人跑马场：黑马载着伏在脖子上的莉莉，朝着画面右边的深色松树奔过绿色的跑马场，她的双手缠在鬃毛里，脸色苍白，嘴唇紧紧抿着。马一直在奔跑。镜头固定不动。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "Fast, pounding hoofbeats on dry earth and the creak of leather. The recording is completely free of voices: no speech, no humming, no sighs, no breathing sounds, no vocal sounds of any kind.",
+     "sound_zh": "急促沉重的马蹄声踏在干土上，和皮革马具的吱嘎声。 录音里完全没有人声：没有说话、哼声、叹息、呼吸声或任何发声。",
+     "seed": 4901,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "03｜奔跑5秒",
+     "duration_seconds": 5,
+     "generation_seconds": 5,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "LilyRiding"
+     ],
+     "asset_keys": [
+      "ranch",
+      "lily_riding",
+      "black_horse"
+     ],
+     "image_reference_keys": [
+      "ranch"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on wide shot, in the middle third of the frame, on the green riding field. The tall jet-black horse is in profile facing frame-right in a full gallop, all four hooves off the ground, dust rising behind it. Lily on its back is low over its neck, in the cream blouse and tan riding breeches, both hands tangled in the black mane, her face pale, her lips pressed tight, her eyes squeezed shut. The dark pine trees line the far edge at frame-right. The frame holds exactly one person, Lily, and one black horse. Bright midday sunlight, a clear blue sky, the ranch softly blurred behind. Fixed stage layout: the raised wooden grandstand is at frame-left; the white fence and the green field are at frame-right; dark pine trees line the far edge.",
+     "visual_zh": "黑马载着伏在马脖子上的莉莉，朝着右边的松树狂奔。",
+     "camera_zh": "0—5秒侧面宽景，镜头固定。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 5,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on wide shot opens from the adopted first frame in [[asset:ranch]]: [[asset:black_horse]] gallops across the green field toward the dark pine trees at frame-right with [[asset:lily_riding]] low over its neck, her hands tangled in the mane, her face pale and her lips pressed tight. The horse keeps galloping. The camera holds still.",
+       "visual_zh": "一个稳定的侧面宽景镜头，从已采用的开场图继续，场景是私人跑马场：黑马载着伏在脖子上的莉莉，朝着画面右边的深色松树奔过绿色的跑马场，她的双手缠在鬃毛里，脸色苍白，嘴唇紧紧抿着。马一直在奔跑。镜头固定不动。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "Fast, pounding hoofbeats on dry earth and the creak of leather. The recording is completely free of voices: no speech, no humming, no sighs, no breathing sounds, no vocal sounds of any kind.",
+     "sound_zh": "急促沉重的马蹄声踏在干土上，和皮革马具的吱嘎声。 录音里完全没有人声：没有说话、哼声、叹息、呼吸声或任何发声。",
+     "seed": 4901,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "04｜马人立2秒",
+     "duration_seconds": 2,
+     "generation_seconds": 2,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "LilyRiding"
+     ],
+     "asset_keys": [
+      "ranch",
+      "lily_riding",
+      "black_horse"
+     ],
+     "image_reference_keys": [
+      "ranch"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on wide shot, in the middle third of the frame, on the packed-earth track. The tall jet-black horse stands in profile facing frame-right on all four hooves, its head thrown up, its ears pinned back, its nostrils flared. Lily on its back is leaning forward with both arms wrapped around the horse's neck, in the cream blouse and tan riding breeches, her lips pressed tight, her brows pulled up, her eyes squeezed shut. The frame holds exactly one person, Lily, and one black horse. Bright midday sunlight, a clear blue sky, the ranch softly blurred behind. Fixed stage layout: the raised wooden grandstand is at frame-left; the white fence and the green field are at frame-right; dark pine trees line the far edge.",
+     "visual_zh": "黑马猛地后腿站起，前蹄抬高，然后重重落回四蹄；莉莉抱紧马脖子。",
+     "camera_zh": "0—2秒侧面宽景，镜头固定。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 2,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on wide shot opens from the adopted first frame in [[asset:ranch]]: [[asset:black_horse]] rears up on its hind legs with its front hooves raised high, then comes down hard on all four hooves, while [[asset:lily_riding]] clings to its neck with both arms, her eyes squeezed shut and her lips pressed tight. The camera holds still.",
+       "visual_zh": "一个稳定的侧面宽景镜头，从已采用的开场图继续，场景是私人跑马场：黑马后腿站起、前蹄高高抬起，然后重重落回四蹄，莉莉双臂抱紧它的脖子，眼睛紧闭，嘴唇抿紧。镜头固定不动。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "Hooves scraping the dirt and the creak of leather. The recording is completely free of voices: no speech, no humming, no sighs, no breathing sounds, no vocal sounds of any kind.",
+     "sound_zh": "马蹄刨地声和皮革的吱嘎声。 录音里完全没有人声：没有说话、哼声、叹息、呼吸声或任何发声。",
+     "seed": 4902,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "05｜马人立3秒",
+     "duration_seconds": 3,
+     "generation_seconds": 3,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "LilyRiding"
+     ],
+     "asset_keys": [
+      "ranch",
+      "lily_riding",
+      "black_horse"
+     ],
+     "image_reference_keys": [
+      "ranch"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on wide shot, in the middle third of the frame, on the packed-earth track. The tall jet-black horse stands in profile facing frame-right on all four hooves, its head thrown up, its ears pinned back, its nostrils flared. Lily on its back is leaning forward with both arms wrapped around the horse's neck, in the cream blouse and tan riding breeches, her lips pressed tight, her brows pulled up, her eyes squeezed shut. The frame holds exactly one person, Lily, and one black horse. Bright midday sunlight, a clear blue sky, the ranch softly blurred behind. Fixed stage layout: the raised wooden grandstand is at frame-left; the white fence and the green field are at frame-right; dark pine trees line the far edge.",
+     "visual_zh": "黑马猛地后腿站起，前蹄抬高，然后重重落回四蹄；莉莉抱紧马脖子。",
+     "camera_zh": "0—3秒侧面宽景，镜头固定。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 3,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on wide shot opens from the adopted first frame in [[asset:ranch]]: [[asset:black_horse]] rears up on its hind legs with its front hooves raised high, then comes down hard on all four hooves, while [[asset:lily_riding]] clings to its neck with both arms, her eyes squeezed shut and her lips pressed tight. The camera holds still.",
+       "visual_zh": "一个稳定的侧面宽景镜头，从已采用的开场图继续，场景是私人跑马场：黑马后腿站起、前蹄高高抬起，然后重重落回四蹄，莉莉双臂抱紧它的脖子，眼睛紧闭，嘴唇抿紧。镜头固定不动。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "Hooves scraping the dirt and the creak of leather. The recording is completely free of voices: no speech, no humming, no sighs, no breathing sounds, no vocal sounds of any kind.",
+     "sound_zh": "马蹄刨地声和皮革的吱嘎声。 录音里完全没有人声：没有说话、哼声、叹息、呼吸声或任何发声。",
+     "seed": 4902,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "06｜马人立5秒",
+     "duration_seconds": 5,
+     "generation_seconds": 5,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "LilyRiding"
+     ],
+     "asset_keys": [
+      "ranch",
+      "lily_riding",
+      "black_horse"
+     ],
+     "image_reference_keys": [
+      "ranch"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on wide shot, in the middle third of the frame, on the packed-earth track. The tall jet-black horse stands in profile facing frame-right on all four hooves, its head thrown up, its ears pinned back, its nostrils flared. Lily on its back is leaning forward with both arms wrapped around the horse's neck, in the cream blouse and tan riding breeches, her lips pressed tight, her brows pulled up, her eyes squeezed shut. The frame holds exactly one person, Lily, and one black horse. Bright midday sunlight, a clear blue sky, the ranch softly blurred behind. Fixed stage layout: the raised wooden grandstand is at frame-left; the white fence and the green field are at frame-right; dark pine trees line the far edge.",
+     "visual_zh": "黑马猛地后腿站起，前蹄抬高，然后重重落回四蹄；莉莉抱紧马脖子。",
+     "camera_zh": "0—5秒侧面宽景，镜头固定。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 5,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on wide shot opens from the adopted first frame in [[asset:ranch]]: [[asset:black_horse]] rears up on its hind legs with its front hooves raised high, then comes down hard on all four hooves, while [[asset:lily_riding]] clings to its neck with both arms, her eyes squeezed shut and her lips pressed tight. The camera holds still.",
+       "visual_zh": "一个稳定的侧面宽景镜头，从已采用的开场图继续，场景是私人跑马场：黑马后腿站起、前蹄高高抬起，然后重重落回四蹄，莉莉双臂抱紧它的脖子，眼睛紧闭，嘴唇抿紧。镜头固定不动。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "Hooves scraping the dirt and the creak of leather. The recording is completely free of voices: no speech, no humming, no sighs, no breathing sounds, no vocal sounds of any kind.",
+     "sound_zh": "马蹄刨地声和皮革的吱嘎声。 录音里完全没有人声：没有说话、哼声、叹息、呼吸声或任何发声。",
+     "seed": 4902,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "07｜上马3秒",
+     "duration_seconds": 3,
+     "generation_seconds": 3,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "LilyRiding"
+     ],
+     "asset_keys": [
+      "ranch",
+      "lily_riding",
+      "black_horse"
+     ],
+     "image_reference_keys": [
+      "ranch"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on wide shot, in the middle third of the frame, on the packed-earth track. The tall jet-black horse stands in profile facing frame-right. Lily stands on the ground at its left side, in profile facing frame-right, in the cream blouse and tan riding breeches, her left boot in the stirrup, her left knee bent, both hands gripping the saddle, her lips pressed tight, her brows drawn together, her eyes lowered on the saddle. The frame holds exactly one person, Lily, and one black horse. Bright midday sunlight, a clear blue sky, the ranch softly blurred behind. Fixed stage layout: the raised wooden grandstand is at frame-left; the white fence and the green field are at frame-right; dark pine trees line the far edge.",
+     "visual_zh": "莉莉咬着牙，抓着马鞍把自己撑上马背。",
+     "camera_zh": "0—5秒侧面宽景，镜头固定。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 3,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on wide shot opens from the adopted first frame in [[asset:ranch]]: [[asset:lily_riding]] pulls herself up with both hands on the saddle, her left leg straightening in the stirrup, swings her right leg over the horse's back and drops into the saddle, her hands sliding to the reins. Her lips press tight and her eyes widen on the horse's ears. [[asset:black_horse]] shifts its weight. The camera holds still.",
+       "visual_zh": "一个稳定的侧面宽景，从已采用的开场图继续，场景是私人跑马场：莉莉双手抓着马鞍把自己撑起来，左腿在马镫里蹬直，右腿跨过马背，落坐在马鞍上，双手滑向缰绳。她嘴唇抿紧，眼睛睁大看着马耳朵。黑马挪了挪重心。镜头固定不动。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "A light breeze, the creak of leather and a horse stamping its hoof. The recording is completely free of voices: no speech, no humming, no sighs, no breathing sounds, no vocal sounds of any kind.",
+     "sound_zh": "轻轻的风声、皮革的吱嘎声和马蹄刨地声。 录音里完全没有人声：没有说话、哼声、叹息、呼吸声或任何发声。",
+     "seed": 4903,
+     "dialogue_language": "en"
+    }
+   ],
+   "dialogue_language": "en"
+  }
+ ]
+}
