@@ -50,6 +50,18 @@ def duration(path):
     out = subprocess.check_output(['ffprobe','-v','error','-show_entries','format=duration','-of','default=nw=1:nk=1',path])
     return float(out.decode().strip())
 
+def sidebars(path, strip=60, thr=30):
+    """两侧黑边检查（第 6 集 6A-05、6A-07 出现过）：左右各取 strip 像素宽的竖条，
+    每 0.5 秒抽一帧，整段里最亮像素都低于 thr 就算黑边。返回 (左是否黑, 右是否黑)。"""
+    info = subprocess.check_output(['ffprobe','-v','error','-select_streams','v:0','-show_entries','stream=width,height','-of','csv=p=0',path]).decode().strip().split(',')
+    w, h = int(info[0]), int(info[1])
+    res = []
+    for x in (0, w - strip):
+        raw = subprocess.check_output(['ffmpeg','-v','error','-i',path,'-an','-vf',f'fps=2,crop={strip}:{h}:{x}:0,format=gray','-f','rawvideo','-'])
+        fr = np.frombuffer(raw, dtype=np.uint8)
+        res.append(bool(len(fr) and fr.max() < thr))
+    return tuple(res)
+
 if __name__ == '__main__':
     d = sys.argv[1]; rec = make_rec(d)
     for p in sys.argv[2:]:
@@ -65,3 +77,5 @@ if __name__ == '__main__':
         print('  识别: 首次出现', ev[0] if ev else None, '| 最终', ev[-1][1] if ev else '(空)')
         if env: print(f'  能量: 开口 {env[0]:.2f}s  结束 {env[1]:.2f}s\n  包络: {env[2]}')
         print('  切镜时间(秒):', cuts(p))
+        sb = sidebars(p)
+        if sb[0] and sb[1]: print('  ⚠ 两侧黑边：画面左右各有一条纯黑竖边（该片段建议换种子重跑）')
