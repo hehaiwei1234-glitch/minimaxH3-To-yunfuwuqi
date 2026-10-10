@@ -24,6 +24,16 @@ def silent(sfx_en, sfx_zh):
     return (sfx_en + ' ' + NOVOICE_EN, sfx_zh + ' ' + NOVOICE_ZH)
 
 
+NOWORD_EN = "No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here."
+NOWORD_ZH = "没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。"
+
+
+def breathy(sfx_en, sfx_zh):
+    """无台词片的新写法（第 11 集起）：只禁说话和字词，不禁呼吸／喘息／低吼。
+    旧写法 silent() 连呼吸也禁；“禁呼吸 → 近乎静音”是假设 H（补拍包 2 在测），这里按新写法排。"""
+    return (sfx_en + ' ' + NOWORD_EN, sfx_zh + ' ' + NOWORD_ZH)
+
+
 def voiced(extra_en, extra_zh):
     return (extra_en + ' Voices stay close and clear.', extra_zh + '人声近而清楚。')
 

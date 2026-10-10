@@ -84,7 +84,8 @@ for ep in d['episodes']:
             elif han > 14: bad(t, f'台词 {han} 个字，超过约 13 字')
             if s['duration_seconds'] - x['end_seconds'] < 1.0: bad(t, '台词后余量不足 1 秒')
         if not dl:
-            if 'free of voices' not in s['sound_en'] and 'no vocal' not in s['sound_en']: bad(t, '无台词片没写“完全没有人声”')
+            if 'free of voices' not in s['sound_en'] and 'no vocal' not in s['sound_en'] and 'No one speaks' not in s['sound_en']:
+                bad(t, '无台词片没写“完全没有人声”（或新写法 No one speaks…）')
             if 'Voices stay close and clear' in s['sound_en']: bad(t, '无台词片写了 Voices stay close and clear（H11）')
 print('合计问题：', errs)
 sys.exit(1 if errs else 0)

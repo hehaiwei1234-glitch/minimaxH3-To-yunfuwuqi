@@ -1,11 +1,16 @@
 #!/usr/bin/env python3
 """把几份“追加”制作稿合并成一份（一次粘贴、一次跑完）。
-用法: python3 tools/merge_eps.py 输出名(不含扩展名) 稿1.json 稿2.json ... [--rename 原集标题=新集标题 ...]
+用法: python3 tools/merge_eps.py 输出名(不含扩展名) 稿1.json 稿2.json ... [--allow-seeds 种子,种子] [--rename 原集标题=新集标题 ...]
 要求：靠后的稿是靠前的稿的“超集”（素材/人物是以前一份为底再追加的）；本脚本逐项核对，对不上就报错。
 合并结果的素材/人物/风格取最后一份；episodes 按顺序拼起来。"""
 import json, os, sys
 FOLDER = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'Alpha继兄的笼中吻')
 args = sys.argv[1:]
+allow = set()   # --allow-seeds 4307,4601 ：对比实验故意和正式版同种子（跨稿重复），列在这里才放行
+if '--allow-seeds' in args:
+    i = args.index('--allow-seeds')
+    allow = {int(x) for x in args[i + 1].split(',')}
+    del args[i:i + 2]
 ren = {}
 if '--rename' in args:
     i = args.index('--rename')
@@ -37,7 +42,7 @@ for d in docs:
             for k in s['asset_keys']: assert k in akey, f'{s["title"]}: 素材 {k} 不存在'
 for i in range(len(per_file)):
     for j in range(i + 1, len(per_file)):
-        assert not (per_file[i] & per_file[j]), f'不同稿之间种子重复：{per_file[i] & per_file[j]}'
+        assert not ((per_file[i] & per_file[j]) - allow), f'不同稿之间种子重复：{(per_file[i] & per_file[j]) - allow}'
 # 同一份稿内重复是允许的（第6集B 的对照组故意同种子）
 merged = dict(last); merged['episodes'] = eps
 txt = json.dumps(merged, ensure_ascii=False, indent=1)
