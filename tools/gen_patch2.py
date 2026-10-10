@@ -1,21 +1,24 @@
 #!/usr/bin/env python3
-"""补拍包 2：大冲突表演重拍（2026-10-10，hh 10:17 反馈第 5 集 04→05、第 6 集 05 的表演呆滞、动作缓慢、接不上）。
+"""补拍包 2：补缝＋大冲突表演重拍（2026-10-10；12:50 把补拍包 1 里没跑的补6、补8 挪进来，补7 作废）。
 
-基于合并稿（第 5 集＋第 6 集 A＋第 6 集 B）的 JSON（素材、人物逐字复制，F11），不新增素材。3 个任务各 6 秒，种子 3711–3713。
+起因：hh 10:17 反馈第 5 集 04→05、第 6 集 05 的表演呆滞、动作缓慢、接不上。
+基于合并稿（第 5 集＋第 6 集 A＋第 6 集 B）的 JSON（素材、人物逐字复制，F11），不新增素材。5 个任务，种子 3706、3708、3711–3713。
+  补6   第 6 集开头：莉莉侧脸、左手指尖碰着颈侧的创可贴（6A 里创可贴一次都没拍到）【从补拍包 1 挪来，6 秒】
+  补8   第 6 集 07 重拍：玛丽特写，原稿只换种子（原片两侧各有约 17% 黑边）【从补拍包 1 挪来，5 秒】
   补9   第 5 集 04 重拍：两人入画（不再把“画外的女人”当视线目标），杯子在基利安手里，从头到尾有呼吸声
   补10  第 5 集 05 重拍：捏碎酒杯，整段 6 秒都有动作和反应，允许低吼和喘息（不许说话）
   补11  第 6 集 05 重拍：红酒泼裙，由基利安的手把酒杯打在她身上，开场图画“动作之前”，她猛地后仰、倒吸气
-和原稿相比一次改了 5 处（见说明“改了什么”），所以这次是“整套新写法 vs 旧写法”，不是单变量对照。
+补9–补11 和原稿相比一次改了 5 处（见说明“改了什么”），所以这次是“整套新写法 vs 旧写法”，不是单变量对照。
 """
 import json, os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from _h3draft import Batch, FOLDER
+from _h3draft import Batch, FOLDER, silent
 
 BASE = '合并稿/合并_第5集+第6集A+第6集B_制作稿_追加.json'
 OUT = '补拍/补拍包2_大冲突表演重拍_追加'
 SERIES_TITLE = json.load(open(os.path.join(FOLDER, BASE), encoding='utf-8'))['title']
 
-b = Batch(BASE, SERIES_TITLE, 3710)
+b = Batch(BASE, SERIES_TITLE, 3705)
 ZH = []
 
 
@@ -32,6 +35,32 @@ END_B = " Low amber lamp light, the bedroom softly blurred behind. Fixed stage l
 Z_END_B = "床头灯低低的琥珀色光，卧室在后面柔和虚化。固定布局：巨大的深色木床在画面左边；唯一的一扇深色木门在画面右边。"
 END_R = " Warm golden chandelier light, the ballroom softly blurred behind. Fixed stage layout: the wide marble staircase is at frame-left; the long banquet table is at frame-right. Mary is always at frame-right of Killian."
 Z_END_R = "温暖的金色吊灯光，宴会厅在后面柔和虚化。固定布局：宽阔的大理石楼梯在画面左边；长长的宴会桌在画面右边。玛丽始终在基利安右边。"
+
+# 补6 莉莉颈侧的创可贴（从补拍包 1 挪来；第 6 集开头；6A 里创可贴从没拍到：她两次都面朝画面右边，创可贴贴在左颈被挡住）---------------------
+BRM = '[[asset:ballroom]]'; LRD = '[[asset:lily_red]]'
+LAYBR = " Fixed stage layout: the wide marble staircase is at frame-left; the long banquet table is at frame-right."
+Z_LAYBR = "固定布局：宽阔的大理石楼梯在画面左边；长长的宴会桌在画面右边。"
+END_BR = " Warm golden chandelier light, the ballroom softly blurred behind."
+Z_END_BR = "温暖的金色吊灯光，宴会厅在后面柔和虚化。"
+T('补6｜莉莉颈侧的创可贴', 6, ['LilyRed'], ('ballroom', 'lily_red'), ['ballroom'],
+  "Medium close-up of Lily alone, from the head to the chest, in profile facing frame-left so that the left side of her neck faces the camera, in the middle third of the frame, in the floor-length red satin gown with thin straps, "
+  "the small beige adhesive bandage clearly visible on the left side of her neck, her left hand raised so that her fingertips rest against the edge of the bandage, her lips pressed together, her brows drawn together, her eyes lowered. The frame holds exactly one person, Lily.",
+  END_BR + LAYBR,
+  "莉莉一个人的中近景，头到胸口，侧身朝画面左边（所以她的左颈侧朝着镜头），在画面中间三分之一，穿落地红色缎面晚礼服，细肩带，左颈侧那块小小的米色创可贴清清楚楚，她的左手抬起、指尖贴着创可贴的边缘，嘴唇抿紧，眉头皱起，眼睛垂着。画面里恰好一个人：莉莉。" + Z_END_BR + Z_LAYBR,
+  "莉莉侧着脸，左手指尖碰着颈侧的创可贴，皱着眉，垂着眼。", "0—6秒莉莉侧面中近景，镜头固定。",
+  f"A steady medium close-up opens from the adopted first frame in {BRM}: {LRD} in profile facing frame-left, the left side of her neck turned to the camera, the small beige bandage on it, her left fingertips resting against the bandage's edge, her eyes lowered. "
+  "She draws a slow breath, her lips pressing tighter and her brows drawing together. Her fingertips stay against the bandage. The camera holds still.",
+  "一个稳定的中近景，从已采用的开场图继续，场景是晚宴大厅：莉莉侧身朝画面左边，左颈侧朝着镜头，上面贴着那块小小的米色创可贴，左手指尖贴着创可贴的边缘，眼睛垂着。她缓缓吸一口气，嘴唇抿得更紧，眉头皱起。指尖一直贴着创可贴。镜头固定不动。",
+  silent("A string quartet playing softly in the distance and the faint clink of crystal.", "远处弦乐四重奏轻轻的演奏声，和水晶杯轻轻的碰撞声。"))
+
+
+# 补8：6A 的 07 号原稿重拍（只换种子和标题；从补拍包 1 挪来）-----------------------------------------------------
+import copy as _copy
+_base = json.load(open(os.path.join(FOLDER, BASE), encoding='utf-8'))
+_6a = [e for e in _base['episodes'] if e['title'].startswith('剧本第6集｜')][0]['segments']
+_s = _copy.deepcopy(_6a[6]); _s['title'] = '补8｜玛丽特写重拍'; _s['seed'] = 3708; _s['depends_on_previous'] = False
+b.tasks.append(_s); ZH.append('（同 6A 的 07 号，原稿一字不改，只换种子）')
+b.seed = 3710
 
 # 补9：第 5 集 04 重拍 ------------------------------------------------------------------------------------------
 T('补9｜第5集04重拍：两人入画', 6, ['LilyShirt', 'KillianWolf'], ('bedroom', 'lily_shirt', 'killian_wolf'), ['bedroom'],
@@ -87,30 +116,32 @@ T('补11｜第6集05重拍：红酒泼裙', 6, ['Mary', 'KillianTux'], ('ballroo
   ("A sharp gasp, a crystal glass knocking hard, wine splashing and a few drops pattering on the marble floor. No words are spoken.",
    "一声尖锐的倒吸气，水晶杯被重重撞了一下，红酒泼溅，几滴落在大理石地面上。没有人说话。"))
 
-b.finish('剧本补拍包2｜大冲突表演重拍', '大冲突表演重拍 3 个（第 5 集 04、05，第 6 集 05），写法与原稿不同，用来对照呆滞／动作过慢／接不上的原因', OUT)
+b.finish('剧本补拍包2｜补缝与大冲突重拍', '补缝 2 个（补6 创可贴、补8 玛丽特写重拍）＋大冲突表演重拍 3 个（第 5 集 04、05，第 6 集 05），写法与原稿不同，用来对照呆滞／动作过慢／接不上的原因', OUT)
 segs = b.tasks
 
 md = []
-md.append("# 补拍包 2：大冲突表演重拍（3 个任务，各 6 秒，种子 3711–3713）\n")
-md.append("2026-10-10 写。起因：你 10:17 说第 5 集 04→05、第 6 集 05 的“大冲突”表演很假：呆滞、没有呼吸声、动作缓慢、前后镜头接不上（04 冒出金发女人、05 开场手里突然有杯子；红酒是女人自己倒的）。我重看之后，这几处确实是**我的写法造成的**，所以重拍。\n")
+md.append("# 补拍包 2：补缝＋大冲突表演重拍（5 个任务；种子 3706、3708、3711–3713）\n")
+md.append("2026-10-10 写。起因：你 10:17 说第 5 集 04→05、第 6 集 05 的“大冲突”表演很假：呆滞、没有呼吸声、动作缓慢、前后镜头接不上（04 冒出金发女人、05 开场手里突然有杯子；红酒是女人自己倒的）。我重看之后，这几处确实是**我的写法造成的**，所以重拍（补9–补11）。12:50 又把补拍包 1 里你没跑的补6（创可贴特写）、补8（重拍 6A 的 07 号黑边片）挪进来；补7 作废。\n")
 md.append("## 零、怎么追加、插件里显示第几集（＝剧本第几集）\n")
 md.append("| 追加顺序 | 文件 | 插件里显示 |\n|---|---|---|")
-md.append("| ① | 补拍包 1（8 个任务，上一条回复给的） | 第 10 集 |")
-md.append("| ② | **补拍包 2（本文件，3 个任务）** | **第 11 集：剧本补拍包2｜大冲突表演重拍** |")
-md.append("| ③ | 第 7–10 集合并稿 | 剧本第 7/8/9/10/10B 集 = 插件第 12/13/14/15/16 集（不是以前说的 11–15） |\n")
-md.append("**建议你先跑完①②，看完补9、补10、补11 这三个片，再把③贴进去**：马场四集里有同样的写法（见回复第 8 点），看完这三个片我可以当轮按结果改马场稿。设置照旧：视频/对白共用次数 = 1，对白时间余量 = 0，追加窗口不要勾“每集／总／任务秒数”。预计 3 × 7 = 21 分钟（上限推算）。\n")
+md.append("| ① 已跑 | 补拍包 1（补1–补5，5 个任务） | 第 10 集 |")
+md.append("| ② 你正在跑 | 第 7–10 集合并稿 | 剧本第 7/8/9/10/10B 集 = 插件第 11/12/13/14/15 集 |")
+md.append("| ③ 之后追加 | **补拍包 2（本文件，5 个任务）** | **第 16 集：剧本补拍包2｜补缝与大冲突重拍** |\n")
+md.append("**必须等②全部跑完再追加本文件**（追加只能等上一批跑完）。设置照旧：视频/对白共用次数 = 1，对白时间余量 = 0，追加窗口不要勾“每集／总／任务秒数”。预计 5 × 7 = 35 分钟（上限推算）。马场四集（②）用的还是旧写法；补9–补11 要是证明新写法有用，马场里同样的写法要不要重拍，看了结果再定。\n")
 md.append("## 一、做完能得到什么\n")
-md.append("三个片都**不放台词**，整段 6 秒都排满动作和反应。和原稿相比一次改了 5 处（所以这是“整套新写法 vs 旧写法”，不是单变量对照；如果好了，以后再拆开看是哪一处起作用）：\n")
+md.append("五个片都**不放台词**。补6、补8 是补缝（补8 是 5 秒，原稿只换种子重拍）；补9–补11 整段 6 秒都排满动作和反应，和原稿相比一次改了 5 处（所以这是“整套新写法 vs 旧写法”，不是单变量对照；如果好了，以后再拆开看是哪一处起作用）：\n")
 md.append("1. **整段排满**：原稿的动作只占前 1–2 秒，后面 3–4 秒写的是“手一直攥着、两人留在原处”；新写法写成 起因→结果→反应→余波，整 6 秒都有可看的动作。")
 md.append("2. **不写“定住句”**：去掉了 “His hand stays clenched / Both stay where they are” 这类句子。")
 md.append("3. **声音句允许呼吸、喘息、低吼，只禁说话**：原稿写的是“没有呼吸声、没有任何发声”，结果近乎静音。")
 md.append("4. **开场图画“动作发生之前”**：原稿 06-05 的开场图里玛丽已经张着嘴震惊了，等于先画了结果。")
 md.append("5. **动词用猛的、写明是一下子完成的**（snaps、knocks hard、jerks），反应也写成身体反应（后仰、倒吸气、肩膀起伏）。\n")
 md.append("| 补拍 | 替换哪里 | 做完怎么算成功 |\n|---|---|---|")
+md.append("| 补6 | 第 6 集开头（接在补5 之后） | 莉莉侧脸、左手指尖碰着颈侧的创可贴：**6A 里创可贴一次都没拍到**（她两次都面朝右，创可贴在左颈被挡住），补6 让观众看见“红痕→创可贴” | 莉莉一个人；创可贴在朝镜头的那一侧、看得清；不笑 |")
+md.append("| 补8 | 第 6 集 07 号的位置（替换它） | 玛丽特写原稿重拍，只换种子：原片两侧各有约 17% 黑边 | 没有黑边；玛丽张着嘴、湿润的眼睛；不顺眼就用原片 |")
 md.append("| 补9 | 第 5 集 04 号 | 莉莉和基利安**两个人都在画面里**，没有金发陌生女人；杯子在基利安手里；能听到粗重呼吸；两个人都在动 |")
 md.append("| 补10 | 第 5 集 05 号 | 一下子捏碎酒杯（不是慢慢裂开）；碎片、酒液溅出；之后他有抬头、低吼、肩膀起伏，不是定格；声音里有碎裂声和低吼／呼吸 |")
 md.append("| 补11 | 第 6 集 05 号（**补拍包 1 里的补7 作废**：补7 是原稿原样重拍，会再出现同样的动作问题，只是黑边的对照） | **基利安的手把酒杯打到她身上**（不是她自己倒）；速度是“一下”；她后仰、倒吸气；他不再是麻木的脸 |\n")
-md.append("**剪辑位置：** 第 5 集：5-03 → 补9 → 补10 → 5-06；第 6 集：6A 的 04 → 补11 → 6A 的 06。\n")
+md.append("**剪辑位置：** 第 5 集：5-03 → 补9 → 补10 → 5-06；第 6 集：补6 → 6A 的 01、02、03、04 → 补11 → 6A 的 06 → 补8 → 6A 的 08。\n")
 md.append("## 二、全部提示词中文全译\n")
 for s, zh in zip(segs, ZH):
     md.append(f"### {s['title']}（{s['duration_seconds']} 秒，种子 {s['seed']}，无台词）\n")
@@ -118,6 +149,6 @@ for s, zh in zip(segs, ZH):
     md.append(f"- **视频文字：** {s['shots'][0]['visual_zh']}")
     md.append(f"- **声音：** {s['sound_zh']}\n")
 md.append("## 三、预计会出问题的地方\n")
-md.append("- **补11：** “手把杯子打在她胸口”是近身接触动作，H3 可能还是画成她自己倒、或者手没碰到杯子；红酒可能不泼在裙子上。开场图先看：玛丽必须在笑、基利安的手垂在身侧。\n- **补10：** 杯子碎裂可能还是慢；尖牙是不是出现（上次出现了）；**这次写了允许低吼，可能会出现像说话的声音**，验收时听。\n- **补9：** 床头板、门的位置每次都可能变；两个人的朝向（莉莉朝右、基利安朝左）看开场图。\n- 写法检查报了 3 条“无台词片没写完全没有人声”：**是故意的**（这次要测允许呼吸声）。\n- 三个片的开场图都是重新生成的，**脸和房间可能和原来略有不同**，拼起来不顺眼就不要。\n")
+md.append("- **补11：** “手把杯子打在她胸口”是近身接触动作，H3 可能还是画成她自己倒、或者手没碰到杯子；红酒可能不泼在裙子上。开场图先看：玛丽必须在笑、基利安的手垂在身侧。\n- **补10：** 杯子碎裂可能还是慢；尖牙是不是出现（上次出现了）；**这次写了允许低吼，可能会出现像说话的声音**，验收时听。\n- **补9：** 床头板、门的位置每次都可能变；两个人的朝向（莉莉朝右、基利安朝左）看开场图。\n- 写法检查报了 3 条“无台词片没写完全没有人声”：**是故意的**（这次要测允许呼吸声）。\n- 三个片的开场图都是重新生成的，**脸和房间可能和原来略有不同**，拼起来不顺眼就不要。\n- **补6：** 她必须面朝画面左边、左颈朝镜头；上次 6A 里她两次都面朝右，创可贴被挡住。开场图先看：创可贴在朝镜头的这一侧、看得清。\n- **补8：** 原稿原样重拍，只换种子；黑边可能还会出现，那就用原片。\n")
 open(os.path.join(FOLDER, '补拍/补拍包2_说明.md'), 'w', encoding='utf-8').write('\n'.join(md))
 print('说明已写')

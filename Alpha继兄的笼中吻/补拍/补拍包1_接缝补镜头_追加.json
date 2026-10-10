@@ -367,8 +367,8 @@
  "episodes": [
   {
    "title": "剧本补拍包｜接缝补镜头",
-   "summary": "第 1–6 集接缝补镜头 6 个＋第 6 集两个黑边片重拍 2 个，按剪辑单插进成片",
-   "script": "保罗说我去外面等，保罗站在门边，手搭在把手上，皱着眉，尴尬地低声说他去外面等。\nPaulOnScreen：“Sorry. I'll wait outside.”\n莉莉答应签字，莉莉坐在地上，握着笔，含着泪低声说她签。\nLily：“Fine. I'll sign.”\n车后座抱着文件夹，莉莉坐在车后座，双手压着膝上的文件夹，皱着眉，看着窗外越来越近的灯光。\n提着行李箱站在主卧，莉莉提着旧行李箱站在主卧里，睁大眼睛看着那张大床。\n牙停在脖子前，基利安的尖牙停在莉莉的脖子前，咬牙忍住，眼里的金光慢慢褪成黑色，把头抬起一点；莉莉睁开眼睛，脖子侧面留下一道淡淡的红痕。\n莉莉颈侧的创可贴，莉莉侧着脸，左手指尖碰着颈侧的创可贴，皱着眉，垂着眼。\n红酒泼裙重拍，基利安的右手一推玛丽的手腕，她杯里的红酒泼出来，洒在她自己白色的裙子前襟上；她张着嘴，睁大眼睛。\n玛丽特写重拍，玛丽脸色惨白，张着嘴，下巴发抖，看着手里的空酒杯。",
+   "summary": "第 1–5 集接缝补镜头 5 个（实验之外的正式补拍），按剪辑单插进成片",
+   "script": "保罗说我去外面等，保罗站在门边，手搭在把手上，皱着眉，尴尬地低声说他去外面等。\nPaulOnScreen：“Sorry. I'll wait outside.”\n莉莉答应签字，莉莉坐在地上，握着笔，含着泪低声说她签。\nLily：“Fine. I'll sign.”\n车后座抱着文件夹，莉莉坐在车后座，双手压着膝上的文件夹，皱着眉，看着窗外越来越近的灯光。\n提着行李箱站在主卧，莉莉提着旧行李箱站在主卧里，睁大眼睛看着那张大床。\n牙停在脖子前，基利安的尖牙停在莉莉的脖子前，咬牙忍住，眼里的金光慢慢褪成黑色，把头抬起一点；莉莉睁开眼睛，脖子侧面留下一道淡淡的红痕。",
    "segments": [
     {
      "title": "补1｜保罗说我去外面等",
@@ -565,113 +565,6 @@
      "sound_en": "A slow heavy breath of silk against linen and a clock ticking softly. The recording is completely free of voices: no speech, no humming, no sighs, no breathing sounds, no vocal sounds of any kind.",
      "sound_zh": "丝绸蹭过床单的缓慢沉重的摩擦声，和时钟轻轻的嘀嗒声。 录音里完全没有人声：没有说话、哼声、叹息、呼吸声或任何发声。",
      "seed": 3705,
-     "dialogue_language": "en"
-    },
-    {
-     "title": "补6｜莉莉颈侧的创可贴",
-     "duration_seconds": 6,
-     "generation_seconds": 6,
-     "continuity": "cut",
-     "depends_on_previous": false,
-     "use_previous_episode_state": false,
-     "characters": [
-      "LilyRed"
-     ],
-     "asset_keys": [
-      "ballroom",
-      "lily_red"
-     ],
-     "image_reference_keys": [
-      "ballroom"
-     ],
-     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium close-up of Lily alone, from the head to the chest, in profile facing frame-left so that the left side of her neck faces the camera, in the middle third of the frame, in the floor-length red satin gown with thin straps, the small beige adhesive bandage clearly visible on the left side of her neck, her left hand raised so that her fingertips rest against the edge of the bandage, her lips pressed together, her brows drawn together, her eyes lowered. The frame holds exactly one person, Lily. Warm golden chandelier light, the ballroom softly blurred behind. Fixed stage layout: the wide marble staircase is at frame-left; the long banquet table is at frame-right.",
-     "visual_zh": "莉莉侧着脸，左手指尖碰着颈侧的创可贴，皱着眉，垂着眼。",
-     "camera_zh": "0—6秒莉莉侧面中近景，镜头固定。",
-     "dialogue": [],
-     "shots": [
-      {
-       "start_seconds": 0,
-       "end_seconds": 6,
-       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady medium close-up opens from the adopted first frame in [[asset:ballroom]]: [[asset:lily_red]] in profile facing frame-left, the left side of her neck turned to the camera, the small beige bandage on it, her left fingertips resting against the bandage's edge, her eyes lowered. She draws a slow breath, her lips pressing tighter and her brows drawing together. Her fingertips stay against the bandage. The camera holds still.",
-       "visual_zh": "一个稳定的中近景，从已采用的开场图继续，场景是晚宴大厅：莉莉侧身朝画面左边，左颈侧朝着镜头，上面贴着那块小小的米色创可贴，左手指尖贴着创可贴的边缘，眼睛垂着。她缓缓吸一口气，嘴唇抿得更紧，眉头皱起。指尖一直贴着创可贴。镜头固定不动。",
-       "dialogue_indices": []
-      }
-     ],
-     "sound_en": "A string quartet playing softly in the distance and the faint clink of crystal. The recording is completely free of voices: no speech, no humming, no sighs, no breathing sounds, no vocal sounds of any kind.",
-     "sound_zh": "远处弦乐四重奏轻轻的演奏声，和水晶杯轻轻的碰撞声。 录音里完全没有人声：没有说话、哼声、叹息、呼吸声或任何发声。",
-     "seed": 3706,
-     "dialogue_language": "en"
-    },
-    {
-     "title": "补7｜红酒泼裙重拍",
-     "duration_seconds": 6,
-     "generation_seconds": 6,
-     "continuity": "cut",
-     "depends_on_previous": false,
-     "use_previous_episode_state": false,
-     "characters": [
-      "Mary",
-      "KillianTux"
-     ],
-     "asset_keys": [
-      "ballroom",
-      "mary",
-      "killian_tux"
-     ],
-     "image_reference_keys": [
-      "ballroom"
-     ],
-     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on medium two-shot, both people from the head to the knees, in the middle third of the frame. Killian at frame-left in the black tuxedo, in profile facing frame-right, his right hand closed around Mary's right wrist at chest height, his face cold, his eyes level on her face. Mary at frame-right in the white satin cocktail dress, in profile facing frame-left, a crystal glass of red wine in her right hand, her mouth open in shock, her eyes wide, her eyes on his hand on her wrist. The frame holds exactly two people: Killian and Mary. Warm golden chandelier light, the ballroom softly blurred behind. Fixed stage layout: the wide marble staircase is at frame-left; the long banquet table is at frame-right. Mary is always at frame-right of Killian.",
-     "visual_zh": "基利安的右手一推玛丽的手腕，她杯里的红酒泼出来，洒在她自己白色的裙子前襟上；她张着嘴，睁大眼睛。",
-     "camera_zh": "0—6秒侧面中景，镜头固定。",
-     "dialogue": [],
-     "shots": [
-      {
-       "start_seconds": 0,
-       "end_seconds": 6,
-       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on medium two-shot opens from the adopted first frame in [[asset:ballroom]]: [[asset:killian_tux]] at frame-left, his right hand closed around [[asset:mary]]'s right wrist, his eyes level on her face; [[asset:mary]] at frame-right, a glass of red wine in her right hand, her eyes on his hand. His right hand pushes her wrist toward her own chest; the glass tips and red wine splashes down the front of her white dress. His face stays cold and his jaw stays set. Her mouth hangs open and her eyes stay wide. The camera holds still.",
-       "visual_zh": "一个稳定的侧面中景双人镜头，从已采用的开场图继续，场景是晚宴大厅：基利安在画面左边，右手握住玛丽的右手腕，眼睛平视着她的脸；玛丽在画面右边，右手端着一杯红酒，眼睛看着他的手。他的右手把她的手腕推向她自己的胸口；杯子倾倒，红酒泼洒下来，流过她白裙子的前襟。他的脸一直冷着，下颌一直紧绷。她的嘴一直张着，眼睛一直睁大。镜头固定不动。",
-       "dialogue_indices": []
-      }
-     ],
-     "sound_en": "A crystal glass tipping, a splash of wine, and a few drops pattering on the marble floor. The recording is completely free of voices: no speech, no humming, no sighs, no breathing sounds, no vocal sounds of any kind.",
-     "sound_zh": "水晶杯倾倒，一声酒液泼洒，几滴酒落在大理石地面上的声音。 录音里完全没有人声：没有说话、哼声、叹息、呼吸声或任何发声。",
-     "seed": 3707,
-     "dialogue_language": "en"
-    },
-    {
-     "title": "补8｜玛丽特写重拍",
-     "duration_seconds": 5,
-     "generation_seconds": 5,
-     "continuity": "cut",
-     "depends_on_previous": false,
-     "use_previous_episode_state": false,
-     "characters": [
-      "Mary"
-     ],
-     "asset_keys": [
-      "ballroom",
-      "mary"
-     ],
-     "image_reference_keys": [
-      "ballroom"
-     ],
-     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Close-up of Mary alone, chest-up, in profile facing frame-left, in the middle third of the frame, in the white satin dress with a large red wine stain down the front, her face pale, her mouth open in shock, her eyes wide and glossy, her chin trembling, her eyes on the empty wine glass held at her chest. The frame holds exactly one person, Mary. Warm golden chandelier light, the ballroom softly blurred behind. Fixed stage layout: the wide marble staircase is at frame-left; the long banquet table is at frame-right.",
-     "visual_zh": "玛丽脸色惨白，张着嘴，下巴发抖，看着手里的空酒杯。",
-     "camera_zh": "0—5秒玛丽侧面近景，镜头固定。",
-     "dialogue": [],
-     "shots": [
-      {
-       "start_seconds": 0,
-       "end_seconds": 5,
-       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady close-up opens from the adopted first frame in [[asset:ballroom]]: [[asset:mary]]'s face in profile facing frame-left, her mouth open, her eyes wide and glossy on the empty glass at her chest. Her lips tremble and her eyes stay wide on the glass. Her head stays where it is. The camera holds still.",
-       "visual_zh": "一个稳定的近景，从已采用的开场图继续，场景是晚宴大厅：玛丽侧脸朝画面左边，张着嘴，睁大湿润的眼睛看着胸前的空杯。她的嘴唇发抖，眼睛一直睁大盯着杯子。头留在原处。镜头固定不动。",
-       "dialogue_indices": []
-      }
-     ],
-     "sound_en": "A string quartet playing softly in the distance and the faint clink of crystal. The recording is completely free of voices: no speech, no humming, no sighs, no breathing sounds, no vocal sounds of any kind.",
-     "sound_zh": "远处弦乐四重奏轻轻的演奏声，和水晶杯轻轻的碰撞声。 录音里完全没有人声：没有说话、哼声、叹息、呼吸声或任何发声。",
-     "seed": 3708,
      "dialogue_language": "en"
     }
    ],
