@@ -1,0 +1,2513 @@
+{
+ "schema": "h3-production-draft",
+ "version": 1,
+ "title": "Alpha继兄的笼中吻｜第2集｜门后的狂想",
+ "dialogue_language": "en",
+ "style": "Photorealistic live-action romantic thriller with a glossy, high-end drama look. Warm tungsten key light with a soft cool fill, shallow depth of field, rich natural skin texture with visible pores, luxurious cream-and-gold interiors, restrained cinematic color grading, and an ultra-wide 8:3 cinemascope frame in which the people are placed deliberately and the room is visible around them.",
+ "assets": [
+  {
+   "key": "lily",
+   "kind": "image",
+   "role": "character",
+   "label": "莉莉",
+   "description": {
+    "en": "Lily, an adult woman in her mid-twenties with long wavy chestnut-brown hair, fair skin, large hazel-green eyes and a slender build, wearing an ivory silk wedding gown with a fitted bodice and a long zipper down the back. The portrait fixes her identity and gown; the opening frame and shot description fix her pose and position.",
+    "zh": "莉莉，二十五岁左右的成年女性，栗棕色长卷发、白皙皮肤、浅褐绿色大眼睛、身形纤细，穿象牙白真丝婚纱，合身上身，背后一条长拉链。人物图固定身份与婚纱，开场图和镜头正文决定姿势与位置。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of an adult woman in her mid-twenties with long wavy chestnut-brown hair, fair skin and large hazel-green eyes, wearing an ivory silk wedding gown with a fitted bodice and delicate shoulders. She faces the camera with a calm, slightly nervous expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "killian",
+   "kind": "image",
+   "role": "character",
+   "label": "基利安",
+   "description": {
+    "en": "Killian, a very tall, broad-shouldered adult man in his early thirties with short swept-back black hair, a sharp jawline, light stubble and cold dark-gray eyes, wearing a tailored black three-piece suit, white shirt and dark tie, with a platinum luxury wristwatch on his left wrist. He stands a head and a half taller than Lily. The portrait fixes his identity and clothes, not staging.",
+    "zh": "基利安，三十出头的成年男性，身材极高、肩膀宽阔，黑色短发向后梳，下颌线锋利，有浅胡茬，眼睛是冷冽的深灰色，穿剪裁合身的黑色三件套西装、白衬衫、深色领带，左腕戴铂金色名表。比莉莉高出一个半头。人物图固定身份与衣服，不固定站位。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of a very tall, broad-shouldered adult man in his early thirties with short swept-back black hair, a sharp jawline, light stubble and cold dark-gray eyes, wearing a tailored black three-piece suit, white shirt and dark tie, a platinum luxury wristwatch on his left wrist. He faces the camera with a cold, composed expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "room",
+   "kind": "image",
+   "role": "scene",
+   "label": "婚纱店VIP更衣室",
+   "description": {
+    "en": "The private VIP fitting room of a high-end bridal boutique: cream walls with gold molding, a heavy dark-wood door with a brass handle in the left wall, a rack of long white gowns in garment covers along the back wall, a wide bare stretch of plain cream panelled wall to the right of the gown rack, an ivory velvet couch against the right wall and thick carpet, lit warmly by a crystal chandelier and wall sconces. The reference fixes the room layout and decor, not any people.",
+    "zh": "高端婚纱店的VIP私人更衣室：奶油色墙面配金色线脚，左墙一扇带黄铜把手的厚重深色木门，后墙挂着一排罩着防尘袋的白色长婚纱，婚纱架右边是一大段空白的奶油色护墙板墙面，右墙边有象牙色丝绒沙发和厚地毯，水晶吊灯与壁灯的暖光。参考图固定房间布局与陈设，不带入任何人物。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic wide shot of an empty luxury VIP fitting room in a high-end bridal boutique: cream walls with gold molding, a heavy dark-wood door with a brass handle on the left wall, a rack of long white wedding gowns in garment covers along the back wall, a wide bare stretch of plain cream panelled wall to the right of the gown rack, an ivory velvet couch against the right wall, thick carpet, warm light from a crystal chandelier and wall sconces. No people.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "alcove",
+   "kind": "image",
+   "role": "scene",
+   "label": "更衣室婚纱架后的隔间",
+   "description": {
+    "en": "A narrow dressing alcove at the back of the private fitting room: a dense row of long white gowns in garment covers hanging close together on a rail along one side, and a heavy cream floor-length velvet curtain on a ceiling track, drawn half open across the front. Dim warm light with soft shadows. The reference fixes the look of the alcove, not any people.",
+    "zh": "更衣室最里面的狭窄隔间：一侧是紧挨着挂在横杆上、罩着防尘袋的白色长婚纱，正面是一道挂在顶轨上的奶油色厚重丝绒落地帘，拉开了一半。光线昏暗温暖，阴影柔和。参考图固定隔间的样子，不带入任何人物。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic shot of an empty narrow dressing alcove at the back of a luxury fitting room: a dense row of long white gowns in garment covers hanging close together on a rail along one side, a heavy cream floor-length velvet curtain on a ceiling track drawn half open across the front, dim warm light with soft shadows, thick carpet. No people.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "paul",
+   "kind": "image",
+   "role": "character",
+   "label": "保罗",
+   "description": {
+    "en": "Paul, an adult man in his late twenties with neatly combed light-brown hair, a clean-shaven friendly boyish face and warm brown eyes, of average build, wearing a navy blazer over a white open-collared shirt. He is a head shorter than Killian. The portrait fixes his identity and clothes, not staging.",
+    "zh": "保罗，二十八岁左右的成年男性，浅棕色头发梳得整齐，脸干净、友善、带点孩子气，暖棕色眼睛，身材普通，穿海军蓝西装外套配白色敞领衬衫。比基利安矮一个头。人物图固定身份与衣服，不固定站位。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of an adult man in his late twenties with neatly combed light-brown hair, a clean-shaven friendly boyish face and warm brown eyes, wearing a navy blazer over a white open-collared shirt. He faces the camera with a mild, relaxed expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "villa_front",
+   "kind": "image",
+   "role": "scene",
+   "label": "半山庄园门前",
+   "description": {
+    "en": "The gravel forecourt of a gloomy luxurious hillside mansion at dusk: a dark stone facade with tall narrow windows, a wide flight of stone entrance steps on the right, a second-floor stone balcony with a balustrade above the entrance, tall black iron gates and dark pine trees behind, a black Maybach sedan parked on the gravel on the left, cold blue dusk light with warm lamps glowing in the windows. The reference fixes the layout and decor.",
+    "zh": "黄昏时阴森奢华的半山庄园门前碎石场地：深色石头外墙配高窄窗，右边是宽阔的石头台阶，台阶上方二楼有一座带栏杆的石头阳台，后面是高大的黑色铁门和深色松树，左边碎石地上停着一辆黑色迈巴赫轿车，冷蓝的暮色里窗内亮着暖灯。参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of the gravel forecourt of a gloomy luxurious hillside mansion at dusk: a dark stone facade with tall narrow windows, a wide flight of stone entrance steps on the right, a second-floor stone balcony with a balustrade above the entrance, tall black iron gates and dark pine trees behind, a black Maybach sedan parked on the gravel on the left, cold blue dusk light with warm lamps in the windows. The frame holds the mansion, the gravel, the car and the pines.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "butler",
+   "kind": "image",
+   "role": "character",
+   "label": "老管家",
+   "description": {
+    "en": "The butler, an elderly man in his sixties with neatly combed silver hair, a lined, dignified face and kind pale-blue eyes, wearing a black tailcoat, white shirt, grey waistcoat, black tie and white gloves. The portrait fixes his identity and clothes, not staging.",
+    "zh": "老管家，六十多岁的老人，银发梳得整齐，脸上有皱纹、端庄，眼睛是温和的浅蓝色，穿黑色燕尾服、白衬衫、灰色马甲、黑领带，戴白手套。人物图固定身份与衣服，不固定站位。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of an elderly man in his sixties with neatly combed silver hair, a lined, dignified face and kind pale-blue eyes, wearing a black tailcoat, white shirt, grey waistcoat, black tie and white gloves. He faces the camera with a calm, courteous expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "lily_coat",
+   "kind": "image",
+   "role": "character",
+   "label": "莉莉（旅途装）",
+   "description": {
+    "en": "Lily, the same adult woman in her mid-twenties as in the reference, with long wavy chestnut-brown hair pulled into a low loose ponytail held by a small silver hair clip, fair skin and large hazel-green eyes, now wearing a faded grey wool coat over a plain navy dress, tired but proud. The portrait fixes her identity and clothes, not staging.",
+    "zh": "莉莉，和参考图是同一个二十五岁左右的成年女性，栗棕色长卷发低低地扎成松散的马尾，用一枚小银发卡固定，白皙皮肤、浅褐绿色大眼睛，这次穿褪色的灰色羊毛外套配朴素的藏青连衣裙，疲惫却倔强。人物图固定身份与衣服，不固定站位。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of the same woman as in the reference image, long wavy chestnut-brown hair pulled into a low loose ponytail held by a small silver hair clip, wearing a faded grey wool coat over a plain navy dress. She faces the camera with a tired but proud expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": [
+     "lily"
+    ]
+   }
+  },
+  {
+   "key": "killian_robe",
+   "kind": "image",
+   "role": "character",
+   "label": "基利安（黑丝绸睡袍）",
+   "description": {
+    "en": "Killian, the same very tall, broad-shouldered adult man in his early thirties as in the reference, with short swept-back black hair, a sharp jawline, light stubble and cold dark-gray eyes, now wearing a black silk robe tied at the waist over dark trousers, the collar open at the base of the throat, a platinum luxury wristwatch on his left wrist. The portrait fixes his identity and clothes, not staging.",
+    "zh": "基利安，和参考图是同一个三十出头、身材极高、肩膀宽阔的成年男性，黑色短发向后梳，下颌线锋利，有浅胡茬，眼睛是冷冽的深灰色，这次穿黑色真丝睡袍，腰间系带，里面是深色长裤，领口开到喉咙下方，左腕戴铂金色名表。人物图固定身份与衣服，不固定站位。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of the same man as in the reference image, short swept-back black hair, sharp jawline, light stubble and cold dark-gray eyes, wearing a black silk robe tied at the waist, the collar open at the base of the throat, a platinum luxury wristwatch on his left wrist. He faces the camera with a cold, composed expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": [
+     "killian"
+    ]
+   }
+  },
+  {
+   "key": "bedroom",
+   "kind": "image",
+   "role": "scene",
+   "label": "庄园主卧",
+   "description": {
+    "en": "The master bedroom of a dark luxurious mansion: a huge dark-wood bed with charcoal-grey linen against the left wall, a tall single dark-wood door with a brass handle in the right wall, floor-to-ceiling windows with heavy dark curtains at the back, a dark rug, bedside lamps giving a low amber light, and a small bar cart with crystal glasses near the door. The reference fixes the layout and decor.",
+    "zh": "阴暗奢华的庄园主卧：左墙边是一张巨大的深色实木床，配炭灰色床品；右墙有一扇带黄铜把手的高大单扇深色木门；后面是落地窗和厚重的深色窗帘；深色地毯，床头灯发出低低的琥珀色光；门边有一个放着水晶杯的小酒车。参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of the master bedroom of a dark luxurious mansion: a huge dark-wood bed with charcoal-grey linen against the left wall, a tall single dark-wood door with a brass handle in the right wall, floor-to-ceiling windows with heavy dark curtains at the back, a dark rug, bedside lamps giving a low amber light, a small bar cart with crystal glasses near the door. The frame holds the bed, the door, the windows and the bar cart.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "lily_shirt",
+   "kind": "image",
+   "role": "character",
+   "label": "莉莉（宽大男士衬衫）",
+   "description": {
+    "en": "Lily, the same adult woman in her mid-twenties as in the reference, with long wavy chestnut-brown hair damp and loose around her shoulders, fair skin and large hazel-green eyes, a bare face, wearing an oversized white men's cotton dress shirt that falls to mid-thigh with the sleeves too long, buttoned to the collarbone. The portrait fixes her identity and clothes, not staging.",
+    "zh": "莉莉，和参考图是同一个二十五岁左右的成年女性，栗棕色长卷发半湿地披在肩上，白皙皮肤、浅褐绿色大眼睛，素颜，穿一件宽大的白色男士棉质衬衫，下摆到大腿中部，袖子太长，扣子扣到锁骨。人物图固定身份与衣服，不固定站位。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of the same woman as in the reference image, long wavy chestnut-brown hair damp and loose around her shoulders, a bare face, wearing an oversized white men's cotton dress shirt buttoned to the collarbone with sleeves too long. She faces the camera with a nervous expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": [
+     "lily"
+    ]
+   }
+  },
+  {
+   "key": "killian_wolf",
+   "kind": "image",
+   "role": "character",
+   "label": "基利安（失控）",
+   "description": {
+    "en": "Killian, the same very tall, broad-shouldered adult man in his early thirties as in the reference, with short black hair, a sharp jawline and light stubble, wearing a black silk robe tied at the waist, his eyes glowing a dark gold, with sharp canine teeth and dark claw-like nails. The portrait fixes his identity, clothes and features, not staging.",
+    "zh": "基利安，和参考图是同一个三十出头、身材极高、肩膀宽阔的成年男性，黑色短发，下颌线锋利，有浅胡茬，穿黑色真丝睡袍、腰间系带，这次眼睛发出暗金色的光，犬齿尖利，指甲像深色的利爪。人物图固定身份、衣服和特征，不固定站位。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of the same man as in the reference image, short black hair, sharp jawline, light stubble, wearing a black silk robe tied at the waist, his eyes glowing a dark gold, sharp canine teeth just visible, dark claw-like nails. He faces the camera with an intense, barely restrained expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": [
+     "killian"
+    ]
+   }
+  },
+  {
+   "key": "ballroom",
+   "kind": "image",
+   "role": "scene",
+   "label": "财团晚宴大厅",
+   "description": {
+    "en": "A grand gala ballroom: a polished cream marble floor, a dark-red carpet runway down the middle, tall gold-trimmed columns, huge crystal chandeliers, a wide marble staircase on the left and a long banquet table with white linen and champagne towers on the right, warm golden light. The reference fixes the layout and decor.",
+    "zh": "盛大的晚宴大厅：抛光的奶油色大理石地面，中间一条深红色的地毯，高大的镶金边柱子，巨大的水晶吊灯，左边是宽阔的大理石楼梯，右边是铺着白桌布、摆着香槟塔的长长的宴会桌，温暖的金色灯光。参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a grand gala ballroom: a polished cream marble floor, a dark-red carpet runway down the middle, tall gold-trimmed columns, huge crystal chandeliers, a wide marble staircase on the left and a long banquet table with white linen and champagne towers on the right, warm golden light. The frame holds the staircase, the carpet, the columns, the chandeliers and the banquet table.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "lily_red",
+   "kind": "image",
+   "role": "character",
+   "label": "莉莉（红色晚礼服）",
+   "description": {
+    "en": "Lily, the same adult woman in her mid-twenties as in the reference, with long wavy chestnut-brown hair pinned in a loose low twist with a few strands falling free, fair skin and large hazel-green eyes, wearing a floor-length red satin evening gown with thin straps and a small beige adhesive bandage on the left side of her neck. The portrait fixes her identity, gown and bandage, not staging.",
+    "zh": "莉莉，和参考图是同一个二十五岁左右的成年女性，栗棕色长卷发松松地盘成低髻、有几缕散落，白皙皮肤、浅褐绿色大眼睛，穿及地的红色缎面细肩带晚礼服，脖子左侧贴着一块小小的米色创可贴。人物图固定身份、礼服和创可贴，不固定站位。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of the same woman as in the reference image, long wavy chestnut-brown hair pinned in a loose low twist, wearing a floor-length red satin evening gown with thin straps and a small beige adhesive bandage on the left side of her neck. She faces the camera with a composed, slightly nervous expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": [
+     "lily"
+    ]
+   }
+  },
+  {
+   "key": "killian_tux",
+   "kind": "image",
+   "role": "character",
+   "label": "基利安（黑色无尾礼服）",
+   "description": {
+    "en": "Killian, the same very tall, broad-shouldered adult man in his early thirties as in the reference, with short swept-back black hair, a sharp jawline, light stubble and cold dark-gray eyes, wearing a black tuxedo with a white shirt, a black bow tie and a white silk pocket square, a platinum luxury wristwatch on his left wrist. The portrait fixes his identity and clothes, not staging.",
+    "zh": "基利安，和参考图是同一个三十出头、身材极高、肩膀宽阔的成年男性，黑色短发向后梳，下颌线锋利，有浅胡茬，眼睛是冷冷的深灰色，穿黑色无尾礼服，配白衬衫、黑色领结和白色丝质胸袋巾，左手腕戴铂金名表。人物图固定身份和衣服，不固定站位。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of the same man as in the reference image, short swept-back black hair, sharp jawline, light stubble, cold dark-gray eyes, wearing a black tuxedo with a white shirt, a black bow tie and a white silk pocket square, a platinum luxury wristwatch on his left wrist. He faces the camera with a cold, composed expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": [
+     "killian"
+    ]
+   }
+  },
+  {
+   "key": "mary",
+   "kind": "image",
+   "role": "character",
+   "label": "玛丽（保罗的妹妹）",
+   "description": {
+    "en": "Mary, an adult woman in her mid-twenties with sleek honey-blonde hair in an elegant updo, flawless makeup, glossy red lips and sharp green eyes, wearing a white satin cocktail dress with a sweetheart neckline, a pearl necklace and pearl drop earrings. The portrait fixes her identity and dress, not staging.",
+    "zh": "玛丽，二十五岁左右的成年女性，光滑的蜜金色头发盘成优雅的发髻，妆容无瑕，嘴唇红亮，一双锐利的绿眼睛，穿白色缎面心形领鸡尾酒裙，戴珍珠项链和珍珠垂坠耳环。人物图固定身份和裙子，不固定站位。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of an adult woman in her mid-twenties with sleek honey-blonde hair in an elegant updo, flawless makeup, glossy red lips and sharp green eyes, wearing a white satin cocktail dress with a sweetheart neckline, a pearl necklace and pearl drop earrings. She faces the camera with a sweet, coy expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "car_back",
+   "kind": "image",
+   "role": "scene",
+   "label": "轿车后座",
+   "description": {
+    "en": "The rear seat of a luxury black sedan at dusk: cream leather seat, dark wood trim, a wide side window with cold blue dusk light and warm lights glowing far away. The reference fixes the cabin and the light.",
+    "zh": "黄昏时一辆豪华黑色轿车的后座：奶油色真皮座椅，深色木饰板，宽大的侧车窗，窗外是冷蓝色的暮光和远处亮着的暖色灯光。参考图固定车内布置和光线。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of the empty rear seat of a luxury black sedan at dusk: a cream leather seat, dark wood trim, a wide side window with cold blue dusk light and warm lights glowing far away, nobody in the car. The frame holds the seat, the door panel and the side window.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "ranch",
+   "kind": "image",
+   "role": "scene",
+   "label": "私人跑马场",
+   "description": {
+    "en": "A private equestrian ranch on a bright sunny day: a raised wooden grandstand with a roof and a railing on the left, a long white wooden fence and a wide green riding field on the right, a packed-earth track in front, dark pine trees along the far edge, a clear blue sky. The reference fixes the layout and decor.",
+    "zh": "晴朗明亮的一天里的私人马术跑马场：左边是带屋顶和栏杆的凸起木制看台，右边是长长的白色木栅栏和开阔的绿色跑马场，前面是一条夯实的泥土跑道，远处边缘是深色的松树，晴朗的蓝天。参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a private equestrian ranch on a bright sunny day: a raised wooden grandstand with a roof and a railing on the left, a long white wooden fence and a wide green riding field on the right, a packed-earth track in front, dark pine trees along the far edge, a clear blue sky with a few white clouds. The frame holds the grandstand, the white fence, the green field and the pine trees.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "killian_coat",
+   "kind": "image",
+   "role": "character",
+   "label": "基利安（炭灰长大衣）",
+   "description": {
+    "en": "Killian, the same very tall, broad-shouldered adult man in his early thirties as in the reference, with short swept-back black hair, a sharp jawline, light stubble and cold dark-gray eyes, wearing a long charcoal-gray wool overcoat over a black shirt, black trousers and black leather riding boots. The portrait fixes his identity and clothes, not staging.",
+    "zh": "基利安，和参考图是同一个三十出头、身材极高、肩膀宽阔的成年男性，黑色短发向后梳，下颌线锋利，有浅胡茬，眼睛是冷冷的深灰色，穿长款炭灰色羊毛大衣，里面是黑衬衫，配黑色长裤和黑色皮质马靴。人物图固定身份和衣服，不固定站位。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of the same man as in the reference image, short swept-back black hair, sharp jawline, light stubble, cold dark-gray eyes, wearing a long charcoal-gray wool overcoat over a black shirt. He faces the camera with a cold, composed expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": [
+     "killian"
+    ]
+   }
+  },
+  {
+   "key": "lily_riding",
+   "kind": "image",
+   "role": "character",
+   "label": "莉莉（马术装）",
+   "description": {
+    "en": "Lily, the same adult woman in her mid-twenties as in the reference, with long wavy chestnut-brown hair tied back in a low ponytail, fair skin and large hazel-green eyes, wearing a fitted cream blouse, tan riding breeches, tall brown leather riding boots and a thin brown belt. The portrait fixes her identity and clothes, not staging.",
+    "zh": "莉莉，和参考图是同一个二十五岁左右的成年女性，栗棕色长卷发在脑后扎成低马尾，白皙皮肤、浅褐绿色大眼睛，穿合身的奶油色衬衫、棕黄色马裤、高筒棕色皮质马靴，系一条细棕色皮带。人物图固定身份和衣服，不固定站位。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of the same woman as in the reference image, long wavy chestnut-brown hair tied back in a low ponytail, wearing a fitted cream blouse and a thin brown belt. She faces the camera with a composed, slightly nervous expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": [
+     "lily"
+    ]
+   }
+  },
+  {
+   "key": "mary_riding",
+   "kind": "image",
+   "role": "character",
+   "label": "玛丽（马术装）",
+   "description": {
+    "en": "Mary, the same adult woman in her mid-twenties as in the reference, with sleek honey-blonde hair in a tight low bun, flawless makeup, glossy red lips and sharp green eyes, wearing a fitted ivory riding jacket over a white blouse, white riding breeches, tall black leather riding boots and small pearl earrings. The portrait fixes her identity and clothes, not staging.",
+    "zh": "玛丽，和参考图是同一个二十五岁左右的成年女性，光滑的蜜金色头发在脑后盘成紧实的低髻，妆容无瑕，嘴唇红亮，一双锐利的绿眼睛，穿合身的象牙色马术外套、里面是白衬衫，配白色马裤、高筒黑色皮质马靴，戴小小的珍珠耳环。人物图固定身份和衣服，不固定站位。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of the same woman as in the reference image, sleek honey-blonde hair in a tight low bun, glossy red lips, sharp green eyes, wearing a fitted ivory riding jacket over a white blouse and small pearl earrings. She faces the camera with a sweet, coy expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": [
+     "mary"
+    ]
+   }
+  },
+  {
+   "key": "trainer",
+   "kind": "image",
+   "role": "character",
+   "label": "驯马师",
+   "description": {
+    "en": "Trainer, a stocky adult man in his late forties with a tanned, lined face, short gray-brown stubble and small shrewd eyes, wearing a worn brown leather vest over a rolled-sleeve plaid shirt, dark jeans, leather work boots and a flat tweed cap. The portrait fixes his identity and clothes, not staging.",
+    "zh": "驯马师，一个四十多岁、敦实的成年男性，晒得黝黑、满是皱纹的脸，短短的灰褐色胡茬，精明的小眼睛，穿磨旧的棕色皮背心、里面是卷起袖子的格子衬衫，配深色牛仔裤、皮质工作靴和一顶平顶花呢帽。人物图固定身份和衣服，不固定站位。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of a stocky adult man in his late forties with a tanned, lined face, short gray-brown stubble and small shrewd eyes, wearing a worn brown leather vest over a rolled-sleeve plaid shirt and a flat tweed cap. He faces the camera with a flat, guarded expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "black_horse",
+   "kind": "image",
+   "role": "prop",
+   "label": "纯黑烈马",
+   "description": {
+    "en": "A tall, powerfully built jet-black stallion with a glossy coat, a thick black mane, wide flared nostrils and a wild white-ringed eye, wearing a plain brown leather bridle with brown reins and a plain brown leather English saddle with stirrups. The portrait fixes the horse's coat, build and tack, not staging.",
+    "zh": "一匹高大、强壮的纯黑种马，皮毛油亮，鬃毛浓密，鼻孔宽大张开，眼睛带一圈白、透着野性，戴着朴素的棕色皮质笼头和棕色缰绳，背上是朴素的棕色皮质英式马鞍和马镫。人物图固定马的毛色、体型和马具，不固定站位。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic full-body side-profile photograph of a tall, powerfully built jet-black stallion with a glossy coat, a thick black mane, wide flared nostrils and a wild white-ringed eye, wearing a plain brown leather bridle with brown reins and a plain brown leather English saddle with stirrups, standing on bare ground. Soft even studio light, plain neutral gray background, natural coat texture, four legs clearly visible.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "woods_edge",
+   "kind": "image",
+   "role": "scene",
+   "label": "树林边缘的草地",
+   "description": {
+    "en": "The edge of a pine forest beside a wide sunlit meadow: tall green grass with a dirt path on the left, a rough wooden fence with sharp pointed posts on the right, a dense wall of dark pine trees behind the fence, a clear blue sky. The reference fixes the layout and decor.",
+    "zh": "阳光下的开阔草地旁边的松林边缘：左边是高高的绿草和一条土路，右边是带尖桩的粗木栅栏，栅栏后面是一整排密密的深色松树，晴朗的蓝天。参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of the edge of a pine forest beside a wide sunlit meadow: tall green grass and a dirt path on the left, a rough wooden fence with sharp pointed posts on the right, a dense wall of dark pine trees behind the fence, a clear blue sky with a few white clouds. The frame holds the meadow, the path, the fence and the pine forest.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "bodyguard",
+   "kind": "image",
+   "role": "character",
+   "label": "黑衣保镖",
+   "description": {
+    "en": "Bodyguard, a tall, broad-shouldered adult man in his thirties with a shaved head and a stern, impassive face, wearing a black suit, a white shirt, a black tie and a clear coiled earpiece. The portrait fixes his identity and clothes, not staging.",
+    "zh": "黑衣保镖，一个三十多岁、身材高大、肩膀宽阔的成年男性，剃着光头，面容严厉、毫无表情，穿黑色西装、白衬衫、黑领带，戴一只透明的螺旋线耳机。人物图固定身份和衣服，不固定站位。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of a tall, broad-shouldered adult man in his thirties with a shaved head and a stern, impassive face, wearing a black suit, a white shirt, a black tie and a clear coiled earpiece. He faces the camera with a stern, impassive expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "corridor",
+   "kind": "image",
+   "role": "scene",
+   "label": "主卧外的走廊",
+   "description": {
+    "en": "The upstairs corridor of a dark luxurious mansion outside the master bedroom, seen straight on: a long dark-wood paneled wall with a tall dark-wood door with a brass handle set into it at the left, amber wall lamps spaced along the paneling, a pale marble floor with a dark runner rug, and a tall arched window at the far right end showing the night. The reference fixes the layout and decor.",
+    "zh": "黑暗奢华的庄园里主卧外的二楼走廊，正面看过去：一整面深色木板长墙，左边嵌着一扇带黄铜把手的高大深色木门，琥珀色壁灯沿着护墙板间隔排开，浅色大理石地面铺着深色长条地毯，最右端尽头是一扇高高的拱形窗，窗外是夜色。参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of the upstairs corridor of a dark luxurious mansion seen straight on: a long dark-wood paneled wall with a tall dark-wood door with a brass handle set into it at the left, amber wall lamps spaced along the paneling, a pale marble floor with a dark runner rug, a tall arched window at the far right end showing the night sky. The frame holds the door, the paneled wall, the lamps and the arched window.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "doctor",
+   "kind": "image",
+   "role": "character",
+   "label": "私人医生（狼医）",
+   "description": {
+    "en": "Doctor, a thin adult man in his fifties with gray hair, wire-rimmed glasses and a lined, worried face, wearing a long white doctor's coat over a gray shirt and a dark tie, a stethoscope around his neck. The portrait fixes his identity and clothes, not staging.",
+    "zh": "医生，一个五十多岁的瘦削成年男性，灰白头发，戴金属细框眼镜，脸上皱纹很深、神情忧虑，穿长款白大褂，里面是灰衬衫和深色领带，脖子上挂着听诊器。人物图固定身份和衣服，不固定站位。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of a thin adult man in his fifties with gray hair, wire-rimmed glasses and a lined, worried face, wearing a long white doctor's coat over a gray shirt and a dark tie, a stethoscope around his neck. He faces the camera with a tense, worried expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "killian_gold",
+   "kind": "image",
+   "role": "character",
+   "label": "基利安（西装，金瞳狼爪）",
+   "description": {
+    "en": "Killian, the same very tall, broad-shouldered adult man in his early thirties as in the reference, with short swept-back black hair, a sharp jawline and light stubble, wearing a tailored black three-piece suit, a white shirt and a dark tie, a platinum luxury wristwatch on his left wrist; his eyes glow a dark gold, two sharp canine teeth show at the edge of his lips, and long black claws extend from his fingertips. The portrait fixes his identity, clothes and features, not staging.",
+    "zh": "基利安，和参考图是同一个三十出头、身材极高、肩膀宽阔的成年男性，黑色短发向后梳，下颌线锋利，有浅胡茬，穿合身的黑色三件套西装、白衬衫和深色领带，左手腕戴铂金名表；他的眼睛发出暗金色的光，嘴角露出两颗尖锐的犬齿，指尖长出长长的黑色利爪。人物图固定身份、衣服和特征，不固定站位。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of the same man as in the reference image, short swept-back black hair, sharp jawline, light stubble, wearing a tailored black three-piece suit, a white shirt and a dark tie, his eyes glowing a dark gold, two sharp canine teeth just visible, long black claws on the fingertips of his hands held at his sides. He faces the camera with an intense, cold expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": [
+     "killian"
+    ]
+   }
+  },
+  {
+   "key": "killian_shirt",
+   "kind": "image",
+   "role": "character",
+   "label": "基利安（只穿衬衫）",
+   "description": {
+    "en": "Killian, the same very tall, broad-shouldered adult man in his early thirties as in the reference, with short swept-back black hair, a sharp jawline, light stubble and cold dark-gray eyes, wearing only a white dress shirt with the collar open at the throat and the sleeves rolled to the elbows, a dark tie pulled loose and hanging, dark trousers and a platinum luxury wristwatch on his left wrist, with no jacket and no waistcoat. The portrait fixes his identity and clothes, not staging.",
+    "zh": "基利安，和参考图是同一个三十出头、身材极高、肩膀宽阔的成年男性，黑色短发向后梳，下颌线锋利，有浅胡茬，眼睛是冷冷的深灰色，只穿一件白色衬衫，领口敞开到喉结，袖子卷到手肘，深色领带扯松了垂着，配深色长裤，左手腕戴铂金名表，没有外套也没有马甲。人物图固定身份和衣服，不固定站位。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of the same man as in the reference image, short swept-back black hair, sharp jawline, light stubble, cold dark-gray eyes, wearing only a white dress shirt with the collar open at the throat and the sleeves rolled to the elbows, a dark tie pulled loose and hanging, a platinum luxury wristwatch on his left wrist. He faces the camera with a cold, composed expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": [
+     "killian"
+    ]
+   }
+  },
+  {
+   "key": "killian_beast",
+   "kind": "image",
+   "role": "character",
+   "label": "基利安（衬衫，竖瞳獠牙）",
+   "description": {
+    "en": "Killian, the same very tall, broad-shouldered adult man in his early thirties as in the reference, with short swept-back black hair, a sharp jawline and light stubble, wearing only a white dress shirt with the collar open at the throat and the sleeves rolled to the elbows, a dark tie pulled loose and hanging, a platinum luxury wristwatch on his left wrist; his eyes glow a dark gold with narrow vertical slit pupils, two long sharp canine teeth show between his parted lips, and long black claws extend from his fingertips. The portrait fixes his identity, clothes and features, not staging.",
+    "zh": "基利安，和参考图是同一个三十出头、身材极高、肩膀宽阔的成年男性，黑色短发向后梳，下颌线锋利，有浅胡茬，只穿一件白色衬衫，领口敞开到喉结，袖子卷到手肘，深色领带扯松了垂着，左手腕戴铂金名表；他的眼睛发出暗金色的光、瞳孔是细细的竖瞳，微张的嘴唇间露出两颗又长又尖的犬齿，指尖长出长长的黑色利爪。人物图固定身份、衣服和特征，不固定站位。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of the same man as in the reference image, short swept-back black hair, sharp jawline, light stubble, wearing only a white dress shirt with the collar open at the throat and the sleeves rolled to the elbows, a dark tie pulled loose and hanging, his eyes glowing a dark gold with narrow vertical slit pupils, two long sharp canine teeth showing between his parted lips, long black claws on the fingertips of his hands held at his sides. He faces the camera with an intense, predatory expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": [
+     "killian"
+    ]
+   }
+  },
+  {
+   "key": "paul_villa",
+   "kind": "image",
+   "role": "scene",
+   "label": "保罗破败的客厅",
+   "description": {
+    "en": "The wrecked living room of a bankrupt hillside villa at dawn: a tall bay window with torn curtains and cold pale light at the left, an overturned brown leather sofa and the shards of a smashed glass coffee table in the middle, a wide double doorway into a dim hallway at the right, a smashed wooden cabinet against the back wall with bare walls above it showing pale rectangles where paintings once hung, torn papers and broken glass scattered over a dark wooden floor. The reference fixes the layout and decor.",
+    "zh": "清晨，一栋破产山间别墅里被砸烂的客厅：左边是挂着破窗帘的高大飘窗和冷冷的淡光，中间是翻倒的棕色皮沙发和摔碎的玻璃茶几，右边是通向昏暗走廊的宽双开门，后墙边是被砸坏的木柜，柜子上方的光墙上留着一块块挂画取走后的浅色方痕，深色木地板上撒满碎纸和碎玻璃。参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of the wrecked living room of a bankrupt hillside villa at dawn: a tall bay window with torn curtains and cold pale light at the left, an overturned brown leather sofa and the shards of a smashed glass coffee table in the middle, a wide double doorway into a dim hallway at the right, a smashed wooden cabinet against the back wall with bare walls above it showing pale rectangles where paintings once hung, torn papers and broken glass over a dark wooden floor. The frame holds the window, the sofa, the table shards, the doorway and the cabinet.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "villa_balcony",
+   "kind": "image",
+   "role": "scene",
+   "label": "别墅二楼阳台（清晨）",
+   "description": {
+    "en": "The second-floor stone balcony of a dark luxurious hillside mansion on a clear morning: a carved stone balustrade runs along the front; below at the right a gravel driveway leads to tall black iron gates; at the left in the distance a hedge-lined back garden and the rusted corrugated-iron roof of an old warehouse; behind it the dark stone wall and tall glass doors. The reference fixes the layout and decor.",
+    "zh": "晴朗的清晨，阴沉豪华的山间庄园二楼石质阳台：前面是雕花石栏杆；右下方一条碎石车道通向高大的黑色铁门；左边远处是篱笆围起来的后花园和一座废弃仓库生锈的铁皮屋顶；身后是深色石墙和高大的玻璃门。参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of the second-floor stone balcony of a dark luxurious hillside mansion on a clear morning: a carved stone balustrade runs along the front, a gravel driveway at the lower right leads to tall black iron gates, a hedge-lined back garden and the rusted corrugated-iron roof of an old warehouse in the distance at the left, the dark stone wall and tall glass doors behind. The frame holds the balustrade, the driveway, the gates, the garden and the warehouse roof.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "garden_path",
+   "kind": "image",
+   "role": "scene",
+   "label": "后花园的碎石小路",
+   "description": {
+    "en": "A hedge-lined gravel path in the overgrown back garden of a dark mansion on a clear morning: tall dark hedges on both sides, the path running from left to right, at the right a derelict rusted corrugated-iron warehouse with a tall rusted iron double door, the mansion's dark stone wall far behind at the left, long soft shadows. The reference fixes the layout and decor.",
+    "zh": "晴朗的清晨，阴沉庄园荒芜的后花园里一条两边是高大深色篱笆的碎石小路：路从左往右延伸，右边是一座废弃、生锈的铁皮仓库和一扇高大生锈的铁双开门，左边远处是庄园深色的石墙，影子又长又柔。参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a hedge-lined gravel path in the overgrown back garden of a dark mansion on a clear morning: tall dark hedges on both sides, the path running from left to right, a derelict rusted corrugated-iron warehouse with a tall rusted iron double door at the right, the mansion's dark stone wall far behind at the left, long soft shadows. The frame holds the hedges, the path, the warehouse and the far wall.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "warehouse",
+   "kind": "image",
+   "role": "scene",
+   "label": "废弃仓库内部",
+   "description": {
+    "en": "The interior of a derelict warehouse: a grey concrete floor, a tall rusted iron double door at the right, stacked wooden crates and steel barrels at the left, concrete pillars in the middle, and shafts of dusty pale light falling from high broken windows at the back. The reference fixes the layout and decor.",
+    "zh": "一间废弃仓库的内部：灰色水泥地面，右边是一扇高大生锈的铁双开门，左边堆着木箱和铁桶，中间立着水泥柱，后面高处破窗里落下一束束带灰尘的淡光。参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of the interior of a derelict warehouse: a grey concrete floor, a tall rusted iron double door at the right, stacked wooden crates and steel barrels at the left, concrete pillars in the middle, shafts of dusty pale light falling from high broken windows at the back. The frame holds the door, the crates, the pillars and the light shafts.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "suv_interior",
+   "kind": "image",
+   "role": "scene",
+   "label": "黑色SUV车内（白天）",
+   "description": {
+    "en": "The interior of a black luxury SUV driving along a pine-lined mountain road in clear daylight, seen from the side: two black leather front seats at the left, a cream leather rear bench at the right, a large side window behind the rear bench showing dark pine trees and a winding grey road, soft daylight on the dark wood trim. The reference fixes the layout and decor.",
+    "zh": "晴朗白天，一辆黑色豪华SUV行驶在两边是松树的山路上，从侧面看车内：左边是两个黑色真皮前座，右边是奶油色真皮后排座椅，后排座椅后面是一整扇侧窗，窗外是深色松树和蜿蜒的灰色公路，柔和的日光落在深色木饰板上。参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of the interior of a black luxury SUV driving along a pine-lined mountain road in clear daylight, seen from the side: two black leather front seats at the left, a cream leather rear bench at the right, a large side window behind the rear bench showing dark pine trees and a winding grey road, soft daylight on the dark wood trim. The frame holds the front seats, the rear bench and the side window.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "rogue",
+   "kind": "image",
+   "role": "character",
+   "label": "流浪狼人（反派猎手）",
+   "description": {
+    "en": "Rogue, a lean, wiry adult man in his late thirties with long unkempt black hair, a pale hollow face, a thick jagged scar running from his forehead across his left eye down to his jaw, dark stubble and yellowed sharp teeth, wearing a patched black leather jacket over a faded grey shirt, dark trousers and scuffed black boots. The portrait fixes his identity and clothes, not staging.",
+    "zh": "流浪狼人，三十多岁瘦削精悍的成年男人，长长乱糟糟的黑发，苍白凹陷的脸，一道粗粗的锯齿状伤疤从额头横过左眼一直划到下巴，满脸胡茬，牙齿发黄而尖利，穿打着补丁的黑色皮夹克、褪色的灰衬衫、深色长裤和磨旧的黑靴子。肖像固定他的长相和衣着，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of a lean, wiry adult man in his late thirties with long unkempt black hair, a pale hollow face, a thick jagged scar running from his forehead across his left eye down to his jaw, dark stubble and yellowed sharp teeth, wearing a patched black leather jacket over a faded grey shirt. He faces the camera with a cruel, sly expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "mary_black",
+   "kind": "image",
+   "role": "character",
+   "label": "玛丽（黑色大衣）",
+   "description": {
+    "en": "Mary, the same adult woman in her mid-twenties as in the reference, with sleek honey-blonde hair in a tight low bun, flawless makeup, glossy red lips and sharp green eyes, wearing a fitted black wool coat over a black dress, black high heels and a pearl necklace. The portrait fixes her identity and clothes, not staging.",
+    "zh": "玛丽，和参考图里同一位二十五岁左右的成年女人，光滑的蜜金色头发盘成紧紧的低发髻，妆容精致，红唇亮泽，绿色的眼睛锐利，穿合身的黑色羊毛大衣、里面黑色连衣裙，黑色高跟鞋，戴珍珠项链。肖像固定她的长相和衣着，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of the same woman as in the reference image, sleek honey-blonde hair in a tight low bun, flawless makeup, glossy red lips and sharp green eyes, wearing a fitted black wool coat over a black dress and a pearl necklace. She faces the camera with a cold, composed expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": [
+     "mary"
+    ]
+   }
+  },
+  {
+   "key": "black_wolf",
+   "kind": "image",
+   "role": "prop",
+   "label": "巨大的纯黑狼",
+   "description": {
+    "en": "A colossal jet-black wolf the size of a small horse, with thick glossy black fur, a broad powerful chest and heavy shoulders, long white fangs and dark-gold glowing eyes. The portrait fixes the wolf's coat, build and eyes, not staging.",
+    "zh": "一头巨大的纯黑狼，体型像一匹小马，毛又厚又亮，胸膛宽阔、肩膀厚重，长长的白色獠牙，眼睛是暗金色发光的。肖像固定狼的毛色、体型和眼睛，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic full-body side-profile photograph of a colossal jet-black wolf the size of a small horse, with thick glossy black fur, a broad powerful chest and heavy shoulders, long white fangs and dark-gold glowing eyes, standing on bare ground. Soft even studio light, plain neutral gray background, natural fur texture, four legs clearly visible.",
+    "reference_keys": []
+   }
+  }
+ ],
+ "characters": {
+  "Lily": {
+   "image_keys": [
+    "lily"
+   ],
+   "voice_description": {
+    "en": "A young adult female voice, light and slightly breathy, speaking clear American English. She keeps her volume low because she must not be overheard, but every word is fully voiced and audible, tight and trembling with fear, anger and humiliation.",
+    "zh": "年轻成年女声，轻而略带气息，说清楚的美式英语。因为不能被人听见而压低音量，但每个字都正常发声、清晰可辨，声音紧绷颤抖，带着恐惧、愤怒和屈辱。"
+   }
+  },
+  "Killian": {
+   "image_keys": [
+    "killian"
+   ],
+   "voice_description": {
+    "en": "A mature adult male voice in a deep chest register, low and unhurried with a husky edge, speaking clear American English in a quiet, controlled, menacing tone. He never shouts, and every word is fully voiced and audible.",
+    "zh": "成熟成年男声，深沉的胸腔音，低缓不急，带沙哑质感，说清楚的美式英语。语气安静、克制、带压迫感，从不喊叫，每个字都正常发声、清晰可辨。"
+   }
+  },
+  "Paul": {
+   "image_keys": [],
+   "voice_description": {
+    "en": "A young adult male voice, light, casual and slightly smug, speaking clear American English at ordinary conversational volume. He is outside a closed door, so his voice reaches the room muffled by the wood.",
+    "zh": "年轻成年男声，轻松随意、略带轻浮，说清楚的美式英语，正常交谈音量。他在紧闭的门外，声音隔着木门略显闷。"
+   }
+  },
+  "PaulOnScreen": {
+   "image_keys": [
+    "paul"
+   ],
+   "voice_description": {
+    "en": "A young adult male voice, light, casual and slightly smug, speaking clear American English at ordinary conversational volume.",
+    "zh": "年轻成年男声，轻松随意、略带轻浮，说清楚的美式英语，正常交谈音量。"
+   }
+  },
+  "Butler": {
+   "image_keys": [
+    "butler"
+   ],
+   "voice_description": {
+    "en": "An elderly adult male voice, courteous, measured and warm, speaking clear American English at ordinary conversational volume with careful politeness.",
+    "zh": "年迈的成年男声，彬彬有礼、不急不缓、带着温和，说清楚的美式英语，正常交谈音量，措辞谨慎有礼。"
+   }
+  },
+  "LilyCoat": {
+   "image_keys": [
+    "lily_coat"
+   ],
+   "voice_description": {
+    "en": "A young adult female voice, light and slightly breathy, speaking clear American English. Every word is fully voiced and audible, tight and shaky with nerves, alarm and wounded pride.",
+    "zh": "年轻成年女声，轻而略带气息，说清楚的美式英语。每个字都正常发声、清晰可辨，声音紧绷发颤，带着紧张、惊慌和受伤的自尊。"
+   }
+  },
+  "KillianRobe": {
+   "image_keys": [
+    "killian_robe"
+   ],
+   "voice_description": {
+    "en": "A mature adult male voice in a deep chest register, low and unhurried with a husky edge, speaking clear American English in a quiet, controlled, menacing tone. He never shouts, and every word is fully voiced and audible.",
+    "zh": "成熟成年男声，深沉的胸腔音，低缓不急，带沙哑质感，说清楚的美式英语。语气安静、克制、带压迫感，从不喊叫，每个字都正常发声、清晰可辨。"
+   }
+  },
+  "LilyShirt": {
+   "image_keys": [
+    "lily_shirt"
+   ],
+   "voice_description": {
+    "en": "A young adult female voice, light and slightly breathy, speaking clear American English. Every word is fully voiced and audible, tight and trembling with fear; her voice rises sharply when she is frightened.",
+    "zh": "年轻成年女声，轻而略带气息，说清楚的美式英语。每个字都正常发声、清晰可辨，声音紧绷发颤、带着恐惧；受惊时声音会猛地拔高。"
+   }
+  },
+  "KillianWolf": {
+   "image_keys": [
+    "killian_wolf"
+   ],
+   "voice_description": {
+    "en": "A mature adult male voice, extremely deep and rough, like a low animal growl shaped into words, speaking clear American English, hoarse and shaking with barely held restraint. Every word is fully voiced and audible.",
+    "zh": "成熟成年男声，极其低沉粗糙，像野兽的低吼被压成了字句，说清楚的美式英语，沙哑、因勉强压住的克制而发抖。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "LilyRed": {
+   "image_keys": [
+    "lily_red"
+   ],
+   "voice_description": {
+    "en": "A young adult female voice, light and slightly breathy, speaking clear American English. Every word is fully voiced and audible, tight and shaky with nerves, alarm and wounded pride.",
+    "zh": "年轻成年女声，轻而略带气息，说清楚的美式英语。每个字都正常发声、清晰可辨，声音紧绷发颤，带着紧张、惊慌和受伤的自尊。"
+   }
+  },
+  "KillianTux": {
+   "image_keys": [
+    "killian_tux"
+   ],
+   "voice_description": {
+    "en": "A mature adult male voice in a deep chest register, low and unhurried with a husky edge, speaking clear American English in a quiet, controlled, menacing tone. He never shouts, and every word is fully voiced and audible.",
+    "zh": "成熟成年男声，深沉的胸腔音，低缓不急，带沙哑质感，说清楚的美式英语。语气安静、克制、带压迫感，从不喊叫，每个字都正常发声、清晰可辨。"
+   }
+  },
+  "Mary": {
+   "image_keys": [
+    "mary"
+   ],
+   "voice_description": {
+    "en": "A young adult female voice, sugary and syrupy with a coy, breathy lilt, speaking clear American English. Every word is fully voiced and audible.",
+    "zh": "年轻成年女声，甜得发腻，带着娇滴滴的、有气息的上扬语调，说清楚的美式英语。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "LilyRiding": {
+   "image_keys": [
+    "lily_riding"
+   ],
+   "voice_description": {
+    "en": "A young adult female voice, light and slightly breathy, speaking clear American English. Every word is fully voiced and audible, tight and shaky with nerves, alarm and wounded pride.",
+    "zh": "年轻成年女声，轻而略带气息，说清楚的美式英语。每个字都正常发声、清晰可辨，声音紧绷发颤，带着紧张、惊慌和受伤的自尊。"
+   }
+  },
+  "KillianCoat": {
+   "image_keys": [
+    "killian_coat"
+   ],
+   "voice_description": {
+    "en": "A mature adult male voice in a deep chest register, low and unhurried with a husky edge, speaking clear American English in a quiet, controlled, menacing tone. He never shouts, and every word is fully voiced and audible.",
+    "zh": "成熟成年男声，深沉的胸腔音，低缓不急，带沙哑质感，说清楚的美式英语。语气安静、克制、带压迫感，从不喊叫，每个字都正常发声、清晰可辨。"
+   }
+  },
+  "MaryRiding": {
+   "image_keys": [
+    "mary_riding"
+   ],
+   "voice_description": {
+    "en": "A young adult female voice, sugary and syrupy with a coy, breathy lilt, speaking clear American English. Every word is fully voiced and audible.",
+    "zh": "年轻成年女声，甜得发腻，带着娇滴滴的、有气息的上扬语调，说清楚的美式英语。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "Trainer": {
+   "image_keys": [
+    "trainer"
+   ],
+   "voice_description": {
+    "en": "A middle-aged adult male voice, gravelly and flat with a rural American drawl, a little nervous, speaking clear American English at ordinary conversational volume. Every word is fully voiced and audible.",
+    "zh": "中年成年男声，沙哑平淡，带乡村美式拖腔，有一点紧张，说清楚的美式英语，正常交谈音量。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "Bodyguard": {
+   "image_keys": [
+    "bodyguard"
+   ],
+   "voice_description": {
+    "en": "A deep adult male voice, flat and calm, speaking clear American English. Every word is fully voiced and audible.",
+    "zh": "低沉的成年男声，平淡冷静，说清楚的美式英语。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "KillianGold": {
+   "image_keys": [
+    "killian_gold"
+   ],
+   "voice_description": {
+    "en": "A mature adult male voice, extremely deep and rough, like a low animal growl shaped into words, speaking clear American English, hoarse and shaking with barely held restraint. Every word is fully voiced and audible.",
+    "zh": "成熟成年男声，极其低沉粗糙，像野兽的低吼被压成了字句，说清楚的美式英语，沙哑、因勉强压住的克制而发抖。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "KillianBeast": {
+   "image_keys": [
+    "killian_beast"
+   ],
+   "voice_description": {
+    "en": "A mature adult male voice, extremely deep and rough, like a low animal growl shaped into words, speaking clear American English, hoarse and shaking with barely held restraint. Every word is fully voiced and audible.",
+    "zh": "成熟成年男声，极其低沉粗糙，像野兽的低吼被压成了字句，说清楚的美式英语，沙哑、因勉强压住的克制而发抖。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "KillianShirt": {
+   "image_keys": [
+    "killian_shirt"
+   ],
+   "voice_description": {
+    "en": "A mature adult male voice in a deep chest register, low and unhurried with a husky edge, speaking clear American English in a quiet, controlled, menacing tone. He never shouts, and every word is fully voiced and audible.",
+    "zh": "成熟成年男声，深沉的胸腔音，低缓不急，带沙哑质感，说清楚的美式英语。语气安静、克制、带压迫感，从不喊叫，每个字都正常发声、清晰可辨。"
+   }
+  },
+  "Doctor": {
+   "image_keys": [
+    "doctor"
+   ],
+   "voice_description": {
+    "en": "A middle-aged adult male voice, thin and cracking with terror, speaking clear American English at ordinary conversational volume. Every word is fully voiced and audible.",
+    "zh": "中年成年男声，因恐惧而发细、发颤，说清楚的美式英语，正常交谈音量。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "GuardFrenzy": {
+   "image_keys": [
+    "bodyguard"
+   ],
+   "voice_description": {
+    "en": "A rough adult male voice, raw and snarling like an animal forcing out words, speaking clear American English, slightly muffled by a thick wooden door yet every word is fully voiced and audible.",
+    "zh": "粗哑的成年男声，像野兽硬挤出人话，粗暴、带着低吼，说清楚的美式英语，隔着厚厚的木门略显发闷，但每个字都发声、清晰可辨。"
+   }
+  },
+  "Rogue": {
+   "image_keys": [
+    "rogue"
+   ],
+   "voice_description": {
+    "en": "A rough adult male voice, low, gravelly and wheezing with a sly, mocking edge, speaking clear American English. Every word is fully voiced and audible.",
+    "zh": "粗哑的成年男声，低沉沙砾般带着喘息声，有一种狡猾、嘲弄的味道，说清楚的美式英语。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "MaryBlack": {
+   "image_keys": [
+    "mary_black"
+   ],
+   "voice_description": {
+    "en": "A young adult female voice, sugary and syrupy with a coy, breathy lilt, speaking clear American English. Every word is fully voiced and audible.",
+    "zh": "年轻成年女声，甜得发腻，带着娇滴滴的、有气息的上扬语调，说清楚的美式英语。每个字都正常发声、清晰可辨。"
+   }
+  }
+ },
+ "episodes": [
+  {
+   "title": "剧本第15集｜反派的计划（重写）",
+   "summary": "保罗输光了一切，玛丽带来猎手；银匕首和毒液；内线说基利安今天就走；计划：抓走莉莉带去仓库，玛丽要毁她的脸。",
+   "script": "保罗坐在被搬空的家里，攥着订婚戒指，保罗坐在被搬空的家里，脖子上有淤青，手里攥着订婚戒指，哽着嗓子说，他把我的一切都抢走了。\nPaulOnScreen：“He took everything from me!”\n玛丽带着满脸伤疤的陌生人走进来，玛丽踩着高跟鞋走进来，身后跟着一个满脸伤疤、手按匕首的陌生男人。\n玛丽，我找到能对付他的人了，玛丽站在坐在地上的保罗面前，说她找到了能对付基利安的人。\nMaryBlack：“I found someone to stop him.”\n保罗摸着脖子上的淤青，没人能对付那个怪物，保罗摸着脖子上的淤青，摇着头说，没人能对付那个怪物。\nPaulOnScreen：“Nobody can stop that monster.”\n流浪狼人拔出银匕首，银会让怪物流血，流浪狼人把银匕首从鞘里慢慢拔出来，说银会让怪物流血。\nRogue：“Silver makes monsters bleed.”\n特写，匕首刃上滴下一滴绿色毒液，特写，一只戴黑手套的手握着银匕首，刃口上一滴淡绿色的毒液正在鼓起来。\n玛丽看着手机，我的内线说他今天就走，玛丽看着手机屏幕，说她的内线报信，基利安今天就走。\nMaryBlack：“My spy says he leaves today.”\n流浪狼人收刀，我把她带去仓库，流浪狼人把匕首插回鞘里，说他会把她带去仓库。\nRogue：“I'll bring her to the warehouse.”\n后花园的小路和废弃仓库，后花园里一条空荡荡的碎石小路，尽头是锈迹斑斑的废弃仓库。\n玛丽，我还要毁了她那张漂亮的脸，玛丽用甜得发毒的声音说，她还要毁了莉莉那张漂亮的脸。\nMaryBlack：“And I'll ruin her pretty face.”",
+   "segments": [
+    {
+     "title": "01｜保罗坐在被搬空的家里，攥着订婚戒指",
+     "duration_seconds": 6,
+     "generation_seconds": 6,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "PaulOnScreen"
+     ],
+     "asset_keys": [
+      "paul_villa",
+      "paul"
+     ],
+     "image_reference_keys": [
+      "paul_villa"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on medium shot of Paul alone, from the head to the waist, in profile facing frame-right, in the middle third of the frame, sitting on the dusty floor with his back against the overturned leather sofa, in the creased navy blazer over a white open-collared shirt, a dark purple bruise ringing his throat above the open collar, his right fist clenched around a small diamond ring held at chest height, his jaw trembling, his lips pulled tight, his brows drawn together, his red-rimmed wet eyes on the ring. The frame holds exactly one person, Paul. Cold pale dawn light, dust hanging in the air, the wrecked room softly blurred behind. Fixed stage layout: the tall bay window with torn curtains and cold pale dawn light is at frame-left; the overturned leather sofa and the shards of the smashed coffee table are in the middle; the wide double doorway to a dim hallway is at frame-right; the smashed wooden cabinet stands against the back wall under bare walls with pale rectangles where paintings once hung.",
+     "visual_zh": "保罗坐在被搬空的家里，脖子上有淤青，手里攥着订婚戒指，哽着嗓子说：他把我的一切都抢走了。",
+     "camera_zh": "0—6秒，镜头固定。",
+     "dialogue": [
+      {
+       "speaker": "PaulOnScreen",
+       "text": "He took everything from me!",
+       "start_seconds": 1.0,
+       "end_seconds": 3.73,
+       "language": "en"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 6,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on medium shot opens from the adopted first frame in [[asset:paul_villa]]: [[asset:paul]] speaks in a hoarse, cracking voice, squeezing the diamond ring until his knuckles whiten, his jaw trembling, his lips pulled tight, his brows drawn together and a tear sliding from his red-rimmed eyes. The camera holds still.",
+       "visual_zh": "一个稳定的侧面中景，从已采用的开场图继续，场景是破败的客厅：保罗用嘶哑发裂的声音说话，把钻戒攥得指节发白，下颌发抖，嘴唇紧抿，眉头拧在一起，一滴泪从发红的眼睛里滑下来。镜头固定不动。",
+       "dialogue_indices": [
+        0
+       ]
+      }
+     ],
+     "sound_en": "A rattling breath and the faint creak of the old floor. Voices stay close and clear.",
+     "sound_zh": "一声发颤的喘息和旧地板细微的吱嘎声。人声近而清楚。",
+     "seed": 6501,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "02｜玛丽带着满脸伤疤的陌生人走进来",
+     "duration_seconds": 4,
+     "generation_seconds": 4,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "MaryBlack",
+      "Rogue"
+     ],
+     "asset_keys": [
+      "paul_villa",
+      "mary_black",
+      "rogue"
+     ],
+     "image_reference_keys": [
+      "paul_villa"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on medium two-shot, both people from the head to the knees, in the middle third of the frame, just inside the doorway of the wrecked living room, both in profile facing frame-left. Mary in front at frame-left in a fitted black wool coat over a black dress and black high heels, her honey-blonde hair in a tight low bun, her chin lifted, her lips set in a cold smug smile, her sharp green eyes sweeping over the overturned sofa. Rogue one step behind her at frame-right, a lean wiry man in a patched black leather jacket, a thick jagged scar down his left cheek and across his eye, his heavy brows lowered, his lips pulled into a cruel half-grin over yellowed teeth, his right hand resting on a sheathed silver dagger at his belt, his narrowed eyes on the shards of the coffee table at frame-left. The frame holds exactly two people: Mary and Rogue. Cold pale dawn light, dust hanging in the air, the wrecked room softly blurred behind. Fixed stage layout: the tall bay window with torn curtains and cold pale dawn light is at frame-left; the overturned leather sofa and the shards of the smashed coffee table are in the middle; the wide double doorway to a dim hallway is at frame-right; the smashed wooden cabinet stands against the back wall under bare walls with pale rectangles where paintings once hung.",
+     "visual_zh": "玛丽踩着高跟鞋走进来，身后跟着一个满脸伤疤、手按匕首的陌生男人。",
+     "camera_zh": "0—4秒，镜头固定。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 4,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on medium two-shot opens from the adopted first frame in [[asset:paul_villa]]: [[asset:mary_black]] walks slowly across the wreckage, her heels crunching on broken glass, her chin lifted and her cold smug smile widening. [[asset:rogue]] follows one step behind, his right hand tapping the hilt of the sheathed dagger, his lips curling into a cruel half-grin over his yellowed teeth and his heavy brows low. The camera holds still.",
+       "visual_zh": "一个稳定的侧面中景双人镜头，从已采用的开场图继续，场景是破败的客厅：玛丽缓缓走过一地狼藉，高跟鞋踩在碎玻璃上咯吱作响，下巴抬起，冷冷的得意笑容更深。流浪狼人跟在她身后一步，右手轻轻敲着鞘里匕首的柄，咧开的残忍笑容露出发黄的牙，眉头压得很低。镜头固定不动。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "High heels crunching over broken glass and slow, heavy boot steps. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here.",
+     "sound_zh": "高跟鞋踩过碎玻璃的咯吱声和缓慢沉重的靴子声。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。",
+     "seed": 6502,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "03｜玛丽：我找到能对付他的人了",
+     "duration_seconds": 6,
+     "generation_seconds": 6,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "MaryBlack",
+      "PaulOnScreen"
+     ],
+     "asset_keys": [
+      "paul_villa",
+      "mary_black",
+      "paul"
+     ],
+     "image_reference_keys": [
+      "paul_villa"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on medium two-shot, both people from the head to the waist, in the middle third of the frame, in the middle of the wrecked living room. Paul at frame-left sitting on the floor against the overturned sofa, in profile facing frame-right, the dark purple bruise around his throat, his face lifted, his lips parted, his brows drawn together, his wet red-rimmed eyes on Mary's face. Mary at frame-right standing over him in the fitted black wool coat, in profile facing frame-left, her chin lifted, her lips set in a cold smug smile, her sharp green eyes on Paul's face. The frame holds exactly two people: Paul and Mary. Cold pale dawn light, dust hanging in the air, the wrecked room softly blurred behind. Fixed stage layout: the tall bay window with torn curtains and cold pale dawn light is at frame-left; the overturned leather sofa and the shards of the smashed coffee table are in the middle; the wide double doorway to a dim hallway is at frame-right; the smashed wooden cabinet stands against the back wall under bare walls with pale rectangles where paintings once hung.",
+     "visual_zh": "玛丽站在坐在地上的保罗面前，说她找到了能对付基利安的人。",
+     "camera_zh": "0—6秒，镜头固定。",
+     "dialogue": [
+      {
+       "speaker": "MaryBlack",
+       "text": "I found someone to stop him.",
+       "start_seconds": 1.0,
+       "end_seconds": 4.05,
+       "language": "en"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 6,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on medium two-shot opens from the adopted first frame in [[asset:paul_villa]]: [[asset:mary_black]] at frame-right speaks in a low, silky voice, her cold smug smile widening and her green eyes on his face. [[asset:paul]] at frame-left looks up at her, his lips parting, his brows drawing together and a flicker of hope in his wet red-rimmed eyes. The camera holds still.",
+       "visual_zh": "一个稳定的侧面中景双人镜头，从已采用的开场图继续，场景是破败的客厅：画面右边的玛丽用低沉丝滑的声音说话，冷冷的得意笑容更深，绿色的眼睛看着他的脸。画面左边的保罗抬头看着她，嘴唇张开，眉头拧起，发红湿润的眼睛里闪过一丝希望。镜头固定不动。",
+       "dialogue_indices": [
+        0
+       ]
+      }
+     ],
+     "sound_en": "A faint creak of floorboards and a light breeze through the broken window. Voices stay close and clear.",
+     "sound_zh": "地板轻轻的吱嘎声，和破窗里吹进来的微风。人声近而清楚。",
+     "seed": 6503,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "04｜保罗摸着脖子上的淤青：没人能对付那个怪物",
+     "duration_seconds": 6,
+     "generation_seconds": 6,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "PaulOnScreen"
+     ],
+     "asset_keys": [
+      "paul_villa",
+      "paul"
+     ],
+     "image_reference_keys": [
+      "paul_villa"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on medium close-up of Paul alone, from the head to the chest, in profile facing frame-right, in the middle third of the frame, sitting against the overturned leather sofa in the creased navy blazer over a white open-collared shirt, the dark purple bruise ringing his throat clearly visible, his right hand rising to his bruised throat, his lips trembling, his brows pulled up, his wide wet eyes fixed on the dusty floor. The frame holds exactly one person, Paul. Cold pale dawn light, dust hanging in the air, the wrecked room softly blurred behind. Fixed stage layout: the tall bay window with torn curtains and cold pale dawn light is at frame-left; the overturned leather sofa and the shards of the smashed coffee table are in the middle; the wide double doorway to a dim hallway is at frame-right; the smashed wooden cabinet stands against the back wall under bare walls with pale rectangles where paintings once hung.",
+     "visual_zh": "保罗摸着脖子上的淤青，摇着头说：没人能对付那个怪物。",
+     "camera_zh": "0—6秒，镜头固定。",
+     "dialogue": [
+      {
+       "speaker": "PaulOnScreen",
+       "text": "Nobody can stop that monster.",
+       "start_seconds": 1.0,
+       "end_seconds": 3.55,
+       "language": "en"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 6,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on medium close-up opens from the adopted first frame in [[asset:paul_villa]]: [[asset:paul]] shakes his head slowly and speaks in a thin, shaking voice, his fingers rubbing the purple bruise at his throat, his lips trembling, his brows pulled up and his wide wet eyes on the floor. The camera holds still.",
+       "visual_zh": "一个稳定的侧面中近景，从已采用的开场图继续，场景是破败的客厅：保罗慢慢摇着头，用单薄发抖的声音说话，手指揉着脖子上的紫色淤青，嘴唇发颤，眉头抬起，睁大的湿润眼睛盯着地板。镜头固定不动。",
+       "dialogue_indices": [
+        0
+       ]
+      }
+     ],
+     "sound_en": "A shaky breath and a faint creak of the floorboards. Voices stay close and clear.",
+     "sound_zh": "一声发抖的呼吸和地板细微的吱嘎声。人声近而清楚。",
+     "seed": 6504,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "05｜流浪狼人拔出银匕首：银会让怪物流血",
+     "duration_seconds": 6,
+     "generation_seconds": 6,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "Rogue"
+     ],
+     "asset_keys": [
+      "paul_villa",
+      "rogue"
+     ],
+     "image_reference_keys": [
+      "paul_villa"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium close-up of Rogue alone, from the head to the chest, in profile facing frame-left, in the middle third of the frame, in the patched black leather jacket, the long scar down his left cheek and across his eye, his right hand drawing a silver dagger halfway out of its black leather sheath at his belt so that the polished blade catches the pale light, his heavy brows lowered, his lips curling into a cruel grin over yellowed teeth, his narrowed eyes on the blade. The frame holds exactly one person, Rogue. Cold pale dawn light, dust hanging in the air, the wrecked room softly blurred behind. Fixed stage layout: the tall bay window with torn curtains and cold pale dawn light is at frame-left; the overturned leather sofa and the shards of the smashed coffee table are in the middle; the wide double doorway to a dim hallway is at frame-right; the smashed wooden cabinet stands against the back wall under bare walls with pale rectangles where paintings once hung.",
+     "visual_zh": "流浪狼人把银匕首从鞘里慢慢拔出来，说银会让怪物流血。",
+     "camera_zh": "0—6秒，镜头固定。",
+     "dialogue": [
+      {
+       "speaker": "Rogue",
+       "text": "Silver makes monsters bleed.",
+       "start_seconds": 1.0,
+       "end_seconds": 3.05,
+       "language": "en"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 6,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady medium close-up opens from the adopted first frame in [[asset:paul_villa]]: [[asset:rogue]] slides the silver dagger slowly out of its sheath and speaks in a low, wheezing, sly voice, the blade flashing in the pale light, his lips curling into a cruel grin over his yellowed teeth, his heavy brows low and his narrowed eyes on the blade. The camera holds still.",
+       "visual_zh": "一个稳定的中近景，从已采用的开场图继续，场景是破败的客厅：流浪狼人把银匕首慢慢从鞘里抽出来，用低沉、带喘息的狡猾声音说话，刀刃在淡光里一闪，他咧开残忍的笑露出发黄的牙，眉头压得很低，眯着的眼睛盯着刀刃。镜头固定不动。",
+       "dialogue_indices": [
+        0
+       ]
+      }
+     ],
+     "sound_en": "The thin ring of steel leaving a sheath and a wheezing breath. Voices stay close and clear.",
+     "sound_zh": "钢刃出鞘细细的一声金属声，和一声嘶哑的喘息。人声近而清楚。",
+     "seed": 6505,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "06｜特写：匕首刃上滴下一滴绿色毒液",
+     "duration_seconds": 3,
+     "generation_seconds": 3,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [],
+     "asset_keys": [
+      "paul_villa"
+     ],
+     "image_reference_keys": [
+      "paul_villa"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Close-up of a black-gloved hand in a patched black leather sleeve holding a silver dagger upright, point up, in the middle third of the frame, the polished blade in sharp focus with a bead of pale green venom swelling at its edge near the tip, the dusty living room floor softly blurred far below. Only the hand and forearm are in the frame; no face appears. Cold pale dawn light, dust drifting in the air.",
+     "visual_zh": "特写：一只戴黑手套的手握着银匕首，刃口上一滴淡绿色的毒液正在鼓起来。",
+     "camera_zh": "0—3秒，镜头固定。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 3,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady close-up opens from the adopted first frame in [[asset:paul_villa]]: the bead of pale green venom swells, slides slowly down the polished edge of the silver dagger and drips toward the dusty floor, leaving a faint hissing wisp of smoke behind it; the black-gloved fingers tighten once on the hilt. No face appears. The camera holds still.",
+       "visual_zh": "一个稳定的特写，从已采用的开场图继续，场景是破败的客厅：淡绿色的毒液珠越鼓越大，慢慢顺着银匕首打磨光亮的刃口滑下，朝积灰的地板滴落，身后留下一缕细细的嘶嘶作响的烟；戴黑手套的手指在刀柄上握紧了一下。画面里没有脸出现。镜头固定不动。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "A faint hiss like acid dripping and the creak of leather. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here.",
+     "sound_zh": "一声像酸液滴落的细微嘶声和皮革的吱嘎声。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。",
+     "seed": 6506,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "07｜玛丽看着手机：我的内线说他今天就走",
+     "duration_seconds": 6,
+     "generation_seconds": 6,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "MaryBlack"
+     ],
+     "asset_keys": [
+      "paul_villa",
+      "mary_black"
+     ],
+     "image_reference_keys": [
+      "paul_villa"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium close-up of Mary alone, from the head to the waist, in profile facing frame-left, in the middle third of the frame, in the fitted black wool coat, a smartphone with a softly glowing screen held in her left hand at chest height, her red lips set in a cold smug smile, her jaw relaxed, her sharp green eyes narrowed on the phone screen. The frame holds exactly one person, Mary. Cold pale dawn light, dust hanging in the air, the wrecked room softly blurred behind. Fixed stage layout: the tall bay window with torn curtains and cold pale dawn light is at frame-left; the overturned leather sofa and the shards of the smashed coffee table are in the middle; the wide double doorway to a dim hallway is at frame-right; the smashed wooden cabinet stands against the back wall under bare walls with pale rectangles where paintings once hung.",
+     "visual_zh": "玛丽看着手机屏幕，说她的内线报信，基利安今天就走。",
+     "camera_zh": "0—6秒，镜头固定。",
+     "dialogue": [
+      {
+       "speaker": "MaryBlack",
+       "text": "My spy says he leaves today.",
+       "start_seconds": 1.0,
+       "end_seconds": 4.05,
+       "language": "en"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 6,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady medium close-up opens from the adopted first frame in [[asset:paul_villa]]: [[asset:mary_black]] lifts the glowing phone a little higher and speaks in a low, silky voice, her cold smug smile widening, her jaw relaxed and her narrowed green eyes on the screen. The camera holds still.",
+       "visual_zh": "一个稳定的中近景，从已采用的开场图继续，场景是破败的客厅：玛丽把发亮的手机举高了一点，用低沉丝滑的声音说话，冷冷的得意笑容更深，下颌放松，眯起的绿眼睛盯着屏幕。镜头固定不动。",
+       "dialogue_indices": [
+        0
+       ]
+      }
+     ],
+     "sound_en": "A soft electronic chime and a faint creak of the floorboards. Voices stay close and clear.",
+     "sound_zh": "一声轻轻的电子提示音和地板细微的吱嘎声。人声近而清楚。",
+     "seed": 6507,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "08｜流浪狼人收刀：我把她带去仓库",
+     "duration_seconds": 6,
+     "generation_seconds": 6,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "Rogue"
+     ],
+     "asset_keys": [
+      "paul_villa",
+      "rogue"
+     ],
+     "image_reference_keys": [
+      "paul_villa"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium close-up of Rogue alone, from the head to the chest, in profile facing frame-left, in the middle third of the frame, in the patched black leather jacket, the long scar down his left cheek and across his eye, the silver dagger held low in his right hand with its point resting against his open left palm, his heavy brows lowered, his lips pulled into a cruel grin over yellowed teeth, his narrowed eyes on the dagger. The frame holds exactly one person, Rogue. Cold pale dawn light, dust hanging in the air, the wrecked room softly blurred behind. Fixed stage layout: the tall bay window with torn curtains and cold pale dawn light is at frame-left; the overturned leather sofa and the shards of the smashed coffee table are in the middle; the wide double doorway to a dim hallway is at frame-right; the smashed wooden cabinet stands against the back wall under bare walls with pale rectangles where paintings once hung.",
+     "visual_zh": "流浪狼人把匕首插回鞘里，说他会把她带去仓库。",
+     "camera_zh": "0—6秒，镜头固定。",
+     "dialogue": [
+      {
+       "speaker": "Rogue",
+       "text": "I'll bring her to the warehouse.",
+       "start_seconds": 1.0,
+       "end_seconds": 4.05,
+       "language": "en"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 6,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady medium close-up opens from the adopted first frame in [[asset:paul_villa]]: [[asset:rogue]] slides the dagger back into its sheath with a sharp click and speaks in a low, wheezing, sly voice, his lips curling into a cruel grin over his yellowed teeth, his heavy brows low and his narrowed eyes on the sheath. The camera holds still.",
+       "visual_zh": "一个稳定的中近景，从已采用的开场图继续，场景是破败的客厅：流浪狼人“咔”的一声把匕首插回鞘里，用低沉、带喘息的狡猾声音说话，咧开残忍的笑露出发黄的牙，眉头压得很低，眯着的眼睛盯着刀鞘。镜头固定不动。",
+       "dialogue_indices": [
+        0
+       ]
+      }
+     ],
+     "sound_en": "A sharp metallic click and a wheezing breath. Voices stay close and clear.",
+     "sound_zh": "一声清脆的金属咔嗒声和一声嘶哑的喘息。人声近而清楚。",
+     "seed": 6508,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "09｜后花园的小路和废弃仓库",
+     "duration_seconds": 3,
+     "generation_seconds": 3,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [],
+     "asset_keys": [
+      "garden_path"
+     ],
+     "image_reference_keys": [
+      "garden_path"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Wide shot of the hedge-lined gravel path in the overgrown back garden, in the middle third of the frame: the rusted corrugated-iron warehouse with its tall rusted iron double door closed at frame-right, tall dark hedges on both sides, the mansion's dark stone wall far behind at frame-left, the gravel empty. No people are in the frame. Soft clear morning light, long shadows across the gravel. Fixed stage layout: the gravel path runs from frame-left to frame-right between tall dark hedges; the rusted corrugated-iron warehouse with its tall rusted iron double door stands at frame-right; the mansion's dark stone wall is far behind at frame-left.",
+     "visual_zh": "后花园里一条空荡荡的碎石小路，尽头是锈迹斑斑的废弃仓库。",
+     "camera_zh": "0—3秒，镜头固定。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 3,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady wide shot opens from the adopted first frame in [[asset:garden_path]]: a faint breeze stirs the dark hedges and dry leaves drift slowly across the empty gravel toward the closed iron double door of the warehouse at frame-right. No people appear. The camera holds still.",
+       "visual_zh": "一个稳定的宽景，从已采用的开场图继续，场景是后花园的小路：一阵微风吹动深色的篱笆，干枯的落叶慢慢飘过空荡荡的碎石路，飘向画面右边仓库紧闭的铁双开门。画面里没有人出现。镜头固定不动。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "A low wind through dry hedges and a distant creak of rusted metal. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here.",
+     "sound_zh": "穿过干枯篱笆的低低风声和远处生锈金属的吱嘎声。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。",
+     "seed": 6509,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "10｜玛丽：我还要毁了她那张漂亮的脸",
+     "duration_seconds": 6,
+     "generation_seconds": 6,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "MaryBlack"
+     ],
+     "asset_keys": [
+      "paul_villa",
+      "mary_black"
+     ],
+     "image_reference_keys": [
+      "paul_villa"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium close-up of Mary alone, from the head to the waist, in profile facing frame-left, in the middle third of the frame, in the fitted black wool coat, the smartphone lowered in her left hand, her red-lacquered right fingertips resting against her own cheek, her lips set in a thin cold smug smile, her jaw tight, her sharp green eyes narrowed. The frame holds exactly one person, Mary. Cold pale dawn light, dust hanging in the air, the wrecked room softly blurred behind. Fixed stage layout: the tall bay window with torn curtains and cold pale dawn light is at frame-left; the overturned leather sofa and the shards of the smashed coffee table are in the middle; the wide double doorway to a dim hallway is at frame-right; the smashed wooden cabinet stands against the back wall under bare walls with pale rectangles where paintings once hung.",
+     "visual_zh": "玛丽用甜得发毒的声音说，她还要毁了莉莉那张漂亮的脸。",
+     "camera_zh": "0—6秒，镜头固定。",
+     "dialogue": [
+      {
+       "speaker": "MaryBlack",
+       "text": "And I'll ruin her pretty face.",
+       "start_seconds": 1.0,
+       "end_seconds": 4.05,
+       "language": "en"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 6,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady medium close-up opens from the adopted first frame in [[asset:paul_villa]]: [[asset:mary_black]] speaks in a sugary, venomous voice, her red-lacquered fingertips tapping slowly against her own cheek, her thin cold smug smile widening, her jaw tight and her sharp green eyes narrowed. The camera holds still.",
+       "visual_zh": "一个稳定的中近景，从已采用的开场图继续，场景是破败的客厅：玛丽用甜得发毒的声音说话，涂着红指甲的指尖在自己的脸颊上慢慢敲着，薄薄的冷冷得意的笑容越扩越大，下颌绷紧，绿色的眼睛眯着。镜头固定不动。",
+       "dialogue_indices": [
+        0
+       ]
+      }
+     ],
+     "sound_en": "A slow tap of fingernails and a faint creak of the floorboards. Voices stay close and clear.",
+     "sound_zh": "指甲慢慢敲击的轻响和地板细微的吱嘎声。人声近而清楚。",
+     "seed": 6510,
+     "dialogue_language": "en"
+    }
+   ],
+   "dialogue_language": "en"
+  },
+  {
+   "title": "剧本第16集｜印记与离别（重写）",
+   "summary": "清晨颈后的新月印记；莉莉问“你对我做了什么”，基利安说现在永远感觉得到她；长老威胁她所以他要走；禁令、额头吻、求婚；车队开出铁门；猎手踩断树枝，莉莉猛回头，黑影爬墙。",
+   "script": "清晨，她颈后的新月印记，清晨的阳光里，莉莉趴着睡，颈后有一枚暗红色、像图腾一样的新月印记。\n莉莉醒来摸到印记，你对我做了什么？，莉莉醒来，一手按着颈后的印记，惊慌地问坐在床边的基利安，你对我做了什么？\nLilyShirt：“What did you do to me?”\n基利安抚过印记，现在我永远感觉得到你，基利安的指尖抚过她颈后的印记，低声说，现在我永远感觉得到你。\nKillian：“Now I'll always feel you.”\n基利安，长老们威胁你，我去收拾他们，基利安看着她，用低沉冰冷的声音说，长老们威胁她，他要去收拾他们。\nKillian：“Elders threaten you. I'll silence them.”\n莉莉，你把我一个人留在这？，莉莉用担心的小声音问，你把我一个人留在这？\nLilyShirt：“You're leaving me here alone?”\n基利安，我回来之前不准出门，基利安用不容反驳的低声命令她，我回来之前，不准踏出别墅。\nKillian：“Don't step outside until I return.”\n他吻在她额头上，基利安低下头，在莉莉的额头上印下一个长长的吻，睁开眼时眼神里是病态的占有欲。\n基利安，等我回来，我们就结婚，基利安用拇指擦过她的脸颊，低声说，等我回来，我们就结婚。\nKillian：“When I'm back, we marry.”\n莉莉在阳台上，看着车队开出铁门，莉莉站在二楼阳台，看着最后一辆黑色车子驶出铁门，铁门在车后关上。\n猎手躲在花园里，一脚踩断树枝，流浪狼人蹲在后花园的篱笆边，一脚踩断了地上的枯树枝，立刻僵住。\n树枝断裂，她猛地回头，一声很远的树枝断裂声，莉莉猛地回头看向左边的后花园。\n黑影顺着墙壁爬上来，流浪狼人顺着墙上的藤蔓飞快地往阳台爬。",
+   "segments": [
+    {
+     "title": "01｜清晨，她颈后的新月印记",
+     "duration_seconds": 3,
+     "generation_seconds": 3,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "LilyShirt"
+     ],
+     "asset_keys": [
+      "bedroom",
+      "lily_shirt"
+     ],
+     "image_reference_keys": [
+      "bedroom"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Close-up from slightly above and from the side of Lily's head, neck and shoulders as she lies on her stomach, her face turned toward frame-right on the pillow, her long chestnut hair swept forward over her left shoulder so that the back of her neck is bare, the collar of the oversized white shirt low on her shoulders; on the center of her bare nape, in the middle third of the frame, a dark-red crescent-moon mark in an ornate, tattoo-like pattern, the skin around it slightly flushed. Her eyes are closed, her lips softly parted, her brows relaxed. The frame holds exactly one person, Lily. Bright warm morning sunlight pours through the open curtains across the bed, soft golden light, the room softly blurred behind. Fixed stage layout: the huge dark-wood bed with charcoal-grey linen fills the left and center of the frame; the tall dark-wood door with a brass handle is at frame-right; the floor-to-ceiling windows with the heavy curtains drawn back are at the back.",
+     "visual_zh": "清晨的阳光里，莉莉趴着睡，颈后有一枚暗红色、像图腾一样的新月印记。",
+     "camera_zh": "0—3秒，镜头固定。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 3,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady close-up opens from the adopted first frame in [[asset:bedroom]]: the dark-red crescent mark on [[asset:lily_shirt]]'s nape gleams in the warm sunlight as her slow breath lifts her shoulders, a loose strand of chestnut hair sliding across her cheek, her lips softly parted and her brows relaxed. The camera holds still.",
+       "visual_zh": "一个稳定的特写，从已采用的开场图继续，场景是主卧：莉莉颈后的暗红色新月印记在暖暖的阳光里发亮，她缓慢的呼吸让肩膀轻轻起伏，一缕散落的栗色头发滑过脸颊，嘴唇轻轻张开，眉头舒展。镜头固定不动。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "Soft birdsong outside and the quiet rustle of linen. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here.",
+     "sound_zh": "窗外轻轻的鸟叫声和亚麻床单的轻响。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。",
+     "seed": 6601,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "02｜莉莉醒来摸到印记：你对我做了什么？",
+     "duration_seconds": 6,
+     "generation_seconds": 6,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "Killian",
+      "LilyShirt"
+     ],
+     "asset_keys": [
+      "bedroom",
+      "killian",
+      "lily_shirt"
+     ],
+     "image_reference_keys": [
+      "bedroom"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on medium close-up two-shot, both people from the head to the chest, in the middle third of the frame. Killian at frame-left in profile facing frame-right, in the tailored black three-piece suit, white shirt and dark tie, sitting on the edge of the bed, his eyes on her face, his lips set, his jaw relaxed, his brows level. Lily at frame-right on the bed propped on her left forearm, her face turned toward him in profile facing frame-left, in the oversized white shirt, her chestnut hair swept forward over her left shoulder, her right hand pressed to the back of her neck, her glossy wide eyes on his face, her lips trembling, her brows pulled up. The frame holds exactly two people: Killian and Lily. Bright warm morning sunlight pours through the open curtains across the bed, soft golden light, the room softly blurred behind. Fixed stage layout: the huge dark-wood bed with charcoal-grey linen fills the left and center of the frame; the tall dark-wood door with a brass handle is at frame-right; the floor-to-ceiling windows with the heavy curtains drawn back are at the back.",
+     "visual_zh": "莉莉醒来，一手按着颈后的印记，惊慌地问坐在床边的基利安：你对我做了什么？",
+     "camera_zh": "0—6秒，镜头固定。",
+     "dialogue": [
+      {
+       "speaker": "LilyShirt",
+       "text": "What did you do to me?",
+       "start_seconds": 1.0,
+       "end_seconds": 4.23,
+       "language": "en"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 6,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on medium close-up opens from the adopted first frame in [[asset:bedroom]]: [[asset:lily_shirt]] asks in a small, shaking voice, her right hand pressed to the back of her neck, her glossy wide eyes on his face, her lips trembling and her brows pulled up. [[asset:killian]] watches her calmly, his lips set and his jaw relaxed. The camera holds still.",
+       "visual_zh": "一个稳定的侧面中近景，从已采用的开场图继续，场景是主卧：莉莉用小小发抖的声音问，右手按在后颈上，湿亮的眼睛睁大看着他的脸，嘴唇发颤，眉头抬起。基利安平静地看着她，嘴唇抿着，下颌放松。镜头固定不动。",
+       "dialogue_indices": [
+        0
+       ]
+      }
+     ],
+     "sound_en": "A light morning breeze and a faint creak of the bed. Voices stay close and clear.",
+     "sound_zh": "轻轻的晨风和床垫细微的吱嘎声。人声近而清楚。",
+     "seed": 6602,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "03｜基利安抚过印记：现在我永远感觉得到你",
+     "duration_seconds": 6,
+     "generation_seconds": 6,
+     "continuity": "cut",
+     "depends_on_previous": true,
+     "use_previous_episode_state": false,
+     "characters": [
+      "Killian",
+      "LilyShirt"
+     ],
+     "asset_keys": [
+      "bedroom",
+      "killian",
+      "lily_shirt"
+     ],
+     "image_reference_keys": [
+      "bedroom"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on medium close-up two-shot, both people from the head to the chest, in the middle third of the frame. Killian at frame-left in profile facing frame-right, in the tailored black three-piece suit, white shirt and dark tie, sitting on the edge of the bed, his right fingertips resting on the crescent mark on her nape, his heavy eyes on the mark, his lips set, his jaw relaxed, his brows level. Lily at frame-right on the bed propped on her left forearm, her face turned toward him in profile facing frame-left, in the oversized white shirt, her chestnut hair swept forward over her left shoulder, her glossy eyes on his face, her lips parted, her brows pulled up. The frame holds exactly two people: Killian and Lily. Bright warm morning sunlight pours through the open curtains across the bed, soft golden light, the room softly blurred behind. Fixed stage layout: the huge dark-wood bed with charcoal-grey linen fills the left and center of the frame; the tall dark-wood door with a brass handle is at frame-right; the floor-to-ceiling windows with the heavy curtains drawn back are at the back.",
+     "visual_zh": "基利安的指尖抚过她颈后的印记，低声说：现在我永远感觉得到你。",
+     "camera_zh": "0—6秒，镜头固定。",
+     "dialogue": [
+      {
+       "speaker": "Killian",
+       "text": "Now I'll always feel you.",
+       "start_seconds": 1.0,
+       "end_seconds": 3.55,
+       "language": "en"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 6,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on medium close-up opens from the adopted first frame in [[asset:bedroom]]: the fingertips of [[asset:killian]] trace slowly along the crescent mark on her nape as he speaks in a low, husky voice, his heavy eyes on the mark, his lips set and his jaw relaxed. [[asset:lily_shirt]] shivers under his touch, her eyes drifting half shut and her lips parting. The camera holds still.",
+       "visual_zh": "一个稳定的侧面中近景，从已采用的开场图继续，场景是主卧：基利安的指尖慢慢描过她颈后的印记，用低沉沙哑的声音说话，沉沉的眼睛看着印记，嘴唇抿着，下颌放松。莉莉在他的触碰下轻轻一颤，眼睛慢慢半闭，嘴唇微张。镜头固定不动。",
+       "dialogue_indices": [
+        0
+       ]
+      }
+     ],
+     "sound_en": "The faint rustle of linen and slow breathing. Voices stay close and clear.",
+     "sound_zh": "亚麻床单轻轻的响声和缓慢的呼吸声。人声近而清楚。",
+     "seed": 6603,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "04｜基利安：长老们威胁你，我去收拾他们",
+     "duration_seconds": 6,
+     "generation_seconds": 6,
+     "continuity": "cut",
+     "depends_on_previous": true,
+     "use_previous_episode_state": false,
+     "characters": [
+      "Killian",
+      "LilyShirt"
+     ],
+     "asset_keys": [
+      "bedroom",
+      "killian",
+      "lily_shirt"
+     ],
+     "image_reference_keys": [
+      "bedroom"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on medium close-up two-shot, both people from the head to the chest, in the middle third of the frame. Killian at frame-left in profile facing frame-right, in the tailored black three-piece suit, white shirt and dark tie, sitting on the edge of the bed, his dark eyes fixed on her face, his lips set, his jaw tight, his brows level. Lily at frame-right on the bed propped on her left forearm, her face turned toward him in profile facing frame-left, in the oversized white shirt, her chestnut hair swept forward over her left shoulder, her eyes on his face, her lips parted, her brows drawn together. The frame holds exactly two people: Killian and Lily. Bright warm morning sunlight pours through the open curtains across the bed, soft golden light, the room softly blurred behind. Fixed stage layout: the huge dark-wood bed with charcoal-grey linen fills the left and center of the frame; the tall dark-wood door with a brass handle is at frame-right; the floor-to-ceiling windows with the heavy curtains drawn back are at the back.",
+     "visual_zh": "基利安看着她，用低沉冰冷的声音说，长老们威胁她，他要去收拾他们。",
+     "camera_zh": "0—6秒，镜头固定。",
+     "dialogue": [
+      {
+       "speaker": "Killian",
+       "text": "Elders threaten you. I'll silence them.",
+       "start_seconds": 1.0,
+       "end_seconds": 4.05,
+       "language": "en"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 6,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on medium close-up opens from the adopted first frame in [[asset:bedroom]]: [[asset:killian]] speaks in a low, cold, even voice, his dark eyes fixed on her face, his jaw tight and his lips hard. [[asset:lily_shirt]] listens, her brows drawing together and her lips parting. The camera holds still.",
+       "visual_zh": "一个稳定的侧面中近景，从已采用的开场图继续，场景是主卧：基利安用低沉冰冷平稳的声音说话，深色的眼睛一直盯着她的脸，下颌绷紧，嘴唇紧闭。莉莉听着，眉头渐渐拧起，嘴唇张开。镜头固定不动。",
+       "dialogue_indices": [
+        0
+       ]
+      }
+     ],
+     "sound_en": "A light morning breeze and a faint creak of the bed. Voices stay close and clear.",
+     "sound_zh": "轻轻的晨风和床垫细微的吱嘎声。人声近而清楚。",
+     "seed": 6604,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "05｜莉莉：你把我一个人留在这？",
+     "duration_seconds": 6,
+     "generation_seconds": 6,
+     "continuity": "cut",
+     "depends_on_previous": true,
+     "use_previous_episode_state": false,
+     "characters": [
+      "Killian",
+      "LilyShirt"
+     ],
+     "asset_keys": [
+      "bedroom",
+      "killian",
+      "lily_shirt"
+     ],
+     "image_reference_keys": [
+      "bedroom"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on medium close-up two-shot, both people from the head to the chest, in the middle third of the frame. Killian at frame-left in profile facing frame-right, in the tailored black three-piece suit, white shirt and dark tie, sitting on the edge of the bed, his eyes on her face, his lips flat, his jaw tight, his brows level. Lily at frame-right on the bed propped on her left forearm, her face turned toward him in profile facing frame-left, in the oversized white shirt, her chestnut hair swept forward over her left shoulder, her glossy eyes on his face, her lips trembling, her brows pulled up. The frame holds exactly two people: Killian and Lily. Bright warm morning sunlight pours through the open curtains across the bed, soft golden light, the room softly blurred behind. Fixed stage layout: the huge dark-wood bed with charcoal-grey linen fills the left and center of the frame; the tall dark-wood door with a brass handle is at frame-right; the floor-to-ceiling windows with the heavy curtains drawn back are at the back.",
+     "visual_zh": "莉莉用担心的小声音问：你把我一个人留在这？",
+     "camera_zh": "0—6秒，镜头固定。",
+     "dialogue": [
+      {
+       "speaker": "LilyShirt",
+       "text": "You're leaving me here alone?",
+       "start_seconds": 1.0,
+       "end_seconds": 3.73,
+       "language": "en"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 6,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on medium close-up opens from the adopted first frame in [[asset:bedroom]]: [[asset:lily_shirt]] asks in a small, worried voice, her glossy eyes on his face, her brows pulling up and her lips trembling. [[asset:killian]]'s jaw tightens as he looks at her. The camera holds still.",
+       "visual_zh": "一个稳定的侧面中近景，从已采用的开场图继续，场景是主卧：莉莉用小小的、担心的声音问，湿亮的眼睛看着他的脸，眉头抬起，嘴唇发颤。基利安看着她，下颌绷紧。镜头固定不动。",
+       "dialogue_indices": [
+        0
+       ]
+      }
+     ],
+     "sound_en": "A light morning breeze and a faint creak of the bed. Voices stay close and clear.",
+     "sound_zh": "轻轻的晨风和床垫细微的吱嘎声。人声近而清楚。",
+     "seed": 6605,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "06｜基利安：我回来之前不准出门",
+     "duration_seconds": 6,
+     "generation_seconds": 6,
+     "continuity": "cut",
+     "depends_on_previous": true,
+     "use_previous_episode_state": false,
+     "characters": [
+      "Killian",
+      "LilyShirt"
+     ],
+     "asset_keys": [
+      "bedroom",
+      "killian",
+      "lily_shirt"
+     ],
+     "image_reference_keys": [
+      "bedroom"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on medium close-up two-shot, both people from the head to the chest, in the middle third of the frame. Killian at frame-left in profile facing frame-right, in the tailored black three-piece suit, white shirt and dark tie, sitting on the edge of the bed, his eyes dark and fixed on her face, his lips set, his jaw tight, his brows level. Lily at frame-right on the bed propped on her left forearm, her face turned toward him in profile facing frame-left, in the oversized white shirt, her chestnut hair swept forward over her left shoulder, her eyes on his face, her lips pressed together, her brows pulled up. The frame holds exactly two people: Killian and Lily. Bright warm morning sunlight pours through the open curtains across the bed, soft golden light, the room softly blurred behind. Fixed stage layout: the huge dark-wood bed with charcoal-grey linen fills the left and center of the frame; the tall dark-wood door with a brass handle is at frame-right; the floor-to-ceiling windows with the heavy curtains drawn back are at the back.",
+     "visual_zh": "基利安用不容反驳的低声命令她：我回来之前，不准踏出别墅。",
+     "camera_zh": "0—6秒，镜头固定。",
+     "dialogue": [
+      {
+       "speaker": "Killian",
+       "text": "Don't step outside until I return.",
+       "start_seconds": 1.0,
+       "end_seconds": 4.05,
+       "language": "en"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 6,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on medium close-up opens from the adopted first frame in [[asset:bedroom]]: [[asset:killian]] lifts his left hand and cups her jaw, speaking in a low, steely voice, his dark eyes fixed on her face. [[asset:lily_shirt]] gives one small nod, her lips pressing together. The camera holds still.",
+       "visual_zh": "一个稳定的侧面中近景，从已采用的开场图继续，场景是主卧：基利安抬起左手托住她的下颌，用低沉如钢的声音说话，深色的眼睛一直盯着她的脸。莉莉轻轻点了一下头，嘴唇抿紧。镜头固定不动。",
+       "dialogue_indices": [
+        0
+       ]
+      }
+     ],
+     "sound_en": "A light morning breeze and a faint creak of the bed. Voices stay close and clear.",
+     "sound_zh": "轻轻的晨风和床垫细微的吱嘎声。人声近而清楚。",
+     "seed": 6606,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "07｜他吻在她额头上",
+     "duration_seconds": 4,
+     "generation_seconds": 4,
+     "continuity": "cut",
+     "depends_on_previous": true,
+     "use_previous_episode_state": false,
+     "characters": [
+      "Killian",
+      "LilyShirt"
+     ],
+     "asset_keys": [
+      "bedroom",
+      "killian",
+      "lily_shirt"
+     ],
+     "image_reference_keys": [
+      "bedroom"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on medium close-up two-shot, both people from the head to the chest, in the middle third of the frame. Killian at frame-left in profile facing frame-right, in the tailored black three-piece suit, white shirt and dark tie, sitting on the edge of the bed, leaning down toward her, his lips an inch above her forehead, his eyes lowered on her face, his jaw relaxed, his brows level. Lily at frame-right on the bed propped on her left forearm, her face turned toward him in profile facing frame-left, in the oversized white shirt, her chestnut hair swept forward over her left shoulder, her eyes closing, her lips parted, her brows soft. The frame holds exactly two people: Killian and Lily. Bright warm morning sunlight pours through the open curtains across the bed, soft golden light, the room softly blurred behind. Fixed stage layout: the huge dark-wood bed with charcoal-grey linen fills the left and center of the frame; the tall dark-wood door with a brass handle is at frame-right; the floor-to-ceiling windows with the heavy curtains drawn back are at the back.",
+     "visual_zh": "基利安低下头，在莉莉的额头上印下一个长长的吻，睁开眼时眼神里是病态的占有欲。",
+     "camera_zh": "0—4秒，镜头固定。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 4,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on medium close-up opens from the adopted first frame in [[asset:bedroom]]: [[asset:killian]] lowers his head and presses a long kiss to [[asset:lily_shirt]]'s forehead, his eyes closing and his brows soft; then his eyes open slowly, dark with a possessive gleam, his jaw tight and his face still close to hers. Her eyes close and her lips part. The camera holds still.",
+       "visual_zh": "一个稳定的侧面中近景，从已采用的开场图继续，场景是主卧：基利安低下头，在莉莉的额头上印下一个长长的吻，眼睛闭上；然后他慢慢睁开眼，深色的眼睛里带着占有欲的光，脸仍贴得很近。她的眼睛闭上，嘴唇微张。镜头固定不动。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "A soft sound of a kiss and slow breathing. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here.",
+     "sound_zh": "轻轻的一声吻声和缓慢的呼吸声。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。",
+     "seed": 6607,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "08｜基利安：等我回来，我们就结婚",
+     "duration_seconds": 6,
+     "generation_seconds": 6,
+     "continuity": "cut",
+     "depends_on_previous": true,
+     "use_previous_episode_state": false,
+     "characters": [
+      "Killian",
+      "LilyShirt"
+     ],
+     "asset_keys": [
+      "bedroom",
+      "killian",
+      "lily_shirt"
+     ],
+     "image_reference_keys": [
+      "bedroom"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on medium close-up two-shot, both people from the head to the chest, in the middle third of the frame. Killian at frame-left in profile facing frame-right, in the tailored black three-piece suit, white shirt and dark tie, sitting on the edge of the bed, his dark eyes on her face, his lips set, his jaw tight, his brows level. Lily at frame-right on the bed propped on her left forearm, her face turned toward him in profile facing frame-left, in the oversized white shirt, her chestnut hair swept forward over her left shoulder, her glossy eyes on his face, her lips parted, her brows pulled up. The frame holds exactly two people: Killian and Lily. Bright warm morning sunlight pours through the open curtains across the bed, soft golden light, the room softly blurred behind. Fixed stage layout: the huge dark-wood bed with charcoal-grey linen fills the left and center of the frame; the tall dark-wood door with a brass handle is at frame-right; the floor-to-ceiling windows with the heavy curtains drawn back are at the back.",
+     "visual_zh": "基利安用拇指擦过她的脸颊，低声说：等我回来，我们就结婚。",
+     "camera_zh": "0—6秒，镜头固定。",
+     "dialogue": [
+      {
+       "speaker": "Killian",
+       "text": "When I'm back, we marry.",
+       "start_seconds": 1.0,
+       "end_seconds": 3.67,
+       "language": "en"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 6,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on medium close-up opens from the adopted first frame in [[asset:bedroom]]: [[asset:killian]]'s thumb brushes slowly along her cheek as he speaks in a low, husky, possessive voice, his jaw tight, his brows low and his dark eyes on her face. [[asset:lily_shirt]] looks up at him, her glossy eyes widening and her lips parting. The camera holds still.",
+       "visual_zh": "一个稳定的侧面中近景，从已采用的开场图继续，场景是主卧：基利安的拇指慢慢擦过她的脸颊，用低沉沙哑、带着占有欲的声音说话，深色的眼睛看着她的脸。莉莉抬头看着他，湿亮的眼睛睁大，嘴唇微张。镜头固定不动。",
+       "dialogue_indices": [
+        0
+       ]
+      }
+     ],
+     "sound_en": "A light morning breeze and a faint creak of the bed. Voices stay close and clear.",
+     "sound_zh": "轻轻的晨风和床垫细微的吱嘎声。人声近而清楚。",
+     "seed": 6608,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "09｜莉莉在阳台上，看着车队开出铁门",
+     "duration_seconds": 4,
+     "generation_seconds": 4,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "LilyShirt"
+     ],
+     "asset_keys": [
+      "villa_balcony",
+      "lily_shirt"
+     ],
+     "image_reference_keys": [
+      "villa_balcony"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on medium shot of Lily alone, from the head to the knees, in the middle third of the frame, standing at the stone balustrade of the second-floor balcony in profile facing frame-right, in the oversized white men's shirt, her chestnut hair loose and stirring in the breeze, both hands resting on the stone rail, her lips parted, her brows soft, her wistful eyes on the last of three black SUVs rolling through the open tall black iron gates at frame-right below. The frame holds exactly one person, Lily. Soft clear morning sunlight, a pale blue sky, the garden softly blurred in the distance. Fixed stage layout: the carved stone balustrade runs along the front of the balcony; the gravel driveway and the tall black iron gates are at frame-right below; the hedge-lined back garden and the rusted warehouse roof are at frame-left in the distance; the dark stone wall and tall glass doors are behind.",
+     "visual_zh": "莉莉站在二楼阳台，看着最后一辆黑色车子驶出铁门，铁门在车后关上。",
+     "camera_zh": "0—4秒，镜头固定。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 4,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on medium shot opens from the adopted first frame in [[asset:villa_balcony]]: the last black SUV rolls out through the iron gates at frame-right and the heavy gates swing shut behind it, and [[asset:lily_shirt]]'s right hand rises to the back of her neck, her lips parting and her soft, wistful eyes on the closed gates. The camera holds still.",
+       "visual_zh": "一个稳定的侧面中景，从已采用的开场图继续，场景是二楼阳台：最后一辆黑色车子从画面右边的铁门驶出去，沉重的铁门在车后合拢；莉莉的右手抬到后颈，嘴唇微张，柔柔的、若有所思的眼睛看着关上的铁门。镜头固定不动。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "A distant car engine fading away and the clang of heavy gates closing. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here.",
+     "sound_zh": "远处渐渐远去的引擎声和沉重铁门合上的哐当声。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。",
+     "seed": 6609,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "10｜猎手躲在花园里，一脚踩断树枝",
+     "duration_seconds": 4,
+     "generation_seconds": 4,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "Rogue"
+     ],
+     "asset_keys": [
+      "garden_path",
+      "rogue"
+     ],
+     "image_reference_keys": [
+      "garden_path"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on wide-medium shot of Rogue alone, from the head to the boots, in profile facing frame-left, in the middle third of the frame, crouching low on the gravel path beside a tall dark hedge, in the patched black leather jacket, the long scar down his left cheek and across his eye, his gloved right hand resting on the hilt of the sheathed silver dagger, a dry twig lying under his right boot, his heavy brows lowered, his lips pulled back from yellowed teeth in a cruel grin, his narrowed eyes on the mansion's dark stone wall far at frame-left. The frame holds exactly one person, Rogue. Soft clear morning light, long shadows across the gravel. Fixed stage layout: the gravel path runs from frame-left to frame-right between tall dark hedges; the rusted corrugated-iron warehouse with its tall rusted iron double door stands at frame-right; the mansion's dark stone wall is far behind at frame-left.",
+     "visual_zh": "流浪狼人蹲在后花园的篱笆边，一脚踩断了地上的枯树枝，立刻僵住。",
+     "camera_zh": "0—4秒，镜头固定。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 4,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on wide-medium shot opens from the adopted first frame in [[asset:garden_path]]: [[asset:rogue]] shifts his weight forward and his boot comes down on the dry twig, which snaps with a sharp crack; he freezes at once, his lips tightening over his yellowed teeth, his heavy brows low and his narrowed eyes fixed on the far wall. The camera holds still.",
+       "visual_zh": "一个稳定的侧面宽中景，从已采用的开场图继续，场景是后花园的小路：流浪狼人身体往前一压，靴子踩在枯树枝上，“咔嚓”一声脆响；他立刻僵住，嘴唇收紧盖住发黄的牙，眉头压低，眯着的眼睛死死盯着远处的墙。镜头固定不动。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "A sharp crack of a dry twig, then a held breath and a hush. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here.",
+     "sound_zh": "枯树枝清脆的一声断裂，然后是屏住的呼吸和一片寂静。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。",
+     "seed": 6610,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "11｜树枝断裂，她猛地回头",
+     "duration_seconds": 4,
+     "generation_seconds": 4,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "LilyShirt"
+     ],
+     "asset_keys": [
+      "villa_balcony",
+      "lily_shirt"
+     ],
+     "image_reference_keys": [
+      "villa_balcony"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on medium shot of Lily alone, from the head to the knees, in the middle third of the frame, standing at the stone balustrade of the second-floor balcony in profile facing frame-right, in the oversized white men's shirt, her chestnut hair loose, both hands resting on the stone rail, her lips parted, her brows soft, her eyes on the closed black iron gates at frame-right. The hedge-lined back garden and the rusted warehouse roof are in the distance at frame-left. The frame holds exactly one person, Lily. Soft clear morning sunlight, a pale blue sky, the garden softly blurred in the distance. Fixed stage layout: the carved stone balustrade runs along the front of the balcony; the gravel driveway and the tall black iron gates are at frame-right below; the hedge-lined back garden and the rusted warehouse roof are at frame-left in the distance; the dark stone wall and tall glass doors are behind.",
+     "visual_zh": "一声很远的树枝断裂声，莉莉猛地回头看向左边的后花园。",
+     "camera_zh": "0—4秒，镜头固定。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 4,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on medium shot opens from the adopted first frame in [[asset:villa_balcony]]: a faint, distant crack of a breaking branch sounds, and [[asset:lily_shirt]] turns only her head toward frame-left, her eyes going wide on the hedge-lined garden and the rusted warehouse roof, her brows pulling up and her lips parting. The camera holds still.",
+       "visual_zh": "一个稳定的侧面中景，从已采用的开场图继续，场景是二楼阳台：传来一声很远、很轻的树枝断裂声，莉莉只是把头转向画面左边，睁大的眼睛看着篱笆围起来的后花园和生锈的仓库屋顶，眉头抬起，嘴唇张开。镜头固定不动。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "A faint, distant crack of a breaking branch, then a hush. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here.",
+     "sound_zh": "很远、很轻的一声树枝断裂声，然后是一片寂静。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。",
+     "seed": 6611,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "12｜黑影顺着墙壁爬上来",
+     "duration_seconds": 4,
+     "generation_seconds": 4,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "Rogue"
+     ],
+     "asset_keys": [
+      "rogue"
+     ],
+     "image_reference_keys": [],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Wide shot looking up the dark stone wall of the mansion from the garden below, in the middle third of the frame: Rogue, a lean man in a patched black leather jacket, climbing the wall hand over hand through thick ivy, his gloved fingers gripping the stone ledges, his scarred face turned upward, his lips pulled back from yellowed teeth, his narrowed eyes on the stone balustrade of the balcony at the top of the frame. The frame holds exactly one person, Rogue. Soft clear morning sunlight, a pale blue sky behind the roofline.",
+     "visual_zh": "流浪狼人顺着墙上的藤蔓飞快地往阳台爬。",
+     "camera_zh": "0—4秒，镜头固定。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 4,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady wide shot opens from the adopted first frame: [[asset:rogue]] climbs up the stone wall hand over hand through the ivy, his gloved fingers hooking the ledges and his boots scrabbling at the stone, his lips pulled back from his yellowed teeth and his narrowed eyes fixed on the balustrade above; loose ivy leaves flutter down. The camera holds still.",
+       "visual_zh": "一个稳定的宽景，从已采用的开场图继续：流浪狼人顺着墙上的藤蔓双手交替往上爬，戴手套的手指钩住石头的凹处，靴子在石墙上蹬着，嘴唇咧开露出发黄的牙，眯起的眼睛盯着上面的栏杆；散落的藤叶飘落下来。镜头固定不动。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "Scrabbling boots on stone and the rustle of ivy. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here.",
+     "sound_zh": "靴子在石头上蹬踏的声音和藤叶的沙沙声。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。",
+     "seed": 6612,
+     "dialogue_language": "en"
+    }
+   ],
+   "dialogue_language": "en"
+  },
+  {
+   "title": "剧本第17集｜银刃之下（重写）",
+   "summary": "猎手翻上阳台，闻出她是 Luna，银匕首划出血；车里的基利安平静，她后颈印记发金光，他心口剧痛眼睛变金，吼停车，撕掉车门先跑了。",
+   "script": "黑影翻过栏杆，捂住她的嘴，流浪狼人一下翻过栏杆，捂住莉莉的嘴，把她按在栏杆上。\n他嗅着她，你闻起来是纯正的 Luna，流浪狼人贪婪地嗅着她的头发，说她闻起来是纯正的 Luna；莉莉拼命挣扎。\nRogue：“You smell like pure Luna.”\n银匕首贴上她的脖子，乖乖跟我走，流浪狼人把淬了毒的银匕首压在她脖子上，血已经淌下来，他说，乖乖跟我走，不然我割深一点。\nRogue：“Come quietly, or I cut deeper.”\n车队里的基利安，平静地靠在后座，疾驶的黑色SUV里，基利安靠在后座上，神情平静。\n特写，她后颈的印记亮起金光，特写，莉莉后颈的新月印记亮起一阵金色的光，她的下巴在发抖。\n基利安心口剧痛，眼睛变成金色，基利安心口一阵剧痛，猛地睁眼，眼睛变成暗金色，指尖长出黑色的爪。\n他怒吼，停车！，基利安怒吼着让停车，侧窗被震出蛛网般的裂纹，前座的保镖吓得一激灵。\nKillianGold：“Stop the car!”\n后座空了，车门被撕掉，保镖愣住，后座空了，车门被撕得歪在一边，保镖愣愣地看着空座位。",
+   "segments": [
+    {
+     "title": "01｜黑影翻过栏杆，捂住她的嘴",
+     "duration_seconds": 4,
+     "generation_seconds": 4,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "Rogue",
+      "LilyShirt"
+     ],
+     "asset_keys": [
+      "villa_balcony",
+      "rogue",
+      "lily_shirt"
+     ],
+     "image_reference_keys": [
+      "villa_balcony"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on medium-wide two-shot, both people from the head to the knees, in the middle third of the frame, on the second-floor stone balcony. Lily at frame-right standing at the stone balustrade in profile facing frame-left, in the oversized white men's shirt, her chestnut hair loose, her right hand at the back of her neck, her lips parted, her brows pulled up, her wide eyes on the garden hedges at frame-left. Rogue at frame-left on the far side of the balustrade, his gloved hands gripping the top of the stone rail and his head and shoulders risen above it, in the patched black leather jacket, the long scar down his left cheek, his lips pulled back from yellowed teeth, his narrowed eyes on Lily. The frame holds exactly two people: Lily and Rogue. Soft clear morning sunlight, a pale blue sky, the garden softly blurred in the distance. Fixed stage layout: the carved stone balustrade runs along the front of the balcony; the gravel driveway and the tall black iron gates are at frame-right below; the hedge-lined back garden and the rusted warehouse roof are at frame-left in the distance; the dark stone wall and tall glass doors are behind.",
+     "visual_zh": "流浪狼人一下翻过栏杆，捂住莉莉的嘴，把她按在栏杆上。",
+     "camera_zh": "0—4秒，镜头固定。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 4,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on medium-wide two-shot opens from the adopted first frame in [[asset:villa_balcony]]: [[asset:rogue]] vaults over the stone balustrade in one motion and lands close in front of her, his lips pulled back from his yellowed teeth. His left hand clamps over her mouth and his right arm locks across her collarbone, slamming her back against the stone rail. [[asset:lily_shirt]]'s eyes go wide, her brows pull up and a muffled cry escapes behind his hand. The camera holds still.",
+       "visual_zh": "一个稳定的侧面中宽双人镜头，从已采用的开场图继续，场景是二楼阳台：流浪狼人一下翻过石栏杆，落在莉莉面前，左手捂住她的嘴，右臂横卡在她的锁骨上，把她狠狠按在石栏杆上，她的眼睛睁大，眉头抬起，一声闷叫从他的手底下漏出来。镜头固定不动。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "A scuff of boots landing on stone and a muffled cry. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here.",
+     "sound_zh": "靴子落在石头上的一声摩擦，和一声被堵住的闷叫。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。",
+     "seed": 6701,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "02｜他嗅着她：你闻起来是纯正的 Luna",
+     "duration_seconds": 6,
+     "generation_seconds": 6,
+     "continuity": "cut",
+     "depends_on_previous": true,
+     "use_previous_episode_state": false,
+     "characters": [
+      "Rogue",
+      "LilyShirt"
+     ],
+     "asset_keys": [
+      "villa_balcony",
+      "rogue",
+      "lily_shirt"
+     ],
+     "image_reference_keys": [
+      "villa_balcony"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on medium close-up two-shot, both people from the head to the chest, in the middle third of the frame, at the stone balustrade. Lily at frame-right, pinned back against the stone rail in the oversized white men's shirt, Rogue's left hand clamped over her mouth, her wide eyes wet with tears, her brows pulled up, her chest heaving, both hands gripping his wrist. Rogue directly behind her at frame-left in the patched black leather jacket, the long scar down his left cheek, his scarred face lowered beside her hair, his nostrils flared, his eyes half closed, his lips curling into a greedy grin over yellowed teeth. The frame holds exactly two people: Lily and Rogue. Soft clear morning sunlight, a pale blue sky, the garden softly blurred in the distance. Fixed stage layout: the carved stone balustrade runs along the front of the balcony; the gravel driveway and the tall black iron gates are at frame-right below; the hedge-lined back garden and the rusted warehouse roof are at frame-left in the distance; the dark stone wall and tall glass doors are behind.",
+     "visual_zh": "流浪狼人贪婪地嗅着她的头发，说她闻起来是纯正的 Luna；莉莉拼命挣扎。",
+     "camera_zh": "0—6秒，镜头固定。",
+     "dialogue": [
+      {
+       "speaker": "Rogue",
+       "text": "You smell like pure Luna.",
+       "start_seconds": 1.0,
+       "end_seconds": 3.55,
+       "language": "en"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 6,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on medium close-up opens from the adopted first frame in [[asset:villa_balcony]]: [[asset:rogue]] breathes in deeply beside her hair, his eyes half closing and his lips curling into a greedy grin, and speaks in a low, wheezing, sly voice. [[asset:lily_shirt]] fights against his hold, her wet eyes wide and her brows pulled up, her hands dragging at his wrist. The camera holds still.",
+       "visual_zh": "一个稳定的侧面中近景，从已采用的开场图继续，场景是二楼阳台：流浪狼人在她的头发边深深吸了一口气，眼睛半闭，贪婪的笑容更大，用低沉、带喘息的狡猾声音说话。莉莉拼命挣扎，湿润的眼睛睁大，眉头抬起，双手拽着他的手腕。镜头固定不动。",
+       "dialogue_indices": [
+        0
+       ]
+      }
+     ],
+     "sound_en": "A wheezing breath and the scuff of bare feet on stone. Voices stay close and clear.",
+     "sound_zh": "一声嘶哑的喘息和光脚蹭在石头上的摩擦声。人声近而清楚。",
+     "seed": 6702,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "03｜银匕首贴上她的脖子：乖乖跟我走",
+     "duration_seconds": 6,
+     "generation_seconds": 6,
+     "continuity": "cut",
+     "depends_on_previous": true,
+     "use_previous_episode_state": false,
+     "characters": [
+      "Rogue",
+      "LilyShirt"
+     ],
+     "asset_keys": [
+      "villa_balcony",
+      "rogue",
+      "lily_shirt"
+     ],
+     "image_reference_keys": [
+      "villa_balcony"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on medium close-up two-shot, both people from the head to the chest, in the middle third of the frame, at the stone balustrade. Lily at frame-right, pinned back against the stone rail in the oversized white men's shirt, her chin lifted away from the blade, her lips pressed tight and trembling, her brows pulled up, tears on her lashes, her wide eyes on the dagger. Rogue directly behind her at frame-left in the patched black leather jacket, the long scar down his left cheek, his left arm locked across her collarbone and his right hand holding a silver dagger with a faint green sheen of poison, its flat laid against the left side of her throat, a thin red line of blood already running down her neck, his lips pulled into a cruel grin, his narrowed eyes on her face. The frame holds exactly two people: Lily and Rogue. Soft clear morning sunlight, a pale blue sky, the garden softly blurred in the distance. Fixed stage layout: the carved stone balustrade runs along the front of the balcony; the gravel driveway and the tall black iron gates are at frame-right below; the hedge-lined back garden and the rusted warehouse roof are at frame-left in the distance; the dark stone wall and tall glass doors are behind.",
+     "visual_zh": "流浪狼人把淬了毒的银匕首压在她脖子上，血已经淌下来，他说：乖乖跟我走，不然我割深一点。",
+     "camera_zh": "0—6秒，镜头固定。",
+     "dialogue": [
+      {
+       "speaker": "Rogue",
+       "text": "Come quietly, or I cut deeper.",
+       "start_seconds": 1.0,
+       "end_seconds": 4.17,
+       "language": "en"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 6,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on medium close-up opens from the adopted first frame in [[asset:villa_balcony]]: [[asset:rogue]] presses the edge of the silver dagger harder against [[asset:lily_shirt]]'s throat and speaks in a low, savage whisper, his lips curled into a cruel grin; the thin line of red blood along the blade widens and runs down her neck. She freezes, her chin lifting, her lips trembling and her wide eyes brimming with tears. The camera holds still.",
+       "visual_zh": "一个稳定的侧面中近景，从已采用的开场图继续，场景是二楼阳台：流浪狼人把银匕首的刃口更用力地压在莉莉的喉咙上，用低沉凶狠的耳语说话，嘴角扯出残忍的笑；刀刃上那道细细的血线变宽，淌下她的脖子。她僵住了，下巴抬起，嘴唇发颤，睁大的眼睛里蓄满泪水。镜头固定不动。",
+       "dialogue_indices": [
+        0
+       ]
+      }
+     ],
+     "sound_en": "A thin metallic hiss of a blade on skin and a shaky breath. Voices stay close and clear.",
+     "sound_zh": "刀刃贴着皮肤细细的金属嘶声，和一声发抖的呼吸。人声近而清楚。",
+     "seed": 6703,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "04｜车队里的基利安，平静地靠在后座",
+     "duration_seconds": 4,
+     "generation_seconds": 4,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "Killian"
+     ],
+     "asset_keys": [
+      "suv_interior",
+      "killian"
+     ],
+     "image_reference_keys": [
+      "suv_interior"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on medium shot of Killian alone, from the head to the knees, in the middle third of the frame, sitting on the cream leather rear bench at frame-right in profile facing frame-left, in the tailored black three-piece suit, white shirt and dark tie, his right arm resting along the seat back, his left hand relaxed on his thigh, his lips softly closed, his jaw relaxed, his brows level, his calm dark-gray eyes on the headrest of the front seat in front of him. The frame holds exactly one person, Killian. Soft clear daylight through the windows, the pine forest softly blurred outside. Fixed stage layout: the two black leather front seats are at frame-left; the cream leather rear bench is at frame-right; the large side window behind the rear bench shows dark pine trees and a winding grey road.",
+     "visual_zh": "疾驶的黑色SUV里，基利安靠在后座上，神情平静。",
+     "camera_zh": "0—4秒，镜头固定。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 4,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on medium shot opens from the adopted first frame in [[asset:suv_interior]]: dark pine trunks slide past the large side window as [[asset:killian]] sits calmly, his chest rising and falling slowly, his lips softly closed, his jaw relaxed and his brows level. The camera holds still.",
+       "visual_zh": "一个稳定的侧面中景，从已采用的开场图继续，场景是行驶的黑色SUV车内：深色的松树树干从大侧窗外一棵棵滑过，基利安平静地坐着，胸口缓慢起伏，嘴唇轻轻闭着，下颌放松，眉头平整。镜头固定不动。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "The low steady hum of an engine and tires on asphalt. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here.",
+     "sound_zh": "发动机低沉平稳的嗡鸣和轮胎碾过柏油路的声音。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。",
+     "seed": 6704,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "05｜特写：她后颈的印记亮起金光",
+     "duration_seconds": 3,
+     "generation_seconds": 3,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "LilyShirt"
+     ],
+     "asset_keys": [
+      "villa_balcony",
+      "lily_shirt"
+     ],
+     "image_reference_keys": [
+      "villa_balcony"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Close-up from behind and slightly to the left of Lily's head, neck and shoulders, in the middle third of the frame, her long chestnut hair swept forward over her left shoulder so that her nape is bare, the collar of the oversized white men's shirt low on her shoulders; on the center of her nape the dark-red crescent-moon mark in an ornate, tattoo-like pattern, a thin red line of blood running down the side of her neck, her chin lifted and her jaw trembling, the stone balustrade softly blurred beyond her. The frame holds exactly one person, Lily. Soft clear morning sunlight, a pale blue sky, the garden softly blurred in the distance. Fixed stage layout: the carved stone balustrade runs along the front of the balcony; the gravel driveway and the tall black iron gates are at frame-right below; the hedge-lined back garden and the rusted warehouse roof are at frame-left in the distance; the dark stone wall and tall glass doors are behind.",
+     "visual_zh": "特写：莉莉后颈的新月印记亮起一阵金色的光，她的下巴在发抖。",
+     "camera_zh": "0—3秒，镜头固定。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 3,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady close-up opens from the adopted first frame in [[asset:villa_balcony]]: the crescent mark on [[asset:lily_shirt]]'s nape flares with a warm golden glow that pulses once, then again, brightening and fading as her shoulders shake and her jaw trembles. The camera holds still.",
+       "visual_zh": "一个稳定的特写，从已采用的开场图继续，场景是二楼阳台：莉莉后颈的新月印记亮起一阵温暖的金光，闪一下，再闪一下，忽亮忽暗，她的肩膀在发抖，下颌在颤。镜头固定不动。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "A deep heartbeat thump, once and again, and a trembling breath. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here.",
+     "sound_zh": "一下深沉的心跳声，又一下，和一声发抖的呼吸。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。",
+     "seed": 6705,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "06｜基利安心口剧痛，眼睛变成金色",
+     "duration_seconds": 3,
+     "generation_seconds": 3,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "KillianGold"
+     ],
+     "asset_keys": [
+      "suv_interior",
+      "killian_gold"
+     ],
+     "image_reference_keys": [
+      "suv_interior"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on medium close-up of Killian alone, from the head to the chest, in profile facing frame-left, in the middle third of the frame, sitting on the cream leather rear bench at frame-right in the tailored black three-piece suit, his eyes closed, his lips softly closed, his brows just beginning to draw together, his hands resting on his lap. The large side window behind the bench shows dark pine trees. The frame holds exactly one person, Killian. Soft clear daylight through the windows, the pine forest softly blurred outside. Fixed stage layout: the two black leather front seats are at frame-left; the cream leather rear bench is at frame-right; the large side window behind the rear bench shows dark pine trees and a winding grey road.",
+     "visual_zh": "基利安心口一阵剧痛，猛地睁眼，眼睛变成暗金色，指尖长出黑色的爪。",
+     "camera_zh": "0—3秒，镜头固定。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 3,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on medium close-up opens from the adopted first frame in [[asset:suv_interior]]: [[asset:killian_gold]]'s body jolts and his right hand clamps over his heart, black claws extending from his fingertips; his eyes snap open, glowing dark gold, his jaw clenching, his lips pulling back from sharp canine teeth and his brows crashing together. The camera holds still.",
+       "visual_zh": "一个稳定的侧面中近景，从已采用的开场图继续，场景是行驶的黑色SUV车内：基利安的身体猛地一震，右手按住心口，指尖伸出黑色的爪；他的眼睛猛地睁开，发出暗金色的光，下颌咬紧，嘴唇咧开露出尖利的犬齿，眉头拧在一起。镜头固定不动。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "A sharp gasp and the hum of an engine. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here.",
+     "sound_zh": "一声猛烈的抽气和发动机的嗡鸣。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。",
+     "seed": 6706,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "07｜他怒吼：停车！",
+     "duration_seconds": 6,
+     "generation_seconds": 6,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "KillianGold",
+      "Bodyguard"
+     ],
+     "asset_keys": [
+      "suv_interior",
+      "killian_gold",
+      "bodyguard"
+     ],
+     "image_reference_keys": [
+      "suv_interior"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on medium two-shot, both people from the head to the waist, in the middle third of the frame, inside the black SUV. Bodyguard at frame-left in the black leather front passenger seat, in the black suit with the clear earpiece, turned toward the back seat in profile facing frame-right, his stern face startled, his lips parted, his brows pulled up, his wide eyes on Killian. Killian at frame-right on the cream leather rear bench in profile facing frame-left, in the tailored black three-piece suit, his right hand clutching his chest with long black claws, his eyes glowing dark gold, his teeth bared, his jaw clenched, his brows crashing together. The frame holds exactly two people: Bodyguard and Killian. Soft clear daylight through the windows, the pine forest softly blurred outside. Fixed stage layout: the two black leather front seats are at frame-left; the cream leather rear bench is at frame-right; the large side window behind the rear bench shows dark pine trees and a winding grey road.",
+     "visual_zh": "基利安怒吼着让停车，侧窗被震出蛛网般的裂纹，前座的保镖吓得一激灵。",
+     "camera_zh": "0—6秒，镜头固定。",
+     "dialogue": [
+      {
+       "speaker": "KillianGold",
+       "text": "Stop the car!",
+       "start_seconds": 1.0,
+       "end_seconds": 2.73,
+       "language": "en"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 6,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on medium two-shot opens from the adopted first frame in [[asset:suv_interior]]: [[asset:killian_gold]] roars the order in a raw, thunderous voice, his mouth wide and his glowing gold eyes blazing, his claws digging into his chest; behind him the large side window splits with a spreading spiderweb crack in the glass. [[asset:bodyguard]] flinches hard, his lips parting, his brows jerking up and his wide eyes locked on Killian. The camera holds still.",
+       "visual_zh": "一个稳定的侧面中景双人镜头，从已采用的开场图继续，场景是行驶的黑色SUV车内：基利安用粗哑如雷的声音吼出命令，嘴张得很大，发光的金色眼睛怒火燃烧，爪子抠进胸口；他身后的大侧窗里，玻璃裂开蛛网一样越扩越大的裂纹。保镖猛地一缩，嘴唇张开，眉头一跳，睁大的眼睛死死盯着基利安。镜头固定不动。",
+       "dialogue_indices": [
+        0
+       ]
+      }
+     ],
+     "sound_en": "A thunderous roar, the sharp crack of splitting glass and a screech of brakes. Voices stay close and clear.",
+     "sound_zh": "雷鸣般的怒吼、玻璃裂开的一声脆响和刹车的尖啸。人声近而清楚。",
+     "seed": 6707,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "08｜后座空了，车门被撕掉，保镖愣住",
+     "duration_seconds": 4,
+     "generation_seconds": 4,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "Bodyguard"
+     ],
+     "asset_keys": [
+      "suv_interior",
+      "bodyguard"
+     ],
+     "image_reference_keys": [
+      "suv_interior"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on medium shot of Bodyguard alone, from the head to the waist, in the middle third of the frame, inside the stopped black SUV, in the front passenger seat at frame-left, turned around toward the rear bench in profile facing frame-right, in the black suit with the clear earpiece, his stern face frozen, his lips parted, his brows pulled up, his wide eyes on the empty cream leather rear bench at frame-right, whose rear door hangs wide open, wrenched off its upper hinge, daylight and pine trunks showing through the gap. The frame holds exactly one person, Bodyguard. Soft clear daylight through the windows, the pine forest softly blurred outside. Fixed stage layout: the two black leather front seats are at frame-left; the cream leather rear bench is at frame-right; the large side window behind the rear bench shows dark pine trees and a winding grey road.",
+     "visual_zh": "后座空了，车门被撕得歪在一边，保镖愣愣地看着空座位。",
+     "camera_zh": "0—4秒，镜头固定。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 4,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on medium shot opens from the adopted first frame in [[asset:suv_interior]]: the wrenched rear door swings slowly on its broken hinge over the empty cream leather bench, pine needles drifting in through the gap, while [[asset:bodyguard]] stares at the empty seat, his lips parting, his brows pulling up and his wide eyes unblinking. The camera holds still.",
+       "visual_zh": "一个稳定的侧面中景，从已采用的开场图继续，场景是停下的黑色SUV车内：被撕坏的后车门在断裂的合页上慢慢晃着，挂在空空的奶油色后座上方，松针从缺口飘进来；保镖愣愣地盯着空座位，嘴唇张开，眉头抬起，睁大的眼睛一眨不眨。镜头固定不动。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "A shriek of tires fading into silence, a creaking hinge and a sharp breath. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here.",
+     "sound_zh": "刹车的尖啸渐渐消失，合页吱呀作响，和一声急促的抽气。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。",
+     "seed": 6708,
+     "dialogue_language": "en"
+    }
+   ],
+   "dialogue_language": "en"
+  },
+  {
+   "title": "剧本第18集｜暴君的回顾（重写）",
+   "summary": "莉莉被拖进仓库，保罗玛丽等着；玛丽见血大笑，保罗骂她选了怪物、扬手要打；铁门炸飞，黑狼走出，猎手吓掉刀，莉莉认出金眼睛，黑狼咆哮扑出。",
+   "script": "狼人把流血的莉莉拖过后花园，流浪狼人拽着脖子在流血的莉莉，穿过后花园的小路，拖向仓库。\n仓库里，保罗和玛丽早就在等，仓库里，保罗和玛丽并排站着等；听到门外的脚步声，两个人同时抬起头。\n他把她推进仓库，关上铁门，流浪狼人把莉莉一把推进仓库，她摔倒在水泥地上，他把铁门拉上。\n玛丽看见血，兴奋大笑，玛丽看着莉莉脖子上的血，兴奋地笑着说，看那么多血！\nMaryBlack：“Look at all that blood!”\n保罗捏住她的脸，你选了那个怪物，不选我，保罗弯下腰狠狠捏住莉莉的脸，红着眼睛吼，你选了那个怪物，不选我！\nPaulOnScreen：“You chose that monster over me!”\n保罗扬起手要打下去，保罗把手高高扬起，莉莉闭紧眼睛等着挨打。\n铁门被炸飞，一声巨响，仓库的铁门整扇炸飞进来，砸在地上，烟尘滚滚。\n保罗和玛丽被吓得后退，保罗和玛丽被巨响吓得踉跄后退，一个举手挡脸，一个捂住嘴。\n黑狼从烟尘里走出来，一头巨大的纯黑狼从烟尘里慢慢走出来，眼睛是暗金色的。\n流浪狼人吓得刀掉在地上，你怎么这么快就到了，流浪狼人吓得匕首脱手，腿一软，哆嗦着问，你怎么这么快就到了，基利安？\nRogue：“How are you here already, Killian?”\n莉莉认出了那双金色的眼睛，莉莉跪在地上，捂着流血的脖子，认出了那双金色的眼睛，轻声问，是你吗？\nLilyShirt：“Is that you, Killian?”\n黑狼咆哮着扑出去，黑狼仰头一声震天的咆哮，然后猛地向左扑了出去。",
+   "segments": [
+    {
+     "title": "01｜狼人把流血的莉莉拖过后花园",
+     "duration_seconds": 4,
+     "generation_seconds": 4,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "Rogue",
+      "LilyShirt"
+     ],
+     "asset_keys": [
+      "garden_path",
+      "rogue",
+      "lily_shirt"
+     ],
+     "image_reference_keys": [
+      "garden_path"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on wide-medium two-shot, both people from the head to the knees, in the middle third of the frame, on the gravel path between the tall dark hedges, both in profile facing frame-right, the rusted warehouse ahead at frame-right. Rogue at frame-left in the patched black leather jacket, his left hand gripping Lily's right upper arm and his right hand holding the silver dagger low at his side, his lips pulled into a cruel grin, his narrowed eyes on the warehouse door at frame-right. Lily at frame-right of him in the oversized white men's shirt, stumbling forward barefoot on the gravel, a thin line of blood down the left side of her neck, her chestnut hair tangled, her lips pressed together and trembling, her brows pulled up, her wet eyes on the gravel. The frame holds exactly two people: Rogue and Lily. Soft clear morning light, long shadows across the gravel. Fixed stage layout: the gravel path runs from frame-left to frame-right between tall dark hedges; the rusted corrugated-iron warehouse with its tall rusted iron double door stands at frame-right; the mansion's dark stone wall is far behind at frame-left.",
+     "visual_zh": "流浪狼人拽着脖子在流血的莉莉，穿过后花园的小路，拖向仓库。",
+     "camera_zh": "0—4秒，镜头固定。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 4,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on wide-medium two-shot opens from the adopted first frame in [[asset:garden_path]]: [[asset:rogue]] drags her along the gravel path toward the warehouse door at frame-right, his lips curled into a cruel grin. [[asset:lily_shirt]] stumbles barefoot over the stones, blood trickling down her neck, her lips trembling and her brows pulled up. The camera holds still.",
+       "visual_zh": "一个稳定的侧面宽中双人镜头，从已采用的开场图继续，场景是后花园的小路：流浪狼人拽着莉莉沿碎石路拖向画面右边的仓库门，残忍的笑容更大；她光着的脚在石子上踉跄，血顺着脖子淌下来，嘴唇发颤。镜头固定不动。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "Boots and bare feet scuffing over gravel and a shaky breath. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here.",
+     "sound_zh": "靴子和光脚在碎石上拖行的摩擦声，和一声发抖的呼吸。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。",
+     "seed": 6801,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "02｜仓库里，保罗和玛丽早就在等",
+     "duration_seconds": 4,
+     "generation_seconds": 4,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "PaulOnScreen",
+      "MaryBlack"
+     ],
+     "asset_keys": [
+      "warehouse",
+      "paul",
+      "mary_black"
+     ],
+     "image_reference_keys": [
+      "warehouse"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on medium two-shot, both people from the head to the knees, in the middle third of the frame, standing side by side on the concrete floor of the warehouse, both in profile facing frame-right toward the closed tall rusted iron double door at frame-right. Paul at frame-left in the creased navy blazer, his arms folded, his lips pressed tight, his brows drawn together, his red-rimmed eyes on the door. Mary at frame-right in the fitted black wool coat, her right heel tapping on the concrete, her chin lifted, her lips set in a thin cold smug smile, her sharp green eyes on the door. The frame holds exactly two people: Paul and Mary. Dim, dusty light with pale shafts from the high windows, the warehouse softly blurred behind. Fixed stage layout: the tall rusted iron double door is at frame-right; the stacked wooden crates and steel barrels are at frame-left; concrete pillars stand in the middle and shafts of dusty light fall from the high windows at the back.",
+     "visual_zh": "仓库里，保罗和玛丽并排站着等；听到门外的脚步声，两个人同时抬起头。",
+     "camera_zh": "0—4秒，镜头固定。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 4,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on medium two-shot opens from the adopted first frame in [[asset:warehouse]]: faint footsteps crunch on gravel outside the door. [[asset:mary_black]] stops tapping her heel, her head lifting, her cold smug smile widening and her green eyes bright. [[asset:paul]]'s arms unfold, his lips parting, his brows lifting and his red-rimmed eyes widening with hungry eagerness. The camera holds still.",
+       "visual_zh": "一个稳定的侧面中景双人镜头，从已采用的开场图继续，场景是废弃仓库：门外传来碎石上轻轻的脚步声。玛丽停下了敲地的脚跟，头抬起来，冷冷的得意笑容更深，绿眼睛发亮。保罗抱着的手臂放下来，嘴唇张开，眉头扬起，发红的眼睛带着贪婪的急切越睁越大。镜头固定不动。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "Faint footsteps on gravel outside and the creak of an old building. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here.",
+     "sound_zh": "门外碎石上轻轻的脚步声和旧建筑的吱嘎声。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。",
+     "seed": 6802,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "03｜他把她推进仓库，关上铁门",
+     "duration_seconds": 4,
+     "generation_seconds": 4,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "Rogue",
+      "LilyShirt"
+     ],
+     "asset_keys": [
+      "warehouse",
+      "rogue",
+      "lily_shirt"
+     ],
+     "image_reference_keys": [
+      "warehouse"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on wide-medium two-shot, both people from the head to the knees, in the middle third of the frame, inside the warehouse. Rogue at frame-right standing in the opening of the tall rusted iron double door with daylight spilling in behind him, in the patched black leather jacket, his right arm still extended from a shove, the silver dagger in his left hand, his lips pulled into a cruel grin, his narrowed eyes on Lily. Lily at frame-left in the oversized white men's shirt, stumbling forward barefoot onto the concrete floor, both hands reaching for the floor, a thin line of blood down the left side of her neck, her lips parted, her brows pulled up, her wide eyes on the concrete. The frame holds exactly two people: Rogue and Lily. Dim, dusty light with pale shafts from the high windows, the warehouse softly blurred behind. Fixed stage layout: the tall rusted iron double door is at frame-right; the stacked wooden crates and steel barrels are at frame-left; concrete pillars stand in the middle and shafts of dusty light fall from the high windows at the back.",
+     "visual_zh": "流浪狼人把莉莉一把推进仓库，她摔倒在水泥地上，他把铁门拉上。",
+     "camera_zh": "0—4秒，镜头固定。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 4,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on wide-medium two-shot opens from the adopted first frame in [[asset:warehouse]]: [[asset:lily_shirt]] stumbles forward and drops onto her hands and knees on the concrete, her chestnut hair falling around her face, her lips parting and her brows pulling up. [[asset:rogue]] drags the tall iron double door shut behind him with a heavy clang, his lips curling into a cruel grin and his narrowed eyes on her. The camera holds still.",
+       "visual_zh": "一个稳定的侧面宽中双人镜头，从已采用的开场图继续，场景是废弃仓库：莉莉踉跄向前，双手双膝摔在水泥地上，栗色的头发垂在脸边，嘴唇张开，眉头抬起。流浪狼人在身后“哐当”一声把高大的铁双开门拉上，残忍的笑容更大，眯着的眼睛盯着她。镜头固定不动。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "A hard thud of knees on concrete, a sharp gasp and the heavy clang of an iron door. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here.",
+     "sound_zh": "膝盖重重磕在水泥地上的闷响、一声急促的抽气，和铁门沉重的哐当声。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。",
+     "seed": 6803,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "04｜玛丽看见血，兴奋大笑",
+     "duration_seconds": 6,
+     "generation_seconds": 6,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "MaryBlack",
+      "LilyShirt"
+     ],
+     "asset_keys": [
+      "warehouse",
+      "mary_black",
+      "lily_shirt"
+     ],
+     "image_reference_keys": [
+      "warehouse"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on medium two-shot, both people from the head to the knees, in the middle third of the frame, on the concrete floor of the warehouse. Mary at frame-right standing in the fitted black wool coat, her hands clasped at her chest, her lips parted in a gleeful laugh, her chin lifted, her sharp green eyes bright and wide on Lily's bleeding neck. Lily at frame-left kneeling on the concrete in the oversized white men's shirt, her left hand pressed to the bleeding side of her neck with blood between her fingers, her head bowed, her lips pressed tight, her brows pulled together, tears on her cheeks, her eyes on the floor. The frame holds exactly two people: Mary and Lily. Dim, dusty light with pale shafts from the high windows, the warehouse softly blurred behind. Fixed stage layout: the tall rusted iron double door is at frame-right; the stacked wooden crates and steel barrels are at frame-left; concrete pillars stand in the middle and shafts of dusty light fall from the high windows at the back.",
+     "visual_zh": "玛丽看着莉莉脖子上的血，兴奋地笑着说：看那么多血！",
+     "camera_zh": "0—6秒，镜头固定。",
+     "dialogue": [
+      {
+       "speaker": "MaryBlack",
+       "text": "Look at all that blood!",
+       "start_seconds": 1.0,
+       "end_seconds": 3.73,
+       "language": "en"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 6,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on medium two-shot opens from the adopted first frame in [[asset:warehouse]]: [[asset:mary_black]] at frame-right speaks in a gleeful, sugary voice, her lips curled into a delighted grin, her eyes bright on Lily's bleeding neck and her chin tilting up. [[asset:lily_shirt]] at frame-left presses her hand harder against her neck, her head sinking lower, her lips trembling and tears running down her cheeks. The camera holds still.",
+       "visual_zh": "一个稳定的侧面中景双人镜头，从已采用的开场图继续，场景是废弃仓库：画面右边的玛丽用兴奋甜腻的声音说话，眼睛亮亮地盯着莉莉流血的脖子，下巴抬起。画面左边的莉莉把手更用力地按在脖子上，头垂得更低，嘴唇发颤，眼泪顺着脸颊流下来。镜头固定不动。",
+       "dialogue_indices": [
+        0
+       ]
+      }
+     ],
+     "sound_en": "A gleeful laugh echoing in the empty warehouse and a faint drip of water. Voices stay close and clear.",
+     "sound_zh": "空荡荡的仓库里回响的兴奋笑声，和细微的滴水声。人声近而清楚。",
+     "seed": 6804,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "05｜保罗捏住她的脸：你选了那个怪物，不选我",
+     "duration_seconds": 6,
+     "generation_seconds": 6,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "PaulOnScreen",
+      "LilyShirt"
+     ],
+     "asset_keys": [
+      "warehouse",
+      "paul",
+      "lily_shirt"
+     ],
+     "image_reference_keys": [
+      "warehouse"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on medium two-shot, both people from the head to the knees, in the middle third of the frame, on the concrete floor of the warehouse. Paul at frame-right standing in the creased navy blazer, bending forward, his right hand gripping Lily's cheeks and chin, his lips pulled back from his teeth, his brows crashing together, his red-rimmed wet eyes on her face. Lily at frame-left kneeling in the oversized white men's shirt, her face lifted in his grip, her wet eyes on his face, her lips pressed tight and trembling, her brows pulled up, blood on the side of her neck. The frame holds exactly two people: Paul and Lily. Dim, dusty light with pale shafts from the high windows, the warehouse softly blurred behind. Fixed stage layout: the tall rusted iron double door is at frame-right; the stacked wooden crates and steel barrels are at frame-left; concrete pillars stand in the middle and shafts of dusty light fall from the high windows at the back.",
+     "visual_zh": "保罗弯下腰狠狠捏住莉莉的脸，红着眼睛吼：你选了那个怪物，不选我！",
+     "camera_zh": "0—6秒，镜头固定。",
+     "dialogue": [
+      {
+       "speaker": "PaulOnScreen",
+       "text": "You chose that monster over me!",
+       "start_seconds": 1.0,
+       "end_seconds": 4.23,
+       "language": "en"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 6,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on medium two-shot opens from the adopted first frame in [[asset:warehouse]]: [[asset:paul]] at frame-right squeezes her face hard and spits the words in a furious, cracking voice, his lips pulled back from his bared teeth, his brows crashing together and his wet eyes burning on hers. [[asset:lily_shirt]] at frame-left glares back at him, her wet eyes unflinching, her lips trembling and her brows pulling together. The camera holds still.",
+       "visual_zh": "一个稳定的侧面中景双人镜头，从已采用的开场图继续，场景是废弃仓库：画面右边的保罗狠狠捏住她的脸，用暴怒又发裂的声音把话吐出来，龇着牙，眉头拧在一起，湿润的眼睛喷火地盯着她。画面左边的莉莉湿润的眼睛毫不退缩地瞪回去，嘴唇发颤，眉头拧起。镜头固定不动。",
+       "dialogue_indices": [
+        0
+       ]
+      }
+     ],
+     "sound_en": "A cold draft whistling through the empty warehouse. Voices stay close and clear.",
+     "sound_zh": "冷风吹过空荡荡的仓库的呼啸声。人声近而清楚。",
+     "seed": 6805,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "06｜保罗扬起手要打下去",
+     "duration_seconds": 3,
+     "generation_seconds": 3,
+     "continuity": "cut",
+     "depends_on_previous": true,
+     "use_previous_episode_state": false,
+     "characters": [
+      "PaulOnScreen",
+      "LilyShirt"
+     ],
+     "asset_keys": [
+      "warehouse",
+      "paul",
+      "lily_shirt"
+     ],
+     "image_reference_keys": [
+      "warehouse"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on medium two-shot, both people from the head to the knees, in the middle third of the frame, on the concrete floor of the warehouse. Paul at frame-right standing in the creased navy blazer, his right arm drawn back with the open palm at shoulder height, his jaw clenched, his lips pulled back from his teeth, his red-rimmed eyes blazing on Lily's face. Lily at frame-left kneeling in the oversized white men's shirt, her face lifted, her eyes squeezed shut, her lips pressed tight, her brows pulled together, blood on the side of her neck. The frame holds exactly two people: Paul and Lily. Dim, dusty light with pale shafts from the high windows, the warehouse softly blurred behind. Fixed stage layout: the tall rusted iron double door is at frame-right; the stacked wooden crates and steel barrels are at frame-left; concrete pillars stand in the middle and shafts of dusty light fall from the high windows at the back.",
+     "visual_zh": "保罗把手高高扬起，莉莉闭紧眼睛等着挨打。",
+     "camera_zh": "0—3秒，镜头固定。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 3,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on medium two-shot opens from the adopted first frame in [[asset:warehouse]]: [[asset:paul]] swings his arm back and raises his open right hand high, his jaw clenched, his brows crashing together and his eyes blazing; [[asset:lily_shirt]]'s eyes squeeze shut and her lips press tight as she braces. The camera holds still.",
+       "visual_zh": "一个稳定的侧面中景双人镜头，从已采用的开场图继续，场景是废弃仓库：保罗把手臂往后一甩，张开的右手高高扬起，咬紧牙关，眉头拧在一起，眼睛喷火；莉莉的眼睛紧紧闭上，嘴唇抿紧，咬牙等着。镜头固定不动。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "A sharp intake of breath and the faint creak of the old building. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here.",
+     "sound_zh": "一声急促的吸气和旧建筑细微的吱嘎声。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。",
+     "seed": 6806,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "07｜铁门被炸飞",
+     "duration_seconds": 3,
+     "generation_seconds": 3,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [],
+     "asset_keys": [
+      "warehouse"
+     ],
+     "image_reference_keys": [
+      "warehouse"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Wide shot of the warehouse interior in the middle third of the frame: the tall rusted iron double door at frame-right closed, shafts of dusty pale light falling across the concrete floor, the stacked crates and steel barrels at frame-left, concrete pillars in the middle. No people are in the frame. Dim, dusty light with pale shafts from the high windows, the warehouse softly blurred behind. Fixed stage layout: the tall rusted iron double door is at frame-right; the stacked wooden crates and steel barrels are at frame-left; concrete pillars stand in the middle and shafts of dusty light fall from the high windows at the back.",
+     "visual_zh": "一声巨响，仓库的铁门整扇炸飞进来，砸在地上，烟尘滚滚。",
+     "camera_zh": "0—3秒，镜头固定。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 3,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady wide shot opens from the adopted first frame in [[asset:warehouse]]: with a tremendous boom the rusted iron double door bursts inward off its hinges and slams flat onto the concrete floor toward frame-left in a roaring cloud of dust and flying rust, the shafts of light turning thick with smoke. No people appear. The camera holds still.",
+       "visual_zh": "一个稳定的宽景，从已采用的开场图继续，场景是废弃仓库：随着一声巨响，生锈的铁双开门整扇从合页上炸开，朝画面左边重重拍在水泥地上，烟尘和锈屑滚滚而起，一束束光变得浓烟滚滚。画面里没有人出现。镜头固定不动。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "A thunderous boom of tearing metal, a screech and a crash of iron on concrete. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here.",
+     "sound_zh": "撕裂金属的一声雷鸣般的巨响、一阵刺耳的尖啸，和铁板砸在水泥地上的轰响。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。",
+     "seed": 6807,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "08｜保罗和玛丽被吓得后退",
+     "duration_seconds": 3,
+     "generation_seconds": 3,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "PaulOnScreen",
+      "MaryBlack"
+     ],
+     "asset_keys": [
+      "warehouse",
+      "paul",
+      "mary_black"
+     ],
+     "image_reference_keys": [
+      "warehouse"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on medium two-shot, both people from the head to the waist, in the middle third of the frame, standing side by side on the concrete floor, both in profile facing frame-right toward the dust at the doorway at frame-right. Paul at frame-left in the creased navy blazer, his right arm still raised, his lips parted, his brows pulled up, his red-rimmed eyes wide on the dust cloud. Mary at frame-right in the fitted black wool coat, her hands rising to her mouth, her lips parted, her brows lifted, her sharp green eyes wide on the dust cloud. The frame holds exactly two people: Paul and Mary. Dim, dusty light with pale shafts from the high windows, the warehouse softly blurred behind. Fixed stage layout: the tall rusted iron double door is at frame-right; the stacked wooden crates and steel barrels are at frame-left; concrete pillars stand in the middle and shafts of dusty light fall from the high windows at the back.",
+     "visual_zh": "保罗和玛丽被巨响吓得踉跄后退，一个举手挡脸，一个捂住嘴。",
+     "camera_zh": "0—3秒，镜头固定。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 3,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on medium two-shot opens from the adopted first frame in [[asset:warehouse]]: [[asset:paul]] staggers back and flings his raised hand up to shield his face, his mouth falling open. [[asset:mary_black]] stumbles back with her hands pressed to her mouth, her brows lifting and her eyes widening on the roiling dust. The camera holds still.",
+       "visual_zh": "一个稳定的侧面中景双人镜头，从已采用的开场图继续，场景是废弃仓库：保罗踉跄后退，扬着的手一下举起来挡住脸，嘴巴张开。玛丽踉跄后退，双手捂住嘴，眉头扬起，眼睛看着翻滚的烟尘越睁越大。镜头固定不动。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "Scraping shoes, a sharp gasp and settling dust. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here.",
+     "sound_zh": "鞋底拖地的声音、一声急促的抽气和灰尘落定的声音。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。",
+     "seed": 6808,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "09｜黑狼从烟尘里走出来",
+     "duration_seconds": 4,
+     "generation_seconds": 4,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [],
+     "asset_keys": [
+      "warehouse",
+      "black_wolf"
+     ],
+     "image_reference_keys": [
+      "warehouse"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Wide shot, in the middle third of the frame, of a colossal jet-black wolf the size of a small horse standing in the doorway at frame-right in a thick cloud of dust, in profile facing frame-left, its thick black fur bristling, its dark-gold glowing eyes fixed on the concrete floor ahead of it at frame-left, its lips curled back from long white fangs; the broken iron door lies flat on the floor in front of it. The frame holds exactly one animal, the black wolf, and no people. Dim, dusty light with pale shafts from the high windows, the warehouse softly blurred behind. Fixed stage layout: the tall rusted iron double door is at frame-right; the stacked wooden crates and steel barrels are at frame-left; concrete pillars stand in the middle and shafts of dusty light fall from the high windows at the back.",
+     "visual_zh": "一头巨大的纯黑狼从烟尘里慢慢走出来，眼睛是暗金色的。",
+     "camera_zh": "0—4秒，镜头固定。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 4,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady wide shot opens from the adopted first frame in [[asset:warehouse]]: [[asset:black_wolf]] walks slowly out of the dust toward frame-left, its massive shoulders rolling, its claws clicking on the concrete and its dark-gold eyes blazing, its fangs bared as the dust swirls around its legs. No people appear. The camera holds still.",
+       "visual_zh": "一个稳定的宽景，从已采用的开场图继续，场景是废弃仓库：巨大的黑狼从尘土里朝画面左边慢慢走出来，厚重的肩膀一起一伏，爪子在水泥地上咔嗒作响，暗金色的眼睛喷着光，龇着獠牙，尘土在它的腿边打着旋。画面里没有人出现。镜头固定不动。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "A deep rumbling growl and the slow click of claws on concrete. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here.",
+     "sound_zh": "低沉的咆哮声和爪子慢慢敲在水泥地上的咔嗒声。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。",
+     "seed": 6809,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "10｜流浪狼人吓得刀掉在地上：你怎么这么快就到了",
+     "duration_seconds": 6,
+     "generation_seconds": 6,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "Rogue"
+     ],
+     "asset_keys": [
+      "warehouse",
+      "rogue",
+      "black_wolf"
+     ],
+     "image_reference_keys": [
+      "warehouse"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on wide-medium shot, in the middle third of the frame, inside the warehouse. Rogue at frame-left standing in profile facing frame-right, in the patched black leather jacket, the silver dagger slipping from his shaking right hand, his knees buckling, his lips trembling, his brows pulled up, his eyes wide and fixed on the wolf's head. The colossal jet-black wolf at frame-right in profile facing frame-left, its head lowered, its dark-gold eyes blazing at Rogue, its fangs bared, in a haze of dust. The frame holds exactly one person, Rogue, and one huge black wolf. Dim, dusty light with pale shafts from the high windows, the warehouse softly blurred behind. Fixed stage layout: the tall rusted iron double door is at frame-right; the stacked wooden crates and steel barrels are at frame-left; concrete pillars stand in the middle and shafts of dusty light fall from the high windows at the back.",
+     "visual_zh": "流浪狼人吓得匕首脱手，腿一软，哆嗦着问：你怎么这么快就到了，基利安？",
+     "camera_zh": "0—6秒，镜头固定。",
+     "dialogue": [
+      {
+       "speaker": "Rogue",
+       "text": "How are you here already, Killian?",
+       "start_seconds": 1.0,
+       "end_seconds": 4.35,
+       "language": "en"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 6,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on wide-medium shot opens from the adopted first frame in [[asset:warehouse]]: [[asset:rogue]]'s trembling hand opens and the silver dagger clatters to the concrete; his knees buckle as he stammers in a cracking, terrified voice, his lips trembling and his eyes wide on the gold eyes of [[asset:black_wolf]]. The wolf takes one slow step closer, growling. The camera holds still.",
+       "visual_zh": "一个稳定的侧面宽中景，从已采用的开场图继续，场景是废弃仓库：流浪狼人发抖的手一松，银匕首哐啷掉在水泥地上；他双腿发软，用发颤、惊恐的声音结结巴巴地说话，嘴唇哆嗦，睁大的眼睛盯着黑狼的金色眼睛。黑狼往前慢慢逼近一步，低低地咆哮。镜头固定不动。",
+       "dialogue_indices": [
+        0
+       ]
+      }
+     ],
+     "sound_en": "The ring of a dagger on concrete and a low rumbling growl. Voices stay close and clear.",
+     "sound_zh": "匕首掉在水泥地上的一声脆响和低沉的咆哮声。人声近而清楚。",
+     "seed": 6810,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "11｜莉莉认出了那双金色的眼睛",
+     "duration_seconds": 6,
+     "generation_seconds": 6,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "LilyShirt"
+     ],
+     "asset_keys": [
+      "warehouse",
+      "lily_shirt",
+      "black_wolf"
+     ],
+     "image_reference_keys": [
+      "warehouse"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on wide-medium shot, in the middle third of the frame, inside the warehouse. Lily at frame-left kneeling on the concrete in the oversized white men's shirt, her left hand pressed to her bleeding neck, her face lifted, her lips parted, her brows pulled up, her tear-streaked wide eyes fixed on the wolf's gold eyes. The colossal jet-black wolf at frame-right in profile facing frame-left, standing over the fallen iron door, its head lowered, its dark-gold eyes blazing. The frame holds exactly one person, Lily, and one huge black wolf. Dim, dusty light with pale shafts from the high windows, the warehouse softly blurred behind. Fixed stage layout: the tall rusted iron double door is at frame-right; the stacked wooden crates and steel barrels are at frame-left; concrete pillars stand in the middle and shafts of dusty light fall from the high windows at the back.",
+     "visual_zh": "莉莉跪在地上，捂着流血的脖子，认出了那双金色的眼睛，轻声问：是你吗？",
+     "camera_zh": "0—6秒，镜头固定。",
+     "dialogue": [
+      {
+       "speaker": "LilyShirt",
+       "text": "Is that you, Killian?",
+       "start_seconds": 1.0,
+       "end_seconds": 3.35,
+       "language": "en"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 6,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on wide-medium shot opens from the adopted first frame in [[asset:warehouse]]: [[asset:lily_shirt]] whispers in a trembling voice, her wide wet eyes locked on the gold eyes of [[asset:black_wolf]] and her lips trembling; the wolf's fierce gaze softens for an instant as it looks at her, its growl dying away. The camera holds still.",
+       "visual_zh": "一个稳定的侧面宽中景，从已采用的开场图继续，场景是废弃仓库：莉莉用发颤的声音轻轻地问，湿润睁大的眼睛直直盯着黑狼的金色眼睛，嘴唇发颤；黑狼凶狠的目光在看着她的那一瞬软了一下，低吼声渐渐消去。镜头固定不动。",
+       "dialogue_indices": [
+        0
+       ]
+      }
+     ],
+     "sound_en": "A low fading growl and a shaky breath. Voices stay close and clear.",
+     "sound_zh": "渐渐低下去的咆哮声和一声发抖的呼吸。人声近而清楚。",
+     "seed": 6811,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "12｜黑狼咆哮着扑出去",
+     "duration_seconds": 3,
+     "generation_seconds": 3,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [],
+     "asset_keys": [
+      "warehouse",
+      "black_wolf"
+     ],
+     "image_reference_keys": [
+      "warehouse"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on close-up of the colossal jet-black wolf's head and shoulders, in profile facing frame-left, in the middle third of the frame, in a haze of dust, its dark-gold eyes blazing, its upper lip curled back from long white fangs, its thick black fur bristling. The frame holds exactly one animal, the black wolf, and no people. Dim, dusty light with pale shafts from the high windows, the warehouse softly blurred behind. Fixed stage layout: the tall rusted iron double door is at frame-right; the stacked wooden crates and steel barrels are at frame-left; concrete pillars stand in the middle and shafts of dusty light fall from the high windows at the back.",
+     "visual_zh": "黑狼仰头一声震天的咆哮，然后猛地向左扑了出去。",
+     "camera_zh": "0—3秒，镜头固定。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 3,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on close-up opens from the adopted first frame in [[asset:warehouse]]: [[asset:black_wolf]] throws its head back and unleashes a thunderous roar with its jaws stretched wide, then lunges forward toward frame-left in one violent leap, the dust blasting outward. No people appear. The camera holds still.",
+       "visual_zh": "一个稳定的侧面特写，从已采用的开场图继续，场景是废弃仓库：黑狼仰起头，张大嘴发出一声雷鸣般的咆哮，然后猛地向画面左边一跃而出，尘土向四周炸开。画面里没有人出现。镜头固定不动。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "A thunderous roar that shakes the walls and a heavy impact. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here.",
+     "sound_zh": "震得墙壁发抖的雷鸣般的咆哮，和一声沉重的撞击。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。",
+     "seed": 6812,
+     "dialogue_language": "en"
+    }
+   ],
+   "dialogue_language": "en"
+  }
+ ]
+}

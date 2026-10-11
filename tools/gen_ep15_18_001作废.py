@@ -20,7 +20,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from _h3draft import Batch, FOLDER, breathy, voiced
 
 BASE = '合并稿/旧合并稿/合并_第11-14集+B_制作稿_追加.json'
-OUT = '合并稿/001_第15-18集_场景级改编_制作稿_追加'
+OUT = '合并稿/旧合并稿/001_第15-18集_场景级改编_制作稿_追加'
 SRC = json.load(open(os.path.join(FOLDER, BASE), encoding='utf-8'))
 
 b15, b16, b17, b18 = (Batch(BASE, SRC['title'], s) for s in (5500, 5600, 5700, 5800))
