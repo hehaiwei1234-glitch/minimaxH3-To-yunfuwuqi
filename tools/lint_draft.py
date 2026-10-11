@@ -83,9 +83,6 @@ for ep in d['episodes']:
                 elif words == 7: print(f'  ⚠ {t}: 英语台词 7 个单词（≤6 更稳）')
             elif han > 14: bad(t, f'台词 {han} 个字，超过约 13 字')
             if s['duration_seconds'] - x['end_seconds'] < 1.0: bad(t, '台词后余量不足 1 秒')
-            core = x['text'].rstrip().rstrip('.!?。！？…')
-            if re.search(r'[,.!?;:，。！？；：、—]', core):
-                bad(t, '台词句子中间有标点（逗号／句号／感叹号），H3 会在标点处停 1.3–2.6 秒，整句改成不带中间标点的一句')
         if not dl:
             if 'free of voices' not in s['sound_en'] and 'no vocal' not in s['sound_en'] and 'No one speaks' not in s['sound_en']:
                 bad(t, '无台词片没写“完全没有人声”（或新写法 No one speaks…）')

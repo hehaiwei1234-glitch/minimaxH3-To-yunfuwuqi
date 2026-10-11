@@ -247,7 +247,7 @@ T(b16, '04｜基利安：长老们威胁你，我去收拾他们', 6, ['Killian'
   CL16.format(K="his dark eyes fixed on her face, his lips set, his jaw tight, his brows level",
               L="her eyes on his face, her lips parted, her brows drawn together"),
   END_BD + LAY_BD, "基利安看着她，用低沉冰冷的声音说，长老们威胁她，他要去收拾他们。",
-  ('Killian', "I'll silence the elders threatening you.", 1.0),
+  ('Killian', "Elders threaten you. I'll silence them.", 1.0),
   f"A steady side-on medium close-up opens from the adopted first frame in {BD}: {K} speaks in a low, cold, even voice, his dark eyes fixed on her face, his jaw tight and his lips hard. {LS} listens, her brows drawing together and her lips parting. The camera holds still.",
   "一个稳定的侧面中近景，从已采用的开场图继续，场景是主卧：基利安用低沉冰冷平稳的声音说话，深色的眼睛一直盯着她的脸，下颌绷紧，嘴唇紧闭。莉莉听着，眉头渐渐拧起，嘴唇张开。镜头固定不动。",
   voiced("A light morning breeze and a faint creak of the bed.", "轻轻的晨风和床垫细微的吱嘎声。"), dep=True)
@@ -283,7 +283,7 @@ T(b16, '08｜基利安：等我回来，我们就结婚', 6, ['Killian', 'LilySh
   CL16.format(K="his dark eyes on her face, his lips set, his jaw tight, his brows level",
               L="her glossy eyes on his face, her lips parted, her brows pulled up"),
   END_BD + LAY_BD, "基利安用拇指擦过她的脸颊，低声说：等我回来，我们就结婚。",
-  ('Killian', "We marry when I'm back.", 1.0),
+  ('Killian', "When I'm back, we marry.", 1.0),
   f"A steady side-on medium close-up opens from the adopted first frame in {BD}: {K}'s thumb brushes slowly along her cheek as he speaks in a low, husky, possessive voice, his jaw tight, his brows low and his dark eyes on her face. {LS} looks up at him, her glossy eyes widening and her lips parting. The camera holds still.",
   "一个稳定的侧面中近景，从已采用的开场图继续，场景是主卧：基利安的拇指慢慢擦过她的脸颊，用低沉沙哑、带着占有欲的声音说话，深色的眼睛看着她的脸。莉莉抬头看着他，湿亮的眼睛睁大，嘴唇微张。镜头固定不动。",
   voiced("A light morning breeze and a faint creak of the bed.", "轻轻的晨风和床垫细微的吱嘎声。"), dep=True)
@@ -358,7 +358,7 @@ T(b17, '03｜银匕首贴上她的脖子：乖乖跟我走', 6, ['Rogue', 'LilyS
   PIN17.format(L="her chin lifted away from the blade, her lips pressed tight and trembling, her brows pulled up, tears on her lashes, her wide eyes on the dagger",
                R="his left arm locked across her collarbone and his right hand holding a silver dagger with a faint green sheen of poison, its flat laid against the left side of her throat, a thin red line of blood already running down her neck, his lips pulled into a cruel grin, his narrowed eyes on her face"),
   END_BAL + LAY_BAL, "流浪狼人把淬了毒的银匕首压在她脖子上，血已经淌下来，他说：乖乖跟我走，不然我割深一点。",
-  ('Rogue', "Come quietly or I cut deeper.", 1.0),
+  ('Rogue', "Come quietly, or I cut deeper.", 1.0),
   f"A steady side-on medium close-up opens from the adopted first frame in {BAL}: {RG} presses the edge of the silver dagger harder against {LS}'s throat and speaks in a low, savage whisper, his lips curled into a cruel grin; the thin line of red blood along the blade widens and runs down her neck. She freezes, her chin lifting, her lips trembling and her wide eyes brimming with tears. The camera holds still.",
   "一个稳定的侧面中近景，从已采用的开场图继续，场景是二楼阳台：流浪狼人把银匕首的刃口更用力地压在莉莉的喉咙上，用低沉凶狠的耳语说话，嘴角扯出残忍的笑；刀刃上那道细细的血线变宽，淌下她的脖子。她僵住了，下巴抬起，嘴唇发颤，睁大的眼睛里蓄满泪水。镜头固定不动。",
   voiced("A thin metallic hiss of a blade on skin and a shaky breath.", "刀刃贴着皮肤细细的金属嘶声，和一声发抖的呼吸。"), dep=True)
@@ -514,7 +514,7 @@ T(b18, '10｜流浪狼人吓得刀掉在地上：你怎么这么快就到了', 6
   "Side-on wide-medium shot, in the middle third of the frame, inside the warehouse. Rogue at frame-left standing in profile facing frame-right, in the patched black leather jacket, the silver dagger slipping from his shaking right hand, his knees buckling, his lips trembling, his brows pulled up, his eyes wide and fixed on the wolf's head. "
   "The colossal jet-black wolf at frame-right in profile facing frame-left, its head lowered, its dark-gold eyes blazing at Rogue, its fangs bared, in a haze of dust. The frame holds exactly one person, Rogue, and one huge black wolf.",
   END_WH + LAY_WH, "流浪狼人吓得匕首脱手，腿一软，哆嗦着问：你怎么这么快就到了，基利安？",
-  ('Rogue', "How are you here already Killian?", 1.0),
+  ('Rogue', "How are you here already, Killian?", 1.0),
   f"A steady side-on wide-medium shot opens from the adopted first frame in {WH}: {RG}'s trembling hand opens and the silver dagger clatters to the concrete; his knees buckle as he stammers in a cracking, terrified voice, his lips trembling and his eyes wide on the gold eyes of {WF}. The wolf takes one slow step closer, growling. The camera holds still.",
   "一个稳定的侧面宽中景，从已采用的开场图继续，场景是废弃仓库：流浪狼人发抖的手一松，银匕首哐啷掉在水泥地上；他双腿发软，用发颤、惊恐的声音结结巴巴地说话，嘴唇哆嗦，睁大的眼睛盯着黑狼的金色眼睛。黑狼往前慢慢逼近一步，低低地咆哮。镜头固定不动。",
   voiced("The ring of a dagger on concrete and a low rumbling growl.", "匕首掉在水泥地上的一声脆响和低沉的咆哮声。"))
@@ -523,7 +523,7 @@ T(b18, '11｜莉莉认出了那双金色的眼睛', 6, ['LilyShirt'], ('warehous
   "Side-on wide-medium shot, in the middle third of the frame, inside the warehouse. Lily at frame-left kneeling on the concrete in the oversized white men's shirt, her left hand pressed to her bleeding neck, her face lifted, her lips parted, her brows pulled up, her tear-streaked wide eyes fixed on the wolf's gold eyes. "
   "The colossal jet-black wolf at frame-right in profile facing frame-left, standing over the fallen iron door, its head lowered, its dark-gold eyes blazing. The frame holds exactly one person, Lily, and one huge black wolf.",
   END_WH + LAY_WH, "莉莉跪在地上，捂着流血的脖子，认出了那双金色的眼睛，轻声问：是你吗？",
-  ('LilyShirt', "Is that you Killian?", 1.0),
+  ('LilyShirt', "Is that you, Killian?", 1.0),
   f"A steady side-on wide-medium shot opens from the adopted first frame in {WH}: {LS} whispers in a trembling voice, her wide wet eyes locked on the gold eyes of {WF} and her lips trembling; the wolf's fierce gaze softens for an instant as it looks at her, its growl dying away. The camera holds still.",
   "一个稳定的侧面宽中景，从已采用的开场图继续，场景是废弃仓库：莉莉用发颤的声音轻轻地问，湿润睁大的眼睛直直盯着黑狼的金色眼睛，嘴唇发颤；黑狼凶狠的目光在看着她的那一瞬软了一下，低吼声渐渐消去。镜头固定不动。",
   voiced("A low fading growl and a shaky breath.", "渐渐低下去的咆哮声和一声发抖的呼吸。"))

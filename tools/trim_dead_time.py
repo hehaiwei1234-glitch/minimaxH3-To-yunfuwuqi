@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
-"""H3 片段“停顿压缩”工具：自动剪掉 台词中间的长停顿、开口前的空等、念完后的空等，
+"""H3 片段“缝隙压缩”工具：两个片段接在一起时，上一个片段“念完之后”的空等 + 下一个片段“开口之前”的空等，
+会让对话中间停很久。本工具自动剪掉每个片段开头（第一个字之前）和结尾（最后一个字之后）里“不需要的静止部分”。
+默认不动句子中间的节奏（--mid 才会剪句中停顿）。
 只剪“没有人声 且 画面几乎不动 且 剪掉后前后画面接得上”的部分，其余一帧不动。
 
 用法:
@@ -8,9 +10,9 @@
     --all     连没有台词的片段也处理（默认没有人声的片段不动）
     --ffmpeg  指定 ffmpeg 路径（默认先找 PATH，再找 ComfyUI 插件自带的）
 调参（一般不用动）:
-    --gap 0.45     台词中间的停顿，压到这么长（秒）
-    --lead 0.8     第一个字之前，最多留这么长（秒）
-    --tail 0.8     最后一个字之后，最多留这么长（秒）
+    --lead 0.4     第一个字之前，最多留这么长（秒）
+    --tail 0.4     最后一个字之后，最多留这么长（秒）
+    --mid          同时压缩句子中间的停顿（默认不动；--gap 0.45 是压到多长）
     --motion 0.45  “画面几乎不动”的门槛（每帧平均变化量，越小越严）
     --match 1.2    “剪掉后前后画面接得上”的门槛（越小越严，越小越容易“不剪”）
 
@@ -163,7 +165,7 @@ def plan_clip(F, env, fps, opt):
     ks = int(round(opt.keep_start * fps))
     minr = max(2, int(round(opt.min_cut * fps)))
     # 句子中间的停顿
-    for (s1, e1), (s2, e2) in zip(regs[:-1], regs[1:]):
+    for (s1, e1), (s2, e2) in (zip(regs[:-1], regs[1:]) if opt.mid else []):
         gap_s = (s2 - e1) / fps          # 含两侧保护的静音长度
         raw_gap = gap_s + 2 * opt.pad    # 真正的静音长度（不含保护）
         if raw_gap <= opt.gap + 0.05:
@@ -267,9 +269,10 @@ def main():
     ap.add_argument('--all', action='store_true')
     ap.add_argument('--out', default=None)
     ap.add_argument('--ffmpeg', default=None)
+    ap.add_argument('--mid', action='store_true', help='同时压缩句子中间的停顿（默认不动）')
     ap.add_argument('--gap', type=float, default=0.45)
-    ap.add_argument('--lead', type=float, default=0.8)
-    ap.add_argument('--tail', type=float, default=0.8)
+    ap.add_argument('--lead', type=float, default=0.4)
+    ap.add_argument('--tail', type=float, default=0.4)
     ap.add_argument('--motion', type=float, default=0.45)
     ap.add_argument('--match', type=float, default=1.2)
     ap.add_argument('--pad', type=float, default=0.2)
