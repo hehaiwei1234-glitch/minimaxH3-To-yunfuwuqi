@@ -8,7 +8,10 @@ if errorlevel 1 (
   pause
   exit /b 1
 )
-if not exist "node_modules\ffmpeg-static" (
+set NEED=0
+if not exist "node_modules\ffmpeg-static" set NEED=1
+if not exist "node_modules\adm-zip" set NEED=1
+if "%NEED%"=="1" (
   echo 第一次使用：正在安装需要的组件，约 1 到 2 分钟，需要联网……
   call npm install --no-audit --no-fund
   if errorlevel 1 (

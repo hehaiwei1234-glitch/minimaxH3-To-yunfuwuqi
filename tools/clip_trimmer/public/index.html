@@ -36,16 +36,18 @@ video{width:100%;border-radius:8px;background:#000}
 .err{color:var(--warn)}
 #final{border-color:var(--acc)}
 #final ol{margin:6px 0;padding-left:22px;color:var(--sub);font-size:13px}
+.gh{font-size:16px;margin:22px 0 2px;padding-top:8px;border-top:1px solid var(--line)}
+.gh:empty{display:none}
 @media (max-width:640px){.vids{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
 <main>
 <h1>H3 片段整理</h1>
-<p class="sub">把 H3 出来的 mp4 拖进来。工具只剪每个片段<b>开头和结尾</b>里「没人说话、画面又几乎不动」的空等；台词、表演、句子中间的节奏一帧不动。原片不会被改，结果存在本工具文件夹里的「输出」。整理完还可以<b>按文件名顺序自动合成一个完整成片</b>（01、02、…10，数字按大小排）。</p>
+<p class="sub">把 H3 出来的 mp4 拖进来，或者<b>直接拖 H3 下载的整集 zip（可以一次拖很多个 zip）</b>。工具只剪每个片段<b>开头和结尾</b>里「没人说话、画面又几乎不动」的空等；台词、表演、句子中间的节奏一帧不动。原片不会被改，结果存在本工具文件夹里的「输出」。整理完<b>自动合成成片</b>：每个 zip 合成一集的成片，拖了多个 zip 时再按集的顺序合成一个<b>整批总片</b>（片段按文件名里的数字排，集按 zip 名字里的数字排）。</p>
 
-<div id="drop">把 mp4 片段拖到这里（可以一次拖很多个），或者点这里选择文件</div>
-<input id="file" type="file" accept="video/mp4,.mp4" multiple hidden>
+<div id="drop">把整集 zip 或 mp4 片段拖到这里（可以一次拖很多个），或者点这里选择文件</div>
+<input id="file" type="file" accept="video/mp4,.mp4,.zip,application/zip" multiple hidden>
 
 <div class="bar">
   <label>剪多少：
@@ -55,7 +57,7 @@ video{width:100%;border-radius:8px;background:#000}
       <option value="bold">最大胆（先看预览再保存）</option>
     </select>
   </label>
-  <label><input type="checkbox" id="doMerge" checked> 整理完自动合成完整成片</label>
+  <label><input type="checkbox" id="doMerge" checked> 整理完自动合成成片（每集一个，多集再合一个总片）</label>
   <button id="all" class="main" disabled>全部整理并保存</button>
   <button id="open">打开输出文件夹</button>
   <span id="total" class="note"></span>
@@ -65,7 +67,8 @@ video{width:100%;border-radius:8px;background:#000}
 </main>
 <script>
 const $ = s => document.querySelector(s);
-const items = [];     // {id,name,card,res}
+const items = [];     // {id,name,group,card,res}
+const groups = new Map();   // 集名（zip 名）-> {box, body}；直接拖进来的 mp4 集名是空的
 const drop = $('#drop'), fileIn = $('#file');
 drop.onclick = () => fileIn.click();
 fileIn.onchange = () => { addFiles(fileIn.files); fileIn.value = ''; };
@@ -84,28 +87,73 @@ async function api(path, body) {
 const byName = (a, b) => a.name.localeCompare(b.name, 'zh', { numeric: true });
 const fmt = x => x.toFixed(2).replace(/\.?0+$/, '') ;
 
-async function addFiles(fl) {
-  const files = Array.from(fl).filter(f => /\.mp4$/i.test(f.name)).sort(byName);
-  for (const f of files) {
-    const card = document.createElement('div'); card.className = 'card';
-    card.innerHTML = `<h3></h3><div class="sum">正在读取…</div>`;
-    card.querySelector('h3').textContent = f.name;
-    $('#list').appendChild(card);
-    const it = { name: f.name, card };
-    items.push(it);
-    try {
-      const r = await fetch('/api/upload?name=' + encodeURIComponent(f.name), { method: 'POST', body: f });
-      it.id = (await r.json()).id;
-      await analyzeItem(it);
-    } catch (e) { card.querySelector('.sum').innerHTML = `<span class="err">出错：${e.message}</span>`; }
+const byStr = (a, b) => a.localeCompare(b, 'zh', { numeric: true });
+const byItem = (a, b) => byStr(a.group, b.group) || byName(a, b);
+
+function groupBody(name) {
+  let g = groups.get(name);
+  if (!g) {
+    const box = document.createElement('section');
+    box.innerHTML = '<h2 class="gh"></h2><div class="gb"></div>';
+    box.querySelector('h2').textContent = name;
+    g = { box, body: box.querySelector('.gb') };
+    groups.set(name, g);
+    $('#list').appendChild(box);
   }
+  return g.body;
+}
+
+async function addFiles(fl) {
+  const all = Array.from(fl);
+  const zips = all.filter(f => /\.zip$/i.test(f.name)).sort(byName);
+  const mp4s = all.filter(f => /\.mp4$/i.test(f.name)).sort(byName);
+  for (const z of zips) await addZip(z);
+  if (mp4s.length) await addClips(mp4s.map(f => ({ file: f, name: f.name })), '');
   resortCards();
   refreshTop();
 }
 
+async function addZip(z) {
+  const tmp = document.createElement('div'); tmp.className = 'card';
+  tmp.innerHTML = '<h3></h3><div class="sum">正在解压…</div>';
+  tmp.querySelector('h3').textContent = z.name;
+  $('#list').appendChild(tmp);
+  let res;
+  try {
+    const r = await fetch('/api/upload-zip?name=' + encodeURIComponent(z.name), { method: 'POST', body: z });
+    res = await r.json();
+    if (!r.ok) throw new Error(res.error || '解压失败');
+  } catch (e) { tmp.querySelector('.sum').innerHTML = `<span class="err">出错：${String(e.message).replace(/</g,'&lt;')}</span>`; return; }
+  tmp.remove();
+  for (const g of res.groups) { await addClips(g.clips, g.group); resortCards(); refreshTop(); }
+}
+
+async function addClips(list, group) {
+  const body = groupBody(group);
+  for (const f of list.slice().sort(byName)) {
+    const card = document.createElement('div'); card.className = 'card';
+    card.innerHTML = `<h3></h3><div class="sum">正在读取…</div>`;
+    card.querySelector('h3').textContent = f.name;
+    body.appendChild(card);
+    const it = { name: f.name, group, card };
+    items.push(it);
+    try {
+      if (f.file) {
+        const r = await fetch('/api/upload?name=' + encodeURIComponent(f.name), { method: 'POST', body: f.file });
+        it.id = (await r.json()).id;
+      } else it.id = f.id;
+      await analyzeItem(it);
+    } catch (e) { card.querySelector('.sum').innerHTML = `<span class="err">出错：${e.message}</span>`; }
+  }
+}
+
 function resortCards() {
   const list = $('#list');
-  items.slice().sort(byName).forEach(it => list.appendChild(it.card));
+  [...groups.keys()].sort(byStr).forEach(n => {
+    const g = groups.get(n);
+    list.appendChild(g.box);
+    items.filter(i => i.group === n).sort(byName).forEach(it => g.body.appendChild(it.card));
+  });
 }
 
 async function analyzeItem(it) {
@@ -171,7 +219,7 @@ function refreshTop() {
 }
 $('#all').onclick = async () => {
   $('#all').disabled = true;
-  const ready = items.filter(i => i.res).sort(byName);
+  const ready = items.filter(i => i.res).sort(byItem);
   for (const it of ready) await saveItem(it);
   if ($('#doMerge').checked) await mergeAll(ready);
   $('#all').disabled = false;
@@ -182,16 +230,27 @@ async function mergeAll(ready) {
   const pick = ready.filter(i => !i.skipMerge && i.sig);
   box.hidden = false;
   if (!pick.length) { box.innerHTML = '<span class="err">没有可以合成的片段（都没勾“放进成片”，或者整理时出错了）</span>'; return; }
-  box.innerHTML = `<h3>完整成片</h3><div class="sum">正在合成 ${pick.length} 个片段…</div>`;
-  try {
-    const r = await api('/api/merge', { ids: pick.map(i => i.id) });
-    box.innerHTML = `<h3>完整成片（${r.count} 个片段，共 <b>${fmt(r.dur)}</b> 秒）</h3>
-      <div class="sum">已保存：<span class="note" data-p></span></div>
-      <ol>${r.order.map(() => '<li></li>').join('')}</ol>
-      <video controls preload="metadata" src="/media/merged/out?t=${Date.now()}"></video>`;
-    box.querySelector('[data-p]').textContent = r.saved;
-    box.querySelectorAll('li').forEach((li, k) => { li.textContent = r.order[k]; });
-  } catch (e) { box.innerHTML = `<h3>完整成片</h3><div class="err">合成出错：${String(e.message).replace(/</g,'&lt;')}</div>`; }
+  const byGroup = new Map();
+  pick.forEach(i => { if (!byGroup.has(i.group)) byGroup.set(i.group, []); byGroup.get(i.group).push(i); });
+  box.innerHTML = '<h3>成片</h3><div data-res></div>';
+  const holder = box.querySelector('[data-res]');
+  const jobs = [...byGroup].map(([group, list]) => ({ title: group ? '「' + group + '」这一集的成片' : '完整成片', body: { ids: list.map(i => i.id), group } }));
+  if (byGroup.size > 1) jobs.push({ title: '整批总片（全部 ' + pick.length + ' 个片段，按集的顺序合成）', body: { ids: pick.map(i => i.id), total: true } });
+  for (const j of jobs) {
+    const sec = document.createElement('div'); sec.className = 'card';
+    sec.innerHTML = '<h3></h3><div class="sum">正在合成…</div>';
+    sec.querySelector('h3').textContent = j.title;
+    holder.appendChild(sec);
+    try {
+      const r = await api('/api/merge', j.body);
+      sec.innerHTML = `<h3></h3><div class="sum">共 ${r.count} 个片段，<b>${fmt(r.dur)}</b> 秒。已保存：<span class="note" data-p></span></div>
+        <details><summary class="note">合成顺序</summary><ol>${r.order.map(() => '<li></li>').join('')}</ol></details>
+        <video controls preload="metadata" src="/media/merged/${encodeURIComponent(r.key)}?t=${Date.now()}"></video>`;
+      sec.querySelector('h3').textContent = j.title;
+      sec.querySelector('[data-p]').textContent = r.saved;
+      sec.querySelectorAll('li').forEach((li, k) => { li.textContent = r.order[k]; });
+    } catch (e) { sec.innerHTML = '<h3></h3><div class="err"></div>'; sec.querySelector('h3').textContent = j.title; sec.querySelector('.err').textContent = '合成出错：' + e.message; }
+  }
 }
 $('#open').onclick = () => api('/api/open-output');
 $('#preset').onchange = async () => {
