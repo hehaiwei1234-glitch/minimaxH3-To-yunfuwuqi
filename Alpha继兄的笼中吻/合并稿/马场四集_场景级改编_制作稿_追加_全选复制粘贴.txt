@@ -1,0 +1,2533 @@
+{
+ "schema": "h3-production-draft",
+ "version": 1,
+ "title": "Alpha继兄的笼中吻｜第2集｜门后的狂想",
+ "dialogue_language": "en",
+ "style": "Photorealistic live-action romantic thriller with a glossy, high-end drama look. Warm tungsten key light with a soft cool fill, shallow depth of field, rich natural skin texture with visible pores, luxurious cream-and-gold interiors, restrained cinematic color grading, and an ultra-wide 8:3 cinemascope frame in which the people are placed deliberately and the room is visible around them.",
+ "assets": [
+  {
+   "key": "lily",
+   "kind": "image",
+   "role": "character",
+   "label": "莉莉",
+   "description": {
+    "en": "Lily, an adult woman in her mid-twenties with long wavy chestnut-brown hair, fair skin, large hazel-green eyes and a slender build, wearing an ivory silk wedding gown with a fitted bodice and a long zipper down the back. The portrait fixes her identity and gown; the opening frame and shot description fix her pose and position.",
+    "zh": "莉莉，二十五岁左右的成年女性，栗棕色长卷发、白皙皮肤、浅褐绿色大眼睛、身形纤细，穿象牙白真丝婚纱，合身上身，背后一条长拉链。人物图固定身份与婚纱，开场图和镜头正文决定姿势与位置。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of an adult woman in her mid-twenties with long wavy chestnut-brown hair, fair skin and large hazel-green eyes, wearing an ivory silk wedding gown with a fitted bodice and delicate shoulders. She faces the camera with a calm, slightly nervous expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "killian",
+   "kind": "image",
+   "role": "character",
+   "label": "基利安",
+   "description": {
+    "en": "Killian, a very tall, broad-shouldered adult man in his early thirties with short swept-back black hair, a sharp jawline, light stubble and cold dark-gray eyes, wearing a tailored black three-piece suit, white shirt and dark tie, with a platinum luxury wristwatch on his left wrist. He stands a head and a half taller than Lily. The portrait fixes his identity and clothes, not staging.",
+    "zh": "基利安，三十出头的成年男性，身材极高、肩膀宽阔，黑色短发向后梳，下颌线锋利，有浅胡茬，眼睛是冷冽的深灰色，穿剪裁合身的黑色三件套西装、白衬衫、深色领带，左腕戴铂金色名表。比莉莉高出一个半头。人物图固定身份与衣服，不固定站位。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of a very tall, broad-shouldered adult man in his early thirties with short swept-back black hair, a sharp jawline, light stubble and cold dark-gray eyes, wearing a tailored black three-piece suit, white shirt and dark tie, a platinum luxury wristwatch on his left wrist. He faces the camera with a cold, composed expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "room",
+   "kind": "image",
+   "role": "scene",
+   "label": "婚纱店VIP更衣室",
+   "description": {
+    "en": "The private VIP fitting room of a high-end bridal boutique: cream walls with gold molding, a heavy dark-wood door with a brass handle in the left wall, a rack of long white gowns in garment covers along the back wall, a wide bare stretch of plain cream panelled wall to the right of the gown rack, an ivory velvet couch against the right wall and thick carpet, lit warmly by a crystal chandelier and wall sconces. The reference fixes the room layout and decor, not any people.",
+    "zh": "高端婚纱店的VIP私人更衣室：奶油色墙面配金色线脚，左墙一扇带黄铜把手的厚重深色木门，后墙挂着一排罩着防尘袋的白色长婚纱，婚纱架右边是一大段空白的奶油色护墙板墙面，右墙边有象牙色丝绒沙发和厚地毯，水晶吊灯与壁灯的暖光。参考图固定房间布局与陈设，不带入任何人物。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic wide shot of an empty luxury VIP fitting room in a high-end bridal boutique: cream walls with gold molding, a heavy dark-wood door with a brass handle on the left wall, a rack of long white wedding gowns in garment covers along the back wall, a wide bare stretch of plain cream panelled wall to the right of the gown rack, an ivory velvet couch against the right wall, thick carpet, warm light from a crystal chandelier and wall sconces. No people.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "alcove",
+   "kind": "image",
+   "role": "scene",
+   "label": "更衣室婚纱架后的隔间",
+   "description": {
+    "en": "A narrow dressing alcove at the back of the private fitting room: a dense row of long white gowns in garment covers hanging close together on a rail along one side, and a heavy cream floor-length velvet curtain on a ceiling track, drawn half open across the front. Dim warm light with soft shadows. The reference fixes the look of the alcove, not any people.",
+    "zh": "更衣室最里面的狭窄隔间：一侧是紧挨着挂在横杆上、罩着防尘袋的白色长婚纱，正面是一道挂在顶轨上的奶油色厚重丝绒落地帘，拉开了一半。光线昏暗温暖，阴影柔和。参考图固定隔间的样子，不带入任何人物。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic shot of an empty narrow dressing alcove at the back of a luxury fitting room: a dense row of long white gowns in garment covers hanging close together on a rail along one side, a heavy cream floor-length velvet curtain on a ceiling track drawn half open across the front, dim warm light with soft shadows, thick carpet. No people.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "paul",
+   "kind": "image",
+   "role": "character",
+   "label": "保罗",
+   "description": {
+    "en": "Paul, an adult man in his late twenties with neatly combed light-brown hair, a clean-shaven friendly boyish face and warm brown eyes, of average build, wearing a navy blazer over a white open-collared shirt. He is a head shorter than Killian. The portrait fixes his identity and clothes, not staging.",
+    "zh": "保罗，二十八岁左右的成年男性，浅棕色头发梳得整齐，脸干净、友善、带点孩子气，暖棕色眼睛，身材普通，穿海军蓝西装外套配白色敞领衬衫。比基利安矮一个头。人物图固定身份与衣服，不固定站位。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of an adult man in his late twenties with neatly combed light-brown hair, a clean-shaven friendly boyish face and warm brown eyes, wearing a navy blazer over a white open-collared shirt. He faces the camera with a mild, relaxed expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "villa_front",
+   "kind": "image",
+   "role": "scene",
+   "label": "半山庄园门前",
+   "description": {
+    "en": "The gravel forecourt of a gloomy luxurious hillside mansion at dusk: a dark stone facade with tall narrow windows, a wide flight of stone entrance steps on the right, a second-floor stone balcony with a balustrade above the entrance, tall black iron gates and dark pine trees behind, a black Maybach sedan parked on the gravel on the left, cold blue dusk light with warm lamps glowing in the windows. The reference fixes the layout and decor.",
+    "zh": "黄昏时阴森奢华的半山庄园门前碎石场地：深色石头外墙配高窄窗，右边是宽阔的石头台阶，台阶上方二楼有一座带栏杆的石头阳台，后面是高大的黑色铁门和深色松树，左边碎石地上停着一辆黑色迈巴赫轿车，冷蓝的暮色里窗内亮着暖灯。参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of the gravel forecourt of a gloomy luxurious hillside mansion at dusk: a dark stone facade with tall narrow windows, a wide flight of stone entrance steps on the right, a second-floor stone balcony with a balustrade above the entrance, tall black iron gates and dark pine trees behind, a black Maybach sedan parked on the gravel on the left, cold blue dusk light with warm lamps in the windows. The frame holds the mansion, the gravel, the car and the pines.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "butler",
+   "kind": "image",
+   "role": "character",
+   "label": "老管家",
+   "description": {
+    "en": "The butler, an elderly man in his sixties with neatly combed silver hair, a lined, dignified face and kind pale-blue eyes, wearing a black tailcoat, white shirt, grey waistcoat, black tie and white gloves. The portrait fixes his identity and clothes, not staging.",
+    "zh": "老管家，六十多岁的老人，银发梳得整齐，脸上有皱纹、端庄，眼睛是温和的浅蓝色，穿黑色燕尾服、白衬衫、灰色马甲、黑领带，戴白手套。人物图固定身份与衣服，不固定站位。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of an elderly man in his sixties with neatly combed silver hair, a lined, dignified face and kind pale-blue eyes, wearing a black tailcoat, white shirt, grey waistcoat, black tie and white gloves. He faces the camera with a calm, courteous expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "lily_coat",
+   "kind": "image",
+   "role": "character",
+   "label": "莉莉（旅途装）",
+   "description": {
+    "en": "Lily, the same adult woman in her mid-twenties as in the reference, with long wavy chestnut-brown hair pulled into a low loose ponytail held by a small silver hair clip, fair skin and large hazel-green eyes, now wearing a faded grey wool coat over a plain navy dress, tired but proud. The portrait fixes her identity and clothes, not staging.",
+    "zh": "莉莉，和参考图是同一个二十五岁左右的成年女性，栗棕色长卷发低低地扎成松散的马尾，用一枚小银发卡固定，白皙皮肤、浅褐绿色大眼睛，这次穿褪色的灰色羊毛外套配朴素的藏青连衣裙，疲惫却倔强。人物图固定身份与衣服，不固定站位。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of the same woman as in the reference image, long wavy chestnut-brown hair pulled into a low loose ponytail held by a small silver hair clip, wearing a faded grey wool coat over a plain navy dress. She faces the camera with a tired but proud expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": [
+     "lily"
+    ]
+   }
+  },
+  {
+   "key": "killian_robe",
+   "kind": "image",
+   "role": "character",
+   "label": "基利安（黑丝绸睡袍）",
+   "description": {
+    "en": "Killian, the same very tall, broad-shouldered adult man in his early thirties as in the reference, with short swept-back black hair, a sharp jawline, light stubble and cold dark-gray eyes, now wearing a black silk robe tied at the waist over dark trousers, the collar open at the base of the throat, a platinum luxury wristwatch on his left wrist. The portrait fixes his identity and clothes, not staging.",
+    "zh": "基利安，和参考图是同一个三十出头、身材极高、肩膀宽阔的成年男性，黑色短发向后梳，下颌线锋利，有浅胡茬，眼睛是冷冽的深灰色，这次穿黑色真丝睡袍，腰间系带，里面是深色长裤，领口开到喉咙下方，左腕戴铂金色名表。人物图固定身份与衣服，不固定站位。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of the same man as in the reference image, short swept-back black hair, sharp jawline, light stubble and cold dark-gray eyes, wearing a black silk robe tied at the waist, the collar open at the base of the throat, a platinum luxury wristwatch on his left wrist. He faces the camera with a cold, composed expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": [
+     "killian"
+    ]
+   }
+  },
+  {
+   "key": "bedroom",
+   "kind": "image",
+   "role": "scene",
+   "label": "庄园主卧",
+   "description": {
+    "en": "The master bedroom of a dark luxurious mansion: a huge dark-wood bed with charcoal-grey linen against the left wall, a tall single dark-wood door with a brass handle in the right wall, floor-to-ceiling windows with heavy dark curtains at the back, a dark rug, bedside lamps giving a low amber light, and a small bar cart with crystal glasses near the door. The reference fixes the layout and decor.",
+    "zh": "阴暗奢华的庄园主卧：左墙边是一张巨大的深色实木床，配炭灰色床品；右墙有一扇带黄铜把手的高大单扇深色木门；后面是落地窗和厚重的深色窗帘；深色地毯，床头灯发出低低的琥珀色光；门边有一个放着水晶杯的小酒车。参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of the master bedroom of a dark luxurious mansion: a huge dark-wood bed with charcoal-grey linen against the left wall, a tall single dark-wood door with a brass handle in the right wall, floor-to-ceiling windows with heavy dark curtains at the back, a dark rug, bedside lamps giving a low amber light, a small bar cart with crystal glasses near the door. The frame holds the bed, the door, the windows and the bar cart.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "lily_shirt",
+   "kind": "image",
+   "role": "character",
+   "label": "莉莉（宽大男士衬衫）",
+   "description": {
+    "en": "Lily, the same adult woman in her mid-twenties as in the reference, with long wavy chestnut-brown hair damp and loose around her shoulders, fair skin and large hazel-green eyes, a bare face, wearing an oversized white men's cotton dress shirt that falls to mid-thigh with the sleeves too long, buttoned to the collarbone. The portrait fixes her identity and clothes, not staging.",
+    "zh": "莉莉，和参考图是同一个二十五岁左右的成年女性，栗棕色长卷发半湿地披在肩上，白皙皮肤、浅褐绿色大眼睛，素颜，穿一件宽大的白色男士棉质衬衫，下摆到大腿中部，袖子太长，扣子扣到锁骨。人物图固定身份与衣服，不固定站位。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of the same woman as in the reference image, long wavy chestnut-brown hair damp and loose around her shoulders, a bare face, wearing an oversized white men's cotton dress shirt buttoned to the collarbone with sleeves too long. She faces the camera with a nervous expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": [
+     "lily"
+    ]
+   }
+  },
+  {
+   "key": "killian_wolf",
+   "kind": "image",
+   "role": "character",
+   "label": "基利安（失控）",
+   "description": {
+    "en": "Killian, the same very tall, broad-shouldered adult man in his early thirties as in the reference, with short black hair, a sharp jawline and light stubble, wearing a black silk robe tied at the waist, his eyes glowing a dark gold, with sharp canine teeth and dark claw-like nails. The portrait fixes his identity, clothes and features, not staging.",
+    "zh": "基利安，和参考图是同一个三十出头、身材极高、肩膀宽阔的成年男性，黑色短发，下颌线锋利，有浅胡茬，穿黑色真丝睡袍、腰间系带，这次眼睛发出暗金色的光，犬齿尖利，指甲像深色的利爪。人物图固定身份、衣服和特征，不固定站位。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of the same man as in the reference image, short black hair, sharp jawline, light stubble, wearing a black silk robe tied at the waist, his eyes glowing a dark gold, sharp canine teeth just visible, dark claw-like nails. He faces the camera with an intense, barely restrained expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": [
+     "killian"
+    ]
+   }
+  },
+  {
+   "key": "ballroom",
+   "kind": "image",
+   "role": "scene",
+   "label": "财团晚宴大厅",
+   "description": {
+    "en": "A grand gala ballroom: a polished cream marble floor, a dark-red carpet runway down the middle, tall gold-trimmed columns, huge crystal chandeliers, a wide marble staircase on the left and a long banquet table with white linen and champagne towers on the right, warm golden light. The reference fixes the layout and decor.",
+    "zh": "盛大的晚宴大厅：抛光的奶油色大理石地面，中间一条深红色的地毯，高大的镶金边柱子，巨大的水晶吊灯，左边是宽阔的大理石楼梯，右边是铺着白桌布、摆着香槟塔的长长的宴会桌，温暖的金色灯光。参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a grand gala ballroom: a polished cream marble floor, a dark-red carpet runway down the middle, tall gold-trimmed columns, huge crystal chandeliers, a wide marble staircase on the left and a long banquet table with white linen and champagne towers on the right, warm golden light. The frame holds the staircase, the carpet, the columns, the chandeliers and the banquet table.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "lily_red",
+   "kind": "image",
+   "role": "character",
+   "label": "莉莉（红色晚礼服）",
+   "description": {
+    "en": "Lily, the same adult woman in her mid-twenties as in the reference, with long wavy chestnut-brown hair pinned in a loose low twist with a few strands falling free, fair skin and large hazel-green eyes, wearing a floor-length red satin evening gown with thin straps and a small beige adhesive bandage on the left side of her neck. The portrait fixes her identity, gown and bandage, not staging.",
+    "zh": "莉莉，和参考图是同一个二十五岁左右的成年女性，栗棕色长卷发松松地盘成低髻、有几缕散落，白皙皮肤、浅褐绿色大眼睛，穿及地的红色缎面细肩带晚礼服，脖子左侧贴着一块小小的米色创可贴。人物图固定身份、礼服和创可贴，不固定站位。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of the same woman as in the reference image, long wavy chestnut-brown hair pinned in a loose low twist, wearing a floor-length red satin evening gown with thin straps and a small beige adhesive bandage on the left side of her neck. She faces the camera with a composed, slightly nervous expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": [
+     "lily"
+    ]
+   }
+  },
+  {
+   "key": "killian_tux",
+   "kind": "image",
+   "role": "character",
+   "label": "基利安（黑色无尾礼服）",
+   "description": {
+    "en": "Killian, the same very tall, broad-shouldered adult man in his early thirties as in the reference, with short swept-back black hair, a sharp jawline, light stubble and cold dark-gray eyes, wearing a black tuxedo with a white shirt, a black bow tie and a white silk pocket square, a platinum luxury wristwatch on his left wrist. The portrait fixes his identity and clothes, not staging.",
+    "zh": "基利安，和参考图是同一个三十出头、身材极高、肩膀宽阔的成年男性，黑色短发向后梳，下颌线锋利，有浅胡茬，眼睛是冷冷的深灰色，穿黑色无尾礼服，配白衬衫、黑色领结和白色丝质胸袋巾，左手腕戴铂金名表。人物图固定身份和衣服，不固定站位。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of the same man as in the reference image, short swept-back black hair, sharp jawline, light stubble, cold dark-gray eyes, wearing a black tuxedo with a white shirt, a black bow tie and a white silk pocket square, a platinum luxury wristwatch on his left wrist. He faces the camera with a cold, composed expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": [
+     "killian"
+    ]
+   }
+  },
+  {
+   "key": "mary",
+   "kind": "image",
+   "role": "character",
+   "label": "玛丽（保罗的妹妹）",
+   "description": {
+    "en": "Mary, an adult woman in her mid-twenties with sleek honey-blonde hair in an elegant updo, flawless makeup, glossy red lips and sharp green eyes, wearing a white satin cocktail dress with a sweetheart neckline, a pearl necklace and pearl drop earrings. The portrait fixes her identity and dress, not staging.",
+    "zh": "玛丽，二十五岁左右的成年女性，光滑的蜜金色头发盘成优雅的发髻，妆容无瑕，嘴唇红亮，一双锐利的绿眼睛，穿白色缎面心形领鸡尾酒裙，戴珍珠项链和珍珠垂坠耳环。人物图固定身份和裙子，不固定站位。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of an adult woman in her mid-twenties with sleek honey-blonde hair in an elegant updo, flawless makeup, glossy red lips and sharp green eyes, wearing a white satin cocktail dress with a sweetheart neckline, a pearl necklace and pearl drop earrings. She faces the camera with a sweet, coy expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "car_back",
+   "kind": "image",
+   "role": "scene",
+   "label": "轿车后座",
+   "description": {
+    "en": "The rear seat of a luxury black sedan at dusk: cream leather seat, dark wood trim, a wide side window with cold blue dusk light and warm lights glowing far away. The reference fixes the cabin and the light.",
+    "zh": "黄昏时一辆豪华黑色轿车的后座：奶油色真皮座椅，深色木饰板，宽大的侧车窗，窗外是冷蓝色的暮光和远处亮着的暖色灯光。参考图固定车内布置和光线。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of the empty rear seat of a luxury black sedan at dusk: a cream leather seat, dark wood trim, a wide side window with cold blue dusk light and warm lights glowing far away, nobody in the car. The frame holds the seat, the door panel and the side window.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "ranch",
+   "kind": "image",
+   "role": "scene",
+   "label": "私人跑马场",
+   "description": {
+    "en": "A private equestrian ranch on a bright sunny day: a raised wooden grandstand with a roof and a railing on the left, a long white wooden fence and a wide green riding field on the right, a packed-earth track in front, dark pine trees along the far edge, a clear blue sky. The reference fixes the layout and decor.",
+    "zh": "晴朗明亮的一天里的私人马术跑马场：左边是带屋顶和栏杆的凸起木制看台，右边是长长的白色木栅栏和开阔的绿色跑马场，前面是一条夯实的泥土跑道，远处边缘是深色的松树，晴朗的蓝天。参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a private equestrian ranch on a bright sunny day: a raised wooden grandstand with a roof and a railing on the left, a long white wooden fence and a wide green riding field on the right, a packed-earth track in front, dark pine trees along the far edge, a clear blue sky with a few white clouds. The frame holds the grandstand, the white fence, the green field and the pine trees.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "killian_coat",
+   "kind": "image",
+   "role": "character",
+   "label": "基利安（炭灰长大衣）",
+   "description": {
+    "en": "Killian, the same very tall, broad-shouldered adult man in his early thirties as in the reference, with short swept-back black hair, a sharp jawline, light stubble and cold dark-gray eyes, wearing a long charcoal-gray wool overcoat over a black shirt, black trousers and black leather riding boots. The portrait fixes his identity and clothes, not staging.",
+    "zh": "基利安，和参考图是同一个三十出头、身材极高、肩膀宽阔的成年男性，黑色短发向后梳，下颌线锋利，有浅胡茬，眼睛是冷冷的深灰色，穿长款炭灰色羊毛大衣，里面是黑衬衫，配黑色长裤和黑色皮质马靴。人物图固定身份和衣服，不固定站位。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of the same man as in the reference image, short swept-back black hair, sharp jawline, light stubble, cold dark-gray eyes, wearing a long charcoal-gray wool overcoat over a black shirt. He faces the camera with a cold, composed expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": [
+     "killian"
+    ]
+   }
+  },
+  {
+   "key": "lily_riding",
+   "kind": "image",
+   "role": "character",
+   "label": "莉莉（马术装）",
+   "description": {
+    "en": "Lily, the same adult woman in her mid-twenties as in the reference, with long wavy chestnut-brown hair tied back in a low ponytail, fair skin and large hazel-green eyes, wearing a fitted cream blouse, tan riding breeches, tall brown leather riding boots and a thin brown belt. The portrait fixes her identity and clothes, not staging.",
+    "zh": "莉莉，和参考图是同一个二十五岁左右的成年女性，栗棕色长卷发在脑后扎成低马尾，白皙皮肤、浅褐绿色大眼睛，穿合身的奶油色衬衫、棕黄色马裤、高筒棕色皮质马靴，系一条细棕色皮带。人物图固定身份和衣服，不固定站位。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of the same woman as in the reference image, long wavy chestnut-brown hair tied back in a low ponytail, wearing a fitted cream blouse and a thin brown belt. She faces the camera with a composed, slightly nervous expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": [
+     "lily"
+    ]
+   }
+  },
+  {
+   "key": "mary_riding",
+   "kind": "image",
+   "role": "character",
+   "label": "玛丽（马术装）",
+   "description": {
+    "en": "Mary, the same adult woman in her mid-twenties as in the reference, with sleek honey-blonde hair in a tight low bun, flawless makeup, glossy red lips and sharp green eyes, wearing a fitted ivory riding jacket over a white blouse, white riding breeches, tall black leather riding boots and small pearl earrings. The portrait fixes her identity and clothes, not staging.",
+    "zh": "玛丽，和参考图是同一个二十五岁左右的成年女性，光滑的蜜金色头发在脑后盘成紧实的低髻，妆容无瑕，嘴唇红亮，一双锐利的绿眼睛，穿合身的象牙色马术外套、里面是白衬衫，配白色马裤、高筒黑色皮质马靴，戴小小的珍珠耳环。人物图固定身份和衣服，不固定站位。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of the same woman as in the reference image, sleek honey-blonde hair in a tight low bun, glossy red lips, sharp green eyes, wearing a fitted ivory riding jacket over a white blouse and small pearl earrings. She faces the camera with a sweet, coy expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": [
+     "mary"
+    ]
+   }
+  },
+  {
+   "key": "trainer",
+   "kind": "image",
+   "role": "character",
+   "label": "驯马师",
+   "description": {
+    "en": "Trainer, a stocky adult man in his late forties with a tanned, lined face, short gray-brown stubble and small shrewd eyes, wearing a worn brown leather vest over a rolled-sleeve plaid shirt, dark jeans, leather work boots and a flat tweed cap. The portrait fixes his identity and clothes, not staging.",
+    "zh": "驯马师，一个四十多岁、敦实的成年男性，晒得黝黑、满是皱纹的脸，短短的灰褐色胡茬，精明的小眼睛，穿磨旧的棕色皮背心、里面是卷起袖子的格子衬衫，配深色牛仔裤、皮质工作靴和一顶平顶花呢帽。人物图固定身份和衣服，不固定站位。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of a stocky adult man in his late forties with a tanned, lined face, short gray-brown stubble and small shrewd eyes, wearing a worn brown leather vest over a rolled-sleeve plaid shirt and a flat tweed cap. He faces the camera with a flat, guarded expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "black_horse",
+   "kind": "image",
+   "role": "prop",
+   "label": "纯黑烈马",
+   "description": {
+    "en": "A tall, powerfully built jet-black stallion with a glossy coat, a thick black mane, wide flared nostrils and a wild white-ringed eye, wearing a plain brown leather bridle with brown reins and a plain brown leather English saddle with stirrups. The portrait fixes the horse's coat, build and tack, not staging.",
+    "zh": "一匹高大、强壮的纯黑种马，皮毛油亮，鬃毛浓密，鼻孔宽大张开，眼睛带一圈白、透着野性，戴着朴素的棕色皮质笼头和棕色缰绳，背上是朴素的棕色皮质英式马鞍和马镫。人物图固定马的毛色、体型和马具，不固定站位。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic full-body side-profile photograph of a tall, powerfully built jet-black stallion with a glossy coat, a thick black mane, wide flared nostrils and a wild white-ringed eye, wearing a plain brown leather bridle with brown reins and a plain brown leather English saddle with stirrups, standing on bare ground. Soft even studio light, plain neutral gray background, natural coat texture, four legs clearly visible.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "woods_edge",
+   "kind": "image",
+   "role": "scene",
+   "label": "树林边缘的草地",
+   "description": {
+    "en": "The edge of a pine forest beside a wide sunlit meadow: tall green grass with a dirt path on the left, a rough wooden fence with sharp pointed posts on the right, a dense wall of dark pine trees behind the fence, a clear blue sky. The reference fixes the layout and decor.",
+    "zh": "阳光下的开阔草地旁边的松林边缘：左边是高高的绿草和一条土路，右边是带尖桩的粗木栅栏，栅栏后面是一整排密密的深色松树，晴朗的蓝天。参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of the edge of a pine forest beside a wide sunlit meadow: tall green grass and a dirt path on the left, a rough wooden fence with sharp pointed posts on the right, a dense wall of dark pine trees behind the fence, a clear blue sky with a few white clouds. The frame holds the meadow, the path, the fence and the pine forest.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "bodyguard",
+   "kind": "image",
+   "role": "character",
+   "label": "黑衣保镖",
+   "description": {
+    "en": "Bodyguard, a tall, broad-shouldered adult man in his thirties with a shaved head and a stern, impassive face, wearing a black suit, a white shirt, a black tie and a clear coiled earpiece. The portrait fixes his identity and clothes, not staging.",
+    "zh": "黑衣保镖，一个三十多岁、身材高大、肩膀宽阔的成年男性，剃着光头，面容严厉、毫无表情，穿黑色西装、白衬衫、黑领带，戴一只透明的螺旋线耳机。人物图固定身份和衣服，不固定站位。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of a tall, broad-shouldered adult man in his thirties with a shaved head and a stern, impassive face, wearing a black suit, a white shirt, a black tie and a clear coiled earpiece. He faces the camera with a stern, impassive expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  }
+ ],
+ "characters": {
+  "Lily": {
+   "image_keys": [
+    "lily"
+   ],
+   "voice_description": {
+    "en": "A young adult female voice, light and slightly breathy, speaking clear American English. She keeps her volume low because she must not be overheard, but every word is fully voiced and audible, tight and trembling with fear, anger and humiliation.",
+    "zh": "年轻成年女声，轻而略带气息，说清楚的美式英语。因为不能被人听见而压低音量，但每个字都正常发声、清晰可辨，声音紧绷颤抖，带着恐惧、愤怒和屈辱。"
+   }
+  },
+  "Killian": {
+   "image_keys": [
+    "killian"
+   ],
+   "voice_description": {
+    "en": "A mature adult male voice in a deep chest register, low and unhurried with a husky edge, speaking clear American English in a quiet, controlled, menacing tone. He never shouts, and every word is fully voiced and audible.",
+    "zh": "成熟成年男声，深沉的胸腔音，低缓不急，带沙哑质感，说清楚的美式英语。语气安静、克制、带压迫感，从不喊叫，每个字都正常发声、清晰可辨。"
+   }
+  },
+  "Paul": {
+   "image_keys": [],
+   "voice_description": {
+    "en": "A young adult male voice, light, casual and slightly smug, speaking clear American English at ordinary conversational volume. He is outside a closed door, so his voice reaches the room muffled by the wood.",
+    "zh": "年轻成年男声，轻松随意、略带轻浮，说清楚的美式英语，正常交谈音量。他在紧闭的门外，声音隔着木门略显闷。"
+   }
+  },
+  "PaulOnScreen": {
+   "image_keys": [
+    "paul"
+   ],
+   "voice_description": {
+    "en": "A young adult male voice, light, casual and slightly smug, speaking clear American English at ordinary conversational volume.",
+    "zh": "年轻成年男声，轻松随意、略带轻浮，说清楚的美式英语，正常交谈音量。"
+   }
+  },
+  "Butler": {
+   "image_keys": [
+    "butler"
+   ],
+   "voice_description": {
+    "en": "An elderly adult male voice, courteous, measured and warm, speaking clear American English at ordinary conversational volume with careful politeness.",
+    "zh": "年迈的成年男声，彬彬有礼、不急不缓、带着温和，说清楚的美式英语，正常交谈音量，措辞谨慎有礼。"
+   }
+  },
+  "LilyCoat": {
+   "image_keys": [
+    "lily_coat"
+   ],
+   "voice_description": {
+    "en": "A young adult female voice, light and slightly breathy, speaking clear American English. Every word is fully voiced and audible, tight and shaky with nerves, alarm and wounded pride.",
+    "zh": "年轻成年女声，轻而略带气息，说清楚的美式英语。每个字都正常发声、清晰可辨，声音紧绷发颤，带着紧张、惊慌和受伤的自尊。"
+   }
+  },
+  "KillianRobe": {
+   "image_keys": [
+    "killian_robe"
+   ],
+   "voice_description": {
+    "en": "A mature adult male voice in a deep chest register, low and unhurried with a husky edge, speaking clear American English in a quiet, controlled, menacing tone. He never shouts, and every word is fully voiced and audible.",
+    "zh": "成熟成年男声，深沉的胸腔音，低缓不急，带沙哑质感，说清楚的美式英语。语气安静、克制、带压迫感，从不喊叫，每个字都正常发声、清晰可辨。"
+   }
+  },
+  "LilyShirt": {
+   "image_keys": [
+    "lily_shirt"
+   ],
+   "voice_description": {
+    "en": "A young adult female voice, light and slightly breathy, speaking clear American English. Every word is fully voiced and audible, tight and trembling with fear; her voice rises sharply when she is frightened.",
+    "zh": "年轻成年女声，轻而略带气息，说清楚的美式英语。每个字都正常发声、清晰可辨，声音紧绷发颤、带着恐惧；受惊时声音会猛地拔高。"
+   }
+  },
+  "KillianWolf": {
+   "image_keys": [
+    "killian_wolf"
+   ],
+   "voice_description": {
+    "en": "A mature adult male voice, extremely deep and rough, like a low animal growl shaped into words, speaking clear American English, hoarse and shaking with barely held restraint. Every word is fully voiced and audible.",
+    "zh": "成熟成年男声，极其低沉粗糙，像野兽的低吼被压成了字句，说清楚的美式英语，沙哑、因勉强压住的克制而发抖。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "LilyRed": {
+   "image_keys": [
+    "lily_red"
+   ],
+   "voice_description": {
+    "en": "A young adult female voice, light and slightly breathy, speaking clear American English. Every word is fully voiced and audible, tight and shaky with nerves, alarm and wounded pride.",
+    "zh": "年轻成年女声，轻而略带气息，说清楚的美式英语。每个字都正常发声、清晰可辨，声音紧绷发颤，带着紧张、惊慌和受伤的自尊。"
+   }
+  },
+  "KillianTux": {
+   "image_keys": [
+    "killian_tux"
+   ],
+   "voice_description": {
+    "en": "A mature adult male voice in a deep chest register, low and unhurried with a husky edge, speaking clear American English in a quiet, controlled, menacing tone. He never shouts, and every word is fully voiced and audible.",
+    "zh": "成熟成年男声，深沉的胸腔音，低缓不急，带沙哑质感，说清楚的美式英语。语气安静、克制、带压迫感，从不喊叫，每个字都正常发声、清晰可辨。"
+   }
+  },
+  "Mary": {
+   "image_keys": [
+    "mary"
+   ],
+   "voice_description": {
+    "en": "A young adult female voice, sugary and syrupy with a coy, breathy lilt, speaking clear American English. Every word is fully voiced and audible.",
+    "zh": "年轻成年女声，甜得发腻，带着娇滴滴的、有气息的上扬语调，说清楚的美式英语。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "LilyRiding": {
+   "image_keys": [
+    "lily_riding"
+   ],
+   "voice_description": {
+    "en": "A young adult female voice, light and slightly breathy, speaking clear American English. Every word is fully voiced and audible, tight and shaky with nerves, alarm and wounded pride.",
+    "zh": "年轻成年女声，轻而略带气息，说清楚的美式英语。每个字都正常发声、清晰可辨，声音紧绷发颤，带着紧张、惊慌和受伤的自尊。"
+   }
+  },
+  "KillianCoat": {
+   "image_keys": [
+    "killian_coat"
+   ],
+   "voice_description": {
+    "en": "A mature adult male voice in a deep chest register, low and unhurried with a husky edge, speaking clear American English in a quiet, controlled, menacing tone. He never shouts, and every word is fully voiced and audible.",
+    "zh": "成熟成年男声，深沉的胸腔音，低缓不急，带沙哑质感，说清楚的美式英语。语气安静、克制、带压迫感，从不喊叫，每个字都正常发声、清晰可辨。"
+   }
+  },
+  "MaryRiding": {
+   "image_keys": [
+    "mary_riding"
+   ],
+   "voice_description": {
+    "en": "A young adult female voice, sugary and syrupy with a coy, breathy lilt, speaking clear American English. Every word is fully voiced and audible.",
+    "zh": "年轻成年女声，甜得发腻，带着娇滴滴的、有气息的上扬语调，说清楚的美式英语。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "Trainer": {
+   "image_keys": [
+    "trainer"
+   ],
+   "voice_description": {
+    "en": "A middle-aged adult male voice, gravelly and flat with a rural American drawl, a little nervous, speaking clear American English at ordinary conversational volume. Every word is fully voiced and audible.",
+    "zh": "中年成年男声，沙哑平淡，带乡村美式拖腔，有一点紧张，说清楚的美式英语，正常交谈音量。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "Bodyguard": {
+   "image_keys": [
+    "bodyguard"
+   ],
+   "voice_description": {
+    "en": "A deep adult male voice, flat and calm, speaking clear American English. Every word is fully voiced and audible.",
+    "zh": "低沉的成年男声，平淡冷静，说清楚的美式英语。每个字都正常发声、清晰可辨。"
+   }
+  }
+ },
+ "episodes": [
+  {
+   "title": "剧本第7集｜致命危机（场景级改编）",
+   "summary": "买通驯马师、激将、上马、扎针、发狂、基利安听到后冲出去。",
+   "script": "基利安在看台上谈生意，基利安一个人站在看台栏杆边打电话，低声下令。\nKillianCoat：“Buy every share they own.”\n玛丽把信封塞给驯马师，玛丽甜笑着把厚信封塞给驯马师，吩咐他给莉莉最野的那匹马；驯马师收下，皱着眉。\nMaryRiding：“Give her the wildest one.”\n驯马师牵着黑马走到莉莉面前，驯马师把一匹明显很野的黑马牵到莉莉面前，说这匹是给她的；莉莉往后退了半步。\nTrainer：“This one's for you, Miss.”\n莉莉不敢骑，莉莉怕得往后缩，小声说这匹马太野了。\nLilyRiding：“He looks too wild for me.”\n玛丽当众激莉莉，莉莉点头，玛丽当着众人的面激莉莉，莉莉咬住嘴唇，抬头点了一下头。\nMaryRiding：“Everyone's watching, so don't be shy.”\n莉莉被迫上马，莉莉咬着牙抓着马鞍撑上马背，驯马师扶着马头。\n驯马师松手后退，莉莉发抖，驯马师松开马笼头、低着头后退；马甩头刨蹄，莉莉抖着抓紧缰绳。\n玛丽把针扎进马屁股，玛丽甜笑着，把一根细银针扎进黑马的屁股；马的臀部一抽，尾巴甩起。\n马被扎后抽腿，玛丽退开，玛丽的手刚从马臀上抽回来，马猛地一抽、后蹄向后一踢，尾巴甩起；玛丽向画面左边退开两步，眼睛盯着马的后腿。\n莉莉在鞍上被吓到，马猛地甩头、横着跨出一步，莉莉整个人被带得向前一冲又向后一仰，双手猛抓缰绳，眼睛睁大，嘴张开。\n马人立再落地，黑马猛地后腿站起，前蹄抬高，然后重重落回四蹄；莉莉抱紧马脖子。\n黑马狂奔，黑马载着伏在马脖子上的莉莉，朝着右边的松树狂奔。\n莉莉在奔马上尖叫求救，莉莉伏在狂奔的马背上，用尽力气喊救命。\nLilyRiding：“Help! Somebody help me!”\n玛丽退到看台边看着，玛丽站在看台台阶脚下，一只手扶着栏杆，另一手捏着银针放在腰边，下巴抬起，嘴唇抿成一条得意的细线，眼睛眯起看着画面右边的绿色跑马场。\n基利安猛抬头放下电话，基利安听着电话，猛地抬起头看向画面右边的松树，眉头一下拧紧，把手机从耳边慢慢放到胸前，下颌绷紧，左手攥住栏杆。\n基利安捏碎手机，基利安的拳头攥紧，金色手机被捏得变形裂开，眼里闪过金光，他松手让手机掉下去。\n基利安翻过栏杆冲出去，基利安翻过栏杆，朝画面右边冲过跑马场，越跑越小。\n玛丽的笑僵住，玛丽看见基利安冲过来，得意的笑慢慢褪掉，往后退了一步。",
+   "segments": [
+    {
+     "title": "01｜基利安在看台上谈生意",
+     "duration_seconds": 6,
+     "generation_seconds": 6,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "KillianCoat"
+     ],
+     "asset_keys": [
+      "ranch",
+      "killian_coat"
+     ],
+     "image_reference_keys": [
+      "ranch"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium shot of Killian alone, from the head to the waist, in profile facing frame-right, in the middle third of the frame, at the railing of the raised wooden grandstand at frame-left, in the long charcoal overcoat over a black shirt, the gold smartphone held at his right ear, his left hand resting on the top rail, his jaw set, his lips flat, his eyes on the green field at frame-right. The frame holds exactly one person, Killian. Bright midday sunlight, a clear blue sky, the ranch softly blurred behind. Fixed stage layout: the raised wooden grandstand is at frame-left; the white fence and the green field are at frame-right; dark pine trees line the far edge.",
+     "visual_zh": "基利安一个人站在看台栏杆边打电话，低声下令。",
+     "camera_zh": "0—6秒，镜头固定。",
+     "dialogue": [
+      {
+       "speaker": "KillianCoat",
+       "text": "Buy every share they own.",
+       "start_seconds": 1.0,
+       "end_seconds": 3.55,
+       "language": "en"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 6,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady medium shot opens from the adopted first frame in [[asset:ranch]]: [[asset:killian_coat]] speaks into the gold phone in a low, flat, commanding voice, his jaw set and his lips barely moving, his eyes on the green field at frame-right. His left forefinger taps once on the railing. The camera holds still.",
+       "visual_zh": "一个稳定的中景，从已采用的开场图继续，场景是私人跑马场：基利安用低沉平板、不容反驳的声音对着金色手机说话，下颌绷紧，嘴唇几乎不动，眼睛看着画面右边的绿色跑马场。他的左手食指在栏杆上敲了一下。镜头固定不动。",
+       "dialogue_indices": [
+        0
+       ]
+      }
+     ],
+     "sound_en": "A light breeze, distant voices and the creak of the wooden railing. Voices stay close and clear.",
+     "sound_zh": "轻轻的风声、远处的人声和木栏杆的吱嘎声。人声近而清楚。",
+     "seed": 5001,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "02｜玛丽把信封塞给驯马师",
+     "duration_seconds": 6,
+     "generation_seconds": 6,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "MaryRiding",
+      "Trainer"
+     ],
+     "asset_keys": [
+      "ranch",
+      "mary_riding",
+      "trainer"
+     ],
+     "image_reference_keys": [
+      "ranch"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on medium two-shot, both people from the head to the knees, in the middle third of the frame, standing close on the packed-earth track and facing each other in profile. Mary at frame-left in the ivory riding jacket and white riding breeches, facing frame-right, holding out a thick brown envelope in her right hand at waist height, a sweet coy smile, her chin tilted up, her eyes on Trainer's face. Trainer at frame-right in a worn brown leather vest and a flat tweed cap, facing frame-left, his right hand reaching for the envelope, his lips pressed together, his brows drawn together, his eyes lowered on the envelope. The frame holds exactly two people: Mary and Trainer. Bright midday sunlight, a clear blue sky, the ranch softly blurred behind. Fixed stage layout: the raised wooden grandstand is at frame-left; the white fence and the green field are at frame-right; dark pine trees line the far edge.",
+     "visual_zh": "玛丽甜笑着把厚信封塞给驯马师，吩咐他给莉莉最野的那匹马；驯马师收下，皱着眉。",
+     "camera_zh": "0—6秒，镜头固定。",
+     "dialogue": [
+      {
+       "speaker": "MaryRiding",
+       "text": "Give her the wildest one.",
+       "start_seconds": 1.0,
+       "end_seconds": 3.55,
+       "language": "en"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 6,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on medium two-shot opens from the adopted first frame in [[asset:ranch]]: [[asset:mary_riding]] at frame-left presses the thick envelope into [[asset:trainer]]'s hand and speaks in a sugary, hushed voice, her sweet coy smile widening and her eyes on his face. [[asset:trainer]] at frame-right takes the envelope and tucks it inside his vest, his lips pressed together, his brows drawn together and his eyes lowered on the envelope. The camera holds still.",
+       "visual_zh": "一个稳定的侧面中景双人镜头，从已采用的开场图继续，场景是私人跑马场：画面左边的玛丽把厚信封塞进驯马师手里，用甜得发腻的压低声音说话，甜甜的娇笑笑得更开，眼睛看着他的脸。画面右边的驯马师接过信封塞进背心里，嘴唇抿紧，眉头皱着，眼睛垂着看信封。镜头固定不动。",
+       "dialogue_indices": [
+        0
+       ]
+      }
+     ],
+     "sound_en": "A light breeze and distant birdsong. Voices stay close and clear.",
+     "sound_zh": "轻轻的风声和远处的鸟叫。人声近而清楚。",
+     "seed": 5002,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "03｜驯马师牵着黑马走到莉莉面前",
+     "duration_seconds": 6,
+     "generation_seconds": 6,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "Trainer",
+      "LilyRiding"
+     ],
+     "asset_keys": [
+      "ranch",
+      "trainer",
+      "lily_riding",
+      "black_horse"
+     ],
+     "image_reference_keys": [
+      "ranch"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on medium two-shot, both people from the head to the knees, in the middle third of the frame, on the packed-earth track. Lily at frame-left in the cream blouse and tan riding breeches, facing frame-right, her hands clasped at her waist, her lips parted, her brows pulled up, her eyes wide on the black horse's head at frame-right. Trainer in the middle in the worn brown leather vest and flat tweed cap, facing frame-left, holding a leather lead rope in his right hand, his lips pressed into a thin line, his brows drawn together, his eyes lowered on the rope. At the frame-right edge the head and neck of the tall jet-black horse in profile facing frame-left, its head thrown up, its ears pinned back, its nostrils flared, the lead rope running from its halter to Trainer's hand. The frame holds exactly two people: Lily and Trainer, and one black horse. Bright midday sunlight, a clear blue sky, the ranch softly blurred behind. Fixed stage layout: the raised wooden grandstand is at frame-left; the white fence and the green field are at frame-right; dark pine trees line the far edge.",
+     "visual_zh": "驯马师把一匹明显很野的黑马牵到莉莉面前，说这匹是给她的；莉莉往后退了半步。",
+     "camera_zh": "0—6秒，镜头固定。",
+     "dialogue": [
+      {
+       "speaker": "Trainer",
+       "text": "This one's for you, Miss.",
+       "start_seconds": 1.0,
+       "end_seconds": 3.67,
+       "language": "en"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 6,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on medium two-shot opens from the adopted first frame in [[asset:ranch]]: [[asset:trainer]] holds the lead rope out toward Lily and speaks in a flat, stiff voice, his lips pressed into a thin line and his eyes lowered on the rope. [[asset:lily_riding]] looks up at the horse and takes half a step back, her lips parting and her brows pulling up, her hands tightening at her waist. [[asset:black_horse]] tosses its head and stamps one hoof, its ears pinned back. The camera holds still.",
+       "visual_zh": "一个稳定的侧面中景双人镜头，从已采用的开场图继续，场景是私人跑马场：驯马师把牵马绳递向莉莉，用平板僵硬的声音说话，嘴唇抿成细线，眼睛垂着看绳子。莉莉抬头看着那匹马，往后退了半步，嘴唇微张，眉头抬起，双手在腰前攥紧。黑马甩着头、刨了一下蹄子，耳朵向后压平。镜头固定不动。",
+       "dialogue_indices": [
+        0
+       ]
+      }
+     ],
+     "sound_en": "A light breeze, a horse snorting and the creak of leather. Voices stay close and clear.",
+     "sound_zh": "轻轻的风声、马的喷鼻声和皮革的吱嘎声。人声近而清楚。",
+     "seed": 5003,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "04｜莉莉不敢骑",
+     "duration_seconds": 6,
+     "generation_seconds": 6,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "LilyRiding"
+     ],
+     "asset_keys": [
+      "ranch",
+      "lily_riding",
+      "black_horse"
+     ],
+     "image_reference_keys": [
+      "ranch"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on medium close-up, in the middle third of the frame, on the packed-earth track. Lily stands at frame-right from the head to the waist in profile facing frame-left, in the cream blouse and tan riding breeches, her hands clasped tight at her waist, her shoulders drawn in, her lips parted, her brows pulled together, her eyes wide on the black horse's eye. The head and neck of the tall jet-black horse fill the frame-left edge in profile facing frame-right, its ears pinned back, its nostrils flared. The frame holds exactly one person, Lily, and one black horse. Bright midday sunlight, a clear blue sky, the ranch softly blurred behind. Fixed stage layout: the raised wooden grandstand is at frame-left; the white fence and the green field are at frame-right; dark pine trees line the far edge.",
+     "visual_zh": "莉莉怕得往后缩，小声说这匹马太野了。",
+     "camera_zh": "0—6秒侧面中近景，镜头固定。",
+     "dialogue": [
+      {
+       "speaker": "LilyRiding",
+       "text": "He looks too wild for me.",
+       "start_seconds": 1.0,
+       "end_seconds": 4.05,
+       "language": "en"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 6,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on medium close-up opens from the adopted first frame in [[asset:ranch]]: [[asset:lily_riding]] in profile facing frame-left, her eyes on the black horse's eye at the frame-left edge. She speaks in a thin, shaky voice and leans her shoulders back away from the horse, her hands clutching tighter at her waist, her brows pulling together. [[asset:black_horse]] tosses its head, its ears pinned back. The camera holds still.",
+       "visual_zh": "一个稳定的侧面中近景，从已采用的开场图继续，场景是私人跑马场：莉莉侧身朝画面左边，眼睛看着画面左边缘黑马的眼睛。她用细细发颤的声音说话，肩膀向后缩着躲开那匹马，双手在腰前攥得更紧，眉头越拧越紧。黑马甩着头，耳朵向后压平。镜头固定不动。",
+       "dialogue_indices": [
+        0
+       ]
+      }
+     ],
+     "sound_en": "A light breeze, the creak of leather and a horse stamping its hoof. Voices stay close and clear.",
+     "sound_zh": "轻轻的风声、皮革的吱嘎声和马蹄刨地声。人声近而清楚。",
+     "seed": 5004,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "05｜玛丽当众激莉莉，莉莉点头",
+     "duration_seconds": 6,
+     "generation_seconds": 6,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "MaryRiding",
+      "LilyRiding"
+     ],
+     "asset_keys": [
+      "ranch",
+      "mary_riding",
+      "lily_riding"
+     ],
+     "image_reference_keys": [
+      "ranch"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on medium two-shot, both women from the head to the waist, in the middle third of the frame, facing each other in profile on the packed-earth track. Mary at frame-left in the ivory riding jacket, facing frame-right, her arms loosely folded, her chin tilted up, a sweet coy smile, her eyes on Lily's face. Lily at frame-right in the cream blouse, facing frame-left, her hands clasped tight at her chest, her lips pressed together, her brows pulled up, her eyes lowered. The frame holds exactly two people: Mary and Lily. Bright midday sunlight, a clear blue sky, the ranch softly blurred behind. Fixed stage layout: the raised wooden grandstand is at frame-left; the white fence and the green field are at frame-right; dark pine trees line the far edge.",
+     "visual_zh": "玛丽当着众人的面激莉莉，莉莉咬住嘴唇，抬头点了一下头。",
+     "camera_zh": "0—6秒，镜头固定。",
+     "dialogue": [
+      {
+       "speaker": "MaryRiding",
+       "text": "Everyone's watching, so don't be shy.",
+       "start_seconds": 1.0,
+       "end_seconds": 4.17,
+       "language": "en"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 6,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on medium two-shot opens from the adopted first frame in [[asset:ranch]]: [[asset:mary_riding]] at frame-left speaks in a sugary, mocking voice, her sweet coy smile widening, her chin tilting higher and her eyes on Lily's face. [[asset:lily_riding]] at frame-right flinches, her lips pressing tight and her brows pulling together; she draws one breath, her jaw tightening, lifts her eyes to Mary's face and gives one small nod. The camera holds still.",
+       "visual_zh": "一个稳定的侧面中景双人镜头，从已采用的开场图继续，场景是私人跑马场：画面左边的玛丽用甜腻嘲弄的声音说话，甜甜的娇笑笑得更开，下巴抬得更高，眼睛看着莉莉的脸。画面右边的莉莉缩了一下，嘴唇抿紧，眉头拧起；她吸了一口气，下颌绷紧，抬眼看着玛丽的脸，轻轻点了一下头。镜头固定不动。",
+       "dialogue_indices": [
+        0
+       ]
+      }
+     ],
+     "sound_en": "A light breeze and a few guests chuckling softly in the distance. Voices stay close and clear.",
+     "sound_zh": "轻轻的风声，和远处几位宾客压低的轻笑声。人声近而清楚。",
+     "seed": 5005,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "06｜莉莉被迫上马",
+     "duration_seconds": 3,
+     "generation_seconds": 3,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "LilyRiding",
+      "Trainer"
+     ],
+     "asset_keys": [
+      "ranch",
+      "lily_riding",
+      "trainer",
+      "black_horse"
+     ],
+     "image_reference_keys": [
+      "ranch"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on wide shot, in the middle third of the frame, on the packed-earth track. The tall jet-black horse stands in profile facing frame-right. Lily stands on the ground at its left side, in profile facing frame-right, in the cream blouse and tan riding breeches, her left boot in the stirrup, her left knee bent, both hands gripping the saddle, her lips pressed tight, her brows drawn together, her eyes lowered on the saddle. Trainer stands at the horse's head at frame-right in the worn brown leather vest and flat tweed cap, his right hand holding the bridle, his lips pressed together, his brows drawn together, his eyes on the horse's eye. The frame holds exactly two people: Lily and Trainer, and one black horse. Bright midday sunlight, a clear blue sky, the ranch softly blurred behind. Fixed stage layout: the raised wooden grandstand is at frame-left; the white fence and the green field are at frame-right; dark pine trees line the far edge.",
+     "visual_zh": "莉莉咬着牙抓着马鞍撑上马背，驯马师扶着马头。",
+     "camera_zh": "0—3秒，镜头固定。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 3,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on wide shot opens from the adopted first frame in [[asset:ranch]]: [[asset:lily_riding]] pulls herself up with both hands on the saddle, her left leg straightening in the stirrup, swings her right leg over the horse's back and drops into the saddle, her hands sliding to the reins, her lips pressing tight and her eyes widening on the horse's ears. [[asset:trainer]] keeps hold of the bridle, his lips pressed together and his brows drawn together. [[asset:black_horse]] shifts its weight. The camera holds still.",
+       "visual_zh": "一个稳定的侧面宽景，从已采用的开场图继续，场景是私人跑马场：莉莉双手抓着马鞍把自己撑起来，左腿在马镫里蹬直，右腿跨过马背落坐在鞍上，双手滑向缰绳，嘴唇抿紧，眼睛睁大看着马耳朵。驯马师一直抓着马笼头，嘴唇抿紧，眉头皱着。黑马挪了挪重心。镜头固定不动。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "A light breeze, the creak of leather and a horse stamping its hoof. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here.",
+     "sound_zh": "轻轻的风声、皮革的吱嘎声和马蹄刨地声。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。",
+     "seed": 5006,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "07｜驯马师松手后退，莉莉发抖",
+     "duration_seconds": 4,
+     "generation_seconds": 4,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "LilyRiding",
+      "Trainer"
+     ],
+     "asset_keys": [
+      "ranch",
+      "lily_riding",
+      "trainer",
+      "black_horse"
+     ],
+     "image_reference_keys": [
+      "ranch"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on wide shot, in the middle third of the frame, on the packed-earth track. The tall jet-black horse stands in profile facing frame-right. Lily sits in the saddle on its back in profile facing frame-right, in the cream blouse and tan riding breeches, both hands gripping the reins, her back rigid, her lower lip caught between her teeth, her brows drawn together, her eyes wide on the horse's ears. Trainer stands at the horse's head at frame-right in the worn brown leather vest and flat tweed cap, his right hand holding the bridle, his lips pressed together, his brows drawn together, his eyes lowered. The frame holds exactly two people: Lily and Trainer, and one black horse. Bright midday sunlight, a clear blue sky, the ranch softly blurred behind. Fixed stage layout: the raised wooden grandstand is at frame-left; the white fence and the green field are at frame-right; dark pine trees line the far edge.",
+     "visual_zh": "驯马师松开马笼头、低着头后退；马甩头刨蹄，莉莉抖着抓紧缰绳。",
+     "camera_zh": "0—4秒，镜头固定。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 4,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on wide shot opens from the adopted first frame in [[asset:ranch]]: [[asset:trainer]] lets go of the bridle and takes two quick steps back, his lips pressed together, his brows drawn together and his eyes lowered. [[asset:black_horse]] tosses its head and stamps one hoof. [[asset:lily_riding]] draws one shaky breath, her lower lip trembling, her brows pulling together and her hands tightening on the reins. The camera holds still.",
+       "visual_zh": "一个稳定的侧面宽景，从已采用的开场图继续，场景是私人跑马场：驯马师松开马笼头快步退了两步，嘴唇抿紧，眉头皱着，眼睛垂着。黑马甩着头、刨了一下蹄子。莉莉抖着吸了一口气，下嘴唇发颤，眉头拧起，双手把缰绳攥得更紧。镜头固定不动。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "A light breeze, the creak of leather and a horse stamping its hoof. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here.",
+     "sound_zh": "轻轻的风声、皮革的吱嘎声和马蹄刨地声。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。",
+     "seed": 5007,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "08｜玛丽把针扎进马屁股",
+     "duration_seconds": 4,
+     "generation_seconds": 4,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "MaryRiding"
+     ],
+     "asset_keys": [
+      "ranch",
+      "mary_riding",
+      "black_horse"
+     ],
+     "image_reference_keys": [
+      "ranch"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on medium shot, in the middle third of the frame, on the packed-earth track. Mary stands at frame-left from the head to the knees in profile facing frame-right, in the ivory riding jacket and white riding breeches, her right hand holding a thin silver needle between her thumb and forefinger a hand's width from the glossy black rump of the horse at frame-right, her chin tilted up, a sweet coy smile, her eyes lowered on the needle. The frame ends at the back edge of the saddle and holds only the hindquarters and tail of a tall jet-black horse at frame-right. The frame holds exactly one person, Mary, and the rear half of one black horse. Bright midday sunlight, a clear blue sky, the ranch softly blurred behind. Fixed stage layout: the raised wooden grandstand is at frame-left; the white fence and the green field are at frame-right; dark pine trees line the far edge.",
+     "visual_zh": "玛丽甜笑着，把一根细银针扎进黑马的屁股；马的臀部一抽，尾巴甩起。",
+     "camera_zh": "0—5秒侧面中景，镜头固定。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 4,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on medium shot opens from the adopted first frame in [[asset:ranch]]: [[asset:mary_riding]] presses the thin silver needle into the rump of [[asset:black_horse]] with her right hand, her sweet coy smile widening and her eyes on the needle. The horse's hindquarters flinch and its tail whips up. The camera holds still.",
+       "visual_zh": "一个稳定的侧面中景，从已采用的开场图继续，场景是私人跑马场：玛丽用右手把细银针扎进黑马的臀部，甜甜的娇笑笑得更开，眼睛看着针。马的臀部一抽，尾巴甩了起来。镜头固定不动。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "A sharp stamp of hooves and the creak of leather. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here.",
+     "sound_zh": "一声尖锐的蹄子跺地声和皮革的吱嘎声。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。",
+     "seed": 5008,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "09｜马被扎后抽腿，玛丽退开",
+     "duration_seconds": 3,
+     "generation_seconds": 3,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "MaryRiding"
+     ],
+     "asset_keys": [
+      "ranch",
+      "mary_riding",
+      "black_horse"
+     ],
+     "image_reference_keys": [
+      "ranch"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on medium shot, in the middle third of the frame, on the packed-earth track. Mary stands at frame-left from the head to the knees in profile facing frame-right, in the ivory riding jacket and white riding breeches, her right hand just pulled back from the glossy black rump of the horse at frame-right, the thin silver needle between her fingers, her lips pressed into a thin satisfied line, her eyes on the horse's rump. The frame ends at the back edge of the saddle and holds only the hindquarters and tail of a tall jet-black horse at frame-right. The frame holds exactly one person, Mary, and the rear half of one black horse. Bright midday sunlight, a clear blue sky, the ranch softly blurred behind. Fixed stage layout: the raised wooden grandstand is at frame-left; the white fence and the green field are at frame-right; dark pine trees line the far edge.",
+     "visual_zh": "玛丽的手刚从马臀上抽回来，马猛地一抽、后蹄向后一踢，尾巴甩起；玛丽向画面左边退开两步，眼睛盯着马的后腿。",
+     "camera_zh": "0—3秒侧面中景，镜头固定。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 3,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on medium shot opens from the adopted first frame in [[asset:ranch]]: the hindquarters of [[asset:black_horse]] jerk hard, one hind hoof kicks back and its tail whips up, and [[asset:mary_riding]] jumps back two quick steps toward frame-left, the needle held against her chest, her lips pressed into a tight line and her eyes on the horse's hind legs. The camera holds still.",
+       "visual_zh": "一个稳定的侧面中景，从已采用的开场图继续，场景是私人跑马场：黑马的臀部猛地一抽，一只后蹄向后踢出，尾巴甩起；玛丽向画面左边快退两步，银针按在胸前，嘴唇抿成一条紧线，眼睛盯着马的后腿。镜头固定不动。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "A sharp stamp and a hoof thudding, and the creak of leather. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here.",
+     "sound_zh": "一声尖锐的跺蹄声、一下蹄子的闷响和皮革的吱嘎声。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。",
+     "seed": 5009,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "10｜莉莉在鞍上被吓到",
+     "duration_seconds": 3,
+     "generation_seconds": 3,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "LilyRiding"
+     ],
+     "asset_keys": [
+      "ranch",
+      "lily_riding",
+      "black_horse"
+     ],
+     "image_reference_keys": [
+      "ranch"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on medium shot, in the middle third of the frame, on the packed-earth track. The tall jet-black horse stands in profile facing frame-right, its head and neck at frame-right. Lily sits in the saddle on its back in profile facing frame-right, in the cream blouse and tan riding breeches, both hands gripping the reins at the horse's neck, her back rigid, her lips parted, her brows drawn together, her eyes wide on the horse's ears. The frame holds exactly one person, Lily, and one black horse. Bright midday sunlight, a clear blue sky, the ranch softly blurred behind. Fixed stage layout: the raised wooden grandstand is at frame-left; the white fence and the green field are at frame-right; dark pine trees line the far edge.",
+     "visual_zh": "马猛地甩头、横着跨出一步，莉莉整个人被带得向前一冲又向后一仰，双手猛抓缰绳，眼睛睁大，嘴张开。",
+     "camera_zh": "0—3秒侧面中景，镜头固定。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 3,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on medium shot opens from the adopted first frame in [[asset:ranch]]: [[asset:black_horse]] throws its head up and takes a sharp step sideways, and [[asset:lily_riding]] is jolted forward and then back in the saddle, her hands snatching at the reins, her mouth opening and her eyes wide on the horse's ears. The camera holds still.",
+       "visual_zh": "一个稳定的侧面中景，从已采用的开场图继续，场景是私人跑马场：黑马猛地甩起头、横着跨出一步，莉莉在鞍上被带得向前一冲又向后一仰，双手猛抓缰绳，嘴张开，睁大眼睛看着马耳朵。镜头固定不动。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "Hooves scuffing the dirt and the creak of leather. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here.",
+     "sound_zh": "马蹄蹭过泥土的声音和皮革的吱嘎声。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。",
+     "seed": 5010,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "11｜马人立再落地",
+     "duration_seconds": 2,
+     "generation_seconds": 2,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "LilyRiding"
+     ],
+     "asset_keys": [
+      "ranch",
+      "lily_riding",
+      "black_horse"
+     ],
+     "image_reference_keys": [
+      "ranch"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on wide shot, in the middle third of the frame, on the packed-earth track. The tall jet-black horse stands in profile facing frame-right on all four hooves, its head thrown up, its ears pinned back, its nostrils flared. Lily on its back is leaning forward with both arms wrapped around the horse's neck, in the cream blouse and tan riding breeches, her lips pressed tight, her brows pulled up, her eyes squeezed shut. The frame holds exactly one person, Lily, and one black horse. Bright midday sunlight, a clear blue sky, the ranch softly blurred behind. Fixed stage layout: the raised wooden grandstand is at frame-left; the white fence and the green field are at frame-right; dark pine trees line the far edge.",
+     "visual_zh": "黑马猛地后腿站起，前蹄抬高，然后重重落回四蹄；莉莉抱紧马脖子。",
+     "camera_zh": "0—2秒侧面宽景，镜头固定。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 2,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on wide shot opens from the adopted first frame in [[asset:ranch]]: [[asset:black_horse]] rears up on its hind legs with its front hooves raised high, then comes down hard on all four hooves, while [[asset:lily_riding]] clings to its neck with both arms, her eyes squeezed shut and her lips pressed tight. The camera holds still.",
+       "visual_zh": "一个稳定的侧面宽景镜头，从已采用的开场图继续，场景是私人跑马场：黑马后腿站起、前蹄高高抬起，然后重重落回四蹄，莉莉双臂抱紧它的脖子，眼睛紧闭，嘴唇抿紧。镜头固定不动。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "Hooves scraping the dirt and the creak of leather. The recording is completely free of voices: no speech, no humming, no sighs, no breathing sounds, no vocal sounds of any kind.",
+     "sound_zh": "马蹄刨地声和皮革的吱嘎声。 录音里完全没有人声：没有说话、哼声、叹息、呼吸声或任何发声。",
+     "seed": 5011,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "12｜黑马狂奔",
+     "duration_seconds": 3,
+     "generation_seconds": 3,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "LilyRiding"
+     ],
+     "asset_keys": [
+      "ranch",
+      "lily_riding",
+      "black_horse"
+     ],
+     "image_reference_keys": [
+      "ranch"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on wide shot, in the middle third of the frame, on the green riding field. The tall jet-black horse is in profile facing frame-right in a full gallop, all four hooves off the ground, dust rising behind it. Lily on its back is low over its neck, in the cream blouse and tan riding breeches, both hands tangled in the black mane, her face pale, her lips pressed tight, her eyes squeezed shut. The dark pine trees line the far edge at frame-right. The frame holds exactly one person, Lily, and one black horse. Bright midday sunlight, a clear blue sky, the ranch softly blurred behind. Fixed stage layout: the raised wooden grandstand is at frame-left; the white fence and the green field are at frame-right; dark pine trees line the far edge.",
+     "visual_zh": "黑马载着伏在马脖子上的莉莉，朝着右边的松树狂奔。",
+     "camera_zh": "0—5秒侧面宽景，镜头固定。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 3,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on wide shot opens from the adopted first frame in [[asset:ranch]]: [[asset:black_horse]] gallops across the green field toward the dark pine trees at frame-right with [[asset:lily_riding]] low over its neck, her hands tangled in the mane, her face pale and her lips pressed tight. The horse keeps galloping. The camera holds still.",
+       "visual_zh": "一个稳定的侧面宽景镜头，从已采用的开场图继续，场景是私人跑马场：黑马载着伏在脖子上的莉莉，朝着画面右边的深色松树奔过绿色的跑马场，她的双手缠在鬃毛里，脸色苍白，嘴唇紧紧抿着。马一直在奔跑。镜头固定不动。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "Fast, pounding hoofbeats on dry earth and the creak of leather. The recording is completely free of voices: no speech, no humming, no sighs, no breathing sounds, no vocal sounds of any kind.",
+     "sound_zh": "急促沉重的马蹄声踏在干土上，和皮革马具的吱嘎声。 录音里完全没有人声：没有说话、哼声、叹息、呼吸声或任何发声。",
+     "seed": 5012,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "13｜莉莉在奔马上尖叫求救",
+     "duration_seconds": 6,
+     "generation_seconds": 6,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "LilyRiding"
+     ],
+     "asset_keys": [
+      "ranch",
+      "lily_riding",
+      "black_horse"
+     ],
+     "image_reference_keys": [
+      "ranch"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on close-up of Lily alone, from the head to the shoulders, in profile facing frame-right, in the middle third of the frame, low over the neck of the galloping horse, her hair streaming back, both hands tangled in the black mane at the frame-right edge, her mouth open in a scream, her brows pulled up, her eyes wide and wet with tears. Dark pine trees and a white fence streak past behind her. The frame holds exactly one person, Lily. Bright midday sunlight, a clear blue sky, the ranch softly blurred behind. Fixed stage layout: the raised wooden grandstand is at frame-left; the white fence and the green field are at frame-right; dark pine trees line the far edge.",
+     "visual_zh": "莉莉伏在狂奔的马背上，用尽力气喊救命。",
+     "camera_zh": "0—6秒，镜头固定。",
+     "dialogue": [
+      {
+       "speaker": "LilyRiding",
+       "text": "Help! Somebody help me!",
+       "start_seconds": 1.0,
+       "end_seconds": 3.41,
+       "language": "en"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 6,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on close-up opens from the adopted first frame in [[asset:ranch]]: [[asset:lily_riding]] screams for help, her mouth wide open, her brows pulled up and tears streaming back across her cheeks, her hair whipping behind her. The black mane lashes at the frame-right edge. The camera holds still.",
+       "visual_zh": "一个稳定的侧面特写，从已采用的开场图继续，场景是私人跑马场：莉莉大声呼救，嘴张得很大，眉头高高抬起，眼泪被风吹得向后淌过脸颊，头发在身后狂甩。黑色的马鬃在画面右边缘抽打。镜头固定不动。",
+       "dialogue_indices": [
+        0
+       ]
+      }
+     ],
+     "sound_en": "Fast, pounding hoofbeats and a rush of wind. Voices stay close and clear.",
+     "sound_zh": "急促沉重的马蹄声和呼啸的风声。人声近而清楚。",
+     "seed": 5013,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "14｜玛丽退到看台边看着",
+     "duration_seconds": 3,
+     "generation_seconds": 3,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "MaryRiding"
+     ],
+     "asset_keys": [
+      "ranch",
+      "mary_riding"
+     ],
+     "image_reference_keys": [
+      "ranch"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on medium shot, in the middle third of the frame, at the foot of the raised wooden grandstand stairs at frame-left. Mary stands alone from the head to the knees in profile facing frame-right, in the ivory riding jacket and white riding breeches, her left hand resting on the stair railing, the thin silver needle between the fingers of her right hand at her waist, her chin lifted, her lips pressed into a thin satisfied line, her eyes narrowed on the green field at frame-right. The frame holds exactly one person, Mary. Bright midday sunlight, a clear blue sky, the ranch softly blurred behind. Fixed stage layout: the raised wooden grandstand is at frame-left; the white fence and the green field are at frame-right; dark pine trees line the far edge.",
+     "visual_zh": "玛丽站在看台台阶脚下，一只手扶着栏杆，另一手捏着银针放在腰边，下巴抬起，嘴唇抿成一条得意的细线，眼睛眯起看着画面右边的绿色跑马场。",
+     "camera_zh": "0—3秒侧面中景，镜头固定。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 3,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on medium shot opens from the adopted first frame in [[asset:ranch]]: [[asset:mary_riding]] draws one slow breath and her chin lifts higher, her right hand slipping the needle into her jacket pocket, her lips pressed into a thin satisfied line and her narrowed eyes fixed on the green field at frame-right. The camera holds still.",
+       "visual_zh": "一个稳定的侧面中景，从已采用的开场图继续，场景是私人跑马场：玛丽缓缓吸了一口气，下巴抬得更高，右手把银针塞进外套口袋，嘴唇抿成一条得意的细线，眯起的眼睛盯着画面右边的绿色跑马场。镜头固定不动。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "A light breeze and, far away, hooves pounding. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here.",
+     "sound_zh": "轻轻的风声，和很远处急促的马蹄声。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。",
+     "seed": 5014,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "15｜基利安猛抬头放下电话",
+     "duration_seconds": 3,
+     "generation_seconds": 3,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "KillianCoat"
+     ],
+     "asset_keys": [
+      "ranch",
+      "killian_coat"
+     ],
+     "image_reference_keys": [
+      "ranch"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium close-up of Killian alone, from the head to the waist, in profile facing frame-right, in the middle third of the frame, at the railing of the raised wooden grandstand in the long charcoal overcoat over a black shirt, the gold smartphone held at his right ear, his lips relaxed and slightly parted, his jaw loose, his eyes lowered on the railing. The frame holds exactly one person, Killian. Bright midday sunlight, a clear blue sky, the ranch softly blurred behind. Fixed stage layout: the raised wooden grandstand is at frame-left; the white fence and the green field are at frame-right; dark pine trees line the far edge.",
+     "visual_zh": "基利安听着电话，猛地抬起头看向画面右边的松树，眉头一下拧紧，把手机从耳边慢慢放到胸前，下颌绷紧，左手攥住栏杆。",
+     "camera_zh": "0—3秒侧面中近景，镜头固定。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 3,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady medium close-up opens from the adopted first frame in [[asset:ranch]]: [[asset:killian_coat]] lifts his head sharply toward the dark pine trees at frame-right, his brows snapping together and his eyes narrowing, lowers the gold phone from his ear to his chest and clenches his jaw, his left hand closing hard on the railing. The camera holds still.",
+       "visual_zh": "一个稳定的侧面中近景，从已采用的开场图继续，场景是私人跑马场：基利安猛地抬起头看向画面右边的深色松树，眉头一下拧紧、眼睛眯起，把金色手机从耳边放到胸前，下颌绷紧，左手死死攥住栏杆。镜头固定不动。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "A light breeze and the creak of the wooden railing under his grip. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here.",
+     "sound_zh": "轻轻的风声，和他手下木栏杆被攥得吱嘎作响的声音。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。",
+     "seed": 5015,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "16｜基利安捏碎手机",
+     "duration_seconds": 3,
+     "generation_seconds": 3,
+     "continuity": "cut",
+     "depends_on_previous": true,
+     "use_previous_episode_state": false,
+     "characters": [
+      "KillianCoat"
+     ],
+     "asset_keys": [
+      "ranch",
+      "killian_coat"
+     ],
+     "image_reference_keys": [
+      "ranch"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium close-up of Killian alone, from the head to the chest, in profile facing frame-right, in the middle third of the frame, at the grandstand railing in the long charcoal overcoat over a black shirt, his right fist closed around the gold smartphone at chest height, his jaw clenched, his lips pulled back from his teeth, his eyes narrowed on the dark pine trees at frame-right. The frame holds exactly one person, Killian. Bright midday sunlight, a clear blue sky, the ranch softly blurred behind. Fixed stage layout: the raised wooden grandstand is at frame-left; the white fence and the green field are at frame-right; dark pine trees line the far edge.",
+     "visual_zh": "基利安的拳头攥紧，金色手机被捏得变形裂开，眼里闪过金光，他松手让手机掉下去。",
+     "camera_zh": "0—3秒，镜头固定。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 3,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady medium close-up opens from the adopted first frame in [[asset:ranch]]: [[asset:killian_coat]]'s fist tightens until the gold casing bends and cracks and the glass splinters, his jaw clenching harder and his eyes flaring with a dark-gold glint. He opens his hand and the ruined phone drops to the boards. The camera holds still.",
+       "visual_zh": "一个稳定的中近景，从已采用的开场图继续，场景是私人跑马场：基利安的拳头越攥越紧，金色的机身弯曲开裂、玻璃碎开，下颌咬得更紧，眼睛里闪过暗金色的光。他松开手，坏掉的手机掉在木板上。镜头固定不动。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "A sharp crack of bending metal and glass. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here.",
+     "sound_zh": "金属弯曲和玻璃碎裂的一声脆响。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。",
+     "seed": 5016,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "17｜基利安翻过栏杆冲出去",
+     "duration_seconds": 4,
+     "generation_seconds": 4,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "KillianCoat"
+     ],
+     "asset_keys": [
+      "ranch",
+      "killian_coat"
+     ],
+     "image_reference_keys": [
+      "ranch"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Wide shot, in the middle third of the frame. Killian stands alone at the railing of the raised wooden grandstand at frame-left in profile facing frame-right, in the long charcoal overcoat over a black shirt, his right hand gripping the top of the railing, his body leaning forward, his jaw clenched hard, his lips pulled back from his teeth, his eyes narrowed on the dark pine trees at frame-right. The frame holds exactly one person, Killian. Bright midday sunlight, a clear blue sky, the ranch softly blurred behind. Fixed stage layout: the raised wooden grandstand is at frame-left; the white fence and the green field are at frame-right; dark pine trees line the far edge.",
+     "visual_zh": "基利安翻过栏杆，朝画面右边冲过跑马场，越跑越小。",
+     "camera_zh": "0—4秒，镜头固定。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 4,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on wide shot opens from the adopted first frame in [[asset:ranch]]: [[asset:killian_coat]] vaults over the railing in one motion, lands on the packed-earth track and sprints toward frame-right along the white fence, his overcoat flaring behind him, his jaw clenched hard and his lips pulled back from his teeth, dust kicking up from every stride, growing smaller as he crosses the field. The camera holds still.",
+       "visual_zh": "一个稳定的侧面宽景，从已采用的开场图继续，场景是私人跑马场：基利安一下翻过栏杆，落在夯实的泥土跑道上，沿着白色围栏朝画面右边冲刺，大衣在身后翻飞，下颌咬紧，嘴唇咧开露出牙齿，每一步都踢起尘土，穿过跑马场时越跑越小。镜头固定不动。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "Boots hitting the packed earth fast, then fading, and a light breeze. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here.",
+     "sound_zh": "靴子飞快踏在夯实的泥土上，然后渐渐远去，和轻轻的风声。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。",
+     "seed": 5017,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "18｜玛丽的笑僵住",
+     "duration_seconds": 3,
+     "generation_seconds": 3,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "MaryRiding"
+     ],
+     "asset_keys": [
+      "ranch",
+      "mary_riding"
+     ],
+     "image_reference_keys": [
+      "ranch"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on medium close-up of Mary alone, from the head to the waist, in profile facing frame-right, in the middle third of the frame, at the foot of the raised wooden grandstand stairs at frame-left, in the ivory riding jacket, a smug smile, her chin lifted, her eyes on the green field at frame-right, her left hand resting on the stair railing. The frame holds exactly one person, Mary. Bright midday sunlight, a clear blue sky, the ranch softly blurred behind. Fixed stage layout: the raised wooden grandstand is at frame-left; the white fence and the green field are at frame-right; dark pine trees line the far edge.",
+     "visual_zh": "玛丽看见基利安冲过来，得意的笑慢慢褪掉，往后退了一步。",
+     "camera_zh": "0—3秒，镜头固定。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 3,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on medium close-up opens from the adopted first frame in [[asset:ranch]]: [[asset:mary_riding]]'s smug smile drains away, her lips parting, her brows pulling up and her eyes widening on the green field at frame-right. She takes one step back and presses her right hand against her chest, her jaw trembling. The camera holds still.",
+       "visual_zh": "一个稳定的侧面中近景，从已采用的开场图继续，场景是私人跑马场：玛丽得意的笑慢慢褪掉，嘴唇张开，眉头抬起，眼睛睁大看着画面右边的绿色跑马场。她往后退了一步，一只手按在胸口，下颌发抖。镜头固定不动。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "A light breeze and, far away, hooves pounding. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here.",
+     "sound_zh": "轻轻的风声，和很远处急促的马蹄声。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。",
+     "seed": 5018,
+     "dialogue_language": "en"
+    }
+   ],
+   "dialogue_language": "en"
+  },
+  {
+   "title": "剧本第8集｜极致共骑（场景级改编）",
+   "summary": "快被甩向栅栏、基利安冲刺追上、翻身上马、勒停、吻。",
+   "script": "莉莉在奔马上快被甩向栅栏，黑马载着莉莉朝尖桩栅栏狂奔，她被颠得身体歪向一侧，快要摔下来。\n尖桩栅栏飞速掠过，一排尖尖的木桩从画面右边飞速掠过，草和尘土被风吹起；画面里没有人。\n基利安全速冲过草地，基利安在草地边的土路上全速冲刺，大衣在身后翻飞，双臂用力摆动，下颌咬紧，眼睛盯着前方的土路，靴子后面扬起尘土。\n基利安翻身上马，基利安追上狂奔的黑马，抓着马鞍翻身坐到莉莉身后，一臂搂住她的腰。\n勒紧缰绳，马人立而起又落下，基利安猛地勒紧缰绳，马人立起来又重重落下，莉莉紧闭着眼被他抱住。\n他喘着气贴在她耳边，基利安的胸膛贴着她的后背，粗重的呼吸喷在她耳边；她打了个颤。\n马被逼停，莉莉瘫软发抖，马慢慢停下，打着响鼻；莉莉瘫在他怀里发抖，基利安低头看着她。\n如果我晚来一秒，基利安用嘶哑狠戾的声音说，晚一秒你就死了。\nKillianCoat：“One second later, you'd be dead.”\n捏住下巴扳过她的脸，基利安捏住她的下巴把她的脸扳过来，眼睛盯着她的嘴唇；她睁大眼睛看着他。\n吻，基利安狠狠吻住她；她睁大眼睛推了推他的手臂，然后眼睛慢慢半闭。",
+   "segments": [
+    {
+     "title": "01｜莉莉在奔马上快被甩向栅栏",
+     "duration_seconds": 4,
+     "generation_seconds": 4,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "LilyRiding"
+     ],
+     "asset_keys": [
+      "woods_edge",
+      "lily_riding",
+      "black_horse"
+     ],
+     "image_reference_keys": [
+      "woods_edge"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on wide shot, in the middle third of the frame, on the dirt path along the meadow. The tall jet-black horse is in profile facing frame-right in a full gallop, all four hooves off the ground, grass and dust flying. Lily on its back is bouncing hard in the saddle, her body slipping sideways, in the cream blouse and tan riding breeches, one hand gripping the black mane and the other hand loose in the air, her face pale, her mouth open, her eyes wide on the sharp fence posts at frame-right. The frame holds exactly one person, Lily, and one black horse. Bright afternoon sunlight, a clear blue sky, the meadow softly blurred behind. Fixed stage layout: the open meadow with a dirt path is at frame-left; the rough wooden fence with sharp pointed posts and the dark pine forest are at frame-right.",
+     "visual_zh": "黑马载着莉莉朝尖桩栅栏狂奔，她被颠得身体歪向一侧，快要摔下来。",
+     "camera_zh": "0—5秒侧面宽景，镜头固定。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 4,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on wide shot opens from the adopted first frame in [[asset:woods_edge]]: [[asset:black_horse]] gallops along the dirt path toward the sharp fence posts at frame-right with [[asset:lily_riding]] bouncing hard in the saddle, one hand gripping the black mane and her body slipping sideways, her mouth open and her eyes wide on the fence posts. The camera holds still.",
+       "visual_zh": "一个稳定的侧面宽景镜头，从已采用的开场图继续，场景是树林边缘的草地：黑马沿土路朝画面右边带尖桩的栅栏狂奔，莉莉在马鞍上被颠得上下弹动，一只手抓着黑色鬃毛，身体向一侧滑落，张着嘴，睁大眼睛看着栅栏的尖桩。镜头固定不动。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "Fast, pounding hoofbeats on dry earth and the creak of leather. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here.",
+     "sound_zh": "急促沉重的马蹄声踏在干土上，和皮革马具的吱嘎声。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。",
+     "seed": 5101,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "02｜尖桩栅栏飞速掠过",
+     "duration_seconds": 2,
+     "generation_seconds": 2,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [],
+     "asset_keys": [
+      "woods_edge"
+     ],
+     "image_reference_keys": [
+      "woods_edge"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Close-up of the rough wooden fence at frame-right, in the middle third of the frame: a row of sharp pointed wooden posts with splintered grey tips, the dirt path and the meadow grass at frame-left, the dark pine forest beyond. No people are in the frame. Bright afternoon sunlight, a clear blue sky, the meadow softly blurred behind. Fixed stage layout: the open meadow with a dirt path is at frame-left; the rough wooden fence with sharp pointed posts and the dark pine forest are at frame-right.",
+     "visual_zh": "一排尖尖的木桩从画面右边飞速掠过，草和尘土被风吹起；画面里没有人。",
+     "camera_zh": "0—2秒，镜头固定。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 2,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady close-up opens from the adopted first frame in [[asset:woods_edge]]: the sharp pointed fence posts stream past from frame-right to frame-left in a rush of speed, grass and dust whipping across the dirt path in front of them. No people appear. The camera holds still.",
+       "visual_zh": "一个稳定的特写，从已采用的开场图继续，场景是树林边缘的草地：带尖的木桩快速地从画面右边向左边掠过，草和尘土在前面的土路上被吹得乱飞。画面里没有人出现。镜头固定不动。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "Fast, pounding hoofbeats close by and a rush of wind. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here.",
+     "sound_zh": "很近处急促沉重的马蹄声和呼啸的风声。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。",
+     "seed": 5102,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "03｜基利安全速冲过草地",
+     "duration_seconds": 3,
+     "generation_seconds": 3,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "KillianCoat"
+     ],
+     "asset_keys": [
+      "woods_edge",
+      "killian_coat"
+     ],
+     "image_reference_keys": [
+      "woods_edge"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on wide shot, in the middle third of the frame, on the dirt path along the meadow. Killian runs alone at full speed along the path in profile facing frame-right, in the long charcoal overcoat flaring behind him, his arms driving, his jaw set hard, his lips pulled back from his teeth, his eyes on the dirt path ahead of him. Dust rises behind his boots. The frame holds exactly one person, Killian. Bright afternoon sunlight, a clear blue sky, the meadow softly blurred behind. Fixed stage layout: the open meadow with a dirt path is at frame-left; the rough wooden fence with sharp pointed posts and the dark pine forest are at frame-right.",
+     "visual_zh": "基利安在草地边的土路上全速冲刺，大衣在身后翻飞，双臂用力摆动，下颌咬紧，眼睛盯着前方的土路，靴子后面扬起尘土。",
+     "camera_zh": "0—3秒侧面宽景，镜头固定。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 3,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on wide shot opens from the adopted first frame in [[asset:woods_edge]]: [[asset:killian_coat]] sprints along the dirt path toward frame-right, his arms driving and his overcoat flaring behind him, his jaw set hard and his eyes on the path ahead, dust kicking up from every footfall. The camera holds still.",
+       "visual_zh": "一个稳定的侧面宽景，从已采用的开场图继续，场景是树林边缘的草地：基利安沿着土路朝画面右边冲刺，双臂用力摆动，大衣在身后翻飞，下颌咬紧，眼睛盯着前方的路，每一步都踢起尘土。镜头固定不动。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "Boots pounding the dirt fast and a rush of wind. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here.",
+     "sound_zh": "靴子飞快地踏着泥土的声音和呼啸的风声。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。",
+     "seed": 5103,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "04｜基利安翻身上马",
+     "duration_seconds": 6,
+     "generation_seconds": 6,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "KillianCoat",
+      "LilyRiding"
+     ],
+     "asset_keys": [
+      "woods_edge",
+      "killian_coat",
+      "lily_riding",
+      "black_horse"
+     ],
+     "image_reference_keys": [
+      "woods_edge"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on wide-medium shot, the whole horse and both people, in the middle third of the frame, on the dirt path along the meadow. The tall jet-black horse is in profile facing frame-right in a full gallop, all four hooves off the ground, dust flying. Lily sits in the saddle low over its neck, in the cream blouse and tan riding breeches, both hands tangled in the black mane, her mouth open, her eyes wide on Killian. Killian runs at full speed on the ground beside the horse's flank, at frame-left of Lily, in the long charcoal overcoat flaring behind him, his right hand gripping the back edge of the saddle, his body stretched low, his jaw set, his lips pressed together, his eyes on Lily's face. The frame holds exactly two people, Killian and Lily, and one black horse. Bright afternoon sunlight, a clear blue sky, the meadow softly blurred behind. Fixed stage layout: the open meadow with a dirt path is at frame-left; the rough wooden fence with sharp pointed posts and the dark pine forest are at frame-right. Killian always sits behind Lily, at frame-left of her.",
+     "visual_zh": "基利安追上狂奔的黑马，抓着马鞍翻身坐到莉莉身后，一臂搂住她的腰。",
+     "camera_zh": "0—6秒侧面宽中景，镜头固定。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 6,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on wide-medium shot opens from the adopted first frame in [[asset:woods_edge]]: [[asset:killian_coat]] pushes off the ground with his right foot, pulls himself up by the back edge of the saddle and swings his right leg over the horse's back, landing in the saddle behind [[asset:lily_riding]]. His right arm closes around her waist and his left hand takes the reins at the horse's neck, his jaw set and his eyes on her face. She jerks and looks back at him, her eyes wide. The horse gallops on without slowing. The camera holds still.",
+       "visual_zh": "一个稳定的侧面宽中景，从已采用的开场图继续，场景是树林边缘：基利安右脚蹬地，抓着马鞍后缘把自己拉上去，右腿跨过马背，落坐在莉莉身后。他的右臂环住她的腰，左手接过马脖子上的缰绳，下颌绷紧，眼睛看着她的脸。她猛地一颤，回头看着他，睁大了眼睛。黑马没有减速，继续狂奔。镜头固定不动。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "Fast, pounding hoofbeats on dry earth and the creak of leather. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here.",
+     "sound_zh": "急促沉重的马蹄声踏在干土上，和皮革马具的吱嘎声。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。",
+     "seed": 5104,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "05｜勒紧缰绳，马人立而起又落下",
+     "duration_seconds": 3,
+     "generation_seconds": 3,
+     "continuity": "cut",
+     "depends_on_previous": true,
+     "use_previous_episode_state": false,
+     "characters": [
+      "KillianCoat",
+      "LilyRiding"
+     ],
+     "asset_keys": [
+      "woods_edge",
+      "killian_coat",
+      "lily_riding",
+      "black_horse"
+     ],
+     "image_reference_keys": [
+      "woods_edge"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on wide-medium shot, both riders from the head to the waist and the whole horse, in the middle third of the frame, on the dirt path along the meadow. The tall jet-black horse is in profile facing frame-right on all four hooves, mid-stride, its head hauled up by the reins, its ears pinned back, its nostrils flared. Killian sits behind Lily, at frame-left of her, in the long charcoal overcoat, leaning back, his left hand pulling the reins hard, his right arm wrapped around her waist, his jaw clenched, his teeth bared, his eyes on the horse's head. Lily sits in front of him, at frame-right, her back against his chest, both hands gripping the black mane, her eyes squeezed shut, her lips pressed tight. The frame holds exactly two people, Killian and Lily, and one black horse. Bright afternoon sunlight, a clear blue sky, the meadow softly blurred behind. Fixed stage layout: the open meadow with a dirt path is at frame-left; the rough wooden fence with sharp pointed posts and the dark pine forest are at frame-right. Killian always sits behind Lily, at frame-left of her.",
+     "visual_zh": "基利安猛地勒紧缰绳，马人立起来又重重落下，莉莉紧闭着眼被他抱住。",
+     "camera_zh": "0—3秒，镜头固定。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 3,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on wide-medium shot opens from the adopted first frame in [[asset:woods_edge]]: [[asset:killian_coat]] hauls back on the reins with his left hand, his right arm tight around [[asset:lily_riding]]'s waist, his jaw clenched and his teeth bared. [[asset:black_horse]] rears up on its hind legs with its front hooves raised high, then comes down hard on all four hooves and slows, tossing its head. [[asset:lily_riding]] presses back against his chest, her eyes squeezed shut and her lips pressed tight. The camera holds still.",
+       "visual_zh": "一个稳定的侧面宽中景，从已采用的开场图继续，场景是树林边缘：基利安用左手猛地往后勒紧缰绳，右臂紧紧箍着莉莉的腰，下颌咬紧，龇着牙。黑马后腿站起、前蹄高高抬起，然后重重落回四蹄，速度慢了下来，甩着头。莉莉向后贴紧他的胸口，眼睛紧闭，嘴唇抿紧。镜头固定不动。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "Hooves scraping the dirt, a horse's snort and the creak of leather. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here.",
+     "sound_zh": "马蹄刨地声、马的喷鼻声和皮革的吱嘎声。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。",
+     "seed": 5105,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "06｜他喘着气贴在她耳边",
+     "duration_seconds": 4,
+     "generation_seconds": 4,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "KillianCoat",
+      "LilyRiding"
+     ],
+     "asset_keys": [
+      "woods_edge",
+      "killian_coat",
+      "lily_riding",
+      "black_horse"
+     ],
+     "image_reference_keys": [
+      "woods_edge"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on medium close-up two-shot, both people from the head to the chest, in the middle third of the frame, on the horse's back against a clear blue sky. Both in profile facing frame-right, the horse's black neck and ears at frame-right. Lily at frame-right, her back against Killian's chest, her hair loose and tangled, her eyes half closed, her lips parted, her brows drawn together. Killian directly behind her at frame-left in the long charcoal overcoat, his right arm tight around her waist, his lips close to her ear, his jaw tight, his eyes narrowed on the horse's ears at frame-right. The frame holds exactly two people: Killian and Lily. Bright afternoon sunlight, a clear blue sky, the meadow softly blurred behind. Fixed stage layout: the open meadow with a dirt path is at frame-left; the rough wooden fence with sharp pointed posts and the dark pine forest are at frame-right. Killian always sits behind Lily, at frame-left of her.",
+     "visual_zh": "基利安的胸膛贴着她的后背，粗重的呼吸喷在她耳边；她打了个颤。",
+     "camera_zh": "0—4秒，镜头固定。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 4,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on medium close-up opens from the adopted first frame in [[asset:woods_edge]]: [[asset:killian_coat]] pulls [[asset:lily_riding]] tighter against his chest with his right arm and lowers his head until his lips brush her ear, his chest rising and falling hard, his jaw tight and his eyes narrowed on the horse's ears. She shivers, her lips parting, her eyes sliding half shut and her brows drawing together. The horse's stride slows beneath them. The camera holds still.",
+       "visual_zh": "一个稳定的侧面中近景，从已采用的开场图继续，场景是树林边缘：基利安用右臂把莉莉往胸口搂得更紧，低下头直到嘴唇擦过她的耳朵，胸口剧烈起伏，下颌绷紧，眯着眼睛看着马耳朵。她打了个颤，嘴唇微张，眼睛半闭，眉头拧起。马的步子在他们身下慢了下来。镜头固定不动。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "Heavy breathing close by, slowing hoofbeats and the creak of leather. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here.",
+     "sound_zh": "很近处粗重的呼吸声、渐渐放慢的马蹄声和皮革的吱嘎声。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。",
+     "seed": 5106,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "07｜马被逼停，莉莉瘫软发抖",
+     "duration_seconds": 4,
+     "generation_seconds": 4,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "KillianCoat",
+      "LilyRiding"
+     ],
+     "asset_keys": [
+      "woods_edge",
+      "killian_coat",
+      "lily_riding",
+      "black_horse"
+     ],
+     "image_reference_keys": [
+      "woods_edge"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on wide-medium shot, both riders from the head to the waist and the whole horse, in the middle third of the frame, on the dirt path along the meadow. The tall jet-black horse is in profile facing frame-right at a slow walk, tossing its head, its flanks heaving. Killian sits behind Lily, at frame-left of her, in the long charcoal overcoat, his left hand holding the reins short, his right arm around her waist, his jaw tight, his lips pressed together, his eyes lowered on her face. Lily sits in front of him, at frame-right, slumping back against his chest, her shoulders shaking, her eyes half closed, her lips parted and trembling. The frame holds exactly two people, Killian and Lily, and one black horse. Bright afternoon sunlight, a clear blue sky, the meadow softly blurred behind. Fixed stage layout: the open meadow with a dirt path is at frame-left; the rough wooden fence with sharp pointed posts and the dark pine forest are at frame-right. Killian always sits behind Lily, at frame-left of her.",
+     "visual_zh": "马慢慢停下，打着响鼻；莉莉瘫在他怀里发抖，基利安低头看着她。",
+     "camera_zh": "0—4秒，镜头固定。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 4,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on wide-medium shot opens from the adopted first frame in [[asset:woods_edge]]: [[asset:black_horse]] slows to a halt and stands blowing hard, tossing its head. [[asset:killian_coat]] holds the reins short in his left hand with his right arm around [[asset:lily_riding]], his eyes lowered on her face and his jaw tight. She sags against his chest, trembling, her eyes half closed and her lips quivering. The camera holds still.",
+       "visual_zh": "一个稳定的侧面宽中景，从已采用的开场图继续，场景是树林边缘：黑马慢下来，停住，呼呼喘着气甩着头。基利安左手把缰绳握短，右臂搂着莉莉，眼睛低下来看着她的脸，下颌绷紧。她瘫软地靠在他胸口发抖，眼睛半闭，嘴唇颤抖。镜头固定不动。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "Slow hoofbeats settling on dry earth, a horse blowing hard and the creak of leather. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here.",
+     "sound_zh": "渐渐落定的蹄声、马的粗重喘息和皮革的吱嘎声。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。",
+     "seed": 5107,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "08｜如果我晚来一秒",
+     "duration_seconds": 6,
+     "generation_seconds": 6,
+     "continuity": "cut",
+     "depends_on_previous": true,
+     "use_previous_episode_state": false,
+     "characters": [
+      "KillianCoat",
+      "LilyRiding"
+     ],
+     "asset_keys": [
+      "woods_edge",
+      "killian_coat",
+      "lily_riding",
+      "black_horse"
+     ],
+     "image_reference_keys": [
+      "woods_edge"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on wide-medium shot, both riders from the head to the waist and the whole horse, in the middle third of the frame, on the dirt path along the meadow. The tall jet-black horse stands in profile facing frame-right. Killian sits behind Lily, at frame-left of her, in the long charcoal overcoat, his left hand holding the reins short, his right arm around her waist, his jaw tight, his lips set, his eyes on her face. Lily sits in front of him, at frame-right, slumping back against his chest, her lips parted and trembling, her eyes half closed and lowered on his hand at her waist. The frame holds exactly two people, Killian and Lily, and one black horse. Bright afternoon sunlight, a clear blue sky, the meadow softly blurred behind. Fixed stage layout: the open meadow with a dirt path is at frame-left; the rough wooden fence with sharp pointed posts and the dark pine forest are at frame-right. Killian always sits behind Lily, at frame-left of her.",
+     "visual_zh": "基利安用嘶哑狠戾的声音说：晚一秒你就死了。",
+     "camera_zh": "0—6秒，镜头固定。",
+     "dialogue": [
+      {
+       "speaker": "KillianCoat",
+       "text": "One second later, you'd be dead.",
+       "start_seconds": 1.0,
+       "end_seconds": 4.17,
+       "language": "en"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 6,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on wide-medium shot opens from the adopted first frame in [[asset:woods_edge]]: [[asset:killian_coat]] speaks in a low, hoarse, savage voice, his eyes on [[asset:lily_riding]]'s face and his jaw tight, his right hand closing harder at her waist. She sags against his chest, her lips quivering and her eyes lowered on his hand. The horse shifts its hooves. The camera holds still.",
+       "visual_zh": "一个稳定的侧面宽中景，从已采用的开场图继续，场景是树林边缘：基利安用低沉嘶哑、狠戾的声音说话，眼睛看着莉莉的脸，下颌绷紧，右手在她腰上攥得更紧。她瘫在他胸口，嘴唇颤抖，眼睛垂着看他的手。马挪了挪蹄子。镜头固定不动。",
+       "dialogue_indices": [
+        0
+       ]
+      }
+     ],
+     "sound_en": "A light breeze over the meadow and the creak of leather. Voices stay close and clear.",
+     "sound_zh": "草地上轻轻的风声和皮革的吱嘎声。人声近而清楚。",
+     "seed": 5108,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "09｜捏住下巴扳过她的脸",
+     "duration_seconds": 4,
+     "generation_seconds": 4,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "KillianCoat",
+      "LilyRiding"
+     ],
+     "asset_keys": [
+      "woods_edge",
+      "killian_coat",
+      "lily_riding",
+      "black_horse"
+     ],
+     "image_reference_keys": [
+      "woods_edge"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on medium close-up two-shot, both people from the head to the chest, in the middle third of the frame, on the horse's back against a clear blue sky. Killian at frame-left in profile facing frame-right in the long charcoal overcoat, his right hand on Lily's jaw, his jaw tight, his lips set, his eyes on her face. Lily at frame-right, her body facing frame-right and her face turning back toward him, her eyes wide on his eyes, her lips parted. The horse's black neck at frame-right. The frame holds exactly two people: Killian and Lily. Bright afternoon sunlight, a clear blue sky, the meadow softly blurred behind. Fixed stage layout: the open meadow with a dirt path is at frame-left; the rough wooden fence with sharp pointed posts and the dark pine forest are at frame-right. Killian always sits behind Lily, at frame-left of her.",
+     "visual_zh": "基利安捏住她的下巴把她的脸扳过来，眼睛盯着她的嘴唇；她睁大眼睛看着他。",
+     "camera_zh": "0—4秒，镜头固定。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 4,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on medium close-up opens from the adopted first frame in [[asset:woods_edge]]: [[asset:killian_coat]]'s right hand grips [[asset:lily_riding]]'s chin and turns her face back toward his, his eyes dropping to her lips and his jaw tight. Her eyes go wide on his eyes, her lips part and her hands rise to his forearm. The camera holds still.",
+       "visual_zh": "一个稳定的侧面中近景，从已采用的开场图继续，场景是树林边缘：基利安的右手捏住莉莉的下巴，把她的脸扳向自己，眼睛落到她的嘴唇上，下颌绷紧。她睁大眼睛看着他的眼睛，嘴唇微张，双手抬起搭上他的前臂。镜头固定不动。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "A light breeze over the meadow and the creak of leather. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here.",
+     "sound_zh": "草地上轻轻的风声和皮革的吱嘎声。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。",
+     "seed": 5109,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "10｜吻",
+     "duration_seconds": 4,
+     "generation_seconds": 4,
+     "continuity": "cut",
+     "depends_on_previous": true,
+     "use_previous_episode_state": false,
+     "characters": [
+      "KillianCoat",
+      "LilyRiding"
+     ],
+     "asset_keys": [
+      "woods_edge",
+      "killian_coat",
+      "lily_riding",
+      "black_horse"
+     ],
+     "image_reference_keys": [
+      "woods_edge"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on medium close-up two-shot, both people from the head to the chest, in the middle third of the frame, on the horse's back against a clear blue sky. Killian at frame-left in profile facing frame-right in the long charcoal overcoat, his face a hand's width from Lily's, his right hand firm on her jaw, his jaw tight, his eyes on her lips. Lily at frame-right, her face turned back toward him in profile facing frame-left, her eyes wide open, her lips parted, her left hand on his forearm. The frame holds exactly two people: Killian and Lily. Bright afternoon sunlight, a clear blue sky, the meadow softly blurred behind. Fixed stage layout: the open meadow with a dirt path is at frame-left; the rough wooden fence with sharp pointed posts and the dark pine forest are at frame-right. Killian always sits behind Lily, at frame-left of her.",
+     "visual_zh": "基利安狠狠吻住她；她睁大眼睛推了推他的手臂，然后眼睛慢慢半闭。",
+     "camera_zh": "0—4秒，镜头固定。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 4,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on medium close-up opens from the adopted first frame in [[asset:woods_edge]]: [[asset:killian_coat]] presses his lips hard against [[asset:lily_riding]]'s lips, his right hand firm on her jaw, his brows drawn together and his eyes closed. Her eyes stay wide open and her left hand pushes weakly against his forearm, then her eyes slowly flutter half shut. The camera holds still.",
+       "visual_zh": "一个稳定的侧面中近景，从已采用的开场图继续，场景是树林边缘：基利安把嘴唇狠狠压在莉莉的嘴唇上，右手牢牢扣着她的下颌，眉头拧着，眼睛闭上。她的眼睛睁得大大的，左手无力地推着他的前臂，然后眼睛慢慢半闭。镜头固定不动。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "A light breeze over the meadow, the creak of leather and a muffled sound from her. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here.",
+     "sound_zh": "草地上轻轻的风声、皮革的吱嘎声，和她被堵住的一声闷响。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。",
+     "seed": 5110,
+     "dialogue_language": "en"
+    }
+   ],
+   "dialogue_language": "en"
+  },
+  {
+   "title": "剧本第9集｜马背上的惩罚（场景级改编）",
+   "summary": "吻后、大衣、耳边低语、保罗找来、怒吼、响指。",
+   "script": "吻结束，她喘着气，他把脸移开一掌宽，两个人都喘着气；她的嘴唇红肿，手抵在他胸口。\n你疯了，放我下去，莉莉带着哭腔骂他疯子、要他放她下去，他冷笑着不松手。\nLilyRiding：“You're insane! Let me down!”\n他用大衣把她裹进怀里，他把大衣拉过来裹住她，把她按回胸口；她不再推，嘴唇发颤，眼睛垂下。\n耳边低语一，基利安贴着她的耳朵，用沙哑的声音低语，你本该逃的。\nKillianCoat：“You should have run, Lily.”\n耳边低语二，他继续低语，没人能碰你；眼睛里闪着暗金色。\nKillianCoat：“No one touches you. Ever.”\n保罗在林边一路喊着找她，保罗气喘吁吁地沿着土路朝左边跑，一边喊莉莉的名字。\nPaulOnScreen：“Where are you, Lily?”\n他们沿着小路往前走，基利安眼神一冷，黑马驮着两人慢慢沿着土路往前走，基利安盯着前面的路，眼神慢慢变冷。\n保罗看见他们，怒吼，保罗猛地站住，脸上的松口气一下变成暴怒，红着眼睛吼出来。\nPaulOnScreen：“Put her down! She's my fiancé!”\n基利安居高临下，打了个响指，基利安居高临下看着前面，抬起右手，打了一个响指。",
+   "segments": [
+    {
+     "title": "01｜吻结束，她喘着气",
+     "duration_seconds": 4,
+     "generation_seconds": 4,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "KillianCoat",
+      "LilyRiding"
+     ],
+     "asset_keys": [
+      "woods_edge",
+      "killian_coat",
+      "lily_riding",
+      "black_horse"
+     ],
+     "image_reference_keys": [
+      "woods_edge"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on medium close-up two-shot, both people from the head to the chest, in the middle third of the frame, on the horse's back against a clear blue sky. Killian at frame-left in profile facing frame-right in the long charcoal overcoat, his face a hand's width from hers, his jaw tight, his lips set, his eyes on her lips. Lily at frame-right, her face turned back toward him in profile facing frame-left, her lips red and swollen, her mouth open, her eyes wide and glossy, her right palm flat against his chest. The frame holds exactly two people: Killian and Lily. Bright afternoon sunlight, a clear blue sky, the meadow softly blurred behind. Fixed stage layout: the open meadow with a dirt path is at frame-left; the rough wooden fence with sharp pointed posts and the dark pine forest are at frame-right. Killian always sits behind Lily, at frame-left of her.",
+     "visual_zh": "他把脸移开一掌宽，两个人都喘着气；她的嘴唇红肿，手抵在他胸口。",
+     "camera_zh": "0—4秒，镜头固定。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 4,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on medium close-up opens from the adopted first frame in [[asset:woods_edge]]: [[asset:killian_coat]] lifts his face away from [[asset:lily_riding]]'s until it is a hand's width from hers, his chest heaving, his eyes on her lips and his jaw tight. She gasps, her right hand pressing against his chest, her lips red and swollen and her eyes glossy. The camera holds still.",
+       "visual_zh": "一个稳定的侧面中近景，从已采用的开场图继续，场景是树林边缘：基利安把脸从莉莉脸上移开，直到离她一掌宽，胸口起伏，眼睛看着她的嘴唇，下颌绷紧。她倒吸着气，右手抵住他的胸口，嘴唇红肿，眼睛湿亮。镜头固定不动。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "Two people breathing hard, a light breeze and the creak of leather. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here.",
+     "sound_zh": "两个人急促的喘息声、轻轻的风声和皮革的吱嘎声。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。",
+     "seed": 5201,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "02｜你疯了，放我下去",
+     "duration_seconds": 6,
+     "generation_seconds": 6,
+     "continuity": "cut",
+     "depends_on_previous": true,
+     "use_previous_episode_state": false,
+     "characters": [
+      "KillianCoat",
+      "LilyRiding"
+     ],
+     "asset_keys": [
+      "woods_edge",
+      "killian_coat",
+      "lily_riding",
+      "black_horse"
+     ],
+     "image_reference_keys": [
+      "woods_edge"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on medium close-up two-shot, both people from the head to the chest, in the middle third of the frame, on the horse's back against a clear blue sky. Killian at frame-left in profile facing frame-right in the long charcoal overcoat, a cold smirk, his jaw set, his eyes on her face. Lily at frame-right, her face turned back toward him in profile facing frame-left, her lips red and swollen, her brows drawn together, tears on her lashes, her eyes on his face, her right hand pushing against his chest. The frame holds exactly two people: Killian and Lily. Bright afternoon sunlight, a clear blue sky, the meadow softly blurred behind. Fixed stage layout: the open meadow with a dirt path is at frame-left; the rough wooden fence with sharp pointed posts and the dark pine forest are at frame-right. Killian always sits behind Lily, at frame-left of her.",
+     "visual_zh": "莉莉带着哭腔骂他疯子、要他放她下去，他冷笑着不松手。",
+     "camera_zh": "0—6秒，镜头固定。",
+     "dialogue": [
+      {
+       "speaker": "LilyRiding",
+       "text": "You're insane! Let me down!",
+       "start_seconds": 1.0,
+       "end_seconds": 3.91,
+       "language": "en"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 6,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on medium close-up opens from the adopted first frame in [[asset:woods_edge]]: [[asset:lily_riding]] cries out in a shaky, tearful voice, her brows drawn together and her glossy eyes on his face, both hands pushing against his chest. [[asset:killian_coat]] leans back a little with a cold smirk, his jaw set and his eyes on her face, his right arm not letting go of her waist. The camera holds still.",
+       "visual_zh": "一个稳定的侧面中近景，从已采用的开场图继续，场景是树林边缘：莉莉用发抖带哭腔的声音喊出来，眉头拧着，湿亮的眼睛看着他的脸，双手抵着他的胸口推。基利安微微后仰，露出冷笑，下颌绷紧，眼睛看着她的脸，右臂没有松开她的腰。镜头固定不动。",
+       "dialogue_indices": [
+        0
+       ]
+      }
+     ],
+     "sound_en": "A light breeze over the meadow and the creak of leather. Voices stay close and clear.",
+     "sound_zh": "草地上轻轻的风声和皮革的吱嘎声。人声近而清楚。",
+     "seed": 5202,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "03｜他用大衣把她裹进怀里",
+     "duration_seconds": 5,
+     "generation_seconds": 5,
+     "continuity": "cut",
+     "depends_on_previous": true,
+     "use_previous_episode_state": false,
+     "characters": [
+      "KillianCoat",
+      "LilyRiding"
+     ],
+     "asset_keys": [
+      "woods_edge",
+      "killian_coat",
+      "lily_riding",
+      "black_horse"
+     ],
+     "image_reference_keys": [
+      "woods_edge"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on medium close-up two-shot, both people from the head to the chest, in the middle third of the frame, on the horse's back against a clear blue sky. Killian at frame-left in profile facing frame-right, his left hand drawing the front of his long charcoal overcoat across Lily's shoulders, his right hand holding the reins, a cold smirk, his eyes on her face. Lily at frame-right, her face turned back toward him in profile facing frame-left, her hair tumbling loose, the collar of her cream blouse slipped off one shoulder, her lips red and swollen, her eyes lowered, her brows drawn together. The frame holds exactly two people: Killian and Lily. Bright afternoon sunlight, a clear blue sky, the meadow softly blurred behind. Fixed stage layout: the open meadow with a dirt path is at frame-left; the rough wooden fence with sharp pointed posts and the dark pine forest are at frame-right. Killian always sits behind Lily, at frame-left of her.",
+     "visual_zh": "他把大衣拉过来裹住她，把她按回胸口；她不再推，嘴唇发颤，眼睛垂下。",
+     "camera_zh": "0—5秒，镜头固定。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 5,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on medium close-up opens from the adopted first frame in [[asset:woods_edge]]: [[asset:killian_coat]] draws the front of his long charcoal coat across [[asset:lily_riding]]'s shoulders with his left hand and pulls her back against his chest, a cold smirk on his lips and his eyes on her face. Her hands stop pushing, her lips tremble and her eyes lower as the coat closes around her. The camera holds still.",
+       "visual_zh": "一个稳定的侧面中近景，从已采用的开场图继续，场景是树林边缘：基利安用左手把长长的炭灰大衣前襟拉过莉莉的肩膀，把她拉回自己胸口，嘴角带着冷笑，眼睛看着她的脸。她的手不再推了，嘴唇发颤，眼睛垂下，大衣在她身上合拢。镜头固定不动。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "The soft rustle of heavy wool and the creak of leather. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here.",
+     "sound_zh": "厚呢子大衣的轻响和皮革的吱嘎声。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。",
+     "seed": 5203,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "04｜耳边低语一",
+     "duration_seconds": 6,
+     "generation_seconds": 6,
+     "continuity": "cut",
+     "depends_on_previous": true,
+     "use_previous_episode_state": false,
+     "characters": [
+      "KillianCoat",
+      "LilyRiding"
+     ],
+     "asset_keys": [
+      "woods_edge",
+      "killian_coat",
+      "lily_riding",
+      "black_horse"
+     ],
+     "image_reference_keys": [
+      "woods_edge"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on medium close-up two-shot, both people from the head to the chest, in the middle third of the frame, on the horse's back against a clear blue sky. Killian at frame-left in profile facing frame-right, his head lowered so his lips are close to her ear, his jaw tight, his eyes narrowed on her ear. Lily at frame-right, wrapped in his long charcoal overcoat, her hair loose, her eyes closed, her lips trembling, her brows drawn together. The frame holds exactly two people: Killian and Lily. Bright afternoon sunlight, a clear blue sky, the meadow softly blurred behind. Fixed stage layout: the open meadow with a dirt path is at frame-left; the rough wooden fence with sharp pointed posts and the dark pine forest are at frame-right. Killian always sits behind Lily, at frame-left of her.",
+     "visual_zh": "基利安贴着她的耳朵，用沙哑的声音低语：你本该逃的。",
+     "camera_zh": "0—6秒，镜头固定。",
+     "dialogue": [
+      {
+       "speaker": "KillianCoat",
+       "text": "You should have run, Lily.",
+       "start_seconds": 1.0,
+       "end_seconds": 3.67,
+       "language": "en"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 6,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on medium close-up opens from the adopted first frame in [[asset:woods_edge]]: [[asset:killian_coat]] lowers his head until his lips are close to [[asset:lily_riding]]'s ear and speaks in a low, husky whisper, his jaw tight and his eyes narrowed on her ear. She shudders inside his coat, her eyes closing tighter and her lips trembling. The camera holds still.",
+       "visual_zh": "一个稳定的侧面中近景，从已采用的开场图继续，场景是树林边缘：基利安低下头，直到嘴唇贴近莉莉的耳朵，用低沉沙哑的声音耳语，下颌绷紧，眯着眼睛看着她的耳朵。她在他的大衣里一颤，眼睛闭得更紧，嘴唇发颤。镜头固定不动。",
+       "dialogue_indices": [
+        0
+       ]
+      }
+     ],
+     "sound_en": "A light breeze over the meadow and the creak of leather. Voices stay close and clear.",
+     "sound_zh": "草地上轻轻的风声和皮革的吱嘎声。人声近而清楚。",
+     "seed": 5204,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "05｜耳边低语二",
+     "duration_seconds": 6,
+     "generation_seconds": 6,
+     "continuity": "cut",
+     "depends_on_previous": true,
+     "use_previous_episode_state": false,
+     "characters": [
+      "KillianCoat",
+      "LilyRiding"
+     ],
+     "asset_keys": [
+      "woods_edge",
+      "killian_coat",
+      "lily_riding",
+      "black_horse"
+     ],
+     "image_reference_keys": [
+      "woods_edge"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on medium close-up two-shot, both people from the head to the chest, in the middle third of the frame, on the horse's back against a clear blue sky. Killian at frame-left in profile facing frame-right, his lips close to her ear, his jaw tight, his eyes narrowed with a dark-gold glint. Lily at frame-right, wrapped in his long charcoal overcoat, her hair loose, her eyes closed, her lips trembling, her brows drawn together. The frame holds exactly two people: Killian and Lily. Bright afternoon sunlight, a clear blue sky, the meadow softly blurred behind. Fixed stage layout: the open meadow with a dirt path is at frame-left; the rough wooden fence with sharp pointed posts and the dark pine forest are at frame-right. Killian always sits behind Lily, at frame-left of her.",
+     "visual_zh": "他继续低语：没人能碰你；眼睛里闪着暗金色。",
+     "camera_zh": "0—6秒，镜头固定。",
+     "dialogue": [
+      {
+       "speaker": "KillianCoat",
+       "text": "No one touches you. Ever.",
+       "start_seconds": 1.0,
+       "end_seconds": 3.55,
+       "language": "en"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 6,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on medium close-up opens from the adopted first frame in [[asset:woods_edge]]: [[asset:killian_coat]] speaks against [[asset:lily_riding]]'s ear in a low, husky whisper, his jaw tight and his eyes narrowed with a dark-gold glint. She trembles inside his coat, her lips parting and her eyes squeezed shut. The camera holds still.",
+       "visual_zh": "一个稳定的侧面中近景，从已采用的开场图继续，场景是树林边缘：基利安贴着莉莉的耳朵用低沉沙哑的声音耳语，下颌绷紧，眯着的眼睛里闪着暗金色。她在他的大衣里发抖，嘴唇微张，眼睛紧闭。镜头固定不动。",
+       "dialogue_indices": [
+        0
+       ]
+      }
+     ],
+     "sound_en": "A light breeze over the meadow and the creak of leather. Voices stay close and clear.",
+     "sound_zh": "草地上轻轻的风声和皮革的吱嘎声。人声近而清楚。",
+     "seed": 5205,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "06｜保罗在林边一路喊着找她",
+     "duration_seconds": 6,
+     "generation_seconds": 6,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "PaulOnScreen"
+     ],
+     "asset_keys": [
+      "woods_edge",
+      "paul"
+     ],
+     "image_reference_keys": [
+      "woods_edge"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium shot of Paul alone, from the head to the waist, in profile facing frame-left, in the middle third of the frame, jogging along the dirt path in his navy blazer over a white open-collared shirt, the blazer dusty and the collar crooked, his chest heaving, his brows pulled up, his lips parted, his eyes wide and darting along the path at frame-left. The rough wooden fence stands behind him at frame-right. The frame holds exactly one person, Paul. Bright afternoon sunlight, a clear blue sky, the meadow softly blurred behind. Fixed stage layout: the open meadow with a dirt path is at frame-left; the rough wooden fence with sharp pointed posts and the dark pine forest are at frame-right.",
+     "visual_zh": "保罗气喘吁吁地沿着土路朝左边跑，一边喊莉莉的名字。",
+     "camera_zh": "0—6秒，镜头固定。",
+     "dialogue": [
+      {
+       "speaker": "PaulOnScreen",
+       "text": "Where are you, Lily?",
+       "start_seconds": 1.0,
+       "end_seconds": 3.35,
+       "language": "en"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 6,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady medium shot opens from the adopted first frame in [[asset:woods_edge]]: [[asset:paul]] runs a few strides along the dirt path toward frame-left and shouts, his mouth wide open, his brows pulled up and his eyes wide and darting along the path, then slows with his chest heaving. The camera holds still.",
+       "visual_zh": "一个稳定的中景，从已采用的开场图继续，场景是树林边缘：保罗沿着土路朝画面左边跑了几步，大声喊着，嘴张得很大，眉头抬起，睁大的眼睛在路上四处扫，然后慢下来，胸口剧烈起伏。镜头固定不动。",
+       "dialogue_indices": [
+        0
+       ]
+      }
+     ],
+     "sound_en": "A light breeze and his boots scuffing the dirt. Voices stay close and clear.",
+     "sound_zh": "轻轻的风声和他的靴子蹭过泥土的声音。人声近而清楚。",
+     "seed": 5206,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "07｜他们沿着小路往前走，基利安眼神一冷",
+     "duration_seconds": 4,
+     "generation_seconds": 4,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "KillianCoat",
+      "LilyRiding"
+     ],
+     "asset_keys": [
+      "woods_edge",
+      "killian_coat",
+      "lily_riding",
+      "black_horse"
+     ],
+     "image_reference_keys": [
+      "woods_edge"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on wide shot, both riders and the whole horse, in the middle third of the frame, on the dirt path along the meadow. The tall jet-black horse walks in profile facing frame-right, its head level. Killian sits behind Lily, at frame-left of her, his left hand on the reins, his jaw set, his lips flat, his eyes on the path ahead at frame-right. Lily sits in front of him, at frame-right, his open charcoal overcoat wrapped around her as she leans back against his chest, her hair loose, her eyes lowered, her lips parted. The frame holds exactly two people, Killian and Lily, and one black horse. Bright afternoon sunlight, a clear blue sky, the meadow softly blurred behind. Fixed stage layout: the open meadow with a dirt path is at frame-left; the rough wooden fence with sharp pointed posts and the dark pine forest are at frame-right. Killian always sits behind Lily, at frame-left of her.",
+     "visual_zh": "黑马驮着两人慢慢沿着土路往前走，基利安盯着前面的路，眼神慢慢变冷。",
+     "camera_zh": "0—4秒，镜头固定。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 4,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on wide shot opens from the adopted first frame in [[asset:woods_edge]]: [[asset:black_horse]] walks slowly along the dirt path toward frame-right with [[asset:killian_coat]] behind [[asset:lily_riding]], his left hand on the reins and his eyes on the path ahead. His eyes narrow and a cold smirk curls his lips. She leans against his chest wrapped in his coat, her eyes lowered and her lips parted. The camera holds still.",
+       "visual_zh": "一个稳定的侧面宽景，从已采用的开场图继续，场景是树林边缘：黑马载着两人沿着土路朝画面右边慢慢走，基利安坐在莉莉身后，左手握缰绳，眼睛看着前面的路。他的眼睛眯了起来，嘴角慢慢浮出一抹冷笑。她裹在他的大衣里靠着他的胸口，眼睛垂着，嘴唇微张。镜头固定不动。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "Slow, steady hoofbeats on dirt and the creak of leather. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here.",
+     "sound_zh": "泥土路上缓慢平稳的马蹄声和皮革的吱嘎声。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。",
+     "seed": 5207,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "08｜保罗看见他们，怒吼",
+     "duration_seconds": 6,
+     "generation_seconds": 6,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "PaulOnScreen"
+     ],
+     "asset_keys": [
+      "woods_edge",
+      "paul"
+     ],
+     "image_reference_keys": [
+      "woods_edge"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium shot of Paul alone, from the head to the waist, in profile facing frame-left, in the middle third of the frame, standing on the dirt path in his navy blazer over a white open-collared shirt, the blazer dusty and the collar crooked, his chest heaving, his brows pulled up, his lips parted, his eyes wide and fixed down the dirt path at frame-left. The rough wooden fence stands behind him at frame-right. The frame holds exactly one person, Paul. Bright afternoon sunlight, a clear blue sky, the meadow softly blurred behind. Fixed stage layout: the open meadow with a dirt path is at frame-left; the rough wooden fence with sharp pointed posts and the dark pine forest are at frame-right.",
+     "visual_zh": "保罗猛地站住，脸上的松口气一下变成暴怒，红着眼睛吼出来。",
+     "camera_zh": "0—6秒，镜头固定。",
+     "dialogue": [
+      {
+       "speaker": "PaulOnScreen",
+       "text": "Put her down! She's my fiancé!",
+       "start_seconds": 1.5,
+       "end_seconds": 4.91,
+       "language": "en"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 6,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady medium shot opens from the adopted first frame in [[asset:woods_edge]]: [[asset:paul]] stops dead on the dirt path, his eyes widening on the path ahead at frame-left, then narrowing, his brows crashing together and his jaw clenching. He shouts in a cracking, furious voice, his mouth wide open and his eyes red-rimmed. The camera holds still.",
+       "visual_zh": "一个稳定的中景，从已采用的开场图继续，场景是树林边缘：保罗猛地在土路上站住，睁大的眼睛看着画面左边前方的路，然后眯起来，眉头一下拧在一起，下颌咬紧。他用发颤暴怒的声音吼出来，嘴张得很大，眼眶发红。镜头固定不动。",
+       "dialogue_indices": [
+        0
+       ]
+      }
+     ],
+     "sound_en": "A light breeze over the meadow. Voices stay close and clear.",
+     "sound_zh": "草地上轻轻的风声。人声近而清楚。",
+     "seed": 5208,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "09｜基利安居高临下，打了个响指",
+     "duration_seconds": 5,
+     "generation_seconds": 5,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "KillianCoat",
+      "LilyRiding"
+     ],
+     "asset_keys": [
+      "woods_edge",
+      "killian_coat",
+      "lily_riding",
+      "black_horse"
+     ],
+     "image_reference_keys": [
+      "woods_edge"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on wide-medium shot, both riders from the head to the waist and the whole horse, in the middle third of the frame, on the dirt path along the meadow. The tall jet-black horse stands in profile facing frame-right. Killian sits behind Lily, at frame-left of her, his left hand holding the reins, his right hand raised to shoulder height with his thumb pressed against his middle finger, ready to snap, his lips flat, his half-lidded eyes cold on the path ahead at frame-right. Lily sits in front of him, at frame-right, wrapped in his long charcoal overcoat and leaning against his chest, her eyes closed, her lips parted. The frame holds exactly two people, Killian and Lily, and one black horse. Bright afternoon sunlight, a clear blue sky, the meadow softly blurred behind. Fixed stage layout: the open meadow with a dirt path is at frame-left; the rough wooden fence with sharp pointed posts and the dark pine forest are at frame-right. Killian always sits behind Lily, at frame-left of her.",
+     "visual_zh": "基利安居高临下看着前面，抬起右手，打了一个响指。",
+     "camera_zh": "0—5秒，镜头固定。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 5,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on wide-medium shot opens from the adopted first frame in [[asset:woods_edge]]: [[asset:killian_coat]] snaps the fingers of his raised right hand, a cold smirk on his lips and his half-lidded eyes cold on the path ahead at frame-right. [[asset:lily_riding]] stirs against his chest, her eyes opening slowly and her lips parting. The camera holds still.",
+       "visual_zh": "一个稳定的侧面宽中景，从已采用的开场图继续，场景是树林边缘：基利安打响了举起的右手的手指，嘴角带着冷笑，半垂的冷眼看着画面右边前方的路。莉莉在他胸口动了动，眼睛慢慢睁开，嘴唇微张。镜头固定不动。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "A single sharp finger snap and the creak of leather. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here.",
+     "sound_zh": "一声清脆的响指和皮革的吱嘎声。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。",
+     "seed": 5209,
+     "dialogue_language": "en"
+    }
+   ],
+   "dialogue_language": "en"
+  },
+  {
+   "title": "剧本第10集｜碾压式打脸（场景级改编）",
+   "summary": "保镖围住保罗、一块钱、宣誓、莉莉晕倒。",
+   "script": "保镖围住保罗，响指之后，两个黑衣保镖从两边逼近保罗，保罗吓得往后退。\n基利安翻身下马，基利安从马背上翻下来，落在马身旁，一只手仍扶着莉莉的腰。\n他把莉莉抱下马，护到身后，基利安双手托住莉莉的腰把她抱下马，让她站在自己身后。\n他慢慢走向保罗，基利安慢条斯理地沿着土路向前走，一只手臂挡在莉莉前面；莉莉抓着他的袖子跟在后面。\n揪住保罗的领子，你爸把婚约卖了，基利安揪着保罗的领子，冷冷地说，你爸把你的婚约卖了。\nKillianCoat：“Your father sold your engagement.”\n一块钱，基利安接着说，价钱是一块钱；保罗的脸一下垮了。\nKillianCoat：“The price was one dollar.”\n莉莉听到，震惊，莉莉听到婚约被一块钱买走，倒吸一口气，攥紧了手。\n他推开保罗，保罗摔在地上，基利安一把推开保罗，保罗踉跄后退，摔坐在泥地上。\n他把莉莉横抱起来，基利安转身，一把把站不稳的莉莉横抱起来。\n莉莉·斯旺是我的，基利安抱着莉莉，当众宣布，莉莉·斯旺是我的。\nKillianCoat：“Lily Swan belongs to me.”\n谁碰她，你们全都得死，基利安眼里闪着暗金色，一字一句地威胁所有人。\nKillianCoat：“Touch her, and you're all dead.”\n莉莉晕倒，他喊她的名字，莉莉眼睛一闭，头向后仰倒在他臂弯里；基利安脸色大变，喊她的名字。\nKillianCoat：“Lily!”",
+   "segments": [
+    {
+     "title": "01｜保镖围住保罗",
+     "duration_seconds": 5,
+     "generation_seconds": 5,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "PaulOnScreen",
+      "Bodyguard"
+     ],
+     "asset_keys": [
+      "woods_edge",
+      "paul",
+      "bodyguard"
+     ],
+     "image_reference_keys": [
+      "woods_edge"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on wide shot, three men in the middle third of the frame, on the dirt path along the meadow. Paul stands in the center facing frame-left, in the navy blazer over a white open-collared shirt, the blazer dusty, his hands slightly raised, his mouth open, his brows pulled up, his eyes wide and darting. Bodyguard stands one pace from him at frame-left, facing frame-right, in a black suit, a white shirt, a black tie and a clear coiled earpiece, his hands clasped in front of him, his jaw set, his lips flat, his eyes on Paul. A second man identical to him in build and clothes stands one pace from Paul at frame-right, facing frame-left, his hands clasped in front of him, his jaw set, his lips flat, his eyes on Paul. The frame holds exactly three people: Paul and two bodyguards. Bright afternoon sunlight, a clear blue sky, the meadow softly blurred behind. Fixed stage layout: the open meadow with a dirt path is at frame-left; the rough wooden fence with sharp pointed posts and the dark pine forest are at frame-right.",
+     "visual_zh": "响指之后，两个黑衣保镖从两边逼近保罗，保罗吓得往后退。",
+     "camera_zh": "0—5秒，镜头固定。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 5,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on wide shot opens from the adopted first frame in [[asset:woods_edge]]: two bodyguards who both look like [[asset:bodyguard]] take one slow step each toward [[asset:paul]], closing in from both sides, their hands clasped in front of them, their jaws set and their lips flat. [[asset:paul]] backs up half a step with his hands rising higher, his mouth open, his brows pulled up and his eyes darting between them. The camera holds still.",
+       "visual_zh": "一个稳定的侧面宽景，从已采用的开场图继续，场景是树林边缘：两个都长得像保镖素材的黑衣保镖各向保罗迈了一步，从两边逼近，双手交握在身前，下颌绷紧，嘴唇平直。保罗往后退了半步，双手举得更高，嘴张着，眉头抬起，眼睛在两个人之间乱转。镜头固定不动。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "Leather shoes crunching on the dirt path and a light breeze. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here.",
+     "sound_zh": "皮鞋踩在土路上的嘎吱声和轻轻的风声。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。",
+     "seed": 5301,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "02｜基利安翻身下马",
+     "duration_seconds": 3,
+     "generation_seconds": 3,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "KillianCoat",
+      "LilyRiding"
+     ],
+     "asset_keys": [
+      "woods_edge",
+      "killian_coat",
+      "lily_riding",
+      "black_horse"
+     ],
+     "image_reference_keys": [
+      "woods_edge"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on wide-medium shot, both people and the whole horse, in the middle third of the frame, on the dirt path along the meadow. The tall jet-black horse stands in profile facing frame-right. Killian sits behind Lily, at frame-left of her, his left hand on the reins, his right arm around her waist, his jaw set, his lips flat, his eyes on the path ahead at frame-right. Lily sits in front of him, at frame-right, wrapped in his long charcoal overcoat, her eyes half open, her lips parted, her brows drawn together. The frame holds exactly two people, Killian and Lily, and one black horse. Bright afternoon sunlight, a clear blue sky, the meadow softly blurred behind. Fixed stage layout: the open meadow with a dirt path is at frame-left; the rough wooden fence with sharp pointed posts and the dark pine forest are at frame-right. Killian always sits behind Lily, at frame-left of her.",
+     "visual_zh": "基利安从马背上翻下来，落在马身旁，一只手仍扶着莉莉的腰。",
+     "camera_zh": "0—3秒，镜头固定。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 3,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on wide-medium shot opens from the adopted first frame in [[asset:woods_edge]]: [[asset:killian_coat]] lifts his right arm from her waist, swings his right leg back over the horse and drops to the ground at the horse's flank, one hand staying at her waist, his jaw set and his eyes on her face. [[asset:lily_riding]] sways and is steadied by his hand, her lips parting and her eyes widening. [[asset:black_horse]] stands still. The camera holds still.",
+       "visual_zh": "一个稳定的侧面宽中景，从已采用的开场图继续，场景是树林边缘：基利安把右臂从她腰上抬开，右腿向后跨过马背，落在马身旁的地上，一只手仍扶在她腰上，下颌绷紧，眼睛看着她的脸。莉莉晃了一下，被他的手扶稳，嘴唇微张，眼睛睁大。黑马站着不动。镜头固定不动。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "Boots landing on dirt, a horse blowing and the creak of leather. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here.",
+     "sound_zh": "靴子落在泥土上的声音、马的喷鼻声和皮革的吱嘎声。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。",
+     "seed": 5302,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "03｜他把莉莉抱下马，护到身后",
+     "duration_seconds": 3,
+     "generation_seconds": 3,
+     "continuity": "cut",
+     "depends_on_previous": true,
+     "use_previous_episode_state": false,
+     "characters": [
+      "KillianCoat",
+      "LilyRiding"
+     ],
+     "asset_keys": [
+      "woods_edge",
+      "killian_coat",
+      "lily_riding",
+      "black_horse"
+     ],
+     "image_reference_keys": [
+      "woods_edge"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on wide-medium shot, both people and the whole horse, in the middle third of the frame, on the dirt path along the meadow. The tall jet-black horse stands in profile facing frame-right. Killian stands on the ground at the horse's flank at frame-left, in the long charcoal overcoat, both hands rising to Lily's waist, his jaw set, his lips flat, his eyes on her face. Lily sits in the saddle above him, at frame-right of him, wrapped in his coat, her hands resting on his shoulders, her lips parted, her brows drawn together, her eyes on his face. The frame holds exactly two people, Killian and Lily, and one black horse. Bright afternoon sunlight, a clear blue sky, the meadow softly blurred behind. Fixed stage layout: the open meadow with a dirt path is at frame-left; the rough wooden fence with sharp pointed posts and the dark pine forest are at frame-right. Killian always sits behind Lily, at frame-left of her.",
+     "visual_zh": "基利安双手托住莉莉的腰把她抱下马，让她站在自己身后。",
+     "camera_zh": "0—3秒，镜头固定。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 3,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on wide-medium shot opens from the adopted first frame in [[asset:woods_edge]]: [[asset:killian_coat]] grips [[asset:lily_riding]] by the waist with both hands, lifts her out of the saddle and sets her on her feet, then draws her behind his shoulder, his jaw set and his eyes on her face. She steadies herself with one hand on his arm, her lips parting and her brows drawing together. The camera holds still.",
+       "visual_zh": "一个稳定的侧面宽中景，从已采用的开场图继续，场景是树林边缘：基利安双手握住莉莉的腰，把她从鞍上抱起来放在地上，然后把她拉到自己肩后，下颌绷紧，眼睛看着她的脸。她一只手扶着他的手臂站稳，嘴唇微张，眉头拧起。镜头固定不动。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "Boots on dirt, a soft rustle of wool and a horse shifting its hooves. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here.",
+     "sound_zh": "靴子踩在泥土上的声音、呢子大衣的轻响和马挪动蹄子的声音。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。",
+     "seed": 5303,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "04｜他慢慢走向保罗",
+     "duration_seconds": 4,
+     "generation_seconds": 4,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "KillianCoat",
+      "LilyRiding"
+     ],
+     "asset_keys": [
+      "woods_edge",
+      "killian_coat",
+      "lily_riding"
+     ],
+     "image_reference_keys": [
+      "woods_edge"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on medium two-shot, both people from the head to the knees, in the middle third of the frame, walking on the dirt path, both in profile facing frame-right. Killian at frame-right in the long charcoal overcoat, his right arm held out low at his side as a barrier, his jaw set, his lips flat, his eyes on the dirt path ahead at frame-right. Lily at frame-left, half a step behind him, in the cream blouse with her hair loose, her left hand gripping his coat sleeve at the elbow, her lips parted, her brows drawn together, her eyes lowered on her hand. The frame holds exactly two people: Lily and Killian. Bright afternoon sunlight, a clear blue sky, the meadow softly blurred behind. Fixed stage layout: the open meadow with a dirt path is at frame-left; the rough wooden fence with sharp pointed posts and the dark pine forest are at frame-right.",
+     "visual_zh": "基利安慢条斯理地沿着土路向前走，一只手臂挡在莉莉前面；莉莉抓着他的袖子跟在后面。",
+     "camera_zh": "0—4秒，镜头固定。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 4,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on medium two-shot opens from the adopted first frame in [[asset:woods_edge]]: [[asset:killian_coat]] walks slowly along the dirt path toward frame-right with his arm out in front of [[asset:lily_riding]], his jaw set and his eyes on the path ahead. She walks half a step behind him, her hand gripping his sleeve, her lips parted and her brows drawn together. The camera holds still.",
+       "visual_zh": "一个稳定的侧面中景双人镜头，从已采用的开场图继续，场景是树林边缘：基利安沿着土路朝画面右边慢慢地走，一条手臂挡在莉莉前面，下颌绷紧，眼睛看着前面的路。她落后他半步走着，手抓着他的袖子，嘴唇微张，眉头拧起。镜头固定不动。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "Slow footsteps on the dirt path and a light breeze. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here.",
+     "sound_zh": "土路上缓慢的脚步声和轻轻的风声。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。",
+     "seed": 5304,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "05｜揪住保罗的领子：你爸把婚约卖了",
+     "duration_seconds": 6,
+     "generation_seconds": 6,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "KillianCoat",
+      "PaulOnScreen"
+     ],
+     "asset_keys": [
+      "woods_edge",
+      "killian_coat",
+      "paul"
+     ],
+     "image_reference_keys": [
+      "woods_edge"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on medium two-shot, both men from the head to the waist, in the middle third of the frame, face to face in profile on the dirt path. Killian at frame-left, facing frame-right, in the long charcoal overcoat, his right arm straight, his right hand gripping Paul's jacket collar at chest height, his jaw set, his lips flat, his eyes cold and level on Paul's face. Paul at frame-right, facing frame-left, in the navy blazer, both of his hands gripping Killian's right wrist, his mouth open, his brows pulled up, his eyes wide and fixed on Killian's face. The frame holds exactly two people: Killian and Paul. Bright afternoon sunlight, a clear blue sky, the meadow softly blurred behind. Fixed stage layout: the open meadow with a dirt path is at frame-left; the rough wooden fence with sharp pointed posts and the dark pine forest are at frame-right.",
+     "visual_zh": "基利安揪着保罗的领子，冷冷地说：你爸把你的婚约卖了。",
+     "camera_zh": "0—6秒，镜头固定。",
+     "dialogue": [
+      {
+       "speaker": "KillianCoat",
+       "text": "Your father sold your engagement.",
+       "start_seconds": 1.0,
+       "end_seconds": 3.55,
+       "language": "en"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 6,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on medium two-shot opens from the adopted first frame in [[asset:woods_edge]]: [[asset:killian_coat]] at frame-left holds [[asset:paul]]'s jacket collar in his right hand, his arm straight, and speaks in a low, icy voice, his jaw set and his eyes cold and level on Paul's face. [[asset:paul]] grips Killian's wrist with both hands, his mouth open, his brows pulled up and his eyes wide, his heels scrabbling at the dirt. The camera holds still.",
+       "visual_zh": "一个稳定的侧面中景双人镜头，从已采用的开场图继续，场景是树林边缘：画面左边的基利安右手揪着保罗的外套领子，手臂伸直，用低沉冰冷的声音说话，下颌绷紧，冷冷平视着保罗的脸。保罗双手抓着基利安的手腕，嘴张着，眉头抬起，眼睛睁大，脚后跟在泥地上乱蹬。镜头固定不动。",
+       "dialogue_indices": [
+        0
+       ]
+      }
+     ],
+     "sound_en": "A light breeze over the meadow and the creak of leather. Voices stay close and clear.",
+     "sound_zh": "草地上轻轻的风声和皮革的吱嘎声。人声近而清楚。",
+     "seed": 5305,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "06｜一块钱",
+     "duration_seconds": 6,
+     "generation_seconds": 6,
+     "continuity": "cut",
+     "depends_on_previous": true,
+     "use_previous_episode_state": false,
+     "characters": [
+      "KillianCoat",
+      "PaulOnScreen"
+     ],
+     "asset_keys": [
+      "woods_edge",
+      "killian_coat",
+      "paul"
+     ],
+     "image_reference_keys": [
+      "woods_edge"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on medium two-shot, both men from the head to the waist, in the middle third of the frame, face to face in profile on the dirt path. Killian at frame-left, facing frame-right, in the long charcoal overcoat, his right arm straight, his right hand gripping Paul's jacket collar at chest height, his jaw set, his lips flat, his eyes cold and level on Paul's face. Paul at frame-right, facing frame-left, in the navy blazer, both of his hands gripping Killian's right wrist, his mouth open, his brows pulled up, his eyes wide and fixed on Killian's face. The frame holds exactly two people: Killian and Paul. Bright afternoon sunlight, a clear blue sky, the meadow softly blurred behind. Fixed stage layout: the open meadow with a dirt path is at frame-left; the rough wooden fence with sharp pointed posts and the dark pine forest are at frame-right.",
+     "visual_zh": "基利安接着说：价钱是一块钱；保罗的脸一下垮了。",
+     "camera_zh": "0—6秒，镜头固定。",
+     "dialogue": [
+      {
+       "speaker": "KillianCoat",
+       "text": "The price was one dollar.",
+       "start_seconds": 1.0,
+       "end_seconds": 3.55,
+       "language": "en"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 6,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on medium two-shot opens from the adopted first frame in [[asset:woods_edge]]: [[asset:killian_coat]] speaks in a low, icy voice with a cold smirk, his jaw set and his eyes cold and level on Paul's face, his arm still straight. [[asset:paul]]'s mouth falls wider open, his brows crumpling and his eyes going glassy as his hands loosen on Killian's wrist. The camera holds still.",
+       "visual_zh": "一个稳定的侧面中景双人镜头，从已采用的开场图继续，场景是树林边缘：基利安用低沉冰冷的声音说话，嘴角带着冷笑，下颌绷紧，冷冷平视着保罗的脸，手臂依然伸直。保罗的嘴张得更大，眉头皱成一团，眼神发直，抓着基利安手腕的手慢慢松开。镜头固定不动。",
+       "dialogue_indices": [
+        0
+       ]
+      }
+     ],
+     "sound_en": "A light breeze over the meadow and the creak of leather. Voices stay close and clear.",
+     "sound_zh": "草地上轻轻的风声和皮革的吱嘎声。人声近而清楚。",
+     "seed": 5306,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "07｜莉莉听到，震惊",
+     "duration_seconds": 3,
+     "generation_seconds": 3,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "LilyRiding"
+     ],
+     "asset_keys": [
+      "woods_edge",
+      "lily_riding"
+     ],
+     "image_reference_keys": [
+      "woods_edge"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on medium close-up of Lily alone, from the head to the waist, in profile facing frame-right, in the middle third of the frame, standing on the dirt path in the cream blouse with her hair loose, her hands clasped tight at her chest, her lips parted, her brows pulled up, her eyes wide on the dirt path ahead at frame-right. The frame holds exactly one person, Lily. Bright afternoon sunlight, a clear blue sky, the meadow softly blurred behind. Fixed stage layout: the open meadow with a dirt path is at frame-left; the rough wooden fence with sharp pointed posts and the dark pine forest are at frame-right.",
+     "visual_zh": "莉莉听到婚约被一块钱买走，倒吸一口气，攥紧了手。",
+     "camera_zh": "0—3秒，镜头固定。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 3,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on medium close-up opens from the adopted first frame in [[asset:woods_edge]]: [[asset:lily_riding]]'s eyes widen further and her lips part in a small gasp, her brows pulling up, then her brows draw together as she swallows, her clasped hands pressing harder against her chest. The camera holds still.",
+       "visual_zh": "一个稳定的侧面中近景，从已采用的开场图继续，场景是树林边缘：莉莉的眼睛睁得更大，嘴唇张开倒吸一口气，眉头抬起，然后咽了一下口水，眉头拧在一起，交握的双手更用力地按在胸口。镜头固定不动。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "A light breeze and a small sharp breath. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here.",
+     "sound_zh": "轻轻的风声和一声短促的吸气。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。",
+     "seed": 5307,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "08｜他推开保罗，保罗摔在地上",
+     "duration_seconds": 3,
+     "generation_seconds": 3,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "KillianCoat",
+      "PaulOnScreen"
+     ],
+     "asset_keys": [
+      "woods_edge",
+      "killian_coat",
+      "paul"
+     ],
+     "image_reference_keys": [
+      "woods_edge"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on medium two-shot, both men from the head to the waist, in the middle third of the frame, face to face in profile on the dirt path. Killian at frame-left, facing frame-right, in the long charcoal overcoat, his right arm straight, his right hand gripping Paul's jacket collar at chest height, his jaw set, his lips flat, his eyes cold and level on Paul's face. Paul at frame-right, facing frame-left, in the navy blazer, both of his hands gripping Killian's right wrist, his mouth open, his brows pulled up, his eyes wide and fixed on Killian's face. The frame holds exactly two people: Killian and Paul. Bright afternoon sunlight, a clear blue sky, the meadow softly blurred behind. Fixed stage layout: the open meadow with a dirt path is at frame-left; the rough wooden fence with sharp pointed posts and the dark pine forest are at frame-right.",
+     "visual_zh": "基利安一把推开保罗，保罗踉跄后退，摔坐在泥地上。",
+     "camera_zh": "0—3秒，镜头固定。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 3,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on medium two-shot opens from the adopted first frame in [[asset:woods_edge]]: [[asset:killian_coat]] shoves [[asset:paul]] away and lets go of the collar, his arm snapping straight, his jaw set and his lips flat. [[asset:paul]] staggers back two steps, his arms flailing, his mouth open and his eyes wide, and drops onto the dirt, landing sitting and leaning back on both hands. The camera holds still.",
+       "visual_zh": "一个稳定的侧面中景双人镜头，从已采用的开场图继续，场景是树林边缘：基利安一把把保罗推开、松开领子，手臂一下伸直，下颌绷紧，嘴唇平直。保罗踉跄着后退了两步，双臂乱挥，嘴张着，眼睛睁大，摔坐在泥地上，双手向后撑着。镜头固定不动。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "A grunt of effort, boots scuffing and a heavy thud on dirt. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here.",
+     "sound_zh": "一声用力的闷哼、靴子的蹭地声和落在泥地上的沉闷一响。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。",
+     "seed": 5308,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "09｜他把莉莉横抱起来",
+     "duration_seconds": 3,
+     "generation_seconds": 3,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "KillianCoat",
+      "LilyRiding"
+     ],
+     "asset_keys": [
+      "woods_edge",
+      "killian_coat",
+      "lily_riding"
+     ],
+     "image_reference_keys": [
+      "woods_edge"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on medium two-shot, both people from the head to the knees, in the middle third of the frame, on the dirt path. Lily at frame-left, standing and swaying, in the cream blouse with her hair loose, her left hand resting on Killian's chest, her lips parted, her brows drawn together, her eyes half closed. Killian at frame-right, in profile facing frame-left, in the long charcoal overcoat, bending slightly, his right arm behind her back and his left arm behind her knees, about to lift her, his jaw set, his lips flat, his eyes on her face. The frame holds exactly two people: Lily and Killian. Bright afternoon sunlight, a clear blue sky, the meadow softly blurred behind. Fixed stage layout: the open meadow with a dirt path is at frame-left; the rough wooden fence with sharp pointed posts and the dark pine forest are at frame-right.",
+     "visual_zh": "基利安转身，一把把站不稳的莉莉横抱起来。",
+     "camera_zh": "0—3秒，镜头固定。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 3,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on medium two-shot opens from the adopted first frame in [[asset:woods_edge]]: [[asset:killian_coat]] sweeps [[asset:lily_riding]] up in his arms in one smooth motion, his right arm behind her back and his left arm under her knees, his jaw set and his eyes on her face. Her head tips against his shoulder and she gasps, her lips parting and her eyes widening, her hand gripping his collar. The camera holds still.",
+       "visual_zh": "一个稳定的侧面中景双人镜头，从已采用的开场图继续，场景是树林边缘：基利安一个连贯的动作把莉莉横抱起来，右臂托着她的背，左臂托着她的膝弯，下颌绷紧，眼睛看着她的脸。她的头靠上他的肩膀，倒吸一口气，嘴唇微张，眼睛睁大，手抓住他的衣领。镜头固定不动。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "A soft rustle of wool and a small gasp. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here.",
+     "sound_zh": "呢子大衣的轻响和一声小小的抽气。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。",
+     "seed": 5309,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "10｜莉莉·斯旺是我的",
+     "duration_seconds": 6,
+     "generation_seconds": 6,
+     "continuity": "cut",
+     "depends_on_previous": true,
+     "use_previous_episode_state": false,
+     "characters": [
+      "KillianCoat",
+      "LilyRiding"
+     ],
+     "asset_keys": [
+      "woods_edge",
+      "killian_coat",
+      "lily_riding"
+     ],
+     "image_reference_keys": [
+      "woods_edge"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on medium shot, from the head of the man to below the knees of the woman in his arms, in the middle third of the frame, on the dirt path. Killian stands in profile facing frame-left in the long charcoal overcoat, carrying Lily in both arms across his chest, his jaw set, his lips flat, his cold eyes on the dirt path at frame-left. Lily lies in his arms with her head resting against his shoulder, her left arm hanging loose, her lips parted, her dazed half-open eyes looking up at his jaw. The frame holds exactly two people: Killian and Lily. Bright afternoon sunlight, a clear blue sky, the meadow softly blurred behind. Fixed stage layout: the open meadow with a dirt path is at frame-left; the rough wooden fence with sharp pointed posts and the dark pine forest are at frame-right.",
+     "visual_zh": "基利安抱着莉莉，当众宣布：莉莉·斯旺是我的。",
+     "camera_zh": "0—6秒，镜头固定。",
+     "dialogue": [
+      {
+       "speaker": "KillianCoat",
+       "text": "Lily Swan belongs to me.",
+       "start_seconds": 1.0,
+       "end_seconds": 3.55,
+       "language": "en"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 6,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on medium shot opens from the adopted first frame in [[asset:woods_edge]]: [[asset:killian_coat]] holds [[asset:lily_riding]] in his arms and speaks in a low, steely voice, his jaw set, his chin lifting and his cold eyes sweeping along the dirt path at frame-left. She lies against his shoulder, her lips parted, her dazed eyes half open and looking up at his jaw. The camera holds still.",
+       "visual_zh": "一个稳定的侧面中景，从已采用的开场图继续，场景是树林边缘：基利安抱着莉莉，用低沉如钢的声音说话，下颌绷紧，下巴抬起，冷冷的眼睛沿着画面左边的土路扫过去。她靠在他的肩上，嘴唇微张，恍惚的半睁着眼睛抬头看着他的下颌。镜头固定不动。",
+       "dialogue_indices": [
+        0
+       ]
+      }
+     ],
+     "sound_en": "A light breeze over the meadow and the creak of leather. Voices stay close and clear.",
+     "sound_zh": "草地上轻轻的风声和皮革的吱嘎声。人声近而清楚。",
+     "seed": 5310,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "11｜谁碰她，你们全都得死",
+     "duration_seconds": 6,
+     "generation_seconds": 6,
+     "continuity": "cut",
+     "depends_on_previous": true,
+     "use_previous_episode_state": false,
+     "characters": [
+      "KillianCoat",
+      "LilyRiding"
+     ],
+     "asset_keys": [
+      "woods_edge",
+      "killian_coat",
+      "lily_riding"
+     ],
+     "image_reference_keys": [
+      "woods_edge"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on medium shot, from the head of the man to below the knees of the woman in his arms, in the middle third of the frame, on the dirt path. Killian stands in profile facing frame-left in the long charcoal overcoat, carrying Lily in both arms across his chest, his jaw set, his lips flat, his eyes narrowed with a dark-gold glint on the dirt path at frame-left. Lily lies in his arms with her head resting against his shoulder, her left arm hanging loose, her lips parted, her eyes half open. The frame holds exactly two people: Killian and Lily. Bright afternoon sunlight, a clear blue sky, the meadow softly blurred behind. Fixed stage layout: the open meadow with a dirt path is at frame-left; the rough wooden fence with sharp pointed posts and the dark pine forest are at frame-right.",
+     "visual_zh": "基利安眼里闪着暗金色，一字一句地威胁所有人。",
+     "camera_zh": "0—6秒，镜头固定。",
+     "dialogue": [
+      {
+       "speaker": "KillianCoat",
+       "text": "Touch her, and you're all dead.",
+       "start_seconds": 1.0,
+       "end_seconds": 4.17,
+       "language": "en"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 6,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on medium shot opens from the adopted first frame in [[asset:woods_edge]]: [[asset:killian_coat]] speaks in a low, steely voice, his jaw set and his eyes narrowed with a dark-gold glint, his gaze sweeping slowly along the dirt path at frame-left. [[asset:lily_riding]] lies against his shoulder, her lips parted and her eyelids sinking lower. The camera holds still.",
+       "visual_zh": "一个稳定的侧面中景，从已采用的开场图继续，场景是树林边缘：基利安用低沉如钢的声音说话，下颌绷紧，眯起的眼睛里闪着暗金色，目光慢慢沿着画面左边的土路扫过去。莉莉靠在他的肩上，嘴唇微张，眼皮越垂越低。镜头固定不动。",
+       "dialogue_indices": [
+        0
+       ]
+      }
+     ],
+     "sound_en": "A light breeze over the meadow and the creak of leather. Voices stay close and clear.",
+     "sound_zh": "草地上轻轻的风声和皮革的吱嘎声。人声近而清楚。",
+     "seed": 5311,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "12｜莉莉晕倒，他喊她的名字",
+     "duration_seconds": 6,
+     "generation_seconds": 6,
+     "continuity": "cut",
+     "depends_on_previous": true,
+     "use_previous_episode_state": false,
+     "characters": [
+      "KillianCoat",
+      "LilyRiding"
+     ],
+     "asset_keys": [
+      "woods_edge",
+      "killian_coat",
+      "lily_riding"
+     ],
+     "image_reference_keys": [
+      "woods_edge"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on medium shot, from the head of the man to below the knees of the woman in his arms, in the middle third of the frame, on the dirt path. Killian stands in profile facing frame-left in the long charcoal overcoat, carrying Lily in both arms across his chest, his jaw set, his lips flat, his cold eyes on the dirt path at frame-left. Lily lies in his arms with her head resting against his shoulder, her left arm hanging loose, her lips parted, her eyelids heavy. The frame holds exactly two people: Killian and Lily. Bright afternoon sunlight, a clear blue sky, the meadow softly blurred behind. Fixed stage layout: the open meadow with a dirt path is at frame-left; the rough wooden fence with sharp pointed posts and the dark pine forest are at frame-right.",
+     "visual_zh": "莉莉眼睛一闭，头向后仰倒在他臂弯里；基利安脸色大变，喊她的名字。",
+     "camera_zh": "0—6秒，镜头固定。",
+     "dialogue": [
+      {
+       "speaker": "KillianCoat",
+       "text": "Lily!",
+       "start_seconds": 2.0,
+       "end_seconds": 2.73,
+       "language": "en"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 6,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on medium shot opens from the adopted first frame in [[asset:woods_edge]]: [[asset:lily_riding]]'s eyes flutter shut and her head tips back over his arm, her lips parting and her left arm dropping loose. [[asset:killian_coat]] looks down at her face, his brows pulling up, his mouth opening and his eyes going wide, and calls her name in a cracking, urgent voice. The camera holds still.",
+       "visual_zh": "一个稳定的侧面中景，从已采用的开场图继续，场景是树林边缘：莉莉的眼睛一闭，头向后仰倒在他的臂弯上，嘴唇微张，左臂软软垂下。基利安低头看着她的脸，眉头抬起，嘴张开，眼睛睁大，用发颤急切的声音喊她的名字。镜头固定不动。",
+       "dialogue_indices": [
+        0
+       ]
+      }
+     ],
+     "sound_en": "A light breeze over the meadow and the creak of leather. Voices stay close and clear.",
+     "sound_zh": "草地上轻轻的风声和皮革的吱嘎声。人声近而清楚。",
+     "seed": 5312,
+     "dialogue_language": "en"
+    }
+   ],
+   "dialogue_language": "en"
+  }
+ ]
+}
