@@ -210,4 +210,52 @@ async function render(bin, src, dst, info, cutIdx, speed) {
   return { frames, dur: frames / fps / sp };
 }
 
-module.exports = { findFfmpeg, analyze, render, PRESETS };
+// 读出合并需要的信息：尺寸、帧率、时长、有没有声音、是不是 10 位
+async function probeFull(bin, file) {
+  const { err } = await run(bin, ['-hide_banner', '-i', file], true);
+  const vline = (err.match(/Stream #\d+:\d+[^\n]*Video:[^\n]*/) || [''])[0];
+  const wh = vline.match(/,\s*(\d{2,5})x(\d{2,5})/);
+  const fps = parseFloat((vline.match(/([\d.]+) fps/) || [])[1]) || 24;
+  const dm = err.match(/Duration:\s*(\d+):(\d+):([\d.]+)/);
+  return {
+    w: wh ? +wh[1] : 0, h: wh ? +wh[2] : 0, fps,
+    dur: dm ? (+dm[1]) * 3600 + (+dm[2]) * 60 + parseFloat(dm[3]) : 0,
+    hasAudio: /Stream #\d+:\d+[^\n]*Audio:/.test(err),
+    tenBit: /10le|10be|p010|12le|12be/.test(vline),
+  };
+}
+
+// 把若干个 mp4 按给定顺序接成一个成片（重新编码一次，保证声画同步；尺寸、帧率以第一个为准）
+async function mergeClips(bin, files, dst) {
+  if (!files.length) throw new Error('没有可以合并的片段');
+  if (files.length === 1) { fs.copyFileSync(files[0], dst); const i = await probeFull(bin, dst); return { count: 1, dur: i.dur }; }
+  const infos = [];
+  for (const f of files) infos.push(await probeFull(bin, f));
+  const w = Math.floor(infos[0].w / 2) * 2, h = Math.floor(infos[0].h / 2) * 2, fps = infos[0].fps;
+  const anyAudio = infos.some(i => i.hasAudio);
+  const ten = infos.every(i => i.tenBit);
+  const pix = ten ? 'yuv420p10le' : 'yuv420p';
+  const args = ['-y', '-v', 'error'];
+  files.forEach(f => args.push('-i', f));
+  const parts = [], cat = [];
+  infos.forEach((it, i) => {
+    parts.push(`[${i}:v]scale=${w}:${h}:force_original_aspect_ratio=decrease,pad=${w}:${h}:(ow-iw)/2:(oh-ih)/2,setsar=1,fps=${fps},format=${pix},setpts=PTS-STARTPTS[v${i}]`);
+    cat.push(`[v${i}]`);
+    if (anyAudio) {
+      if (it.hasAudio) parts.push(`[${i}:a]aresample=48000,aformat=sample_fmts=fltp:channel_layouts=stereo,asetpts=PTS-STARTPTS[a${i}]`);
+      else parts.push(`anullsrc=r=48000:cl=stereo,atrim=duration=${it.dur.toFixed(3)},asetpts=PTS-STARTPTS[a${i}]`);
+      cat.push(`[a${i}]`);
+    }
+  });
+  parts.push(`${cat.join('')}concat=n=${files.length}:v=1:a=${anyAudio ? 1 : 0}[vo]${anyAudio ? '[ao]' : ''}`);
+  args.push('-filter_complex', parts.join(';'), '-map', '[vo]');
+  if (anyAudio) args.push('-map', '[ao]');
+  args.push('-r', String(fps), '-c:v', ten ? 'libx265' : 'libx264', '-preset', 'medium', '-crf', '16', '-pix_fmt', pix);
+  if (anyAudio) args.push('-c:a', 'aac', '-b:a', '192k');
+  args.push('-movflags', '+faststart', dst);
+  await run(bin, args);
+  const out = await probeFull(bin, dst);
+  return { count: files.length, dur: out.dur };
+}
+
+module.exports = { findFfmpeg, analyze, render, mergeClips, probeFull, PRESETS };

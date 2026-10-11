@@ -34,13 +34,15 @@ video{width:100%;border-radius:8px;background:#000}
 .legend{font-size:12px;color:var(--sub)}
 .note{color:var(--sub);font-size:13px}
 .err{color:var(--warn)}
+#final{border-color:var(--acc)}
+#final ol{margin:6px 0;padding-left:22px;color:var(--sub);font-size:13px}
 @media (max-width:640px){.vids{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
 <main>
 <h1>H3 片段整理</h1>
-<p class="sub">把 H3 出来的 mp4 拖进来。工具只剪每个片段<b>开头和结尾</b>里「没人说话、画面又几乎不动」的空等；台词、表演、句子中间的节奏一帧不动。原片不会被改，结果存在本工具文件夹里的「输出」。</p>
+<p class="sub">把 H3 出来的 mp4 拖进来。工具只剪每个片段<b>开头和结尾</b>里「没人说话、画面又几乎不动」的空等；台词、表演、句子中间的节奏一帧不动。原片不会被改，结果存在本工具文件夹里的「输出」。整理完还可以<b>按文件名顺序自动合成一个完整成片</b>（01、02、…10，数字按大小排）。</p>
 
 <div id="drop">把 mp4 片段拖到这里（可以一次拖很多个），或者点这里选择文件</div>
 <input id="file" type="file" accept="video/mp4,.mp4" multiple hidden>
@@ -53,10 +55,12 @@ video{width:100%;border-radius:8px;background:#000}
       <option value="bold">最大胆（先看预览再保存）</option>
     </select>
   </label>
+  <label><input type="checkbox" id="doMerge" checked> 整理完自动合成完整成片</label>
   <button id="all" class="main" disabled>全部整理并保存</button>
   <button id="open">打开输出文件夹</button>
   <span id="total" class="note"></span>
 </div>
+<div id="final" class="card" hidden></div>
 <div id="list"></div>
 </main>
 <script>
@@ -77,10 +81,11 @@ async function api(path, body) {
   if (!r.ok) throw new Error(j.error || '出错了');
   return j;
 }
+const byName = (a, b) => a.name.localeCompare(b.name, 'zh', { numeric: true });
 const fmt = x => x.toFixed(2).replace(/\.?0+$/, '') ;
 
 async function addFiles(fl) {
-  const files = Array.from(fl).filter(f => /\.mp4$/i.test(f.name)).sort((a,b) => a.name.localeCompare(b.name, 'zh'));
+  const files = Array.from(fl).filter(f => /\.mp4$/i.test(f.name)).sort(byName);
   for (const f of files) {
     const card = document.createElement('div'); card.className = 'card';
     card.innerHTML = `<h3></h3><div class="sum">正在读取…</div>`;
@@ -94,7 +99,13 @@ async function addFiles(fl) {
       await analyzeItem(it);
     } catch (e) { card.querySelector('.sum').innerHTML = `<span class="err">出错：${e.message}</span>`; }
   }
+  resortCards();
   refreshTop();
+}
+
+function resortCards() {
+  const list = $('#list');
+  items.slice().sort(byName).forEach(it => list.appendChild(it.card));
 }
 
 async function analyzeItem(it) {
@@ -117,6 +128,7 @@ function drawCard(it) {
     <div class="legend">绿色＝有人声　橙色＝剪掉的部分</div>
     <div class="opts">${opts}
       <label>整体加速 <select data-speed><option value="1">原速</option><option value="1.1">1.1 倍</option><option value="1.2">1.2 倍</option><option value="1.3">1.3 倍</option><option value="1.5">1.5 倍</option></select></label>
+      <label><input type="checkbox" data-inc ${it.skipMerge ? '' : 'checked'}> 放进成片</label>
       <button data-save>整理这一个</button>
     </div>
     <div class="note" data-msg>${res.notes.length && res.cuts.length ? '没剪的地方：' + res.notes.join('；') : ''}</div>
@@ -130,21 +142,25 @@ function drawCard(it) {
     card.querySelector('[data-new]').textContent = fmt((res.dur - rm) / sp);
   };
   card.querySelectorAll('[data-cut],[data-speed]').forEach(x => x.onchange = upd);
-  card.querySelector('[data-save]').onclick = () => saveItem(it);
+  card.querySelector('[data-save]').onclick = () => saveItem(it, true);
+  card.querySelector('[data-inc]').onchange = e => { it.skipMerge = !e.target.checked; };
 }
 
-async function saveItem(it) {
+async function saveItem(it, force) {
   const card = it.card, msg = card.querySelector('[data-msg]');
   const use = [...card.querySelectorAll('[data-cut]')].filter(x => x.checked).map(x => +x.dataset.cut);
   const speed = +card.querySelector('[data-speed]').value;
+  const sig = JSON.stringify({ use, speed, preset: $('#preset').value });
+  if (!force && it.sig === sig) return;          // 设置没变、已经保存过，不用重做
   msg.textContent = '正在生成…';
   try {
     const r = await api('/api/render', { id: it.id, use, speed });
+    it.sig = sig;
     msg.innerHTML = `已保存（${fmt(r.dur)} 秒）：<span class="note"></span>`;
     msg.querySelector('.note').textContent = r.saved;
     const vids = card.querySelector('.vids'); vids.hidden = false;
     const v = card.querySelector('[data-out]'); v.src = `/media/${it.id}/out?t=${Date.now()}`;
-  } catch (e) { msg.innerHTML = `<span class="err">出错：${e.message.replace(/</g,'&lt;')}</span>`; }
+  } catch (e) { it.sig = null; msg.innerHTML = `<span class="err">出错：${e.message.replace(/</g,'&lt;')}</span>`; }
 }
 
 function refreshTop() {
@@ -155,9 +171,28 @@ function refreshTop() {
 }
 $('#all').onclick = async () => {
   $('#all').disabled = true;
-  for (const it of items) if (it.res) await saveItem(it);
+  const ready = items.filter(i => i.res).sort(byName);
+  for (const it of ready) await saveItem(it);
+  if ($('#doMerge').checked) await mergeAll(ready);
   $('#all').disabled = false;
 };
+
+async function mergeAll(ready) {
+  const box = $('#final');
+  const pick = ready.filter(i => !i.skipMerge && i.sig);
+  box.hidden = false;
+  if (!pick.length) { box.innerHTML = '<span class="err">没有可以合成的片段（都没勾“放进成片”，或者整理时出错了）</span>'; return; }
+  box.innerHTML = `<h3>完整成片</h3><div class="sum">正在合成 ${pick.length} 个片段…</div>`;
+  try {
+    const r = await api('/api/merge', { ids: pick.map(i => i.id) });
+    box.innerHTML = `<h3>完整成片（${r.count} 个片段，共 <b>${fmt(r.dur)}</b> 秒）</h3>
+      <div class="sum">已保存：<span class="note" data-p></span></div>
+      <ol>${r.order.map(() => '<li></li>').join('')}</ol>
+      <video controls preload="metadata" src="/media/merged/out?t=${Date.now()}"></video>`;
+    box.querySelector('[data-p]').textContent = r.saved;
+    box.querySelectorAll('li').forEach((li, k) => { li.textContent = r.order[k]; });
+  } catch (e) { box.innerHTML = `<h3>完整成片</h3><div class="err">合成出错：${String(e.message).replace(/</g,'&lt;')}</div>`; }
+}
 $('#open').onclick = () => api('/api/open-output');
 $('#preset').onchange = async () => {
   for (const it of items) if (it.id) { try { await analyzeItem(it); } catch (e) {} }

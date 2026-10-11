@@ -21,6 +21,7 @@ if (!ffmpeg) {
 }
 console.log('使用 ffmpeg：' + ffmpeg);
 
+const MERGED = path.join(OUTDIR, '成片_合并.mp4');
 const clips = new Map();          // id -> {name, file, info, opt}
 let counter = 0;
 
@@ -60,6 +61,7 @@ const server = http.createServer(async (req, res) => {
     if (req.method === 'GET' && url.pathname === '/api/presets') return json(res, 200, lib.PRESETS);
     if (req.method === 'GET' && url.pathname.startsWith('/media/')) {
       const [, , id, which] = url.pathname.split('/');
+      if (id === 'merged') return serveFile(req, res, MERGED);
       const c = clips.get(id);
       if (!c) { res.writeHead(404); return res.end(); }
       return serveFile(req, res, which === 'out' ? c.outFile : c.file);
@@ -92,6 +94,18 @@ const server = http.createServer(async (req, res) => {
       const r = await lib.render(ffmpeg, c.file, c.outFile, c.info, use || [], speed || 1);
       fs.copyFileSync(c.outFile, dst);
       return json(res, 200, { dur: +r.dur.toFixed(2), saved: dst });
+    }
+    if (req.method === 'POST' && url.pathname === '/api/merge') {
+      const { ids } = JSON.parse((await readBody(req)).toString('utf8'));
+      const files = [], names = [];
+      for (const id of ids || []) {
+        const c = clips.get(id);
+        if (!c || !fs.existsSync(c.outFile)) return json(res, 400, { error: '有片段还没整理保存，请先点“整理这一个”' });
+        files.push(c.outFile); names.push(c.name);
+      }
+      if (!files.length) return json(res, 400, { error: '没有选中的片段' });
+      const r = await lib.mergeClips(ffmpeg, files, MERGED);
+      return json(res, 200, { count: r.count, dur: +r.dur.toFixed(2), saved: MERGED, order: names });
     }
     if (req.method === 'POST' && url.pathname === '/api/open-output') {
       const cmd = process.platform === 'win32' ? ['explorer', [OUTDIR]] : process.platform === 'darwin' ? ['open', [OUTDIR]] : ['xdg-open', [OUTDIR]];
