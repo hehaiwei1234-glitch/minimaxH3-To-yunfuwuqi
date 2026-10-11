@@ -1,0 +1,4 @@
+node_modules/
+工作区/
+输出/
+package-lock.json

@@ -1,0 +1,9 @@
+{
+  "name": "h3-clip-trimmer",
+  "version": "2.0.0",
+  "private": true,
+  "description": "H3 片段整理工具：剪掉每个片段开头和结尾里没人说话、画面又几乎不动的空等（网页界面，需要 Node.js）",
+  "main": "server.js",
+  "scripts": { "start": "node server.js" },
+  "dependencies": { "ffmpeg-static": "^5.2.0" }
+}
