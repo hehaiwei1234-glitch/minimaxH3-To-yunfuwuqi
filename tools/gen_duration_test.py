@@ -14,8 +14,8 @@ import copy, json, os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from _h3draft import Batch, FOLDER, silent
 
-BASE = '合并稿/合并_第7-10集+10B_制作稿_追加.json'
-OUT = '合并稿/时长测试_奔跑_人立_上马_制作稿_追加'
+BASE = '合并稿/旧合并稿/合并_第7-10集+10B_制作稿_追加.json'
+OUT = '合并稿/旧合并稿/时长测试_奔跑_人立_上马_制作稿_追加'
 SRC = json.load(open(os.path.join(FOLDER, BASE), encoding='utf-8'))
 EP = {e['title'].split('｜')[0]: e for e in SRC['episodes']}
 
@@ -66,7 +66,7 @@ def R(dur, seed):
 
 def M(dur, seed):
     """上马：复制重写测试 06（文字一字不改），只改时长、种子。"""
-    h = json.load(open(os.path.join(FOLDER, '合并稿/马场一场_完整过程重写_制作稿_追加.json'), encoding='utf-8'))
+    h = json.load(open(os.path.join(FOLDER, '合并稿/旧合并稿/马场一场_完整过程重写_制作稿_追加.json'), encoding='utf-8'))
     s = copy.deepcopy(h['episodes'][0]['segments'][5])
     assert '上马' in s['title'], s['title']
     s['seed'] = seed

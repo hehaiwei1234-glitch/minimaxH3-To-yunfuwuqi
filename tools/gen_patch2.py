@@ -14,7 +14,7 @@ import json, os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from _h3draft import Batch, FOLDER, silent
 
-BASE = '合并稿/合并_第5集+第6集A+第6集B_制作稿_追加.json'
+BASE = '合并稿/旧合并稿/合并_第5集+第6集A+第6集B_制作稿_追加.json'
 OUT = '补拍/补拍包2_大冲突表演重拍_追加'
 SERIES_TITLE = json.load(open(os.path.join(FOLDER, BASE), encoding='utf-8'))['title']
 

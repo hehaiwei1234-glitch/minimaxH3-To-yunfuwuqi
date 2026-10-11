@@ -21,13 +21,13 @@ import copy, json, os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from _h3draft import Batch, FOLDER, breathy, voiced
 
-BASE = '合并稿/合并_第7-10集+10B_制作稿_追加.json'
-OUT = '合并稿/马场四集_场景级改编_制作稿_追加'
+BASE = '合并稿/旧合并稿/合并_第7-10集+10B_制作稿_追加.json'
+OUT = '合并稿/旧合并稿/马场四集_场景级改编_制作稿_追加'
 SRC = json.load(open(os.path.join(FOLDER, BASE), encoding='utf-8'))
 EP = {e['title'].split('｜')[0]: e for e in SRC['episodes']}
-REWRITE = json.load(open(os.path.join(FOLDER, '合并稿/马场一场_完整过程重写_制作稿_追加.json'), encoding='utf-8'))['episodes'][0]['segments']
-DUR = json.load(open(os.path.join(FOLDER, '合并稿/时长测试_奔跑_人立_上马_制作稿_追加.json'), encoding='utf-8'))['episodes'][0]['segments']
-SEAM = json.load(open(os.path.join(FOLDER, '合并稿/接缝补镜头测试_制作稿_追加.json'), encoding='utf-8'))['episodes'][0]['segments']
+REWRITE = json.load(open(os.path.join(FOLDER, '合并稿/旧合并稿/马场一场_完整过程重写_制作稿_追加.json'), encoding='utf-8'))['episodes'][0]['segments']
+DUR = json.load(open(os.path.join(FOLDER, '合并稿/旧合并稿/时长测试_奔跑_人立_上马_制作稿_追加.json'), encoding='utf-8'))['episodes'][0]['segments']
+SEAM = json.load(open(os.path.join(FOLDER, '合并稿/旧合并稿/接缝补镜头测试_制作稿_追加.json'), encoding='utf-8'))['episodes'][0]['segments']
 
 b7, b8, b9, b10 = (Batch(BASE, SRC['title'], s) for s in (5000, 5100, 5200, 5300))
 

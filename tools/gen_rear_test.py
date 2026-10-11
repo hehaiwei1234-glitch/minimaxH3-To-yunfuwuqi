@@ -13,8 +13,8 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import json
 from _h3draft import Batch, FOLDER, silent
 
-BASE = '合并稿/合并_第7-10集+10B_制作稿_追加.json'
-OUT = '合并稿/人立腿部动作测试_制作稿_追加'
+BASE = '合并稿/旧合并稿/合并_第7-10集+10B_制作稿_追加.json'
+OUT = '合并稿/旧合并稿/人立腿部动作测试_制作稿_追加'
 SRC = json.load(open(os.path.join(FOLDER, BASE), encoding='utf-8'))
 a = Batch(BASE, SRC['title'], 4900)
 
