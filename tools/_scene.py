@@ -33,9 +33,9 @@ class Scene:
         self.key, self.end, self.layout = key, end, layout
 
 
-def P(lk, side, pose, target, expr, extra='', eyes=None, outfit=None, verb='on'):
+def P(lk, side, pose, target, expr, extra='', eyes=None, outfit=None, verb='on', shut='squeezed shut'):
     """target: 画面里另一个人的名字（'Lily'），或 'obj:一个具体的东西'（要写进句子里的原文），或 'closed'（闭眼）。"""
-    return dict(lk=lk, side=side, pose=pose, target=target, expr=expr, extra=extra, eyes=eyes, outfit=outfit, verb=verb)
+    return dict(lk=lk, side=side, pose=pose, target=target, expr=expr, extra=extra, eyes=eyes, outfit=outfit, verb=verb, shut=shut)
 
 
 def sentence(p):
@@ -46,11 +46,25 @@ def sentence(p):
     t = p['target']
     extra = (p['extra'] + ', ') if p['extra'] else ''
     if t == 'closed':
-        eye = f"{L.pron} eyes squeezed shut"
+        eye = f"{L.pron} eyes {p.get('shut', 'squeezed shut')}"
     else:
         tt = t[4:] if t.startswith('obj:') else t
         eye = f"{L.pron} {p['eyes'] or L.eyes} eyes {p['verb']} {tt}"
     return f"{L.who} at {pos}, {p['pose']}, {outfit}, {extra}{eye}, {p['expr']}."
+
+
+def new_person(b, key, label, who, en, zh, core, expr, ref=None, full=False):
+    """一次写好人物素材的三段文字。who='man'/'woman'；en/zh 是素材描述（写清长相、衣着、特征）；core 是肖像提示词里的外貌短语。"""
+    pron = 'He' if who == 'man' else 'She'
+    shot = 'full-body' if full else 'half-body'
+    same = f"the same {who} as in the reference image" if ref else f"a {who}"
+    b.person(key, label, en + ' The portrait fixes identity, clothes and features, not staging.', zh + ' 肖像固定长相、衣着和特征，不固定姿势。',
+             f"A photorealistic {shot} portrait of {same}, {core}. {pron} faces the camera with {expr}. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.", ref=ref)
+
+
+def new_scene(b, key, label, en, zh, holds):
+    b.scene(key, label, en + ' The reference fixes the layout and decor.', zh + ' 参考图固定布局与陈设。',
+            f"A photorealistic ultra-wide 8:3 cinemascope shot of {en[0].lower() + en[1:].rstrip('.')}, nobody in the scene. The frame holds {holds}.")
 
 
 def refs(text):
@@ -81,7 +95,7 @@ class Session:
 
     def T(self, tid, title, dur, scene, people, framing, act_en, zh, sound, *, lines=None, cam=FIX, dep=False,
           room=None, enter=(), exit=(), groups=(), bg='', holds=None, st=None, trigger=None, effect=None,
-          interrupt=(), new=False, extra_assets=(), speaker_extra=()):
+          interrupt=(), new=False, extra_assets=(), speaker_extra=(), vo=()):
         b = self.cur
         names = {}
         sents, chars, assets = [], [], []
@@ -118,6 +132,10 @@ class Session:
         for sp, tx, start, to in (lines or []):
             spoken.append((LOOKS[sp].char, tx, start))
             says.append((LOOKS[sp].who, to))
+        for sp, tx, start, to in vo:                 # 画外音：说话的人不进画面，只出声；对象必须在画面里
+            spoken.append((LOOKS[sp].char, tx, start))
+            if LOOKS[sp].char not in chars: chars.append(LOOKS[sp].char)
+            assert to in frame, (tid, '画外音的对象不在画面里')
         for x in speaker_extra:
             if x not in chars: chars.append(x)
         asset_list = ([scene.key] if scene else []) + assets + list(extra_assets)
