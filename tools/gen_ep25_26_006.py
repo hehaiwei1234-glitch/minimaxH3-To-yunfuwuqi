@@ -253,9 +253,13 @@ for sub in ('', '旧合并稿'):
                         seen.add(s['seed'])
             except Exception:
                 pass
+# 2026-10-12 10:06 hh 要求：这一批所有任务的视频种子统一（和生图工作流里的统一种子配合做对比）
+UNIFIED_SEED = 12345
+for e in doc['episodes']:
+    for s in e['segments']:
+        s['seed'] = UNIFIED_SEED
 mine = [s['seed'] for e in doc['episodes'] for s in e['segments']]
 clash = sorted(x for x in set(mine) if x in seen)
-assert len(set(mine)) == len(mine), '本稿内种子重复'
 print('与库里已有种子重复：', clash if clash else '无')
 
 txt = json.dumps(doc, ensure_ascii=False, indent=1)
