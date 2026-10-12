@@ -22,7 +22,7 @@ BANNED = [  # (正则, 说明)
 CUE = re.compile(r"lips?|mouth|jaw|brows?|tears?|frown|glar|scowl|narrow|expression|wince|grimace|smirk|smil|pale|stern|cold|blank|clench|tighten|wide eyes|eyes (?:\w+ )?wide|eyes (?:widen|shut|close|lower)|glisten|shine|bite|bites|quiver|tremble", re.I)
 GAZE = re.compile(r"eyes[^.;]{0,60}\b(?:on|at|toward|towards|fixed on|locked on)\b|eyes (?:\w+ )?(?:closed|shut)|eyes squeezed shut|\b(?:looks?|looking|stares?|staring|glares?|glaring|gazes?|gazing) (?:up |down )?(?:at|toward|into)\b", re.I)
 SPEAK = re.compile(r"\b(?:says?|speaks?|asks?|shouts?|snarls?|hisses?|whispers?|answers?|spits?|growls?|calls?|tells?|line)\b", re.I)
-FEMALE = {'Lily', 'Mary', 'Selena', 'Mia', 'Maid', 'Nurse', 'Friend'}
+FEMALE = {'Lily', 'Mary', 'Selena', 'Mia', 'Maid', 'Nurse', 'Friend', 'Vivian', 'Jenna'}
 FAST = re.compile(r'\b(backhand\w*|hurl\w*|lunge\w*|slam\w*|shove\w*|kick\w*|sprint\w*|charge[sd]?|leap\w*|jump\w*|dive\w*|flies|fly|crash\w*|smash\w*|tackle\w*|punch\w*|stab\w*|plunge\w*|hurtle\w*|blast\w*|throw\w*|hurled)\b', re.I)
 MECH = re.compile(r'\b(lock\w*|unlock\w*|curtains?|drapes?|latch\w*|bursts? open|swing\w* open|slam\w* shut|shatter\w*)\b', re.I)
 errs = 0
@@ -113,7 +113,7 @@ for ep in d['episodes']:
                 words = len(re.findall(r"[A-Za-z0-9]+(?:['’][A-Za-z0-9]+)*", x['text']))
                 if words > 7: bad(t, f'英语台词 {words} 个单词，超过 7 个')
                 elif words == 7: warn(t, '英语台词 7 个单词（≤6 更稳）')
-                if re.match(r"^\s*[A-Z][a-z]+[,.!?]\s+\S", x['text']) and x['text'].split()[0].strip(',.!?') in ('Lily', 'Killian', 'Paul', 'Mary', 'Selena'):
+                if re.match(r"^\s*[A-Z][a-z]+[,.!?]\s+\S", x['text']) and x['text'].split()[0].strip(',.!?') in ('Lily', 'Killian', 'Paul', 'Mary', 'Selena', 'Noah', 'Vivian', 'Jenna', 'Rick', 'Mack', 'Daniel', 'Webb'):
                     bad(t, f'台词以名字开头再接一句（名字后会停很久）：{x["text"]}')
             elif han > 14: bad(t, f'台词 {han} 个字，超过约 13 字')
             if dur - x['end_seconds'] < 1.0: bad(t, '台词后余量不足 1 秒')

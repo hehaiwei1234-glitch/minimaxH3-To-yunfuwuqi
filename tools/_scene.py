@@ -10,7 +10,8 @@
 """
 import copy, json, os, re, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from _h3draft import Batch, FOLDER, IMG, breathy, voiced
+import _h3draft as H
+from _h3draft import Batch, FOLDER, IMG, breathy, voiced, configure
 from _blocking import B, check
 
 FIX = ('The camera holds still.', '镜头固定不动。')
@@ -72,9 +73,12 @@ def refs(text):
 
 
 class Session:
-    def __init__(self, base_json, out_name, seed_base):
-        self.base, self.out, self.seed_base = base_json, out_name, seed_base
-        self.src = json.load(open(os.path.join(FOLDER, base_json), encoding='utf-8'))
+    def __init__(self, base_json, out_name, seed_base, title=None, style=None):
+        self.base, self.out, self.seed_base, self.style = base_json, out_name, seed_base, style
+        if base_json is None:      # 新剧第一批：空白底稿
+            self.src = {'title': title, 'style': style, 'assets': [], 'characters': {}}
+        else:
+            self.src = json.load(open(os.path.join(H.CFG['folder'], base_json), encoding='utf-8'))
         self.eps = []          # [(Batch, 集标题, 摘要)]
         self.groups = []       # 站位表分组：同一个地点同一段时间的任务按顺序放一组
         self.prompts = {}
@@ -84,7 +88,7 @@ class Session:
 
     # ---- 素材：每个 Batch 各复制一份底稿，所以新素材要同时加到每个 Batch；统一在 finish 里补到最终文档 ----
     def episode(self, title, summary, ep_no):
-        b = Batch(self.base, self.src['title'], self.seed_base + ep_no * 100)
+        b = Batch(self.base, self.src['title'], self.seed_base + ep_no * 100, style=self.style)
         self.eps.append((b, title, summary))
         self.cur = b
         return b
@@ -192,7 +196,7 @@ class Session:
                 for c in s['characters']: assert c in doc['characters'], (s['title'], c)
         # 种子不重复
         seen = set()
-        folder = os.path.join(FOLDER, '合并稿')
+        folder = os.path.join(H.CFG['folder'], '合并稿')
         for sub in ('', '旧合并稿'):
             d_ = os.path.join(folder, sub)
             if not os.path.isdir(d_): continue
@@ -209,8 +213,8 @@ class Session:
         clash = sorted(x for x in set(mine) if x in seen and x not in extra_allow_seeds)
         assert not clash, f'与库里已有种子重复：{clash}'
         txt = json.dumps(doc, ensure_ascii=False, indent=1)
-        open(os.path.join(FOLDER, self.out + '.json'), 'w', encoding='utf-8').write(txt)
-        open(os.path.join(FOLDER, self.out + '_全选复制粘贴.txt'), 'w', encoding='utf-8').write(txt)
+        open(os.path.join(H.CFG['folder'], self.out + '.json'), 'w', encoding='utf-8').write(txt)
+        open(os.path.join(H.CFG['folder'], self.out + '_全选复制粘贴.txt'), 'w', encoding='utf-8').write(txt)
         n = len(mine); sec = sum(s['duration_seconds'] for e in doc['episodes'] for s in e['segments'])
         print(f'{len(doc["episodes"])} 集、{n} 个任务、约 {sec} 秒；文件 {len(txt.encode())/1024:.0f} KB → {self.out}')
         for e in doc['episodes']:
