@@ -22,7 +22,9 @@ BANNED = [  # (正则, 说明)
 CUE = re.compile(r"lips?|mouth|jaw|brows?|tears?|frown|glar|scowl|narrow|expression|wince|grimace|smirk|smil|pale|stern|cold|blank|clench|tighten|wide eyes|eyes (?:\w+ )?wide|eyes (?:widen|shut|close|lower)|glisten|shine|bite|bites|quiver|tremble", re.I)
 GAZE = re.compile(r"eyes[^.;]{0,60}\b(?:on|at|toward|towards|fixed on|locked on)\b|eyes (?:\w+ )?(?:closed|shut)|eyes squeezed shut|\b(?:looks?|looking|stares?|staring|glares?|glaring|gazes?|gazing) (?:up |down )?(?:at|toward|into)\b", re.I)
 SPEAK = re.compile(r"\b(?:says?|speaks?|asks?|shouts?|snarls?|hisses?|whispers?|answers?|spits?|growls?|calls?|tells?|line)\b", re.I)
-FEMALE = {'Lily', 'Mary', 'Selena'}
+FEMALE = {'Lily', 'Mary', 'Selena', 'Mia', 'Maid', 'Nurse', 'Friend'}
+FAST = re.compile(r'\b(backhand\w*|hurl\w*|lunge\w*|slam\w*|shove\w*|kick\w*|sprint\w*|charge[sd]?|leap\w*|jump\w*|dive\w*|flies|fly|crash\w*|smash\w*|tackle\w*|punch\w*|stab\w*|plunge\w*|hurtle\w*|blast\w*|throw\w*|hurled)\b', re.I)
+MECH = re.compile(r'\b(lock\w*|unlock\w*|curtains?|drapes?|latch\w*|bursts? open|swing\w* open|slam\w* shut|shatter\w*)\b', re.I)
 errs = 0
 def bad(seg, msg):
     global errs; errs += 1
@@ -50,6 +52,13 @@ for ep in d['episodes']:
             elif 'holds still' not in last and not re.search(r'\buntil\b|\bto (?:a|the|her|his)\b', last):
                 bad(t, f'运镜没写终点（要写成“推近到…占满画面”这种“动作＋终点”）：{last}')
             if len(s['shots']) > 1: bad(t, '含片内切镜（不用）')
+        visc = re.sub(r'brows? (?:crashing|crash) (?:together|down)', '', vis, flags=re.I)
+        fast = sorted({m.group(0).lower() for m in FAST.finditer(visc)})
+        mech = sorted({m.group(0).lower() for m in MECH.finditer(re.sub(r'locked (?:on|onto|in)\b', '', vis))})
+        beats = vis.count(';') + len(re.findall(r'\bthen\b', vis)) + 1
+        if fast: warn(t, f'快动作／位移（{",".join(fast)}）：H3 常在这里自己切镜或丢动作；开场图要从接触起手、这个任务只放这一件（H3 风险，不算写错）')
+        if mech: warn(t, f'机械／场景状态变化（{",".join(mech)}）：第 25–26 集的锁门、窗帘都没做出来（H3 风险）')
+        if beats > 3: warn(t, f'一个任务里有 {beats} 个先后动作（分号／then），超过 3 个：慢的持续动作可以，快动作会被丢')
         ip = s['image_prompt']
         for rx, why in BANNED[:4] + BANNED[-1:]:
             m = re.search(rx, ip, re.I)

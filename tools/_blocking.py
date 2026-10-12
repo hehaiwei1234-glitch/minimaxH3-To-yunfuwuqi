@@ -86,7 +86,7 @@ def _gaze_in_prompt(tid, b, names, text):
     sents = re.split(r'(?<=\.)\s+', text)
     for p in b['frame']:
         n = names.get(p)
-        if not n: continue
+        if not n or p in b.get('nogaze', ()): continue
         mine = [s for s in sents if re.match(r'\s*(?:%s)\b' % re.escape(n), s)]
         if not mine:
             errs.append(f'{tid}: 开场图里找不到以 {n} 开头的那句描写'); continue
