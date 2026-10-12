@@ -19,17 +19,19 @@
          ④ 他背起背包走进玄关（拍他走出画面的全过程，镜头结束时玄关是空的）；⑤ 薇薇安对珍娜下两道命令（查气象局数据／把酒窖囤满）；
          ⑥ 她站在落地窗前看烈日，说“他不是被害妄想，他知道些什么”（本集钩子）。
          （偏离：五吨牛排等具体清单不念；“订两吨罐头十台发电机”压成“把酒窖囤满”；苏清月打电话改成当面对助理说。）
-  第 3 集 ① 开场先给观众看囤货堆成山的地下大厅（无人，爽感）；② 林峰在隧道口催卡车卸货，“还剩三天”（倒计时用台词交代，不叠字幕）；
+  第 3 集 ① 开场先给观众看囤货堆成山的地下大厅（无人，爽感）；② 林峰在隧道口催卡车卸货，“时间不多了”（不再说“三天”：后面电子钟读 10 秒，时间要接得上）；
          ③ 赵虎和小弟在卡车旁嘀咕“夏天囤这么多粮”“记住这个地方”（给后面埋雷）；④ 林峰把金条交给赵虎打发走；
-         ⑤ 林峰看着他们走远、按下遥控器（只拍按，不拍岩石滑动）；⑥ 下一镜同一座山坡上只剩一块长满青苔的岩石和枯树桩（只拍结果）；
+         ⑤ 林峰站在洞口里面的暗处，看着他们走远、按下遥控器（他在里面，岩石合上才讲得通；只拍按，不拍岩石滑动）；⑥ 下一镜同一座山坡上只剩一块长满青苔的岩石和枯树桩（只拍结果）；
          ⑦ 地下控制台：他按下红色总控按钮，三台发电机依次启动、暖黄色灯亮起；⑧ 红色电子钟特写（读秒用滴声，不念数字）；⑨ 森林里突然狂风大作、天空变白。
          （偏离：蒙太奇压成“堆满的大厅＋卸货”；仿生岩石覆盖入口只拍结果；赵虎“把坐标记死”压成“记住这个地方”；麦克是新加的小弟，让赵虎有人说话。）
-  第 4 集 ① 夏夜烧烤摊，远处一堵白色雾墙滚来，人们抬头；② 紧接着是冻成冰雕的同一条街，绿色极光（不拍人变冰雕的过程）；
+  第 4 集 ① 夏日午后烧烤摊（和第 3 集正午的山里同一个白天），远处一堵白色雾墙滚来，人们抬头；② 紧接着是冻成冰雕的同一条街，绿色极光（不拍人变冰雕的过程）；
          ③ 地下安全屋：林峰洗完澡光脚煎牛排（暖黄灯、羊毛地毯）；④ 举杯喝红酒；⑤ 监控墙：一个穿薄外套的男人在暴风雪里走着走着倒下，林峰一动不动；
          ⑥ 酒窖里薇薇安和珍娜裹着被子冻得发抖，薇薇安说“那个疯子现在肯定很暖和”，珍娜说“他警告过你”；
          ⑦ 监控特写：排气管口被冰封，红框闪烁；⑧ 林峰的刀叉停在牛排上，红光闪在脸上，看向通往地表的钢制舱门。
          （偏离：“变异野狗刨尸体”改成倒下的孤身男人；“人群瞬间变冰雕”只拍白雾逼近和冻结后的静态街景；一氧化碳警告文字不念，改画排气管口冰封；
           苏清月不再是一个人，珍娜陪着，因为每句台词都要有画面里的对象。）
+修订（2026-10-12 18:50，hh 贴之前，按 GPT 检查意见核对后改）：① 03-02 台词不再说“三天”；② 03-05 林峰站洞口里面；
+  ③ 洞口敞开→封住、烧烤街→冰封街，后一张场景图用前一张当参照图（reference_keys，没测过）；④ 烧烤街由黄昏改成午后强光，和第 3 集正午对得上。
 左右方向（每个场景固定）：
   会议室：领导在画面左，林峰在右（靠门），专家们坐在桌子远端；广场：玻璃大门在左，轿车在右；
   豪宅：玻璃餐桌在中间，落地窗在后墙，白沙发在左墙，玄关和三个战术背包在右；
@@ -83,7 +85,7 @@ HIDDEN = Scene('hill_hidden', " Hard noon light falls through tall pines onto th
                " Fixed stage layout: the forested hillside at frame-left holds a moss-covered boulder and a dead tree stump; the empty gravel clearing fills the middle of the frame; tall pine trees fill the background.")
 CORE = Scene('bunker_core', " Dim emergency light fills the concrete control corner of the underground hideout.",
              " Fixed stage layout: the steel control console with a large red button under a flip-up cover stands at frame-center; three matte-grey silent generators stand in a row against the back wall; a big red digital clock hangs on the wall above the console; a heavy steel hatch door is in the right wall at frame-right.")
-STREET = Scene('street_bbq', " Warm dusk light and strings of lamps glow over a busy summer street food stand, the grill burning orange.",
+STREET = Scene('street_bbq', " Hot bright late-afternoon sunlight falls over a busy summer street food stand, the grill burning orange.",
                " Fixed stage layout: the street barbecue stand with an open charcoal grill is at frame-left; a row of plastic tables with diners fills the middle of the frame; the long avenue stretches to the vanishing point at frame-right between tall buildings.")
 FROZEN = Scene('street_frozen', " Pale cold light under a green aurora sky falls on the silent frozen street, thick frost on every surface.",
                " Fixed stage layout: the street barbecue stand with its grill frozen into a jagged ice sculpture is at frame-left; the plastic tables, covered in frost, fill the middle of the frame; the long avenue stretches to the vanishing point at frame-right.")
@@ -169,21 +171,26 @@ new_scene(b1, 'bunker_hall', '地下防空洞大厅（囤货堆成山）', 'A va
 new_scene(b1, 'tunnel_mouth', '深山里的隧道口（入口敞开）', 'A forested mountain hillside in summer: a dark concrete tunnel mouth cut into the hillside at the left, a gravel clearing in the middle, a large box truck with its rear door rolled up and crates stacked at its back at the right, tall pine trees all around, hard noon light.',
           '夏天的深山树林山坡：左边山坡上开着一个黑洞洞的混凝土隧道口，中间是一片碎石空地，右边停着一辆后门卷起、后面堆着箱子的大型厢式卡车，四周是高高的松树，正午的硬光。',
           'the tunnel mouth, the gravel clearing, the box truck and the pines')
-new_scene(b1, 'hill_hidden', '同一座山坡（入口已被伪装，只剩青苔岩石和枯树桩）', 'The same forested mountain hillside in summer: a moss-covered boulder and a dead tree stump sit on the slope at the left, an empty gravel clearing in the middle, tall pine trees all around, hard noon light.',
-          '同一座夏天的深山树林山坡：左边坡上是一块长满青苔的岩石和一截枯树桩（原本隧道口的位置），中间是空荡荡的碎石空地，四周是高高的松树，正午的硬光。',
+new_scene(b1, 'hill_hidden', '同一座山坡（入口已被伪装，只剩青苔岩石和枯树桩）', 'The same forested mountain hillside in summer as in the reference image, now with no tunnel and no truck: a moss-covered boulder and a dead tree stump sit on the slope at the left, an empty gravel clearing in the middle, tall pine trees all around, hard noon light.',
+          '和参考图是同一座夏天的深山树林山坡，只是隧道口和卡车都不见了：左边坡上是一块长满青苔的岩石和一截枯树桩（原本隧道口的位置），中间是空荡荡的碎石空地，四周是高高的松树，正午的硬光。',
           'the boulder, the stump, the empty clearing and the pines')
 new_scene(b1, 'bunker_core', '地下安全屋的控制角落（发电机与红色总控按钮）', 'The concrete control corner of an underground hideout in dim emergency light: a steel control console with a large red button under a flip-up cover at the center, three matte-grey silent generators in a row against the back wall, a big red digital clock on the wall above the console, a heavy steel hatch door in the right wall.',
           '地下藏身处混凝土的控制角落，昏暗的应急灯光：中间是钢制控制台、上面一个带翻盖的大红按钮，后墙边并排放着三台哑光灰色的静音发电机，控制台上方墙上是一个大红色电子钟，右墙是一扇厚重的钢制舱门。',
           'the console with the red button, the three generators, the red clock and the hatch')
-new_scene(b1, 'street_bbq', '夏夜的街头烧烤摊', 'A busy summer street food stand at dusk: an open charcoal grill burning orange at the left, a row of plastic tables with diners holding beer cups in the middle, strings of warm lamps overhead, a long city avenue stretching to the vanishing point at the right between tall buildings.',
-          '黄昏时热闹的夏日街头烧烤摊：左边是烧得橙红的敞口炭烤炉，中间一排塑料桌、食客们举着啤酒杯，头顶是一串串暖色的灯，右边是一条长长的城市大道、通向两侧高楼之间的灭点。',
+new_scene(b1, 'street_bbq', '夏日午后的街头烧烤摊', 'A busy summer street food stand in hot bright late-afternoon sunlight: an open charcoal grill burning orange at the left, a row of plastic tables with diners holding beer cups in the middle, a long city avenue stretching to the vanishing point at the right between tall buildings.',
+          '炎热明亮的夏日午后热闹的街头烧烤摊：左边是烧得橙红的敞口炭烤炉，中间一排塑料桌、食客们举着啤酒杯，右边是一条长长的城市大道、通向两侧高楼之间的灭点。',
           'the grill, the tables with diners and the long avenue')
-new_scene(b1, 'street_frozen', '同一条街被冰封之后（极光）', 'The same street food stand and avenue after the freeze, silent and white: the grill frozen into a jagged ice sculpture at the left, frost-covered plastic tables in the middle with life-size ice statues of diners frozen mid-gesture, a long avenue to the vanishing point at the right, a green aurora across the dark sky, pale cold light.',
-          '被冻住之后寂静而苍白的同一个烧烤摊和同一条大道：左边烤炉冻成一座参差的冰雕，中间是覆满白霜的塑料桌、桌边是保持着动作被冻住的真人大小的食客冰雕，右边是通向灭点的长街，漆黑的天空里一道绿色极光，苍冷的光。',
+new_scene(b1, 'street_frozen', '同一条街被冰封之后（极光）', 'The same street food stand and avenue as in the reference image, same buildings and same table layout, after the freeze, silent and white: the grill frozen into a jagged ice sculpture at the left, frost-covered plastic tables in the middle with life-size ice statues of diners frozen mid-gesture, a long avenue to the vanishing point at the right, a green aurora across the dark sky, pale cold light.',
+          '和参考图是同一个烧烤摊、同一条大道（楼房和桌子位置不变），被冻住之后寂静而苍白：左边烤炉冻成一座参差的冰雕，中间是覆满白霜的塑料桌、桌边是保持着动作被冻住的真人大小的食客冰雕，右边是通向灭点的长街，漆黑的天空里一道绿色极光，苍冷的光。',
           'the frozen grill, the frosted tables with the ice statues and the aurora')
 new_scene(b1, 'bunker_living', '安全屋的生活区（暖黄灯，25℃）', 'The cozy living area of an underground hideout: an open kitchen with a black-and-gold stove and a marble counter at the left, a thick cream wool rug and a small round wooden dining table in the middle, a wall of small security monitors at the center-right, a heavy round steel hatch door in the right wall, warm amber light from soft recessed lamps.',
           '地下藏身处温馨的生活区：左边是开放式厨房、黑金色炉灶和大理石台面，中间是厚厚的奶白色羊毛地毯和一张小小的圆形木餐桌，中右是一整面小监控屏墙，右墙是一扇厚重的圆形钢制舱门，柔和的嵌灯投下暖琥珀色的光。',
           'the kitchen, the rug, the dining table, the monitor wall and the hatch')
+# 前后两组场景：后一张用前一张当参照图，让“同一处”真的是同一处（没测过：风险是旧图里的卡车／火光盖过新状态）
+for _a in b1.d['assets']:
+    if _a['key'] == 'hill_hidden': _a['generate']['reference_keys'] = ['tunnel_mouth']
+    if _a['key'] == 'street_frozen': _a['generate']['reference_keys'] = ['street_bbq']
+
 new_scene(b1, 'wine_cellar', '苏清月豪宅的地下酒窖（冻得发抖）', 'A freezing stone wine cellar: tall wooden wine racks along the left wall, stacks of canned food and crates of bottled water against the right wall, a small camping lantern on an upturned crate in the middle, a narrow stone staircase leading up at the back wall, cold blue-grey light.',
           '冰冷的石头酒窖：左墙边是高高的木头酒架，右墙边是一摞摞罐头和成箱的瓶装水，中间一只倒扣的木箱上放着一盏小露营灯，后墙是一道通往上面的窄石阶，冷蓝灰色的光。',
           'the wine racks, the cans and water crates, the lantern and the staircase')
@@ -386,7 +393,7 @@ S.T('02-06', '06｜薇薇安站在落地窗前看着烈日：他不是被害妄�
     st={'Vivian': ('黑色真丝衬衫，坐在玻璃桌边', '黑色真丝衬衫，站在落地窗前'), 'Jenna': ('藏青西装外套，站在她身后', '藏青西装外套，站在她旁边')})
 
 # ---------------------------------------------------------------------------------------------- 第 3 集
-b3 = S.episode('剧本第3集｜囤货：隐秘的地下小镇', '深山里的废弃防空洞被林峰搬空了整座冷库：大厅里的物资堆成了山，他催卡车卸货，还剩三天；物流老板赵虎（里克）和小弟在卡车旁嘀咕“夏天囤这么多粮”“记住这个地方”；林峰用一根金条打发走他们，按下遥控器，山坡上的入口消失，只剩一块长满青苔的岩石；他按下红色总控按钮，发电机一台台启动，红色电子钟开始读秒，森林里刮起诡异的狂风。', 3)
+b3 = S.episode('剧本第3集｜囤货：隐秘的地下小镇', '深山里的废弃防空洞被林峰搬空了整座冷库：大厅里的物资堆成了山，他催卡车卸货，说时间不多了；物流老板赵虎（里克）和小弟在卡车旁嘀咕“夏天囤这么多粮”“记住这个地方”；林峰用一根金条打发走他们，按下遥控器，山坡上的入口消失，只剩一块长满青苔的岩石；他按下红色总控按钮，发电机一台台启动，红色电子钟开始读秒，森林里刮起诡异的狂风。', 3)
 
 S.T('03-01', '01｜无人镜头：地下大厅里的物资堆成了山', 6, HALL, [],
     'Wide shot down the central aisle of the vast underground hall, in the middle third of the frame, no person in the frame.',
@@ -396,14 +403,14 @@ S.T('03-01', '01｜无人镜头：地下大厅里的物资堆成了山', 6, HALL
     cam=('The camera pushes in slowly down the central aisle until the far wall fills the frame.', '镜头顺着中央过道慢慢推近，直到远处的墙占满画面。'),
     holds='The frame holds the stacked crates, the generators and the aisle, and no person.', room=set(), new=True)
 
-S.T('03-02', '02｜隧道口，林峰催卡车：还剩三天，快点卸货', 8, TUNNEL,
+S.T('03-02', '02｜隧道口，林峰催卡车：时间不多了，快点卸货', 8, TUNNEL,
     [P('noah_work', 'left', "standing at the tunnel mouth in profile facing frame-right with his arms at his sides", 'Rick', "his lips set flat, his brows level"),
      P('rick_boss', 'right', "standing beside the open back of the box truck in profile facing frame-left, his thumbs hooked in his vest", 'Noah', "a greedy sly leer on his lips, his brows lifted")],
     'Medium two-shot, both men from the head to the knees, in the middle third of the frame, on the gravel clearing.',
     "<noah_work> speaks the line to <rick_boss> in a flat, impatient voice, his eyes steady on Rick, his lips set flat and his brows level. <rick_boss> hooks his thumbs in his vest and watches him, a greedy sly leer on his lips and his brows lifted, then gives a slow nod.",
     "诺亚（林峰）用平淡而不耐烦的声音对里克（赵虎）说出那句话，眼睛稳稳看着里克，嘴唇抿平，眉毛平直。里克把拇指勾在背心上看着他，嘴唇挂着贪婪狡猾的邪笑，眉毛上挑，然后慢慢点了点头。",
     voiced('A truck engine idling, crates thudding onto gravel and birds in the pines.', '卡车发动机怠速的声音、箱子砸在碎石上的闷响和松林里的鸟叫。'),
-    lines=[('noah_work', "Three days left, so unload faster.", 1.0, 'Rick')],
+    lines=[('noah_work', "Unload faster. Time is almost up.", 1.0, 'Rick')],
     bg="Behind Rick the box truck's open rear is packed with steel crates.", holds='The frame holds Noah and Rick, the tunnel mouth and the box truck behind them.',
     room={'Noah', 'Rick', 'Mack'}, new=True,
     st={'Noah': ('深灰亨利衫和工装背心', '深灰亨利衫和工装背心'), 'Rick': ('黑色皮背心，站在卡车旁', '黑色皮背心，站在卡车旁')})
@@ -430,16 +437,16 @@ S.T('03-04', '04｜林峰递给赵虎一根金条：这是最后一笔，走吧'
     bg='Behind them the dark tunnel mouth and the box truck stand on the gravel clearing.', holds='The frame holds Noah and Rick, with the tunnel mouth and the truck behind them.',
     st={'Rick': ('黑色皮背心，站在卡车旁', '黑色皮背心，金条在手里')})
 
-S.T('03-05', '05｜赵虎和小弟走向卡车，林峰在洞口举起遥控器按下', 8, TUNNEL,
-    [P('noah_work', 'left', "standing at the tunnel mouth in profile facing frame-right, a small black remote in his right hand at his side", 'obj:the two men walking away across the gravel clearing', "his lips set in a cold line, his brows level"),
+S.T('03-05', '05｜赵虎和小弟走向卡车，林峰站在洞口里面举起遥控器按下', 8, TUNNEL,
+    [P('noah_work', 'left', "standing just inside the dark tunnel mouth in profile facing frame-right, a small black remote in his right hand at his side", 'obj:the two men walking away across the gravel clearing', "his lips set in a cold line, his brows level"),
      P('rick_boss', 'center', "walking away across the gravel clearing in profile facing frame-right, the gold bar tucked under his arm", 'obj:the box truck at frame-right', "a smug set to his lips, his brows lifted"),
      P('mack_thug', 'right', "walking beside Rick in profile facing frame-right, glancing around the hillside", 'obj:the box truck at frame-right', "his lips parted, his brows pulled up")],
     'Wide shot, all three from the head to the feet, in the middle third of the frame, on the gravel clearing.',
-    "<rick_boss> and <mack_thug> walk away across the gravel clearing toward the box truck at frame-right with their backs mostly to the tunnel; <noah_work> stands at the tunnel mouth watching them go, then raises the small black remote and presses it with his thumb, his lips set in a cold line and his brows level.",
-    "里克和麦克背对着隧道口，穿过碎石空地走向画面右边的卡车；林峰站在洞口看着他们走远，然后抬起那个黑色小遥控器，用拇指按下去，嘴唇抿成冷冷的一条线，眉毛平直。",
+    "<rick_boss> and <mack_thug> walk away across the gravel clearing toward the box truck at frame-right with their backs mostly to the tunnel; <noah_work> stands just inside the dark tunnel mouth watching them go, then raises the small black remote and presses it with his thumb, his lips set in a cold line and his brows level.",
+    "里克和麦克背对着隧道口，穿过碎石空地走向画面右边的卡车；林峰站在洞口里面的暗处看着他们走远，然后抬起那个黑色小遥控器，用拇指按下去，嘴唇抿成冷冷的一条线，眉毛平直。",
     breathy('Boots crunching on gravel and a truck engine idling.', '靴子踩在碎石上的嘎吱声和卡车发动机怠速的声音。'),
-    holds='The frame holds Noah at the tunnel mouth and Rick and Mack walking toward the box truck.',
-    st={'Noah': ('深灰亨利衫和工装背心', '深灰亨利衫和工装背心，手里拿着遥控器')})
+    holds='The frame holds Noah just inside the tunnel mouth and Rick and Mack walking toward the box truck.',
+    st={'Noah': ('深灰亨利衫和工装背心', '深灰亨利衫和工装背心，站在洞口里面，手里拿着遥控器')})
 
 S.T('03-06', '06｜同一座山坡：入口不见了，只剩青苔岩石和枯树桩', 6, HIDDEN, [],
     'Wide shot of the forested hillside and the empty gravel clearing, in the middle third of the frame, no person in the frame.',
@@ -476,9 +483,9 @@ S.T('03-09', '09｜山坡上狂风骤起，树叶被撕成一片，天空变得�
     holds='The frame holds the thrashing pines, the boulder and the white haze, and no person.', room=set(), new=True)
 
 # ---------------------------------------------------------------------------------------------- 第 4 集
-b4 = S.episode('剧本第4集｜降临：地狱降临与极致反差', '夏夜的烧烤摊，一堵白色雾墙从街尾滚来，人们抬头；下一个画面，同一条街已经被冻成冰雕，天空挂着绿色极光。地下安全屋里林峰光脚煎牛排、喝红酒，监控屏上一个陌生男人在暴风雪里倒下；酒窖里薇薇安和珍娜裹着被子发抖；排气管口被冰封，红灯闪起，林峰的刀叉停在牛排上——他必须去地表。', 4)
+b4 = S.episode('剧本第4集｜降临：地狱降临与极致反差', '夏日午后的烧烤摊，一堵白色雾墙从街尾滚来，人们抬头；下一个画面，同一条街已经被冻成冰雕，天空挂着绿色极光。地下安全屋里林峰光脚煎牛排、喝红酒，监控屏上一个陌生男人在暴风雪里倒下；酒窖里薇薇安和珍娜裹着被子发抖；排气管口被冰封，红灯闪起，林峰的刀叉停在牛排上——他必须去地表。', 4)
 
-S.T('04-01', '01｜夏夜烧烤摊：街尾滚来一堵白色雾墙，人们抬头', 6, STREET, [],
+S.T('04-01', '01｜夏日午后烧烤摊：街尾滚来一堵白色雾墙，人们抬头', 6, STREET, [],
     'Wide shot of the street food stand and the long avenue, in the middle third of the frame, no named person in the frame.',
     "The diners at the plastic tables lift their heads and stare toward the far end of the avenue, where a towering wall of pale white mist rolls toward them, their mouths open and their brows pulled up; the cook at the grill freezes with his tongs in mid-air above the glowing coals.",
     "塑料桌边的食客们抬起头，望向大道尽头——一堵高耸的苍白雾墙正朝他们滚过来，他们张着嘴、眉毛上提；烤炉边的摊主举着夹子停在炭火上方。",

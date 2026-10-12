@@ -257,12 +257,14 @@
    "role": "scene",
    "label": "同一座山坡（入口已被伪装，只剩青苔岩石和枯树桩）",
    "description": {
-    "en": "The same forested mountain hillside in summer: a moss-covered boulder and a dead tree stump sit on the slope at the left, an empty gravel clearing in the middle, tall pine trees all around, hard noon light. The reference fixes the layout and decor.",
-    "zh": "同一座夏天的深山树林山坡：左边坡上是一块长满青苔的岩石和一截枯树桩（原本隧道口的位置），中间是空荡荡的碎石空地，四周是高高的松树，正午的硬光。 参考图固定布局与陈设。"
+    "en": "The same forested mountain hillside in summer as in the reference image, now with no tunnel and no truck: a moss-covered boulder and a dead tree stump sit on the slope at the left, an empty gravel clearing in the middle, tall pine trees all around, hard noon light. The reference fixes the layout and decor.",
+    "zh": "和参考图是同一座夏天的深山树林山坡，只是隧道口和卡车都不见了：左边坡上是一块长满青苔的岩石和一截枯树桩（原本隧道口的位置），中间是空荡荡的碎石空地，四周是高高的松树，正午的硬光。 参考图固定布局与陈设。"
    },
    "generate": {
-    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of the same forested mountain hillside in summer: a moss-covered boulder and a dead tree stump sit on the slope at the left, an empty gravel clearing in the middle, tall pine trees all around, hard noon light, nobody in the scene. The frame holds the boulder, the stump, the empty clearing and the pines.",
-    "reference_keys": []
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of the same forested mountain hillside in summer as in the reference image, now with no tunnel and no truck: a moss-covered boulder and a dead tree stump sit on the slope at the left, an empty gravel clearing in the middle, tall pine trees all around, hard noon light, nobody in the scene. The frame holds the boulder, the stump, the empty clearing and the pines.",
+    "reference_keys": [
+     "tunnel_mouth"
+    ]
    }
   },
   {
@@ -283,13 +285,13 @@
    "key": "street_bbq",
    "kind": "image",
    "role": "scene",
-   "label": "夏夜的街头烧烤摊",
+   "label": "夏日午后的街头烧烤摊",
    "description": {
-    "en": "A busy summer street food stand at dusk: an open charcoal grill burning orange at the left, a row of plastic tables with diners holding beer cups in the middle, strings of warm lamps overhead, a long city avenue stretching to the vanishing point at the right between tall buildings. The reference fixes the layout and decor.",
-    "zh": "黄昏时热闹的夏日街头烧烤摊：左边是烧得橙红的敞口炭烤炉，中间一排塑料桌、食客们举着啤酒杯，头顶是一串串暖色的灯，右边是一条长长的城市大道、通向两侧高楼之间的灭点。 参考图固定布局与陈设。"
+    "en": "A busy summer street food stand in hot bright late-afternoon sunlight: an open charcoal grill burning orange at the left, a row of plastic tables with diners holding beer cups in the middle, a long city avenue stretching to the vanishing point at the right between tall buildings. The reference fixes the layout and decor.",
+    "zh": "炎热明亮的夏日午后热闹的街头烧烤摊：左边是烧得橙红的敞口炭烤炉，中间一排塑料桌、食客们举着啤酒杯，右边是一条长长的城市大道、通向两侧高楼之间的灭点。 参考图固定布局与陈设。"
    },
    "generate": {
-    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a busy summer street food stand at dusk: an open charcoal grill burning orange at the left, a row of plastic tables with diners holding beer cups in the middle, strings of warm lamps overhead, a long city avenue stretching to the vanishing point at the right between tall buildings, nobody in the scene. The frame holds the grill, the tables with diners and the long avenue.",
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a busy summer street food stand in hot bright late-afternoon sunlight: an open charcoal grill burning orange at the left, a row of plastic tables with diners holding beer cups in the middle, a long city avenue stretching to the vanishing point at the right between tall buildings, nobody in the scene. The frame holds the grill, the tables with diners and the long avenue.",
     "reference_keys": []
    }
   },
@@ -299,12 +301,14 @@
    "role": "scene",
    "label": "同一条街被冰封之后（极光）",
    "description": {
-    "en": "The same street food stand and avenue after the freeze, silent and white: the grill frozen into a jagged ice sculpture at the left, frost-covered plastic tables in the middle with life-size ice statues of diners frozen mid-gesture, a long avenue to the vanishing point at the right, a green aurora across the dark sky, pale cold light. The reference fixes the layout and decor.",
-    "zh": "被冻住之后寂静而苍白的同一个烧烤摊和同一条大道：左边烤炉冻成一座参差的冰雕，中间是覆满白霜的塑料桌、桌边是保持着动作被冻住的真人大小的食客冰雕，右边是通向灭点的长街，漆黑的天空里一道绿色极光，苍冷的光。 参考图固定布局与陈设。"
+    "en": "The same street food stand and avenue as in the reference image, same buildings and same table layout, after the freeze, silent and white: the grill frozen into a jagged ice sculpture at the left, frost-covered plastic tables in the middle with life-size ice statues of diners frozen mid-gesture, a long avenue to the vanishing point at the right, a green aurora across the dark sky, pale cold light. The reference fixes the layout and decor.",
+    "zh": "和参考图是同一个烧烤摊、同一条大道（楼房和桌子位置不变），被冻住之后寂静而苍白：左边烤炉冻成一座参差的冰雕，中间是覆满白霜的塑料桌、桌边是保持着动作被冻住的真人大小的食客冰雕，右边是通向灭点的长街，漆黑的天空里一道绿色极光，苍冷的光。 参考图固定布局与陈设。"
    },
    "generate": {
-    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of the same street food stand and avenue after the freeze, silent and white: the grill frozen into a jagged ice sculpture at the left, frost-covered plastic tables in the middle with life-size ice statues of diners frozen mid-gesture, a long avenue to the vanishing point at the right, a green aurora across the dark sky, pale cold light, nobody in the scene. The frame holds the frozen grill, the frosted tables with the ice statues and the aurora.",
-    "reference_keys": []
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of the same street food stand and avenue as in the reference image, same buildings and same table layout, after the freeze, silent and white: the grill frozen into a jagged ice sculpture at the left, frost-covered plastic tables in the middle with life-size ice statues of diners frozen mid-gesture, a long avenue to the vanishing point at the right, a green aurora across the dark sky, pale cold light, nobody in the scene. The frame holds the frozen grill, the frosted tables with the ice statues and the aurora.",
+    "reference_keys": [
+     "street_bbq"
+    ]
    }
   },
   {
@@ -1112,8 +1116,8 @@
   },
   {
    "title": "剧本第3集｜囤货：隐秘的地下小镇",
-   "summary": "深山里的废弃防空洞被林峰搬空了整座冷库：大厅里的物资堆成了山，他催卡车卸货，还剩三天；物流老板赵虎（里克）和小弟在卡车旁嘀咕“夏天囤这么多粮”“记住这个地方”；林峰用一根金条打发走他们，按下遥控器，山坡上的入口消失，只剩一块长满青苔的岩石；他按下红色总控按钮，发电机一台台启动，红色电子钟开始读秒，森林里刮起诡异的狂风。",
-   "script": "无人镜头，地下大厅里的物资堆成了山，硬朗的工作灯下，巨大的混凝土大厅里堆满了高高的钢箱、成托盘的牛排箱、冰上的龙虾箱、一排排发电机、巨大的水箱和白色医疗箱，灰尘在灯光里飘着，过道上停着一辆没人开的叉车。\n隧道口，林峰催卡车，还剩三天，快点卸货，诺亚（林峰）用平淡而不耐烦的声音对里克（赵虎）说出那句话，眼睛稳稳看着里克，嘴唇抿平，眉毛平直。里克把拇指勾在背心上看着他，嘴唇挂着贪婪狡猾的邪笑，眉毛上挑，然后慢慢点了点头。\nNoahWork：“Three days left, so unload faster.”\n赵虎和小弟在卡车旁嘀咕，夏天囤这么多粮，记住这个地方，麦克用抹布擦着后颈，压低声音对里克说出第一句，眼睛看着里克，眼睛圆睁、眉毛上提。里克看着麦克听着，然后带着狡猾贪婪的邪笑对麦克说出第二句，眉毛上挑。\nMack：“He's stockpiling in summer, boss.”\nRick：“Rich and stupid. Memorize this place.”\n林峰递给赵虎一根金条，这是最后一笔，走吧，林峰把金条递出去，用冰冷的声音对里克说出那句话，眼睛看着里克的脸，嘴唇抿成冷冷的一条线，眉毛平直。里克用双手接过金条掂了掂，眼睛盯着金条，贪婪地张着嘴，眉毛上挑。\nNoahWork：“Take your final payment and go.”\n赵虎和小弟走向卡车，林峰在洞口举起遥控器按下，里克和麦克背对着隧道口，穿过碎石空地走向画面右边的卡车；林峰站在洞口看着他们走远，然后抬起那个黑色小遥控器，用拇指按下去，嘴唇抿成冷冷的一条线，眉毛平直。\n同一座山坡，入口不见了，只剩青苔岩石和枯树桩，安静的山坡上有一块长满青苔的岩石和一截枯树桩；它们前面的碎石空地空荡荡的，没有任何入口的痕迹，只有松树干和在微风里晃动的枝条。\n地下控制台，林峰按下红色总控按钮，发电机依次启动，林峰用拇指按下红色按钮，眼睛盯着按钮，下颌绷紧，嘴唇抿平；他身后三台哑光灰色的发电机一台接一台地启动，混凝土墙上的暖黄色灯一盏盏亮起来。\n红色电子钟特写，一秒一声滴响，混凝土墙上的大红色电子钟一秒一秒地倒数，伴着轻轻的电子滴声，周围墙上的暖黄灯亮着，下面发电机嗡嗡地响。\n山坡上狂风骤起，树叶被撕成一片，天空变得惨白，夏天的松树立在正午的硬光里，然后一阵狂风撕过树林，枝条被抽得乱摆，树叶成股地被扯下来，一片苍白的雾气从树干之间滚进来，天空褪成了死一般的白色。",
+   "summary": "深山里的废弃防空洞被林峰搬空了整座冷库：大厅里的物资堆成了山，他催卡车卸货，说时间不多了；物流老板赵虎（里克）和小弟在卡车旁嘀咕“夏天囤这么多粮”“记住这个地方”；林峰用一根金条打发走他们，按下遥控器，山坡上的入口消失，只剩一块长满青苔的岩石；他按下红色总控按钮，发电机一台台启动，红色电子钟开始读秒，森林里刮起诡异的狂风。",
+   "script": "无人镜头，地下大厅里的物资堆成了山，硬朗的工作灯下，巨大的混凝土大厅里堆满了高高的钢箱、成托盘的牛排箱、冰上的龙虾箱、一排排发电机、巨大的水箱和白色医疗箱，灰尘在灯光里飘着，过道上停着一辆没人开的叉车。\n隧道口，林峰催卡车，时间不多了，快点卸货，诺亚（林峰）用平淡而不耐烦的声音对里克（赵虎）说出那句话，眼睛稳稳看着里克，嘴唇抿平，眉毛平直。里克把拇指勾在背心上看着他，嘴唇挂着贪婪狡猾的邪笑，眉毛上挑，然后慢慢点了点头。\nNoahWork：“Unload faster. Time is almost up.”\n赵虎和小弟在卡车旁嘀咕，夏天囤这么多粮，记住这个地方，麦克用抹布擦着后颈，压低声音对里克说出第一句，眼睛看着里克，眼睛圆睁、眉毛上提。里克看着麦克听着，然后带着狡猾贪婪的邪笑对麦克说出第二句，眉毛上挑。\nMack：“He's stockpiling in summer, boss.”\nRick：“Rich and stupid. Memorize this place.”\n林峰递给赵虎一根金条，这是最后一笔，走吧，林峰把金条递出去，用冰冷的声音对里克说出那句话，眼睛看着里克的脸，嘴唇抿成冷冷的一条线，眉毛平直。里克用双手接过金条掂了掂，眼睛盯着金条，贪婪地张着嘴，眉毛上挑。\nNoahWork：“Take your final payment and go.”\n赵虎和小弟走向卡车，林峰站在洞口里面举起遥控器按下，里克和麦克背对着隧道口，穿过碎石空地走向画面右边的卡车；林峰站在洞口里面的暗处看着他们走远，然后抬起那个黑色小遥控器，用拇指按下去，嘴唇抿成冷冷的一条线，眉毛平直。\n同一座山坡，入口不见了，只剩青苔岩石和枯树桩，安静的山坡上有一块长满青苔的岩石和一截枯树桩；它们前面的碎石空地空荡荡的，没有任何入口的痕迹，只有松树干和在微风里晃动的枝条。\n地下控制台，林峰按下红色总控按钮，发电机依次启动，林峰用拇指按下红色按钮，眼睛盯着按钮，下颌绷紧，嘴唇抿平；他身后三台哑光灰色的发电机一台接一台地启动，混凝土墙上的暖黄色灯一盏盏亮起来。\n红色电子钟特写，一秒一声滴响，混凝土墙上的大红色电子钟一秒一秒地倒数，伴着轻轻的电子滴声，周围墙上的暖黄灯亮着，下面发电机嗡嗡地响。\n山坡上狂风骤起，树叶被撕成一片，天空变得惨白，夏天的松树立在正午的硬光里，然后一阵狂风撕过树林，枝条被抽得乱摆，树叶成股地被扯下来，一片苍白的雾气从树干之间滚进来，天空褪成了死一般的白色。",
    "segments": [
     {
      "title": "01｜无人镜头：地下大厅里的物资堆成了山",
@@ -1148,7 +1152,7 @@
      "dialogue_language": "en"
     },
     {
-     "title": "02｜隧道口，林峰催卡车：还剩三天，快点卸货",
+     "title": "02｜隧道口，林峰催卡车：时间不多了，快点卸货",
      "duration_seconds": 8,
      "generation_seconds": 8,
      "continuity": "cut",
@@ -1172,9 +1176,9 @@
      "dialogue": [
       {
        "speaker": "NoahWork",
-       "text": "Three days left, so unload faster.",
+       "text": "Unload faster. Time is almost up.",
        "start_seconds": 1.0,
-       "end_seconds": 4.17,
+       "end_seconds": 4.05,
        "language": "en"
       }
      ],
@@ -1297,7 +1301,7 @@
      "dialogue_language": "en"
     },
     {
-     "title": "05｜赵虎和小弟走向卡车，林峰在洞口举起遥控器按下",
+     "title": "05｜赵虎和小弟走向卡车，林峰站在洞口里面举起遥控器按下",
      "duration_seconds": 8,
      "generation_seconds": 8,
      "continuity": "cut",
@@ -1317,16 +1321,16 @@
      "image_reference_keys": [
       "tunnel_mouth"
      ],
-     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Wide shot, all three from the head to the feet, in the middle third of the frame, on the gravel clearing. Noah at frame-left, standing at the tunnel mouth in profile facing frame-right, a small black remote in his right hand at his side, in a charcoal henley under a dark olive utility vest with many pockets and dark cargo pants, his steady dark-brown eyes on the two men walking away across the gravel clearing, his lips set in a cold line, his brows level. Rick at frame-center, walking away across the gravel clearing in profile facing frame-right, the gold bar tucked under his arm, in a sleeveless black leather vest over a sweat-stained grey t-shirt, a gold chain at his thick neck, his head shaved, his small dark eyes on the box truck at frame-right, a smug set to his lips, his brows lifted. Mack at frame-right, walking beside Rick in profile facing frame-right, glancing around the hillside, in a faded grey hoodie and a backwards baseball cap, lean and wiry, his restless pale-green eyes on the box truck at frame-right, his lips parted, his brows pulled up. The frame holds Noah at the tunnel mouth and Rick and Mack walking toward the box truck. Hard noon light falls through tall pines onto the gravel clearing in front of the tunnel mouth. Fixed stage layout: the dark concrete tunnel mouth is cut into the forested hillside at frame-left; the gravel clearing fills the middle of the frame; a large box truck with its rear door rolled up and crates stacked at its back stands at frame-right; tall pine trees fill the background.",
-     "visual_zh": "里克和麦克背对着隧道口，穿过碎石空地走向画面右边的卡车；林峰站在洞口看着他们走远，然后抬起那个黑色小遥控器，用拇指按下去，嘴唇抿成冷冷的一条线，眉毛平直。",
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Wide shot, all three from the head to the feet, in the middle third of the frame, on the gravel clearing. Noah at frame-left, standing just inside the dark tunnel mouth in profile facing frame-right, a small black remote in his right hand at his side, in a charcoal henley under a dark olive utility vest with many pockets and dark cargo pants, his steady dark-brown eyes on the two men walking away across the gravel clearing, his lips set in a cold line, his brows level. Rick at frame-center, walking away across the gravel clearing in profile facing frame-right, the gold bar tucked under his arm, in a sleeveless black leather vest over a sweat-stained grey t-shirt, a gold chain at his thick neck, his head shaved, his small dark eyes on the box truck at frame-right, a smug set to his lips, his brows lifted. Mack at frame-right, walking beside Rick in profile facing frame-right, glancing around the hillside, in a faded grey hoodie and a backwards baseball cap, lean and wiry, his restless pale-green eyes on the box truck at frame-right, his lips parted, his brows pulled up. The frame holds Noah just inside the tunnel mouth and Rick and Mack walking toward the box truck. Hard noon light falls through tall pines onto the gravel clearing in front of the tunnel mouth. Fixed stage layout: the dark concrete tunnel mouth is cut into the forested hillside at frame-left; the gravel clearing fills the middle of the frame; a large box truck with its rear door rolled up and crates stacked at its back stands at frame-right; tall pine trees fill the background.",
+     "visual_zh": "里克和麦克背对着隧道口，穿过碎石空地走向画面右边的卡车；林峰站在洞口里面的暗处看着他们走远，然后抬起那个黑色小遥控器，用拇指按下去，嘴唇抿成冷冷的一条线，眉毛平直。",
      "camera_zh": "0—8秒，镜头固定不动。",
      "dialogue": [],
      "shots": [
       {
        "start_seconds": 0,
        "end_seconds": 8,
-       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. [[asset:rick_boss]] and [[asset:mack_thug]] walk away across the gravel clearing toward the box truck at frame-right with their backs mostly to the tunnel; [[asset:noah_work]] stands at the tunnel mouth watching them go, then raises the small black remote and presses it with his thumb, his lips set in a cold line and his brows level. [[asset:rick_boss]] keeps a smug set to his lips, his brows lifted. [[asset:mack_thug]] keeps his lips parted, his brows pulled up. The camera holds still.",
-       "visual_zh": "里克和麦克背对着隧道口，穿过碎石空地走向画面右边的卡车；林峰站在洞口看着他们走远，然后抬起那个黑色小遥控器，用拇指按下去，嘴唇抿成冷冷的一条线，眉毛平直。 镜头固定不动。",
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. [[asset:rick_boss]] and [[asset:mack_thug]] walk away across the gravel clearing toward the box truck at frame-right with their backs mostly to the tunnel; [[asset:noah_work]] stands just inside the dark tunnel mouth watching them go, then raises the small black remote and presses it with his thumb, his lips set in a cold line and his brows level. [[asset:rick_boss]] keeps a smug set to his lips, his brows lifted. [[asset:mack_thug]] keeps his lips parted, his brows pulled up. The camera holds still.",
+       "visual_zh": "里克和麦克背对着隧道口，穿过碎石空地走向画面右边的卡车；林峰站在洞口里面的暗处看着他们走远，然后抬起那个黑色小遥控器，用拇指按下去，嘴唇抿成冷冷的一条线，眉毛平直。 镜头固定不动。",
        "dialogue_indices": []
       }
      ],
@@ -1471,11 +1475,11 @@
   },
   {
    "title": "剧本第4集｜降临：地狱降临与极致反差",
-   "summary": "夏夜的烧烤摊，一堵白色雾墙从街尾滚来，人们抬头；下一个画面，同一条街已经被冻成冰雕，天空挂着绿色极光。地下安全屋里林峰光脚煎牛排、喝红酒，监控屏上一个陌生男人在暴风雪里倒下；酒窖里薇薇安和珍娜裹着被子发抖；排气管口被冰封，红灯闪起，林峰的刀叉停在牛排上——他必须去地表。",
-   "script": "夏夜烧烤摊，街尾滚来一堵白色雾墙，人们抬头，塑料桌边的食客们抬起头，望向大道尽头——一堵高耸的苍白雾墙正朝他们滚过来，他们张着嘴、眉毛上提；烤炉边的摊主举着夹子停在炭火上方。\n同一条街已经被冻成冰雕，天空挂着绿色极光，所有的表面都覆着厚厚的白霜，头顶是绿色极光，食客们的真人大小的冰雕保持着动作坐在桌边，其中一个举着啤酒杯，烤炉的火焰冻成参差的橙白色冰雕，雪沫在寂静的街上飘过。\n地下安全屋，林峰光脚站在炉灶前翻动黄油里的牛排，林峰用夹子把厚厚的牛排在滋滋作响的黄油里翻面，眼睛看着锅，光脚踩在柔软的奶白色地毯上，嘴唇放松、眉毛舒展；黄油冒着泡，锅里升起热气。\n林峰举起红酒杯，闭着眼慢慢喝了一口，林峰把红酒杯举到唇边，慢慢喝了一口，然后把杯子放低一寸，眼睛仍轻轻闭着，一口满足的长气从微张的嘴唇里吐出，眉毛舒展。\n监控墙，一个穿薄外套的男人在暴风雪里倒下，林峰一动不动，林峰抱着双臂站在监控墙前，眼睛盯着中间那块屏幕——一个穿薄外套的男人在暴风雪里踉踉跄跄地走着，然后脸朝下倒在雪里；林峰一动不动，下颌绷紧，嘴唇抿平，眉头压低。\n酒窖里薇薇安冻得发抖，那个疯子现在肯定很暖和，薇薇安在毯子下发抖，牙齿打着颤对珍娜说出第一句，呼出的气凝成白雾，嘴唇发青发抖，眉头拧在一起。珍娜转头看向薇薇安，对薇薇安说出第二句，呼出白雾，嘴唇抿紧发抖，眉毛上提。\nVivianCold：“That madman is probably warm now.”\nJennaCold：“He did warn you.”\n监控特写，排气管口被厚厚的冰封住，红框闪烁，监控屏幕上，雪山坡上的排气管口被一层厚厚的白冰封住，管口缩成一条细细的黑缝，霜还在不断增长；屏幕周围的红框和旁边的红色警示灯一起一明一暗地闪着，映在暖琥珀色的墙上。\n林峰的刀叉停在牛排上，红光闪在脸上，他看向通往地表的舱门，林峰停住，刀叉悬在牛排上，眼睛盯着墙上一明一暗的红色监控屏，红光在他脸上扫过，他慢慢把刀放在盘子上，然后抬眼看向右墙上那扇厚重的圆形钢制舱门，下颌绷紧，嘴唇抿平，眉头压低。",
+   "summary": "夏日午后的烧烤摊，一堵白色雾墙从街尾滚来，人们抬头；下一个画面，同一条街已经被冻成冰雕，天空挂着绿色极光。地下安全屋里林峰光脚煎牛排、喝红酒，监控屏上一个陌生男人在暴风雪里倒下；酒窖里薇薇安和珍娜裹着被子发抖；排气管口被冰封，红灯闪起，林峰的刀叉停在牛排上——他必须去地表。",
+   "script": "夏日午后烧烤摊，街尾滚来一堵白色雾墙，人们抬头，塑料桌边的食客们抬起头，望向大道尽头——一堵高耸的苍白雾墙正朝他们滚过来，他们张着嘴、眉毛上提；烤炉边的摊主举着夹子停在炭火上方。\n同一条街已经被冻成冰雕，天空挂着绿色极光，所有的表面都覆着厚厚的白霜，头顶是绿色极光，食客们的真人大小的冰雕保持着动作坐在桌边，其中一个举着啤酒杯，烤炉的火焰冻成参差的橙白色冰雕，雪沫在寂静的街上飘过。\n地下安全屋，林峰光脚站在炉灶前翻动黄油里的牛排，林峰用夹子把厚厚的牛排在滋滋作响的黄油里翻面，眼睛看着锅，光脚踩在柔软的奶白色地毯上，嘴唇放松、眉毛舒展；黄油冒着泡，锅里升起热气。\n林峰举起红酒杯，闭着眼慢慢喝了一口，林峰把红酒杯举到唇边，慢慢喝了一口，然后把杯子放低一寸，眼睛仍轻轻闭着，一口满足的长气从微张的嘴唇里吐出，眉毛舒展。\n监控墙，一个穿薄外套的男人在暴风雪里倒下，林峰一动不动，林峰抱着双臂站在监控墙前，眼睛盯着中间那块屏幕——一个穿薄外套的男人在暴风雪里踉踉跄跄地走着，然后脸朝下倒在雪里；林峰一动不动，下颌绷紧，嘴唇抿平，眉头压低。\n酒窖里薇薇安冻得发抖，那个疯子现在肯定很暖和，薇薇安在毯子下发抖，牙齿打着颤对珍娜说出第一句，呼出的气凝成白雾，嘴唇发青发抖，眉头拧在一起。珍娜转头看向薇薇安，对薇薇安说出第二句，呼出白雾，嘴唇抿紧发抖，眉毛上提。\nVivianCold：“That madman is probably warm now.”\nJennaCold：“He did warn you.”\n监控特写，排气管口被厚厚的冰封住，红框闪烁，监控屏幕上，雪山坡上的排气管口被一层厚厚的白冰封住，管口缩成一条细细的黑缝，霜还在不断增长；屏幕周围的红框和旁边的红色警示灯一起一明一暗地闪着，映在暖琥珀色的墙上。\n林峰的刀叉停在牛排上，红光闪在脸上，他看向通往地表的舱门，林峰停住，刀叉悬在牛排上，眼睛盯着墙上一明一暗的红色监控屏，红光在他脸上扫过，他慢慢把刀放在盘子上，然后抬眼看向右墙上那扇厚重的圆形钢制舱门，下颌绷紧，嘴唇抿平，眉头压低。",
    "segments": [
     {
-     "title": "01｜夏夜烧烤摊：街尾滚来一堵白色雾墙，人们抬头",
+     "title": "01｜夏日午后烧烤摊：街尾滚来一堵白色雾墙，人们抬头",
      "duration_seconds": 6,
      "generation_seconds": 6,
      "continuity": "cut",
@@ -1488,7 +1492,7 @@
      "image_reference_keys": [
       "street_bbq"
      ],
-     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Wide shot of the street food stand and the long avenue, in the middle third of the frame, no named person in the frame.  At the far end of the avenue a towering wall of pale white mist rolls toward the street, and the diners at the plastic tables lift their heads toward it, clearly visible and in sharp focus. The frame holds the grill, the diners at the plastic tables and the wall of white mist at the far end of the avenue. Warm dusk light and strings of lamps glow over a busy summer street food stand, the grill burning orange. Fixed stage layout: the street barbecue stand with an open charcoal grill is at frame-left; a row of plastic tables with diners fills the middle of the frame; the long avenue stretches to the vanishing point at frame-right between tall buildings.",
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Wide shot of the street food stand and the long avenue, in the middle third of the frame, no named person in the frame.  At the far end of the avenue a towering wall of pale white mist rolls toward the street, and the diners at the plastic tables lift their heads toward it, clearly visible and in sharp focus. The frame holds the grill, the diners at the plastic tables and the wall of white mist at the far end of the avenue. Hot bright late-afternoon sunlight falls over a busy summer street food stand, the grill burning orange. Fixed stage layout: the street barbecue stand with an open charcoal grill is at frame-left; a row of plastic tables with diners fills the middle of the frame; the long avenue stretches to the vanishing point at frame-right between tall buildings.",
      "visual_zh": "塑料桌边的食客们抬起头，望向大道尽头——一堵高耸的苍白雾墙正朝他们滚过来，他们张着嘴、眉毛上提；烤炉边的摊主举着夹子停在炭火上方。",
      "camera_zh": "0—6秒，镜头固定不动。",
      "dialogue": [],
