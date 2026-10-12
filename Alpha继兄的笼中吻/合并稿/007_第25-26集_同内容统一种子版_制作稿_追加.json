@@ -1,0 +1,1357 @@
+{
+ "schema": "h3-production-draft",
+ "version": 1,
+ "title": "Alpha继兄的笼中吻｜第2集｜门后的狂想",
+ "dialogue_language": "en",
+ "style": "Photorealistic live-action romantic thriller with a glossy, high-end drama look. Warm tungsten key light with a soft cool fill, shallow depth of field, rich natural skin texture with visible pores, luxurious cream-and-gold interiors, restrained cinematic color grading, and an ultra-wide 8:3 cinemascope frame in which the people are placed deliberately and the room is visible around them.",
+ "assets": [
+  {
+   "key": "lily",
+   "kind": "image",
+   "role": "character",
+   "label": "莉莉",
+   "description": {
+    "en": "Lily, an adult woman in her mid-twenties with long wavy chestnut-brown hair, fair skin, large hazel-green eyes and a slender build, wearing an ivory silk wedding gown with a fitted bodice and a long zipper down the back. The portrait fixes her identity and gown; the opening frame and shot description fix her pose and position.",
+    "zh": "莉莉，二十五岁左右的成年女性，栗棕色长卷发、白皙皮肤、浅褐绿色大眼睛、身形纤细，穿象牙白真丝婚纱，合身上身，背后一条长拉链。人物图固定身份与婚纱，开场图和镜头正文决定姿势与位置。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of an adult woman in her mid-twenties with long wavy chestnut-brown hair, fair skin and large hazel-green eyes, wearing an ivory silk wedding gown with a fitted bodice and delicate shoulders. She faces the camera with a calm, slightly nervous expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "killian",
+   "kind": "image",
+   "role": "character",
+   "label": "基利安",
+   "description": {
+    "en": "Killian, a very tall, broad-shouldered adult man in his early thirties with short swept-back black hair, a sharp jawline, light stubble and cold dark-gray eyes, wearing a tailored black three-piece suit, white shirt and dark tie, with a platinum luxury wristwatch on his left wrist. He stands a head and a half taller than Lily. The portrait fixes his identity and clothes, not staging.",
+    "zh": "基利安，三十出头的成年男性，身材极高、肩膀宽阔，黑色短发向后梳，下颌线锋利，有浅胡茬，眼睛是冷冽的深灰色，穿剪裁合身的黑色三件套西装、白衬衫、深色领带，左腕戴铂金色名表。比莉莉高出一个半头。人物图固定身份与衣服，不固定站位。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of a very tall, broad-shouldered adult man in his early thirties with short swept-back black hair, a sharp jawline, light stubble and cold dark-gray eyes, wearing a tailored black three-piece suit, white shirt and dark tie, a platinum luxury wristwatch on his left wrist. He faces the camera with a cold, composed expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "room",
+   "kind": "image",
+   "role": "scene",
+   "label": "婚纱店VIP更衣室",
+   "description": {
+    "en": "The private VIP fitting room of a high-end bridal boutique: cream walls with gold molding, a heavy dark-wood door with a brass handle in the left wall, a rack of long white gowns in garment covers along the back wall, a wide bare stretch of plain cream panelled wall to the right of the gown rack, an ivory velvet couch against the right wall and thick carpet, lit warmly by a crystal chandelier and wall sconces. The reference fixes the room layout and decor, not any people.",
+    "zh": "高端婚纱店的VIP私人更衣室：奶油色墙面配金色线脚，左墙一扇带黄铜把手的厚重深色木门，后墙挂着一排罩着防尘袋的白色长婚纱，婚纱架右边是一大段空白的奶油色护墙板墙面，右墙边有象牙色丝绒沙发和厚地毯，水晶吊灯与壁灯的暖光。参考图固定房间布局与陈设，不带入任何人物。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic wide shot of an empty luxury VIP fitting room in a high-end bridal boutique: cream walls with gold molding, a heavy dark-wood door with a brass handle on the left wall, a rack of long white wedding gowns in garment covers along the back wall, a wide bare stretch of plain cream panelled wall to the right of the gown rack, an ivory velvet couch against the right wall, thick carpet, warm light from a crystal chandelier and wall sconces. No people.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "alcove",
+   "kind": "image",
+   "role": "scene",
+   "label": "更衣室婚纱架后的隔间",
+   "description": {
+    "en": "A narrow dressing alcove at the back of the private fitting room: a dense row of long white gowns in garment covers hanging close together on a rail along one side, and a heavy cream floor-length velvet curtain on a ceiling track, drawn half open across the front. Dim warm light with soft shadows. The reference fixes the look of the alcove, not any people.",
+    "zh": "更衣室最里面的狭窄隔间：一侧是紧挨着挂在横杆上、罩着防尘袋的白色长婚纱，正面是一道挂在顶轨上的奶油色厚重丝绒落地帘，拉开了一半。光线昏暗温暖，阴影柔和。参考图固定隔间的样子，不带入任何人物。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic shot of an empty narrow dressing alcove at the back of a luxury fitting room: a dense row of long white gowns in garment covers hanging close together on a rail along one side, a heavy cream floor-length velvet curtain on a ceiling track drawn half open across the front, dim warm light with soft shadows, thick carpet. No people.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "paul",
+   "kind": "image",
+   "role": "character",
+   "label": "保罗",
+   "description": {
+    "en": "Paul, an adult man in his late twenties with neatly combed light-brown hair, a clean-shaven friendly boyish face and warm brown eyes, of average build, wearing a navy blazer over a white open-collared shirt. He is a head shorter than Killian. The portrait fixes his identity and clothes, not staging.",
+    "zh": "保罗，二十八岁左右的成年男性，浅棕色头发梳得整齐，脸干净、友善、带点孩子气，暖棕色眼睛，身材普通，穿海军蓝西装外套配白色敞领衬衫。比基利安矮一个头。人物图固定身份与衣服，不固定站位。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of an adult man in his late twenties with neatly combed light-brown hair, a clean-shaven friendly boyish face and warm brown eyes, wearing a navy blazer over a white open-collared shirt. He faces the camera with a mild, relaxed expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "villa_front",
+   "kind": "image",
+   "role": "scene",
+   "label": "半山庄园门前",
+   "description": {
+    "en": "The gravel forecourt of a gloomy luxurious hillside mansion at dusk: a dark stone facade with tall narrow windows, a wide flight of stone entrance steps on the right, a second-floor stone balcony with a balustrade above the entrance, tall black iron gates and dark pine trees behind, a black Maybach sedan parked on the gravel on the left, cold blue dusk light with warm lamps glowing in the windows. The reference fixes the layout and decor.",
+    "zh": "黄昏时阴森奢华的半山庄园门前碎石场地：深色石头外墙配高窄窗，右边是宽阔的石头台阶，台阶上方二楼有一座带栏杆的石头阳台，后面是高大的黑色铁门和深色松树，左边碎石地上停着一辆黑色迈巴赫轿车，冷蓝的暮色里窗内亮着暖灯。参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of the gravel forecourt of a gloomy luxurious hillside mansion at dusk: a dark stone facade with tall narrow windows, a wide flight of stone entrance steps on the right, a second-floor stone balcony with a balustrade above the entrance, tall black iron gates and dark pine trees behind, a black Maybach sedan parked on the gravel on the left, cold blue dusk light with warm lamps in the windows. The frame holds the mansion, the gravel, the car and the pines.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "butler",
+   "kind": "image",
+   "role": "character",
+   "label": "老管家",
+   "description": {
+    "en": "The butler, an elderly man in his sixties with neatly combed silver hair, a lined, dignified face and kind pale-blue eyes, wearing a black tailcoat, white shirt, grey waistcoat, black tie and white gloves. The portrait fixes his identity and clothes, not staging.",
+    "zh": "老管家，六十多岁的老人，银发梳得整齐，脸上有皱纹、端庄，眼睛是温和的浅蓝色，穿黑色燕尾服、白衬衫、灰色马甲、黑领带，戴白手套。人物图固定身份与衣服，不固定站位。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of an elderly man in his sixties with neatly combed silver hair, a lined, dignified face and kind pale-blue eyes, wearing a black tailcoat, white shirt, grey waistcoat, black tie and white gloves. He faces the camera with a calm, courteous expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "lily_coat",
+   "kind": "image",
+   "role": "character",
+   "label": "莉莉（旅途装）",
+   "description": {
+    "en": "Lily, the same adult woman in her mid-twenties as in the reference, with long wavy chestnut-brown hair pulled into a low loose ponytail held by a small silver hair clip, fair skin and large hazel-green eyes, now wearing a faded grey wool coat over a plain navy dress, tired but proud. The portrait fixes her identity and clothes, not staging.",
+    "zh": "莉莉，和参考图是同一个二十五岁左右的成年女性，栗棕色长卷发低低地扎成松散的马尾，用一枚小银发卡固定，白皙皮肤、浅褐绿色大眼睛，这次穿褪色的灰色羊毛外套配朴素的藏青连衣裙，疲惫却倔强。人物图固定身份与衣服，不固定站位。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of the same woman as in the reference image, long wavy chestnut-brown hair pulled into a low loose ponytail held by a small silver hair clip, wearing a faded grey wool coat over a plain navy dress. She faces the camera with a tired but proud expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": [
+     "lily"
+    ]
+   }
+  },
+  {
+   "key": "killian_robe",
+   "kind": "image",
+   "role": "character",
+   "label": "基利安（黑丝绸睡袍）",
+   "description": {
+    "en": "Killian, the same very tall, broad-shouldered adult man in his early thirties as in the reference, with short swept-back black hair, a sharp jawline, light stubble and cold dark-gray eyes, now wearing a black silk robe tied at the waist over dark trousers, the collar open at the base of the throat, a platinum luxury wristwatch on his left wrist. The portrait fixes his identity and clothes, not staging.",
+    "zh": "基利安，和参考图是同一个三十出头、身材极高、肩膀宽阔的成年男性，黑色短发向后梳，下颌线锋利，有浅胡茬，眼睛是冷冽的深灰色，这次穿黑色真丝睡袍，腰间系带，里面是深色长裤，领口开到喉咙下方，左腕戴铂金色名表。人物图固定身份与衣服，不固定站位。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of the same man as in the reference image, short swept-back black hair, sharp jawline, light stubble and cold dark-gray eyes, wearing a black silk robe tied at the waist, the collar open at the base of the throat, a platinum luxury wristwatch on his left wrist. He faces the camera with a cold, composed expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": [
+     "killian"
+    ]
+   }
+  },
+  {
+   "key": "bedroom",
+   "kind": "image",
+   "role": "scene",
+   "label": "庄园主卧",
+   "description": {
+    "en": "The master bedroom of a dark luxurious mansion: a huge dark-wood bed with charcoal-grey linen against the left wall, a tall single dark-wood door with a brass handle in the right wall, floor-to-ceiling windows with heavy dark curtains at the back, a dark rug, bedside lamps giving a low amber light, and a small bar cart with crystal glasses near the door. The reference fixes the layout and decor.",
+    "zh": "阴暗奢华的庄园主卧：左墙边是一张巨大的深色实木床，配炭灰色床品；右墙有一扇带黄铜把手的高大单扇深色木门；后面是落地窗和厚重的深色窗帘；深色地毯，床头灯发出低低的琥珀色光；门边有一个放着水晶杯的小酒车。参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of the master bedroom of a dark luxurious mansion: a huge dark-wood bed with charcoal-grey linen against the left wall, a tall single dark-wood door with a brass handle in the right wall, floor-to-ceiling windows with heavy dark curtains at the back, a dark rug, bedside lamps giving a low amber light, a small bar cart with crystal glasses near the door. The frame holds the bed, the door, the windows and the bar cart.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "lily_shirt",
+   "kind": "image",
+   "role": "character",
+   "label": "莉莉（宽大男士衬衫）",
+   "description": {
+    "en": "Lily, the same adult woman in her mid-twenties as in the reference, with long wavy chestnut-brown hair damp and loose around her shoulders, fair skin and large hazel-green eyes, a bare face, wearing an oversized white men's cotton dress shirt that falls to mid-thigh with the sleeves too long, buttoned to the collarbone. The portrait fixes her identity and clothes, not staging.",
+    "zh": "莉莉，和参考图是同一个二十五岁左右的成年女性，栗棕色长卷发半湿地披在肩上，白皙皮肤、浅褐绿色大眼睛，素颜，穿一件宽大的白色男士棉质衬衫，下摆到大腿中部，袖子太长，扣子扣到锁骨。人物图固定身份与衣服，不固定站位。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of the same woman as in the reference image, long wavy chestnut-brown hair damp and loose around her shoulders, a bare face, wearing an oversized white men's cotton dress shirt buttoned to the collarbone with sleeves too long. She faces the camera with a nervous expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": [
+     "lily"
+    ]
+   }
+  },
+  {
+   "key": "killian_wolf",
+   "kind": "image",
+   "role": "character",
+   "label": "基利安（失控）",
+   "description": {
+    "en": "Killian, the same very tall, broad-shouldered adult man in his early thirties as in the reference, with short black hair, a sharp jawline and light stubble, wearing a black silk robe tied at the waist, his eyes glowing a dark gold, with sharp canine teeth and dark claw-like nails. The portrait fixes his identity, clothes and features, not staging.",
+    "zh": "基利安，和参考图是同一个三十出头、身材极高、肩膀宽阔的成年男性，黑色短发，下颌线锋利，有浅胡茬，穿黑色真丝睡袍、腰间系带，这次眼睛发出暗金色的光，犬齿尖利，指甲像深色的利爪。人物图固定身份、衣服和特征，不固定站位。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of the same man as in the reference image, short black hair, sharp jawline, light stubble, wearing a black silk robe tied at the waist, his eyes glowing a dark gold, sharp canine teeth just visible, dark claw-like nails. He faces the camera with an intense, barely restrained expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": [
+     "killian"
+    ]
+   }
+  },
+  {
+   "key": "ballroom",
+   "kind": "image",
+   "role": "scene",
+   "label": "财团晚宴大厅",
+   "description": {
+    "en": "A grand gala ballroom: a polished cream marble floor, a dark-red carpet runway down the middle, tall gold-trimmed columns, huge crystal chandeliers, a wide marble staircase on the left and a long banquet table with white linen and champagne towers on the right, warm golden light. The reference fixes the layout and decor.",
+    "zh": "盛大的晚宴大厅：抛光的奶油色大理石地面，中间一条深红色的地毯，高大的镶金边柱子，巨大的水晶吊灯，左边是宽阔的大理石楼梯，右边是铺着白桌布、摆着香槟塔的长长的宴会桌，温暖的金色灯光。参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a grand gala ballroom: a polished cream marble floor, a dark-red carpet runway down the middle, tall gold-trimmed columns, huge crystal chandeliers, a wide marble staircase on the left and a long banquet table with white linen and champagne towers on the right, warm golden light. The frame holds the staircase, the carpet, the columns, the chandeliers and the banquet table.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "lily_red",
+   "kind": "image",
+   "role": "character",
+   "label": "莉莉（红色晚礼服）",
+   "description": {
+    "en": "Lily, the same adult woman in her mid-twenties as in the reference, with long wavy chestnut-brown hair pinned in a loose low twist with a few strands falling free, fair skin and large hazel-green eyes, wearing a floor-length red satin evening gown with thin straps and a small beige adhesive bandage on the left side of her neck. The portrait fixes her identity, gown and bandage, not staging.",
+    "zh": "莉莉，和参考图是同一个二十五岁左右的成年女性，栗棕色长卷发松松地盘成低髻、有几缕散落，白皙皮肤、浅褐绿色大眼睛，穿及地的红色缎面细肩带晚礼服，脖子左侧贴着一块小小的米色创可贴。人物图固定身份、礼服和创可贴，不固定站位。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of the same woman as in the reference image, long wavy chestnut-brown hair pinned in a loose low twist, wearing a floor-length red satin evening gown with thin straps and a small beige adhesive bandage on the left side of her neck. She faces the camera with a composed, slightly nervous expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": [
+     "lily"
+    ]
+   }
+  },
+  {
+   "key": "killian_tux",
+   "kind": "image",
+   "role": "character",
+   "label": "基利安（黑色无尾礼服）",
+   "description": {
+    "en": "Killian, the same very tall, broad-shouldered adult man in his early thirties as in the reference, with short swept-back black hair, a sharp jawline, light stubble and cold dark-gray eyes, wearing a black tuxedo with a white shirt, a black bow tie and a white silk pocket square, a platinum luxury wristwatch on his left wrist. The portrait fixes his identity and clothes, not staging.",
+    "zh": "基利安，和参考图是同一个三十出头、身材极高、肩膀宽阔的成年男性，黑色短发向后梳，下颌线锋利，有浅胡茬，眼睛是冷冷的深灰色，穿黑色无尾礼服，配白衬衫、黑色领结和白色丝质胸袋巾，左手腕戴铂金名表。人物图固定身份和衣服，不固定站位。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of the same man as in the reference image, short swept-back black hair, sharp jawline, light stubble, cold dark-gray eyes, wearing a black tuxedo with a white shirt, a black bow tie and a white silk pocket square, a platinum luxury wristwatch on his left wrist. He faces the camera with a cold, composed expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": [
+     "killian"
+    ]
+   }
+  },
+  {
+   "key": "mary",
+   "kind": "image",
+   "role": "character",
+   "label": "玛丽（保罗的妹妹）",
+   "description": {
+    "en": "Mary, an adult woman in her mid-twenties with sleek honey-blonde hair in an elegant updo, flawless makeup, glossy red lips and sharp green eyes, wearing a white satin cocktail dress with a sweetheart neckline, a pearl necklace and pearl drop earrings. The portrait fixes her identity and dress, not staging.",
+    "zh": "玛丽，二十五岁左右的成年女性，光滑的蜜金色头发盘成优雅的发髻，妆容无瑕，嘴唇红亮，一双锐利的绿眼睛，穿白色缎面心形领鸡尾酒裙，戴珍珠项链和珍珠垂坠耳环。人物图固定身份和裙子，不固定站位。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of an adult woman in her mid-twenties with sleek honey-blonde hair in an elegant updo, flawless makeup, glossy red lips and sharp green eyes, wearing a white satin cocktail dress with a sweetheart neckline, a pearl necklace and pearl drop earrings. She faces the camera with a sweet, coy expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "car_back",
+   "kind": "image",
+   "role": "scene",
+   "label": "轿车后座",
+   "description": {
+    "en": "The rear seat of a luxury black sedan at dusk: cream leather seat, dark wood trim, a wide side window with cold blue dusk light and warm lights glowing far away. The reference fixes the cabin and the light.",
+    "zh": "黄昏时一辆豪华黑色轿车的后座：奶油色真皮座椅，深色木饰板，宽大的侧车窗，窗外是冷蓝色的暮光和远处亮着的暖色灯光。参考图固定车内布置和光线。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of the empty rear seat of a luxury black sedan at dusk: a cream leather seat, dark wood trim, a wide side window with cold blue dusk light and warm lights glowing far away, nobody in the car. The frame holds the seat, the door panel and the side window.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "ranch",
+   "kind": "image",
+   "role": "scene",
+   "label": "私人跑马场",
+   "description": {
+    "en": "A private equestrian ranch on a bright sunny day: a raised wooden grandstand with a roof and a railing on the left, a long white wooden fence and a wide green riding field on the right, a packed-earth track in front, dark pine trees along the far edge, a clear blue sky. The reference fixes the layout and decor.",
+    "zh": "晴朗明亮的一天里的私人马术跑马场：左边是带屋顶和栏杆的凸起木制看台，右边是长长的白色木栅栏和开阔的绿色跑马场，前面是一条夯实的泥土跑道，远处边缘是深色的松树，晴朗的蓝天。参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a private equestrian ranch on a bright sunny day: a raised wooden grandstand with a roof and a railing on the left, a long white wooden fence and a wide green riding field on the right, a packed-earth track in front, dark pine trees along the far edge, a clear blue sky with a few white clouds. The frame holds the grandstand, the white fence, the green field and the pine trees.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "killian_coat",
+   "kind": "image",
+   "role": "character",
+   "label": "基利安（炭灰长大衣）",
+   "description": {
+    "en": "Killian, the same very tall, broad-shouldered adult man in his early thirties as in the reference, with short swept-back black hair, a sharp jawline, light stubble and cold dark-gray eyes, wearing a long charcoal-gray wool overcoat over a black shirt, black trousers and black leather riding boots. The portrait fixes his identity and clothes, not staging.",
+    "zh": "基利安，和参考图是同一个三十出头、身材极高、肩膀宽阔的成年男性，黑色短发向后梳，下颌线锋利，有浅胡茬，眼睛是冷冷的深灰色，穿长款炭灰色羊毛大衣，里面是黑衬衫，配黑色长裤和黑色皮质马靴。人物图固定身份和衣服，不固定站位。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of the same man as in the reference image, short swept-back black hair, sharp jawline, light stubble, cold dark-gray eyes, wearing a long charcoal-gray wool overcoat over a black shirt. He faces the camera with a cold, composed expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": [
+     "killian"
+    ]
+   }
+  },
+  {
+   "key": "lily_riding",
+   "kind": "image",
+   "role": "character",
+   "label": "莉莉（马术装）",
+   "description": {
+    "en": "Lily, the same adult woman in her mid-twenties as in the reference, with long wavy chestnut-brown hair tied back in a low ponytail, fair skin and large hazel-green eyes, wearing a fitted cream blouse, tan riding breeches, tall brown leather riding boots and a thin brown belt. The portrait fixes her identity and clothes, not staging.",
+    "zh": "莉莉，和参考图是同一个二十五岁左右的成年女性，栗棕色长卷发在脑后扎成低马尾，白皙皮肤、浅褐绿色大眼睛，穿合身的奶油色衬衫、棕黄色马裤、高筒棕色皮质马靴，系一条细棕色皮带。人物图固定身份和衣服，不固定站位。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of the same woman as in the reference image, long wavy chestnut-brown hair tied back in a low ponytail, wearing a fitted cream blouse and a thin brown belt. She faces the camera with a composed, slightly nervous expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": [
+     "lily"
+    ]
+   }
+  },
+  {
+   "key": "mary_riding",
+   "kind": "image",
+   "role": "character",
+   "label": "玛丽（马术装）",
+   "description": {
+    "en": "Mary, the same adult woman in her mid-twenties as in the reference, with sleek honey-blonde hair in a tight low bun, flawless makeup, glossy red lips and sharp green eyes, wearing a fitted ivory riding jacket over a white blouse, white riding breeches, tall black leather riding boots and small pearl earrings. The portrait fixes her identity and clothes, not staging.",
+    "zh": "玛丽，和参考图是同一个二十五岁左右的成年女性，光滑的蜜金色头发在脑后盘成紧实的低髻，妆容无瑕，嘴唇红亮，一双锐利的绿眼睛，穿合身的象牙色马术外套、里面是白衬衫，配白色马裤、高筒黑色皮质马靴，戴小小的珍珠耳环。人物图固定身份和衣服，不固定站位。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of the same woman as in the reference image, sleek honey-blonde hair in a tight low bun, glossy red lips, sharp green eyes, wearing a fitted ivory riding jacket over a white blouse and small pearl earrings. She faces the camera with a sweet, coy expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": [
+     "mary"
+    ]
+   }
+  },
+  {
+   "key": "trainer",
+   "kind": "image",
+   "role": "character",
+   "label": "驯马师",
+   "description": {
+    "en": "Trainer, a stocky adult man in his late forties with a tanned, lined face, short gray-brown stubble and small shrewd eyes, wearing a worn brown leather vest over a rolled-sleeve plaid shirt, dark jeans, leather work boots and a flat tweed cap. The portrait fixes his identity and clothes, not staging.",
+    "zh": "驯马师，一个四十多岁、敦实的成年男性，晒得黝黑、满是皱纹的脸，短短的灰褐色胡茬，精明的小眼睛，穿磨旧的棕色皮背心、里面是卷起袖子的格子衬衫，配深色牛仔裤、皮质工作靴和一顶平顶花呢帽。人物图固定身份和衣服，不固定站位。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of a stocky adult man in his late forties with a tanned, lined face, short gray-brown stubble and small shrewd eyes, wearing a worn brown leather vest over a rolled-sleeve plaid shirt and a flat tweed cap. He faces the camera with a flat, guarded expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "black_horse",
+   "kind": "image",
+   "role": "prop",
+   "label": "纯黑烈马",
+   "description": {
+    "en": "A tall, powerfully built jet-black stallion with a glossy coat, a thick black mane, wide flared nostrils and a wild white-ringed eye, wearing a plain brown leather bridle with brown reins and a plain brown leather English saddle with stirrups. The portrait fixes the horse's coat, build and tack, not staging.",
+    "zh": "一匹高大、强壮的纯黑种马，皮毛油亮，鬃毛浓密，鼻孔宽大张开，眼睛带一圈白、透着野性，戴着朴素的棕色皮质笼头和棕色缰绳，背上是朴素的棕色皮质英式马鞍和马镫。人物图固定马的毛色、体型和马具，不固定站位。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic full-body side-profile photograph of a tall, powerfully built jet-black stallion with a glossy coat, a thick black mane, wide flared nostrils and a wild white-ringed eye, wearing a plain brown leather bridle with brown reins and a plain brown leather English saddle with stirrups, standing on bare ground. Soft even studio light, plain neutral gray background, natural coat texture, four legs clearly visible.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "woods_edge",
+   "kind": "image",
+   "role": "scene",
+   "label": "树林边缘的草地",
+   "description": {
+    "en": "The edge of a pine forest beside a wide sunlit meadow: tall green grass with a dirt path on the left, a rough wooden fence with sharp pointed posts on the right, a dense wall of dark pine trees behind the fence, a clear blue sky. The reference fixes the layout and decor.",
+    "zh": "阳光下的开阔草地旁边的松林边缘：左边是高高的绿草和一条土路，右边是带尖桩的粗木栅栏，栅栏后面是一整排密密的深色松树，晴朗的蓝天。参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of the edge of a pine forest beside a wide sunlit meadow: tall green grass and a dirt path on the left, a rough wooden fence with sharp pointed posts on the right, a dense wall of dark pine trees behind the fence, a clear blue sky with a few white clouds. The frame holds the meadow, the path, the fence and the pine forest.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "bodyguard",
+   "kind": "image",
+   "role": "character",
+   "label": "黑衣保镖",
+   "description": {
+    "en": "Bodyguard, a tall, broad-shouldered adult man in his thirties with a shaved head and a stern, impassive face, wearing a black suit, a white shirt, a black tie and a clear coiled earpiece. The portrait fixes his identity and clothes, not staging.",
+    "zh": "黑衣保镖，一个三十多岁、身材高大、肩膀宽阔的成年男性，剃着光头，面容严厉、毫无表情，穿黑色西装、白衬衫、黑领带，戴一只透明的螺旋线耳机。人物图固定身份和衣服，不固定站位。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of a tall, broad-shouldered adult man in his thirties with a shaved head and a stern, impassive face, wearing a black suit, a white shirt, a black tie and a clear coiled earpiece. He faces the camera with a stern, impassive expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "corridor",
+   "kind": "image",
+   "role": "scene",
+   "label": "主卧外的走廊",
+   "description": {
+    "en": "The upstairs corridor of a dark luxurious mansion outside the master bedroom, seen straight on: a long dark-wood paneled wall with a tall dark-wood door with a brass handle set into it at the left, amber wall lamps spaced along the paneling, a pale marble floor with a dark runner rug, and a tall arched window at the far right end showing the night. The reference fixes the layout and decor.",
+    "zh": "黑暗奢华的庄园里主卧外的二楼走廊，正面看过去：一整面深色木板长墙，左边嵌着一扇带黄铜把手的高大深色木门，琥珀色壁灯沿着护墙板间隔排开，浅色大理石地面铺着深色长条地毯，最右端尽头是一扇高高的拱形窗，窗外是夜色。参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of the upstairs corridor of a dark luxurious mansion seen straight on: a long dark-wood paneled wall with a tall dark-wood door with a brass handle set into it at the left, amber wall lamps spaced along the paneling, a pale marble floor with a dark runner rug, a tall arched window at the far right end showing the night sky. The frame holds the door, the paneled wall, the lamps and the arched window.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "doctor",
+   "kind": "image",
+   "role": "character",
+   "label": "私人医生（狼医）",
+   "description": {
+    "en": "Doctor, a thin adult man in his fifties with gray hair, wire-rimmed glasses and a lined, worried face, wearing a long white doctor's coat over a gray shirt and a dark tie, a stethoscope around his neck. The portrait fixes his identity and clothes, not staging.",
+    "zh": "医生，一个五十多岁的瘦削成年男性，灰白头发，戴金属细框眼镜，脸上皱纹很深、神情忧虑，穿长款白大褂，里面是灰衬衫和深色领带，脖子上挂着听诊器。人物图固定身份和衣服，不固定站位。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of a thin adult man in his fifties with gray hair, wire-rimmed glasses and a lined, worried face, wearing a long white doctor's coat over a gray shirt and a dark tie, a stethoscope around his neck. He faces the camera with a tense, worried expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "killian_gold",
+   "kind": "image",
+   "role": "character",
+   "label": "基利安（西装，金瞳狼爪）",
+   "description": {
+    "en": "Killian, the same very tall, broad-shouldered adult man in his early thirties as in the reference, with short swept-back black hair, a sharp jawline and light stubble, wearing a tailored black three-piece suit, a white shirt and a dark tie, a platinum luxury wristwatch on his left wrist; his eyes glow a dark gold, two sharp canine teeth show at the edge of his lips, and long black claws extend from his fingertips. The portrait fixes his identity, clothes and features, not staging.",
+    "zh": "基利安，和参考图是同一个三十出头、身材极高、肩膀宽阔的成年男性，黑色短发向后梳，下颌线锋利，有浅胡茬，穿合身的黑色三件套西装、白衬衫和深色领带，左手腕戴铂金名表；他的眼睛发出暗金色的光，嘴角露出两颗尖锐的犬齿，指尖长出长长的黑色利爪。人物图固定身份、衣服和特征，不固定站位。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of the same man as in the reference image, short swept-back black hair, sharp jawline, light stubble, wearing a tailored black three-piece suit, a white shirt and a dark tie, his eyes glowing a dark gold, two sharp canine teeth just visible, long black claws on the fingertips of his hands held at his sides. He faces the camera with an intense, cold expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": [
+     "killian"
+    ]
+   }
+  },
+  {
+   "key": "killian_shirt",
+   "kind": "image",
+   "role": "character",
+   "label": "基利安（只穿衬衫）",
+   "description": {
+    "en": "Killian, the same very tall, broad-shouldered adult man in his early thirties as in the reference, with short swept-back black hair, a sharp jawline, light stubble and cold dark-gray eyes, wearing only a white dress shirt with the collar open at the throat and the sleeves rolled to the elbows, a dark tie pulled loose and hanging, dark trousers and a platinum luxury wristwatch on his left wrist, with no jacket and no waistcoat. The portrait fixes his identity and clothes, not staging.",
+    "zh": "基利安，和参考图是同一个三十出头、身材极高、肩膀宽阔的成年男性，黑色短发向后梳，下颌线锋利，有浅胡茬，眼睛是冷冷的深灰色，只穿一件白色衬衫，领口敞开到喉结，袖子卷到手肘，深色领带扯松了垂着，配深色长裤，左手腕戴铂金名表，没有外套也没有马甲。人物图固定身份和衣服，不固定站位。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of the same man as in the reference image, short swept-back black hair, sharp jawline, light stubble, cold dark-gray eyes, wearing only a white dress shirt with the collar open at the throat and the sleeves rolled to the elbows, a dark tie pulled loose and hanging, a platinum luxury wristwatch on his left wrist. He faces the camera with a cold, composed expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": [
+     "killian"
+    ]
+   }
+  },
+  {
+   "key": "killian_beast",
+   "kind": "image",
+   "role": "character",
+   "label": "基利安（衬衫，竖瞳獠牙）",
+   "description": {
+    "en": "Killian, the same very tall, broad-shouldered adult man in his early thirties as in the reference, with short swept-back black hair, a sharp jawline and light stubble, wearing only a white dress shirt with the collar open at the throat and the sleeves rolled to the elbows, a dark tie pulled loose and hanging, a platinum luxury wristwatch on his left wrist; his eyes glow a dark gold with narrow vertical slit pupils, two long sharp canine teeth show between his parted lips, and long black claws extend from his fingertips. The portrait fixes his identity, clothes and features, not staging.",
+    "zh": "基利安，和参考图是同一个三十出头、身材极高、肩膀宽阔的成年男性，黑色短发向后梳，下颌线锋利，有浅胡茬，只穿一件白色衬衫，领口敞开到喉结，袖子卷到手肘，深色领带扯松了垂着，左手腕戴铂金名表；他的眼睛发出暗金色的光、瞳孔是细细的竖瞳，微张的嘴唇间露出两颗又长又尖的犬齿，指尖长出长长的黑色利爪。人物图固定身份、衣服和特征，不固定站位。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of the same man as in the reference image, short swept-back black hair, sharp jawline, light stubble, wearing only a white dress shirt with the collar open at the throat and the sleeves rolled to the elbows, a dark tie pulled loose and hanging, his eyes glowing a dark gold with narrow vertical slit pupils, two long sharp canine teeth showing between his parted lips, long black claws on the fingertips of his hands held at his sides. He faces the camera with an intense, predatory expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": [
+     "killian"
+    ]
+   }
+  },
+  {
+   "key": "paul_villa",
+   "kind": "image",
+   "role": "scene",
+   "label": "保罗破败的客厅",
+   "description": {
+    "en": "The wrecked living room of a bankrupt hillside villa at dawn: a tall bay window with torn curtains and cold pale light at the left, an overturned brown leather sofa and the shards of a smashed glass coffee table in the middle, a wide double doorway into a dim hallway at the right, a smashed wooden cabinet against the back wall with bare walls above it showing pale rectangles where paintings once hung, torn papers and broken glass scattered over a dark wooden floor. The reference fixes the layout and decor.",
+    "zh": "清晨，一栋破产山间别墅里被砸烂的客厅：左边是挂着破窗帘的高大飘窗和冷冷的淡光，中间是翻倒的棕色皮沙发和摔碎的玻璃茶几，右边是通向昏暗走廊的宽双开门，后墙边是被砸坏的木柜，柜子上方的光墙上留着一块块挂画取走后的浅色方痕，深色木地板上撒满碎纸和碎玻璃。参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of the wrecked living room of a bankrupt hillside villa at dawn: a tall bay window with torn curtains and cold pale light at the left, an overturned brown leather sofa and the shards of a smashed glass coffee table in the middle, a wide double doorway into a dim hallway at the right, a smashed wooden cabinet against the back wall with bare walls above it showing pale rectangles where paintings once hung, torn papers and broken glass over a dark wooden floor. The frame holds the window, the sofa, the table shards, the doorway and the cabinet.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "villa_balcony",
+   "kind": "image",
+   "role": "scene",
+   "label": "别墅二楼阳台（清晨）",
+   "description": {
+    "en": "The second-floor stone balcony of a dark luxurious hillside mansion on a clear morning: a carved stone balustrade runs along the front; below at the right a gravel driveway leads to tall black iron gates; at the left in the distance a hedge-lined back garden and the rusted corrugated-iron roof of an old warehouse; behind it the dark stone wall and tall glass doors. The reference fixes the layout and decor.",
+    "zh": "晴朗的清晨，阴沉豪华的山间庄园二楼石质阳台：前面是雕花石栏杆；右下方一条碎石车道通向高大的黑色铁门；左边远处是篱笆围起来的后花园和一座废弃仓库生锈的铁皮屋顶；身后是深色石墙和高大的玻璃门。参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of the second-floor stone balcony of a dark luxurious hillside mansion on a clear morning: a carved stone balustrade runs along the front, a gravel driveway at the lower right leads to tall black iron gates, a hedge-lined back garden and the rusted corrugated-iron roof of an old warehouse in the distance at the left, the dark stone wall and tall glass doors behind. The frame holds the balustrade, the driveway, the gates, the garden and the warehouse roof.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "garden_path",
+   "kind": "image",
+   "role": "scene",
+   "label": "后花园的碎石小路",
+   "description": {
+    "en": "A hedge-lined gravel path in the overgrown back garden of a dark mansion on a clear morning: tall dark hedges on both sides, the path running from left to right, at the right a derelict rusted corrugated-iron warehouse with a tall rusted iron double door, the mansion's dark stone wall far behind at the left, long soft shadows. The reference fixes the layout and decor.",
+    "zh": "晴朗的清晨，阴沉庄园荒芜的后花园里一条两边是高大深色篱笆的碎石小路：路从左往右延伸，右边是一座废弃、生锈的铁皮仓库和一扇高大生锈的铁双开门，左边远处是庄园深色的石墙，影子又长又柔。参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a hedge-lined gravel path in the overgrown back garden of a dark mansion on a clear morning: tall dark hedges on both sides, the path running from left to right, a derelict rusted corrugated-iron warehouse with a tall rusted iron double door at the right, the mansion's dark stone wall far behind at the left, long soft shadows. The frame holds the hedges, the path, the warehouse and the far wall.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "warehouse",
+   "kind": "image",
+   "role": "scene",
+   "label": "废弃仓库内部",
+   "description": {
+    "en": "The interior of a derelict warehouse: a grey concrete floor, a tall rusted iron double door at the right, stacked wooden crates and steel barrels at the left, concrete pillars in the middle, and shafts of dusty pale light falling from high broken windows at the back. The reference fixes the layout and decor.",
+    "zh": "一间废弃仓库的内部：灰色水泥地面，右边是一扇高大生锈的铁双开门，左边堆着木箱和铁桶，中间立着水泥柱，后面高处破窗里落下一束束带灰尘的淡光。参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of the interior of a derelict warehouse: a grey concrete floor, a tall rusted iron double door at the right, stacked wooden crates and steel barrels at the left, concrete pillars in the middle, shafts of dusty pale light falling from high broken windows at the back. The frame holds the door, the crates, the pillars and the light shafts.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "suv_interior",
+   "kind": "image",
+   "role": "scene",
+   "label": "黑色SUV车内（白天）",
+   "description": {
+    "en": "The interior of a black luxury SUV driving along a pine-lined mountain road in clear daylight, seen from the side: two black leather front seats at the left, a cream leather rear bench at the right, a large side window behind the rear bench showing dark pine trees and a winding grey road, soft daylight on the dark wood trim. The reference fixes the layout and decor.",
+    "zh": "晴朗白天，一辆黑色豪华SUV行驶在两边是松树的山路上，从侧面看车内：左边是两个黑色真皮前座，右边是奶油色真皮后排座椅，后排座椅后面是一整扇侧窗，窗外是深色松树和蜿蜒的灰色公路，柔和的日光落在深色木饰板上。参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of the interior of a black luxury SUV driving along a pine-lined mountain road in clear daylight, seen from the side: two black leather front seats at the left, a cream leather rear bench at the right, a large side window behind the rear bench showing dark pine trees and a winding grey road, soft daylight on the dark wood trim. The frame holds the front seats, the rear bench and the side window.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "rogue",
+   "kind": "image",
+   "role": "character",
+   "label": "流浪狼人（反派猎手）",
+   "description": {
+    "en": "Rogue, a lean, wiry adult man in his late thirties with long unkempt black hair, a pale hollow face, a thick jagged scar running from his forehead across his left eye down to his jaw, dark stubble and yellowed sharp teeth, wearing a patched black leather jacket over a faded grey shirt, dark trousers and scuffed black boots. The portrait fixes his identity and clothes, not staging.",
+    "zh": "流浪狼人，三十多岁瘦削精悍的成年男人，长长乱糟糟的黑发，苍白凹陷的脸，一道粗粗的锯齿状伤疤从额头横过左眼一直划到下巴，满脸胡茬，牙齿发黄而尖利，穿打着补丁的黑色皮夹克、褪色的灰衬衫、深色长裤和磨旧的黑靴子。肖像固定他的长相和衣着，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of a lean, wiry adult man in his late thirties with long unkempt black hair, a pale hollow face, a thick jagged scar running from his forehead across his left eye down to his jaw, dark stubble and yellowed sharp teeth, wearing a patched black leather jacket over a faded grey shirt. He faces the camera with a cruel, sly expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "mary_black",
+   "kind": "image",
+   "role": "character",
+   "label": "玛丽（黑色大衣）",
+   "description": {
+    "en": "Mary, the same adult woman in her mid-twenties as in the reference, with sleek honey-blonde hair in a tight low bun, flawless makeup, glossy red lips and sharp green eyes, wearing a fitted black wool coat over a black dress, black high heels and a pearl necklace. The portrait fixes her identity and clothes, not staging.",
+    "zh": "玛丽，和参考图里同一位二十五岁左右的成年女人，光滑的蜜金色头发盘成紧紧的低发髻，妆容精致，红唇亮泽，绿色的眼睛锐利，穿合身的黑色羊毛大衣、里面黑色连衣裙，黑色高跟鞋，戴珍珠项链。肖像固定她的长相和衣着，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of the same woman as in the reference image, sleek honey-blonde hair in a tight low bun, flawless makeup, glossy red lips and sharp green eyes, wearing a fitted black wool coat over a black dress and a pearl necklace. She faces the camera with a cold, composed expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": [
+     "mary"
+    ]
+   }
+  },
+  {
+   "key": "black_wolf",
+   "kind": "image",
+   "role": "prop",
+   "label": "巨大的纯黑狼",
+   "description": {
+    "en": "A colossal jet-black wolf the size of a small horse, with thick glossy black fur, a broad powerful chest and heavy shoulders, long white fangs and dark-gold glowing eyes. The portrait fixes the wolf's coat, build and eyes, not staging.",
+    "zh": "一头巨大的纯黑狼，体型像一匹小马，毛又厚又亮，胸膛宽阔、肩膀厚重，长长的白色獠牙，眼睛是暗金色发光的。肖像固定狼的毛色、体型和眼睛，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic full-body side-profile photograph of a colossal jet-black wolf the size of a small horse, with thick glossy black fur, a broad powerful chest and heavy shoulders, long white fangs and dark-gold glowing eyes, standing on bare ground. Soft even studio light, plain neutral gray background, natural fur texture, four legs clearly visible.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "medical_room",
+   "kind": "image",
+   "role": "scene",
+   "label": "地下医疗室",
+   "description": {
+    "en": "The underground private medical suite of a dark luxurious mansion: white-tiled walls and a pale grey tiled floor, a wide white hospital bed with steel rails and fresh white sheets in the middle of the room with its pillow end at the left, a wheeled instrument trolley with steel trays and glass vials and a glass-fronted medicine cabinet against the left wall, a wheeled heart monitor beside the head of the bed, a heavy steel door with a round wheel handle in the right wall, cold clinical ceiling lights. The reference fixes the layout and decor.",
+    "zh": "豪华阴沉庄园的地下私人医疗室：白色瓷砖墙面和浅灰色瓷砖地面，房间中间是一张带钢护栏、铺着崭新白床单的宽大病床，枕头一端在左边；左边墙边是带钢托盘和玻璃药瓶的器械推车和玻璃药柜，床头旁是一台带轮子的心电监护仪，右边墙上是一扇带圆形转轮把手的厚重钢门，天花板上是冷冷的医用灯光。参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of the underground private medical suite of a dark luxurious mansion: white-tiled walls and a pale grey tiled floor, a wide white hospital bed with steel rails and fresh white sheets in the middle of the room with its pillow end at the left, a wheeled instrument trolley with steel trays and glass vials and a glass-fronted medicine cabinet against the left wall, a wheeled heart monitor beside the head of the bed, a heavy steel door with a round wheel handle in the right wall, cold clinical ceiling lights. The frame holds the bed, the trolley, the cabinet, the monitor and the steel door.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "council_room",
+   "kind": "image",
+   "role": "scene",
+   "label": "家族长老会议室",
+   "description": {
+    "en": "The council room of a dark luxurious mansion: a long polished dark-wood table running across the room from left to right with a row of tall leather chairs along its far side, a tall carved high-backed chair at the head of the table at the left, heavy dark paneled walls with a row of tall windows with dark drapes at the back, a pair of tall dark double doors with large brass handles in the right wall, a dark carpet, cold grey daylight. The reference fixes the layout and decor.",
+    "zh": "豪华阴沉庄园里的家族长老会议室：一张长长的抛光深色木桌从左到右横过房间，桌子远侧是一排高背皮椅，桌子左端主位是一把高大雕花的高背椅，深色木板墙面，后面是一排挂着深色窗帘的高窗，右边墙上是一对挂着大黄铜把手的高大深色双开门，深色地毯，冷冷的灰色日光。参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of the empty council room of a dark luxurious mansion: a long polished dark-wood table running across the room from left to right with a row of tall leather chairs along its far side, a tall carved high-backed chair at the head of the table at the left, heavy dark paneled walls with a row of tall windows with dark drapes at the back, a pair of tall dark double doors with large brass handles in the right wall, a dark carpet, cold grey daylight. The frame holds the table, the chairs, the windows and the double doors; no people are in the room.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "study_door",
+   "kind": "image",
+   "role": "scene",
+   "label": "走廊尽头的书房双开门",
+   "description": {
+    "en": "The upstairs corridor of a dark luxurious mansion in the morning, seen straight on: a long dark-wood paneled wall with amber wall lamps spaced along it, a pale marble floor with a dark runner rug along its length, tall dark double doors with carved panels and large brass handles standing closed at the far right end of the corridor, and the master bedroom's tall single dark-wood door with a brass handle at the far left. The reference fixes the layout and decor.",
+    "zh": "清晨，阴沉豪华庄园的二楼走廊，正对着看：一道长长的深色木板墙，墙上每隔一段有一盏琥珀色壁灯，浅色大理石地面上顺着走廊铺着深色地毯；走廊最右端是一对雕花、带大黄铜把手的高大深色双开门，关着；最左端是主卧那扇带黄铜把手的高大单开深色木门。参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of the upstairs corridor of a dark luxurious mansion in the morning, seen straight on: a long dark-wood paneled wall with amber wall lamps spaced along it, a pale marble floor with a dark runner rug along its length, tall dark double doors with carved panels and large brass handles standing closed at the far right end of the corridor, the master bedroom's tall single dark-wood door with a brass handle at the far left, soft morning light. The frame holds the paneled wall, the lamps, the rug, the double doors and the bedroom door; no people are in the corridor.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "killian_gold_shirt",
+   "kind": "image",
+   "role": "character",
+   "label": "基利安（只穿衬衫，金瞳利爪）",
+   "description": {
+    "en": "Killian, the same very tall, broad-shouldered adult man in his early thirties as in the reference, with short swept-back black hair, a sharp jawline and light stubble, wearing only a white dress shirt with the collar open at the throat and the sleeves rolled to the elbows, a few specks of blood on it, a dark tie pulled loose and hanging, dark trousers and a platinum luxury wristwatch on his left wrist, with no jacket and no waistcoat; his eyes glow a dark gold with narrow vertical pupils, two sharp canine teeth show at the edge of his lips, and long black claws extend from his fingertips. The portrait fixes his identity, clothes and features, not staging.",
+    "zh": "基利安，和参考图里同一位三十出头、身材极高大、肩膀宽阔的成年男人，黑色短发向后梳，下颌线锋利，有淡淡胡茬；只穿一件白衬衫，领口敞开，袖子卷到手肘，衬衫上有几点血迹，深色领带扯松挂着，深色长裤，左手腕戴铂金豪华腕表，没有外套也没有马甲；眼睛发出暗金色的光，瞳孔是细长的竖瞳，嘴角露出两颗尖利的犬齿，指尖伸出长长的黑色利爪。肖像固定他的长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of the same man as in the reference image, short swept-back black hair, sharp jawline, light stubble, wearing only a white dress shirt with the collar open and the sleeves rolled to the elbows, a few specks of blood on it, a dark tie pulled loose, a platinum luxury wristwatch on his left wrist, his eyes glowing dark gold with narrow vertical pupils, two sharp canine teeth just visible, long black claws on the fingertips of his hands held at his sides. He faces the camera with an intense, cold expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": [
+     "killian"
+    ]
+   }
+  },
+  {
+   "key": "lily_jacket",
+   "kind": "image",
+   "role": "character",
+   "label": "莉莉（披着男人黑西装外套，脖子上有血痕）",
+   "description": {
+    "en": "Lily, the same adult woman in her mid-twenties as in the reference, with long wavy chestnut-brown hair tangled and loose around her shoulders, fair skin and large hazel-green eyes, wearing an oversized white men's cotton dress shirt that falls to mid-thigh, and draped over her shoulders like a cape a man's black suit jacket far too large for her; a thin line of dried blood runs down the left side of her neck; her feet are bare. The portrait fixes her identity and clothes, not staging.",
+    "zh": "莉莉，和参考图里同一位二十五岁左右的成年女人，栗色长卷发凌乱地披在肩上，皮肤白皙，大大的淡褐绿色眼睛；穿一件肥大的白色男式棉衬衫，下摆到大腿中部，肩上披着一件对她来说大得多的男式黑色西装外套，像披风一样；脖子左侧有一道细细的干掉的血痕；光着脚。肖像固定她的长相和衣着，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of the same woman as in the reference image, long wavy chestnut-brown hair tangled and loose around her shoulders, large hazel-green eyes, wearing an oversized white men's cotton dress shirt and, draped over her shoulders like a cape, a man's black suit jacket far too large for her; a thin line of dried blood down the left side of her neck. She faces the camera with a frightened, exhausted expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": [
+     "lily"
+    ]
+   }
+  },
+  {
+   "key": "lily_silver",
+   "kind": "image",
+   "role": "character",
+   "label": "莉莉（银白色的眼睛）",
+   "description": {
+    "en": "Lily, the same adult woman in her mid-twenties as in the reference, with long wavy chestnut-brown hair loose and tousled around her shoulders, fair skin with a healthy flush, wearing an oversized white men's cotton dress shirt with the collar open at the throat, the left side of her neck smooth and unmarked; her eyes glow a luminous silver-white. The portrait fixes her identity, clothes and eye color, not staging.",
+    "zh": "莉莉，和参考图里同一位二十五岁左右的成年女人，栗色长卷发松散凌乱地披在肩上，皮肤白皙、脸颊有健康的红晕；穿一件肥大的白色男式棉衬衫，领口敞开，脖子左侧光滑没有任何痕迹；眼睛发出明亮的银白色光。肖像固定她的长相、衣着和眼睛颜色，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of the same woman as in the reference image, long wavy chestnut-brown hair loose and tousled around her shoulders, a healthy flush on her cheeks, wearing an oversized white men's cotton dress shirt with the collar open, her eyes glowing a luminous silver-white. She faces the camera with a calm, composed expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": [
+     "lily"
+    ]
+   }
+  },
+  {
+   "key": "elder",
+   "kind": "image",
+   "role": "character",
+   "label": "家族长老",
+   "description": {
+    "en": "Elder, an old man in his sixties with swept-back white hair, a deeply lined stern face, a thin cruel mouth and cold pale eyes, wearing a black three-piece suit with a silver wolf-head lapel pin and a dark grey tie. The portrait fixes his identity and clothes, not staging.",
+    "zh": "家族长老，六十多岁的老年男人，白发向后梳，脸上皱纹很深而严厉，嘴唇薄而冷酷，眼睛是冷冷的浅色；穿黑色三件套西装，翻领上别着一枚银色狼头胸针，深灰色领带。肖像固定他的长相和衣着，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of an old man in his sixties with swept-back white hair, a deeply lined stern face, a thin cruel mouth and cold pale eyes, wearing a black three-piece suit with a silver wolf-head lapel pin and a dark grey tie. He faces the camera with a stern, cold expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "selena",
+   "kind": "image",
+   "role": "character",
+   "label": "赛琳娜（长老之女，纯血母狼）",
+   "description": {
+    "en": "Selena, an elegant, striking adult woman in her late twenties with sleek copper-red hair pulled into a high ponytail, sharp amber eyes with a faint wolfish glint, high cheekbones and full lips painted deep burgundy, wearing a fitted deep-burgundy tailored dress with a high neckline and long sleeves and a small silver wolf-head brooch at the collar, slim silver rings on her fingers. The portrait fixes her identity and clothes, not staging.",
+    "zh": "赛琳娜，二十八岁左右、优雅而夺目的成年女人，光滑的铜红色头发扎成高马尾，琥珀色的锐利眼睛带一点狼一样的光，颧骨很高，嘴唇涂成深酒红色；穿一件合身的深酒红色高领长袖剪裁连衣裙，领口别一枚小小的银色狼头胸针，手指上戴着细细的银戒指。肖像固定她的长相和衣着，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of an elegant, striking adult woman in her late twenties with sleek copper-red hair pulled into a high ponytail, sharp amber eyes, high cheekbones and full lips painted deep burgundy, wearing a fitted deep-burgundy tailored dress with a high neckline and long sleeves, a small silver wolf-head brooch at the collar, slim silver rings on her fingers. She faces the camera with a haughty, composed expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  }
+ ],
+ "characters": {
+  "Lily": {
+   "image_keys": [
+    "lily"
+   ],
+   "voice_description": {
+    "en": "A young adult female voice, light and slightly breathy, speaking clear American English. She keeps her volume low because she must not be overheard, but every word is fully voiced and audible, tight and trembling with fear, anger and humiliation.",
+    "zh": "年轻成年女声，轻而略带气息，说清楚的美式英语。因为不能被人听见而压低音量，但每个字都正常发声、清晰可辨，声音紧绷颤抖，带着恐惧、愤怒和屈辱。"
+   }
+  },
+  "Killian": {
+   "image_keys": [
+    "killian"
+   ],
+   "voice_description": {
+    "en": "A mature adult male voice in a deep chest register, low and unhurried with a husky edge, speaking clear American English in a quiet, controlled, menacing tone. He never shouts, and every word is fully voiced and audible.",
+    "zh": "成熟成年男声，深沉的胸腔音，低缓不急，带沙哑质感，说清楚的美式英语。语气安静、克制、带压迫感，从不喊叫，每个字都正常发声、清晰可辨。"
+   }
+  },
+  "Paul": {
+   "image_keys": [],
+   "voice_description": {
+    "en": "A young adult male voice, light, casual and slightly smug, speaking clear American English at ordinary conversational volume. He is outside a closed door, so his voice reaches the room muffled by the wood.",
+    "zh": "年轻成年男声，轻松随意、略带轻浮，说清楚的美式英语，正常交谈音量。他在紧闭的门外，声音隔着木门略显闷。"
+   }
+  },
+  "PaulOnScreen": {
+   "image_keys": [
+    "paul"
+   ],
+   "voice_description": {
+    "en": "A young adult male voice, light, casual and slightly smug, speaking clear American English at ordinary conversational volume.",
+    "zh": "年轻成年男声，轻松随意、略带轻浮，说清楚的美式英语，正常交谈音量。"
+   }
+  },
+  "Butler": {
+   "image_keys": [
+    "butler"
+   ],
+   "voice_description": {
+    "en": "An elderly adult male voice, courteous, measured and warm, speaking clear American English at ordinary conversational volume with careful politeness.",
+    "zh": "年迈的成年男声，彬彬有礼、不急不缓、带着温和，说清楚的美式英语，正常交谈音量，措辞谨慎有礼。"
+   }
+  },
+  "LilyCoat": {
+   "image_keys": [
+    "lily_coat"
+   ],
+   "voice_description": {
+    "en": "A young adult female voice, light and slightly breathy, speaking clear American English. Every word is fully voiced and audible, tight and shaky with nerves, alarm and wounded pride.",
+    "zh": "年轻成年女声，轻而略带气息，说清楚的美式英语。每个字都正常发声、清晰可辨，声音紧绷发颤，带着紧张、惊慌和受伤的自尊。"
+   }
+  },
+  "KillianRobe": {
+   "image_keys": [
+    "killian_robe"
+   ],
+   "voice_description": {
+    "en": "A mature adult male voice in a deep chest register, low and unhurried with a husky edge, speaking clear American English in a quiet, controlled, menacing tone. He never shouts, and every word is fully voiced and audible.",
+    "zh": "成熟成年男声，深沉的胸腔音，低缓不急，带沙哑质感，说清楚的美式英语。语气安静、克制、带压迫感，从不喊叫，每个字都正常发声、清晰可辨。"
+   }
+  },
+  "LilyShirt": {
+   "image_keys": [
+    "lily_shirt"
+   ],
+   "voice_description": {
+    "en": "A young adult female voice, light and slightly breathy, speaking clear American English. Every word is fully voiced and audible, tight and trembling with fear; her voice rises sharply when she is frightened.",
+    "zh": "年轻成年女声，轻而略带气息，说清楚的美式英语。每个字都正常发声、清晰可辨，声音紧绷发颤、带着恐惧；受惊时声音会猛地拔高。"
+   }
+  },
+  "KillianWolf": {
+   "image_keys": [
+    "killian_wolf"
+   ],
+   "voice_description": {
+    "en": "A mature adult male voice, extremely deep and rough, like a low animal growl shaped into words, speaking clear American English, hoarse and shaking with barely held restraint. Every word is fully voiced and audible.",
+    "zh": "成熟成年男声，极其低沉粗糙，像野兽的低吼被压成了字句，说清楚的美式英语，沙哑、因勉强压住的克制而发抖。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "LilyRed": {
+   "image_keys": [
+    "lily_red"
+   ],
+   "voice_description": {
+    "en": "A young adult female voice, light and slightly breathy, speaking clear American English. Every word is fully voiced and audible, tight and shaky with nerves, alarm and wounded pride.",
+    "zh": "年轻成年女声，轻而略带气息，说清楚的美式英语。每个字都正常发声、清晰可辨，声音紧绷发颤，带着紧张、惊慌和受伤的自尊。"
+   }
+  },
+  "KillianTux": {
+   "image_keys": [
+    "killian_tux"
+   ],
+   "voice_description": {
+    "en": "A mature adult male voice in a deep chest register, low and unhurried with a husky edge, speaking clear American English in a quiet, controlled, menacing tone. He never shouts, and every word is fully voiced and audible.",
+    "zh": "成熟成年男声，深沉的胸腔音，低缓不急，带沙哑质感，说清楚的美式英语。语气安静、克制、带压迫感，从不喊叫，每个字都正常发声、清晰可辨。"
+   }
+  },
+  "Mary": {
+   "image_keys": [
+    "mary"
+   ],
+   "voice_description": {
+    "en": "A young adult female voice, sugary and syrupy with a coy, breathy lilt, speaking clear American English. Every word is fully voiced and audible.",
+    "zh": "年轻成年女声，甜得发腻，带着娇滴滴的、有气息的上扬语调，说清楚的美式英语。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "LilyRiding": {
+   "image_keys": [
+    "lily_riding"
+   ],
+   "voice_description": {
+    "en": "A young adult female voice, light and slightly breathy, speaking clear American English. Every word is fully voiced and audible, tight and shaky with nerves, alarm and wounded pride.",
+    "zh": "年轻成年女声，轻而略带气息，说清楚的美式英语。每个字都正常发声、清晰可辨，声音紧绷发颤，带着紧张、惊慌和受伤的自尊。"
+   }
+  },
+  "KillianCoat": {
+   "image_keys": [
+    "killian_coat"
+   ],
+   "voice_description": {
+    "en": "A mature adult male voice in a deep chest register, low and unhurried with a husky edge, speaking clear American English in a quiet, controlled, menacing tone. He never shouts, and every word is fully voiced and audible.",
+    "zh": "成熟成年男声，深沉的胸腔音，低缓不急，带沙哑质感，说清楚的美式英语。语气安静、克制、带压迫感，从不喊叫，每个字都正常发声、清晰可辨。"
+   }
+  },
+  "MaryRiding": {
+   "image_keys": [
+    "mary_riding"
+   ],
+   "voice_description": {
+    "en": "A young adult female voice, sugary and syrupy with a coy, breathy lilt, speaking clear American English. Every word is fully voiced and audible.",
+    "zh": "年轻成年女声，甜得发腻，带着娇滴滴的、有气息的上扬语调，说清楚的美式英语。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "Trainer": {
+   "image_keys": [
+    "trainer"
+   ],
+   "voice_description": {
+    "en": "A middle-aged adult male voice, gravelly and flat with a rural American drawl, a little nervous, speaking clear American English at ordinary conversational volume. Every word is fully voiced and audible.",
+    "zh": "中年成年男声，沙哑平淡，带乡村美式拖腔，有一点紧张，说清楚的美式英语，正常交谈音量。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "Bodyguard": {
+   "image_keys": [
+    "bodyguard"
+   ],
+   "voice_description": {
+    "en": "A deep adult male voice, flat and calm, speaking clear American English. Every word is fully voiced and audible.",
+    "zh": "低沉的成年男声，平淡冷静，说清楚的美式英语。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "KillianGold": {
+   "image_keys": [
+    "killian_gold"
+   ],
+   "voice_description": {
+    "en": "A mature adult male voice, extremely deep and rough, like a low animal growl shaped into words, speaking clear American English, hoarse and shaking with barely held restraint. Every word is fully voiced and audible.",
+    "zh": "成熟成年男声，极其低沉粗糙，像野兽的低吼被压成了字句，说清楚的美式英语，沙哑、因勉强压住的克制而发抖。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "KillianBeast": {
+   "image_keys": [
+    "killian_beast"
+   ],
+   "voice_description": {
+    "en": "A mature adult male voice, extremely deep and rough, like a low animal growl shaped into words, speaking clear American English, hoarse and shaking with barely held restraint. Every word is fully voiced and audible.",
+    "zh": "成熟成年男声，极其低沉粗糙，像野兽的低吼被压成了字句，说清楚的美式英语，沙哑、因勉强压住的克制而发抖。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "KillianShirt": {
+   "image_keys": [
+    "killian_shirt"
+   ],
+   "voice_description": {
+    "en": "A mature adult male voice in a deep chest register, low and unhurried with a husky edge, speaking clear American English in a quiet, controlled, menacing tone. He never shouts, and every word is fully voiced and audible.",
+    "zh": "成熟成年男声，深沉的胸腔音，低缓不急，带沙哑质感，说清楚的美式英语。语气安静、克制、带压迫感，从不喊叫，每个字都正常发声、清晰可辨。"
+   }
+  },
+  "Doctor": {
+   "image_keys": [
+    "doctor"
+   ],
+   "voice_description": {
+    "en": "A middle-aged adult male voice, thin and cracking with terror, speaking clear American English at ordinary conversational volume. Every word is fully voiced and audible.",
+    "zh": "中年成年男声，因恐惧而发细、发颤，说清楚的美式英语，正常交谈音量。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "GuardFrenzy": {
+   "image_keys": [
+    "bodyguard"
+   ],
+   "voice_description": {
+    "en": "A rough adult male voice, raw and snarling like an animal forcing out words, speaking clear American English, slightly muffled by a thick wooden door yet every word is fully voiced and audible.",
+    "zh": "粗哑的成年男声，像野兽硬挤出人话，粗暴、带着低吼，说清楚的美式英语，隔着厚厚的木门略显发闷，但每个字都发声、清晰可辨。"
+   }
+  },
+  "Rogue": {
+   "image_keys": [
+    "rogue"
+   ],
+   "voice_description": {
+    "en": "A rough adult male voice, low, gravelly and wheezing with a sly, mocking edge, speaking clear American English. Every word is fully voiced and audible.",
+    "zh": "粗哑的成年男声，低沉沙砾般带着喘息声，有一种狡猾、嘲弄的味道，说清楚的美式英语。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "MaryBlack": {
+   "image_keys": [
+    "mary_black"
+   ],
+   "voice_description": {
+    "en": "A young adult female voice, sugary and syrupy with a coy, breathy lilt, speaking clear American English. Every word is fully voiced and audible.",
+    "zh": "年轻成年女声，甜得发腻，带着娇滴滴的、有气息的上扬语调，说清楚的美式英语。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "KillianGoldShirt": {
+   "image_keys": [
+    "killian_gold_shirt"
+   ],
+   "voice_description": {
+    "en": "A mature adult male voice, extremely deep and rough, like a low animal growl shaped into words, speaking clear American English, hoarse and shaking with barely held restraint. Every word is fully voiced and audible.",
+    "zh": "成熟成年男声，极其低沉粗糙，像野兽的低吼被压成了字句，说清楚的美式英语，沙哑、因勉强压住的克制而发抖。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "LilyJacket": {
+   "image_keys": [
+    "lily_jacket"
+   ],
+   "voice_description": {
+    "en": "A young adult female voice, light and slightly breathy, speaking clear American English. Every word is fully voiced and audible, tight and trembling with fear; her voice rises sharply when she is frightened.",
+    "zh": "年轻成年女声，轻而略带气息，说清楚的美式英语。每个字都正常发声、清晰可辨，声音紧绷发颤、带着恐惧；受惊时声音会猛地拔高。"
+   }
+  },
+  "LilySilver": {
+   "image_keys": [
+    "lily_silver"
+   ],
+   "voice_description": {
+    "en": "A young adult female voice, low, airy and ethereal with a faintly seductive, cold edge, speaking clear American English. Every word is fully voiced and audible.",
+    "zh": "年轻成年女声，低沉、空灵，带一点冷冷的魅惑，说清楚的美式英语。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "Elder": {
+   "image_keys": [
+    "elder"
+   ],
+   "voice_description": {
+    "en": "A mature old male voice, dry, hoarse and commanding with a cold, bitter edge, speaking clear American English. Every word is fully voiced and audible.",
+    "zh": "年老的男声，干涩、沙哑、带命令口气，有一种冷冷的刻薄，说清楚的美式英语。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "Selena": {
+   "image_keys": [
+    "selena"
+   ],
+   "voice_description": {
+    "en": "A confident adult female voice, sharp, clear and haughty with a cold, venomous edge, speaking clear American English. Every word is fully voiced and audible; her voice rises into a furious shriek when she is angry.",
+    "zh": "成年女声，自信、尖锐、清楚而傲慢，带一种冷冷的怨毒，说清楚的美式英语。每个字都正常发声、清晰可辨；生气时声音会拔高成愤怒的尖叫。"
+   }
+  }
+ },
+ "episodes": [
+  {
+   "title": "剧本第25集｜致命催化剂（站位表写法）",
+   "summary": "赛琳娜扑起来把一支红色针管扎进基利安的手臂，被他一掌打到墙边；她狂笑着说那是“血月”，他会发疯、弄碎莉莉；药效发作，他把莉莉推开喊“快跑”；长老们和赛琳娜夺门而逃；莉莉却关上门、反手锁上，一步步走到他面前。",
+   "script": "赛琳娜扑起来把针管扎进基利安的手臂，被他一掌打到墙边，赛琳娜跪在地毯上（画面左），恶狠狠地瞪着基利安；她猛地扑起来，把针管扎进基利安的左前臂，把红色液体推进去；基利安反手一掌把她打飞到主位旁的墙上，针管摔碎；莉莉吓得往他身上一缩；桌后跪着的长老们吓得抬起头。\n赛琳娜靠在墙边狂笑，那是血月，你会发疯，赛琳娜瘫坐在主位旁的墙边（画面左），嘴角流血，对着基利安狂笑，说出两句话，那是血月；你会发疯，然后弄碎她。基利安（画面右）捂着被扎的手臂，呼吸越来越粗，盯着她。\nSelena：“That was Blood Moon, Alpha.”\nSelena：“You'll go mad and break her!”\n药效发作，他把莉莉往门口推开，快跑！，基利安（画面左）撑着桌子弯着腰，脖子上的红纹往上爬，眼睛变成金色、长出獠牙；莉莉（画面右）伸手去扶他，他抓住她的胳膊把她往门的方向（画面右）狠狠推开，她踉跄几步站住；他对着她吼“快跑，出去！”。桌后跪着的长老们吓得往后缩。\nKillian：“Run! Get out of here, Lily!”\n长老们和赛琳娜夺门而逃，莉莉贴在门边不走，全景，基利安（画面左）背对着屋子、一拳抵在墙上；赛琳娜捂着腰从墙边爬起来；长老们从地上爬起来，顺着长桌冲向画面右边的双开门逃出去，赛琳娜一瘸一拐跟着逃出去；莉莉背贴在敞开的门上让他们过去，眼睛一直看着基利安；基利安一拳砸裂了墙板。最后屋里只剩他们两个。\n莉莉关上门、反手锁上，一步步走到他面前，屋里只剩两个人。莉莉（画面右）背靠着门，眼睛看着基利安，反手把两扇门关上，再反手拧上铜锁，“咔哒”一声；基利安（画面左）额头抵着裂开的墙，听见锁声停住，慢慢转过头看她，眼睛是金色的；莉莉离开门口，沿着长桌一步步走过去，停在桌头，离他几步远，抬着下巴看着他。",
+   "segments": [
+    {
+     "title": "01｜赛琳娜扑起来把针管扎进基利安的手臂，被他一掌打到墙边",
+     "duration_seconds": 6,
+     "generation_seconds": 6,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "Selena",
+      "Killian",
+      "LilySilver"
+     ],
+     "asset_keys": [
+      "council_room",
+      "selena",
+      "killian",
+      "lily_silver"
+     ],
+     "image_reference_keys": [
+      "council_room"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on medium-wide shot, all three people from the head to the knees, in the middle third of the frame, near the head of the long council table. Selena at frame-left, kneeling on the dark carpet in profile facing frame-right, with sleek copper-red hair in a high ponytail, in the fitted deep-burgundy dress with the silver wolf-head brooch, a slim glass syringe of dark red liquid hidden in her right hand at her side, her amber eyes glaring up at Killian, her lips pressed white, her jaw clenched, her brows low. Killian at frame-center, standing in three-quarter view turned toward frame-left, in the tailored black three-piece suit, white shirt and dark tie, one arm around Lily's waist, his cold dark-gray eyes on Selena, his lips pressed, his jaw set, his brows low. Lily at frame-right, standing barefoot pressed against Killian's side within his arm, turned toward frame-left, in the oversized white men's shirt, her chestnut hair loose, her luminous silver-white eyes on Selena, her lips closed, her brows drawn together. Behind them, along the far side of the table, a row of grey-haired men in black suits kneel on one knee with their heads bowed, clearly visible and in sharp focus. The frame holds three people in front, Selena, Killian and Lily, with the kneeling men behind the table. Cold grey daylight through the tall windows, the paneled room softly blurred behind. Fixed stage layout: the long polished dark-wood table runs across the room from frame-left to frame-right; the tall carved high-backed chair at the head of the table is at frame-left; the row of leather chairs lines the far side of the table; the tall dark double doors with brass handles are at frame-right; tall windows with dark drapes are at the back.",
+     "visual_zh": "赛琳娜跪在地毯上（画面左），恶狠狠地瞪着基利安；她猛地扑起来，把针管扎进基利安的左前臂，把红色液体推进去；基利安反手一掌把她打飞到主位旁的墙上，针管摔碎；莉莉吓得往他身上一缩；桌后跪着的长老们吓得抬起头。",
+     "camera_zh": "0—6秒，镜头固定不动。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 6,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on medium-wide shot opens from the adopted first frame in [[asset:council_room]]: [[asset:selena]] springs up from her knees and drives the syringe into [[asset:killian]]'s left forearm, jamming the plunger down until the dark red liquid empties into him, her lips pulled back in a snarl and her amber eyes on his face; in the same instant [[asset:killian]]'s left hand swings in a brutal backhand that hurls her backward across the carpet toward frame-left, where she slams against the paneled wall beside the tall carved chair, and the glass syringe flies from her hand and shatters on the floor, his jaw clenched and his brows crashing together. [[asset:lily_silver]] flinches against his side, her silver eyes going wide on his arm, her lips parting and her brows pulling up. Behind the table the kneeling grey-haired men flinch and lift their heads, their mouths falling open. The camera holds still.",
+       "visual_zh": "一个稳定的侧面中全景，从已采用的开场图继续，场景是会议室：赛琳娜从跪姿猛地扑起来，把针管扎进基利安的左前臂，一下把活塞推到底，暗红色的液体全推进去，她龇着牙，琥珀色的眼睛盯着他的脸；同一瞬间基利安的左手狠狠反手一掌，把她打得向画面左边飞出去，撞在主位旁的木墙板上，玻璃针管从她手里飞出去摔碎在地上，他下颌绷紧，眉头狠狠压下。莉莉吓得往他身上一缩，银色的眼睛瞪大看着他的手臂，嘴唇张开，眉头上扬。桌子后面跪着的长老们一哆嗦，抬起头，张着嘴。 镜头固定不动。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "A sharp hiss of breath, the crack of a heavy blow, a body thudding into wood paneling and glass shattering on the floor. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here.",
+     "sound_zh": "一声急促的吸气、一记重击的闷响、人撞上木墙板的声音和玻璃在地上摔碎的声音。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。",
+     "seed": 12345,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "02｜赛琳娜靠在墙边狂笑：那是血月，你会发疯",
+     "duration_seconds": 10,
+     "generation_seconds": 10,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "Selena",
+      "Killian"
+     ],
+     "asset_keys": [
+      "council_room",
+      "selena",
+      "killian"
+     ],
+     "image_reference_keys": [
+      "council_room"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on medium two-shot, both people from the head to the knees, in the middle third of the frame, at the head of the council table beside the tall carved high-backed chair. Selena at frame-left, slumped on the carpet with her back against the dark paneled wall beside the tall carved chair, in profile facing frame-right, in the fitted deep-burgundy dress with the silver wolf-head brooch, her copper-red ponytail half loose, a thread of blood at the corner of her mouth, her amber eyes on Killian, her lips curled back in a wild grin, her brows raised. Killian at frame-right, standing in profile facing frame-left, in the tailored black three-piece suit, white shirt and dark tie, his right hand gripping his left forearm where a bead of blood marks the needle wound, sweat on his temple, his cold dark-gray eyes on Selena, his jaw clenched, his brows low. Shards of a broken glass syringe and a smear of dark red liquid lie on the carpet between them. The frame holds exactly two people: Selena and Killian. Cold grey daylight through the tall windows, the paneled room softly blurred behind. Fixed stage layout: the long polished dark-wood table runs across the room from frame-left to frame-right; the tall carved high-backed chair at the head of the table is at frame-left; the row of leather chairs lines the far side of the table; the tall dark double doors with brass handles are at frame-right; tall windows with dark drapes are at the back.",
+     "visual_zh": "赛琳娜瘫坐在主位旁的墙边（画面左），嘴角流血，对着基利安狂笑，说出两句话：那是血月；你会发疯，然后弄碎她。基利安（画面右）捂着被扎的手臂，呼吸越来越粗，盯着她。",
+     "camera_zh": "0—10秒，镜头固定不动。",
+     "dialogue": [
+      {
+       "speaker": "Selena",
+       "text": "That was Blood Moon, Alpha.",
+       "start_seconds": 1.0,
+       "end_seconds": 3.67,
+       "language": "en"
+      },
+      {
+       "speaker": "Selena",
+       "text": "You'll go mad and break her!",
+       "start_seconds": 4.5,
+       "end_seconds": 7.73,
+       "language": "en"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 10,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on medium two-shot opens from the adopted first frame in [[asset:council_room]]: [[asset:selena]] throws her head back against the wall and laughs, then speaks the first line to [[asset:killian]] in a breathless, triumphant voice, her amber eyes on his face and her lips curled back from her teeth; she wipes the blood from her lips with the back of her hand and spits the second line to [[asset:killian]] with a vicious grin, her brows raised. [[asset:killian]]'s breathing turns heavy and ragged, his chest heaving and a vein standing out at his temple, his eyes on her face, his jaw clenched and his brows crashing together. The camera holds still.",
+       "visual_zh": "一个稳定的侧面中景双人镜头，从已采用的开场图继续，场景是会议室：赛琳娜把头往墙上一靠，大笑起来，然后对着基利安，用喘着气、得意的声音说出第一句，琥珀色的眼睛盯着他的脸，嘴唇咧开露出牙齿；她用手背擦掉嘴上的血，咧着恶毒的笑，对着基利安啐出第二句，眉毛高挑。基利安的呼吸变得沉重而急促，胸口起伏，太阳穴上青筋暴起，眼睛盯着她的脸，下颌绷紧，眉头狠狠压下。 镜头固定不动。",
+       "dialogue_indices": [
+        0,
+        1
+       ]
+      }
+     ],
+     "sound_en": "A wild, cracked laugh and ragged, heavy breathing. Voices stay close and clear.",
+     "sound_zh": "一阵疯狂、破音的笑声和粗重急促的呼吸声。人声近而清楚。",
+     "seed": 12345,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "03｜药效发作，他把莉莉往门口推开：快跑！",
+     "duration_seconds": 9,
+     "generation_seconds": 9,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "Killian",
+      "LilySilver"
+     ],
+     "asset_keys": [
+      "council_room",
+      "killian",
+      "lily_silver"
+     ],
+     "image_reference_keys": [
+      "council_room"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on medium two-shot, both people from the head to the waist, in the middle third of the frame, beside the long council table. Killian at frame-left, bent over with both hands gripping the edge of the table, in profile facing frame-right, in the tailored black three-piece suit, white shirt and dark tie, sweat running down his face, thin dark red vein-like lines creeping up the side of his neck, his bloodshot dark-gray eyes on Lily, his lips pulled back from clenched teeth, his brows crashing together. Lily at frame-right, standing close in profile facing frame-left, in the oversized white men's shirt, both hands reaching for his shoulders, her luminous silver-white eyes on Killian, her lips parted, her brows pulled together. Behind them, across the table, the row of grey-haired men in black suits still kneel on one knee, their heads lifted, their eyes on Killian and their faces frozen in fear, clearly visible and in sharp focus. The frame holds two people in front, Killian and Lily, with the kneeling men behind the table. Cold grey daylight through the tall windows, the paneled room softly blurred behind. Fixed stage layout: the long polished dark-wood table runs across the room from frame-left to frame-right; the tall carved high-backed chair at the head of the table is at frame-left; the row of leather chairs lines the far side of the table; the tall dark double doors with brass handles are at frame-right; tall windows with dark drapes are at the back.",
+     "visual_zh": "基利安（画面左）撑着桌子弯着腰，脖子上的红纹往上爬，眼睛变成金色、长出獠牙；莉莉（画面右）伸手去扶他，他抓住她的胳膊把她往门的方向（画面右）狠狠推开，她踉跄几步站住；他对着她吼“快跑，出去！”。桌后跪着的长老们吓得往后缩。",
+     "camera_zh": "0—9秒，镜头固定不动。",
+     "dialogue": [
+      {
+       "speaker": "Killian",
+       "text": "Run! Get out of here, Lily!",
+       "start_seconds": 3.5,
+       "end_seconds": 7.03,
+       "language": "en"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 9,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on medium two-shot opens from the adopted first frame in [[asset:council_room]]: the dark red lines crawl up [[asset:killian]]'s neck onto his jaw, his eyes flare a burning gold and his canine teeth lengthen into fangs, his jaw clenched; as [[asset:lily_silver]]'s hands touch his shoulders he grabs her by the upper arms and shoves her back hard toward the double doors at frame-right, and she stumbles three steps backward and catches herself, her silver eyes on his face, her lips trembling and her brows pulling up; then he shouts the line to [[asset:lily_silver]] in a hoarse, cracking roar, his gold eyes on her face and his lips pulled back from his fangs. Behind the table the kneeling grey-haired men shrink back, their eyes wide. The camera holds still.",
+       "visual_zh": "一个稳定的侧面中景双人镜头，从已采用的开场图继续，场景是会议室：暗红色的纹路顺着基利安的脖子爬上下颌，他的眼睛燃起金色，犬齿伸长成獠牙，下颌绷紧；莉莉的手刚碰到他的肩膀，他就抓住她的上臂，狠狠把她往画面右边的双开门方向推开，她往后踉跄三步才站稳，银色的眼睛看着他的脸，嘴唇发抖，眉头上扬；然后他对着莉莉用嘶哑、破音的声音吼出那句话，金色的眼睛盯着她的脸，嘴唇咧开露出獠牙。桌子后面跪着的长老们往后缩，眼睛瞪大。 镜头固定不动。",
+       "dialogue_indices": [
+        0
+       ]
+      }
+     ],
+     "sound_en": "Ragged animal breathing, a low growl rising in his chest, bare feet stumbling on the carpet. Voices stay close and clear.",
+     "sound_zh": "粗重的野兽般的呼吸声、胸腔里升起的低吼、光脚在地毯上踉跄的声音。人声近而清楚。",
+     "seed": 12345,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "04｜长老们和赛琳娜夺门而逃，莉莉贴在门边不走",
+     "duration_seconds": 6,
+     "generation_seconds": 6,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "KillianGold",
+      "LilySilver",
+      "Selena"
+     ],
+     "asset_keys": [
+      "council_room",
+      "killian_gold",
+      "lily_silver",
+      "selena"
+     ],
+     "image_reference_keys": [
+      "council_room"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Wide side-on shot of the whole council room, in the middle third of the frame, the long polished table running across the room. Killian at frame-left, at the head of the table beside the tall carved chair, hunched with his back half-turned to the room and one clawed fist pressed against the dark paneled wall, in the tailored black three-piece suit, his gold eyes on his fist against the wall, his lips pulled back from his fangs, his jaw clenched. Selena at frame-left a few steps from him, pushing herself up off the carpet beside the wall, in the fitted deep-burgundy dress, one hand clutching her side, her amber eyes on the double doors, her lips pressed white, her brows pulled together. Lily at frame-right, standing barefoot just inside the tall open double doors with her back pressed against one open door, facing into the room in profile facing frame-left, in the oversized white men's shirt, her luminous silver-white eyes on Killian, her lips parted, her brows drawn together. Along the far side of the table, the grey-haired men in black suits are scrambling up from their knees, clearly visible and in sharp focus, their eyes on the double doors, their mouths open in terror. The frame holds Killian, Selena, Lily and the scrambling men. Cold grey daylight through the tall windows, the paneled room softly blurred behind. Fixed stage layout: the long polished dark-wood table runs across the room from frame-left to frame-right; the tall carved high-backed chair at the head of the table is at frame-left; the row of leather chairs lines the far side of the table; the tall dark double doors with brass handles are at frame-right; tall windows with dark drapes are at the back.",
+     "visual_zh": "全景：基利安（画面左）背对着屋子、一拳抵在墙上；赛琳娜捂着腰从墙边爬起来；长老们从地上爬起来，顺着长桌冲向画面右边的双开门逃出去，赛琳娜一瘸一拐跟着逃出去；莉莉背贴在敞开的门上让他们过去，眼睛一直看着基利安；基利安一拳砸裂了墙板。最后屋里只剩他们两个。",
+     "camera_zh": "0—6秒，镜头固定不动。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 6,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady wide shot opens from the adopted first frame in [[asset:council_room]]: the grey-haired men scramble to their feet, rush the length of the table and pour out through the open double doors at frame-right, shoving past [[asset:lily_silver]]. [[asset:selena]] staggers after them clutching her side, her amber eyes on the doors, her lips pressed white and her brows pulled together, and limps out through the doorway. [[asset:lily_silver]] stays pressed against the open door, letting them stream past her, her silver eyes never leaving [[asset:killian_gold]], her lips parted and her brows drawn together; at frame-left [[asset:killian_gold]] slams his clawed fist into the paneled wall and the dark wood splits, his jaw clenched and his lips pulled back from his fangs. By the end only [[asset:killian_gold]] and [[asset:lily_silver]] remain in the room. The camera holds still.",
+       "visual_zh": "一个稳定的全景，从已采用的开场图继续，场景是会议室：长老们从地上爬起来，顺着长桌冲过去，从画面右边敞开的双开门挤出去，从莉莉身边擦过；赛琳娜捂着腰踉跄地跟在后面，眼睛盯着门，嘴唇发白，一瘸一拐地出了门；莉莉一直背贴着敞开的门，让他们从身边冲过去，银色的眼睛始终看着基利安，嘴唇张着，眉头紧皱；画面左边，基利安一拳砸在木墙板上，深色的木头裂开，他下颌绷紧，嘴唇咧开露出獠牙。最后屋里只剩基利安和莉莉。 镜头固定不动。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "Chairs scraping, a stampede of footsteps on the carpet, a woman's ragged gasping and a heavy blow splitting wood. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here.",
+     "sound_zh": "椅子刮地的声音、一大片脚步声踩过地毯、一个女人急促的喘息声和一记重拳砸裂木头的声音。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。",
+     "seed": 12345,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "05｜莉莉关上门、反手锁上，一步步走到他面前",
+     "duration_seconds": 10,
+     "generation_seconds": 10,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "KillianGold",
+      "LilySilver"
+     ],
+     "asset_keys": [
+      "council_room",
+      "killian_gold",
+      "lily_silver"
+     ],
+     "image_reference_keys": [
+      "council_room"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Wide side-on shot of the empty council room, in the middle third of the frame, the long polished table between the two people. Killian at frame-left, at the head of the table beside the tall carved chair, standing with his forehead pressed against the cracked dark paneled wall and one clawed fist against the splintered wood, in the tailored black three-piece suit, thin dark red lines on his neck, his eyes squeezed shut, his lips pulled back from his fangs, his jaw clenched. Lily at frame-right, standing barefoot with her back against the tall double doors, which stand a little open behind her, facing into the room in profile facing frame-left, in the oversized white men's shirt, both hands behind her on the brass handles, her luminous silver-white eyes on Killian, her lips pressed together, her brows drawn together with resolve. The frame holds exactly two people: Killian and Lily. Cold grey daylight through the tall windows, the paneled room softly blurred behind. Fixed stage layout: the long polished dark-wood table runs across the room from frame-left to frame-right; the tall carved high-backed chair at the head of the table is at frame-left; the row of leather chairs lines the far side of the table; the tall dark double doors with brass handles are at frame-right; tall windows with dark drapes are at the back.",
+     "visual_zh": "屋里只剩两个人。莉莉（画面右）背靠着门，眼睛看着基利安，反手把两扇门关上，再反手拧上铜锁，“咔哒”一声；基利安（画面左）额头抵着裂开的墙，听见锁声停住，慢慢转过头看她，眼睛是金色的；莉莉离开门口，沿着长桌一步步走过去，停在桌头，离他几步远，抬着下巴看着他。",
+     "camera_zh": "0—10秒，镜头跟着莉莉横向移动，直到她停在离基利安几步远的地方、两人都在画面中间。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 10,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A wide shot opens from the adopted first frame in [[asset:council_room]]: [[asset:lily_silver]] pulls both doors shut behind her without taking her silver eyes off [[asset:killian_gold]], reaches behind her back and turns the brass lock with a loud click, her lips pressed together and her brows drawn together; at the click [[asset:killian_gold]] goes still, lifts his forehead from the wall and slowly turns his head toward her, his eyes burning gold, his jaw clenched and his lips pulled back from his fangs; [[asset:lily_silver]] steps away from the doors and walks slowly along the table toward him, her eyes on his face, until she stops beside the head of the table a few steps from him, her chin lifted and her lips pressed together. The camera tracks sideways with Lily as she walks along the table, until she stops a few steps from Killian with both of them in the middle of the frame.",
+       "visual_zh": "一个全景，从已采用的开场图继续，场景是会议室：莉莉的银色眼睛一直看着基利安，反手把两扇门在身后关上，再把手伸到背后拧上铜锁，“咔哒”一声响，她抿着嘴，眉头紧皱；锁一响，基利安停住不动，额头离开墙，慢慢把头转向她，眼睛燃着金色，下颌绷紧，嘴唇咧开露出獠牙；莉莉离开门口，沿着长桌慢慢朝他走过去，眼睛看着他的脸，一直走到桌头、离他几步远的地方停下，抬着下巴，抿着嘴。 镜头跟着莉莉横向移动，直到她停在离基利安几步远的地方、两人都在画面中间。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "The heavy doors thudding shut, the sharp click of a lock, ragged animal breathing and soft bare footsteps on the carpet. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here.",
+     "sound_zh": "厚重的门关上的闷响、锁“咔哒”一声、粗重的野兽般的呼吸声和光脚踩在地毯上的轻响。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。",
+     "seed": 12345,
+     "dialogue_language": "en"
+    }
+   ],
+   "dialogue_language": "en"
+  },
+  {
+   "title": "剧本第26集｜办公桌上的臣服（站位表写法）",
+   "summary": "他扑过来把莉莉压在会议桌上，低吼“你为什么不跑，我会弄碎你”；她捧住他的脸吻他，红纹褪去、眼睛变回灰色，他把脸埋进她颈窝；他抬起头说“只有你能救我”，狂风吹开窗户，窗帘扫过画面。",
+   "script": "他扑过来，把莉莉压在会议桌上，接第 25 集结尾，两人在桌头对视。基利安（画面左）猛扑过来，搂住她的腰，把她仰面按倒在会议桌上，手臂把桌上的文件扫落一地；他双手撑在她肩膀两侧，喘着粗气，金色的眼睛盯着她；莉莉仰躺在桌上，双手抵着他的胸口，看着他。\n他压着她低吼，你为什么不跑，近一点的双人镜头，基利安（画面左）俯在她上方，爪子抠进桌面划出白痕，对着她低吼两句，你为什么不跑；我会弄碎你。莉莉（画面右）仰躺着，不挣扎，眼神慢慢变软，看着他。\nKillianGold：“Why didn't you run?”\nKillianGold：“I'll break you, Lily.”\n她捧住他的脸吻他，他一点点安静下来，特写，莉莉（画面右）捧住他的脸，抬头吻他；一层淡淡的银光从她手上漫到他脸上和脖子上，他脖子上的红纹褪去，眼睛从金色变回灰色，獠牙和爪子收回，绷紧的肩膀松下来；他结束这个吻，把脸埋进她的颈窝，闭上眼，喉咙里发出一声委屈的呜咽，她抚着他的头发。\n他抬起头，只有你能救我；狂风吹开窗户，窗帘扫过画面，基利安（画面左）从她颈窝里抬起头，眼睛已经是灰色，湿漉漉地哀求着，对着她低声说“只有你能救我，莉莉”；然后他握住她的两只手腕按在她头顶的桌面上；她呼吸一滞，看着他。一阵狂风吹开身后的窗户，深色的窗帘卷进屋里，扫过画面，直到整个画面被深色的布盖住。\nKillian：“Only you can save me, Lily.”",
+   "segments": [
+    {
+     "title": "01｜他扑过来，把莉莉压在会议桌上",
+     "duration_seconds": 8,
+     "generation_seconds": 8,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "KillianGold",
+      "LilySilver"
+     ],
+     "asset_keys": [
+      "council_room",
+      "killian_gold",
+      "lily_silver"
+     ],
+     "image_reference_keys": [
+      "council_room"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on medium-wide two-shot, both people from the head to the knees, in the middle third of the frame, beside the head of the long polished council table, which is strewn with papers and leather folders. Killian at frame-left, standing hunched a few steps from Lily with his back near the cracked paneled wall, in profile facing frame-right, in the tailored black three-piece suit, thin dark red lines on his neck, long black claws at his fingertips, his gold eyes on Lily, his lips pulled back from his fangs, his brows crashing together. Lily at frame-right, standing barefoot beside the edge of the table in profile facing frame-left, in the oversized white men's shirt, her luminous silver-white eyes on Killian, her lips pressed together, her chin lifted, her brows drawn together. The frame holds exactly two people: Killian and Lily. Cold grey daylight through the tall windows, the paneled room softly blurred behind. Fixed stage layout: the long polished dark-wood table runs across the room from frame-left to frame-right; the tall carved high-backed chair at the head of the table is at frame-left; the row of leather chairs lines the far side of the table; the tall dark double doors with brass handles are at frame-right; tall windows with dark drapes are at the back.",
+     "visual_zh": "接第 25 集结尾：两人在桌头对视。基利安（画面左）猛扑过来，搂住她的腰，把她仰面按倒在会议桌上，手臂把桌上的文件扫落一地；他双手撑在她肩膀两侧，喘着粗气，金色的眼睛盯着她；莉莉仰躺在桌上，双手抵着他的胸口，看着他。",
+     "camera_zh": "0—8秒，镜头固定不动。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 8,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on medium-wide two-shot opens from the adopted first frame in [[asset:council_room]]: [[asset:killian_gold]] lunges across the gap, seizes [[asset:lily_silver]] by the waist and lays her back across the polished table in one motion, his arm sweeping a spill of papers and folders off the table onto the floor; he braces over her with his clawed hands planted on the table on either side of her shoulders, his chest heaving, his gold eyes on her face and his lips pulled back from his fangs. [[asset:lily_silver]] lies back on the table with her hands against his chest, her silver eyes on his face, her lips parted and her brows smooth. The camera holds still.",
+       "visual_zh": "一个稳定的侧面中全景双人镜头，从已采用的开场图继续，场景是会议室：基利安扑过来，一把搂住莉莉的腰，一个动作就把她仰面放倒在光亮的长桌上，手臂把桌上的一摊文件和皮夹扫到地上；他俯在她上方，带爪子的双手撑在她肩膀两侧的桌面上，胸口剧烈起伏，金色的眼睛盯着她的脸，嘴唇咧开露出獠牙。莉莉仰躺在桌上，双手抵着他的胸口，银色的眼睛看着他的脸，嘴唇微张，眉头舒展。 镜头固定不动。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "A rush of movement, papers and folders slapping onto the floor, a heavy thud on wood and ragged animal breathing. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here.",
+     "sound_zh": "一阵急促的动作声、文件和皮夹拍落在地上的声音、一声砸在木头上的闷响和粗重的野兽般的呼吸声。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。",
+     "seed": 12345,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "02｜他压着她低吼：你为什么不跑",
+     "duration_seconds": 10,
+     "generation_seconds": 10,
+     "continuity": "cut",
+     "depends_on_previous": true,
+     "use_previous_episode_state": false,
+     "characters": [
+      "KillianGold",
+      "LilySilver"
+     ],
+     "asset_keys": [
+      "council_room",
+      "killian_gold",
+      "lily_silver"
+     ],
+     "image_reference_keys": [
+      "council_room"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on medium close-up two-shot, both people from the head to the chest, in the middle third of the frame, over the polished council table. Killian at frame-left, leaning over her and braced on his clawed hands on the table, his face above hers, in the tailored black three-piece suit, thin dark red lines on his neck, his gold eyes on Lily, his lips pulled back from his fangs, his brows crashing together. Lily at frame-right, lying on her back across the table with her chestnut hair spread over the dark wood, in the oversized white men's shirt, her luminous silver-white eyes on Killian, her lips parted, her brows smooth. The frame holds exactly two people: Killian and Lily. Cold grey daylight through the tall windows, the paneled room softly blurred behind. Fixed stage layout: the long polished dark-wood table runs across the room from frame-left to frame-right; the tall carved high-backed chair at the head of the table is at frame-left; the row of leather chairs lines the far side of the table; the tall dark double doors with brass handles are at frame-right; tall windows with dark drapes are at the back.",
+     "visual_zh": "近一点的双人镜头：基利安（画面左）俯在她上方，爪子抠进桌面划出白痕，对着她低吼两句：你为什么不跑；我会弄碎你。莉莉（画面右）仰躺着，不挣扎，眼神慢慢变软，看着他。",
+     "camera_zh": "0—10秒，镜头推近，直到两人的脸占满画面。",
+     "dialogue": [
+      {
+       "speaker": "KillianGold",
+       "text": "Why didn't you run?",
+       "start_seconds": 1.0,
+       "end_seconds": 3.23,
+       "language": "en"
+      },
+      {
+       "speaker": "KillianGold",
+       "text": "I'll break you, Lily.",
+       "start_seconds": 4.5,
+       "end_seconds": 6.67,
+       "language": "en"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 10,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A side-on medium close-up opens from the adopted first frame in [[asset:council_room]]: [[asset:killian_gold]]'s claws dig into the polished wood beside her shoulders, gouging pale scratches, and he speaks the first line to [[asset:lily_silver]] in a low animal growl, his gold eyes on her face and his brows crashing together; his breath shudders and he speaks the second line to [[asset:lily_silver]] in a cracked, pleading rasp, his lips trembling over his fangs. [[asset:lily_silver]] lies still without struggling, her silver eyes softening on his face, her lips parted and her brows smooth. The camera pushes in until both of their faces fill the frame.",
+       "visual_zh": "一个侧面中近景，从已采用的开场图继续，场景是会议室：基利安的爪子抠进她肩膀旁边光亮的木头里，划出几道白痕，他对着莉莉用低沉的野兽般的声音说出第一句，金色的眼睛盯着她的脸，眉头狠狠压下；他的呼吸一颤，又对着莉莉用破碎、近乎哀求的沙哑声音说出第二句，嘴唇在獠牙上发抖。莉莉一动不动地躺着，没有挣扎，银色的眼睛在看着他的时候慢慢变软，嘴唇微张，眉头舒展。 镜头推近，直到两人的脸占满画面。",
+       "dialogue_indices": [
+        0,
+        1
+       ]
+      }
+     ],
+     "sound_en": "A low animal growl, ragged shuddering breaths and claws scraping wood. Voices stay close and clear.",
+     "sound_zh": "低沉的野兽般的低吼、颤抖急促的呼吸声和爪子刮木头的声音。人声近而清楚。",
+     "seed": 12345,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "03｜她捧住他的脸吻他，他一点点安静下来",
+     "duration_seconds": 10,
+     "generation_seconds": 10,
+     "continuity": "cut",
+     "depends_on_previous": true,
+     "use_previous_episode_state": false,
+     "characters": [
+      "KillianGold",
+      "LilySilver"
+     ],
+     "asset_keys": [
+      "council_room",
+      "killian_gold",
+      "lily_silver"
+     ],
+     "image_reference_keys": [
+      "council_room"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on close-up two-shot, both people from the head to the shoulders, in the middle third of the frame, over the polished council table. Killian at frame-left, leaning low over her, in the tailored black three-piece suit, thin dark red lines on his neck, his gold eyes on Lily, his lips pulled back from his fangs, his jaw clenched, his brows crashing together. Lily at frame-right, lying on her back across the table, in the oversized white men's shirt, both hands rising toward his face, her luminous silver-white eyes on Killian, her lips parted, her brows smooth. The frame holds exactly two people: Killian and Lily. Cold grey daylight through the tall windows, the paneled room softly blurred behind. Fixed stage layout: the long polished dark-wood table runs across the room from frame-left to frame-right; the tall carved high-backed chair at the head of the table is at frame-left; the row of leather chairs lines the far side of the table; the tall dark double doors with brass handles are at frame-right; tall windows with dark drapes are at the back.",
+     "visual_zh": "特写：莉莉（画面右）捧住他的脸，抬头吻他；一层淡淡的银光从她手上漫到他脸上和脖子上，他脖子上的红纹褪去，眼睛从金色变回灰色，獠牙和爪子收回，绷紧的肩膀松下来；他结束这个吻，把脸埋进她的颈窝，闭上眼，喉咙里发出一声委屈的呜咽，她抚着他的头发。",
+     "camera_zh": "0—10秒，镜头固定不动。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 10,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on close-up opens from the adopted first frame in [[asset:council_room]]: [[asset:lily_silver]] cups [[asset:killian_gold]]'s face in both hands, lifts her head and kisses him, her eyes closing. A faint silver shimmer spreads from her hands over his face and neck: [[asset:killian_gold]]'s dark red lines fade away, the gold drains from his eyes back to dark gray, his fangs and claws slide back and his rigid shoulders loosen, his brows softening; [[asset:killian_gold]] breaks the kiss and lowers his face into the curve of her neck, his eyes closing and his lips trembling, a low broken whimper in his throat; [[asset:lily_silver]] strokes his hair, her eyes closed and her lips soft. The camera holds still.",
+       "visual_zh": "一个稳定的侧面特写，从已采用的开场图继续，场景是会议室：莉莉双手捧住基利安的脸，抬起头吻他，眼睛闭上；一层淡淡的银光从她手上漫到他的脸和脖子上，他脖子上的暗红纹路慢慢褪去，眼里的金色退回深灰色，獠牙和爪子缩回去，绷紧的肩膀松了下来，眉头也舒展开；他结束这个吻，把脸埋进她的颈窝，闭上眼睛，嘴唇发抖，喉咙里发出一声低低的、破碎的呜咽，莉莉抚着他的头发，闭着眼，嘴唇柔软。 镜头固定不动。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "Ragged breathing slowing and softening, a faint airy shimmer of sound and a low broken whimper. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here.",
+     "sound_zh": "急促的呼吸慢慢平缓变轻、一点轻轻的空灵声响和一声低低的、破碎的呜咽。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。",
+     "seed": 12345,
+     "dialogue_language": "en"
+    },
+    {
+     "title": "04｜他抬起头：只有你能救我；狂风吹开窗户，窗帘扫过画面",
+     "duration_seconds": 10,
+     "generation_seconds": 10,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "Killian",
+      "LilySilver"
+     ],
+     "asset_keys": [
+      "council_room",
+      "killian",
+      "lily_silver"
+     ],
+     "image_reference_keys": [
+      "council_room"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Side-on close-up two-shot, both people from the head to the shoulders, in the middle third of the frame, over the polished council table, the tall windows with dark drapes behind them. Killian at frame-left, lifting his face from the curve of her neck and leaning over her, in the tailored black three-piece suit, his wet, pleading dark-gray eyes on Lily, his lips parted, his brows drawn together. Lily at frame-right, lying on her back across the table with her chestnut hair spread over the dark wood, in the oversized white men's shirt, her luminous silver-white eyes on Killian, her lips parted, her brows softly raised. The frame holds exactly two people: Killian and Lily. Cold grey daylight through the tall windows, the paneled room softly blurred behind. Fixed stage layout: the long polished dark-wood table runs across the room from frame-left to frame-right; the tall carved high-backed chair at the head of the table is at frame-left; the row of leather chairs lines the far side of the table; the tall dark double doors with brass handles are at frame-right; tall windows with dark drapes are at the back.",
+     "visual_zh": "基利安（画面左）从她颈窝里抬起头，眼睛已经是灰色，湿漉漉地哀求着，对着她低声说“只有你能救我，莉莉”；然后他握住她的两只手腕按在她头顶的桌面上；她呼吸一滞，看着他。一阵狂风吹开身后的窗户，深色的窗帘卷进屋里，扫过画面，直到整个画面被深色的布盖住。",
+     "camera_zh": "0—10秒，镜头固定不动。",
+     "dialogue": [
+      {
+       "speaker": "Killian",
+       "text": "Only you can save me, Lily.",
+       "start_seconds": 1.5,
+       "end_seconds": 4.67,
+       "language": "en"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 10,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, shallow depth of field and warm luxurious lighting, ultra-wide 8:3 cinemascope frame. A steady side-on close-up opens from the adopted first frame in [[asset:council_room]]: [[asset:killian]] speaks the line to [[asset:lily_silver]] in a hoarse, desperate whisper, his dark-gray eyes on her face and his brows drawn together; then he takes both her wrists and presses them above her head onto the table, his lips parted; [[asset:lily_silver]]'s breath catches, her silver eyes on his face and her lips parting. A sudden gust bursts the tall windows open behind them and the dark drapes whip into the room and sweep across the view until dark fabric fills the frame. The camera holds still.",
+       "visual_zh": "一个稳定的侧面特写，从已采用的开场图继续，场景是会议室：基利安对着莉莉用沙哑、绝望的低声说出那句话，深灰色的眼睛看着她的脸，眉头紧皱；然后他握住她的两只手腕，按在她头顶的桌面上，嘴唇微张；莉莉的呼吸一滞，银色的眼睛看着他的脸，嘴唇张开。一阵狂风猛地吹开他们身后的高窗，深色的窗帘卷进屋里，扫过画面，直到深色的布占满整个画面。 镜头固定不动。",
+       "dialogue_indices": [
+        0
+       ]
+      }
+     ],
+     "sound_en": "A hoarse whisper, a sudden howl of wind, windows banging open and heavy drapes snapping. Voices stay close and clear.",
+     "sound_zh": "一声沙哑的低语、突然呼啸的风声、窗户被吹开撞响和厚重窗帘猎猎作响。人声近而清楚。",
+     "seed": 12345,
+     "dialogue_language": "en"
+    }
+   ],
+   "dialogue_language": "en"
+  }
+ ]
+}
