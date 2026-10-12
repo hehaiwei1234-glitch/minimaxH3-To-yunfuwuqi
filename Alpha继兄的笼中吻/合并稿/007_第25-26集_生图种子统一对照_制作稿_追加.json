@@ -945,7 +945,7 @@
  },
  "episodes": [
   {
-   "title": "剧本第25集｜致命催化剂（站位表写法）",
+   "title": "剧本第25集｜致命催化剂（生图种子统一对照）",
    "summary": "赛琳娜扑起来把一支红色针管扎进基利安的手臂，被他一掌打到墙边；她狂笑着说那是“血月”，他会发疯、弄碎莉莉；药效发作，他把莉莉推开喊“快跑”；长老们和赛琳娜夺门而逃；莉莉却关上门、反手锁上，一步步走到他面前。",
    "script": "赛琳娜扑起来把针管扎进基利安的手臂，被他一掌打到墙边，赛琳娜跪在地毯上（画面左），恶狠狠地瞪着基利安；她猛地扑起来，把针管扎进基利安的左前臂，把红色液体推进去；基利安反手一掌把她打飞到主位旁的墙上，针管摔碎；莉莉吓得往他身上一缩；桌后跪着的长老们吓得抬起头。\n赛琳娜靠在墙边狂笑，那是血月，你会发疯，赛琳娜瘫坐在主位旁的墙边（画面左），嘴角流血，对着基利安狂笑，说出两句话，那是血月；你会发疯，然后弄碎她。基利安（画面右）捂着被扎的手臂，呼吸越来越粗，盯着她。\nSelena：“That was Blood Moon, Alpha.”\nSelena：“You'll go mad and break her!”\n药效发作，他把莉莉往门口推开，快跑！，基利安（画面左）撑着桌子弯着腰，脖子上的红纹往上爬，眼睛变成金色、长出獠牙；莉莉（画面右）伸手去扶他，他抓住她的胳膊把她往门的方向（画面右）狠狠推开，她踉跄几步站住；他对着她吼“快跑，出去！”。桌后跪着的长老们吓得往后缩。\nKillian：“Run! Get out of here, Lily!”\n长老们和赛琳娜夺门而逃，莉莉贴在门边不走，全景，基利安（画面左）背对着屋子、一拳抵在墙上；赛琳娜捂着腰从墙边爬起来；长老们从地上爬起来，顺着长桌冲向画面右边的双开门逃出去，赛琳娜一瘸一拐跟着逃出去；莉莉背贴在敞开的门上让他们过去，眼睛一直看着基利安；基利安一拳砸裂了墙板。最后屋里只剩他们两个。\n莉莉关上门、反手锁上，一步步走到他面前，屋里只剩两个人。莉莉（画面右）背靠着门，眼睛看着基利安，反手把两扇门关上，再反手拧上铜锁，“咔哒”一声；基利安（画面左）额头抵着裂开的墙，听见锁声停住，慢慢转过头看她，眼睛是金色的；莉莉离开门口，沿着长桌一步步走过去，停在桌头，离他几步远，抬着下巴看着他。",
    "segments": [
@@ -985,7 +985,7 @@
      ],
      "sound_en": "A sharp hiss of breath, the crack of a heavy blow, a body thudding into wood paneling and glass shattering on the floor. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here.",
      "sound_zh": "一声急促的吸气、一记重击的闷响、人撞上木墙板的声音和玻璃在地上摔碎的声音。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。",
-     "seed": 12345,
+     "seed": 9201,
      "dialogue_language": "en"
     },
     {
@@ -1040,7 +1040,7 @@
      ],
      "sound_en": "A wild, cracked laugh and ragged, heavy breathing. Voices stay close and clear.",
      "sound_zh": "一阵疯狂、破音的笑声和粗重急促的呼吸声。人声近而清楚。",
-     "seed": 12345,
+     "seed": 9202,
      "dialogue_language": "en"
     },
     {
@@ -1087,7 +1087,7 @@
      ],
      "sound_en": "Ragged animal breathing, a low growl rising in his chest, bare feet stumbling on the carpet. Voices stay close and clear.",
      "sound_zh": "粗重的野兽般的呼吸声、胸腔里升起的低吼、光脚在地毯上踉跄的声音。人声近而清楚。",
-     "seed": 12345,
+     "seed": 9203,
      "dialogue_language": "en"
     },
     {
@@ -1126,7 +1126,7 @@
      ],
      "sound_en": "Chairs scraping, a stampede of footsteps on the carpet, a woman's ragged gasping and a heavy blow splitting wood. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here.",
      "sound_zh": "椅子刮地的声音、一大片脚步声踩过地毯、一个女人急促的喘息声和一记重拳砸裂木头的声音。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。",
-     "seed": 12345,
+     "seed": 9204,
      "dialogue_language": "en"
     },
     {
@@ -1163,14 +1163,14 @@
      ],
      "sound_en": "The heavy doors thudding shut, the sharp click of a lock, ragged animal breathing and soft bare footsteps on the carpet. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here.",
      "sound_zh": "厚重的门关上的闷响、锁“咔哒”一声、粗重的野兽般的呼吸声和光脚踩在地毯上的轻响。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。",
-     "seed": 12345,
+     "seed": 9205,
      "dialogue_language": "en"
     }
    ],
    "dialogue_language": "en"
   },
   {
-   "title": "剧本第26集｜办公桌上的臣服（站位表写法）",
+   "title": "剧本第26集｜办公桌上的臣服（生图种子统一对照）",
    "summary": "他扑过来把莉莉压在会议桌上，低吼“你为什么不跑，我会弄碎你”；她捧住他的脸吻他，红纹褪去、眼睛变回灰色，他把脸埋进她颈窝；他抬起头说“只有你能救我”，狂风吹开窗户，窗帘扫过画面。",
    "script": "他扑过来，把莉莉压在会议桌上，接第 25 集结尾，两人在桌头对视。基利安（画面左）猛扑过来，搂住她的腰，把她仰面按倒在会议桌上，手臂把桌上的文件扫落一地；他双手撑在她肩膀两侧，喘着粗气，金色的眼睛盯着她；莉莉仰躺在桌上，双手抵着他的胸口，看着他。\n他压着她低吼，你为什么不跑，近一点的双人镜头，基利安（画面左）俯在她上方，爪子抠进桌面划出白痕，对着她低吼两句，你为什么不跑；我会弄碎你。莉莉（画面右）仰躺着，不挣扎，眼神慢慢变软，看着他。\nKillianGold：“Why didn't you run?”\nKillianGold：“I'll break you, Lily.”\n她捧住他的脸吻他，他一点点安静下来，特写，莉莉（画面右）捧住他的脸，抬头吻他；一层淡淡的银光从她手上漫到他脸上和脖子上，他脖子上的红纹褪去，眼睛从金色变回灰色，獠牙和爪子收回，绷紧的肩膀松下来；他结束这个吻，把脸埋进她的颈窝，闭上眼，喉咙里发出一声委屈的呜咽，她抚着他的头发。\n他抬起头，只有你能救我；狂风吹开窗户，窗帘扫过画面，基利安（画面左）从她颈窝里抬起头，眼睛已经是灰色，湿漉漉地哀求着，对着她低声说“只有你能救我，莉莉”；然后他握住她的两只手腕按在她头顶的桌面上；她呼吸一滞，看着他。一阵狂风吹开身后的窗户，深色的窗帘卷进屋里，扫过画面，直到整个画面被深色的布盖住。\nKillian：“Only you can save me, Lily.”",
    "segments": [
@@ -1208,7 +1208,7 @@
      ],
      "sound_en": "A rush of movement, papers and folders slapping onto the floor, a heavy thud on wood and ragged animal breathing. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here.",
      "sound_zh": "一阵急促的动作声、文件和皮夹拍落在地上的声音、一声砸在木头上的闷响和粗重的野兽般的呼吸声。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。",
-     "seed": 12345,
+     "seed": 9301,
      "dialogue_language": "en"
     },
     {
@@ -1263,7 +1263,7 @@
      ],
      "sound_en": "A low animal growl, ragged shuddering breaths and claws scraping wood. Voices stay close and clear.",
      "sound_zh": "低沉的野兽般的低吼、颤抖急促的呼吸声和爪子刮木头的声音。人声近而清楚。",
-     "seed": 12345,
+     "seed": 9302,
      "dialogue_language": "en"
     },
     {
@@ -1300,7 +1300,7 @@
      ],
      "sound_en": "Ragged breathing slowing and softening, a faint airy shimmer of sound and a low broken whimper. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here.",
      "sound_zh": "急促的呼吸慢慢平缓变轻、一点轻轻的空灵声响和一声低低的、破碎的呜咽。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。",
-     "seed": 12345,
+     "seed": 9303,
      "dialogue_language": "en"
     },
     {
@@ -1347,7 +1347,7 @@
      ],
      "sound_en": "A hoarse whisper, a sudden howl of wind, windows banging open and heavy drapes snapping. Voices stay close and clear.",
      "sound_zh": "一声沙哑的低语、突然呼啸的风声、窗户被吹开撞响和厚重窗帘猎猎作响。人声近而清楚。",
-     "seed": 12345,
+     "seed": 9304,
      "dialogue_language": "en"
     }
    ],
