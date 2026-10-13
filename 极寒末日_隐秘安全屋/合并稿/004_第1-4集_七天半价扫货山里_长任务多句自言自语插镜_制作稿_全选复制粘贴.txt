@@ -1,0 +1,2063 @@
+{
+ "schema": "h3-production-draft",
+ "version": 1,
+ "title": "极寒末日：我的隐秘安全屋｜第1–4集｜七天·半价·扫货·山里",
+ "dialogue_language": "zh",
+ "style": "Photorealistic live-action post-apocalyptic survival drama set in modern-day China, with a cinematic, high-contrast look. Two clear visual worlds: the blinding white heat of a summer world that does not know what is coming, and later a warm amber-lit hidden shelter set against a silent frozen white world of snow, ice and green aurora. Every named character is Chinese. Rich natural skin texture with visible pores, realistic fabrics, restrained cinematic color grading, and an ultra-wide 8:3 cinemascope frame in which the people are placed deliberately and the room is visible around them.",
+ "assets": [
+  {
+   "key": "lin_studio",
+   "kind": "image",
+   "role": "character",
+   "label": "林峰（深夜工作室：皱巴巴的白衬衫，一脸倦意）",
+   "description": {
+    "en": "Lin, a lean, athletic Chinese man in his early thirties with short messy black hair, a faint shadow of stubble and tired but steady dark-brown eyes, wearing a rumpled white dress shirt with the sleeves rolled to his forearms and a loosened collar. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "林峰，三十出头、身形精瘦结实的中国男性，黑色短发有些凌乱，下巴一层淡淡的胡茬，疲惫却沉稳的深褐色眼睛，穿着皱巴巴的白衬衫、袖子卷到小臂、领口松开。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of a Chinese man, short messy black hair, a faint shadow of stubble, tired but steady dark-brown eyes, wearing a rumpled white dress shirt with the sleeves rolled to his forearms and a loosened collar. He faces the camera with a tired, steady expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "lin_bank",
+   "kind": "image",
+   "role": "character",
+   "label": "林峰（银行里：炭灰色西装外套，白衬衫）",
+   "description": {
+    "en": "Lin, the same lean, athletic Chinese man in his early thirties as in the reference, clean-shaven with short neatly combed black hair and steady dark-brown eyes, wearing a fitted charcoal blazer over a white open-collar shirt. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "林峰，和参考图是同一位三十出头、身形精瘦结实的中国男性，胡子刮得干净，黑色短发梳得整齐，沉稳的深褐色眼睛，穿着合身的炭灰色西装外套、里面是白色开领衬衫。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of the same man as in the reference image, short neatly combed black hair, clean-shaven, steady dark-brown eyes, wearing a fitted charcoal blazer over a white open-collar shirt. He faces the camera with a calm, level expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": [
+     "lin_studio"
+    ]
+   }
+  },
+  {
+   "key": "lin_work",
+   "kind": "image",
+   "role": "character",
+   "label": "林峰（深灰亨利衫，橄榄绿多口袋工装背心）",
+   "description": {
+    "en": "Lin, the same lean, athletic Chinese man in his early thirties as in the reference, with short black hair and a faint shadow of stubble, steady dark-brown eyes, wearing a charcoal henley under a dark olive utility vest with many pockets and dark cargo pants. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "林峰，和参考图是同一位三十出头、身形精瘦结实的中国男性，黑色短发，带一点淡淡的胡茬，沉稳的深褐色眼睛，穿着深灰色亨利衫、外面是深橄榄绿多口袋工装背心，深色工装裤。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of the same man as in the reference image, short black hair, a faint shadow of stubble, steady dark-brown eyes, wearing a charcoal henley under a dark olive utility vest with many pockets. He faces the camera with a calm, level expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": [
+     "lin_studio"
+    ]
+   }
+  },
+  {
+   "key": "lin_home",
+   "kind": "image",
+   "role": "character",
+   "label": "林峰（在安全屋里：灰色棉质家居服，光脚）",
+   "description": {
+    "en": "Lin, the same lean, athletic Chinese man in his early thirties as in the reference, with short black hair still damp from a shower, steady dark-brown eyes, wearing a soft grey cotton long-sleeve henley and loose dark lounge pants, barefoot. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "林峰，和参考图是同一位三十出头、身形精瘦结实的中国男性，黑色短发刚洗过还带着湿气，沉稳的深褐色眼睛，穿着柔软的灰色棉质长袖亨利衫和宽松的深色家居裤，光着脚。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic full-body portrait of the same man as in the reference image, short black hair still damp from a shower, steady dark-brown eyes, wearing a soft grey cotton long-sleeve henley and loose dark lounge pants, barefoot. He faces the camera with a relaxed, content expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": [
+     "lin_studio"
+    ]
+   }
+  },
+  {
+   "key": "su_suit",
+   "kind": "image",
+   "role": "character",
+   "label": "苏清月（黑色真丝衬衫，金丝眼镜）",
+   "description": {
+    "en": "Su, an elegant, strikingly beautiful Chinese woman in her late twenties with long glossy black hair falling straight over one shoulder, sharp dark-brown eyes behind thin gold-rimmed glasses, wearing a fitted black silk blouse and a black pencil skirt. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "苏清月，二十八岁左右、优雅而极其美丽的中国女性，乌黑的长直发光滑地垂在一边肩上，锐利的深褐色眼睛戴着细细的金丝眼镜，穿着合身的黑色真丝衬衫和黑色铅笔裙。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of a Chinese woman, long glossy black hair falling straight over one shoulder, sharp dark-brown eyes behind thin gold-rimmed glasses, wearing a fitted black silk blouse. She faces the camera with a composed, sharp expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "wen_blazer",
+   "kind": "image",
+   "role": "character",
+   "label": "文助理（苏清月的助理，藏青色西装外套）",
+   "description": {
+    "en": "Wen, a brisk young Chinese woman in her mid-twenties with black hair in a neat low ponytail, clear dark eyes and a smooth fair face, wearing a navy blazer over a white blouse. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "文助理，二十五岁左右干练的年轻中国女性，黑色头发扎成利落的低马尾，清亮的深色眼睛，皮肤白净，穿着藏青色西装外套、里面是白衬衫。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of a Chinese woman, black hair in a neat low ponytail, clear dark eyes, a smooth fair face, wearing a navy blazer over a white blouse. She faces the camera with an attentive, alert expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "ning_partner",
+   "kind": "image",
+   "role": "character",
+   "label": "周宁（林峰的合伙人，灰色卫衣，披着深色羽绒外套）",
+   "description": {
+    "en": "Ning, a rumpled Chinese man in his early thirties with messy short black hair, a few days of stubble, a round tired face and bleary dark eyes, wearing a grey hooded sweatshirt with a dark puffer coat draped over his shoulders. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "周宁，三十出头、一脸疲态的中国男性，黑色短发凌乱，有几天没刮的胡茬，一张圆脸，睡眼惺忪的深色眼睛，穿着灰色连帽卫衣、肩上披着一件深色羽绒外套。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of a Chinese man, messy short black hair, a few days of stubble, a round tired face, bleary dark eyes, wearing a grey hooded sweatshirt with a dark puffer coat draped over his shoulders. He faces the camera with a sleepy, worried expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "liang_banker",
+   "kind": "image",
+   "role": "character",
+   "label": "梁经理（银行客户经理，浅灰色套装）",
+   "description": {
+    "en": "Manager Liang, a polished Chinese woman in her early forties with a neat shoulder-length black bob, composed dark eyes and a courteous bearing, wearing a tailored dove-grey skirt suit over a white blouse with small pearl earrings. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "梁经理，四十出头、一丝不苟的中国女性，齐肩的黑色短发整齐利落，沉着的深色眼睛，举止得体，穿着剪裁合身的浅灰色套装、里面是白衬衫，戴着小小的珍珠耳钉。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of a Chinese woman, a neat shoulder-length black bob, composed dark eyes, small pearl earrings, wearing a tailored dove-grey skirt suit over a white blouse. She faces the camera with a polite, composed expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "sun_agent",
+   "kind": "image",
+   "role": "character",
+   "label": "中介小孙（短袖白衬衫，松开的浅蓝领带）",
+   "description": {
+    "en": "Agent Sun, a nervous Chinese man in his mid-thirties with sweat-damp short black hair, a thin face and anxious dark eyes, wearing a short-sleeved white shirt with a loosened pale blue tie. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "中介小孙，三十五岁左右、神情紧张的中国男性，短发被汗打湿，一张瘦脸，焦虑的深色眼睛，穿着短袖白衬衫、浅蓝色领带松松地挂着。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of a Chinese man, sweat-damp short black hair, a thin face, anxious dark eyes, wearing a short-sleeved white shirt with a loosened pale blue tie. He faces the camera with a sweaty, nervous expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "ma_outdoor",
+   "kind": "image",
+   "role": "character",
+   "label": "户外店马老板（红色POLO衫，帆布围裙，光头）",
+   "description": {
+    "en": "Boss Ma, a stout, jovial Chinese man in his fifties with a bald head shiny with sweat, a round red face and small cheerful dark eyes, wearing a straining red polo shirt under a canvas shop apron. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "马老板，五十多岁、矮胖爱笑的中国男性，光头上泛着汗光，一张圆圆的红脸，小而爱笑的深色眼睛，穿着绷得很紧的红色POLO衫、外面系着帆布店员围裙。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of a Chinese man, a bald head shiny with sweat, a round red face, small cheerful dark eyes, wearing a straining red polo shirt under a canvas shop apron. He faces the camera with a cheerful, shrewd expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "gu_coal",
+   "kind": "image",
+   "role": "character",
+   "label": "煤场顾老板（沾着煤灰的灰衬衫，脖子上搭毛巾，黄色安全帽）",
+   "description": {
+    "en": "Boss Gu, a weathered Chinese man in his fifties with deeply tanned skin, a squarish coal-dusted face and squinting dark eyes, wearing a coal-streaked grey work shirt, a damp towel around his neck and a yellow hard hat. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "顾老板，五十多岁、饱经风霜的中国男性，皮肤晒得黝黑，方脸上沾着煤灰，眯缝着深色眼睛，穿着沾着煤灰的灰色工作衬衫、脖子上搭着一条湿毛巾、戴着黄色安全帽。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of a Chinese man, deeply tanned skin, a squarish coal-dusted face, squinting dark eyes, wearing a coal-streaked grey work shirt, a damp towel around his neck and a yellow hard hat. He faces the camera with a weary, squinting expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "xiao_agri",
+   "kind": "image",
+   "role": "character",
+   "label": "农资公司销售小肖（绿色POLO衫，卡其围裙，高马尾）",
+   "description": {
+    "en": "Xiao, a bright Chinese woman in her mid-twenties with her black hair in a high ponytail, a fresh round face and eager dark eyes, wearing a bright green company polo shirt under a khaki apron. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "小肖，二十五岁左右、爽朗的中国女性，黑色头发扎成高马尾，一张清爽的圆脸，热切的深色眼睛，穿着亮绿色公司POLO衫、外面系着卡其色围裙。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of a Chinese woman, her black hair in a high ponytail, a fresh round face, eager dark eyes, wearing a bright green company polo shirt under a khaki apron. She faces the camera with a bright, polite expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "ranger_old",
+   "kind": "image",
+   "role": "character",
+   "label": "老护林员（褪色的橄榄绿护林外套，旧草帽）",
+   "description": {
+    "en": "The old ranger, a lean Chinese man in his late sixties with a deeply weathered face, white stubble and deep-set dark eyes, wearing a faded olive forestry jacket and a battered straw hat. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "老护林员，六十多岁、精瘦的中国男性，一张被风吹日晒得满是沟壑的脸，下巴上是白色胡茬，深陷的深色眼睛，穿着褪色的橄榄绿护林外套、戴着一顶旧草帽。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of a Chinese man, a deeply weathered face, white stubble, deep-set dark eyes, wearing a faded olive forestry jacket and a battered straw hat. He faces the camera with a dry, watchful expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "zhao_boss",
+   "kind": "image",
+   "role": "character",
+   "label": "赵虎（物流老板，黑色皮背心，金链子）",
+   "description": {
+    "en": "Zhao Hu, a heavy-set Chinese man in his fifties with a shaved head, a thick neck, small dark eyes and a gold chain at his neck, wearing a sleeveless black leather vest over a sweat-stained grey t-shirt. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "赵虎，五十岁左右、体格粗壮的中国男性，光头，脖子粗，小而黑的眼睛，脖子上戴着金链子，穿着无袖黑色皮背心、里面是被汗浸湿的灰色T恤。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of a Chinese man, a shaved head, a thick neck, small dark eyes, a gold chain at his neck, wearing a sleeveless black leather vest over a sweat-stained grey t-shirt. He faces the camera with a sly, greedy expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "biao_thug",
+   "kind": "image",
+   "role": "character",
+   "label": "彪子（赵虎的小弟，灰色连帽衫，反戴棒球帽）",
+   "description": {
+    "en": "Biao, a lean wiry Chinese man in his twenties with a thin stubbled face and restless dark eyes, wearing a faded grey hoodie and a backwards baseball cap over short black hair. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "彪子，二十多岁、瘦而精悍的中国男性，一张长着胡茬的瘦脸，不安分的深色眼睛，穿着褪色的灰色连帽衫、反戴着棒球帽，帽下是黑色短发。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of a Chinese man, a thin stubbled face, restless dark eyes, wearing a faded grey hoodie and a backwards baseball cap over short black hair. He faces the camera with an eager, nervous expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "bunker_living",
+   "kind": "image",
+   "role": "scene",
+   "label": "安全屋的生活区（暖黄灯，25℃）",
+   "description": {
+    "en": "The cozy living area of an underground hideout: an open kitchen with a black-and-gold stove and a marble counter at the left, a thick cream wool rug and a small round wooden dining table in the middle, a wall of small security monitors at the center-right, a heavy round steel hatch door in the right wall, warm amber light from soft recessed lamps. The reference fixes the layout and decor.",
+    "zh": "地下藏身处温馨的生活区：左边是开放式厨房、黑金色炉灶和大理石台面，中间是厚厚的奶白色羊毛地毯和一张小小的圆形木餐桌，中右是一整面小监控屏墙，右墙是一扇厚重的圆形钢制舱门，柔和的嵌灯投下暖琥珀色的光。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of the cozy living area of an underground hideout: an open kitchen with a black-and-gold stove and a marble counter at the left, a thick cream wool rug and a small round wooden dining table in the middle, a wall of small security monitors at the center-right, a heavy round steel hatch door in the right wall, warm amber light from soft recessed lamps, nobody in the scene. The frame holds the kitchen, the rug, the dining table, the monitor wall and the hatch.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "studio_night",
+   "kind": "image",
+   "role": "scene",
+   "label": "林峰的气候建模工作室（深夜）",
+   "description": {
+    "en": "A late-night climate-modeling studio in a Chinese city: a long desk with two large monitors showing a pale satellite map of a volcanic ash cloud and several orange prediction curves falling downward at the left, a worn brown leather sofa with a rumpled blanket at the right, cold coffee cups on the desk, a floor-to-ceiling window across the back wall showing a warm night cityscape with a long ribbon of car headlights on an elevated road and rows of lit apartment windows, warm amber lamp light. The reference fixes the layout and decor.",
+    "zh": "深夜里中国某城市的气候建模工作室：左边是一张长桌，上面两块大屏幕，显示着火山灰扩散的苍白卫星图和几条向下落的橙色预测曲线，右边是一张旧的棕色皮沙发、上面一条皱巴巴的毯子，桌上有凉掉的咖啡杯，后墙是落地窗、窗外是暖色的夜景——高架桥上一长串车灯、一排排亮着的住宅窗户，暖琥珀色的台灯光。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a late-night climate-modeling studio in a Chinese city: a long desk with two large monitors showing a pale satellite map of a volcanic ash cloud and several orange prediction curves falling downward at the left, a worn brown leather sofa with a rumpled blanket at the right, cold coffee cups on the desk, a floor-to-ceiling window across the back wall showing a warm night cityscape with a long ribbon of car headlights on an elevated road and rows of lit apartment windows, warm amber lamp light, nobody in the scene. The frame holds the desk with the two monitors, the sofa and the window with the city lights.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "bank_room",
+   "kind": "image",
+   "role": "scene",
+   "label": "银行的贵宾洽谈室（清晨阳光）",
+   "description": {
+    "en": "A private banking room in a Chinese city bank in bright morning sunlight: a long walnut meeting table in the middle of the room with a stack of thick documents and a pen on it, floor-to-ceiling windows across the back wall showing a sunlit skyline, a glass door in the right wall, a potted palm in the left corner, spotless and quiet. The reference fixes the layout and decor.",
+    "zh": "中国某城市银行清晨阳光里的贵宾洽谈室：房间中间是一张长长的胡桃木会议桌，桌上放着一摞厚厚的文件和一支笔，后墙是落地窗、窗外是阳光下的天际线，右墙是一扇玻璃门，左边角落摆着一盆盆栽，整洁安静。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a private banking room in a Chinese city bank in bright morning sunlight: a long walnut meeting table in the middle of the room with a stack of thick documents and a pen on it, floor-to-ceiling windows across the back wall showing a sunlit skyline, a glass door in the right wall, a potted palm in the left corner, spotless and quiet, nobody in the scene. The frame holds the walnut table, the sunlit windows, the glass door and the palm.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "penthouse",
+   "kind": "image",
+   "role": "scene",
+   "label": "市中心豪华大平层（冷气很足，窗外是烈日）",
+   "description": {
+    "en": "A luxury penthouse living room in a Chinese city: a glass dining table in the middle of the room, floor-to-ceiling windows across the back wall showing a white-hot skyline of glass towers under a blazing sun, a white sectional sofa against the left wall, a wide entry hall at the right with three black tactical backpacks lined up on the floor beside it, cool air-conditioned light. The reference fixes the layout and decor.",
+    "zh": "中国某城市的豪华大平层客厅：房间中间是一张玻璃餐桌，后墙是落地窗、窗外是烈日下白热的玻璃幕墙天际线，左墙边是白色组合沙发，右边是宽敞的玄关、旁边地上并排放着三个黑色战术背包，冷色的空调光。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a luxury penthouse living room in a Chinese city: a glass dining table in the middle of the room, floor-to-ceiling windows across the back wall showing a white-hot skyline of glass towers under a blazing sun, a white sectional sofa against the left wall, a wide entry hall at the right with three black tactical backpacks lined up on the floor beside it, cool air-conditioned light, nobody in the scene. The frame holds the glass table, the windows, the sofa and the entry hall with the backpacks.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "outdoor_store",
+   "kind": "image",
+   "role": "scene",
+   "label": "夏天的户外用品店（外面烈日）",
+   "description": {
+    "en": "A well-stocked outdoor-gear store in a Chinese city in midsummer: racks of thick down parkas, ski jackets and sleeping bags along the left wall, a checkout counter with a cash register at the middle-right, a broad glass shopfront at the right showing a white-hot summer street, cool air-conditioned light. The reference fixes the layout and decor.",
+    "zh": "中国某城市盛夏里货品齐全的户外用品店：左墙边是一排排厚厚的羽绒服、滑雪服和睡袋，中右是带收银机的收银台，右边是宽大的玻璃橱窗、窗外是白热的夏日街道，冷色的空调光。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a well-stocked outdoor-gear store in a Chinese city in midsummer: racks of thick down parkas, ski jackets and sleeping bags along the left wall, a checkout counter with a cash register at the middle-right, a broad glass shopfront at the right showing a white-hot summer street, cool air-conditioned light, nobody in the scene. The frame holds the parka racks, the checkout counter and the sunlit shopfront.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "coal_yard",
+   "kind": "image",
+   "role": "scene",
+   "label": "夏天的煤场（热浪）",
+   "description": {
+    "en": "A coal yard on the outskirts of a Chinese city in midsummer: huge black mountains of anthracite filling the left half of the yard, a small brick office with a weighbridge at the middle-right, a yellow wheel loader parked at the right, hazy white sun and heat shimmering over the coal dust. The reference fixes the layout and decor.",
+    "zh": "盛夏里中国某城市郊外的煤场：左半边是巨大的黑色无烟煤山，中右是带地磅的小砖房，右边停着一辆黄色轮式装载机，白晃晃的太阳，热浪在煤灰上方抖动。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a coal yard on the outskirts of a Chinese city in midsummer: huge black mountains of anthracite filling the left half of the yard, a small brick office with a weighbridge at the middle-right, a yellow wheel loader parked at the right, hazy white sun and heat shimmering over the coal dust, nobody in the scene. The frame holds the coal mountains, the brick office and the loader.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "agri_store",
+   "kind": "image",
+   "role": "scene",
+   "label": "农资公司的展厅",
+   "description": {
+    "en": "A neat, modern agricultural-supply showroom in a Chinese city: tall shelves of full-spectrum grow lamps and rows of colorful vegetable seed packets along the left wall, a long counter in the middle with stacks of white foam seedling blocks, seed trays and jugs of nutrient solution on it, a glass front door at the right showing a hot bright street, bright white shop light. The reference fixes the layout and decor.",
+    "zh": "中国某城市整洁现代的农资公司展厅：左墙边是高高的全光谱生长灯货架和一排排五颜六色的蔬菜种子，中间是一条长柜台、台面上堆着白色海绵育苗块、育苗盘和一桶桶营养液，右边是玻璃大门、门外是炎热明亮的街道，明亮的白色店内灯光。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a neat, modern agricultural-supply showroom in a Chinese city: tall shelves of full-spectrum grow lamps and rows of colorful vegetable seed packets along the left wall, a long counter in the middle with stacks of white foam seedling blocks, seed trays and jugs of nutrient solution on it, a glass front door at the right showing a hot bright street, bright white shop light, nobody in the scene. The frame holds the grow-lamp shelves, the seed packets, the counter and the glass door.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "freight_yard",
+   "kind": "image",
+   "role": "scene",
+   "label": "货运站（碎石院子，卡车排成一排）",
+   "description": {
+    "en": "A dusty gravel freight yard of a trucking company in midsummer: a small yard office with a rolled-up shutter at the left, a row of box trucks along the back, stacks of wooden pallets at the middle-right, an open chain-link yard gate at the right with a dirt road leading out of it, hard white sunlight and heat shimmering. The reference fixes the layout and decor.",
+    "zh": "盛夏里一家货运公司尘土飞扬的碎石货运站：左边是卷帘门拉起的小办公室，后面一排厢式卡车，中右是几摞木托盘，右边是敞开的铁丝网院门、门外一条土路，白花花的硬光，热浪抖动。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a dusty gravel freight yard of a trucking company in midsummer: a small yard office with a rolled-up shutter at the left, a row of box trucks along the back, stacks of wooden pallets at the middle-right, an open chain-link yard gate at the right with a dirt road leading out of it, hard white sunlight and heat shimmering, nobody in the scene. The frame holds the office, the row of trucks, the pallets and the open gate.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "shelter_old",
+   "kind": "image",
+   "role": "scene",
+   "label": "深山里的旧防空洞口（老铁门半开）",
+   "description": {
+    "en": "A quiet overgrown forest hillside in China: an old concrete shelter portal covered in vines with a rusted steel door standing half open, cut into the hillside at the left, a narrow dirt trail through the middle, tall pine trees all around and a pale hazy sky between the treetops, no vehicles, soft hazy noon light. The reference fixes the layout and decor.",
+    "zh": "中国深山里安静而杂草丛生的树林山坡：左边山坡上有一个爬满藤蔓的旧混凝土防空洞口、生锈的铁门半开着，中间是一条窄窄的土路，四周是高高的松树、树梢之间露出苍白朦胧的天空，没有车，柔和朦胧的正午光。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a quiet overgrown forest hillside in China: an old concrete shelter portal covered in vines with a rusted steel door standing half open, cut into the hillside at the left, a narrow dirt trail through the middle, tall pine trees all around and a pale hazy sky between the treetops, no vehicles, soft hazy noon light, nobody in the scene. The frame holds the old shelter portal, the trail, the pines and the pale sky.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "bunker_empty",
+   "kind": "image",
+   "role": "scene",
+   "label": "空荡荡的防空洞大厅（地下水渠）",
+   "description": {
+    "en": "A vast empty three-storey concrete hall of an abandoned civil-defense shelter: bare walls, rusty railings along two upper levels at the back, a shallow concrete channel of clear running water crossing the foreground from left to right, a row of round concrete pillars at the right, dust hanging in pale flashlight beams. The reference fixes the layout and decor.",
+    "zh": "废弃防空洞里巨大而空荡荡的三层混凝土大厅：墙面光秃秃的，后面两层楼的生锈栏杆，一条浅浅的混凝土水渠、清澈的水从前景左边流向右边，右边是一排圆形混凝土立柱，灰尘悬在苍白的手电光束里。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a vast empty three-storey concrete hall of an abandoned civil-defense shelter: bare walls, rusty railings along two upper levels at the back, a shallow concrete channel of clear running water crossing the foreground from left to right, a row of round concrete pillars at the right, dust hanging in pale flashlight beams, nobody in the scene. The frame holds the bare hall, the water channel and the pillars.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "bunker_work",
+   "kind": "image",
+   "role": "scene",
+   "label": "堆满货的防空洞大厅里的工作台",
+   "description": {
+    "en": "A steel workbench in a vast underground concrete hall packed with supplies: the bench at the center with a shallow tub of clear water, a stack of white foam seeding blocks and an open seed packet on it, towering stacks of steel crates, pallets of boxes, generators and big water tanks filling the hall behind it and along both sides, hard white work lamps overhead. The reference fixes the layout and decor.",
+    "zh": "堆满物资的巨大地下混凝土大厅里的一张钢制工作台：台子在中间，上面放着一盆清水、一摞白色海绵育苗块和一包打开的种子，后面和两侧是高高的钢箱、成托盘的货箱、发电机和巨大的水箱，头顶是白色的硬质工作灯。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a steel workbench in a vast underground concrete hall packed with supplies: the bench at the center with a shallow tub of clear water, a stack of white foam seeding blocks and an open seed packet on it, towering stacks of steel crates, pallets of boxes, generators and big water tanks filling the hall behind it and along both sides, hard white work lamps overhead, nobody in the scene. The frame holds the workbench with the water tub, and the stacked supplies behind it.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "tunnel_mouth",
+   "kind": "image",
+   "role": "scene",
+   "label": "深山里的隧道口（同一处旧防空洞，铁门大开，卡车在右）",
+   "description": {
+    "en": "The same forested mountain hillside in summer as in the reference image: the old concrete shelter portal covered in vines with its rusted steel door swung wide open on a black interior, cut into the hillside at the left, a gravel clearing in the middle, a large box truck with its rear door rolled up and crates stacked at its back at the right, tall pine trees all around, hard noon light. The reference fixes the layout and decor.",
+    "zh": "和参考图是同一座夏天的深山树林山坡：左边山坡上是那个爬满藤蔓的旧混凝土防空洞口、生锈的铁门大开着露出黑洞洞的里面，中间是一片碎石空地，右边停着一辆后门卷起、后面堆着箱子的大型厢式卡车，四周是高高的松树，正午的硬光。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of the same forested mountain hillside in summer as in the reference image: the old concrete shelter portal covered in vines with its rusted steel door swung wide open on a black interior, cut into the hillside at the left, a gravel clearing in the middle, a large box truck with its rear door rolled up and crates stacked at its back at the right, tall pine trees all around, hard noon light, nobody in the scene. The frame holds the open dark portal, the gravel clearing, the box truck and the pines.",
+    "reference_keys": [
+     "shelter_old"
+    ]
+   }
+  },
+  {
+   "key": "hill_hidden",
+   "kind": "image",
+   "role": "scene",
+   "label": "同一座山坡（入口已被伪装，只剩青苔岩石和枯树桩，卡车还在右边）",
+   "description": {
+    "en": "The same forested mountain hillside in summer as in the reference image, now with no tunnel mouth: a moss-covered boulder and a dead tree stump sit on the slope at the left where the tunnel mouth was, a gravel clearing in the middle, the same large box truck still standing at the right, tall pine trees all around, hard noon light. The reference fixes the layout and decor.",
+    "zh": "和参考图是同一座夏天的深山树林山坡，只是隧道口不见了：左边坡上原本是隧道口的位置现在是一块长满青苔的岩石和一截枯树桩，中间是碎石空地，右边还是那辆大型厢式卡车，四周是高高的松树，正午的硬光。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of the same forested mountain hillside in summer as in the reference image, now with no tunnel mouth: a moss-covered boulder and a dead tree stump sit on the slope at the left where the tunnel mouth was, a gravel clearing in the middle, the same large box truck still standing at the right, tall pine trees all around, hard noon light, nobody in the scene. The frame holds the boulder, the stump, the clearing, the truck and the pines.",
+    "reference_keys": [
+     "tunnel_mouth"
+    ]
+   }
+  }
+ ],
+ "characters": {
+  "LinStudio": {
+   "image_keys": [
+    "lin_studio"
+   ],
+   "voice_description": {
+    "en": "A mature adult male voice, calm and level with a dry cold edge, speaking clear Mandarin Chinese. He never raises his voice. Every word is fully voiced and audible.",
+    "zh": "成熟成年男声，平稳镇定，带一点干冷的质感，普通话清楚。他从不提高音量。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "LinBank": {
+   "image_keys": [
+    "lin_bank"
+   ],
+   "voice_description": {
+    "en": "A mature adult male voice, calm and level with a dry cold edge, speaking clear Mandarin Chinese. He never raises his voice. Every word is fully voiced and audible.",
+    "zh": "成熟成年男声，平稳镇定，带一点干冷的质感，普通话清楚。他从不提高音量。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "LinWork": {
+   "image_keys": [
+    "lin_work"
+   ],
+   "voice_description": {
+    "en": "A mature adult male voice, calm and level with a dry cold edge, speaking clear Mandarin Chinese. He never raises his voice. Every word is fully voiced and audible.",
+    "zh": "成熟成年男声，平稳镇定，带一点干冷的质感，普通话清楚。他从不提高音量。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "LinHome": {
+   "image_keys": [
+    "lin_home"
+   ],
+   "voice_description": {
+    "en": "A mature adult male voice, calm and level with a dry cold edge, speaking clear Mandarin Chinese. He never raises his voice. Every word is fully voiced and audible.",
+    "zh": "成熟成年男声，平稳镇定，带一点干冷的质感，普通话清楚。他从不提高音量。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "Su": {
+   "image_keys": [
+    "su_suit"
+   ],
+   "voice_description": {
+    "en": "A confident adult woman's voice, low, smooth and slightly husky, speaking clear Mandarin Chinese with a sharp, measured edge. Every word is fully voiced and audible.",
+    "zh": "自信的成年女声，低沉、顺滑、略带沙哑，普通话清楚，带着锐利而有分寸的质感。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "Wen": {
+   "image_keys": [
+    "wen_blazer"
+   ],
+   "voice_description": {
+    "en": "A young adult woman's voice, brisk and attentive, speaking clear Mandarin Chinese. Every word is fully voiced and audible.",
+    "zh": "年轻成年女声，干练、专注，普通话清楚。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "Ning": {
+   "image_keys": [
+    "ning_partner"
+   ],
+   "voice_description": {
+    "en": "A young adult male voice, hoarse and weary, speaking clear Mandarin Chinese. Every word is fully voiced and audible.",
+    "zh": "年轻成年男声，沙哑、疲惫，普通话清楚。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "Liang": {
+   "image_keys": [
+    "liang_banker"
+   ],
+   "voice_description": {
+    "en": "A mature adult woman's voice, polished, courteous and precise, speaking clear Mandarin Chinese. Every word is fully voiced and audible.",
+    "zh": "成熟成年女声，圆润、有礼貌、吐字精准，普通话清楚。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "Sun": {
+   "image_keys": [
+    "sun_agent"
+   ],
+   "voice_description": {
+    "en": "A young adult male voice, thin and anxious, speaking clear Mandarin Chinese. Every word is fully voiced and audible.",
+    "zh": "年轻成年男声，发细、焦虑，普通话清楚。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "Ma": {
+   "image_keys": [
+    "ma_outdoor"
+   ],
+   "voice_description": {
+    "en": "A heavy adult male voice, loud and jovial, speaking clear Mandarin Chinese. Every word is fully voiced and audible.",
+    "zh": "浑厚的成年男声，嗓门大、爱笑，普通话清楚。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "Gu": {
+   "image_keys": [
+    "gu_coal"
+   ],
+   "voice_description": {
+    "en": "A gravelly adult male voice, hoarse from coal dust and slow, speaking clear Mandarin Chinese. Every word is fully voiced and audible.",
+    "zh": "沙哑的成年男声，被煤灰熏得嘶哑、语速慢，普通话清楚。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "Xiao": {
+   "image_keys": [
+    "xiao_agri"
+   ],
+   "voice_description": {
+    "en": "A young adult woman's voice, bright, polite and eager, speaking clear Mandarin Chinese. Every word is fully voiced and audible.",
+    "zh": "年轻成年女声，明亮、礼貌、热切，普通话清楚。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "Ranger": {
+   "image_keys": [
+    "ranger_old"
+   ],
+   "voice_description": {
+    "en": "An old adult male voice, dry, slow and raspy, speaking clear Mandarin Chinese. Every word is fully voiced and audible.",
+    "zh": "年老的成年男声，干涩、缓慢、嘶哑，普通话清楚。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "Zhao": {
+   "image_keys": [
+    "zhao_boss"
+   ],
+   "voice_description": {
+    "en": "A heavy adult male voice, gravelly and smug, speaking clear Mandarin Chinese. Every word is fully voiced and audible.",
+    "zh": "粗重的成年男声，沙砾般粗糙、得意，普通话清楚。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "Biao": {
+   "image_keys": [
+    "biao_thug"
+   ],
+   "voice_description": {
+    "en": "A young adult male voice, nasal and eager, speaking clear Mandarin Chinese. Every word is fully voiced and audible.",
+    "zh": "年轻成年男声，带鼻音、急切，普通话清楚。每个字都正常发声、清晰可辨。"
+   }
+  }
+ },
+ "episodes": [
+  {
+   "title": "剧本第1集｜七天",
+   "summary": "冷开场：外面是暴风雪，地下安全屋里林峰在切牛排。七天前，深夜的工作室里林峰算出七天后全城供暖要停，合伙人周宁不信；他决定把房子车子全卖。第二天银行里，梁经理惊讶地看着他把授信全部拿满，他说要修度假村；签完字，他心里说：七天后，钱是废纸，欠条也一样。",
+   "script": "冷开场，地下安全屋里林峰切牛排，抬眼看监控墙里的暴风雪，低声自言自语，林峰慢慢用刀叉切下厚牛排的一片，光脚踩在奶白色的地毯上，然后抬眼看向监控墙——每块屏幕里都是呼啸的白色暴风雪，然后他低声自言自语了一句，不是对任何人说的，嘴唇轻轻动着，同时把红酒杯微微举起，下颌放松、眉毛舒展。房间里没有别人。\nLinHome：“七天前，没人信我。”\n插镜，深夜的工作室里没有人，显示器上橙色曲线陡直下落，空无一人的深夜工作室，长桌上两块大屏幕亮着，显示着苍白的火山灰云图和陡直下落的橙色曲线，键盘旁有一杯凉掉的咖啡和一副细黑框眼镜，身后的窗外是不眠的城市。别的什么都不动。\n深夜工作室，林峰摘下眼镜说七天后暖气就停，周宁不信，林峰又补一句，林峰站在桌边，眼睛盯着显示器——橙色的曲线陡直下落，然后他慢慢摘下眼镜，然后把头转向周宁约四十五度，用低沉平淡的声音对周宁说出第一句，下颌绷紧、眉头压低。周宁从沙发上坐起来，外套从一边肩膀滑下去，用沙哑而怀疑的声音对林峰说出第二句，嘴唇抿着、眉头拧在一起。林峰用同样平静的声音对周宁说出第三句，眼睛稳稳看着周宁，下颌绷紧。\nLinStudio：“七天后，暖气就停。”\nNing：“气象台说，只是寒潮。”\nLinStudio：“他们说错了。”\n同一间工作室，林峰说房子今天就卖，周宁劝他，林峰让价，林峰用平淡稳当的声音对周宁说出第一句，下颌绷紧、眉毛平直。周宁在沙发上往前探身，用惊惶的声音对林峰说出第二句，嘴唇微张、眉头拧在一起。林峰摇了一下头，用同样稳当的声音对周宁说出第三句，眼睛稳稳看着周宁。\nLinStudio：“房子今天就卖。”\nNing：“卖了就买不回来了！”\nLinStudio：“价格，再让一成。”\n插镜，清晨的银行洽谈室里没有人，桌上一摞文件和一支笔，空无一人的银行贵宾洽谈室，清晨的阳光洒在长长的胡桃木桌上，一摞厚厚的文件和一支笔并排放着，身后高高的窗外天际线闪着光，右边的玻璃门关着。别的什么都不动。\n银行，梁经理翻着文件问是不是全拿，林峰只答全拿，再说要修度假村，梁经理翻着那一大摞厚厚的文件，眉毛随着每一页越挑越高，然后抬起头，用谨慎而吃惊的声音对林峰说出第一句，嘴唇微张、眉毛高挑。林峰用平静稳当的声音对梁经理说出第二句，眼睛稳稳看着她，停了一拍，看着她的眉毛挑得更高，再用同样平静的声音对梁经理说出第三句，嘴唇抿平、眉毛平直，同时开始在第一页上签字。\nLiang：“您一直不提授信，现在全拿？”\nLinBank：“全拿。”\nLinBank：“我要修一座度假村。”\n同一张桌子，梁经理收好签好的文件，说还款时间，鞠躬走出玻璃门，梁经理把签好的文件一页页理齐放进文件夹，站起来，双手捧着它，用热情殷勤的声音对林峰说出第一句，嘴角带着殷勤满意的弧度、眉毛上扬。林峰揉着发酸的手腕，用平静的声音对梁经理说出第二句，下颌放松、嘴唇抿平。梁经理微微欠身致意，对林峰说出第三句，然后走向画面右边的玻璃门，穿过去离开，直到门口空无一人。\nLiang：“第一笔还款在半年后。”\nLinBank：“我记得。”\nLiang：“祝您顺利。”\n银行，梁经理走后，林峰一个人揉着手腕，低声自言自语，林峰揉着发酸的手腕，低头看着签好的文件，然后抬起眼睛，看着桌子对面梁经理刚才坐的空椅子，低声自言自语了一句，不是对任何人说的，嘴唇轻轻动着，接着又是一句很短的，眼睛一直看着那把空椅子，下颌放松、眉毛舒展。房间里没有别人。\nLinBank：“七天后，钱是废纸。”\nLinBank：“欠条，也一样。”",
+   "segments": [
+    {
+     "title": "01｜冷开场：地下安全屋里林峰切牛排，抬眼看监控墙里的暴风雪，低声自言自语",
+     "duration_seconds": 9,
+     "generation_seconds": 9,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "LinHome"
+     ],
+     "asset_keys": [
+      "bunker_living",
+      "lin_home"
+     ],
+     "image_reference_keys": [
+      "bunker_living"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium shot, the figure from the head to the waist, in the middle third of the frame, at the dining table. Lin (a Chinese man in his early thirties) at frame-center, seated at the small round dining table in profile facing frame-right, a knife and fork in his hands over a thick steak, a glass of red wine beside the plate, in a soft grey cotton long-sleeve henley and loose dark lounge pants, barefoot, his hair damp from a shower, his steady dark-brown eyes on the wall of security monitors at frame-right, his jaw relaxed, his brows soft, his lips relaxed. On the wall of security monitors at frame-right every screen shows a white blizzard raging over a buried, silent street. The frame holds Lin alone at the dining table and the monitor wall. Warm amber light from soft recessed lamps fills the cozy underground living area. Fixed stage layout: the open kitchen with a black-and-gold stove and a marble counter is at frame-left; a thick cream wool rug and a small round wooden dining table fill the middle of the frame; a wall of small security monitors is at frame-center-right; a heavy round steel hatch door is in the right wall at the far frame-right.",
+     "visual_zh": "林峰慢慢用刀叉切下厚牛排的一片，光脚踩在奶白色的地毯上，然后抬眼看向监控墙——每块屏幕里都是呼啸的白色暴风雪，然后他低声自言自语了一句，不是对任何人说的，嘴唇轻轻动着，同时把红酒杯微微举起，下颌放松、眉毛舒展。房间里没有别人。",
+     "camera_zh": "0—9秒，镜头慢慢推近，直到林峰和监控墙占满画面中间三分之一。",
+     "dialogue": [
+      {
+       "speaker": "LinHome",
+       "text": "七天前，没人信我。",
+       "start_seconds": 4.2,
+       "end_seconds": 6.3,
+       "language": "zh"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 9,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. [[asset:lin_home]] slowly cuts a slice from the thick steak with the knife and fork, his bare feet on the cream rug, then lifts his eyes to the wall of monitors where a white blizzard rages on every screen, then murmurs one line to himself in a low voice, talking to nobody, his lips moving softly, and lifts the wine glass a little, his jaw relaxed and his brows soft. Nobody else is in the room. The camera pushes in slowly until Lin and the monitor wall fill the middle third of the frame.",
+       "visual_zh": "林峰慢慢用刀叉切下厚牛排的一片，光脚踩在奶白色的地毯上，然后抬眼看向监控墙——每块屏幕里都是呼啸的白色暴风雪，然后他低声自言自语了一句，不是对任何人说的，嘴唇轻轻动着，同时把红酒杯微微举起，下颌放松、眉毛舒展。房间里没有别人。 镜头慢慢推近，直到林峰和监控墙占满画面中间三分之一。",
+       "dialogue_indices": [
+        0
+       ]
+      }
+     ],
+     "sound_en": "Butter and meat sizzling faintly, a low howl of wind from the monitor speakers, the quiet hum of the air system and his low murmur. Voices stay close and clear.",
+     "sound_zh": "黄油和牛排轻轻的滋滋声、监控喇叭里低低的风的呼啸、空气系统安静的嗡鸣和他低低的自语。人声近而清楚。",
+     "seed": 33101,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "02｜插镜：深夜的工作室里没有人，显示器上橙色曲线陡直下落",
+     "duration_seconds": 3,
+     "generation_seconds": 3,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [],
+     "asset_keys": [
+      "studio_night"
+     ],
+     "image_reference_keys": [
+      "studio_night"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Wide establishing shot of the empty late-night studio, the two monitors in the middle third of the frame, nobody in the room.  The frame holds the long desk with the two glowing monitors, the sofa with the rumpled blanket and the window with the city lights, and nobody in the room. Warm amber desk-lamp light and the cool glow of two monitors fill the late-night studio while the sleepless city glitters outside the window. Fixed stage layout: the long desk with two large monitors showing a pale satellite map of an ash cloud and several orange curves falling downward is at frame-left; the worn brown leather sofa with a rumpled blanket stands at frame-right; the floor-to-ceiling window across the back wall shows a warm night city with a long line of car headlights on an elevated road and rows of lit apartment windows.",
+     "visual_zh": "空无一人的深夜工作室：长桌上两块大屏幕亮着，显示着苍白的火山灰云图和陡直下落的橙色曲线，键盘旁有一杯凉掉的咖啡和一副细黑框眼镜，身后的窗外是不眠的城市。别的什么都不动。",
+     "camera_zh": "0—3秒，镜头慢慢推近，直到显示器占满画面中间三分之一。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 3,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. The two large monitors on the long desk glow with the pale ash-cloud map and the orange curves falling steeply, a cold coffee cup and a pair of thin black-framed glasses lie beside the keyboard, and the sleepless city glitters in the window behind. Nothing else moves. The camera pushes in slowly until the monitors fill the middle third of the frame.",
+       "visual_zh": "空无一人的深夜工作室：长桌上两块大屏幕亮着，显示着苍白的火山灰云图和陡直下落的橙色曲线，键盘旁有一杯凉掉的咖啡和一副细黑框眼镜，身后的窗外是不眠的城市。别的什么都不动。 镜头慢慢推近，直到显示器占满画面中间三分之一。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "A faint electronic hum from the monitors and the low murmur of the sleeping city far below. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here.",
+     "sound_zh": "显示器轻微的电子嗡鸣，和楼下沉睡的城市低低的嘈杂。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。",
+     "seed": 33102,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "03｜深夜工作室：林峰摘下眼镜说七天后暖气就停，周宁不信，林峰又补一句",
+     "duration_seconds": 10,
+     "generation_seconds": 10,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "LinStudio",
+      "Ning"
+     ],
+     "asset_keys": [
+      "studio_night",
+      "lin_studio",
+      "ning_partner"
+     ],
+     "image_reference_keys": [
+      "studio_night"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium-wide shot, both men from the head to the knees, in the middle third of the frame, in the late-night studio. Lin (a Chinese man in his early thirties) at frame-center, standing beside the long desk, his body facing frame-left, one hand resting on the keyboard, in a rumpled white dress shirt with the sleeves rolled to his forearms and a loosened collar, thin black-framed glasses on his nose, his tired but steady dark-brown eyes on the orange curves on the monitors at frame-left, his jaw set, his brows pulled low. Ning (a Chinese man in his early thirties) at frame-right, half-lying on the leather sofa in profile facing frame-left, propped on one elbow with the puffer coat draped over his shoulders, in a grey hooded sweatshirt with a dark puffer coat draped over his shoulders, his bleary dark eyes on Lin, his lips parted, his brows pulled together. The frame holds Lin at the desk with the monitors and Ning on the sofa. Warm amber desk-lamp light and the cool glow of two monitors fill the late-night studio while the sleepless city glitters outside the window. Fixed stage layout: the long desk with two large monitors showing a pale satellite map of an ash cloud and several orange curves falling downward is at frame-left; the worn brown leather sofa with a rumpled blanket stands at frame-right; the floor-to-ceiling window across the back wall shows a warm night city with a long line of car headlights on an elevated road and rows of lit apartment windows.",
+     "visual_zh": "林峰站在桌边，眼睛盯着显示器——橙色的曲线陡直下落，然后他慢慢摘下眼镜，然后把头转向周宁约四十五度，用低沉平淡的声音对周宁说出第一句，下颌绷紧、眉头压低。周宁从沙发上坐起来，外套从一边肩膀滑下去，用沙哑而怀疑的声音对林峰说出第二句，嘴唇抿着、眉头拧在一起。林峰用同样平静的声音对周宁说出第三句，眼睛稳稳看着周宁，下颌绷紧。",
+     "camera_zh": "0—10秒，镜头固定不动。",
+     "dialogue": [
+      {
+       "speaker": "LinStudio",
+       "text": "七天后，暖气就停。",
+       "start_seconds": 0.8,
+       "end_seconds": 2.9,
+       "language": "zh"
+      },
+      {
+       "speaker": "Ning",
+       "text": "气象台说，只是寒潮。",
+       "start_seconds": 3.8,
+       "end_seconds": 6.15,
+       "language": "zh"
+      },
+      {
+       "speaker": "LinStudio",
+       "text": "他们说错了。",
+       "start_seconds": 6.6,
+       "end_seconds": 8.08,
+       "language": "zh"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 10,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. [[asset:lin_studio]] stands at the desk with his eyes on the monitors where the orange curves fall steeply, then slowly takes off his glasses, then turns his head about 45 degrees toward [[asset:ning_partner]] and speaks the first line to [[asset:ning_partner]] in a low flat voice, his jaw set and his brows pulled low. [[asset:ning_partner]] sits up on the sofa with the coat sliding down one shoulder and speaks the second line to [[asset:lin_studio]] in a hoarse, doubtful voice, his lips pressed and his brows pulled together. [[asset:lin_studio]] answers with the third line to [[asset:ning_partner]] in the same calm voice, his eyes steady on [[asset:ning_partner]], his jaw set. The camera holds still.",
+       "visual_zh": "林峰站在桌边，眼睛盯着显示器——橙色的曲线陡直下落，然后他慢慢摘下眼镜，然后把头转向周宁约四十五度，用低沉平淡的声音对周宁说出第一句，下颌绷紧、眉头压低。周宁从沙发上坐起来，外套从一边肩膀滑下去，用沙哑而怀疑的声音对林峰说出第二句，嘴唇抿着、眉头拧在一起。林峰用同样平静的声音对周宁说出第三句，眼睛稳稳看着周宁，下颌绷紧。 镜头固定不动。",
+       "dialogue_indices": [
+        0,
+        1,
+        2
+       ]
+      }
+     ],
+     "sound_en": "A faint electronic hum from the monitors and the low murmur of the sleeping city far below. Voices stay close and clear.",
+     "sound_zh": "显示器轻微的电子嗡鸣，和楼下沉睡的城市低低的嘈杂。人声近而清楚。",
+     "seed": 33103,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "04｜同一间工作室：林峰说房子今天就卖，周宁劝他，林峰让价",
+     "duration_seconds": 10,
+     "generation_seconds": 10,
+     "continuity": "cut",
+     "depends_on_previous": true,
+     "use_previous_episode_state": false,
+     "characters": [
+      "LinStudio",
+      "Ning"
+     ],
+     "asset_keys": [
+      "studio_night",
+      "lin_studio",
+      "ning_partner"
+     ],
+     "image_reference_keys": [
+      "studio_night"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium-wide shot, both men from the head to the knees, in the middle third of the frame, in the late-night studio. Lin (a Chinese man in his early thirties) at frame-center, standing beside the long desk, his body facing frame-left and his head turned toward Ning at frame-right, in a rumpled white dress shirt with the sleeves rolled to his forearms and a loosened collar, a pair of thin black-framed glasses held in his left hand, his tired but steady dark-brown eyes on Ning, his jaw set, his brows level. Ning (a Chinese man in his early thirties) at frame-right, sitting upright on the leather sofa in profile facing frame-left, the puffer coat sliding off one shoulder, in a grey hooded sweatshirt with a dark puffer coat draped over his shoulders, his bleary dark eyes on Lin, his lips parted, his brows pulled together. The frame holds Lin at the desk and Ning on the sofa. Warm amber desk-lamp light and the cool glow of two monitors fill the late-night studio while the sleepless city glitters outside the window. Fixed stage layout: the long desk with two large monitors showing a pale satellite map of an ash cloud and several orange curves falling downward is at frame-left; the worn brown leather sofa with a rumpled blanket stands at frame-right; the floor-to-ceiling window across the back wall shows a warm night city with a long line of car headlights on an elevated road and rows of lit apartment windows.",
+     "visual_zh": "林峰用平淡稳当的声音对周宁说出第一句，下颌绷紧、眉毛平直。周宁在沙发上往前探身，用惊惶的声音对林峰说出第二句，嘴唇微张、眉头拧在一起。林峰摇了一下头，用同样稳当的声音对周宁说出第三句，眼睛稳稳看着周宁。",
+     "camera_zh": "0—10秒，镜头固定不动。",
+     "dialogue": [
+      {
+       "speaker": "LinStudio",
+       "text": "房子今天就卖。",
+       "start_seconds": 0.7,
+       "end_seconds": 2.43,
+       "language": "zh"
+      },
+      {
+       "speaker": "Ning",
+       "text": "卖了就买不回来了！",
+       "start_seconds": 3.4,
+       "end_seconds": 5.63,
+       "language": "zh"
+      },
+      {
+       "speaker": "LinStudio",
+       "text": "价格，再让一成。",
+       "start_seconds": 6.3,
+       "end_seconds": 8.15,
+       "language": "zh"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 10,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. [[asset:lin_studio]] speaks the first line to [[asset:ning_partner]] in a flat steady voice, his jaw set and his brows level. [[asset:ning_partner]] leans forward on the sofa and speaks the second line to [[asset:lin_studio]] in an alarmed voice, his lips parted and his brows pulled together. [[asset:lin_studio]] shakes his head once and speaks the third line to [[asset:ning_partner]] in the same steady voice, his eyes steady on [[asset:ning_partner]]. The camera holds still.",
+       "visual_zh": "林峰用平淡稳当的声音对周宁说出第一句，下颌绷紧、眉毛平直。周宁在沙发上往前探身，用惊惶的声音对林峰说出第二句，嘴唇微张、眉头拧在一起。林峰摇了一下头，用同样稳当的声音对周宁说出第三句，眼睛稳稳看着周宁。 镜头固定不动。",
+       "dialogue_indices": [
+        0,
+        1,
+        2
+       ]
+      }
+     ],
+     "sound_en": "A faint electronic hum from the monitors and the low murmur of the sleeping city far below. Voices stay close and clear.",
+     "sound_zh": "显示器轻微的电子嗡鸣，和楼下沉睡的城市低低的嘈杂。人声近而清楚。",
+     "seed": 33104,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "05｜插镜：清晨的银行洽谈室里没有人，桌上一摞文件和一支笔",
+     "duration_seconds": 3,
+     "generation_seconds": 3,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [],
+     "asset_keys": [
+      "bank_room"
+     ],
+     "image_reference_keys": [
+      "bank_room"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Wide establishing shot of the empty private banking room in bright morning light, the table in the middle third of the frame, nobody in the room.  The frame holds the long walnut table with the documents and the pen, the sunlit windows, the glass door and the potted palm, and nobody in the room. Bright clear morning sunlight pours through the tall windows into the quiet, spotless private banking room. Fixed stage layout: the long walnut meeting table with a stack of thick documents and a pen stands in the middle of the frame; the floor-to-ceiling windows across the back wall show bright morning sunlight over a city skyline; a glass door is at frame-right; a potted palm stands at frame-left.",
+     "visual_zh": "空无一人的银行贵宾洽谈室，清晨的阳光洒在长长的胡桃木桌上，一摞厚厚的文件和一支笔并排放着，身后高高的窗外天际线闪着光，右边的玻璃门关着。别的什么都不动。",
+     "camera_zh": "0—3秒，镜头慢慢推近，直到文件和笔占满画面中间三分之一。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 3,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. Bright morning sunlight pours across the long walnut table where a thick stack of documents and a pen lie side by side, the skyline glitters in the tall windows behind, and the glass door at the right stands closed. Nothing else moves. The camera pushes in slowly until the documents and the pen fill the middle third of the frame.",
+       "visual_zh": "空无一人的银行贵宾洽谈室，清晨的阳光洒在长长的胡桃木桌上，一摞厚厚的文件和一支笔并排放着，身后高高的窗外天际线闪着光，右边的玻璃门关着。别的什么都不动。 镜头慢慢推近，直到文件和笔占满画面中间三分之一。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "A quiet air-conditioned room with the faint hum of the air system. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here.",
+     "sound_zh": "安静的、开着空调的房间，空调系统轻微的嗡鸣。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。",
+     "seed": 33105,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "06｜银行：梁经理翻着文件问是不是全拿，林峰只答全拿，再说要修度假村",
+     "duration_seconds": 10,
+     "generation_seconds": 10,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "LinBank",
+      "Liang"
+     ],
+     "asset_keys": [
+      "bank_room",
+      "lin_bank",
+      "liang_banker"
+     ],
+     "image_reference_keys": [
+      "bank_room"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium two-shot, both from the head to the waist, in the middle third of the frame, in the bank room. Lin (a Chinese man in his early thirties) at frame-left, seated at the walnut table in profile facing frame-right, a pen in his right hand, in a fitted charcoal blazer over a white open-collar shirt, his black hair neatly combed, his steady dark-brown eyes on Liang, his lips set flat, his brows level. Liang (a Chinese woman in her early forties) at frame-right, seated at the walnut table in profile facing frame-left, flipping through a thick stack of documents with one hand, in a tailored dove-grey skirt suit over a white blouse, small pearl earrings, her black hair in a neat shoulder-length bob, her composed dark eyes on Lin, her lips parted, her brows raised. On the walnut table between them lie the thick stack of documents and a pen, and the sunlit windows behind them glare with the bright morning skyline. The frame holds Lin and Liang, the walnut table with the documents and the sunlit windows behind them. Bright clear morning sunlight pours through the tall windows into the quiet, spotless private banking room. Fixed stage layout: the long walnut meeting table with a stack of thick documents and a pen stands in the middle of the frame; the floor-to-ceiling windows across the back wall show bright morning sunlight over a city skyline; a glass door is at frame-right; a potted palm stands at frame-left.",
+     "visual_zh": "梁经理翻着那一大摞厚厚的文件，眉毛随着每一页越挑越高，然后抬起头，用谨慎而吃惊的声音对林峰说出第一句，嘴唇微张、眉毛高挑。林峰用平静稳当的声音对梁经理说出第二句，眼睛稳稳看着她，停了一拍，看着她的眉毛挑得更高，再用同样平静的声音对梁经理说出第三句，嘴唇抿平、眉毛平直，同时开始在第一页上签字。",
+     "camera_zh": "0—10秒，镜头固定不动。",
+     "dialogue": [
+      {
+       "speaker": "Liang",
+       "text": "您一直不提授信，现在全拿？",
+       "start_seconds": 0.6,
+       "end_seconds": 3.7,
+       "language": "zh"
+      },
+      {
+       "speaker": "LinBank",
+       "text": "全拿。",
+       "start_seconds": 4.4,
+       "end_seconds": 5.13,
+       "language": "zh"
+      },
+      {
+       "speaker": "LinBank",
+       "text": "我要修一座度假村。",
+       "start_seconds": 6.0,
+       "end_seconds": 8.23,
+       "language": "zh"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 10,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. [[asset:liang_banker]] flips through the thick stack of documents, her brows rising higher with every page, then looks up and speaks the first line to [[asset:lin_bank]] in a cautious, surprised voice, her lips parted and her brows raised. [[asset:lin_bank]] speaks the second line to [[asset:liang_banker]] in a calm even voice, his eyes steady on her, then pauses a beat while her brows rise higher and speaks the third line to [[asset:liang_banker]] in the same calm voice, his lips set flat and his brows level, and begins to sign the first page. The camera holds still.",
+       "visual_zh": "梁经理翻着那一大摞厚厚的文件，眉毛随着每一页越挑越高，然后抬起头，用谨慎而吃惊的声音对林峰说出第一句，嘴唇微张、眉毛高挑。林峰用平静稳当的声音对梁经理说出第二句，眼睛稳稳看着她，停了一拍，看着她的眉毛挑得更高，再用同样平静的声音对梁经理说出第三句，嘴唇抿平、眉毛平直，同时开始在第一页上签字。 镜头固定不动。",
+       "dialogue_indices": [
+        0,
+        1,
+        2
+       ]
+      }
+     ],
+     "sound_en": "A quiet air-conditioned room with the soft rustle of paper and the scratch of a pen. Voices stay close and clear.",
+     "sound_zh": "安静的、开着空调的房间，纸页轻轻的沙沙声和笔尖划过的声音。人声近而清楚。",
+     "seed": 33106,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "07｜同一张桌子：梁经理收好签好的文件，说还款时间，鞠躬走出玻璃门",
+     "duration_seconds": 10,
+     "generation_seconds": 10,
+     "continuity": "cut",
+     "depends_on_previous": true,
+     "use_previous_episode_state": false,
+     "characters": [
+      "LinBank",
+      "Liang"
+     ],
+     "asset_keys": [
+      "bank_room",
+      "lin_bank",
+      "liang_banker"
+     ],
+     "image_reference_keys": [
+      "bank_room"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium two-shot, both from the head to the waist, in the middle third of the frame, in the bank room. Lin (a Chinese man in his early thirties) at frame-left, seated at the walnut table in profile facing frame-right, rubbing his right wrist with his left hand, the signed pages spread in front of him, in a fitted charcoal blazer over a white open-collar shirt, his black hair neatly combed, his steady dark-brown eyes on Liang, his jaw relaxed, his lips set flat, his brows level. Liang (a Chinese woman in her early forties) at frame-right, seated at the walnut table in profile facing frame-left, squaring the signed pages into a folder, in a tailored dove-grey skirt suit over a white blouse, small pearl earrings, her black hair in a neat shoulder-length bob, her composed dark eyes on Lin, her lips curved in an eager pleased curve, her brows lifted. On the walnut table in front of Lin lie the signed pages, and the sunlit windows behind them glare with the bright morning skyline; the glass door stands at frame-right. The frame holds Lin and Liang, the walnut table with the signed pages, the sunlit windows and the glass door. Bright clear morning sunlight pours through the tall windows into the quiet, spotless private banking room. Fixed stage layout: the long walnut meeting table with a stack of thick documents and a pen stands in the middle of the frame; the floor-to-ceiling windows across the back wall show bright morning sunlight over a city skyline; a glass door is at frame-right; a potted palm stands at frame-left.",
+     "visual_zh": "梁经理把签好的文件一页页理齐放进文件夹，站起来，双手捧着它，用热情殷勤的声音对林峰说出第一句，嘴角带着殷勤满意的弧度、眉毛上扬。林峰揉着发酸的手腕，用平静的声音对梁经理说出第二句，下颌放松、嘴唇抿平。梁经理微微欠身致意，对林峰说出第三句，然后走向画面右边的玻璃门，穿过去离开，直到门口空无一人。",
+     "camera_zh": "0—10秒，镜头固定不动。",
+     "dialogue": [
+      {
+       "speaker": "Liang",
+       "text": "第一笔还款在半年后。",
+       "start_seconds": 0.6,
+       "end_seconds": 3.08,
+       "language": "zh"
+      },
+      {
+       "speaker": "LinBank",
+       "text": "我记得。",
+       "start_seconds": 3.8,
+       "end_seconds": 4.78,
+       "language": "zh"
+      },
+      {
+       "speaker": "Liang",
+       "text": "祝您顺利。",
+       "start_seconds": 5.4,
+       "end_seconds": 6.63,
+       "language": "zh"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 10,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. [[asset:liang_banker]] squares the signed pages into a folder, stands up with it held in both hands and speaks the first line to [[asset:lin_bank]] in a warm, eager voice, her lips curved in an eager pleased curve and her brows lifted. [[asset:lin_bank]] rubs his sore wrist and speaks the second line to [[asset:liang_banker]] in a calm voice, his jaw relaxed and his lips set flat. [[asset:liang_banker]] gives a small respectful bow and speaks the third line to [[asset:lin_bank]], then walks to the glass door at frame-right and leaves through it until the door stands empty. The camera holds still.",
+       "visual_zh": "梁经理把签好的文件一页页理齐放进文件夹，站起来，双手捧着它，用热情殷勤的声音对林峰说出第一句，嘴角带着殷勤满意的弧度、眉毛上扬。林峰揉着发酸的手腕，用平静的声音对梁经理说出第二句，下颌放松、嘴唇抿平。梁经理微微欠身致意，对林峰说出第三句，然后走向画面右边的玻璃门，穿过去离开，直到门口空无一人。 镜头固定不动。",
+       "dialogue_indices": [
+        0,
+        1,
+        2
+       ]
+      }
+     ],
+     "sound_en": "A quiet air-conditioned room with the soft rustle of paper and the scratch of a pen. Voices stay close and clear.",
+     "sound_zh": "安静的、开着空调的房间，纸页轻轻的沙沙声和笔尖划过的声音。人声近而清楚。",
+     "seed": 33107,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "08｜银行：梁经理走后，林峰一个人揉着手腕，低声自言自语",
+     "duration_seconds": 9,
+     "generation_seconds": 9,
+     "continuity": "cut",
+     "depends_on_previous": true,
+     "use_previous_episode_state": false,
+     "characters": [
+      "LinBank"
+     ],
+     "asset_keys": [
+      "bank_room",
+      "lin_bank"
+     ],
+     "image_reference_keys": [
+      "bank_room"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium shot, the figure from the head to the waist at the left side of the table and the empty chair in the middle third of the frame, in the bank room. Lin (a Chinese man in his early thirties) at frame-left, seated at the walnut table in profile facing frame-right, rubbing his right wrist with his left hand, the signed pages spread in front of him, in a fitted charcoal blazer over a white open-collar shirt, his black hair neatly combed, his steady dark-brown eyes on the signed pages on the table in front of him, his jaw relaxed, his brows soft, his lips relaxed. On the walnut table in front of Lin lie the signed pages, and the sunlit windows behind him glare with the bright morning skyline. The frame holds Lin alone at the walnut table, the signed pages and the empty chair across from him. Bright clear morning sunlight pours through the tall windows into the quiet, spotless private banking room. Fixed stage layout: the long walnut meeting table with a stack of thick documents and a pen stands in the middle of the frame; the floor-to-ceiling windows across the back wall show bright morning sunlight over a city skyline; a glass door is at frame-right; a potted palm stands at frame-left.",
+     "visual_zh": "林峰揉着发酸的手腕，低头看着签好的文件，然后抬起眼睛，看着桌子对面梁经理刚才坐的空椅子，低声自言自语了一句，不是对任何人说的，嘴唇轻轻动着，接着又是一句很短的，眼睛一直看着那把空椅子，下颌放松、眉毛舒展。房间里没有别人。",
+     "camera_zh": "0—9秒，镜头慢慢推近，直到林峰占满画面中间三分之一。",
+     "dialogue": [
+      {
+       "speaker": "LinBank",
+       "text": "七天后，钱是废纸。",
+       "start_seconds": 3.0,
+       "end_seconds": 5.1,
+       "language": "zh"
+      },
+      {
+       "speaker": "LinBank",
+       "text": "欠条，也一样。",
+       "start_seconds": 6.0,
+       "end_seconds": 7.6,
+       "language": "zh"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 9,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. [[asset:lin_bank]] rubs his sore wrist and looks down at the signed pages, then looks up at the empty chair across the table where Liang sat, and murmurs one line to himself in a low voice, talking to nobody, his lips moving softly, then a second short line, his eyes steady on the empty chair, his jaw relaxed and his brows soft. Nobody else is in the room. The camera pushes in slowly until Lin fills the middle third of the frame.",
+       "visual_zh": "林峰揉着发酸的手腕，低头看着签好的文件，然后抬起眼睛，看着桌子对面梁经理刚才坐的空椅子，低声自言自语了一句，不是对任何人说的，嘴唇轻轻动着，接着又是一句很短的，眼睛一直看着那把空椅子，下颌放松、眉毛舒展。房间里没有别人。 镜头慢慢推近，直到林峰占满画面中间三分之一。",
+       "dialogue_indices": [
+        0,
+        1
+       ]
+      }
+     ],
+     "sound_en": "A quiet air-conditioned room with the soft rustle of paper and his low murmur. Voices stay close and clear.",
+     "sound_zh": "安静的、开着空调的房间，纸页轻轻的沙沙声和他低低的自语。人声近而清楚。",
+     "seed": 33108,
+     "dialogue_language": "zh"
+    }
+   ],
+   "dialogue_language": "zh"
+  },
+  {
+   "title": "剧本第2集｜半价",
+   "summary": "中介擦着汗递来合同：半价，今天成交；林峰说成交，签字时看都没看。买家苏清月全款、黑卡压在合同上，问他图什么，他答：多买泡面和羽绒服。她拿起桌上那张写满字的草稿纸，问他是不是被害妄想。他收起黑卡，说一句“说不定，能救你一命”，拎起背包走出玄关。苏清月站在落地窗前，让助理查预警数据、把酒窖囤满，助理走后她低声说：他不是妄想，他知道些什么。",
+   "script": "大平层，中介擦着汗递合同，林峰看都不看就签字，中介小孙用手帕擦着额头，把厚厚的合同沿玻璃桌推到林峰面前，用急促紧张的声音对林峰说出第一句，嘴唇绷着、眉头紧张地拧着。林峰拿起笔，用平静的声音对小孙说出第二句，然后连看都没看就在最后一页上签了字，嘴唇抿成平静的一条线，眉毛平直。小孙盯着他，用发懵的声音对林峰说出第三句，眉头紧张地拧着。\nSun：“半价，今天成交，您确定？”\nLinBank：“成交。”\nSun：“不看看合同吗？”\n苏清月把黑卡压在合同上，问林峰图什么，林峰答非所问，苏清月用一根手指把黑卡沿着签好的合同向前推，用锐利带笑意的声音对林峰说出第一句，一边眉毛挑起，嘴唇抿成一条细而锐利的线。林峰低头看了看卡，然后抬起眼睛看着她，用平静淡然的声音对苏清月说出第二句，嘴唇抿平、眉毛平直，并朝合同旁那张皱巴巴的纸扫了一眼。苏清月顺着他的目光看向那张纸，用刻薄的声音对林峰说出第三句，眼睛眯起。\nSu：“全款还让一成，你图什么？”\nLinBank：“多买泡面和羽绒服。”\nSu：“你在逗我？”\n苏清月拿起草稿纸念出上面的字，问林峰是不是被害妄想症，林峰淡淡回一句，苏清月扫视着那张纸上密密麻麻的手写字，用难以置信的声音对林峰说出第一句，然后放下纸，用刻薄的声音对林峰说出第二句，一边眉毛挑起，嘴唇抿成一条细而锐利的线。林峰纹丝不动地站着，眼睛看着她，嘴角挂着一丝意味深长的冷笑，眉毛平直，从她的手指间把那张纸拿了回去，用平静的声音对苏清月说出第三句。\nSu：“羽绒服、煤炭、育苗灯？”\nSu：“你是不是被害妄想症？”\nLinBank：“随你怎么想。”\n林峰收起黑卡，留下一句话，拎起背包走进玄关，苏清月用冰冷、难以置信的声音对林峰说出第一句，眼睛眯起，嘴唇抿成一条细而锐利的线。林峰把折好的纸和黑卡一起塞进口袋，用安静、近乎温和的声音对苏清月说出第二句，嘴角挂着一丝意味深长的冷笑，眉毛平直，然后从玄关边拎起一个黑色背包，拿着它穿过画面右边的玄关继续往里走，直到玄关里空无一人。苏清月目送他离开。\nSu：“你就这么走了？”\nLinBank：“说不定，能救你一命。”\n插镜，玄关里没有人了，地上少了一个背包，空荡荡的大平层玄关，地上只剩两个黑色战术背包——刚才是三个——房间中间的玻璃桌上空着，窗外是白热的城市。别的什么都不动。\n落地窗前，苏清月让助理查预警数据、把酒窖囤满，助理应声离开，苏清月抱着双臂站在窗前，用低沉而坚定的声音对文助理说出第一句，接着对文助理说出第二句，眼睛眯起，嘴唇抿成一条细线。文助理眼睛看着苏清月，点了一下头，用干练的声音对苏清月说出第三句，眉毛上提、嘴唇抿紧，然后转身朝画面左边走去，直到走出画面。\nSu：“去查预警数据。”\nSu：“把酒窖，给我囤满。”\nWen：“是，苏总。”\n同一扇落地窗，助理走后，苏清月一个人低声自言自语，苏清月一个人抱着双臂站在窗前，眼睛看着玻璃里那轮烈日，然后低声自言自语了一句很短的话，不是对任何人说的，嘴唇轻轻动着，接着又是一句，眼睛眯起、眉头压低。房间里没有别人。\nSu：“他不是妄想。”\nSu：“他知道些什么。”",
+   "segments": [
+    {
+     "title": "01｜大平层：中介擦着汗递合同，林峰看都不看就签字",
+     "duration_seconds": 10,
+     "generation_seconds": 10,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "Sun",
+      "LinBank"
+     ],
+     "asset_keys": [
+      "penthouse",
+      "sun_agent",
+      "lin_bank"
+     ],
+     "image_reference_keys": [
+      "penthouse"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium two-shot, both men from the head to the knees, in the middle third of the frame, in the penthouse living room. Sun (a Chinese man in his mid-thirties) at frame-left, standing at the left end of the glass table in profile facing frame-right, a tablet tucked under one arm and a damp handkerchief pressed to his forehead, in a short-sleeved white shirt with a loosened pale blue tie, his hair damp with sweat, his nervous dark eyes on Lin, his lips tight, his brows knitted nervously. Lin (a Chinese man in his early thirties) at frame-right, standing at the right end of the glass table in profile facing frame-left, one hand in his trouser pocket, in a fitted charcoal blazer over a white open-collar shirt, his black hair neatly combed, his steady dark-brown eyes on Sun, his lips set in a calm flat line, his brows level. On the glass table between them lie a thick contract and a pen, and the floor-to-ceiling windows behind them glare with the white-hot city. The frame holds Sun and Lin, the glass table with the contract and the windows behind them. Cool air-conditioned light fills the luxury penthouse while harsh white sunlight glares through the windows. Fixed stage layout: the glass dining table stands in the middle of the frame; the floor-to-ceiling windows across the back wall show a white-hot city of glass towers under a blazing sun; the white sectional sofa stands against the left wall; the wide entry hall opens at frame-right with three black tactical backpacks lined up on the floor beside it.",
+     "visual_zh": "中介小孙用手帕擦着额头，把厚厚的合同沿玻璃桌推到林峰面前，用急促紧张的声音对林峰说出第一句，嘴唇绷着、眉头紧张地拧着。林峰拿起笔，用平静的声音对小孙说出第二句，然后连看都没看就在最后一页上签了字，嘴唇抿成平静的一条线，眉毛平直。小孙盯着他，用发懵的声音对林峰说出第三句，眉头紧张地拧着。",
+     "camera_zh": "0—10秒，镜头固定不动。",
+     "dialogue": [
+      {
+       "speaker": "Sun",
+       "text": "半价，今天成交，您确定？",
+       "start_seconds": 0.6,
+       "end_seconds": 3.32,
+       "language": "zh"
+      },
+      {
+       "speaker": "LinBank",
+       "text": "成交。",
+       "start_seconds": 4.2,
+       "end_seconds": 4.93,
+       "language": "zh"
+      },
+      {
+       "speaker": "Sun",
+       "text": "不看看合同吗？",
+       "start_seconds": 5.6,
+       "end_seconds": 7.33,
+       "language": "zh"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 10,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. [[asset:sun_agent]] mops his forehead with the handkerchief, slides the thick contract across the glass table toward [[asset:lin_bank]] and speaks the first line to [[asset:lin_bank]] in a hurried, nervous voice, his lips tight and his brows knitted nervously. [[asset:lin_bank]] picks up the pen and speaks the second line to [[asset:sun_agent]] in a calm voice, then signs the last page without reading it, his lips set in a calm flat line and his brows level. [[asset:sun_agent]] stares at him and speaks the third line to [[asset:lin_bank]] in a stunned voice, his brows knitted nervously. The camera holds still.",
+       "visual_zh": "中介小孙用手帕擦着额头，把厚厚的合同沿玻璃桌推到林峰面前，用急促紧张的声音对林峰说出第一句，嘴唇绷着、眉头紧张地拧着。林峰拿起笔，用平静的声音对小孙说出第二句，然后连看都没看就在最后一页上签了字，嘴唇抿成平静的一条线，眉毛平直。小孙盯着他，用发懵的声音对林峰说出第三句，眉头紧张地拧着。 镜头固定不动。",
+       "dialogue_indices": [
+        0,
+        1,
+        2
+       ]
+      }
+     ],
+     "sound_en": "The faint hum of the air conditioner and the distant murmur of the city. Voices stay close and clear.",
+     "sound_zh": "空调轻微的嗡鸣和远处城市的低语。人声近而清楚。",
+     "seed": 33201,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "02｜苏清月把黑卡压在合同上，问林峰图什么，林峰答非所问",
+     "duration_seconds": 10,
+     "generation_seconds": 10,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "Su",
+      "LinBank"
+     ],
+     "asset_keys": [
+      "penthouse",
+      "su_suit",
+      "lin_bank"
+     ],
+     "image_reference_keys": [
+      "penthouse"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium two-shot, both from the head to the waist, in the middle third of the frame, in the penthouse living room. Su (a Chinese woman in her late twenties) at frame-left, seated at the glass table in profile facing frame-right, a black bank card lying under her fingertips on the signed contract, in a fitted black silk blouse and a black pencil skirt, thin gold-rimmed glasses on her nose, her long glossy black hair falling straight over one shoulder, her sharp dark-brown eyes on Lin, one brow arched, her lips pressed in a thin sharp line. Lin (a Chinese man in his early thirties) at frame-right, standing across the table in profile facing frame-left, one hand in his trouser pocket, in a fitted charcoal blazer over a white open-collar shirt, his black hair neatly combed, his steady dark-brown eyes on Su, his lips set flat, his brows level. On the glass table between them lie the signed contract with the black card and a crumpled sheet of paper covered in dense handwritten lines, and the floor-to-ceiling windows behind them glare with the white-hot city. The frame holds Su and Lin, the glass table with the contract, the black card and the crumpled sheet, and the windows behind them. Cool air-conditioned light fills the luxury penthouse while harsh white sunlight glares through the windows. Fixed stage layout: the glass dining table stands in the middle of the frame; the floor-to-ceiling windows across the back wall show a white-hot city of glass towers under a blazing sun; the white sectional sofa stands against the left wall; the wide entry hall opens at frame-right with three black tactical backpacks lined up on the floor beside it.",
+     "visual_zh": "苏清月用一根手指把黑卡沿着签好的合同向前推，用锐利带笑意的声音对林峰说出第一句，一边眉毛挑起，嘴唇抿成一条细而锐利的线。林峰低头看了看卡，然后抬起眼睛看着她，用平静淡然的声音对苏清月说出第二句，嘴唇抿平、眉毛平直，并朝合同旁那张皱巴巴的纸扫了一眼。苏清月顺着他的目光看向那张纸，用刻薄的声音对林峰说出第三句，眼睛眯起。",
+     "camera_zh": "0—10秒，镜头固定不动。",
+     "dialogue": [
+      {
+       "speaker": "Su",
+       "text": "全款还让一成，你图什么？",
+       "start_seconds": 0.6,
+       "end_seconds": 3.45,
+       "language": "zh"
+      },
+      {
+       "speaker": "LinBank",
+       "text": "多买泡面和羽绒服。",
+       "start_seconds": 4.3,
+       "end_seconds": 6.53,
+       "language": "zh"
+      },
+      {
+       "speaker": "Su",
+       "text": "你在逗我？",
+       "start_seconds": 7.2,
+       "end_seconds": 8.43,
+       "language": "zh"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 10,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. [[asset:su_suit]] slides the black card forward with one fingertip across the signed contract and speaks the first line to [[asset:lin_bank]] in a sharp, amused voice, one brow arched and her lips pressed in a thin sharp line. [[asset:lin_bank]] looks down at the card, then lifts his eyes to her and speaks the second line to [[asset:su_suit]] in a calm flat voice, his lips set flat and his brows level, and glances once at the crumpled sheet beside the contract. [[asset:su_suit]] follows his glance to the sheet and speaks the third line to [[asset:lin_bank]] in a cutting voice, her eyes narrowing. The camera holds still.",
+       "visual_zh": "苏清月用一根手指把黑卡沿着签好的合同向前推，用锐利带笑意的声音对林峰说出第一句，一边眉毛挑起，嘴唇抿成一条细而锐利的线。林峰低头看了看卡，然后抬起眼睛看着她，用平静淡然的声音对苏清月说出第二句，嘴唇抿平、眉毛平直，并朝合同旁那张皱巴巴的纸扫了一眼。苏清月顺着他的目光看向那张纸，用刻薄的声音对林峰说出第三句，眼睛眯起。 镜头固定不动。",
+       "dialogue_indices": [
+        0,
+        1,
+        2
+       ]
+      }
+     ],
+     "sound_en": "The faint hum of the air conditioner and the distant murmur of the city. Voices stay close and clear.",
+     "sound_zh": "空调轻微的嗡鸣和远处城市的低语。人声近而清楚。",
+     "seed": 33202,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "03｜苏清月拿起草稿纸念出上面的字，问林峰是不是被害妄想症，林峰淡淡回一句",
+     "duration_seconds": 10,
+     "generation_seconds": 10,
+     "continuity": "cut",
+     "depends_on_previous": true,
+     "use_previous_episode_state": false,
+     "characters": [
+      "Su",
+      "LinBank"
+     ],
+     "asset_keys": [
+      "penthouse",
+      "su_suit",
+      "lin_bank"
+     ],
+     "image_reference_keys": [
+      "penthouse"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium two-shot, both from the head to the waist, in the middle third of the frame, in the penthouse living room. Su (a Chinese woman in her late twenties) at frame-left, seated at the glass table in profile facing frame-right, holding the crumpled sheet of paper up in both hands, in a fitted black silk blouse and a black pencil skirt, thin gold-rimmed glasses on her nose, her long glossy black hair falling straight over one shoulder, her sharp dark-brown eyes on the dense handwritten lines on the sheet, one brow arched, her lips pressed in a thin sharp line. Lin (a Chinese man in his early thirties) at frame-right, standing across the table in profile facing frame-left, one hand in his trouser pocket, in a fitted charcoal blazer over a white open-collar shirt, his black hair neatly combed, his steady dark-brown eyes on Su, a faint knowing smirk at one corner of his mouth, his brows level. On the glass table beside her lie the signed contract and the black card, and the floor-to-ceiling windows behind them glare with the white-hot city. The frame holds Su and Lin, the glass table with the contract and the card, and the windows behind them. Cool air-conditioned light fills the luxury penthouse while harsh white sunlight glares through the windows. Fixed stage layout: the glass dining table stands in the middle of the frame; the floor-to-ceiling windows across the back wall show a white-hot city of glass towers under a blazing sun; the white sectional sofa stands against the left wall; the wide entry hall opens at frame-right with three black tactical backpacks lined up on the floor beside it.",
+     "visual_zh": "苏清月扫视着那张纸上密密麻麻的手写字，用难以置信的声音对林峰说出第一句，然后放下纸，用刻薄的声音对林峰说出第二句，一边眉毛挑起，嘴唇抿成一条细而锐利的线。林峰纹丝不动地站着，眼睛看着她，嘴角挂着一丝意味深长的冷笑，眉毛平直，从她的手指间把那张纸拿了回去，用平静的声音对苏清月说出第三句。",
+     "camera_zh": "0—10秒，镜头固定不动。",
+     "dialogue": [
+      {
+       "speaker": "Su",
+       "text": "羽绒服、煤炭、育苗灯？",
+       "start_seconds": 0.6,
+       "end_seconds": 3.07,
+       "language": "zh"
+      },
+      {
+       "speaker": "Su",
+       "text": "你是不是被害妄想症？",
+       "start_seconds": 4.2,
+       "end_seconds": 6.68,
+       "language": "zh"
+      },
+      {
+       "speaker": "LinBank",
+       "text": "随你怎么想。",
+       "start_seconds": 7.2,
+       "end_seconds": 8.68,
+       "language": "zh"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 10,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. [[asset:su_suit]] scans the dense handwritten lines on the sheet and speaks the first line to [[asset:lin_bank]] in a disbelieving voice, then lowers the sheet and speaks the second line to [[asset:lin_bank]] in a cutting voice, one brow arched and her lips pressed in a thin sharp line. [[asset:lin_bank]] stands unmoved with his eyes on her, a faint knowing smirk at one corner of his mouth and his brows level, takes the sheet back from her fingers and speaks the third line to [[asset:su_suit]] in a calm voice. The camera holds still.",
+       "visual_zh": "苏清月扫视着那张纸上密密麻麻的手写字，用难以置信的声音对林峰说出第一句，然后放下纸，用刻薄的声音对林峰说出第二句，一边眉毛挑起，嘴唇抿成一条细而锐利的线。林峰纹丝不动地站着，眼睛看着她，嘴角挂着一丝意味深长的冷笑，眉毛平直，从她的手指间把那张纸拿了回去，用平静的声音对苏清月说出第三句。 镜头固定不动。",
+       "dialogue_indices": [
+        0,
+        1,
+        2
+       ]
+      }
+     ],
+     "sound_en": "The faint hum of the air conditioner and the distant murmur of the city. Voices stay close and clear.",
+     "sound_zh": "空调轻微的嗡鸣和远处城市的低语。人声近而清楚。",
+     "seed": 33203,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "04｜林峰收起黑卡，留下一句话，拎起背包走进玄关",
+     "duration_seconds": 9,
+     "generation_seconds": 9,
+     "continuity": "cut",
+     "depends_on_previous": true,
+     "use_previous_episode_state": false,
+     "characters": [
+      "Su",
+      "LinBank"
+     ],
+     "asset_keys": [
+      "penthouse",
+      "su_suit",
+      "lin_bank"
+     ],
+     "image_reference_keys": [
+      "penthouse"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium-wide shot, both from the head to the knees, in the middle third of the frame, in the penthouse living room. Su (a Chinese woman in her late twenties) at frame-left, seated at the glass table in profile facing frame-right with her hands empty on the table, in a fitted black silk blouse and a black pencil skirt, thin gold-rimmed glasses on her nose, her long glossy black hair falling straight over one shoulder, her sharp dark-brown eyes on Lin, her eyes narrowed, her lips pressed in a thin sharp line. Lin (a Chinese man in his early thirties) at frame-center, standing beside the table in profile facing frame-left, the folded sheet in his left hand, in a fitted charcoal blazer over a white open-collar shirt, his black hair neatly combed, his steady dark-brown eyes on Su, a faint knowing smirk at one corner of his mouth, his brows level. The three black tactical backpacks stand lined up beside the entry hall at frame-right, and the floor-to-ceiling windows behind the table glare with the white-hot city. The frame holds Su and Lin, the glass table, the entry hall with the backpacks and the windows behind them. Cool air-conditioned light fills the luxury penthouse while harsh white sunlight glares through the windows. Fixed stage layout: the glass dining table stands in the middle of the frame; the floor-to-ceiling windows across the back wall show a white-hot city of glass towers under a blazing sun; the white sectional sofa stands against the left wall; the wide entry hall opens at frame-right with three black tactical backpacks lined up on the floor beside it.",
+     "visual_zh": "苏清月用冰冷、难以置信的声音对林峰说出第一句，眼睛眯起，嘴唇抿成一条细而锐利的线。林峰把折好的纸和黑卡一起塞进口袋，用安静、近乎温和的声音对苏清月说出第二句，嘴角挂着一丝意味深长的冷笑，眉毛平直，然后从玄关边拎起一个黑色背包，拿着它穿过画面右边的玄关继续往里走，直到玄关里空无一人。苏清月目送他离开。",
+     "camera_zh": "0—9秒，镜头固定不动。",
+     "dialogue": [
+      {
+       "speaker": "Su",
+       "text": "你就这么走了？",
+       "start_seconds": 0.6,
+       "end_seconds": 2.33,
+       "language": "zh"
+      },
+      {
+       "speaker": "LinBank",
+       "text": "说不定，能救你一命。",
+       "start_seconds": 3.2,
+       "end_seconds": 5.55,
+       "language": "zh"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 9,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. [[asset:su_suit]] speaks the first line to [[asset:lin_bank]] in a cold, incredulous voice, her eyes narrowed and her lips pressed in a thin sharp line. [[asset:lin_bank]] slips the folded sheet and the black card into his pocket and speaks the second line to [[asset:su_suit]] in a quiet, almost gentle voice, a faint knowing smirk at one corner of his mouth and his brows level, then picks up a black backpack from beside the entry hall and carries it away through the entry hall at frame-right until the hall is empty. [[asset:su_suit]] watches him go. The camera holds still.",
+       "visual_zh": "苏清月用冰冷、难以置信的声音对林峰说出第一句，眼睛眯起，嘴唇抿成一条细而锐利的线。林峰把折好的纸和黑卡一起塞进口袋，用安静、近乎温和的声音对苏清月说出第二句，嘴角挂着一丝意味深长的冷笑，眉毛平直，然后从玄关边拎起一个黑色背包，拿着它穿过画面右边的玄关继续往里走，直到玄关里空无一人。苏清月目送他离开。 镜头固定不动。",
+       "dialogue_indices": [
+        0,
+        1
+       ]
+      }
+     ],
+     "sound_en": "The faint hum of the air conditioner and soft receding footsteps on the floor. Voices stay close and clear.",
+     "sound_zh": "空调轻微的嗡鸣和渐渐远去的轻轻脚步声。人声近而清楚。",
+     "seed": 33204,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "05｜插镜：玄关里没有人了，地上少了一个背包",
+     "duration_seconds": 3,
+     "generation_seconds": 3,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [],
+     "asset_keys": [
+      "penthouse"
+     ],
+     "image_reference_keys": [
+      "penthouse"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Wide establishing shot of the empty entry hall of the penthouse with the hall in the middle third of the frame, nobody in the room.  The frame holds the entry hall with two backpacks on the floor, the bare glass table and the white-hot windows, and nobody in the room. Cool air-conditioned light fills the luxury penthouse while harsh white sunlight glares through the windows. Fixed stage layout: the glass dining table stands in the middle of the frame; the floor-to-ceiling windows across the back wall show a white-hot city of glass towers under a blazing sun; the white sectional sofa stands against the left wall; the wide entry hall opens at frame-right with three black tactical backpacks lined up on the floor beside it.",
+     "visual_zh": "空荡荡的大平层玄关：地上只剩两个黑色战术背包——刚才是三个——房间中间的玻璃桌上空着，窗外是白热的城市。别的什么都不动。",
+     "camera_zh": "0—3秒，镜头慢慢推近，直到玄关占满画面中间三分之一。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 3,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. The wide entry hall at the right stands empty with only two black tactical backpacks left on the floor where three stood before, the glass table in the middle of the room is bare, and the white-hot city glares in the windows. Nothing else moves. The camera pushes in slowly until the entry hall fill the middle third of the frame.",
+       "visual_zh": "空荡荡的大平层玄关：地上只剩两个黑色战术背包——刚才是三个——房间中间的玻璃桌上空着，窗外是白热的城市。别的什么都不动。 镜头慢慢推近，直到玄关占满画面中间三分之一。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "The faint hum of the air conditioner in the empty room. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here.",
+     "sound_zh": "空房间里空调轻微的嗡鸣。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。",
+     "seed": 33205,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "06｜落地窗前：苏清月让助理查预警数据、把酒窖囤满，助理应声离开",
+     "duration_seconds": 10,
+     "generation_seconds": 10,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "Wen",
+      "Su"
+     ],
+     "asset_keys": [
+      "penthouse",
+      "wen_blazer",
+      "su_suit"
+     ],
+     "image_reference_keys": [
+      "penthouse"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium two-shot, both from the head to the knees, in the middle third of the frame, in front of the floor-to-ceiling window. Wen (a Chinese woman in her mid-twenties) at frame-left, standing beside Su in profile facing frame-right, the tablet hugged to her chest, in a navy blazer over a white blouse, her black hair in a neat low ponytail, her clear dark eyes on Su, her brows lifted, her lips pressed together. Su (a Chinese woman in her late twenties) at frame-center, standing at the floor-to-ceiling window in profile facing frame-left with her arms folded, in a fitted black silk blouse and a black pencil skirt, thin gold-rimmed glasses on her nose, her long glossy black hair falling straight over one shoulder, her sharp dark-brown eyes on Wen, her eyes narrowed, her lips pressed in a thin line. Behind them the floor-to-ceiling window glares with the white-hot city, the blazing sun hanging in the glass. The frame holds Wen and Su in front of the glaring window. Cool air-conditioned light fills the luxury penthouse while harsh white sunlight glares through the windows. Fixed stage layout: the glass dining table stands in the middle of the frame; the floor-to-ceiling windows across the back wall show a white-hot city of glass towers under a blazing sun; the white sectional sofa stands against the left wall; the wide entry hall opens at frame-right with three black tactical backpacks lined up on the floor beside it.",
+     "visual_zh": "苏清月抱着双臂站在窗前，用低沉而坚定的声音对文助理说出第一句，接着对文助理说出第二句，眼睛眯起，嘴唇抿成一条细线。文助理眼睛看着苏清月，点了一下头，用干练的声音对苏清月说出第三句，眉毛上提、嘴唇抿紧，然后转身朝画面左边走去，直到走出画面。",
+     "camera_zh": "0—10秒，镜头固定不动。",
+     "dialogue": [
+      {
+       "speaker": "Su",
+       "text": "去查预警数据。",
+       "start_seconds": 0.7,
+       "end_seconds": 2.43,
+       "language": "zh"
+      },
+      {
+       "speaker": "Su",
+       "text": "把酒窖，给我囤满。",
+       "start_seconds": 3.3,
+       "end_seconds": 5.4,
+       "language": "zh"
+      },
+      {
+       "speaker": "Wen",
+       "text": "是，苏总。",
+       "start_seconds": 6.2,
+       "end_seconds": 7.3,
+       "language": "zh"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 10,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. [[asset:su_suit]] stands at the window with her arms folded and speaks the first line to [[asset:wen_blazer]] in a low, firm voice, then the second line to [[asset:wen_blazer]], her eyes narrowed and her lips pressed in a thin line. [[asset:wen_blazer]] nods once with her eyes on [[asset:su_suit]], speaks the third line to [[asset:su_suit]] in a brisk voice, her brows lifted and her lips pressed together, and then walks away to frame-left until she is out of the frame. The camera holds still.",
+       "visual_zh": "苏清月抱着双臂站在窗前，用低沉而坚定的声音对文助理说出第一句，接着对文助理说出第二句，眼睛眯起，嘴唇抿成一条细线。文助理眼睛看着苏清月，点了一下头，用干练的声音对苏清月说出第三句，眉毛上提、嘴唇抿紧，然后转身朝画面左边走去，直到走出画面。 镜头固定不动。",
+       "dialogue_indices": [
+        0,
+        1,
+        2
+       ]
+      }
+     ],
+     "sound_en": "The faint hum of the air conditioner and the distant murmur of the city. Voices stay close and clear.",
+     "sound_zh": "空调轻微的嗡鸣和远处城市的低语。人声近而清楚。",
+     "seed": 33206,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "07｜同一扇落地窗：助理走后，苏清月一个人低声自言自语",
+     "duration_seconds": 8,
+     "generation_seconds": 8,
+     "continuity": "cut",
+     "depends_on_previous": true,
+     "use_previous_episode_state": false,
+     "characters": [
+      "Su"
+     ],
+     "asset_keys": [
+      "penthouse",
+      "su_suit"
+     ],
+     "image_reference_keys": [
+      "penthouse"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium shot, the figure from the head to the knees, in the middle third of the frame, in front of the floor-to-ceiling window. Su (a Chinese woman in her late twenties) at frame-center, standing at the floor-to-ceiling window in profile facing frame-left with her arms folded, in a fitted black silk blouse and a black pencil skirt, thin gold-rimmed glasses on her nose, her long glossy black hair falling straight over one shoulder, her sharp dark-brown eyes on the blazing sun in the window at frame-left, her eyes narrowed, her brows low, her lips relaxed. Behind her the floor-to-ceiling window glares with the white-hot city, the blazing sun hanging in the glass at frame-left. The frame holds Su alone in front of the glaring window. Cool air-conditioned light fills the luxury penthouse while harsh white sunlight glares through the windows. Fixed stage layout: the glass dining table stands in the middle of the frame; the floor-to-ceiling windows across the back wall show a white-hot city of glass towers under a blazing sun; the white sectional sofa stands against the left wall; the wide entry hall opens at frame-right with three black tactical backpacks lined up on the floor beside it.",
+     "visual_zh": "苏清月一个人抱着双臂站在窗前，眼睛看着玻璃里那轮烈日，然后低声自言自语了一句很短的话，不是对任何人说的，嘴唇轻轻动着，接着又是一句，眼睛眯起、眉头压低。房间里没有别人。",
+     "camera_zh": "0—8秒，镜头慢慢推近，直到苏清月占满画面中间三分之一。",
+     "dialogue": [
+      {
+       "speaker": "Su",
+       "text": "他不是妄想。",
+       "start_seconds": 2.0,
+       "end_seconds": 3.48,
+       "language": "zh"
+      },
+      {
+       "speaker": "Su",
+       "text": "他知道些什么。",
+       "start_seconds": 4.5,
+       "end_seconds": 6.23,
+       "language": "zh"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 8,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. [[asset:su_suit]] stands alone at the window with her arms folded and her eyes on the blazing sun in the glass, then murmurs one short line to herself in a low voice, talking to nobody, her lips moving softly, then a second short line, her eyes narrowed and her brows low. Nobody else is in the room. The camera pushes in slowly until Su fills the middle third of the frame.",
+       "visual_zh": "苏清月一个人抱着双臂站在窗前，眼睛看着玻璃里那轮烈日，然后低声自言自语了一句很短的话，不是对任何人说的，嘴唇轻轻动着，接着又是一句，眼睛眯起、眉头压低。房间里没有别人。 镜头慢慢推近，直到苏清月占满画面中间三分之一。",
+       "dialogue_indices": [
+        0,
+        1
+       ]
+      }
+     ],
+     "sound_en": "The faint hum of the air conditioner and her low murmur. Voices stay close and clear.",
+     "sound_zh": "空调轻微的嗡鸣和她低低的自语。人声近而清楚。",
+     "seed": 33207,
+     "dialogue_language": "zh"
+    }
+   ],
+   "dialogue_language": "zh"
+  },
+  {
+   "title": "剧本第3集｜扫货",
+   "summary": "夏天，林峰开始扫货：户外店里他要一百套极地防寒服，老板笑他是傻子；煤场里他要一万吨无烟煤，老板愣住，他说现钱结清；农资公司里他把生长灯、种子、营养液全要，销售劝他夏天不用补光，他刷卡，她睁大眼睛鞠躬。货太多，没有车队肯往深山送，货运站的老板赵虎开价三倍，林峰一口答应；他走后，赵虎对小弟彪子说：这小子有鬼，给我跟紧他。",
+   "script": "户外店，林峰要一百套极地防寒服，老板笑他是傻子，林峰把那件厚重的极地防寒服从衣架上取下来，用平淡的声音对马老板说出第一句，嘴唇抿平、眉毛平直。马老板用吃惊的声音对林峰说出第二句，然后放声大笑，拍着柜台，用洪亮带嘲弄的声音对林峰说出第三句，嘴巴大张、眉毛上挑。\nLinWork：“极地防寒服，一百套，全要。”\nMa：“夏天买这个？”\nMa：“行，白菜价！”\n煤场，林峰要一万吨无烟煤，老板愣住，林峰说现钱结清，林峰用一只手臂朝那些黑色的煤山比划了一下，用平淡的声音对顾老板说出第一句，嘴唇抿平、眉毛平直。顾老板举着毛巾僵在半空，盯着林峰，嘴巴张开、眉毛高高挑起，用沙哑而难以置信的声音对林峰说出第二句。林峰用同样平淡的声音对顾老板说出第三句，眼睛稳稳看着顾老板。\nLinWork：“无烟煤，一万吨。”\nGu：“一万吨？您开玩笑吧？”\nLinWork：“现钱，当场结清。”\n农资公司，林峰要生长灯、种子、营养液，销售劝他夏天不用补光，他刷卡，她鞠躬，林峰一只手按在那摞生长灯的箱子上，用平淡的声音对小肖说出第一句，嘴唇抿平、眉毛平直。小肖歪着头，用礼貌而困惑的声音对林峰说出第二句，眉头拧在一起。林峰把一张细长的黑色银行卡放在柜台上，对小肖说出第三句；小肖看着那张卡，眼睛睁大、嘴巴张开，然后深深鞠了一躬。\nLinWork：“生长灯、种子、营养液。”\nXiao：“夏天不用补光的，先生。”\nLinWork：“刷卡。”\n货运站，林峰问谁肯往深山送货，赵虎开价三倍，林峰点头走开，林峰用平淡的声音对赵虎说出第一句，眼睛稳稳看着赵虎，嘴唇抿平、眉毛平直。赵虎上下打量着他，把烟从嘴里拿下来，竖起三根粗手指，用沙哑而贪婪的声音对林峰说出第二句，嘴唇挂着狡猾贪婪的邪笑，眉毛上挑。林峰对赵虎说出第三句，慢慢点了一下头，朝画面右边的院门走去，直到走出视线。\nLinWork：“这批货送进深山，谁接？”\nZhao：“我接，价钱翻三倍。”\nLinWork：“可以。”\n赵虎看着空荡荡的院门，对彪子说这小子有鬼，让他跟紧，赵虎看着敞开的院门，门外的尘土还没落定，用低沉狡猾的声音说出第一句，然后把头转向彪子。彪子用又快又急切的声音对赵虎说出第二句，嘴唇微张、眉毛上提。赵虎用低沉的声音对彪子说出第三句，嘴唇挂着狡猾贪婪的邪笑，眉毛上挑。\nZhao：“这小子有鬼。”\nBiao：“虎哥，咋办？”\nZhao：“给我跟紧他。”",
+   "segments": [
+    {
+     "title": "01｜户外店：林峰要一百套极地防寒服，老板笑他是傻子",
+     "duration_seconds": 10,
+     "generation_seconds": 10,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "LinWork",
+      "Ma"
+     ],
+     "asset_keys": [
+      "outdoor_store",
+      "lin_work",
+      "ma_outdoor"
+     ],
+     "image_reference_keys": [
+      "outdoor_store"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium two-shot, both men from the head to the waist, in the middle third of the frame, in the outdoor-gear store. Lin (a Chinese man in his early thirties) at frame-left, standing at the parka rack in profile facing frame-right, one hand gripping a heavy polar parka by its hanger, in a charcoal henley under a dark olive utility vest with many pockets and dark cargo pants, his steady dark-brown eyes on Ma, his lips set flat, his brows level. Ma (a stout Chinese man in his fifties) at frame-right, standing behind the checkout counter in profile facing frame-left, both palms flat on the counter, in a straining red polo shirt under a canvas shop apron, his small cheerful dark eyes on Lin, his mouth hanging open in a loose grin, his brows lifted. Behind Lin the rack is packed with thick down parkas, and the glass shopfront at frame-right glares with the white-hot summer street. The frame holds Lin and Ma, the parka rack and the checkout counter. Hard white summer sunlight glares through the shopfront into the cool air-conditioned outdoor-gear store. Fixed stage layout: racks of thick down parkas, ski jackets and sleeping bags fill the left wall; the checkout counter with a cash register stands at the middle-right of the frame; the broad glass shopfront at frame-right shows a white-hot summer street.",
+     "visual_zh": "林峰把那件厚重的极地防寒服从衣架上取下来，用平淡的声音对马老板说出第一句，嘴唇抿平、眉毛平直。马老板用吃惊的声音对林峰说出第二句，然后放声大笑，拍着柜台，用洪亮带嘲弄的声音对林峰说出第三句，嘴巴大张、眉毛上挑。",
+     "camera_zh": "0—10秒，镜头固定不动。",
+     "dialogue": [
+      {
+       "speaker": "LinWork",
+       "text": "极地防寒服，一百套，全要。",
+       "start_seconds": 0.6,
+       "end_seconds": 3.57,
+       "language": "zh"
+      },
+      {
+       "speaker": "Ma",
+       "text": "夏天买这个？",
+       "start_seconds": 4.6,
+       "end_seconds": 6.08,
+       "language": "zh"
+      },
+      {
+       "speaker": "Ma",
+       "text": "行，白菜价！",
+       "start_seconds": 6.8,
+       "end_seconds": 8.15,
+       "language": "zh"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 10,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. [[asset:lin_work]] lifts the heavy polar parka off the rack and speaks the first line to [[asset:ma_outdoor]] in a flat, level voice, his lips set flat and his brows level. [[asset:ma_outdoor]] speaks the second line to [[asset:lin_work]] in a startled voice, then bursts into loud laughter, slaps the counter and speaks the third line to [[asset:lin_work]] in a hearty, mocking voice, his mouth wide open and his brows lifted. The camera holds still.",
+       "visual_zh": "林峰把那件厚重的极地防寒服从衣架上取下来，用平淡的声音对马老板说出第一句，嘴唇抿平、眉毛平直。马老板用吃惊的声音对林峰说出第二句，然后放声大笑，拍着柜台，用洪亮带嘲弄的声音对林峰说出第三句，嘴巴大张、眉毛上挑。 镜头固定不动。",
+       "dialogue_indices": [
+        0,
+        1,
+        2
+       ]
+      }
+     ],
+     "sound_en": "A quiet air conditioner hum and the faint rattle of hangers. Voices stay close and clear.",
+     "sound_zh": "空调安静的嗡鸣和衣架轻轻的碰撞声。人声近而清楚。",
+     "seed": 33301,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "02｜煤场：林峰要一万吨无烟煤，老板愣住，林峰说现钱结清",
+     "duration_seconds": 10,
+     "generation_seconds": 10,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "LinWork",
+      "Gu"
+     ],
+     "asset_keys": [
+      "coal_yard",
+      "lin_work",
+      "gu_coal"
+     ],
+     "image_reference_keys": [
+      "coal_yard"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium two-shot, both men from the head to the knees, in the middle third of the frame, in the coal yard. Lin (a Chinese man in his early thirties) at frame-left, standing at the foot of a black coal mountain in profile facing frame-right, one arm sweeping out toward the coal, in a charcoal henley under a dark olive utility vest with many pockets and dark cargo pants, his steady dark-brown eyes on Gu, his lips set flat, his brows level. Gu (a weathered, tanned Chinese man in his fifties) at frame-right, standing in front of the brick office in profile facing frame-left, the damp towel in his hand, in a coal-streaked grey work shirt with a damp towel around his neck and a yellow hard hat, his squinting dark eyes on Lin, his mouth hanging open, his brows shot up. Behind Lin the huge black mountains of anthracite fill the left half of the yard, and the yellow wheel loader stands at frame-right. The frame holds Lin and Gu, the coal mountains and the brick office. Hazy white summer sun beats down on the black coal yard, heat shimmering over the dust. Fixed stage layout: huge black mountains of anthracite fill the left half of the yard; a small brick office with a weighbridge stands at the middle-right of the frame; a yellow wheel loader is parked at frame-right; a white-hot sky fills the top of the frame.",
+     "visual_zh": "林峰用一只手臂朝那些黑色的煤山比划了一下，用平淡的声音对顾老板说出第一句，嘴唇抿平、眉毛平直。顾老板举着毛巾僵在半空，盯着林峰，嘴巴张开、眉毛高高挑起，用沙哑而难以置信的声音对林峰说出第二句。林峰用同样平淡的声音对顾老板说出第三句，眼睛稳稳看着顾老板。",
+     "camera_zh": "0—10秒，镜头固定不动。",
+     "dialogue": [
+      {
+       "speaker": "LinWork",
+       "text": "无烟煤，一万吨。",
+       "start_seconds": 0.6,
+       "end_seconds": 2.45,
+       "language": "zh"
+      },
+      {
+       "speaker": "Gu",
+       "text": "一万吨？您开玩笑吧？",
+       "start_seconds": 3.3,
+       "end_seconds": 5.71,
+       "language": "zh"
+      },
+      {
+       "speaker": "LinWork",
+       "text": "现钱，当场结清。",
+       "start_seconds": 6.4,
+       "end_seconds": 8.25,
+       "language": "zh"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 10,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. [[asset:lin_work]] gestures at the black mountains of coal with one arm and speaks the first line to [[asset:gu_coal]] in a flat, level voice, his lips set flat and his brows level. [[asset:gu_coal]] freezes with the towel halfway to his face and stares at [[asset:lin_work]], his mouth hanging open and his brows shot up, and speaks the second line to [[asset:lin_work]] in a hoarse, disbelieving voice. [[asset:lin_work]] speaks the third line to [[asset:gu_coal]] in the same level voice, his eyes steady on [[asset:gu_coal]]. The camera holds still.",
+       "visual_zh": "林峰用一只手臂朝那些黑色的煤山比划了一下，用平淡的声音对顾老板说出第一句，嘴唇抿平、眉毛平直。顾老板举着毛巾僵在半空，盯着林峰，嘴巴张开、眉毛高高挑起，用沙哑而难以置信的声音对林峰说出第二句。林峰用同样平淡的声音对顾老板说出第三句，眼睛稳稳看着顾老板。 镜头固定不动。",
+       "dialogue_indices": [
+        0,
+        1,
+        2
+       ]
+      }
+     ],
+     "sound_en": "Cicadas droning in the heat and a distant loader engine idling. Voices stay close and clear.",
+     "sound_zh": "知了在热浪里不停地叫，远处装载机发动机怠速的声音。人声近而清楚。",
+     "seed": 33302,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "03｜农资公司：林峰要生长灯、种子、营养液，销售劝他夏天不用补光，他刷卡，她鞠躬",
+     "duration_seconds": 10,
+     "generation_seconds": 10,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "LinWork",
+      "Xiao"
+     ],
+     "asset_keys": [
+      "agri_store",
+      "lin_work",
+      "xiao_agri"
+     ],
+     "image_reference_keys": [
+      "agri_store"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium two-shot, both from the head to the waist, in the middle third of the frame, in the agricultural-supply showroom. Lin (a Chinese man in his early thirties) at frame-left, standing at the counter in profile facing frame-right, one palm laid flat on a stack of grow-lamp boxes, in a charcoal henley under a dark olive utility vest with many pockets and dark cargo pants, his steady dark-brown eyes on Xiao, his lips set flat, his brows level. Xiao (a Chinese woman in her mid-twenties) at frame-right, standing behind the counter in profile facing frame-left, a seed packet in her hand, in a bright green company polo shirt under a khaki apron, her black hair in a high ponytail, her bright eager dark eyes on Lin, her head tilted, her lips pressed in a polite puzzled line, her brows pulled together. On the counter between them stand stacks of white foam seedling blocks, seed trays and jugs of nutrient solution, and behind them the shelves are full of grow lamps and colorful seed packets. The frame holds Lin and Xiao, the counter with the seedling blocks and nutrient jugs, and the shelves behind them. Bright white shop light fills the neat, modern agricultural-supply showroom. Fixed stage layout: tall shelves of full-spectrum grow lamps and rows of colorful vegetable seed packets fill the left wall; the long counter stands in the middle of the frame with stacks of white foam seedling blocks, seed trays and jugs of nutrient solution on it; the glass front door at frame-right shows a hot bright street.",
+     "visual_zh": "林峰一只手按在那摞生长灯的箱子上，用平淡的声音对小肖说出第一句，嘴唇抿平、眉毛平直。小肖歪着头，用礼貌而困惑的声音对林峰说出第二句，眉头拧在一起。林峰把一张细长的黑色银行卡放在柜台上，对小肖说出第三句；小肖看着那张卡，眼睛睁大、嘴巴张开，然后深深鞠了一躬。",
+     "camera_zh": "0—10秒，镜头固定不动。",
+     "dialogue": [
+      {
+       "speaker": "LinWork",
+       "text": "生长灯、种子、营养液。",
+       "start_seconds": 0.6,
+       "end_seconds": 3.07,
+       "language": "zh"
+      },
+      {
+       "speaker": "Xiao",
+       "text": "夏天不用补光的，先生。",
+       "start_seconds": 3.8,
+       "end_seconds": 6.4,
+       "language": "zh"
+      },
+      {
+       "speaker": "LinWork",
+       "text": "刷卡。",
+       "start_seconds": 7.1,
+       "end_seconds": 7.83,
+       "language": "zh"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 10,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. [[asset:lin_work]] speaks the first line to [[asset:xiao_agri]] in a level voice, his hand flat on the stack of grow-lamp boxes, his lips set flat and his brows level. [[asset:xiao_agri]] speaks the second line to [[asset:lin_work]] in a polite, puzzled voice, her head tilted and her brows pulled together. [[asset:lin_work]] lays a slim black bank card on the counter and speaks the third line to [[asset:xiao_agri]]; [[asset:xiao_agri]] looks at the card and her eyes widen, her mouth falling open, and she bows deeply. The camera holds still.",
+       "visual_zh": "林峰一只手按在那摞生长灯的箱子上，用平淡的声音对小肖说出第一句，嘴唇抿平、眉毛平直。小肖歪着头，用礼貌而困惑的声音对林峰说出第二句，眉头拧在一起。林峰把一张细长的黑色银行卡放在柜台上，对小肖说出第三句；小肖看着那张卡，眼睛睁大、嘴巴张开，然后深深鞠了一躬。 镜头固定不动。",
+       "dialogue_indices": [
+        0,
+        1,
+        2
+       ]
+      }
+     ],
+     "sound_en": "A quiet shop with a faint air-conditioner hum. Voices stay close and clear.",
+     "sound_zh": "安静的店里有空调轻微的嗡鸣。人声近而清楚。",
+     "seed": 33303,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "04｜货运站：林峰问谁肯往深山送货，赵虎开价三倍，林峰点头走开",
+     "duration_seconds": 10,
+     "generation_seconds": 10,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "LinWork",
+      "Zhao"
+     ],
+     "asset_keys": [
+      "freight_yard",
+      "lin_work",
+      "zhao_boss"
+     ],
+     "image_reference_keys": [
+      "freight_yard"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium two-shot, both men from the head to the knees, in the middle third of the frame, in the freight yard. Lin (a Chinese man in his early thirties) at frame-left, standing on the gravel in profile facing frame-right, his hands at his sides, in a charcoal henley under a dark olive utility vest with many pockets and dark cargo pants, his steady dark-brown eyes on Zhao, his lips set flat, his brows level. Zhao (a Chinese man in his fifties) at frame-right, standing in front of the line of trucks in profile facing frame-left, a cigarette hanging from the corner of his mouth, one thick hand scratching his shaved head, in a sleeveless black leather vest over a sweat-stained grey t-shirt, a gold chain at his thick neck, his head shaved, his small dark eyes on Lin, a greedy sly leer on his lips, his brows lifted. Behind them a row of box trucks stands along the back of the yard, and the open yard gate is at frame-right. The frame holds Lin and Zhao, the row of trucks and the open yard gate. Hard white summer sunlight falls over the dusty gravel freight yard, heat shimmering over the trucks. Fixed stage layout: a small yard office with a rolled-up shutter is at frame-left; a row of box trucks stands along the back of the yard; stacks of wooden pallets stand at the middle-right of the frame; the open chain-link yard gate is at frame-right with a dirt road leading out of it.",
+     "visual_zh": "林峰用平淡的声音对赵虎说出第一句，眼睛稳稳看着赵虎，嘴唇抿平、眉毛平直。赵虎上下打量着他，把烟从嘴里拿下来，竖起三根粗手指，用沙哑而贪婪的声音对林峰说出第二句，嘴唇挂着狡猾贪婪的邪笑，眉毛上挑。林峰对赵虎说出第三句，慢慢点了一下头，朝画面右边的院门走去，直到走出视线。",
+     "camera_zh": "0—10秒，镜头固定不动。",
+     "dialogue": [
+      {
+       "speaker": "LinWork",
+       "text": "这批货送进深山，谁接？",
+       "start_seconds": 0.6,
+       "end_seconds": 3.2,
+       "language": "zh"
+      },
+      {
+       "speaker": "Zhao",
+       "text": "我接，价钱翻三倍。",
+       "start_seconds": 4.0,
+       "end_seconds": 6.1,
+       "language": "zh"
+      },
+      {
+       "speaker": "LinWork",
+       "text": "可以。",
+       "start_seconds": 7.0,
+       "end_seconds": 7.73,
+       "language": "zh"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 10,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. [[asset:lin_work]] speaks the first line to [[asset:zhao_boss]] in a level voice, his eyes steady on Zhao, his lips set flat and his brows level. [[asset:zhao_boss]] looks him up and down, takes the cigarette from his lips, holds up three thick fingers and speaks the second line to [[asset:lin_work]] in a gravelly, greedy voice, a greedy sly leer on his lips and his brows lifted. [[asset:lin_work]] speaks the third line to [[asset:zhao_boss]], gives one slow nod and walks away toward the yard gate at frame-right until he is out of sight. The camera holds still.",
+       "visual_zh": "林峰用平淡的声音对赵虎说出第一句，眼睛稳稳看着赵虎，嘴唇抿平、眉毛平直。赵虎上下打量着他，把烟从嘴里拿下来，竖起三根粗手指，用沙哑而贪婪的声音对林峰说出第二句，嘴唇挂着狡猾贪婪的邪笑，眉毛上挑。林峰对赵虎说出第三句，慢慢点了一下头，朝画面右边的院门走去，直到走出视线。 镜头固定不动。",
+       "dialogue_indices": [
+        0,
+        1,
+        2
+       ]
+      }
+     ],
+     "sound_en": "Cicadas droning in the heat, a truck engine idling and gravel shifting underfoot. Voices stay close and clear.",
+     "sound_zh": "知了在热浪里不停地叫，卡车发动机怠速，脚下的碎石沙沙响。人声近而清楚。",
+     "seed": 33304,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "05｜赵虎看着空荡荡的院门，对彪子说这小子有鬼，让他跟紧",
+     "duration_seconds": 9,
+     "generation_seconds": 9,
+     "continuity": "cut",
+     "depends_on_previous": true,
+     "use_previous_episode_state": false,
+     "characters": [
+      "Zhao",
+      "Biao"
+     ],
+     "asset_keys": [
+      "freight_yard",
+      "zhao_boss",
+      "biao_thug"
+     ],
+     "image_reference_keys": [
+      "freight_yard"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium two-shot, both men from the head to the knees, in the middle third of the frame, in the freight yard. Zhao (a Chinese man in his fifties) at frame-left, standing at the center-left of the yard in profile facing frame-right, his arms folded over his chest, a cigarette held between two thick fingers, in a sleeveless black leather vest over a sweat-stained grey t-shirt, a gold chain at his thick neck, his head shaved, his small dark eyes on the empty yard gate at frame-right where the dust is still settling, a sly greedy leer on his lips, his brows lifted. Biao (a Chinese man in his twenties) at frame-center, standing beside Zhao in profile facing frame-left, his hands in his hoodie pocket, in a faded grey hoodie and a backwards baseball cap over short black hair, lean and wiry, his restless dark eyes on Zhao, his lips parted, his brows pulled up. Behind them the row of box trucks stands along the back of the yard, and the open yard gate is at frame-right with a trail of dust still hanging in the sunlit air. The frame holds Zhao and Biao, the row of trucks and the open yard gate. Hard white summer sunlight falls over the dusty gravel freight yard, heat shimmering over the trucks. Fixed stage layout: a small yard office with a rolled-up shutter is at frame-left; a row of box trucks stands along the back of the yard; stacks of wooden pallets stand at the middle-right of the frame; the open chain-link yard gate is at frame-right with a dirt road leading out of it.",
+     "visual_zh": "赵虎看着敞开的院门，门外的尘土还没落定，用低沉狡猾的声音说出第一句，然后把头转向彪子。彪子用又快又急切的声音对赵虎说出第二句，嘴唇微张、眉毛上提。赵虎用低沉的声音对彪子说出第三句，嘴唇挂着狡猾贪婪的邪笑，眉毛上挑。",
+     "camera_zh": "0—9秒，镜头固定不动。",
+     "dialogue": [
+      {
+       "speaker": "Zhao",
+       "text": "这小子有鬼。",
+       "start_seconds": 1.0,
+       "end_seconds": 2.48,
+       "language": "zh"
+      },
+      {
+       "speaker": "Biao",
+       "text": "虎哥，咋办？",
+       "start_seconds": 3.3,
+       "end_seconds": 4.65,
+       "language": "zh"
+      },
+      {
+       "speaker": "Zhao",
+       "text": "给我跟紧他。",
+       "start_seconds": 5.7,
+       "end_seconds": 7.18,
+       "language": "zh"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 9,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. [[asset:zhao_boss]] watches the open yard gate where the dust is still settling and speaks the first line in a low, sly voice, then turns his head toward [[asset:biao_thug]]. [[asset:biao_thug]] speaks the second line to [[asset:zhao_boss]] in a quick, eager voice, his lips parted and his brows pulled up. [[asset:zhao_boss]] speaks the third line to [[asset:biao_thug]] in a low voice, a sly greedy leer on his lips and his brows lifted. The camera holds still.",
+       "visual_zh": "赵虎看着敞开的院门，门外的尘土还没落定，用低沉狡猾的声音说出第一句，然后把头转向彪子。彪子用又快又急切的声音对赵虎说出第二句，嘴唇微张、眉毛上提。赵虎用低沉的声音对彪子说出第三句，嘴唇挂着狡猾贪婪的邪笑，眉毛上挑。 镜头固定不动。",
+       "dialogue_indices": [
+        0,
+        1,
+        2
+       ]
+      }
+     ],
+     "sound_en": "Cicadas droning in the heat, a truck engine idling and gravel shifting underfoot. Voices stay close and clear.",
+     "sound_zh": "知了在热浪里不停地叫，卡车发动机怠速，脚下的碎石沙沙响。人声近而清楚。",
+     "seed": 33305,
+     "dialogue_language": "zh"
+    }
+   ],
+   "dialogue_language": "zh"
+  },
+  {
+   "title": "剧本第4集｜山里",
+   "summary": "深山里，老护林员抬头看着没有一只鸟的天空说山里不对劲；林峰说整座山他买了。旧防空洞的大厅空荡荡的，地下有清澈的水脉；老人问他图什么，他说修度假村。几天后同一个大厅堆满了货，他第一次把种子按进海绵块、放进水里。赵虎的车队到了山脚想进洞，林峰当面拦住：货到这儿，钱结清，请回。赵虎走后他按下遥控器；山坡上，入口不见了，彪子吓了一跳，赵虎说：把这地方，给我记死了。",
+   "script": "深山里，老护林员抬头看着没有鸟的天，林峰说整座山他买了，老护林员抬头望着松树梢上空荡荡的苍白天空，用干涩不安的声音对林峰说出第一句，然后低下眼睛看着林峰，对林峰说出第二句，嘴唇抿得很薄、眉头拧在一起。林峰抬头看了一眼天，然后用平静坚定的声音对老护林员说出第三句，嘴唇抿平、眉毛平直。\nRanger：“鸟全往南飞了。”\nRanger：“山里不对劲。”\nLinWork：“整座山，我买了。”\n空荡荡的防空洞大厅，林峰摸地下水脉，老护林员问他图什么，老护林员用手电光束扫过空荡荡的大厅，用怀疑而沙哑的声音对林峰说出第一句，眉头拧着、嘴唇抿得很薄。林峰慢慢站起身，甩掉手指上的水，用冰冷平稳的声音对老护林员说出第二句，嘴唇抿平、眉毛平直。老护林员哼了一声，对林峰说出第三句，眉头拧着。\nRanger：“这荒山野洞的，你图什么？”\nLinWork：“修度假村。”\nRanger：“度假村？”\n同一个大厅已经堆满了货，林峰把种子按进海绵块，放进水盆，低声叮嘱一句，林峰低头看着手里的白色海绵块，把一小撮细小的种子按进它小小的孔里，下颌放松、嘴唇抿成平静的一条线、眉毛舒展。他把这块放到白色托盘上和其他几块排在一起，轻轻把托盘放进浅浅的清水盆里，海绵块一点点吸水变深。他两手撑在工作台上，看着托盘，对着种子轻声说了一句很短的话，嘴唇轻轻动着，下颌放松、眉毛舒展。大厅里没有别人。\nLinWork：“要好好长啊。”\n山脚，赵虎想进洞看一眼，林峰当面拦住，赵虎悻悻地让步，赵虎朝黑洞洞的洞口走了一步，用讨好又沙哑的声音对林峰说出第一句，嘴唇挂着狡猾贪婪的邪笑，眉毛上挑。林峰一只手掌竖起，拦在他的路上，用冰冷坚定的声音对赵虎说出第二句，眼睛稳稳看着赵虎，嘴唇抿平、眉毛平直。赵虎停住，眼睛看着林峰，下颌绷紧，慢慢地、不情愿地耸了一下肩，对林峰说出第三句。\nZhao：“我就进去看一眼，行不行？”\nLinWork：“货到这儿，钱结清，请回。”\nZhao：“行，你狠。”\n赵虎和彪子走向卡车，林峰站在洞口暗处，举起遥控器按下，赵虎和彪子背对着隧道口，穿过碎石空地走向画面右边的卡车；林峰站在洞口里面的暗处看着他们走远，然后抬起那个黑色小遥控器，用拇指按下去，嘴唇抿成冷冷的一条线，眉毛平直。\n插镜，同一座山坡，隧道口不见了，只剩一块青苔岩石和一截枯树桩，安静的树林山坡，没有人，左边原本是隧道口的地方，只剩一块长满青苔的岩石和一截枯树桩，看不到一点门和路的痕迹，中间的碎石空地上空着，松树被微风轻轻吹动。别的什么都不动。\n同一座山坡，彪子发现入口没了，赵虎让他记死这地方，彪子伸手指着山坡，用吃惊的声音对赵虎说出第一句，眼睛睁大、眉毛上提。赵虎盯着那块长满青苔的岩石，然后把目光转向彪子，用低沉狡猾的声音对彪子说出第二句，下颌绷紧、嘴唇抿平、眉头压低。\nBiao：“洞口……没了？”\nZhao：“把这地方，给我记死了。”",
+   "segments": [
+    {
+     "title": "01｜深山里，老护林员抬头看着没有鸟的天，林峰说整座山他买了",
+     "duration_seconds": 10,
+     "generation_seconds": 10,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "Ranger",
+      "LinWork"
+     ],
+     "asset_keys": [
+      "shelter_old",
+      "ranger_old",
+      "lin_work"
+     ],
+     "image_reference_keys": [
+      "shelter_old"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium two-shot, both men from the head to the knees, in the middle third of the frame, on the forest trail. Ranger (an old Chinese man in his late sixties) at frame-left, standing on the dirt trail in profile facing frame-right, leaning on a wooden walking stick, his chin lifted toward the sky, in a faded olive forestry jacket and a battered straw hat, his deep-set dark eyes on the empty pale sky above the pine tops, his lips pressed thin, his brows drawn together. Lin (a Chinese man in his early thirties) at frame-right, standing on the trail in profile facing frame-left, his hands at his sides, in a charcoal henley under a dark olive utility vest with many pockets and dark cargo pants, his steady dark-brown eyes on Ranger, his lips set flat, his brows level. Behind them the old concrete shelter portal overgrown with vines stands half open in the hillside at frame-left, and tall pines fill the background. The frame holds Ranger and Lin, the trail, the old shelter portal and the pines. Soft hazy noon light filters through tall pines onto the quiet, overgrown forest hillside. Fixed stage layout: an old concrete shelter portal overgrown with vines, its rusted steel door standing half open, is cut into the hillside at frame-left; a narrow dirt trail runs through the middle of the frame; tall pine trees fill the background and the pale sky is visible between the treetops; no vehicles.",
+     "visual_zh": "老护林员抬头望着松树梢上空荡荡的苍白天空，用干涩不安的声音对林峰说出第一句，然后低下眼睛看着林峰，对林峰说出第二句，嘴唇抿得很薄、眉头拧在一起。林峰抬头看了一眼天，然后用平静坚定的声音对老护林员说出第三句，嘴唇抿平、眉毛平直。",
+     "camera_zh": "0—10秒，镜头固定不动。",
+     "dialogue": [
+      {
+       "speaker": "Ranger",
+       "text": "鸟全往南飞了。",
+       "start_seconds": 0.6,
+       "end_seconds": 2.33,
+       "language": "zh"
+      },
+      {
+       "speaker": "Ranger",
+       "text": "山里不对劲。",
+       "start_seconds": 3.2,
+       "end_seconds": 4.68,
+       "language": "zh"
+      },
+      {
+       "speaker": "LinWork",
+       "text": "整座山，我买了。",
+       "start_seconds": 5.6,
+       "end_seconds": 7.45,
+       "language": "zh"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 10,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. [[asset:ranger_old]] gazes up at the empty pale sky above the pine tops and speaks the first line to [[asset:lin_work]] in a dry, uneasy voice, then lowers his eyes to [[asset:lin_work]] and speaks the second line to [[asset:lin_work]], his lips pressed thin and his brows drawn together. [[asset:lin_work]] glances up at the sky for a moment, then speaks the third line to [[asset:ranger_old]] in a calm, firm voice, his lips set flat and his brows level. The camera holds still.",
+       "visual_zh": "老护林员抬头望着松树梢上空荡荡的苍白天空，用干涩不安的声音对林峰说出第一句，然后低下眼睛看着林峰，对林峰说出第二句，嘴唇抿得很薄、眉头拧在一起。林峰抬头看了一眼天，然后用平静坚定的声音对老护林员说出第三句，嘴唇抿平、眉毛平直。 镜头固定不动。",
+       "dialogue_indices": [
+        0,
+        1,
+        2
+       ]
+      }
+     ],
+     "sound_en": "A hushed forest with a faint breeze in the pines and no birdsong at all. Voices stay close and clear.",
+     "sound_zh": "寂静的树林，松林里有一丝轻风，一点鸟叫声都没有。人声近而清楚。",
+     "seed": 33401,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "02｜空荡荡的防空洞大厅：林峰摸地下水脉，老护林员问他图什么",
+     "duration_seconds": 9,
+     "generation_seconds": 9,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "LinWork",
+      "Ranger"
+     ],
+     "asset_keys": [
+      "bunker_empty",
+      "lin_work",
+      "ranger_old"
+     ],
+     "image_reference_keys": [
+      "bunker_empty"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium-wide shot, both men from the head to the feet, in the middle third of the frame, in the empty concrete hall. Lin (a Chinese man in his early thirties) at frame-left, crouching at the edge of the water channel in profile facing frame-right, his fingertips in the clear running water, in a charcoal henley under a dark olive utility vest with many pockets and dark cargo pants, his steady dark-brown eyes on the clear running water in the channel, his jaw relaxed, his lips set flat, his brows level. Ranger (an old Chinese man in his late sixties) at frame-right, standing at the edge of the channel in profile facing frame-left, a flashlight in one hand and his walking stick in the other, in a faded olive forestry jacket and a battered straw hat, his deep-set dark eyes on Lin, his brows drawn together in doubt, his lips pressed thin. Behind them the bare walls and rusty railings of the vast empty hall rise into the dark, with pale flashlight beams cutting the dust. The frame holds Lin and Ranger, the water channel and the empty hall. Pale flashlight beams cut through the dusty dark of the vast empty concrete hall. Fixed stage layout: a vast bare concrete hall with rusty railings on two upper levels fills the back of the frame; a shallow concrete channel of clear running water crosses the foreground from left to right; round concrete pillars stand in a row at frame-right.",
+     "visual_zh": "老护林员用手电光束扫过空荡荡的大厅，用怀疑而沙哑的声音对林峰说出第一句，眉头拧着、嘴唇抿得很薄。林峰慢慢站起身，甩掉手指上的水，用冰冷平稳的声音对老护林员说出第二句，嘴唇抿平、眉毛平直。老护林员哼了一声，对林峰说出第三句，眉头拧着。",
+     "camera_zh": "0—9秒，镜头固定不动。",
+     "dialogue": [
+      {
+       "speaker": "Ranger",
+       "text": "这荒山野洞的，你图什么？",
+       "start_seconds": 0.8,
+       "end_seconds": 3.65,
+       "language": "zh"
+      },
+      {
+       "speaker": "LinWork",
+       "text": "修度假村。",
+       "start_seconds": 4.5,
+       "end_seconds": 5.73,
+       "language": "zh"
+      },
+      {
+       "speaker": "Ranger",
+       "text": "度假村？",
+       "start_seconds": 6.6,
+       "end_seconds": 7.58,
+       "language": "zh"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 9,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. [[asset:ranger_old]] sweeps the flashlight beam across the empty hall and speaks the first line to [[asset:lin_work]] in a doubtful, raspy voice, his brows drawn together and his lips pressed thin. [[asset:lin_work]] rises slowly to his feet, shakes the water from his fingers and speaks the second line to [[asset:ranger_old]] in a cold, level voice, his lips set flat and his brows level. [[asset:ranger_old]] speaks the third line to [[asset:lin_work]] with a snort, his brows drawn together. The camera holds still.",
+       "visual_zh": "老护林员用手电光束扫过空荡荡的大厅，用怀疑而沙哑的声音对林峰说出第一句，眉头拧着、嘴唇抿得很薄。林峰慢慢站起身，甩掉手指上的水，用冰冷平稳的声音对老护林员说出第二句，嘴唇抿平、眉毛平直。老护林员哼了一声，对林峰说出第三句，眉头拧着。 镜头固定不动。",
+       "dialogue_indices": [
+        0,
+        1,
+        2
+       ]
+      }
+     ],
+     "sound_en": "Water trickling along the concrete channel, a faint echo in the huge hall and the click of a flashlight. Voices stay close and clear.",
+     "sound_zh": "水沿着混凝土水渠淌过的潺潺声、巨大空旷的大厅里微弱的回声和手电筒的一声轻响。人声近而清楚。",
+     "seed": 33402,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "03｜同一个大厅已经堆满了货：林峰把种子按进海绵块，放进水盆，低声叮嘱一句",
+     "duration_seconds": 12,
+     "generation_seconds": 12,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "LinWork"
+     ],
+     "asset_keys": [
+      "bunker_work",
+      "lin_work"
+     ],
+     "image_reference_keys": [
+      "bunker_work"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium shot, the figure from the head to the waist, in the middle third of the frame, at the workbench. Lin (a Chinese man in his early thirties) at frame-center, standing at the steel workbench in profile facing frame-right, a white foam seeding block in his left hand and a pinch of tiny seeds between the fingers of his right, in a charcoal henley under a dark olive utility vest with many pockets and dark cargo pants, his steady dark-brown eyes on the white foam seeding block in his hand, his jaw relaxed, his lips set in a calm flat line, his brows soft. Behind him the huge hall is packed with towering stacks of steel crates, pallets of steak boxes, generators and big water tanks under hard white work lamps. The frame holds Lin alone at the workbench, the water tub and the stacked supplies behind him. Hard white work lamps cast sharp shadows across the huge concrete hall packed with supplies. Fixed stage layout: a steel workbench with a shallow tub of clear water, a stack of white foam seeding blocks and an open seed packet stands at frame-center; towering stacks of steel crates, pallets of boxes, generators and big water tanks fill the hall behind it and along both sides.",
+     "visual_zh": "林峰低头看着手里的白色海绵块，把一小撮细小的种子按进它小小的孔里，下颌放松、嘴唇抿成平静的一条线、眉毛舒展。他把这块放到白色托盘上和其他几块排在一起，轻轻把托盘放进浅浅的清水盆里，海绵块一点点吸水变深。他两手撑在工作台上，看着托盘，对着种子轻声说了一句很短的话，嘴唇轻轻动着，下颌放松、眉毛舒展。大厅里没有别人。",
+     "camera_zh": "0—12秒，镜头慢慢推近，直到水盆里的托盘占满画面中间三分之一。",
+     "dialogue": [
+      {
+       "speaker": "LinWork",
+       "text": "要好好长啊。",
+       "start_seconds": 6.0,
+       "end_seconds": 7.48,
+       "language": "zh"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 12,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. [[asset:lin_work]] presses a pinch of tiny seeds into the small holes of the white foam block with his eyes on the block, his jaw relaxed, his lips set in a calm flat line and his brows soft. He sets the block on a white tray with the others and lowers the tray gently into the shallow tub of clear water, and the foam blocks darken slowly as they drink. He rests both palms on the bench, watches the tray and murmurs one short line to himself over the seeds in a soft voice, talking to nobody, his lips moving softly, his jaw relaxed and his brows soft. Nobody else is in the hall. The camera pushes in slowly until the tray in the water fills the middle third of the frame.",
+       "visual_zh": "林峰低头看着手里的白色海绵块，把一小撮细小的种子按进它小小的孔里，下颌放松、嘴唇抿成平静的一条线、眉毛舒展。他把这块放到白色托盘上和其他几块排在一起，轻轻把托盘放进浅浅的清水盆里，海绵块一点点吸水变深。他两手撑在工作台上，看着托盘，对着种子轻声说了一句很短的话，嘴唇轻轻动着，下颌放松、眉毛舒展。大厅里没有别人。 镜头慢慢推近，直到水盆里的托盘占满画面中间三分之一。",
+       "dialogue_indices": [
+        0
+       ]
+      }
+     ],
+     "sound_en": "Water gently lapping in the tub, the low hum of a generator, the creak of a steel bench and his soft murmur. Voices stay close and clear.",
+     "sound_zh": "水盆里水轻轻荡漾的声音、发电机低低的嗡鸣、钢制工作台轻轻的吱嘎声和他轻轻的自语。人声近而清楚。",
+     "seed": 33403,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "04｜山脚：赵虎想进洞看一眼，林峰当面拦住，赵虎悻悻地让步",
+     "duration_seconds": 11,
+     "generation_seconds": 11,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "LinWork",
+      "Zhao"
+     ],
+     "asset_keys": [
+      "tunnel_mouth",
+      "lin_work",
+      "zhao_boss"
+     ],
+     "image_reference_keys": [
+      "tunnel_mouth"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium two-shot, both men from the head to the knees, in the middle third of the frame, on the gravel clearing. Lin (a Chinese man in his early thirties) at frame-left, standing in front of the dark tunnel mouth in profile facing frame-right, his right palm raised flat in front of him, in a charcoal henley under a dark olive utility vest with many pockets and dark cargo pants, his steady dark-brown eyes on Zhao, his lips set flat, his brows level. Zhao (a Chinese man in his fifties) at frame-center, standing on the gravel clearing half a step in front of the box truck in profile facing frame-left, a cigarette hanging from the corner of his mouth, in a sleeveless black leather vest over a sweat-stained grey t-shirt, a gold chain at his thick neck, his head shaved, his small dark eyes on Lin, a greedy sly leer on his lips, his brows lifted. Behind Zhao the large box truck stands at frame-right on the gravel with its rear door rolled up. The frame holds Lin and Zhao, the dark tunnel mouth and the box truck. Hard noon light falls through tall pines onto the gravel clearing in front of the tunnel mouth. Fixed stage layout: the dark concrete tunnel mouth is cut into the forested hillside at frame-left; the gravel clearing fills the middle of the frame; a large box truck with its rear door rolled up and crates stacked at its back stands at frame-right; tall pine trees fill the background.",
+     "visual_zh": "赵虎朝黑洞洞的洞口走了一步，用讨好又沙哑的声音对林峰说出第一句，嘴唇挂着狡猾贪婪的邪笑，眉毛上挑。林峰一只手掌竖起，拦在他的路上，用冰冷坚定的声音对赵虎说出第二句，眼睛稳稳看着赵虎，嘴唇抿平、眉毛平直。赵虎停住，眼睛看着林峰，下颌绷紧，慢慢地、不情愿地耸了一下肩，对林峰说出第三句。",
+     "camera_zh": "0—11秒，镜头固定不动。",
+     "dialogue": [
+      {
+       "speaker": "Zhao",
+       "text": "我就进去看一眼，行不行？",
+       "start_seconds": 0.6,
+       "end_seconds": 3.45,
+       "language": "zh"
+      },
+      {
+       "speaker": "LinWork",
+       "text": "货到这儿，钱结清，请回。",
+       "start_seconds": 4.0,
+       "end_seconds": 6.72,
+       "language": "zh"
+      },
+      {
+       "speaker": "Zhao",
+       "text": "行，你狠。",
+       "start_seconds": 7.7,
+       "end_seconds": 8.8,
+       "language": "zh"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 11,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. [[asset:zhao_boss]] steps toward the dark tunnel mouth and speaks the first line to [[asset:lin_work]] in a wheedling, gravelly voice, a greedy sly leer on his lips and his brows lifted. [[asset:lin_work]] steps into his path with one palm raised and speaks the second line to [[asset:zhao_boss]] in a cold, firm voice, his eyes steady on Zhao, his lips set flat and his brows level. [[asset:zhao_boss]] stops short with his eyes on Lin, his jaw tight, and speaks the third line to [[asset:lin_work]] with a slow, sour shrug. The camera holds still.",
+       "visual_zh": "赵虎朝黑洞洞的洞口走了一步，用讨好又沙哑的声音对林峰说出第一句，嘴唇挂着狡猾贪婪的邪笑，眉毛上挑。林峰一只手掌竖起，拦在他的路上，用冰冷坚定的声音对赵虎说出第二句，眼睛稳稳看着赵虎，嘴唇抿平、眉毛平直。赵虎停住，眼睛看着林峰，下颌绷紧，慢慢地、不情愿地耸了一下肩，对林峰说出第三句。 镜头固定不动。",
+       "dialogue_indices": [
+        0,
+        1,
+        2
+       ]
+      }
+     ],
+     "sound_en": "A truck engine idling, boots on gravel and the faint breeze in the pines. Voices stay close and clear.",
+     "sound_zh": "卡车发动机怠速的声音、靴子踩在碎石上的嘎吱声和松林里的轻风。人声近而清楚。",
+     "seed": 33404,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "05｜赵虎和彪子走向卡车，林峰站在洞口暗处，举起遥控器按下",
+     "duration_seconds": 9,
+     "generation_seconds": 9,
+     "continuity": "cut",
+     "depends_on_previous": true,
+     "use_previous_episode_state": false,
+     "characters": [
+      "LinWork",
+      "Zhao",
+      "Biao"
+     ],
+     "asset_keys": [
+      "tunnel_mouth",
+      "lin_work",
+      "zhao_boss",
+      "biao_thug"
+     ],
+     "image_reference_keys": [
+      "tunnel_mouth"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Wide shot, all three from the head to the feet, in the middle third of the frame, on the gravel clearing. Lin (a Chinese man in his early thirties) at frame-left, standing just inside the dark tunnel mouth in profile facing frame-right, a small black remote in his right hand at his side, in a charcoal henley under a dark olive utility vest with many pockets and dark cargo pants, his steady dark-brown eyes on the two men walking away across the gravel clearing, his lips set in a cold line, his brows level. Zhao (a Chinese man in his fifties) at frame-center, walking away across the gravel clearing in profile facing frame-right, a cigarette hanging from the corner of his mouth, in a sleeveless black leather vest over a sweat-stained grey t-shirt, a gold chain at his thick neck, his head shaved, his small dark eyes on the box truck at frame-right, a smug set to his lips, his brows lifted. Biao (a Chinese man in his twenties) at frame-right, walking beside Zhao in profile facing frame-right, glancing around the hillside, in a faded grey hoodie and a backwards baseball cap over short black hair, lean and wiry, his restless dark eyes on the box truck at frame-right, his lips parted, his brows pulled up. The frame holds Lin just inside the tunnel mouth and Zhao and Biao walking toward the box truck. Hard noon light falls through tall pines onto the gravel clearing in front of the tunnel mouth. Fixed stage layout: the dark concrete tunnel mouth is cut into the forested hillside at frame-left; the gravel clearing fills the middle of the frame; a large box truck with its rear door rolled up and crates stacked at its back stands at frame-right; tall pine trees fill the background.",
+     "visual_zh": "赵虎和彪子背对着隧道口，穿过碎石空地走向画面右边的卡车；林峰站在洞口里面的暗处看着他们走远，然后抬起那个黑色小遥控器，用拇指按下去，嘴唇抿成冷冷的一条线，眉毛平直。",
+     "camera_zh": "0—9秒，镜头固定不动。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 9,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. [[asset:zhao_boss]] and [[asset:biao_thug]] walk away across the gravel clearing toward the box truck at frame-right with their backs mostly to the tunnel; [[asset:lin_work]] stands just inside the dark tunnel mouth watching them go, then raises the small black remote and presses it with his thumb, his lips set in a cold line and his brows level. [[asset:zhao_boss]] keeps a smug set to his lips, his brows lifted. [[asset:biao_thug]] keeps his lips parted, his brows pulled up. The camera holds still.",
+       "visual_zh": "赵虎和彪子背对着隧道口，穿过碎石空地走向画面右边的卡车；林峰站在洞口里面的暗处看着他们走远，然后抬起那个黑色小遥控器，用拇指按下去，嘴唇抿成冷冷的一条线，眉毛平直。 镜头固定不动。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "Boots crunching on gravel and a truck engine idling. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here.",
+     "sound_zh": "靴子踩在碎石上的嘎吱声和卡车发动机怠速的声音。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。",
+     "seed": 33405,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "06｜插镜：同一座山坡，隧道口不见了，只剩一块青苔岩石和一截枯树桩",
+     "duration_seconds": 3,
+     "generation_seconds": 3,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [],
+     "asset_keys": [
+      "hill_hidden"
+     ],
+     "image_reference_keys": [
+      "hill_hidden"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Wide establishing shot of the quiet forested hillside, the clearing in the middle third of the frame, nobody in the scene.  The frame holds the moss-covered boulder and the dead stump on the hillside, the empty gravel clearing and the pines, and nobody in the scene. Hard noon light falls through tall pines onto the quiet forest hillside. Fixed stage layout: the forested hillside at frame-left holds a moss-covered boulder and a dead tree stump; the gravel clearing fills the middle of the frame; the large box truck stands at frame-right; tall pine trees fill the background.",
+     "visual_zh": "安静的树林山坡，没有人：左边原本是隧道口的地方，只剩一块长满青苔的岩石和一截枯树桩，看不到一点门和路的痕迹，中间的碎石空地上空着，松树被微风轻轻吹动。别的什么都不动。",
+     "camera_zh": "0—3秒，镜头慢慢推近，直到岩石和树桩占满画面中间三分之一。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 3,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. On the hillside at frame-left a moss-covered boulder and a dead tree stump sit where the tunnel mouth was, with not a trace of a door or a road, the gravel clearing lies empty in the middle and a faint breeze moves the pines. Nothing else moves. The camera pushes in slowly until the boulder and the stump fill the middle third of the frame.",
+       "visual_zh": "安静的树林山坡，没有人：左边原本是隧道口的地方，只剩一块长满青苔的岩石和一截枯树桩，看不到一点门和路的痕迹，中间的碎石空地上空着，松树被微风轻轻吹动。别的什么都不动。 镜头慢慢推近，直到岩石和树桩占满画面中间三分之一。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "A hushed forest with a faint breeze in the pines and no birdsong at all. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here.",
+     "sound_zh": "寂静的树林，松林里有一丝轻风，一点鸟叫声都没有。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。",
+     "seed": 33406,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "07｜同一座山坡：彪子发现入口没了，赵虎让他记死这地方",
+     "duration_seconds": 8,
+     "generation_seconds": 8,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "Biao",
+      "Zhao"
+     ],
+     "asset_keys": [
+      "hill_hidden",
+      "biao_thug",
+      "zhao_boss"
+     ],
+     "image_reference_keys": [
+      "hill_hidden"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium two-shot, both men from the head to the knees, in the middle third of the frame, on the gravel clearing. Biao (a Chinese man in his twenties) at frame-left, standing on the gravel clearing in profile facing frame-left, one arm pointing toward the hillside, in a faded grey hoodie and a backwards baseball cap over short black hair, lean and wiry, his restless dark eyes on the moss-covered boulder and the dead stump on the hillside at frame-left, his eyes wide, his brows pulled up, his lips parted. Zhao (a Chinese man in his fifties) at frame-right, standing beside the box truck in profile facing frame-left, a cigarette hanging from the corner of his mouth, in a sleeveless black leather vest over a sweat-stained grey t-shirt, a gold chain at his thick neck, his head shaved, his small dark eyes on the moss-covered boulder on the hillside at frame-left, his jaw tight, his lips pressed flat, his brows low. Behind them the moss-covered boulder and the dead stump sit on the quiet hillside at frame-left where the tunnel mouth was, and the box truck stands at frame-right. The frame holds Biao and Zhao, the boulder and the stump on the hillside, and the box truck. Hard noon light falls through tall pines onto the quiet forest hillside. Fixed stage layout: the forested hillside at frame-left holds a moss-covered boulder and a dead tree stump; the gravel clearing fills the middle of the frame; the large box truck stands at frame-right; tall pine trees fill the background.",
+     "visual_zh": "彪子伸手指着山坡，用吃惊的声音对赵虎说出第一句，眼睛睁大、眉毛上提。赵虎盯着那块长满青苔的岩石，然后把目光转向彪子，用低沉狡猾的声音对彪子说出第二句，下颌绷紧、嘴唇抿平、眉头压低。",
+     "camera_zh": "0—8秒，镜头慢慢推近，直到两人占满画面中间三分之一。",
+     "dialogue": [
+      {
+       "speaker": "Biao",
+       "text": "洞口……没了？",
+       "start_seconds": 0.8,
+       "end_seconds": 2.03,
+       "language": "zh"
+      },
+      {
+       "speaker": "Zhao",
+       "text": "把这地方，给我记死了。",
+       "start_seconds": 3.0,
+       "end_seconds": 5.6,
+       "language": "zh"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 8,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. [[asset:biao_thug]] points at the hillside with one arm and speaks the first line to [[asset:zhao_boss]] in a startled voice, his eyes wide and his brows pulled up. [[asset:zhao_boss]] stares at the moss-covered boulder, then turns his eyes to [[asset:biao_thug]] and speaks the second line to [[asset:biao_thug]] in a low sly voice, his jaw tight, his lips pressed flat and his brows low. The camera pushes in slowly until both men fill the middle third of the frame.",
+       "visual_zh": "彪子伸手指着山坡，用吃惊的声音对赵虎说出第一句，眼睛睁大、眉毛上提。赵虎盯着那块长满青苔的岩石，然后把目光转向彪子，用低沉狡猾的声音对彪子说出第二句，下颌绷紧、嘴唇抿平、眉头压低。 镜头慢慢推近，直到两人占满画面中间三分之一。",
+       "dialogue_indices": [
+        0,
+        1
+       ]
+      }
+     ],
+     "sound_en": "A truck engine idling, boots on gravel and the faint breeze in the pines. Voices stay close and clear.",
+     "sound_zh": "卡车发动机怠速的声音、靴子踩在碎石上的嘎吱声和松林里的轻风。人声近而清楚。",
+     "seed": 33407,
+     "dialogue_language": "zh"
+    }
+   ],
+   "dialogue_language": "zh"
+  }
+ ]
+}

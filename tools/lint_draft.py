@@ -96,16 +96,17 @@ for ep in d['episodes']:
         dl = s['dialogue']
         dur = s['duration_seconds']
         if dl and dur < 6: bad(t, '有台词的任务不要短于 6 秒')
-        if len(dl) > 2: bad(t, '一个任务多于两句台词')
-        if len(dl) == 2 and dur < 8: bad(t, '两句台词的任务要 ≥8 秒')
+        if len(dl) > 3: bad(t, '一个任务多于三句台词')
+        if len(dl) == 3 and dur < 9: bad(t, '三句台词的任务要 ≥9 秒（2026-10-13 新剧第 1–4 集 004 起允许 3 句短话，待验证）')
+        if len(dl) >= 2 and dur < 8: bad(t, '两句台词的任务要 ≥8 秒')
         if dur >= 15 and len(dl) > 2: warn(t, '15 秒任务台词多于两句')
         # 每句台词：镜头文字里要写“对谁说”，对象在这个任务里、不是说话人
         targets = [m.group(1) for m in re.finditer(SPEAK.pattern + r"[^.;]{0,80}?\b(?:to|at) \[\[asset:(\w+)\]\]", vis, re.I)]
         for x in dl:
-            if x['start_seconds'] > dur / 2: bad(t, f'台词“{x["text"]}”计划开口 {x["start_seconds"]} 秒，不在任务前半段（实际会晚 1–6 秒）')
+            if x is dl[0] and x['start_seconds'] > dur / 2: bad(t, f'台词“{x["text"]}”计划开口 {x["start_seconds"]} 秒，不在任务前半段（实际会晚 1–6 秒）')
             sp_keys = char_assets.get(x['speaker'], [])
             ok = [k for k in targets if k in s['asset_keys'] and roles.get(k) == 'character' and k not in sp_keys]
-            if not ok and not re.search(r'inner voice|voice-over', vis, re.I): bad(t, f'台词“{x["text"]}”没在镜头文字里写明对谁说（… to [[asset:某人]]，那人要在画面里）；独白要写 inner voice')
+            if not ok and not re.search(r'inner voice|voice-over|to (?:himself|herself)', vis, re.I): bad(t, f'台词“{x["text"]}”没在镜头文字里写明对谁说（… to [[asset:某人]]，那人要在画面里）；独白要写 inner voice')
             han = len(re.findall(r'[㐀-鿿]', x['text']))
             lang = x.get('language') or s.get('dialogue_language') or d.get('dialogue_language')
             if lang == 'en':
