@@ -6,6 +6,10 @@
 import json, os, sys
 FOLDER = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'Alpha继兄的笼中吻')
 args = sys.argv[1:]
+if '--folder' in args:      # 新剧：--folder 极寒末日_隐秘安全屋/合并稿（相对仓库根目录）
+    i = args.index('--folder')
+    FOLDER = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', args[i + 1])
+    del args[i:i + 2]
 allow = set()   # --allow-seeds 4307,4601 ：对比实验故意和正式版同种子（跨稿重复），列在这里才放行
 if '--allow-seeds' in args:
     i = args.index('--allow-seeds')
