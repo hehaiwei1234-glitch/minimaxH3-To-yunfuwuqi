@@ -1,0 +1,2192 @@
+{
+ "schema": "h3-production-draft",
+ "version": 1,
+ "title": "极寒末日：我的隐秘安全屋｜第1–4集｜七天·半价·扫货·山里",
+ "dialogue_language": "zh",
+ "style": "Photorealistic live-action post-apocalyptic survival drama set in modern-day China, with a cinematic, high-contrast look. Two clear visual worlds: the blinding white heat of a summer world that does not know what is coming, and later a warm amber-lit hidden shelter set against a silent frozen white world of snow, ice and green aurora. Every named character is Chinese. Rich natural skin texture with visible pores, realistic fabrics, restrained cinematic color grading, and an ultra-wide 8:3 cinemascope frame in which the people are placed deliberately and the room is visible around them.",
+ "assets": [
+  {
+   "key": "lin_studio",
+   "kind": "image",
+   "role": "character",
+   "label": "林峰（深夜工作室：皱巴巴的白衬衫，一脸倦意）",
+   "description": {
+    "en": "Lin, a lean, athletic Chinese man in his early thirties with short messy black hair, a faint shadow of stubble and tired but steady dark-brown eyes, wearing a rumpled white dress shirt with the sleeves rolled to his forearms and a loosened collar. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "林峰，三十出头、身形精瘦结实的中国男性，黑色短发有些凌乱，下巴一层淡淡的胡茬，疲惫却沉稳的深褐色眼睛，穿着皱巴巴的白衬衫、袖子卷到小臂、领口松开。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of a Chinese man, short messy black hair, a faint shadow of stubble, tired but steady dark-brown eyes, wearing a rumpled white dress shirt with the sleeves rolled to his forearms and a loosened collar. He faces the camera with a tired, steady expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "lin_bank",
+   "kind": "image",
+   "role": "character",
+   "label": "林峰（银行里：炭灰色西装外套，白衬衫）",
+   "description": {
+    "en": "Lin, the same lean, athletic Chinese man in his early thirties as in the reference, clean-shaven with short neatly combed black hair and steady dark-brown eyes, wearing a fitted charcoal blazer over a white open-collar shirt. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "林峰，和参考图是同一位三十出头、身形精瘦结实的中国男性，胡子刮得干净，黑色短发梳得整齐，沉稳的深褐色眼睛，穿着合身的炭灰色西装外套、里面是白色开领衬衫。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of the same man as in the reference image, short neatly combed black hair, clean-shaven, steady dark-brown eyes, wearing a fitted charcoal blazer over a white open-collar shirt. He faces the camera with a calm, level expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": [
+     "lin_studio"
+    ]
+   }
+  },
+  {
+   "key": "lin_work",
+   "kind": "image",
+   "role": "character",
+   "label": "林峰（深灰亨利衫，橄榄绿多口袋工装背心）",
+   "description": {
+    "en": "Lin, the same lean, athletic Chinese man in his early thirties as in the reference, with short black hair and a faint shadow of stubble, steady dark-brown eyes, wearing a charcoal henley under a dark olive utility vest with many pockets and dark cargo pants. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "林峰，和参考图是同一位三十出头、身形精瘦结实的中国男性，黑色短发，带一点淡淡的胡茬，沉稳的深褐色眼睛，穿着深灰色亨利衫、外面是深橄榄绿多口袋工装背心，深色工装裤。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of the same man as in the reference image, short black hair, a faint shadow of stubble, steady dark-brown eyes, wearing a charcoal henley under a dark olive utility vest with many pockets. He faces the camera with a calm, level expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": [
+     "lin_studio"
+    ]
+   }
+  },
+  {
+   "key": "lin_home",
+   "kind": "image",
+   "role": "character",
+   "label": "林峰（在安全屋里：灰色棉质家居服，光脚）",
+   "description": {
+    "en": "Lin, the same lean, athletic Chinese man in his early thirties as in the reference, with short black hair still damp from a shower, steady dark-brown eyes, wearing a soft grey cotton long-sleeve henley and loose dark lounge pants, barefoot. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "林峰，和参考图是同一位三十出头、身形精瘦结实的中国男性，黑色短发刚洗过还带着湿气，沉稳的深褐色眼睛，穿着柔软的灰色棉质长袖亨利衫和宽松的深色家居裤，光着脚。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic full-body portrait of the same man as in the reference image, short black hair still damp from a shower, steady dark-brown eyes, wearing a soft grey cotton long-sleeve henley and loose dark lounge pants, barefoot. He faces the camera with a relaxed, content expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": [
+     "lin_studio"
+    ]
+   }
+  },
+  {
+   "key": "su_suit",
+   "kind": "image",
+   "role": "character",
+   "label": "苏清月（黑色真丝衬衫，金丝眼镜）",
+   "description": {
+    "en": "Su, an elegant, strikingly beautiful Chinese woman in her late twenties with long glossy black hair falling straight over one shoulder, sharp dark-brown eyes behind thin gold-rimmed glasses, wearing a fitted black silk blouse and a black pencil skirt. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "苏清月，二十八岁左右、优雅而极其美丽的中国女性，乌黑的长直发光滑地垂在一边肩上，锐利的深褐色眼睛戴着细细的金丝眼镜，穿着合身的黑色真丝衬衫和黑色铅笔裙。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of a Chinese woman, long glossy black hair falling straight over one shoulder, sharp dark-brown eyes behind thin gold-rimmed glasses, wearing a fitted black silk blouse. She faces the camera with a composed, sharp expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "wen_blazer",
+   "kind": "image",
+   "role": "character",
+   "label": "文助理（苏清月的助理，藏青色西装外套）",
+   "description": {
+    "en": "Wen, a brisk young Chinese woman in her mid-twenties with black hair in a neat low ponytail, clear dark eyes and a smooth fair face, wearing a navy blazer over a white blouse. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "文助理，二十五岁左右干练的年轻中国女性，黑色头发扎成利落的低马尾，清亮的深色眼睛，皮肤白净，穿着藏青色西装外套、里面是白衬衫。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of a Chinese woman, black hair in a neat low ponytail, clear dark eyes, a smooth fair face, wearing a navy blazer over a white blouse. She faces the camera with an attentive, alert expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "ning_partner",
+   "kind": "image",
+   "role": "character",
+   "label": "周宁（林峰的合伙人，灰色卫衣，披着深色羽绒外套）",
+   "description": {
+    "en": "Ning, a rumpled Chinese man in his early thirties with messy short black hair, a few days of stubble, a round tired face and bleary dark eyes, wearing a grey hooded sweatshirt with a dark puffer coat draped over his shoulders. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "周宁，三十出头、一脸疲态的中国男性，黑色短发凌乱，有几天没刮的胡茬，一张圆脸，睡眼惺忪的深色眼睛，穿着灰色连帽卫衣、肩上披着一件深色羽绒外套。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of a Chinese man, messy short black hair, a few days of stubble, a round tired face, bleary dark eyes, wearing a grey hooded sweatshirt with a dark puffer coat draped over his shoulders. He faces the camera with a sleepy, worried expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "liang_banker",
+   "kind": "image",
+   "role": "character",
+   "label": "梁经理（银行客户经理，浅灰色套装）",
+   "description": {
+    "en": "Manager Liang, a polished Chinese woman in her early forties with a neat shoulder-length black bob, composed dark eyes and a courteous bearing, wearing a tailored dove-grey skirt suit over a white blouse with small pearl earrings. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "梁经理，四十出头、一丝不苟的中国女性，齐肩的黑色短发整齐利落，沉着的深色眼睛，举止得体，穿着剪裁合身的浅灰色套装、里面是白衬衫，戴着小小的珍珠耳钉。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of a Chinese woman, a neat shoulder-length black bob, composed dark eyes, small pearl earrings, wearing a tailored dove-grey skirt suit over a white blouse. She faces the camera with a polite, composed expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "sun_agent",
+   "kind": "image",
+   "role": "character",
+   "label": "中介小孙（短袖白衬衫，松开的浅蓝领带）",
+   "description": {
+    "en": "Agent Sun, a nervous Chinese man in his mid-thirties with sweat-damp short black hair, a thin face and anxious dark eyes, wearing a short-sleeved white shirt with a loosened pale blue tie. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "中介小孙，三十五岁左右、神情紧张的中国男性，短发被汗打湿，一张瘦脸，焦虑的深色眼睛，穿着短袖白衬衫、浅蓝色领带松松地挂着。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of a Chinese man, sweat-damp short black hair, a thin face, anxious dark eyes, wearing a short-sleeved white shirt with a loosened pale blue tie. He faces the camera with a sweaty, nervous expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "ma_outdoor",
+   "kind": "image",
+   "role": "character",
+   "label": "户外店马老板（红色POLO衫，帆布围裙，光头）",
+   "description": {
+    "en": "Boss Ma, a stout, jovial Chinese man in his fifties with a bald head shiny with sweat, a round red face and small cheerful dark eyes, wearing a straining red polo shirt under a canvas shop apron. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "马老板，五十多岁、矮胖爱笑的中国男性，光头上泛着汗光，一张圆圆的红脸，小而爱笑的深色眼睛，穿着绷得很紧的红色POLO衫、外面系着帆布店员围裙。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of a Chinese man, a bald head shiny with sweat, a round red face, small cheerful dark eyes, wearing a straining red polo shirt under a canvas shop apron. He faces the camera with a cheerful, shrewd expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "gu_coal",
+   "kind": "image",
+   "role": "character",
+   "label": "煤场顾老板（沾着煤灰的灰衬衫，脖子上搭毛巾，黄色安全帽）",
+   "description": {
+    "en": "Boss Gu, a weathered Chinese man in his fifties with deeply tanned skin, a squarish coal-dusted face and squinting dark eyes, wearing a coal-streaked grey work shirt, a damp towel around his neck and a yellow hard hat. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "顾老板，五十多岁、饱经风霜的中国男性，皮肤晒得黝黑，方脸上沾着煤灰，眯缝着深色眼睛，穿着沾着煤灰的灰色工作衬衫、脖子上搭着一条湿毛巾、戴着黄色安全帽。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of a Chinese man, deeply tanned skin, a squarish coal-dusted face, squinting dark eyes, wearing a coal-streaked grey work shirt, a damp towel around his neck and a yellow hard hat. He faces the camera with a weary, squinting expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "xiao_agri",
+   "kind": "image",
+   "role": "character",
+   "label": "农资公司销售小肖（绿色POLO衫，卡其围裙，高马尾）",
+   "description": {
+    "en": "Xiao, a bright Chinese woman in her mid-twenties with her black hair in a high ponytail, a fresh round face and eager dark eyes, wearing a bright green company polo shirt under a khaki apron. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "小肖，二十五岁左右、爽朗的中国女性，黑色头发扎成高马尾，一张清爽的圆脸，热切的深色眼睛，穿着亮绿色公司POLO衫、外面系着卡其色围裙。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of a Chinese woman, her black hair in a high ponytail, a fresh round face, eager dark eyes, wearing a bright green company polo shirt under a khaki apron. She faces the camera with a bright, polite expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "ranger_old",
+   "kind": "image",
+   "role": "character",
+   "label": "老护林员（褪色的橄榄绿护林外套，旧草帽）",
+   "description": {
+    "en": "The old ranger, a lean Chinese man in his late sixties with a deeply weathered face, white stubble and deep-set dark eyes, wearing a faded olive forestry jacket and a battered straw hat. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "老护林员，六十多岁、精瘦的中国男性，一张被风吹日晒得满是沟壑的脸，下巴上是白色胡茬，深陷的深色眼睛，穿着褪色的橄榄绿护林外套、戴着一顶旧草帽。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of a Chinese man, a deeply weathered face, white stubble, deep-set dark eyes, wearing a faded olive forestry jacket and a battered straw hat. He faces the camera with a dry, watchful expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "zhao_boss",
+   "kind": "image",
+   "role": "character",
+   "label": "赵虎（物流老板，黑色皮背心，金链子）",
+   "description": {
+    "en": "Zhao Hu, a heavy-set Chinese man in his fifties with a shaved head, a thick neck, small dark eyes and a gold chain at his neck, wearing a sleeveless black leather vest over a sweat-stained grey t-shirt. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "赵虎，五十岁左右、体格粗壮的中国男性，光头，脖子粗，小而黑的眼睛，脖子上戴着金链子，穿着无袖黑色皮背心、里面是被汗浸湿的灰色T恤。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of a Chinese man, a shaved head, a thick neck, small dark eyes, a gold chain at his neck, wearing a sleeveless black leather vest over a sweat-stained grey t-shirt. He faces the camera with a sly, greedy expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "biao_thug",
+   "kind": "image",
+   "role": "character",
+   "label": "彪子（赵虎的小弟，灰色连帽衫，反戴棒球帽）",
+   "description": {
+    "en": "Biao, a lean wiry Chinese man in his twenties with a thin stubbled face and restless dark eyes, wearing a faded grey hoodie and a backwards baseball cap over short black hair. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "彪子，二十多岁、瘦而精悍的中国男性，一张长着胡茬的瘦脸，不安分的深色眼睛，穿着褪色的灰色连帽衫、反戴着棒球帽，帽下是黑色短发。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of a Chinese man, a thin stubbled face, restless dark eyes, wearing a faded grey hoodie and a backwards baseball cap over short black hair. He faces the camera with an eager, nervous expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "bunker_living",
+   "kind": "image",
+   "role": "scene",
+   "label": "安全屋的生活区（暖黄灯，25℃）",
+   "description": {
+    "en": "The cozy living area of an underground hideout: an open kitchen with a black-and-gold stove and a marble counter at the left, a thick cream wool rug and a small round wooden dining table in the middle, a wall of small security monitors at the center-right, a heavy round steel hatch door in the right wall, warm amber light from soft recessed lamps. The reference fixes the layout and decor.",
+    "zh": "地下藏身处温馨的生活区：左边是开放式厨房、黑金色炉灶和大理石台面，中间是厚厚的奶白色羊毛地毯和一张小小的圆形木餐桌，中右是一整面小监控屏墙，右墙是一扇厚重的圆形钢制舱门，柔和的嵌灯投下暖琥珀色的光。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of the cozy living area of an underground hideout: an open kitchen with a black-and-gold stove and a marble counter at the left, a thick cream wool rug and a small round wooden dining table in the middle, a wall of small security monitors at the center-right, a heavy round steel hatch door in the right wall, warm amber light from soft recessed lamps, nobody in the scene. The frame holds the kitchen, the rug, the dining table, the monitor wall and the hatch.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "studio_night",
+   "kind": "image",
+   "role": "scene",
+   "label": "林峰的气候建模工作室（深夜）",
+   "description": {
+    "en": "A late-night climate-modeling studio in a Chinese city: a long desk with two large monitors showing a pale satellite map of a volcanic ash cloud and several orange prediction curves falling downward at the left, a worn brown leather sofa with a rumpled blanket at the right, cold coffee cups on the desk, a floor-to-ceiling window across the back wall showing a warm night cityscape with a long ribbon of car headlights on an elevated road and rows of lit apartment windows, warm amber lamp light. The reference fixes the layout and decor.",
+    "zh": "深夜里中国某城市的气候建模工作室：左边是一张长桌，上面两块大屏幕，显示着火山灰扩散的苍白卫星图和几条向下落的橙色预测曲线，右边是一张旧的棕色皮沙发、上面一条皱巴巴的毯子，桌上有凉掉的咖啡杯，后墙是落地窗、窗外是暖色的夜景——高架桥上一长串车灯、一排排亮着的住宅窗户，暖琥珀色的台灯光。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a late-night climate-modeling studio in a Chinese city: a long desk with two large monitors showing a pale satellite map of a volcanic ash cloud and several orange prediction curves falling downward at the left, a worn brown leather sofa with a rumpled blanket at the right, cold coffee cups on the desk, a floor-to-ceiling window across the back wall showing a warm night cityscape with a long ribbon of car headlights on an elevated road and rows of lit apartment windows, warm amber lamp light, nobody in the scene. The frame holds the desk with the two monitors, the sofa and the window with the city lights.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "bank_room",
+   "kind": "image",
+   "role": "scene",
+   "label": "银行的贵宾洽谈室（清晨阳光）",
+   "description": {
+    "en": "A private banking room in a Chinese city bank in bright morning sunlight: a long walnut meeting table in the middle of the room with a stack of thick documents and a pen on it, floor-to-ceiling windows across the back wall showing a sunlit skyline, a glass door in the right wall, a potted palm in the left corner, spotless and quiet. The reference fixes the layout and decor.",
+    "zh": "中国某城市银行清晨阳光里的贵宾洽谈室：房间中间是一张长长的胡桃木会议桌，桌上放着一摞厚厚的文件和一支笔，后墙是落地窗、窗外是阳光下的天际线，右墙是一扇玻璃门，左边角落摆着一盆盆栽，整洁安静。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a private banking room in a Chinese city bank in bright morning sunlight: a long walnut meeting table in the middle of the room with a stack of thick documents and a pen on it, floor-to-ceiling windows across the back wall showing a sunlit skyline, a glass door in the right wall, a potted palm in the left corner, spotless and quiet, nobody in the scene. The frame holds the walnut table, the sunlit windows, the glass door and the palm.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "penthouse",
+   "kind": "image",
+   "role": "scene",
+   "label": "市中心豪华大平层（冷气很足，窗外是烈日）",
+   "description": {
+    "en": "A luxury penthouse living room in a Chinese city: a glass dining table in the middle of the room, floor-to-ceiling windows across the back wall showing a white-hot skyline of glass towers under a blazing sun, a white sectional sofa against the left wall, a wide entry hall at the right with three black tactical backpacks lined up on the floor beside it, cool air-conditioned light. The reference fixes the layout and decor.",
+    "zh": "中国某城市的豪华大平层客厅：房间中间是一张玻璃餐桌，后墙是落地窗、窗外是烈日下白热的玻璃幕墙天际线，左墙边是白色组合沙发，右边是宽敞的玄关、旁边地上并排放着三个黑色战术背包，冷色的空调光。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a luxury penthouse living room in a Chinese city: a glass dining table in the middle of the room, floor-to-ceiling windows across the back wall showing a white-hot skyline of glass towers under a blazing sun, a white sectional sofa against the left wall, a wide entry hall at the right with three black tactical backpacks lined up on the floor beside it, cool air-conditioned light, nobody in the scene. The frame holds the glass table, the windows, the sofa and the entry hall with the backpacks.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "outdoor_store",
+   "kind": "image",
+   "role": "scene",
+   "label": "夏天的户外用品店（外面烈日）",
+   "description": {
+    "en": "A well-stocked outdoor-gear store in a Chinese city in midsummer: racks of thick down parkas, ski jackets and sleeping bags along the left wall, a checkout counter with a cash register at the middle-right, a broad glass shopfront at the right showing a white-hot summer street, cool air-conditioned light. The reference fixes the layout and decor.",
+    "zh": "中国某城市盛夏里货品齐全的户外用品店：左墙边是一排排厚厚的羽绒服、滑雪服和睡袋，中右是带收银机的收银台，右边是宽大的玻璃橱窗、窗外是白热的夏日街道，冷色的空调光。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a well-stocked outdoor-gear store in a Chinese city in midsummer: racks of thick down parkas, ski jackets and sleeping bags along the left wall, a checkout counter with a cash register at the middle-right, a broad glass shopfront at the right showing a white-hot summer street, cool air-conditioned light, nobody in the scene. The frame holds the parka racks, the checkout counter and the sunlit shopfront.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "coal_yard",
+   "kind": "image",
+   "role": "scene",
+   "label": "夏天的煤场（热浪）",
+   "description": {
+    "en": "A coal yard on the outskirts of a Chinese city in midsummer: huge black mountains of anthracite filling the left half of the yard, a small brick office with a weighbridge at the middle-right, a yellow wheel loader parked at the right, hazy white sun and heat shimmering over the coal dust. The reference fixes the layout and decor.",
+    "zh": "盛夏里中国某城市郊外的煤场：左半边是巨大的黑色无烟煤山，中右是带地磅的小砖房，右边停着一辆黄色轮式装载机，白晃晃的太阳，热浪在煤灰上方抖动。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a coal yard on the outskirts of a Chinese city in midsummer: huge black mountains of anthracite filling the left half of the yard, a small brick office with a weighbridge at the middle-right, a yellow wheel loader parked at the right, hazy white sun and heat shimmering over the coal dust, nobody in the scene. The frame holds the coal mountains, the brick office and the loader.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "agri_store",
+   "kind": "image",
+   "role": "scene",
+   "label": "农资公司的展厅",
+   "description": {
+    "en": "A neat, modern agricultural-supply showroom in a Chinese city: tall shelves of full-spectrum grow lamps and rows of colorful vegetable seed packets along the left wall, a long counter in the middle with stacks of white foam seedling blocks, seed trays and jugs of nutrient solution on it, a glass front door at the right showing a hot bright street, bright white shop light. The reference fixes the layout and decor.",
+    "zh": "中国某城市整洁现代的农资公司展厅：左墙边是高高的全光谱生长灯货架和一排排五颜六色的蔬菜种子，中间是一条长柜台、台面上堆着白色海绵育苗块、育苗盘和一桶桶营养液，右边是玻璃大门、门外是炎热明亮的街道，明亮的白色店内灯光。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a neat, modern agricultural-supply showroom in a Chinese city: tall shelves of full-spectrum grow lamps and rows of colorful vegetable seed packets along the left wall, a long counter in the middle with stacks of white foam seedling blocks, seed trays and jugs of nutrient solution on it, a glass front door at the right showing a hot bright street, bright white shop light, nobody in the scene. The frame holds the grow-lamp shelves, the seed packets, the counter and the glass door.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "freight_yard",
+   "kind": "image",
+   "role": "scene",
+   "label": "货运站（碎石院子，卡车排成一排）",
+   "description": {
+    "en": "A dusty gravel freight yard of a trucking company in midsummer: a small yard office with a rolled-up shutter at the left, a row of box trucks along the back, stacks of wooden pallets at the middle-right, an open chain-link yard gate at the right with a dirt road leading out of it, hard white sunlight and heat shimmering. The reference fixes the layout and decor.",
+    "zh": "盛夏里一家货运公司尘土飞扬的碎石货运站：左边是卷帘门拉起的小办公室，后面一排厢式卡车，中右是几摞木托盘，右边是敞开的铁丝网院门、门外一条土路，白花花的硬光，热浪抖动。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a dusty gravel freight yard of a trucking company in midsummer: a small yard office with a rolled-up shutter at the left, a row of box trucks along the back, stacks of wooden pallets at the middle-right, an open chain-link yard gate at the right with a dirt road leading out of it, hard white sunlight and heat shimmering, nobody in the scene. The frame holds the office, the row of trucks, the pallets and the open gate.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "shelter_old",
+   "kind": "image",
+   "role": "scene",
+   "label": "深山里的旧防空洞口（老铁门半开）",
+   "description": {
+    "en": "A quiet overgrown forest hillside in China: an old concrete shelter portal covered in vines with a rusted steel door standing half open, cut into the hillside at the left, a narrow dirt trail through the middle, tall pine trees all around and a pale hazy sky between the treetops, no vehicles, soft hazy noon light. The reference fixes the layout and decor.",
+    "zh": "中国深山里安静而杂草丛生的树林山坡：左边山坡上有一个爬满藤蔓的旧混凝土防空洞口、生锈的铁门半开着，中间是一条窄窄的土路，四周是高高的松树、树梢之间露出苍白朦胧的天空，没有车，柔和朦胧的正午光。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a quiet overgrown forest hillside in China: an old concrete shelter portal covered in vines with a rusted steel door standing half open, cut into the hillside at the left, a narrow dirt trail through the middle, tall pine trees all around and a pale hazy sky between the treetops, no vehicles, soft hazy noon light, nobody in the scene. The frame holds the old shelter portal, the trail, the pines and the pale sky.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "bunker_empty",
+   "kind": "image",
+   "role": "scene",
+   "label": "空荡荡的防空洞大厅（地下水渠）",
+   "description": {
+    "en": "A vast empty three-storey concrete hall of an abandoned civil-defense shelter: bare walls, rusty railings along two upper levels at the back, a shallow concrete channel of clear running water crossing the foreground from left to right, a row of round concrete pillars at the right, dust hanging in pale flashlight beams. The reference fixes the layout and decor.",
+    "zh": "废弃防空洞里巨大而空荡荡的三层混凝土大厅：墙面光秃秃的，后面两层楼的生锈栏杆，一条浅浅的混凝土水渠、清澈的水从前景左边流向右边，右边是一排圆形混凝土立柱，灰尘悬在苍白的手电光束里。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a vast empty three-storey concrete hall of an abandoned civil-defense shelter: bare walls, rusty railings along two upper levels at the back, a shallow concrete channel of clear running water crossing the foreground from left to right, a row of round concrete pillars at the right, dust hanging in pale flashlight beams, nobody in the scene. The frame holds the bare hall, the water channel and the pillars.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "bunker_work",
+   "kind": "image",
+   "role": "scene",
+   "label": "堆满货的防空洞大厅里的工作台",
+   "description": {
+    "en": "A steel workbench in a vast underground concrete hall packed with supplies: the bench at the center with a shallow tub of clear water, a stack of white foam seeding blocks and an open seed packet on it, towering stacks of steel crates, pallets of boxes, generators and big water tanks filling the hall behind it and along both sides, hard white work lamps overhead. The reference fixes the layout and decor.",
+    "zh": "堆满物资的巨大地下混凝土大厅里的一张钢制工作台：台子在中间，上面放着一盆清水、一摞白色海绵育苗块和一包打开的种子，后面和两侧是高高的钢箱、成托盘的货箱、发电机和巨大的水箱，头顶是白色的硬质工作灯。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a steel workbench in a vast underground concrete hall packed with supplies: the bench at the center with a shallow tub of clear water, a stack of white foam seeding blocks and an open seed packet on it, towering stacks of steel crates, pallets of boxes, generators and big water tanks filling the hall behind it and along both sides, hard white work lamps overhead, nobody in the scene. The frame holds the workbench with the water tub, and the stacked supplies behind it.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "tunnel_mouth",
+   "kind": "image",
+   "role": "scene",
+   "label": "深山里的隧道口（同一处旧防空洞，铁门大开，卡车在右）",
+   "description": {
+    "en": "The same forested mountain hillside in summer as in the reference image: the old concrete shelter portal covered in vines with its rusted steel door swung wide open on a black interior, cut into the hillside at the left, a gravel clearing in the middle, a large box truck with its rear door rolled up and crates stacked at its back at the right, tall pine trees all around, hard noon light. The reference fixes the layout and decor.",
+    "zh": "和参考图是同一座夏天的深山树林山坡：左边山坡上是那个爬满藤蔓的旧混凝土防空洞口、生锈的铁门大开着露出黑洞洞的里面，中间是一片碎石空地，右边停着一辆后门卷起、后面堆着箱子的大型厢式卡车，四周是高高的松树，正午的硬光。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of the same forested mountain hillside in summer as in the reference image: the old concrete shelter portal covered in vines with its rusted steel door swung wide open on a black interior, cut into the hillside at the left, a gravel clearing in the middle, a large box truck with its rear door rolled up and crates stacked at its back at the right, tall pine trees all around, hard noon light, nobody in the scene. The frame holds the open dark portal, the gravel clearing, the box truck and the pines.",
+    "reference_keys": [
+     "shelter_old"
+    ]
+   }
+  },
+  {
+   "key": "hill_hidden",
+   "kind": "image",
+   "role": "scene",
+   "label": "同一座山坡（入口已被伪装，只剩青苔岩石和枯树桩，卡车还在右边）",
+   "description": {
+    "en": "The same forested mountain hillside in summer as in the reference image, now with no tunnel mouth: a moss-covered boulder and a dead tree stump sit on the slope at the left where the tunnel mouth was, a gravel clearing in the middle, the same large box truck still standing at the right, tall pine trees all around, hard noon light. The reference fixes the layout and decor.",
+    "zh": "和参考图是同一座夏天的深山树林山坡，只是隧道口不见了：左边坡上原本是隧道口的位置现在是一块长满青苔的岩石和一截枯树桩，中间是碎石空地，右边还是那辆大型厢式卡车，四周是高高的松树，正午的硬光。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of the same forested mountain hillside in summer as in the reference image, now with no tunnel mouth: a moss-covered boulder and a dead tree stump sit on the slope at the left where the tunnel mouth was, a gravel clearing in the middle, the same large box truck still standing at the right, tall pine trees all around, hard noon light, nobody in the scene. The frame holds the boulder, the stump, the clearing, the truck and the pines.",
+    "reference_keys": [
+     "tunnel_mouth"
+    ]
+   }
+  },
+  {
+   "key": "lin_arctic",
+   "kind": "image",
+   "role": "character",
+   "label": "林峰（纯白极地防寒服，兜帽、白色护目镜推在额头上）",
+   "description": {
+    "en": "Lin, the same lean, athletic Chinese man in his early thirties as in the reference, wearing a bulky pure-white polar expedition suit with the hood up, white goggles pushed up on his forehead and a white neck gaiter pulled down under his chin, his cheeks reddened by cold and a faint shadow of stubble. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "林峰，和参考图是同一位三十出头、身形精瘦结实的中国男性，穿着蓬松的纯白极地防寒服、戴着兜帽，白色护目镜推在额头上，白色围脖拉到下巴下面，脸颊被冻得发红，下巴上一层淡淡的胡茬。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic full-body portrait of the same man as in the reference image, a bulky pure-white polar expedition suit with the hood up, white goggles pushed up on his forehead, a white neck gaiter pulled down under his chin, cheeks reddened by cold, a faint shadow of stubble. He faces the camera with a hard, focused expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": [
+     "lin_studio"
+    ]
+   }
+  },
+  {
+   "key": "su_down",
+   "kind": "image",
+   "role": "character",
+   "label": "苏清月（长款奶白色羽绒服，金丝眼镜，睫毛上有霜）",
+   "description": {
+    "en": "Su, the same elegant Chinese woman in her late twenties as in the reference, with her long black hair tied back, thin gold-rimmed glasses on her nose and frost on her lashes, wearing a long cream down coat zipped to the chin over her black silk blouse. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "苏清月，和参考图是同一位二十八岁左右、优雅美丽的中国女性，乌黑的长发束在脑后，鼻梁上架着细金丝眼镜，睫毛上结着霜，穿着拉到下巴的长款奶白色羽绒服，里面是黑色真丝衬衫。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of the same woman as in the reference image, long black hair tied back, thin gold-rimmed glasses, frost on her lashes, wearing a long cream down coat zipped to the chin. She faces the camera with a pinched, determined expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": [
+     "su_suit"
+    ]
+   }
+  },
+  {
+   "key": "su_trek",
+   "kind": "image",
+   "role": "character",
+   "label": "苏清月（三层黑白羽绒服，黑围巾，滑雪护目镜推在额头上，背着登山包）",
+   "description": {
+    "en": "Su, the same elegant Chinese woman in her late twenties as in the reference but without glasses, wearing layered white and black down jackets, a black scarf wound up to her chin, ski goggles pushed up on her forehead and a heavy hiking backpack on her shoulders, frost on her lashes and cheeks, her long black hair tucked under a dark knit hat. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "苏清月，和参考图是同一位二十八岁左右、优雅美丽的中国女性，但不戴眼镜，穿着三层黑白相间的羽绒服，黑围巾一直绕到下巴，滑雪护目镜推在额头上，肩上背着沉重的登山包，睫毛和脸颊上都是霜，乌黑的长发塞在深色针织帽里。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic full-body portrait of the same woman as in the reference image, no glasses, layered white and black down jackets, a black scarf wound up to her chin, ski goggles pushed up on her forehead, frost on her lashes and cheeks, a dark knit hat. She faces the camera with an exhausted, determined expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": [
+     "su_suit"
+    ]
+   }
+  },
+  {
+   "key": "gaunt_drifter",
+   "kind": "image",
+   "role": "character",
+   "label": "流浪者甲（瘦得脱相，破旧的多层冬衣，拖着一根铁棍）",
+   "description": {
+    "en": "A gaunt Chinese man in his forties with hollow cheeks, cracked lips and sunken bloodshot eyes, wearing a layered tattered winter coat with a frost-crusted scarf pulled down under his chin, dragging a bent iron bar. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "一个四十多岁、瘦得脱相的中国男性，两颊凹陷，嘴唇开裂，眼窝深陷、布满血丝，穿着多层破旧的冬衣，结着霜的围巾拉到下巴下面，拖着一根弯了的铁棍。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of a Chinese man, hollow cheeks, cracked lips, sunken bloodshot eyes, wearing a layered tattered winter coat with a frost-crusted scarf pulled down under his chin. He faces the camera with an exhausted, hollow expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "bearded_drifter",
+   "kind": "image",
+   "role": "character",
+   "label": "流浪者乙（结着冰碴的黑胡子，破旧的棉夹克，针织帽）",
+   "description": {
+    "en": "A stocky Chinese man in his forties with a matted black beard crusted with ice, red-rimmed eyes, a ragged padded jacket and a knitted cap, carrying a short iron pipe. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "一个四十多岁、敦实的中国男性，黑胡子纠结着结满冰碴，眼眶发红，穿着破旧的棉夹克、戴着针织帽，手里拿着一截短铁管。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of a Chinese man, a matted black beard crusted with ice, red-rimmed eyes, a ragged padded jacket and a knitted cap. He faces the camera with a numb, bitter expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "brute_raider",
+   "kind": "image",
+   "role": "character",
+   "label": "暴徒（壮实的中年男人，脏棉袄，破围巾遮着口鼻，拿大锤）",
+   "description": {
+    "en": "A heavy-set Chinese man in his thirties with a stubbled broad face and wild bloodshot eyes, wearing a stained quilted coat with a ragged scarf pulled up over his nose, holding a sledgehammer. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "一个三十多岁、体格粗壮的中国男性，宽脸上胡子拉碴，眼睛布满血丝、神情凶狠，穿着脏兮兮的棉袄，破围巾拉起来遮住口鼻，手里拿着一把大锤。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of a Chinese man, a stubbled broad face, wild bloodshot eyes, wearing a stained quilted coat with a ragged scarf pulled up over his nose. He faces the camera with a savage, desperate expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "studio_day",
+   "kind": "image",
+   "role": "scene",
+   "label": "林峰的工作室（同一间，清晨的冷灰光，窗外城市安静）",
+   "description": {
+    "en": "The same late-night climate-modeling studio as in the reference image, now in cold grey early-morning light: the long desk with two large monitors still glowing with steeply falling orange curves at the left, the worn brown leather sofa at the center-right, a glass studio door at the right beyond the sofa, a floor-to-ceiling window across the back wall showing a pale grey dawn over a quiet city. The reference fixes the layout and decor.",
+    "zh": "和参考图是同一间气候建模工作室，现在是清晨冷灰色的光：左边长桌上两块大屏幕还亮着，橙色曲线陡直下落，中右是那张旧皮沙发，右边沙发后面是一扇玻璃门，后墙是落地窗、窗外是安静的城市灰蒙蒙的黎明。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of the same late-night climate-modeling studio as in the reference image, now in cold grey early-morning light: the long desk with two large monitors still glowing with steeply falling orange curves at the left, the worn brown leather sofa at the center-right, a glass studio door at the right beyond the sofa, a floor-to-ceiling window across the back wall showing a pale grey dawn over a quiet city, nobody in the scene. The frame holds the desk with the two monitors, the sofa, the glass door and the grey dawn window.",
+    "reference_keys": [
+     "studio_night"
+    ]
+   }
+  },
+  {
+   "key": "bunker_control",
+   "kind": "image",
+   "role": "scene",
+   "label": "地下控制室（红色按钮、监控墙、红色倒计时钟）",
+   "description": {
+    "en": "A compact underground concrete control room: a steel control console in the middle of the room with rows of small green status lights and one big red push-button under a clear flip-up cover, a wall of six small monitors at the left, a large red digital countdown clock hanging high on the back wall at center-right, a heavy steel door in the right wall, cool green indicator glow and pale work-lamp light. The reference fixes the layout and decor.",
+    "zh": "地下紧凑的混凝土控制室：房间中间是一张钢制控制台，上面一排排小小的绿色指示灯和一个罩着透明翻盖的大红色按钮，左边是一整面六块小屏幕的监控墙，中右的后墙高处挂着一个大红色电子倒计时钟，右墙是一扇厚重的钢门，冷冷的绿色指示灯光和苍白的工作灯光。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a compact underground concrete control room: a steel control console in the middle of the room with rows of small green status lights and one big red push-button under a clear flip-up cover, a wall of six small monitors at the left, a large red digital countdown clock hanging high on the back wall at center-right, a heavy steel door in the right wall, cool green indicator glow and pale work-lamp light, nobody in the scene. The frame holds the console with the red button, the monitor wall, the red clock and the steel door.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "street_summer",
+   "kind": "image",
+   "role": "scene",
+   "label": "中午的市中心大街（远处一堵白色的雾墙）",
+   "description": {
+    "en": "A wide city boulevard between glass office towers at midday under a blinding white sun: the street receding down the middle, a line of stopped cars filling both lanes, leafy trees along the sidewalks, and at the far end of the street a towering wall of white mist filling the sky. The reference fixes the layout and decor.",
+    "zh": "中午刺眼的白色阳光下，玻璃写字楼之间一条宽阔的市中心大街：街道向画面深处延伸，两条车道上停着一长排车，人行道两边是枝叶茂盛的行道树，街的尽头一堵高耸的白色雾墙遮住了天空。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a wide city boulevard between glass office towers at midday under a blinding white sun: the street receding down the middle, a line of stopped cars filling both lanes, leafy trees along the sidewalks, and at the far end of the street a towering wall of white mist filling the sky, nobody in the scene. The frame holds the boulevard, the stopped cars, the trees and the white wall of mist at the far end.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "street_frozen",
+   "kind": "image",
+   "role": "scene",
+   "label": "同一条大街（冻成冰蓝色，车被冰裹住，人形冻在路边）",
+   "description": {
+    "en": "The same wide city boulevard as in the reference image, now frozen in dim grey-blue light and a thin white mist: the stopped cars encased in ice, bare frost-furred trees along the sidewalks, people frozen mid-stride in white ice along the sidewalks, the glass towers furred with frost. The reference fixes the layout and decor.",
+    "zh": "和参考图是同一条宽阔的市中心大街，现在冻在昏暗的灰蓝色光里、飘着一层薄薄的白雾：停着的车被冰裹住，人行道边的行道树光秃秃的、结满霜，路边的人保持着迈步的姿势被冻在白色的冰里，玻璃写字楼上也结了一层霜。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of the same wide city boulevard as in the reference image, now frozen in dim grey-blue light and a thin white mist: the stopped cars encased in ice, bare frost-furred trees along the sidewalks, people frozen mid-stride in white ice along the sidewalks, the glass towers furred with frost, nobody in the scene. The frame holds the iced cars, the frost-furred trees, the frozen figures and the frosted towers.",
+    "reference_keys": [
+     "street_summer"
+    ]
+   }
+  },
+  {
+   "key": "wine_cellar",
+   "kind": "image",
+   "role": "scene",
+   "label": "苏清月大平层下面的酒窖（石墙，冷，一盏昏黄的灯）",
+   "description": {
+    "en": "A bitterly cold stone-walled private wine cellar beneath a luxury apartment tower: racks of wine bottles along the left wall, stacked cases of canned food and bottled water in the middle, three concrete steps rising to a heavy steel security door at the right, a small round thermometer on the wall above the cases, one dim yellow bulb, frost furring the bottles. The reference fixes the layout and decor.",
+    "zh": "豪华公寓楼下面一间冷得刺骨的石墙私人酒窖：左墙是一排排酒架，中间堆着成箱的罐头和瓶装水，右边三级混凝土台阶通向一扇厚重的钢制防盗门，货箱上方的墙上挂着一个小圆温度计，一盏昏黄的灯泡，酒瓶上结着一层霜。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a bitterly cold stone-walled private wine cellar beneath a luxury apartment tower: racks of wine bottles along the left wall, stacked cases of canned food and bottled water in the middle, three concrete steps rising to a heavy steel security door at the right, a small round thermometer on the wall above the cases, one dim yellow bulb, frost furring the bottles, nobody in the scene. The frame holds the wine racks, the stacked cases, the steps and the heavy steel door.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "airlock",
+   "kind": "image",
+   "role": "scene",
+   "label": "缓冲舱（白瓷砖，钢长凳，挂着白色防寒服，圆形钢舱门）",
+   "description": {
+    "en": "A narrow white-tiled decontamination airlock: a long steel bench with two hanging white polar suits and a shelf of white goggles along the left wall, a bare white-tiled floor in the middle, a heavy round steel hatch door in the right wall, hard white strip lights. The reference fixes the layout and decor.",
+    "zh": "一间狭长的白瓷砖缓冲舱：左墙边是一条钢制长凳、上面挂着两套白色防寒服、旁边一层架子上放着白色护目镜，中间是光洁的白瓷砖地面，右墙是一扇厚重的圆形钢舱门，白色的硬质灯管光。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a narrow white-tiled decontamination airlock: a long steel bench with two hanging white polar suits and a shelf of white goggles along the left wall, a bare white-tiled floor in the middle, a heavy round steel hatch door in the right wall, hard white strip lights, nobody in the scene. The frame holds the bench with the hanging white suits, the tiled floor and the round steel hatch.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "snow_hatch",
+   "kind": "image",
+   "role": "scene",
+   "label": "雪林里的枯树洞暗门（树洞里有黑洞洞的通道，腰深的雪）",
+   "description": {
+    "en": "A silent frozen pine forest at night buried in waist-deep snow under a black sky with a faint green aurora: at the left a hollow dead tree trunk whose camouflaged hatch stands open on a black passage, snow-laden pines all around, the white snow glowing. The reference fixes the layout and decor.",
+    "zh": "夜里一片寂静的冰封松林，积雪深到腰部，黑色的天空里有一点淡淡的绿色极光：左边是一截中空的枯树干，伪装的暗门敞开着、露出黑洞洞的通道，四周是压满雪的松树，白雪泛着微光。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a silent frozen pine forest at night buried in waist-deep snow under a black sky with a faint green aurora: at the left a hollow dead tree trunk whose camouflaged hatch stands open on a black passage, snow-laden pines all around, the white snow glowing, nobody in the scene. The frame holds the open hollow-trunk hatch, the deep snow and the snow-laden pines.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "snow_vent",
+   "kind": "image",
+   "role": "scene",
+   "label": "雪林里被冰封住的排气管",
+   "description": {
+    "en": "A silent frozen pine forest at night buried in deep snow under a black sky with a faint green aurora: a thick steel exhaust pipe sticking out of the snow at center-right with its mouth sealed in a heavy block of ice, snow-laden pines behind it, the white snow glowing. The reference fixes the layout and decor.",
+    "zh": "夜里一片寂静的冰封松林，积雪很深，黑色的天空里有一点淡淡的绿色极光：中右处一根粗钢排气管从雪里伸出来，管口被一大块厚冰封死，后面是压满雪的松树，白雪泛着微光。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a silent frozen pine forest at night buried in deep snow under a black sky with a faint green aurora: a thick steel exhaust pipe sticking out of the snow at center-right with its mouth sealed in a heavy block of ice, snow-laden pines behind it, the white snow glowing, nobody in the scene. The frame holds the ice-sealed steel pipe, the deep snow and the snow-laden pines.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "snow_trek",
+   "kind": "image",
+   "role": "scene",
+   "label": "一望无际的雪原（远处山脊上一排冻成冰的人形）",
+   "description": {
+    "en": "A vast frozen snowfield at night under a black sky with a faint green aurora: open deep snow filling the middle, a few leafless frozen trees at the right, and far at the back a line of white ice-encased human figures frozen mid-run along a low ridge, the white snow glowing. The reference fixes the layout and decor.",
+    "zh": "夜里黑色天空下一望无际的冰封雪原，有一点淡淡的绿色极光：中间是开阔的深雪，右边有几棵光秃秃的冻树，远处低矮的山脊上有一排冻成白冰的人形、保持着奔跑的姿势，白雪泛着微光。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a vast frozen snowfield at night under a black sky with a faint green aurora: open deep snow filling the middle, a few leafless frozen trees at the right, and far at the back a line of white ice-encased human figures frozen mid-run along a low ridge, the white snow glowing, nobody in the scene. The frame holds the open snowfield, the frozen trees and the ice-encased figures on the ridge.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "snow_stump",
+   "kind": "image",
+   "role": "scene",
+   "label": "同一座山坡变成雪地（青苔岩石盖着雪，枯树桩侧面有一小块镜头玻璃）",
+   "description": {
+    "en": "The same forested mountain hillside as in the reference image, now buried in snow at night under a black sky with a faint green aurora: a snow-capped boulder at the left, a dead tree stump at center-left with a small round dark glass lens set in its side and a thin patch of snow melting around the glass, an open snowfield in the middle, snow-laden pines in the background. The reference fixes the layout and decor.",
+    "zh": "和参考图是同一座深山树林山坡，现在夜里被大雪埋住，黑色的天空里有一点淡淡的绿色极光：左边是盖着雪的岩石，中左是那截枯树桩、侧面嵌着一小块圆形的深色玻璃，玻璃周围一小圈雪正在融化，中间是开阔的雪地，后面是压满雪的松树。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of the same forested mountain hillside as in the reference image, now buried in snow at night under a black sky with a faint green aurora: a snow-capped boulder at the left, a dead tree stump at center-left with a small round dark glass lens set in its side and a thin patch of snow melting around the glass, an open snowfield in the middle, snow-laden pines in the background, nobody in the scene. The frame holds the snow-capped boulder, the stump with the small glass lens and the open snowfield.",
+    "reference_keys": [
+     "hill_hidden"
+    ]
+   }
+  },
+  {
+   "key": "bunker_sprouts",
+   "kind": "image",
+   "role": "scene",
+   "label": "同一张工作台（海绵块里冒出了第一批嫩绿的芽，头顶亮着粉紫色生长灯）",
+   "description": {
+    "en": "The same steel workbench in the vast supply-packed underground hall as in the reference image, now with a white tray of foam seeding blocks each topped with tiny pale-green seedlings in the shallow tub of clear water under a hanging white-purple grow lamp, towering stacks of steel crates, pallets, generators and water tanks behind it and along both sides. The reference fixes the layout and decor.",
+    "zh": "和参考图是同一张钢制工作台、同一个堆满货的巨大地下大厅，现在浅浅的清水盆里的白色托盘上，每块海绵块顶上都冒出了小小的淡绿色嫩芽，头顶吊着一盏粉紫色的生长灯，后面和两侧是高高的钢箱、货箱、发电机和水箱。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of the same steel workbench in the vast supply-packed underground hall as in the reference image, now with a white tray of foam seeding blocks each topped with tiny pale-green seedlings in the shallow tub of clear water under a hanging white-purple grow lamp, towering stacks of steel crates, pallets, generators and water tanks behind it and along both sides, nobody in the scene. The frame holds the workbench, the tray of sprouting seedlings under the grow lamp and the stacked supplies.",
+    "reference_keys": [
+     "bunker_work"
+    ]
+   }
+  }
+ ],
+ "characters": {
+  "LinStudio": {
+   "image_keys": [
+    "lin_studio"
+   ],
+   "voice_description": {
+    "en": "A mature adult male voice, calm and level with a dry cold edge, speaking clear Mandarin Chinese. He never raises his voice. Every word is fully voiced and audible.",
+    "zh": "成熟成年男声，平稳镇定，带一点干冷的质感，普通话清楚。他从不提高音量。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "LinBank": {
+   "image_keys": [
+    "lin_bank"
+   ],
+   "voice_description": {
+    "en": "A mature adult male voice, calm and level with a dry cold edge, speaking clear Mandarin Chinese. He never raises his voice. Every word is fully voiced and audible.",
+    "zh": "成熟成年男声，平稳镇定，带一点干冷的质感，普通话清楚。他从不提高音量。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "LinWork": {
+   "image_keys": [
+    "lin_work"
+   ],
+   "voice_description": {
+    "en": "A mature adult male voice, calm and level with a dry cold edge, speaking clear Mandarin Chinese. He never raises his voice. Every word is fully voiced and audible.",
+    "zh": "成熟成年男声，平稳镇定，带一点干冷的质感，普通话清楚。他从不提高音量。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "LinHome": {
+   "image_keys": [
+    "lin_home"
+   ],
+   "voice_description": {
+    "en": "A mature adult male voice, calm and level with a dry cold edge, speaking clear Mandarin Chinese. He never raises his voice. Every word is fully voiced and audible.",
+    "zh": "成熟成年男声，平稳镇定，带一点干冷的质感，普通话清楚。他从不提高音量。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "Su": {
+   "image_keys": [
+    "su_suit"
+   ],
+   "voice_description": {
+    "en": "A confident adult woman's voice, low, smooth and slightly husky, speaking clear Mandarin Chinese with a sharp, measured edge. Every word is fully voiced and audible.",
+    "zh": "自信的成年女声，低沉、顺滑、略带沙哑，普通话清楚，带着锐利而有分寸的质感。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "Wen": {
+   "image_keys": [
+    "wen_blazer"
+   ],
+   "voice_description": {
+    "en": "A young adult woman's voice, brisk and attentive, speaking clear Mandarin Chinese. Every word is fully voiced and audible.",
+    "zh": "年轻成年女声，干练、专注，普通话清楚。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "Ning": {
+   "image_keys": [
+    "ning_partner"
+   ],
+   "voice_description": {
+    "en": "A young adult male voice, hoarse and weary, speaking clear Mandarin Chinese. Every word is fully voiced and audible.",
+    "zh": "年轻成年男声，沙哑、疲惫，普通话清楚。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "Liang": {
+   "image_keys": [
+    "liang_banker"
+   ],
+   "voice_description": {
+    "en": "A mature adult woman's voice, polished, courteous and precise, speaking clear Mandarin Chinese. Every word is fully voiced and audible.",
+    "zh": "成熟成年女声，圆润、有礼貌、吐字精准，普通话清楚。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "Sun": {
+   "image_keys": [
+    "sun_agent"
+   ],
+   "voice_description": {
+    "en": "A young adult male voice, thin and anxious, speaking clear Mandarin Chinese. Every word is fully voiced and audible.",
+    "zh": "年轻成年男声，发细、焦虑，普通话清楚。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "Ma": {
+   "image_keys": [
+    "ma_outdoor"
+   ],
+   "voice_description": {
+    "en": "A heavy adult male voice, loud and jovial, speaking clear Mandarin Chinese. Every word is fully voiced and audible.",
+    "zh": "浑厚的成年男声，嗓门大、爱笑，普通话清楚。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "Gu": {
+   "image_keys": [
+    "gu_coal"
+   ],
+   "voice_description": {
+    "en": "A gravelly adult male voice, hoarse from coal dust and slow, speaking clear Mandarin Chinese. Every word is fully voiced and audible.",
+    "zh": "沙哑的成年男声，被煤灰熏得嘶哑、语速慢，普通话清楚。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "Xiao": {
+   "image_keys": [
+    "xiao_agri"
+   ],
+   "voice_description": {
+    "en": "A young adult woman's voice, bright, polite and eager, speaking clear Mandarin Chinese. Every word is fully voiced and audible.",
+    "zh": "年轻成年女声，明亮、礼貌、热切，普通话清楚。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "Ranger": {
+   "image_keys": [
+    "ranger_old"
+   ],
+   "voice_description": {
+    "en": "An old adult male voice, dry, slow and raspy, speaking clear Mandarin Chinese. Every word is fully voiced and audible.",
+    "zh": "年老的成年男声，干涩、缓慢、嘶哑，普通话清楚。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "Zhao": {
+   "image_keys": [
+    "zhao_boss"
+   ],
+   "voice_description": {
+    "en": "A heavy adult male voice, gravelly and smug, speaking clear Mandarin Chinese. Every word is fully voiced and audible.",
+    "zh": "粗重的成年男声，沙砾般粗糙、得意，普通话清楚。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "Biao": {
+   "image_keys": [
+    "biao_thug"
+   ],
+   "voice_description": {
+    "en": "A young adult male voice, nasal and eager, speaking clear Mandarin Chinese. Every word is fully voiced and audible.",
+    "zh": "年轻成年男声，带鼻音、急切，普通话清楚。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "LinArctic": {
+   "image_keys": [
+    "lin_arctic"
+   ],
+   "voice_description": {
+    "en": "A mature adult male voice, calm and level with a dry cold edge, speaking clear Mandarin Chinese. He never raises his voice. Every word is fully voiced and audible.",
+    "zh": "成熟成年男声，平稳镇定，带一点干冷的质感，普通话清楚。他从不提高音量。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "SuDown": {
+   "image_keys": [
+    "su_down"
+   ],
+   "voice_description": {
+    "en": "A confident adult woman's voice, low, smooth and slightly husky, speaking clear Mandarin Chinese with a sharp, measured edge. Every word is fully voiced and audible.",
+    "zh": "自信的成年女声，低沉、顺滑、略带沙哑，普通话清楚，带着锐利而有分寸的质感。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "SuTrek": {
+   "image_keys": [
+    "su_trek"
+   ],
+   "voice_description": {
+    "en": "A confident adult woman's voice, low, smooth and slightly husky, speaking clear Mandarin Chinese with a sharp, measured edge. Every word is fully voiced and audible.",
+    "zh": "自信的成年女声，低沉、顺滑、略带沙哑，普通话清楚，带着锐利而有分寸的质感。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "Gaunt": {
+   "image_keys": [
+    "gaunt_drifter"
+   ],
+   "voice_description": {
+    "en": "A hoarse adult male voice, cracked and exhausted, speaking clear Mandarin Chinese. Every word is fully voiced and audible.",
+    "zh": "嘶哑的成年男声，干裂、筋疲力尽，普通话清楚。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "Bearded": {
+   "image_keys": [
+    "bearded_drifter"
+   ],
+   "voice_description": {
+    "en": "A heavy adult male voice, numb and bitter, speaking clear Mandarin Chinese. Every word is fully voiced and audible.",
+    "zh": "低沉的成年男声，麻木、苦涩，普通话清楚。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "Brute": {
+   "image_keys": [
+    "brute_raider"
+   ],
+   "voice_description": {
+    "en": "A rough adult male voice, savage and hoarse, speaking clear Mandarin Chinese. Every word is fully voiced and audible.",
+    "zh": "粗野的成年男声，凶狠、嘶哑，普通话清楚。每个字都正常发声、清晰可辨。"
+   }
+  }
+ },
+ "episodes": [
+  {
+   "title": "剧本第5集｜最后一天",
+   "summary": "最后一天的夜里，林峰把一件羽绒服塞给周宁，让他带家人去高处，别问。第二天清晨苏清月找到空荡荡的工作室，周宁只说他去修度假村了，她看着屏幕上陡直下落的曲线，脸色变了；回到家，她让助理再订一批货，得到的回答是全城的货被一个人买光了，她只囤到三成。地下的控制室里，林峰低声说“最后一天了”，掀开保护盖，按下红色按钮。",
+   "script": "最后一晚的工作室，林峰把羽绒服塞给周宁，让他带家人去高处，别问，林峰把叠好的羽绒服递到周宁面前，用低沉平淡的声音对周宁说出第一句，下颌绷紧、眉毛平直。周宁抬头看着他，用沙哑不安的声音对林峰说出第二句，嘴唇微张、眉头拧在一起。林峰把羽绒服放在周宁腿上，用同样平淡的声音对周宁说出第三句，眼睛稳稳看着周宁。\nLinStudio：“带家人去高处。”\nNing：“出什么事了？”\nLinStudio：“多买羽绒服，别问。”\n第二天清晨的工作室，苏清月找林峰，周宁说他去修度假村了，苏清月看到曲线，周宁起身离开，苏清月用锐利而克制的声音对周宁说出第一句，眼睛眯起、嘴唇抿成一条细而锐利的线。周宁抬头看着她，用沙哑躲闪的声音对苏清月说出第二句，嘴唇紧抿、眉头拧在一起。苏清月把头转向两块屏幕——橙色的曲线陡直下落，她脸色发白，然后转回来，用低沉发颤的声音对周宁说出第三句。周宁什么也没说，抱着羽绒服站起来，走向画面右边的玻璃门，穿过去离开，直到门口空无一人。\nSu：“林峰人呢？”\nNing：“他去修度假村了。”\nSu：“这条曲线，是真的？”\n同一间工作室，周宁走后，苏清月一个人看着曲线，低声自言自语，苏清月一个人站在桌边，眼睛盯着手里皱巴巴的打印曲线图，然后低声自言自语了一句很短的话，不是对任何人说的，嘴唇轻轻动着，接着又是一句，眼睛眯起、眉头压低。房间里没有别人。\nSu：“不是妄想……”\nSu：“是倒计时。”\n大平层，苏清月让助理再订一批货，被告知全城的货被一个人买光了，她只囤到三成，苏清月用坚定的声音对文助理说出第一句，眼睛眯起、嘴唇抿成一条细线。文助理摇了摇头，用低低的、焦虑的声音对苏清月说出第二句，眉毛上提、嘴唇抿紧。苏清月用紧绷的声音对文助理说出第三句。文助理用很小的声音对苏清月说出第四句，然后苏清月慢慢放下手机，把头转向落地窗，脸色苍白、嘴唇抿成一条细线。\nSu：“再加订一批。”\nWen：“全城的货，被人买光了。”\nSu：“我们囤了几成？”\nWen：“三成。”\n地下控制室，林峰低声说最后一天了，掀开保护盖，按下红色按钮，林峰一个人站在控制台前，眼睛盯着那个大红色按钮，右手掀开透明的保护盖，然后低声自言自语了一句，不是对任何人说的，嘴唇轻轻动着，接着又是一句很短的，下颌绷紧、眉毛平直，然后用拇指慢慢把红色按钮按了下去。房间里没有别人。\nLinWork：“最后一天了。”\nLinWork：“来吧。”\n插镜，控制室的指示灯全亮了，红色电子钟的数字在跳，控制室里空无一人，钢制控制台上一排排指示灯全部亮成绿色，红色按钮在掀开的保护盖下亮着，左边那一整面小屏幕闪着亮起来，后墙高处的大红色电子钟亮着最后几秒。别的什么都不动。",
+   "segments": [
+    {
+     "title": "01｜最后一晚的工作室：林峰把羽绒服塞给周宁，让他带家人去高处，别问",
+     "duration_seconds": 10,
+     "generation_seconds": 10,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "LinStudio",
+      "Ning"
+     ],
+     "asset_keys": [
+      "studio_night",
+      "lin_studio",
+      "ning_partner"
+     ],
+     "image_reference_keys": [
+      "studio_night"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium-wide shot, both men from the head to the knees, in the middle third of the frame, in the late-night studio. Lin (a Chinese man in his early thirties) at frame-center, standing beside the sofa in profile facing frame-right, holding a folded dark down parka out in both hands toward Ning, in a rumpled white dress shirt with the sleeves rolled to his forearms and a loosened collar, his tired but steady dark-brown eyes on Ning, his jaw set, his brows level. Ning (a Chinese man in his early thirties) at frame-right, sitting on the leather sofa in profile facing frame-left with the puffer coat on his shoulders, looking up, in a grey hooded sweatshirt with a dark puffer coat draped over his shoulders, his bleary dark eyes on Lin, his lips parted, his brows pulled together. On the long desk at frame-left the two large monitors glow with the steeply falling orange curves, and the city lights glitter in the window behind them. The frame holds Lin and Ning, the sofa, the desk with the monitors and the window behind them. Warm amber desk-lamp light and the cool glow of two monitors fill the late-night studio while the sleepless city glitters outside the window. Fixed stage layout: the long desk with two large monitors showing a pale satellite map of an ash cloud and several orange curves falling downward is at frame-left; the worn brown leather sofa with a rumpled blanket stands at frame-right; the floor-to-ceiling window across the back wall shows a warm night city with a long line of car headlights on an elevated road and rows of lit apartment windows.",
+     "visual_zh": "林峰把叠好的羽绒服递到周宁面前，用低沉平淡的声音对周宁说出第一句，下颌绷紧、眉毛平直。周宁抬头看着他，用沙哑不安的声音对林峰说出第二句，嘴唇微张、眉头拧在一起。林峰把羽绒服放在周宁腿上，用同样平淡的声音对周宁说出第三句，眼睛稳稳看着周宁。",
+     "camera_zh": "0—10秒，镜头固定不动。",
+     "dialogue": [
+      {
+       "speaker": "LinStudio",
+       "text": "带家人去高处。",
+       "start_seconds": 0.7,
+       "end_seconds": 2.43,
+       "language": "zh"
+      },
+      {
+       "speaker": "Ning",
+       "text": "出什么事了？",
+       "start_seconds": 3.5,
+       "end_seconds": 4.98,
+       "language": "zh"
+      },
+      {
+       "speaker": "LinStudio",
+       "text": "多买羽绒服，别问。",
+       "start_seconds": 5.9,
+       "end_seconds": 8.0,
+       "language": "zh"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 10,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. [[asset:lin_studio]] holds the folded down parka out to [[asset:ning_partner]] and speaks the first line to [[asset:ning_partner]] in a low flat voice, his jaw set and his brows level. [[asset:ning_partner]] looks up at him and speaks the second line to [[asset:lin_studio]] in a hoarse, uneasy voice, his lips parted and his brows pulled together. [[asset:lin_studio]] lays the parka on [[asset:ning_partner]]'s lap and speaks the third line to [[asset:ning_partner]] in the same flat voice, his eyes steady on [[asset:ning_partner]]. The camera holds still.",
+       "visual_zh": "林峰把叠好的羽绒服递到周宁面前，用低沉平淡的声音对周宁说出第一句，下颌绷紧、眉毛平直。周宁抬头看着他，用沙哑不安的声音对林峰说出第二句，嘴唇微张、眉头拧在一起。林峰把羽绒服放在周宁腿上，用同样平淡的声音对周宁说出第三句，眼睛稳稳看着周宁。 镜头固定不动。",
+       "dialogue_indices": [
+        0,
+        1,
+        2
+       ]
+      }
+     ],
+     "sound_en": "A faint electronic hum from the monitors and the low murmur of the sleeping city far below. Voices stay close and clear.",
+     "sound_zh": "显示器轻微的电子嗡鸣，和楼下沉睡的城市低低的嘈杂。人声近而清楚。",
+     "seed": 34501,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "02｜第二天清晨的工作室：苏清月找林峰，周宁说他去修度假村了，苏清月看到曲线，周宁起身离开",
+     "duration_seconds": 12,
+     "generation_seconds": 12,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "Su",
+      "Ning"
+     ],
+     "asset_keys": [
+      "studio_day",
+      "su_suit",
+      "ning_partner"
+     ],
+     "image_reference_keys": [
+      "studio_day"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium-wide shot, both from the head to the knees, in the middle third of the frame, in the empty studio at dawn. Su (a Chinese woman in her late twenties) at frame-left, standing beside the long desk in profile facing frame-right with her handbag on her arm, in a fitted black silk blouse and a black pencil skirt, thin gold-rimmed glasses on her nose, her long glossy black hair falling straight over one shoulder, her sharp dark-brown eyes on Ning, her eyes narrowed, her lips pressed in a thin sharp line. Ning (a Chinese man in his early thirties) at frame-center, sitting on the sofa in profile facing frame-left with the dark down parka folded on his lap and the puffer coat on his shoulders, in a grey hooded sweatshirt with a dark puffer coat draped over his shoulders, his bleary dark eyes on Su, his lips pressed tight, his brows pulled together, dark circles under his eyes. On the long desk beside her the two large monitors glow with the steeply falling orange curves, and the glass studio door stands at frame-right beyond the sofa. The frame holds Su and Ning, the sofa, the desk with the monitors and the glass door. Cold grey dawn light mixes with the glow of the two monitors in the empty studio. Fixed stage layout: the long desk with two large monitors showing orange curves falling steeply is at frame-left; the worn brown leather sofa stands at frame-center-right; a glass studio door is at frame-right beyond the sofa; the floor-to-ceiling window across the back wall shows a pale grey dawn over a quiet city.",
+     "visual_zh": "苏清月用锐利而克制的声音对周宁说出第一句，眼睛眯起、嘴唇抿成一条细而锐利的线。周宁抬头看着她，用沙哑躲闪的声音对苏清月说出第二句，嘴唇紧抿、眉头拧在一起。苏清月把头转向两块屏幕——橙色的曲线陡直下落，她脸色发白，然后转回来，用低沉发颤的声音对周宁说出第三句。周宁什么也没说，抱着羽绒服站起来，走向画面右边的玻璃门，穿过去离开，直到门口空无一人。",
+     "camera_zh": "0—12秒，镜头固定不动。",
+     "dialogue": [
+      {
+       "speaker": "Su",
+       "text": "林峰人呢？",
+       "start_seconds": 0.7,
+       "end_seconds": 1.93,
+       "language": "zh"
+      },
+      {
+       "speaker": "Ning",
+       "text": "他去修度假村了。",
+       "start_seconds": 3.1,
+       "end_seconds": 5.08,
+       "language": "zh"
+      },
+      {
+       "speaker": "Su",
+       "text": "这条曲线，是真的？",
+       "start_seconds": 5.6,
+       "end_seconds": 7.7,
+       "language": "zh"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 12,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. [[asset:su_suit]] speaks the first line to [[asset:ning_partner]] in a sharp, controlled voice, her eyes narrowed and her lips pressed in a thin sharp line. [[asset:ning_partner]] looks up at her and speaks the second line to [[asset:su_suit]] in a hoarse, evasive voice, his lips pressed tight and his brows pulled together. [[asset:su_suit]] turns her head toward the two monitors where the orange curves fall steeply, her face paling, then turns back and speaks the third line to [[asset:ning_partner]] in a low, shaken voice. [[asset:ning_partner]] says nothing, stands up with the parka in his arms and walks to the glass studio door at frame-right, leaving through it until the doorway is empty. The camera holds still.",
+       "visual_zh": "苏清月用锐利而克制的声音对周宁说出第一句，眼睛眯起、嘴唇抿成一条细而锐利的线。周宁抬头看着她，用沙哑躲闪的声音对苏清月说出第二句，嘴唇紧抿、眉头拧在一起。苏清月把头转向两块屏幕——橙色的曲线陡直下落，她脸色发白，然后转回来，用低沉发颤的声音对周宁说出第三句。周宁什么也没说，抱着羽绒服站起来，走向画面右边的玻璃门，穿过去离开，直到门口空无一人。 镜头固定不动。",
+       "dialogue_indices": [
+        0,
+        1,
+        2
+       ]
+      }
+     ],
+     "sound_en": "A faint electronic hum from the monitors and the low murmur of the sleeping city far below. Voices stay close and clear.",
+     "sound_zh": "显示器轻微的电子嗡鸣，和楼下沉睡的城市低低的嘈杂。人声近而清楚。",
+     "seed": 34502,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "03｜同一间工作室：周宁走后，苏清月一个人看着曲线，低声自言自语",
+     "duration_seconds": 10,
+     "generation_seconds": 10,
+     "continuity": "cut",
+     "depends_on_previous": true,
+     "use_previous_episode_state": false,
+     "characters": [
+      "Su"
+     ],
+     "asset_keys": [
+      "studio_day",
+      "su_suit"
+     ],
+     "image_reference_keys": [
+      "studio_day"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium shot, the figure from the head to the knees, in the middle third of the frame, in the empty studio at dawn. Su (a Chinese woman in her late twenties) at frame-center, standing at the long desk in profile facing frame-left, holding a crumpled printed chart of falling curves up in both hands, in a fitted black silk blouse and a black pencil skirt, thin gold-rimmed glasses on her nose, her long glossy black hair falling straight over one shoulder, her sharp dark-brown eyes on the crumpled printed chart of falling curves in her hands, her eyes narrowed, her lips pressed in a thin line, her brows low. Behind her the two large monitors glow with the steeply falling orange curves and the grey dawn lies over the quiet city in the window. The frame holds Su alone at the desk, the glowing monitors and the dawn window. Cold grey dawn light mixes with the glow of the two monitors in the empty studio. Fixed stage layout: the long desk with two large monitors showing orange curves falling steeply is at frame-left; the worn brown leather sofa stands at frame-center-right; a glass studio door is at frame-right beyond the sofa; the floor-to-ceiling window across the back wall shows a pale grey dawn over a quiet city.",
+     "visual_zh": "苏清月一个人站在桌边，眼睛盯着手里皱巴巴的打印曲线图，然后低声自言自语了一句很短的话，不是对任何人说的，嘴唇轻轻动着，接着又是一句，眼睛眯起、眉头压低。房间里没有别人。",
+     "camera_zh": "0—10秒，镜头慢慢推近，直到苏清月占满画面中间三分之一。",
+     "dialogue": [
+      {
+       "speaker": "Su",
+       "text": "不是妄想……",
+       "start_seconds": 1.8,
+       "end_seconds": 2.85,
+       "language": "zh"
+      },
+      {
+       "speaker": "Su",
+       "text": "是倒计时。",
+       "start_seconds": 4.5,
+       "end_seconds": 5.73,
+       "language": "zh"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 10,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. [[asset:su_suit]] stands alone at the desk with her eyes on the crumpled printed chart in her hands, then murmurs one short line to herself in a low voice, talking to nobody, her lips moving softly, then a second short line, her eyes narrowed and her brows low. Nobody else is in the room. The camera pushes in slowly until Su fills the middle third of the frame.",
+       "visual_zh": "苏清月一个人站在桌边，眼睛盯着手里皱巴巴的打印曲线图，然后低声自言自语了一句很短的话，不是对任何人说的，嘴唇轻轻动着，接着又是一句，眼睛眯起、眉头压低。房间里没有别人。 镜头慢慢推近，直到苏清月占满画面中间三分之一。",
+       "dialogue_indices": [
+        0,
+        1
+       ]
+      }
+     ],
+     "sound_en": "A faint electronic hum from the monitors and her low murmur. Voices stay close and clear.",
+     "sound_zh": "显示器轻微的电子嗡鸣和她低低的自语。人声近而清楚。",
+     "seed": 34503,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "04｜大平层：苏清月让助理再订一批货，被告知全城的货被一个人买光了，她只囤到三成",
+     "duration_seconds": 13,
+     "generation_seconds": 13,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "Wen",
+      "Su"
+     ],
+     "asset_keys": [
+      "penthouse",
+      "wen_blazer",
+      "su_suit"
+     ],
+     "image_reference_keys": [
+      "penthouse"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium two-shot, both from the head to the knees, in the middle third of the frame, in the penthouse living room. Wen (a Chinese woman in her mid-twenties) at frame-left, standing in profile facing frame-right with a tablet hugged to her chest, in a navy blazer over a white blouse, her black hair in a neat low ponytail, her clear dark eyes on Su, her brows lifted, her lips pressed together. Su (a Chinese woman in her late twenties) at frame-right, standing beside the glass table in profile facing frame-left with her phone in one hand, in a fitted black silk blouse and a black pencil skirt, thin gold-rimmed glasses on her nose, her long glossy black hair falling straight over one shoulder, her sharp dark-brown eyes on Wen, her eyes narrowed, her lips pressed in a thin line. Behind them the floor-to-ceiling windows glare with the white-hot city, and the glass table stands between them with a phone and a notepad on it. The frame holds Wen and Su, the glass table and the glaring windows behind them. Cool air-conditioned light fills the luxury penthouse while harsh white sunlight glares through the windows. Fixed stage layout: the glass dining table stands in the middle of the frame; the floor-to-ceiling windows across the back wall show a white-hot city of glass towers under a blazing sun; the white sectional sofa stands against the left wall; the wide entry hall opens at frame-right with three black tactical backpacks lined up on the floor beside it.",
+     "visual_zh": "苏清月用坚定的声音对文助理说出第一句，眼睛眯起、嘴唇抿成一条细线。文助理摇了摇头，用低低的、焦虑的声音对苏清月说出第二句，眉毛上提、嘴唇抿紧。苏清月用紧绷的声音对文助理说出第三句。文助理用很小的声音对苏清月说出第四句，然后苏清月慢慢放下手机，把头转向落地窗，脸色苍白、嘴唇抿成一条细线。",
+     "camera_zh": "0—13秒，镜头固定不动。",
+     "dialogue": [
+      {
+       "speaker": "Su",
+       "text": "再加订一批。",
+       "start_seconds": 0.8,
+       "end_seconds": 2.28,
+       "language": "zh"
+      },
+      {
+       "speaker": "Wen",
+       "text": "全城的货，被人买光了。",
+       "start_seconds": 3.6,
+       "end_seconds": 6.2,
+       "language": "zh"
+      },
+      {
+       "speaker": "Su",
+       "text": "我们囤了几成？",
+       "start_seconds": 6.8,
+       "end_seconds": 8.53,
+       "language": "zh"
+      },
+      {
+       "speaker": "Wen",
+       "text": "三成。",
+       "start_seconds": 9.3,
+       "end_seconds": 10.03,
+       "language": "zh"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 13,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. [[asset:su_suit]] speaks the first line to [[asset:wen_blazer]] in a firm voice, her eyes narrowed and her lips pressed in a thin line. [[asset:wen_blazer]] shakes her head and speaks the second line to [[asset:su_suit]] in a low, anxious voice, her brows lifted and her lips pressed together. [[asset:su_suit]] speaks the third line to [[asset:wen_blazer]] in a tight voice. [[asset:wen_blazer]] speaks the fourth line to [[asset:su_suit]] in a small voice, then [[asset:su_suit]] slowly lowers her phone and turns her head toward the floor-to-ceiling window, her face pale and her lips pressed in a thin line. The camera holds still.",
+       "visual_zh": "苏清月用坚定的声音对文助理说出第一句，眼睛眯起、嘴唇抿成一条细线。文助理摇了摇头，用低低的、焦虑的声音对苏清月说出第二句，眉毛上提、嘴唇抿紧。苏清月用紧绷的声音对文助理说出第三句。文助理用很小的声音对苏清月说出第四句，然后苏清月慢慢放下手机，把头转向落地窗，脸色苍白、嘴唇抿成一条细线。 镜头固定不动。",
+       "dialogue_indices": [
+        0,
+        1,
+        2,
+        3
+       ]
+      }
+     ],
+     "sound_en": "The faint hum of the air conditioner and the distant murmur of the city. Voices stay close and clear.",
+     "sound_zh": "空调轻微的嗡鸣和远处城市的低语。人声近而清楚。",
+     "seed": 34504,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "05｜地下控制室：林峰低声说最后一天了，掀开保护盖，按下红色按钮",
+     "duration_seconds": 10,
+     "generation_seconds": 10,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "LinWork"
+     ],
+     "asset_keys": [
+      "bunker_control",
+      "lin_work"
+     ],
+     "image_reference_keys": [
+      "bunker_control"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium shot, the figure from the head to the knees, in the middle third of the frame, at the console. Lin (a Chinese man in his early thirties) at frame-center, standing at the steel console in profile facing frame-right, his right hand slowly lifting the clear plastic safety cover from the big red button, his left hand resting on the console, in a charcoal henley under a dark olive utility vest with many pockets and dark cargo pants, his steady dark-brown eyes on the big red push-button under the cover on the console in front of him, his jaw set, his lips set flat, his brows level. High on the back wall behind him the large red digital clock glows, and the wall of small monitors stands at frame-left. The frame holds Lin alone at the console, the red button, the monitors and the red clock. Cool green indicator glow and pale work-lamp light fill the compact underground control room. Fixed stage layout: the steel control console with rows of small green status lights and one big red push-button under a clear flip-up cover stands in the middle of the frame; a wall of six small monitors is at frame-left; a large red digital countdown clock hangs high on the back wall at center-right; a heavy steel door stands in the right wall at frame-right.",
+     "visual_zh": "林峰一个人站在控制台前，眼睛盯着那个大红色按钮，右手掀开透明的保护盖，然后低声自言自语了一句，不是对任何人说的，嘴唇轻轻动着，接着又是一句很短的，下颌绷紧、眉毛平直，然后用拇指慢慢把红色按钮按了下去。房间里没有别人。",
+     "camera_zh": "0—10秒，镜头慢慢推近，直到林峰和红色按钮占满画面中间三分之一。",
+     "dialogue": [
+      {
+       "speaker": "LinWork",
+       "text": "最后一天了。",
+       "start_seconds": 1.5,
+       "end_seconds": 2.98,
+       "language": "zh"
+      },
+      {
+       "speaker": "LinWork",
+       "text": "来吧。",
+       "start_seconds": 4.8,
+       "end_seconds": 5.53,
+       "language": "zh"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 10,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. [[asset:lin_work]] stands alone at the console with his eyes on the big red button, lifts the clear cover with his right hand, then murmurs one line to himself in a low voice, talking to nobody, his lips moving softly, then a second short line, his jaw set and his brows level, and presses the red button down slowly with his thumb. Nobody else is in the room. The camera pushes in slowly until Lin and the red button fills the middle third of the frame.",
+       "visual_zh": "林峰一个人站在控制台前，眼睛盯着那个大红色按钮，右手掀开透明的保护盖，然后低声自言自语了一句，不是对任何人说的，嘴唇轻轻动着，接着又是一句很短的，下颌绷紧、眉毛平直，然后用拇指慢慢把红色按钮按了下去。房间里没有别人。 镜头慢慢推近，直到林峰和红色按钮占满画面中间三分之一。",
+       "dialogue_indices": [
+        0,
+        1
+       ]
+      }
+     ],
+     "sound_en": "A low electric hum from the console, the click of the plastic cover and his low murmur. Voices stay close and clear.",
+     "sound_zh": "控制台低低的电流嗡鸣、塑料保护盖的一声轻响和他低低的自语。人声近而清楚。",
+     "seed": 34505,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "06｜插镜：控制室的指示灯全亮了，红色电子钟的数字在跳",
+     "duration_seconds": 5,
+     "generation_seconds": 5,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [],
+     "asset_keys": [
+      "bunker_control"
+     ],
+     "image_reference_keys": [
+      "bunker_control"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Wide establishing shot of the empty control room, the console in the middle third of the frame, nobody in the room.  The frame holds the console with its lit status lights and the red button, the monitor wall, the red clock and the steel door, and nobody in the room. Cool green indicator glow and pale work-lamp light fill the compact underground control room. Fixed stage layout: the steel control console with rows of small green status lights and one big red push-button under a clear flip-up cover stands in the middle of the frame; a wall of six small monitors is at frame-left; a large red digital countdown clock hangs high on the back wall at center-right; a heavy steel door stands in the right wall at frame-right.",
+     "visual_zh": "控制室里空无一人：钢制控制台上一排排指示灯全部亮成绿色，红色按钮在掀开的保护盖下亮着，左边那一整面小屏幕闪着亮起来，后墙高处的大红色电子钟亮着最后几秒。别的什么都不动。",
+     "camera_zh": "0—5秒，镜头慢慢推近，直到控制台和红色电子钟占满画面中间三分之一。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 5,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. Every row of status lights along the steel console blazes green, the red button glows lit beneath its open cover, the wall of small monitors flickers awake and the large red digital clock high on the back wall glows with its last seconds. Nothing else moves. The camera pushes in slowly until the console and the red clock fill the middle third of the frame.",
+       "visual_zh": "控制室里空无一人：钢制控制台上一排排指示灯全部亮成绿色，红色按钮在掀开的保护盖下亮着，左边那一整面小屏幕闪着亮起来，后墙高处的大红色电子钟亮着最后几秒。别的什么都不动。 镜头慢慢推近，直到控制台和红色电子钟占满画面中间三分之一。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "Three heavy generators roaring to life far below and a rising electric hum. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here.",
+     "sound_zh": "远处地下三台沉重的发电机轰鸣着启动，电流的嗡鸣越来越高。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。",
+     "seed": 34506,
+     "dialogue_language": "zh"
+    }
+   ],
+   "dialogue_language": "zh"
+  },
+  {
+   "title": "剧本第6集｜降临",
+   "summary": "中午的大街上，一堵白色的雾墙滚过来；转眼整条街冻成了冰蓝色，路边的人保持着迈步的姿势成了冰雕。地下安全屋里，林峰一边煎牛排一边说：外面零下七十八度，这里二十五度。酒窖里苏清月和助理冻得发抖，助理去楼上找暖气，再没回来。安全屋里警报亮起：排气管被冻住了，林峰放下刀叉，换上白色防寒服，对自己说：十五分钟，就回来。",
+   "script": "插镜，中午的大街，远处一堵白色的雾墙滚过来，路边的人停下脚步，中午玻璃写字楼之间的大街，街尽头一堵高耸的白色雾墙朝镜头滚过来，人行道上的几个行人一动不动、脸转向它，停着的车都开着门。别的什么都不动。\n插镜，同一条大街冻成了冰蓝色，路边的人保持着迈步的姿势被冻在冰里，同一条大街，现在埋在昏暗的灰蓝色光里，车被冰裹住，光秃秃的树结满了霜，两边人行道上的人保持着迈步、手臂还在摆动的姿势被冻在白色的冰里。一层薄薄的白雾飘过街面。别的什么都不动。\n地下安全屋，林峰一边煎牛排，一边低声说外面零下七十八度，这里二十五度，林峰用夹子翻动平底锅里的厚牛排，黄油滋滋作响，眼睛看着监控墙——每块屏幕里都是呼啸的白色暴风雪，然后他低声自言自语了一句，不是对任何人说的，嘴唇轻轻动着，接着又是一句很短的，下颌放松、眉毛舒展。房间里没有别人。\nLinHome：“外面，零下七十八度。”\nLinHome：“这里，二十五度。”\n酒窖，暖气彻底停了，苏清月让助理把羽绒服都拿来，助理说去楼上看看，走出门去，文助理用发颤的声音对苏清月说出第一句，眉头拧在一起、嘴唇发抖。苏清月搓着戴手套的手，用低沉坚定的声音对文助理说出第二句，眼睛眯起、嘴唇抿成一条细线。文助理用很小的声音对苏清月说出第三句，然后爬上三级混凝土台阶，走向画面右边的钢门，穿过去离开，直到台阶上空无一人。苏清月目送她。\nWen：“暖气彻底停了，苏总。”\nSuDown：“把所有羽绒服，都拿来。”\nWen：“我去楼上看看！”\n安全屋，警报响了，林峰低声说排气管冻住了，放下刀叉，林峰切下一片牛排，眼睛看着监控墙——暴风雪的屏幕上方，一盏红色的警示灯开始闪烁，然后他放下刀，低声自言自语了一句，不是对任何人说的，嘴唇轻轻动着，接着又是一句很短的，下颌绷紧、眉头压低，然后把刀叉放下，把椅子往后推开。房间里没有别人。\nLinHome：“排气管，冻住了。”\nLinHome：“再不清，今晚缺氧。”\n缓冲舱，林峰拉上白色防寒服的拉链，低声说十五分钟就回来，林峰把蓬松的白色防寒服的拉链拉到下巴，眼睛看着那扇厚重的圆形钢舱门，然后低声自言自语了一句很短的话，不是对任何人说的，嘴唇轻轻动着，下颌绷紧、眉毛平直，然后把白色护目镜推到额头上。缓冲舱里没有别人。\nLinArctic：“十五分钟，就回来。”",
+   "segments": [
+    {
+     "title": "01｜插镜：中午的大街，远处一堵白色的雾墙滚过来，路边的人停下脚步",
+     "duration_seconds": 5,
+     "generation_seconds": 5,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [],
+     "asset_keys": [
+      "street_summer"
+     ],
+     "image_reference_keys": [
+      "street_summer"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Wide establishing shot of the glass-tower boulevard at midday, the street in the middle third of the frame; no named person.  A few pedestrians stand motionless on the sidewalks with their faces turned toward the far end of the street. The frame holds the boulevard with the stopped cars, the few pedestrians standing still and the white wall of mist at the far end. Blinding white midday sun glares over the glass towers while the sky at the far end of the street is swallowed by white. Fixed stage layout: a wide boulevard between glass office towers recedes down the middle of the frame; a line of stopped cars fills both lanes; leafy trees line the sidewalks; at the far end of the street a towering wall of white mist fills the sky.",
+     "visual_zh": "中午玻璃写字楼之间的大街：街尽头一堵高耸的白色雾墙朝镜头滚过来，人行道上的几个行人一动不动、脸转向它，停着的车都开着门。别的什么都不动。",
+     "camera_zh": "0—5秒，镜头慢慢推近，直到大街占满画面中间三分之一。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 5,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. A towering wall of white mist rolls down the boulevard from the far end toward the camera, while the few pedestrians on the sidewalks stand still with their faces turned toward it and the stopped cars sit with their doors open. Nothing else moves. The camera pushes in slowly until the street fill the middle third of the frame.",
+       "visual_zh": "中午玻璃写字楼之间的大街：街尽头一堵高耸的白色雾墙朝镜头滚过来，人行道上的几个行人一动不动、脸转向它，停着的车都开着门。别的什么都不动。 镜头慢慢推近，直到大街占满画面中间三分之一。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "A rising low roar of wind and a faint distant car alarm. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here.",
+     "sound_zh": "越来越响的低沉风声和远处一声若有若无的汽车警报声。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。",
+     "seed": 34601,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "02｜插镜：同一条大街冻成了冰蓝色，路边的人保持着迈步的姿势被冻在冰里",
+     "duration_seconds": 5,
+     "generation_seconds": 5,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [],
+     "asset_keys": [
+      "street_frozen"
+     ],
+     "image_reference_keys": [
+      "street_frozen"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Wide establishing shot of the same boulevard, the street in the middle third of the frame; no living person.  The frame holds the frozen boulevard with the ice-encased cars, the frost-furred trees and the frozen figures along the sidewalks. Dim grey-blue light and a thin white mist hang over the silent frozen boulevard. Fixed stage layout: the same wide boulevard recedes down the middle of the frame; the stopped cars are encased in ice; bare frost-furred trees line the sidewalks; along the sidewalks stand people frozen mid-stride in white ice; the glass towers are furred with frost.",
+     "visual_zh": "同一条大街，现在埋在昏暗的灰蓝色光里：车被冰裹住，光秃秃的树结满了霜，两边人行道上的人保持着迈步、手臂还在摆动的姿势被冻在白色的冰里。一层薄薄的白雾飘过街面。别的什么都不动。",
+     "camera_zh": "0—5秒，镜头慢慢推近，直到大街占满画面中间三分之一。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 5,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. The same boulevard lies buried in dim grey-blue light: the cars are encased in ice, the bare trees furred with frost, and along both sidewalks people stand frozen mid-stride in white ice with their arms still swinging. A thin white mist drifts over the street. Nothing else moves. The camera pushes in slowly until the street fill the middle third of the frame.",
+       "visual_zh": "同一条大街，现在埋在昏暗的灰蓝色光里：车被冰裹住，光秃秃的树结满了霜，两边人行道上的人保持着迈步、手臂还在摆动的姿势被冻在白色的冰里。一层薄薄的白雾飘过街面。别的什么都不动。 镜头慢慢推近，直到大街占满画面中间三分之一。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "A dead silence broken only by a low wind and the faint creak of ice. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here.",
+     "sound_zh": "一片死寂，只有低低的风声和冰层轻轻的吱嘎声。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。",
+     "seed": 34602,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "03｜地下安全屋：林峰一边煎牛排，一边低声说外面零下七十八度，这里二十五度",
+     "duration_seconds": 12,
+     "generation_seconds": 12,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "LinHome"
+     ],
+     "asset_keys": [
+      "bunker_living",
+      "lin_home"
+     ],
+     "image_reference_keys": [
+      "bunker_living"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium shot, the figure from the head to the knees, at the left of the middle third of the frame, in the underground living area. Lin (a Chinese man in his early thirties) at frame-left, standing at the black-and-gold stove in profile facing frame-right, a steel pan with a thick steak sizzling in front of him and a pair of tongs in his right hand, in a soft grey cotton long-sleeve henley and loose dark lounge pants, barefoot, his hair damp from a shower, his steady dark-brown eyes on the wall of security monitors at frame-right where a white blizzard rages on every screen, his jaw relaxed, his lips set in a calm flat line, his brows soft. At the center-right of the frame the wall of security monitors shows a white blizzard raging over a buried, silent street on every screen. The frame holds Lin alone at the stove and the monitor wall. Warm amber light from soft recessed lamps fills the cozy underground living area. Fixed stage layout: the open kitchen with a black-and-gold stove and a marble counter is at frame-left; a thick cream wool rug and a small round wooden dining table fill the middle of the frame; a wall of small security monitors is at frame-center-right; a heavy round steel hatch door is in the right wall at the far frame-right.",
+     "visual_zh": "林峰用夹子翻动平底锅里的厚牛排，黄油滋滋作响，眼睛看着监控墙——每块屏幕里都是呼啸的白色暴风雪，然后他低声自言自语了一句，不是对任何人说的，嘴唇轻轻动着，接着又是一句很短的，下颌放松、眉毛舒展。房间里没有别人。",
+     "camera_zh": "0—12秒，镜头慢慢推近，直到林峰和平底锅占满画面中间三分之一。",
+     "dialogue": [
+      {
+       "speaker": "LinHome",
+       "text": "外面，零下七十八度。",
+       "start_seconds": 2.0,
+       "end_seconds": 4.35,
+       "language": "zh"
+      },
+      {
+       "speaker": "LinHome",
+       "text": "这里，二十五度。",
+       "start_seconds": 6.0,
+       "end_seconds": 7.85,
+       "language": "zh"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 12,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. [[asset:lin_home]] flips the thick steak in the pan with the tongs, the butter sizzling, his eyes on the monitor wall where a white blizzard rages on every screen, then murmurs one line to himself in a low voice, talking to nobody, his lips moving softly, then a second short line, his jaw relaxed and his brows soft. Nobody else is in the room. The camera pushes in slowly until Lin and the pan fills the middle third of the frame.",
+       "visual_zh": "林峰用夹子翻动平底锅里的厚牛排，黄油滋滋作响，眼睛看着监控墙——每块屏幕里都是呼啸的白色暴风雪，然后他低声自言自语了一句，不是对任何人说的，嘴唇轻轻动着，接着又是一句很短的，下颌放松、眉毛舒展。房间里没有别人。 镜头慢慢推近，直到林峰和平底锅占满画面中间三分之一。",
+       "dialogue_indices": [
+        0,
+        1
+       ]
+      }
+     ],
+     "sound_en": "Butter and meat sizzling, a low howl of wind from the monitor speakers, the hum of the air system and his low murmur. Voices stay close and clear.",
+     "sound_zh": "黄油和牛排滋滋作响、监控喇叭里低低的风的呼啸、空气系统的嗡鸣和他低低的自语。人声近而清楚。",
+     "seed": 34603,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "04｜酒窖：暖气彻底停了，苏清月让助理把羽绒服都拿来，助理说去楼上看看，走出门去",
+     "duration_seconds": 12,
+     "generation_seconds": 12,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "Wen",
+      "SuDown"
+     ],
+     "asset_keys": [
+      "wine_cellar",
+      "wen_blazer",
+      "su_down"
+     ],
+     "image_reference_keys": [
+      "wine_cellar"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium two-shot, both from the head to the knees, in the middle third of the frame, in the frozen wine cellar. Wen (a Chinese woman in her mid-twenties) at frame-left, standing beside the stacked cases in profile facing frame-right with her arms wrapped around herself, her breath clouding, in a navy blazer under a thin down vest, her clear dark eyes on Su, her brows pulled together, her lips trembling. Su (a Chinese woman in her late twenties) at frame-center, sitting on a case of canned food in profile facing frame-left with her gloved hands rubbing together, her breath clouding, in a long cream down coat zipped to the chin over her black silk blouse, thin gold-rimmed glasses on her nose, her long black hair tied back, frost on her lashes, her sharp dark-brown eyes on Wen, her eyes narrowed, her lips pressed in a thin line. Behind them the frost-furred wine racks line the left wall, and the heavy steel door stands at the top of the three steps at frame-right. The frame holds Wen and Su, the stacked cases, the steps and the steel door. Dim yellow light from one bulb falls on frost-furred bottles and cases in the bitterly cold stone cellar. Fixed stage layout: racks of wine bottles line the left wall; stacked cases of canned food and bottled water stand in the middle of the frame; three concrete steps rise to a heavy steel security door at frame-right; a small round thermometer hangs on the wall above the cases.",
+     "visual_zh": "文助理用发颤的声音对苏清月说出第一句，眉头拧在一起、嘴唇发抖。苏清月搓着戴手套的手，用低沉坚定的声音对文助理说出第二句，眼睛眯起、嘴唇抿成一条细线。文助理用很小的声音对苏清月说出第三句，然后爬上三级混凝土台阶，走向画面右边的钢门，穿过去离开，直到台阶上空无一人。苏清月目送她。",
+     "camera_zh": "0—12秒，镜头固定不动。",
+     "dialogue": [
+      {
+       "speaker": "Wen",
+       "text": "暖气彻底停了，苏总。",
+       "start_seconds": 0.8,
+       "end_seconds": 3.15,
+       "language": "zh"
+      },
+      {
+       "speaker": "SuDown",
+       "text": "把所有羽绒服，都拿来。",
+       "start_seconds": 3.8,
+       "end_seconds": 6.4,
+       "language": "zh"
+      },
+      {
+       "speaker": "Wen",
+       "text": "我去楼上看看！",
+       "start_seconds": 7.0,
+       "end_seconds": 8.73,
+       "language": "zh"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 12,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. [[asset:wen_blazer]] speaks the first line to [[asset:su_down]] in a trembling voice, her brows pulled together and her lips trembling. [[asset:su_down]] rubs her gloved hands and speaks the second line to [[asset:wen_blazer]] in a low firm voice, her eyes narrowed and her lips pressed in a thin line. [[asset:wen_blazer]] speaks the third line to [[asset:su_down]] in a small voice, then climbs the three concrete steps to the heavy steel door at frame-right and goes out through it until the steps stand empty. [[asset:su_down]] watches her go. The camera holds still.",
+       "visual_zh": "文助理用发颤的声音对苏清月说出第一句，眉头拧在一起、嘴唇发抖。苏清月搓着戴手套的手，用低沉坚定的声音对文助理说出第二句，眼睛眯起、嘴唇抿成一条细线。文助理用很小的声音对苏清月说出第三句，然后爬上三级混凝土台阶，走向画面右边的钢门，穿过去离开，直到台阶上空无一人。苏清月目送她。 镜头固定不动。",
+       "dialogue_indices": [
+        0,
+        1,
+        2
+       ]
+      }
+     ],
+     "sound_en": "A thin whistle of wind through the cellar door and her shivering breath. Voices stay close and clear.",
+     "sound_zh": "风从酒窖门缝里钻进来的细细的呼啸和她发抖的呼吸声。人声近而清楚。",
+     "seed": 34604,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "05｜安全屋：警报响了，林峰低声说排气管冻住了，放下刀叉",
+     "duration_seconds": 11,
+     "generation_seconds": 11,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "LinHome"
+     ],
+     "asset_keys": [
+      "bunker_living",
+      "lin_home"
+     ],
+     "image_reference_keys": [
+      "bunker_living"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium shot, the figure from the head to the waist, in the middle third of the frame, at the dining table. Lin (a Chinese man in his early thirties) at frame-center, seated at the small round dining table in profile facing frame-right, a knife and fork in his hands over a half-eaten steak, in a soft grey cotton long-sleeve henley and loose dark lounge pants, barefoot, his hair damp from a shower, his steady dark-brown eyes on the wall of security monitors at frame-right where a red warning lamp blinks above the blizzard screens, his jaw tight, his lips pressed flat, his brows low. The wall of security monitors at the center-right shows a white blizzard on every screen with one red warning lamp blinking above it. The frame holds Lin alone at the dining table and the monitor wall. Warm amber light from soft recessed lamps fills the cozy underground living area. Fixed stage layout: the open kitchen with a black-and-gold stove and a marble counter is at frame-left; a thick cream wool rug and a small round wooden dining table fill the middle of the frame; a wall of small security monitors is at frame-center-right; a heavy round steel hatch door is in the right wall at the far frame-right.",
+     "visual_zh": "林峰切下一片牛排，眼睛看着监控墙——暴风雪的屏幕上方，一盏红色的警示灯开始闪烁，然后他放下刀，低声自言自语了一句，不是对任何人说的，嘴唇轻轻动着，接着又是一句很短的，下颌绷紧、眉头压低，然后把刀叉放下，把椅子往后推开。房间里没有别人。",
+     "camera_zh": "0—11秒，镜头慢慢推近，直到林峰占满画面中间三分之一。",
+     "dialogue": [
+      {
+       "speaker": "LinHome",
+       "text": "排气管，冻住了。",
+       "start_seconds": 2.5,
+       "end_seconds": 4.35,
+       "language": "zh"
+      },
+      {
+       "speaker": "LinHome",
+       "text": "再不清，今晚缺氧。",
+       "start_seconds": 5.5,
+       "end_seconds": 7.6,
+       "language": "zh"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 11,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. [[asset:lin_home]] cuts a slice of steak, his eyes on the monitor wall where a red warning lamp starts to blink above the blizzard screens, then lowers his knife, murmurs one line to himself in a low voice, talking to nobody, his lips moving softly, then a second short line, his jaw tight and his brows low, and lays the knife and fork down and pushes his chair back. Nobody else is in the room. The camera pushes in slowly until Lin fills the middle third of the frame.",
+       "visual_zh": "林峰切下一片牛排，眼睛看着监控墙——暴风雪的屏幕上方，一盏红色的警示灯开始闪烁，然后他放下刀，低声自言自语了一句，不是对任何人说的，嘴唇轻轻动着，接着又是一句很短的，下颌绷紧、眉头压低，然后把刀叉放下，把椅子往后推开。房间里没有别人。 镜头慢慢推近，直到林峰占满画面中间三分之一。",
+       "dialogue_indices": [
+        0,
+        1
+       ]
+      }
+     ],
+     "sound_en": "A steady shrill electronic alarm, the low howl of wind from the monitor speakers and his low murmur. Voices stay close and clear.",
+     "sound_zh": "持续尖锐的电子警报声、监控喇叭里低低的风的呼啸和他低低的自语。人声近而清楚。",
+     "seed": 34605,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "06｜缓冲舱：林峰拉上白色防寒服的拉链，低声说十五分钟就回来",
+     "duration_seconds": 8,
+     "generation_seconds": 8,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "LinArctic"
+     ],
+     "asset_keys": [
+      "airlock",
+      "lin_arctic"
+     ],
+     "image_reference_keys": [
+      "airlock"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium shot, the figure from the head to the knees, in the middle third of the frame, in the airlock. Lin (a Chinese man in his early thirties) at frame-center, standing in profile facing frame-right, zipping the front of the bulky white polar suit up to his chin with his right hand while the white goggles hang from his left hand, in a bulky pure-white polar expedition suit with the hood up, white goggles pushed up on his forehead and a white neck gaiter pulled down under his chin, his steady dark-brown eyes on the heavy round steel hatch at frame-right, his jaw set, his lips set in a hard line, his brows level. Behind him the two white polar suits hang from the bench along the left wall. The frame holds Lin alone in the airlock, the bench with the white suits and the round steel hatch. Hard white strip lights fall on the white-tiled airlock. Fixed stage layout: a long steel bench with two hanging white polar suits and a shelf of white goggles runs along the left wall; the bare white-tiled floor lies in the middle of the frame; a heavy round steel hatch door stands in the right wall at frame-right.",
+     "visual_zh": "林峰把蓬松的白色防寒服的拉链拉到下巴，眼睛看着那扇厚重的圆形钢舱门，然后低声自言自语了一句很短的话，不是对任何人说的，嘴唇轻轻动着，下颌绷紧、眉毛平直，然后把白色护目镜推到额头上。缓冲舱里没有别人。",
+     "camera_zh": "0—8秒，镜头慢慢推近，直到林峰占满画面中间三分之一。",
+     "dialogue": [
+      {
+       "speaker": "LinArctic",
+       "text": "十五分钟，就回来。",
+       "start_seconds": 1.8,
+       "end_seconds": 3.9,
+       "language": "zh"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 8,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. [[asset:lin_arctic]] zips the bulky white suit up to his chin, his eyes on the heavy round steel hatch, then murmurs one short line to himself in a low voice, talking to nobody, his lips moving softly, his jaw set and his brows level, and slides the white goggles up onto his forehead. Nobody else is in the airlock. The camera pushes in slowly until Lin fills the middle third of the frame.",
+       "visual_zh": "林峰把蓬松的白色防寒服的拉链拉到下巴，眼睛看着那扇厚重的圆形钢舱门，然后低声自言自语了一句很短的话，不是对任何人说的，嘴唇轻轻动着，下颌绷紧、眉毛平直，然后把白色护目镜推到额头上。缓冲舱里没有别人。 镜头慢慢推近，直到林峰占满画面中间三分之一。",
+       "dialogue_indices": [
+        0
+       ]
+      }
+     ],
+     "sound_en": "The low hum of the ventilation, the rasp of a heavy zipper and his low murmur. Voices stay close and clear.",
+     "sound_zh": "通风系统低低的嗡鸣、厚重拉链的嘶啦声和他低低的自语。人声近而清楚。",
+     "seed": 34606,
+     "dialogue_language": "zh"
+    }
+   ],
+   "dialogue_language": "zh"
+  },
+  {
+   "title": "剧本第7集｜白雪中的呼吸",
+   "summary": "林峰穿着白色防寒服推开树洞里的暗门，在腰深的雪里走向被冰封死的排气管，用喷枪融冰。两个拖着铁棍的流浪者从远处摇晃着走来，他趴进雪里一动不动，两人几乎擦着他的头走过去。他修好管子，手背粘在冻管上抽回来时撕掉了一层皮。回到缓冲舱，他脱下结满霜的衣服，在二十五度里松了口气；工作台上的育苗盘冒出了第一批绿芽。监控墙上，一盏黄灯闪了起来——信号来自苏清月那栋楼。",
+   "script": "雪林，林峰推开树洞暗门，在腰深的雪里走向被冰封死的排气管，林峰离开敞开的暗门，在腰深的雪里往前走，每一步都要慢慢把腿从雪里拔出来，眼睛看着前面的松林，下颌咬紧、眉头压低，呼出的白气在冰冷的空气里翻涌。树林里没有别人。\n雪林，林峰跪在被冰封死的排气管前，用喷枪融冰，林峰跪在被冰封死的排气管旁，把喷枪的蓝色火焰对着冰面，眼睛盯着火焰，冰一滴一滴慢慢融化、顺着钢管流下来，下颌咬紧、眉头压低。树林里没有别人。\n同一处，林峰关掉喷枪，看到远处三个人影，慢慢趴进雪里，林峰关掉喷枪，蓝色的火焰熄灭，他把头转向排气管后面远处雾气里拖着步子走来的三个小小的黑色人影，然后慢慢把身体放平、趴进雪里，直到只剩一团白色的防寒服，下颌绷紧、眉头压低。\n同一处，林峰趴在雪里一动不动，两个流浪者几乎擦着他的头走过去，流浪者甲眼睛看着流浪者乙，拖着步子走过去，用干裂疲惫的声音对流浪者乙说出第一句，嘴唇干裂微张。流浪者乙用沉重苦涩的声音对流浪者甲说出第二句，嘴唇苦涩地抿平。流浪者甲用平淡的声音对流浪者乙说出第三句，两人继续拖着脚步走出画面左边，看都没看排气管旁雪里那团白色的东西，直到画面里只剩下趴着的林峰。林峰一动不动，下颌咬紧。\nGaunt：“冻死了……”\nBearded：“这儿，根本没吃的。”\nGaunt：“回去，也是等死。”\n同一处，林峰爬起来修好管口，手背粘在冻管上，抽回手看着自己的手背，林峰跪在排气管旁，用光着的左手拧紧最后一个卡箍，然后猛地把手抽回来，下颌咬得很紧、眉头压低，低头看着自己手背上那片发红的伤，然后用右手慢慢把白手套重新套回去。树林里没有别人。\n缓冲舱，林峰回到家，扯下结霜的兜帽，低声说到家了，林峰坐在钢长凳上，把结满霜的兜帽从头上扯下来，长长地吐出一口气，眼睛看着已经关上的圆形舱门，然后低声自言自语了一句很短的话，不是对任何人说的，嘴唇轻轻动着，接着又是一句，下颌放松、眉毛舒展。缓冲舱里没有别人。\nLinArctic：“到家了。”\nLinArctic：“真暖和。”\n工作台，育苗盘里冒出了第一批绿芽，林峰低声说出苗了，林峰俯身看着水里的白色托盘，用右手指尖轻轻碰了碰一株小小的淡绿色嫩芽，眼睛看着那些嫩芽，嘴角浮起一点满意的弧度，然后轻声自言自语了一句很短的话，不是对任何人说的，嘴唇轻轻动着，接着又是一句，下颌放松、眉毛舒展。大厅里没有别人。\nLinHome：“出苗了。”\nLinHome：“比我想的，快。”\n安全屋，监控墙上亮起一盏黄灯，林峰擦着头发的手停住，低声念出苏清月的名字，林峰用毛巾擦着湿漉漉的头发，眼睛看着监控墙——暴风雪的屏幕上方一盏小小的黄灯开始闪烁，毛巾慢下来、停住，然后他低声自言自语了一句，不是对任何人说的，嘴唇轻轻动着，接着又是一句很短的，下颌绷紧、眉头拧起。房间里没有别人。\nLinHome：“苏清月？”\nLinHome：“看来，麻烦上门了。”",
+   "segments": [
+    {
+     "title": "01｜雪林：林峰推开树洞暗门，在腰深的雪里走向被冰封死的排气管",
+     "duration_seconds": 8,
+     "generation_seconds": 8,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "LinArctic"
+     ],
+     "asset_keys": [
+      "snow_hatch",
+      "lin_arctic"
+     ],
+     "image_reference_keys": [
+      "snow_hatch"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Wide shot, the figure from the head to the feet, small in the middle third of the frame, in the snowy forest. Lin (a Chinese man in his early thirties) at frame-left, wading through the waist-deep snow in profile facing frame-right with a compact blowtorch in his right hand, one step out of the open hatch, in a bulky pure-white polar expedition suit with the hood up, white goggles pushed up on his forehead and a white neck gaiter pulled down under his chin, his steady dark-brown eyes on the snow ahead of him toward the pines at frame-right, his jaw clenched, his lips pressed flat, his brows low. Snow-laden pines stand all around and a faint green aurora hangs in the black sky. The frame holds Lin alone in the deep snow with the open hatch in the hollow trunk at frame-left. A silent frozen night forest under a black sky with a faint green aurora; the white light of the snow glows. Fixed stage layout: a hollow dead tree trunk with its camouflaged hatch standing open on a black passage is at frame-left; waist-deep snow fills the middle of the frame; snow-laden pines fill the background.",
+     "visual_zh": "林峰离开敞开的暗门，在腰深的雪里往前走，每一步都要慢慢把腿从雪里拔出来，眼睛看着前面的松林，下颌咬紧、眉头压低，呼出的白气在冰冷的空气里翻涌。树林里没有别人。",
+     "camera_zh": "0—8秒，镜头缓缓横移跟着林峰，直到林峰走到画面中间三分之一。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 8,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. [[asset:lin_arctic]] wades through the waist-deep snow away from the open hatch, lifting each leg slowly out of the drift, his eyes on the pines ahead, his jaw clenched and his brows low, his breath pouring white in the freezing air. Nobody else is in the forest. The camera tracks sideways slowly alongside Lin until Lin stands in the middle third of the frame.",
+       "visual_zh": "林峰离开敞开的暗门，在腰深的雪里往前走，每一步都要慢慢把腿从雪里拔出来，眼睛看着前面的松林，下颌咬紧、眉头压低，呼出的白气在冰冷的空气里翻涌。树林里没有别人。 镜头缓缓横移跟着林峰，直到林峰走到画面中间三分之一。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "Heavy breathing, the crunch of snow and a low wind in the pines. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here.",
+     "sound_zh": "沉重的呼吸声、踩雪的嘎吱声和松林里低低的风声。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。",
+     "seed": 34701,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "02｜雪林：林峰跪在被冰封死的排气管前，用喷枪融冰",
+     "duration_seconds": 9,
+     "generation_seconds": 9,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "LinArctic"
+     ],
+     "asset_keys": [
+      "snow_vent",
+      "lin_arctic"
+     ],
+     "image_reference_keys": [
+      "snow_vent"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium shot, the figure from the head to the knees, in the middle third of the frame, in the snowy forest. Lin (a Chinese man in his early thirties) at frame-center, kneeling in the snow beside the ice-sealed steel pipe in profile facing frame-right, a compact blowtorch with a steady blue flame held in both hands aimed at the ice, in a bulky pure-white polar expedition suit with the hood up, white goggles pushed up on his forehead and a white neck gaiter pulled down under his chin, his steady dark-brown eyes on the blue flame on the ice-sealed mouth of the pipe, his jaw clenched, his lips pressed flat, his brows low. Snow-laden pines stand behind him and a faint green aurora hangs in the black sky. The frame holds Lin alone kneeling beside the ice-sealed pipe. A silent frozen night forest under a black sky with a faint green aurora; the white light of the snow glows. Fixed stage layout: a thick steel exhaust pipe sticks out of the deep snow at frame-center-right, its mouth sealed in a heavy block of ice; deep snow fills the foreground; snow-laden pines stand behind it.",
+     "visual_zh": "林峰跪在被冰封死的排气管旁，把喷枪的蓝色火焰对着冰面，眼睛盯着火焰，冰一滴一滴慢慢融化、顺着钢管流下来，下颌咬紧、眉头压低。树林里没有别人。",
+     "camera_zh": "0—9秒，镜头慢慢推近，直到林峰和管道占满画面中间三分之一。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 9,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. [[asset:lin_arctic]] kneels beside the ice-sealed pipe and holds the blue flame of the blowtorch against the ice, his eyes on the flame, and the ice melts away in slow drops and runs down the steel, his jaw clenched and his brows low. Nobody else is in the forest. The camera pushes in slowly until Lin and the pipe fills the middle third of the frame.",
+       "visual_zh": "林峰跪在被冰封死的排气管旁，把喷枪的蓝色火焰对着冰面，眼睛盯着火焰，冰一滴一滴慢慢融化、顺着钢管流下来，下颌咬紧、眉头压低。树林里没有别人。 镜头慢慢推近，直到林峰和管道占满画面中间三分之一。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "The steady hiss of the torch, dripping meltwater and a low wind in the pines. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here.",
+     "sound_zh": "喷枪稳定的嘶嘶声、融化的冰水滴落的声音和松林里低低的风声。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。",
+     "seed": 34702,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "03｜同一处：林峰关掉喷枪，看到远处三个人影，慢慢趴进雪里",
+     "duration_seconds": 6,
+     "generation_seconds": 6,
+     "continuity": "cut",
+     "depends_on_previous": true,
+     "use_previous_episode_state": false,
+     "characters": [
+      "LinArctic"
+     ],
+     "asset_keys": [
+      "snow_vent",
+      "lin_arctic"
+     ],
+     "image_reference_keys": [
+      "snow_vent"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium-wide shot, the figure from the head to the knees, in the middle third of the frame, in the snowy forest. Lin (a Chinese man in his early thirties) at frame-center, kneeling in the snow beside the pipe in profile facing frame-right with the blowtorch switched off in his hand, his head turned toward the distant figures, in a bulky pure-white polar expedition suit with the hood up, white goggles pushed up on his forehead and a white neck gaiter pulled down under his chin, his steady dark-brown eyes on the three dark figures dragging themselves through the haze far behind the pipe at frame-right, his jaw tight, his lips pressed flat, his brows low. Far behind the pipe in the haze three small dark ragged figures drag themselves through the snow, carrying iron bars. The frame holds Lin alone at the pipe, with three small figures far in the haze. A silent frozen night forest under a black sky with a faint green aurora; the white light of the snow glows. Fixed stage layout: a thick steel exhaust pipe sticks out of the deep snow at frame-center-right, its mouth sealed in a heavy block of ice; deep snow fills the foreground; snow-laden pines stand behind it.",
+     "visual_zh": "林峰关掉喷枪，蓝色的火焰熄灭，他把头转向排气管后面远处雾气里拖着步子走来的三个小小的黑色人影，然后慢慢把身体放平、趴进雪里，直到只剩一团白色的防寒服，下颌绷紧、眉头压低。",
+     "camera_zh": "0—6秒，镜头慢慢推近，直到林峰占满画面中间三分之一。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 6,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. [[asset:lin_arctic]] switches off the torch, the blue flame dies, and he turns his head toward the three small dark figures dragging themselves through the haze far behind the pipe, then lowers himself slowly flat into the snow until only the white of his suit shows, his jaw tight and his brows low. The camera pushes in slowly until Lin fills the middle third of the frame.",
+       "visual_zh": "林峰关掉喷枪，蓝色的火焰熄灭，他把头转向排气管后面远处雾气里拖着步子走来的三个小小的黑色人影，然后慢慢把身体放平、趴进雪里，直到只剩一团白色的防寒服，下颌绷紧、眉头压低。 镜头慢慢推近，直到林峰占满画面中间三分之一。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "The torch hissing out, a held breath and a low wind in the pines. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here.",
+     "sound_zh": "喷枪嘶的一声熄灭、一声屏住的呼吸和松林里低低的风声。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。",
+     "seed": 34703,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "04｜同一处：林峰趴在雪里一动不动，两个流浪者几乎擦着他的头走过去",
+     "duration_seconds": 12,
+     "generation_seconds": 12,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "LinArctic",
+      "Gaunt",
+      "Bearded"
+     ],
+     "asset_keys": [
+      "snow_vent",
+      "lin_arctic",
+      "gaunt_drifter",
+      "bearded_drifter"
+     ],
+     "image_reference_keys": [
+      "snow_vent"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium-wide shot, all three from the head to the feet, in the middle third of the frame, in the snowy forest. Lin (a Chinese man in his early thirties) at frame-right, lying flat on his stomach in the snow beside the pipe, the white suit almost vanishing into the drift, his head turned down toward the snow, in a bulky pure-white polar expedition suit with the hood up, white goggles pushed up on his forehead and a white neck gaiter pulled down under his chin, his eyes squeezed shut, his jaw clenched, his lips pressed together. Gaunt (a gaunt Chinese man in his forties) at frame-left, trudging through the snow in profile facing frame-left, an iron bar dragging from one hand, about one meter beyond Lin's head, in a layered tattered winter coat with a frost-crusted scarf pulled down under his chin, his sunken bloodshot eyes on Bearded, his lips cracked and parted, his brows pulled low. Bearded (a stocky Chinese man in his forties) at frame-center, trudging beside Gaunt in profile facing frame-left, a short iron pipe hanging from one hand, in a ragged padded jacket and a knitted cap, his red-rimmed eyes on Gaunt, his lips pressed bitterly flat, his brows low. The ice-sealed steel pipe stands beside the white lump of the lying man, and snow-laden pines stand behind. The frame holds Lin lying in the snow, Gaunt and Bearded trudging past, the pipe and the snow-laden pines. A silent frozen night forest under a black sky with a faint green aurora; the white light of the snow glows. Fixed stage layout: a thick steel exhaust pipe sticks out of the deep snow at frame-center-right, its mouth sealed in a heavy block of ice; deep snow fills the foreground; snow-laden pines stand behind it.",
+     "visual_zh": "流浪者甲眼睛看着流浪者乙，拖着步子走过去，用干裂疲惫的声音对流浪者乙说出第一句，嘴唇干裂微张。流浪者乙用沉重苦涩的声音对流浪者甲说出第二句，嘴唇苦涩地抿平。流浪者甲用平淡的声音对流浪者乙说出第三句，两人继续拖着脚步走出画面左边，看都没看排气管旁雪里那团白色的东西，直到画面里只剩下趴着的林峰。林峰一动不动，下颌咬紧。",
+     "camera_zh": "0—12秒，镜头固定不动。",
+     "dialogue": [
+      {
+       "speaker": "Gaunt",
+       "text": "冻死了……",
+       "start_seconds": 1.0,
+       "end_seconds": 1.8,
+       "language": "zh"
+      },
+      {
+       "speaker": "Bearded",
+       "text": "这儿，根本没吃的。",
+       "start_seconds": 4.0,
+       "end_seconds": 6.1,
+       "language": "zh"
+      },
+      {
+       "speaker": "Gaunt",
+       "text": "回去，也是等死。",
+       "start_seconds": 7.2,
+       "end_seconds": 9.05,
+       "language": "zh"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 12,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. [[asset:gaunt_drifter]] trudges past with his eyes on [[asset:bearded_drifter]] and speaks the first line to [[asset:bearded_drifter]] in a cracked, exhausted voice, his lips cracked and parted. [[asset:bearded_drifter]] speaks the second line to [[asset:gaunt_drifter]] in a heavy, bitter voice, his lips pressed bitterly flat. [[asset:gaunt_drifter]] speaks the third line to [[asset:bearded_drifter]] in a flat voice, and both men trudge on out of the frame at frame-left without a glance at the white lump in the snow beside the pipe, until only the lying [[asset:lin_arctic]] remains. [[asset:lin_arctic]] does not move at all, his jaw clenched. The camera holds still.",
+       "visual_zh": "流浪者甲眼睛看着流浪者乙，拖着步子走过去，用干裂疲惫的声音对流浪者乙说出第一句，嘴唇干裂微张。流浪者乙用沉重苦涩的声音对流浪者甲说出第二句，嘴唇苦涩地抿平。流浪者甲用平淡的声音对流浪者乙说出第三句，两人继续拖着脚步走出画面左边，看都没看排气管旁雪里那团白色的东西，直到画面里只剩下趴着的林峰。林峰一动不动，下颌咬紧。 镜头固定不动。",
+       "dialogue_indices": [
+        0,
+        1,
+        2
+       ]
+      }
+     ],
+     "sound_en": "Boots dragging through the snow, the scrape of iron on ice and a low wind in the pines. Voices stay close and clear.",
+     "sound_zh": "靴子拖过雪地的声音、铁棍刮过冰面的声音和松林里低低的风声。人声近而清楚。",
+     "seed": 34704,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "05｜同一处：林峰爬起来修好管口，手背粘在冻管上，抽回手看着自己的手背",
+     "duration_seconds": 8,
+     "generation_seconds": 8,
+     "continuity": "cut",
+     "depends_on_previous": true,
+     "use_previous_episode_state": false,
+     "characters": [
+      "LinArctic"
+     ],
+     "asset_keys": [
+      "snow_vent",
+      "lin_arctic"
+     ],
+     "image_reference_keys": [
+      "snow_vent"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium shot, the figure from the head to the knees, in the middle third of the frame, in the snowy forest. Lin (a Chinese man in his early thirties) at frame-center, kneeling in the snow beside the pipe in profile facing frame-right, his bare left hand just pulled back from the frozen pipe clamp, the back of it raw and reddened, the white glove hanging from his right hand, in a bulky pure-white polar expedition suit with the hood up, white goggles pushed up on his forehead and a white neck gaiter pulled down under his chin, his steady dark-brown eyes on the raw reddened back of his own bare left hand, his jaw clenched hard, his lips pressed in a grimace, his brows pulled low. The ice-sealed steel pipe now stands free of ice beside him, and snow-laden pines stand behind. The frame holds Lin alone kneeling beside the pipe. A silent frozen night forest under a black sky with a faint green aurora; the white light of the snow glows. Fixed stage layout: a thick steel exhaust pipe sticks out of the deep snow at frame-center-right, its mouth sealed in a heavy block of ice; deep snow fills the foreground; snow-laden pines stand behind it.",
+     "visual_zh": "林峰跪在排气管旁，用光着的左手拧紧最后一个卡箍，然后猛地把手抽回来，下颌咬得很紧、眉头压低，低头看着自己手背上那片发红的伤，然后用右手慢慢把白手套重新套回去。树林里没有别人。",
+     "camera_zh": "0—8秒，镜头慢慢推近，直到林峰和他的手占满画面中间三分之一。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 8,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. [[asset:lin_arctic]] kneels beside the pipe and tightens the last clamp with his bare left hand, then pulls the hand away sharply, his jaw clenched hard and his brows pulled low, and looks down at the raw reddened back of his hand, then slowly pulls the white glove back on over it with his right hand. Nobody else is in the forest. The camera pushes in slowly until Lin and his hand fills the middle third of the frame.",
+       "visual_zh": "林峰跪在排气管旁，用光着的左手拧紧最后一个卡箍，然后猛地把手抽回来，下颌咬得很紧、眉头压低，低头看着自己手背上那片发红的伤，然后用右手慢慢把白手套重新套回去。树林里没有别人。 镜头慢慢推近，直到林峰和他的手占满画面中间三分之一。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "A sharp hiss of breath through clenched teeth, the creak of frozen metal and a low wind in the pines. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here.",
+     "sound_zh": "咬紧牙关倒吸一口冷气的嘶声、冻硬的金属的吱嘎声和松林里低低的风声。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。",
+     "seed": 34705,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "06｜缓冲舱：林峰回到家，扯下结霜的兜帽，低声说到家了",
+     "duration_seconds": 9,
+     "generation_seconds": 9,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "LinArctic"
+     ],
+     "asset_keys": [
+      "airlock",
+      "lin_arctic"
+     ],
+     "image_reference_keys": [
+      "airlock"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium shot, the figure from the head to the knees, in the middle third of the frame, in the airlock. Lin (a Chinese man in his early thirties) at frame-center, sitting on the steel bench in profile facing frame-right, pulling the frost-crusted white hood back off his head with his right hand while his left hand rests stiffly on his knee, in a bulky pure-white polar expedition suit with the hood up, white goggles pushed up on his forehead and a white neck gaiter pulled down under his chin, his steady dark-brown eyes on the heavy round steel hatch at frame-right now closed, his jaw relaxing, his lips parted in a long breath, his brows loosening. Behind him the other white polar suit hangs from the bench along the left wall. The frame holds Lin alone in the airlock, the bench and the closed round hatch. Hard white strip lights fall on the white-tiled airlock. Fixed stage layout: a long steel bench with two hanging white polar suits and a shelf of white goggles runs along the left wall; the bare white-tiled floor lies in the middle of the frame; a heavy round steel hatch door stands in the right wall at frame-right.",
+     "visual_zh": "林峰坐在钢长凳上，把结满霜的兜帽从头上扯下来，长长地吐出一口气，眼睛看着已经关上的圆形舱门，然后低声自言自语了一句很短的话，不是对任何人说的，嘴唇轻轻动着，接着又是一句，下颌放松、眉毛舒展。缓冲舱里没有别人。",
+     "camera_zh": "0—9秒，镜头慢慢推近，直到林峰占满画面中间三分之一。",
+     "dialogue": [
+      {
+       "speaker": "LinArctic",
+       "text": "到家了。",
+       "start_seconds": 2.2,
+       "end_seconds": 3.18,
+       "language": "zh"
+      },
+      {
+       "speaker": "LinArctic",
+       "text": "真暖和。",
+       "start_seconds": 5.0,
+       "end_seconds": 5.98,
+       "language": "zh"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 9,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. [[asset:lin_arctic]] sits on the bench and pulls the frost-crusted hood back off his head, his breath coming out in a long slow sigh, his eyes on the closed round hatch, then murmurs one short line to himself in a low voice, talking to nobody, his lips moving softly, then a second short line, his jaw relaxing and his brows loosening. Nobody else is in the airlock. The camera pushes in slowly until Lin fills the middle third of the frame.",
+       "visual_zh": "林峰坐在钢长凳上，把结满霜的兜帽从头上扯下来，长长地吐出一口气，眼睛看着已经关上的圆形舱门，然后低声自言自语了一句很短的话，不是对任何人说的，嘴唇轻轻动着，接着又是一句，下颌放松、眉毛舒展。缓冲舱里没有别人。 镜头慢慢推近，直到林峰占满画面中间三分之一。",
+       "dialogue_indices": [
+        0,
+        1
+       ]
+      }
+     ],
+     "sound_en": "The low hum of the ventilation, the rasp of frozen fabric and his low murmur. Voices stay close and clear.",
+     "sound_zh": "通风系统低低的嗡鸣、冻硬的衣料摩擦声和他低低的自语。人声近而清楚。",
+     "seed": 34706,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "07｜工作台：育苗盘里冒出了第一批绿芽，林峰低声说出苗了",
+     "duration_seconds": 9,
+     "generation_seconds": 9,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "LinHome"
+     ],
+     "asset_keys": [
+      "bunker_sprouts",
+      "lin_home"
+     ],
+     "image_reference_keys": [
+      "bunker_sprouts"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium shot, the figure from the head to the waist, in the middle third of the frame, at the workbench. Lin (a Chinese man in his early thirties) at frame-center, standing at the steel workbench in profile facing frame-right with a white towel around his neck and his left hand wrapped in a strip of white gauze held against his chest, bending over the white tray of foam blocks, in a soft grey cotton long-sleeve henley and loose dark lounge pants, barefoot, his hair damp from a shower, his steady dark-brown eyes on the tiny pale-green seedlings on the tray in the water, his jaw relaxed, the corners of his mouth lifting in a small pleased curve, his brows soft. Behind him towering stacks of steel crates, pallets of boxes, generators and big water tanks fill the hall under hard white work lamps. The frame holds Lin alone at the workbench, the tray of seedlings and the stacked supplies behind him. Hard white work lamps and one soft white-purple grow lamp light the huge concrete hall packed with supplies. Fixed stage layout: a steel workbench stands at frame-center with a shallow tub of clear water and a white tray of foam seeding blocks, each topped with tiny pale-green seedlings, under a hanging white-purple grow lamp; towering stacks of steel crates, pallets of boxes, generators and big water tanks fill the hall behind it and along both sides.",
+     "visual_zh": "林峰俯身看着水里的白色托盘，用右手指尖轻轻碰了碰一株小小的淡绿色嫩芽，眼睛看着那些嫩芽，嘴角浮起一点满意的弧度，然后轻声自言自语了一句很短的话，不是对任何人说的，嘴唇轻轻动着，接着又是一句，下颌放松、眉毛舒展。大厅里没有别人。",
+     "camera_zh": "0—9秒，镜头慢慢推近，直到林峰和嫩芽占满画面中间三分之一。",
+     "dialogue": [
+      {
+       "speaker": "LinHome",
+       "text": "出苗了。",
+       "start_seconds": 2.4,
+       "end_seconds": 3.38,
+       "language": "zh"
+      },
+      {
+       "speaker": "LinHome",
+       "text": "比我想的，快。",
+       "start_seconds": 5.2,
+       "end_seconds": 6.8,
+       "language": "zh"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 9,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. [[asset:lin_home]] bends over the white tray in the water and gently touches one tiny pale-green seedling with the tip of his right finger, his eyes on the seedlings, the corners of his mouth lifting in a small pleased curve, then murmurs one short line to himself in a soft voice, talking to nobody, his lips moving softly, then a second short line, his jaw relaxed and his brows soft. Nobody else is in the hall. The camera pushes in slowly until Lin and the seedlings fills the middle third of the frame.",
+       "visual_zh": "林峰俯身看着水里的白色托盘，用右手指尖轻轻碰了碰一株小小的淡绿色嫩芽，眼睛看着那些嫩芽，嘴角浮起一点满意的弧度，然后轻声自言自语了一句很短的话，不是对任何人说的，嘴唇轻轻动着，接着又是一句，下颌放松、眉毛舒展。大厅里没有别人。 镜头慢慢推近，直到林峰和嫩芽占满画面中间三分之一。",
+       "dialogue_indices": [
+        0,
+        1
+       ]
+      }
+     ],
+     "sound_en": "Water gently lapping in the tub, the low hum of a generator and his soft murmur. Voices stay close and clear.",
+     "sound_zh": "水盆里水轻轻荡漾的声音、发电机低低的嗡鸣和他轻轻的自语。人声近而清楚。",
+     "seed": 34707,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "08｜安全屋：监控墙上亮起一盏黄灯，林峰擦着头发的手停住，低声念出苏清月的名字",
+     "duration_seconds": 9,
+     "generation_seconds": 9,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "LinHome"
+     ],
+     "asset_keys": [
+      "bunker_living",
+      "lin_home"
+     ],
+     "image_reference_keys": [
+      "bunker_living"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium shot, the figure from the head to the knees, in the middle third of the frame, in the underground living area. Lin (a Chinese man in his early thirties) at frame-center, standing before the monitor wall in profile facing frame-right, rubbing his damp hair with a white towel in his right hand, his left hand wrapped in white gauze at his side, in a soft grey cotton long-sleeve henley and loose dark lounge pants, barefoot, his hair damp from a shower, his steady dark-brown eyes on the monitor wall where one small amber lamp blinks above the blizzard screens, his jaw tightening, his lips pressed flat, his brows drawing together. The wall of security monitors at the center-right shows a white blizzard on every screen with one small amber lamp blinking above it. The frame holds Lin alone before the monitor wall. Warm amber light from soft recessed lamps fills the cozy underground living area. Fixed stage layout: the open kitchen with a black-and-gold stove and a marble counter is at frame-left; a thick cream wool rug and a small round wooden dining table fill the middle of the frame; a wall of small security monitors is at frame-center-right; a heavy round steel hatch door is in the right wall at the far frame-right.",
+     "visual_zh": "林峰用毛巾擦着湿漉漉的头发，眼睛看着监控墙——暴风雪的屏幕上方一盏小小的黄灯开始闪烁，毛巾慢下来、停住，然后他低声自言自语了一句，不是对任何人说的，嘴唇轻轻动着，接着又是一句很短的，下颌绷紧、眉头拧起。房间里没有别人。",
+     "camera_zh": "0—9秒，镜头慢慢推近，直到林峰和监控墙占满画面中间三分之一。",
+     "dialogue": [
+      {
+       "speaker": "LinHome",
+       "text": "苏清月？",
+       "start_seconds": 2.4,
+       "end_seconds": 3.38,
+       "language": "zh"
+      },
+      {
+       "speaker": "LinHome",
+       "text": "看来，麻烦上门了。",
+       "start_seconds": 4.6,
+       "end_seconds": 6.7,
+       "language": "zh"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 9,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. [[asset:lin_home]] rubs his damp hair with the towel, his eyes on the monitor wall where a small amber lamp starts to blink above the blizzard screens, the towel slows and stops, then he murmurs one line to himself in a low voice, talking to nobody, his lips moving softly, then a second short line, his jaw tightening and his brows drawing together. Nobody else is in the room. The camera pushes in slowly until Lin and the monitor wall fills the middle third of the frame.",
+       "visual_zh": "林峰用毛巾擦着湿漉漉的头发，眼睛看着监控墙——暴风雪的屏幕上方一盏小小的黄灯开始闪烁，毛巾慢下来、停住，然后他低声自言自语了一句，不是对任何人说的，嘴唇轻轻动着，接着又是一句很短的，下颌绷紧、眉头拧起。房间里没有别人。 镜头慢慢推近，直到林峰和监控墙占满画面中间三分之一。",
+       "dialogue_indices": [
+        0,
+        1
+       ]
+      }
+     ],
+     "sound_en": "A soft insistent beep from the monitor wall, the low howl of wind from the speakers and his low murmur. Voices stay close and clear.",
+     "sound_zh": "监控墙上一声轻轻而固执的哔哔声、喇叭里低低的风的呼啸和他低低的自语。人声近而清楚。",
+     "seed": 34708,
+     "dialogue_language": "zh"
+    }
+   ],
+   "dialogue_language": "zh"
+  },
+  {
+   "title": "剧本第8集｜苏清月的求生",
+   "summary": "酒窖里，苏清月的水已经冻成了冰；门外有人用大锤砸门，她撕下布条塞进酒精瓶、点燃，在门被砸开的一刻把燃烧瓶砸向门口，领头的暴徒被火焰逼退。酒窖的保温层破了，她穿上三层羽绒服，带着林峰给的物流单跳窗入雪。雪原上她一步步往前挪，远处山脊上全是冻成冰的人形。另一边，安全屋里林峰正在装水泵，暖黄的灯光里一片安静。苏清月跪在坐标处，只有一片雪地，直到她看见一截枯树桩上有一小块玻璃，雪落在上面正在融化。",
+   "script": "酒窖，苏清月想拧开瓶盖，水已经冻成了冰，她低声说撑不过今晚，苏清月戴着手套的两只手拧着瓶盖，眼睛看着那瓶已经冻成一整块冰的水，呼出的白气一团一团，然后她低声自言自语了一句，不是对任何人说的，嘴唇轻轻动着，接着又是一句很短的，嘴唇干裂、眉头紧蹙。酒窖里没有别人。\nSuDown：“水，也冻住了。”\nSuDown：“撑不过今晚。”\n酒窖，门外传来锤子砸门的闷响，苏清月撕下布条塞进酒精瓶，点着打火机，苏清月跪在地上，把撕下来的布条深深塞进那瓶医用酒精的瓶口，眼睛看着酒瓶，背后的钢门上传来一下一下沉重的锤击声，然后她用冰冷低沉的声音自言自语了一句很短的话，不是对任何人说的，嘴唇轻轻动着，眼睛眯起、眉头压低，然后拇指一拨打火机，一朵小火苗点着了布条。酒窖里没有别人。\nSuDown：“想进来，自己拿。”\n酒窖，门被砸开，苏清月把燃烧瓶砸向门口，领头的暴徒被火焰逼退，苏清月手臂猛地一挥，把燃烧瓶砸向门口，瓶子在最上面一级台阶上爆成一团橙色的火焰，她的眼睛盯着暴徒。暴徒手里的大锤落下，用手臂挡着脸被火焰逼得连连后退，踉跄着退出门口，直到门口空无一人，火苗舔着最上面一级台阶，雪被风卷进来。\n酒窖，苏清月知道保温层破了，穿上第三件羽绒服，低声说她陪他疯一次，苏清月把第三件羽绒服的拉链拉到下巴，眼睛看着手里那张皱巴巴的物流单，低声自言自语了一句，不是对任何人说的，嘴唇轻轻动着，接着又是一句，然后又是一句，下颌绷紧、眉头压低，然后把滑雪护目镜拉下来戴在眼睛上。酒窖里没有别人。\nSuTrek：“保温层，破了。”\nSuTrek：“林峰……”\nSuTrek：“我陪你，疯一次。”\n雪原，苏清月背着登山包在齐腿深的雪里一步一步往前挪，苏清月在齐腿深的雪里往前走，每一步都要慢慢把腿从雪里拔出来，眼睛看着前面白色的山脊，下颌咬紧、眉头压低，呼出的白气翻涌。雪原上没有别人。\n安全屋，外面是死亡的雪原，里面林峰在暖黄的灯光下装水泵，林峰用右手慢慢转动螺丝刀，拧紧小水泵上的一颗螺栓，眼睛看着水泵，下颌放松、眉毛舒展，然后用脖子上的毛巾轻轻擦了擦水泵的外壳，旁边的灯光下是那盘绿色的嫩芽。大厅里没有别人。\n坐标处，苏清月跪在雪地里什么都没有，直到发现树桩上有一小块在融雪的玻璃，苏清月跪在雪里，眼睛看着空荡荡的雪地，然后用沙哑低沉的声音自言自语了一句，不是对任何人说的，嘴唇轻轻动着，嘴唇干裂、眉头紧蹙；她的目光移到那截枯树桩上——侧面一小块圆形的玻璃周围，一圈薄薄的雪正在融化，她又自言自语了一句很短的，接着又是一句，然后朝树桩爬了两步，一只戴手套的手伸向那块玻璃。山坡上没有别人。\nSuTrek：“什么都没有……”\nSuTrek：“等等。”\nSuTrek：“那块玻璃，在融化。”",
+   "segments": [
+    {
+     "title": "01｜酒窖：苏清月想拧开瓶盖，水已经冻成了冰，她低声说撑不过今晚",
+     "duration_seconds": 9,
+     "generation_seconds": 9,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "SuDown"
+     ],
+     "asset_keys": [
+      "wine_cellar",
+      "su_down"
+     ],
+     "image_reference_keys": [
+      "wine_cellar"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium shot, the figure from the head to the knees, in the middle third of the frame, in the frozen wine cellar. Su (a Chinese woman in her late twenties) at frame-center, sitting on a case of canned food in profile facing frame-right with both gloved hands wrestling the cap of a bottle of water frozen solid, her breath clouding, in a long cream down coat zipped to the chin over her black silk blouse, thin gold-rimmed glasses on her nose, her long black hair tied back, frost on her lashes, her sharp dark-brown eyes on the frozen water bottle in her hands, her lips cracked and pressed together, her brows drawn tight, her jaw trembling. Behind her the frost-furred wine racks line the left wall and the heavy steel door stands at the top of the three steps at frame-right. The frame holds Su alone in the cellar, the stacked cases and the steel door. Dim yellow light from one bulb falls on frost-furred bottles and cases in the bitterly cold stone cellar. Fixed stage layout: racks of wine bottles line the left wall; stacked cases of canned food and bottled water stand in the middle of the frame; three concrete steps rise to a heavy steel security door at frame-right; a small round thermometer hangs on the wall above the cases.",
+     "visual_zh": "苏清月戴着手套的两只手拧着瓶盖，眼睛看着那瓶已经冻成一整块冰的水，呼出的白气一团一团，然后她低声自言自语了一句，不是对任何人说的，嘴唇轻轻动着，接着又是一句很短的，嘴唇干裂、眉头紧蹙。酒窖里没有别人。",
+     "camera_zh": "0—9秒，镜头慢慢推近，直到苏清月和水瓶占满画面中间三分之一。",
+     "dialogue": [
+      {
+       "speaker": "SuDown",
+       "text": "水，也冻住了。",
+       "start_seconds": 2.0,
+       "end_seconds": 3.6,
+       "language": "zh"
+      },
+      {
+       "speaker": "SuDown",
+       "text": "撑不过今晚。",
+       "start_seconds": 4.8,
+       "end_seconds": 6.28,
+       "language": "zh"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 9,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. [[asset:su_down]] turns at the cap of the bottle with both gloved hands, her eyes on the bottle where the water has frozen into a solid block, her breath clouding, then murmurs one line to herself in a low voice, talking to nobody, her lips moving softly, then a second short line, her lips cracked and her brows drawn tight. Nobody else is in the cellar. The camera pushes in slowly until Su and the bottle fills the middle third of the frame.",
+       "visual_zh": "苏清月戴着手套的两只手拧着瓶盖，眼睛看着那瓶已经冻成一整块冰的水，呼出的白气一团一团，然后她低声自言自语了一句，不是对任何人说的，嘴唇轻轻动着，接着又是一句很短的，嘴唇干裂、眉头紧蹙。酒窖里没有别人。 镜头慢慢推近，直到苏清月和水瓶占满画面中间三分之一。",
+       "dialogue_indices": [
+        0,
+        1
+       ]
+      }
+     ],
+     "sound_en": "A thin whistle of wind through the cellar door, the creak of frozen plastic and her low murmur. Voices stay close and clear.",
+     "sound_zh": "风从酒窖门缝里钻进来的细细的呼啸、冻硬的塑料的嘎吱声和她低低的自语。人声近而清楚。",
+     "seed": 34801,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "02｜酒窖：门外传来锤子砸门的闷响，苏清月撕下布条塞进酒精瓶，点着打火机",
+     "duration_seconds": 10,
+     "generation_seconds": 10,
+     "continuity": "cut",
+     "depends_on_previous": true,
+     "use_previous_episode_state": false,
+     "characters": [
+      "SuDown"
+     ],
+     "asset_keys": [
+      "wine_cellar",
+      "su_down"
+     ],
+     "image_reference_keys": [
+      "wine_cellar"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium shot, the figure from the head to the knees, in the middle third of the frame, in the frozen wine cellar. Su (a Chinese woman in her late twenties) at frame-center, kneeling beside a crate in profile facing frame-right, stuffing a torn strip of cloth into the neck of a clear bottle of medical alcohol, in a long cream down coat zipped to the chin over her black silk blouse, thin gold-rimmed glasses on her nose, her long black hair tied back, frost on her lashes, her sharp dark-brown eyes on the cloth strip and the neck of the alcohol bottle in her hands, her eyes narrowed, her lips pressed in a thin hard line, her brows low. Behind her the heavy steel door at the top of the three steps shudders at frame-right, and the frost-furred wine racks line the left wall. The frame holds Su alone kneeling in the cellar, the steps and the steel door. Dim yellow light from one bulb falls on frost-furred bottles and cases in the bitterly cold stone cellar. Fixed stage layout: racks of wine bottles line the left wall; stacked cases of canned food and bottled water stand in the middle of the frame; three concrete steps rise to a heavy steel security door at frame-right; a small round thermometer hangs on the wall above the cases.",
+     "visual_zh": "苏清月跪在地上，把撕下来的布条深深塞进那瓶医用酒精的瓶口，眼睛看着酒瓶，背后的钢门上传来一下一下沉重的锤击声，然后她用冰冷低沉的声音自言自语了一句很短的话，不是对任何人说的，嘴唇轻轻动着，眼睛眯起、眉头压低，然后拇指一拨打火机，一朵小火苗点着了布条。酒窖里没有别人。",
+     "camera_zh": "0—10秒，镜头慢慢推近，直到苏清月和酒瓶占满画面中间三分之一。",
+     "dialogue": [
+      {
+       "speaker": "SuDown",
+       "text": "想进来，自己拿。",
+       "start_seconds": 4.2,
+       "end_seconds": 6.05,
+       "language": "zh"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 10,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. [[asset:su_down]] kneels with the bottle of medical alcohol and pushes the torn strip of cloth deep into its neck, her eyes on the bottle, heavy hammer blows booming against the steel door behind her, then murmurs one short line to herself in a cold low voice, talking to nobody, her lips moving softly, her eyes narrowed and her brows low, and thumbs a lighter so that a small flame catches the cloth. Nobody else is in the cellar. The camera pushes in slowly until Su and the bottle fills the middle third of the frame.",
+       "visual_zh": "苏清月跪在地上，把撕下来的布条深深塞进那瓶医用酒精的瓶口，眼睛看着酒瓶，背后的钢门上传来一下一下沉重的锤击声，然后她用冰冷低沉的声音自言自语了一句很短的话，不是对任何人说的，嘴唇轻轻动着，眼睛眯起、眉头压低，然后拇指一拨打火机，一朵小火苗点着了布条。酒窖里没有别人。 镜头慢慢推近，直到苏清月和酒瓶占满画面中间三分之一。",
+       "dialogue_indices": [
+        0
+       ]
+      }
+     ],
+     "sound_en": "Heavy hammer blows booming against the steel door, the glug of liquid and her cold low murmur. Voices stay close and clear.",
+     "sound_zh": "钢门上沉重的锤击闷响、液体晃动的咕嘟声和她冰冷低沉的自语。人声近而清楚。",
+     "seed": 34802,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "03｜酒窖：门被砸开，苏清月把燃烧瓶砸向门口，领头的暴徒被火焰逼退",
+     "duration_seconds": 6,
+     "generation_seconds": 6,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "SuDown",
+      "Brute"
+     ],
+     "asset_keys": [
+      "wine_cellar",
+      "su_down",
+      "brute_raider"
+     ],
+     "image_reference_keys": [
+      "wine_cellar"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium-wide shot, both from the head to the feet, in the middle third of the frame, in the frozen wine cellar. Su (a Chinese woman in her late twenties) at frame-left, standing at the foot of the three steps in profile facing frame-right with her arm cocked back at her shoulder holding the burning bottle, a flame guttering from its neck, in a long cream down coat zipped to the chin over her black silk blouse, thin gold-rimmed glasses on her nose, her long black hair tied back, frost on her lashes, her sharp dark-brown eyes on Brute, her eyes narrowed, her lips pressed in a hard line, her brows low. Brute (a heavy-set Chinese man in his thirties) at frame-right, standing in the shattered doorway at the top of the steps in profile facing frame-left, the sledgehammer raised in both hands, in a stained quilted coat with a ragged scarf pulled up over his nose, his wild bloodshot eyes on Su, his eyes wild, his lips curled under his scarf, his brows lowered. The heavy steel door hangs shattered open at the top of the steps with black night and blowing snow behind it. The frame holds Su at the foot of the steps and Brute in the doorway, the stacked cases and the shattered door. Dim yellow light from one bulb falls on frost-furred bottles and cases in the bitterly cold stone cellar. Fixed stage layout: racks of wine bottles line the left wall; stacked cases of canned food and bottled water stand in the middle of the frame; three concrete steps rise to a heavy steel security door at frame-right; a small round thermometer hangs on the wall above the cases.",
+     "visual_zh": "苏清月手臂猛地一挥，把燃烧瓶砸向门口，瓶子在最上面一级台阶上爆成一团橙色的火焰，她的眼睛盯着暴徒。暴徒手里的大锤落下，用手臂挡着脸被火焰逼得连连后退，踉跄着退出门口，直到门口空无一人，火苗舔着最上面一级台阶，雪被风卷进来。",
+     "camera_zh": "0—6秒，镜头固定不动。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 6,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. [[asset:su_down]] throws the burning bottle at the doorway in one hard sweep of her arm and it bursts into a ball of orange flame on the top step, her eyes on [[asset:brute_raider]]. [[asset:brute_raider]] lets the sledgehammer fall and reels back from the flames with his arm over his face, staggering out through the doorway until the doorway is empty, flames licking the top step and snow blowing in. [[asset:su_down]] keeps her eyes narrowed, her lips pressed in a hard line, her brows low. [[asset:brute_raider]] keeps his eyes wild, his lips curled under his scarf, his brows lowered. The camera holds still.",
+       "visual_zh": "苏清月手臂猛地一挥，把燃烧瓶砸向门口，瓶子在最上面一级台阶上爆成一团橙色的火焰，她的眼睛盯着暴徒。暴徒手里的大锤落下，用手臂挡着脸被火焰逼得连连后退，踉跄着退出门口，直到门口空无一人，火苗舔着最上面一级台阶，雪被风卷进来。 镜头固定不动。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "A roaring whoosh of flame, shattering glass and the howl of wind blowing in through the open doorway. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here.",
+     "sound_zh": "火焰轰然腾起的声音、玻璃碎裂的声音和风从敞开的门口灌进来的呼啸。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。",
+     "seed": 34803,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "04｜酒窖：苏清月知道保温层破了，穿上第三件羽绒服，低声说她陪他疯一次",
+     "duration_seconds": 11,
+     "generation_seconds": 11,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "SuTrek"
+     ],
+     "asset_keys": [
+      "wine_cellar",
+      "su_trek"
+     ],
+     "image_reference_keys": [
+      "wine_cellar"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium shot, the figure from the head to the knees, in the middle third of the frame, in the frozen wine cellar. Su (a Chinese woman in her late twenties) at frame-center, standing in the middle of the cellar in profile facing frame-left, zipping the third down jacket up to her chin with one hand and holding a crumpled delivery slip with a hand-drawn map in the other, a heavy backpack on her shoulders, in layered white and black down jackets with a black scarf wound up to her chin, ski goggles pushed up on her forehead and a heavy hiking backpack on her shoulders, frost on her lashes and cheeks, her exhausted dark-brown eyes on the crumpled delivery slip with the hand-drawn map in her hand, her jaw set, her lips pressed in a hard line, her brows low. Behind her the shattered steel door stands open at the top of the three steps with blowing snow beyond it, and frost-furred wine racks line the left wall. The frame holds Su alone in the cellar, the stacked cases and the open doorway. Dim yellow light from one bulb falls on frost-furred bottles and cases in the bitterly cold stone cellar. Fixed stage layout: racks of wine bottles line the left wall; stacked cases of canned food and bottled water stand in the middle of the frame; three concrete steps rise to a heavy steel security door at frame-right; a small round thermometer hangs on the wall above the cases.",
+     "visual_zh": "苏清月把第三件羽绒服的拉链拉到下巴，眼睛看着手里那张皱巴巴的物流单，低声自言自语了一句，不是对任何人说的，嘴唇轻轻动着，接着又是一句，然后又是一句，下颌绷紧、眉头压低，然后把滑雪护目镜拉下来戴在眼睛上。酒窖里没有别人。",
+     "camera_zh": "0—11秒，镜头慢慢推近，直到苏清月占满画面中间三分之一。",
+     "dialogue": [
+      {
+       "speaker": "SuTrek",
+       "text": "保温层，破了。",
+       "start_seconds": 1.6,
+       "end_seconds": 3.2,
+       "language": "zh"
+      },
+      {
+       "speaker": "SuTrek",
+       "text": "林峰……",
+       "start_seconds": 4.2,
+       "end_seconds": 4.75,
+       "language": "zh"
+      },
+      {
+       "speaker": "SuTrek",
+       "text": "我陪你，疯一次。",
+       "start_seconds": 6.3,
+       "end_seconds": 8.15,
+       "language": "zh"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 11,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. [[asset:su_trek]] zips the third down jacket up to her chin, her eyes on the crumpled delivery slip in her hand, and murmurs one line to herself in a low voice, talking to nobody, her lips moving softly, then a second short line, then a third, her jaw set and her brows low, and pulls the ski goggles down over her eyes. Nobody else is in the cellar. The camera pushes in slowly until Su fills the middle third of the frame.",
+       "visual_zh": "苏清月把第三件羽绒服的拉链拉到下巴，眼睛看着手里那张皱巴巴的物流单，低声自言自语了一句，不是对任何人说的，嘴唇轻轻动着，接着又是一句，然后又是一句，下颌绷紧、眉头压低，然后把滑雪护目镜拉下来戴在眼睛上。酒窖里没有别人。 镜头慢慢推近，直到苏清月占满画面中间三分之一。",
+       "dialogue_indices": [
+        0,
+        1,
+        2
+       ]
+      }
+     ],
+     "sound_en": "The howl of wind through the shattered doorway, the rasp of a heavy zipper and her low murmur. Voices stay close and clear.",
+     "sound_zh": "风从被砸开的门口灌进来的呼啸、厚重拉链的嘶啦声和她低低的自语。人声近而清楚。",
+     "seed": 34804,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "05｜雪原：苏清月背着登山包在齐腿深的雪里一步一步往前挪",
+     "duration_seconds": 8,
+     "generation_seconds": 8,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "SuTrek"
+     ],
+     "asset_keys": [
+      "snow_trek",
+      "su_trek"
+     ],
+     "image_reference_keys": [
+      "snow_trek"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Wide shot, the figure from the head to the feet, small in the middle third of the frame, in the frozen snowfield. Su (a Chinese woman in her late twenties) at frame-center, wading thigh-deep through the snow in profile facing frame-right, one gloved hand holding her scarf over her mouth, the heavy backpack dragging on her shoulders, in layered white and black down jackets with a black scarf wound up to her chin, ski goggles pushed up on her forehead and a heavy hiking backpack on her shoulders, frost on her lashes and cheeks, her exhausted dark-brown eyes on the white ridge ahead at frame-right, her jaw clenched, her lips pressed together under the scarf, her brows drawn low. Far behind her along the low ridge a line of white ice-encased human figures stand frozen mid-run, and a faint green aurora hangs in the black sky. The frame holds Su alone wading through the snowfield, the frozen trees and the ice-encased figures on the ridge. A vast frozen snowfield under a black sky with a faint green aurora; the white light of the snow glows. Fixed stage layout: a vast open snowfield fills the middle of the frame; a few leafless frozen trees stand at frame-right; far at the back a line of white ice-encased human figures frozen mid-run stands along a low ridge.",
+     "visual_zh": "苏清月在齐腿深的雪里往前走，每一步都要慢慢把腿从雪里拔出来，眼睛看着前面白色的山脊，下颌咬紧、眉头压低，呼出的白气翻涌。雪原上没有别人。",
+     "camera_zh": "0—8秒，镜头缓缓横移跟着苏清月，直到苏清月走到画面中间三分之一。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 8,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. [[asset:su_trek]] wades through the thigh-deep snow, lifting each leg slowly out of the drift, her eyes on the white ridge ahead, her jaw clenched and her brows drawn low, her breath pouring white. Nobody else is on the snowfield. The camera tracks sideways slowly alongside Su until Su stands in the middle third of the frame.",
+       "visual_zh": "苏清月在齐腿深的雪里往前走，每一步都要慢慢把腿从雪里拔出来，眼睛看着前面白色的山脊，下颌咬紧、眉头压低，呼出的白气翻涌。雪原上没有别人。 镜头缓缓横移跟着苏清月，直到苏清月走到画面中间三分之一。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "Heavy breathing, the crunch of snow and a low steady wind. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here.",
+     "sound_zh": "沉重的呼吸声、踩雪的嘎吱声和低低而持续的风声。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。",
+     "seed": 34805,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "06｜安全屋：外面是死亡的雪原，里面林峰在暖黄的灯光下装水泵",
+     "duration_seconds": 9,
+     "generation_seconds": 9,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "LinHome"
+     ],
+     "asset_keys": [
+      "bunker_work",
+      "lin_home"
+     ],
+     "image_reference_keys": [
+      "bunker_work"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium shot, the figure from the head to the waist, in the middle third of the frame, at the workbench. Lin (a Chinese man in his early thirties) at frame-center, standing at the steel workbench in profile facing frame-right, tightening a bolt on a small water pump with a screwdriver in his right hand, his left hand wrapped in white gauze held against his chest, in a soft grey cotton long-sleeve henley and loose dark lounge pants, barefoot, his hair damp from a shower, his steady dark-brown eyes on the small water pump on the workbench in front of him, his jaw relaxed, his lips set in a calm flat line, his brows soft. Behind him towering stacks of steel crates, pallets of boxes, generators and big water tanks fill the hall under hard white work lamps. The frame holds Lin alone at the workbench and the stacked supplies behind him. Hard white work lamps cast sharp shadows across the huge concrete hall packed with supplies. Fixed stage layout: a steel workbench with a shallow tub of clear water, a stack of white foam seeding blocks and an open seed packet stands at frame-center; towering stacks of steel crates, pallets of boxes, generators and big water tanks fill the hall behind it and along both sides.",
+     "visual_zh": "林峰用右手慢慢转动螺丝刀，拧紧小水泵上的一颗螺栓，眼睛看着水泵，下颌放松、眉毛舒展，然后用脖子上的毛巾轻轻擦了擦水泵的外壳，旁边的灯光下是那盘绿色的嫩芽。大厅里没有别人。",
+     "camera_zh": "0—9秒，镜头慢慢推近，直到林峰和水泵占满画面中间三分之一。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 9,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. [[asset:lin_home]] turns the screwdriver slowly with his right hand to tighten a bolt on the small water pump, his eyes on the pump, his jaw relaxed and his brows soft, and gently wipes the pump housing with the towel around his neck, the tray of green seedlings glowing under the lamp beside him. Nobody else is in the hall. The camera pushes in slowly until Lin and the pump fills the middle third of the frame.",
+       "visual_zh": "林峰用右手慢慢转动螺丝刀，拧紧小水泵上的一颗螺栓，眼睛看着水泵，下颌放松、眉毛舒展，然后用脖子上的毛巾轻轻擦了擦水泵的外壳，旁边的灯光下是那盘绿色的嫩芽。大厅里没有别人。 镜头慢慢推近，直到林峰和水泵占满画面中间三分之一。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "The soft clink of a screwdriver on metal, water lapping in the tub and the low hum of a generator. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here.",
+     "sound_zh": "螺丝刀碰在金属上的轻轻叮当声、水盆里水轻轻荡漾的声音和发电机低低的嗡鸣。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。",
+     "seed": 34806,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "07｜坐标处：苏清月跪在雪地里什么都没有，直到发现树桩上有一小块在融雪的玻璃",
+     "duration_seconds": 12,
+     "generation_seconds": 12,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "SuTrek"
+     ],
+     "asset_keys": [
+      "snow_stump",
+      "su_trek"
+     ],
+     "image_reference_keys": [
+      "snow_stump"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium-wide shot, the figure from the head to the knees at the right, with the snowfield and the stump in the middle third of the frame. Su (a Chinese woman in her late twenties) at frame-right, kneeling in the snow in profile facing frame-left with her gloved hands sunk in the snow in front of her, tears frozen on her cheeks, in layered white and black down jackets with a black scarf wound up to her chin, ski goggles pushed up on her forehead and a heavy hiking backpack on her shoulders, frost on her lashes and cheeks, her exhausted dark-brown eyes on the empty snowfield ahead and then the dead stump at center-left, her lips cracked and trembling, her brows drawn tight. At center-left the dead stump stands with a small round dark glass lens set in its side and a thin patch of snow melting around it, with the snow-capped boulder at frame-left. The frame holds Su alone on the snowy hillside, the stump with the glass lens and the snow-capped boulder. A silent frozen forest under a black sky with a faint green aurora; the white light of the snow glows. Fixed stage layout: a snow-capped boulder is at frame-left; a dead tree stump stands at center-left with a small round dark glass lens set in its side and a thin patch of snow melting around the glass; an open snowfield fills the middle of the frame; snow-laden pines stand in the background.",
+     "visual_zh": "苏清月跪在雪里，眼睛看着空荡荡的雪地，然后用沙哑低沉的声音自言自语了一句，不是对任何人说的，嘴唇轻轻动着，嘴唇干裂、眉头紧蹙；她的目光移到那截枯树桩上——侧面一小块圆形的玻璃周围，一圈薄薄的雪正在融化，她又自言自语了一句很短的，接着又是一句，然后朝树桩爬了两步，一只戴手套的手伸向那块玻璃。山坡上没有别人。",
+     "camera_zh": "0—12秒，镜头慢慢推近，直到苏清月和树桩占满画面中间三分之一。",
+     "dialogue": [
+      {
+       "speaker": "SuTrek",
+       "text": "什么都没有……",
+       "start_seconds": 1.0,
+       "end_seconds": 2.3,
+       "language": "zh"
+      },
+      {
+       "speaker": "SuTrek",
+       "text": "等等。",
+       "start_seconds": 5.0,
+       "end_seconds": 5.73,
+       "language": "zh"
+      },
+      {
+       "speaker": "SuTrek",
+       "text": "那块玻璃，在融化。",
+       "start_seconds": 7.0,
+       "end_seconds": 9.1,
+       "language": "zh"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 12,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. [[asset:su_trek]] kneels in the snow with her eyes on the empty snowfield, then murmurs one line to herself in a hoarse low voice, talking to nobody, her lips moving softly, her lips cracked and her brows drawn tight; her eyes drift to the dead stump where a thin patch of snow is melting around a small round glass, she murmurs a second short line, then a third, and crawls two paces toward the stump with one gloved hand stretching toward the glass. Nobody else is on the hillside. The camera pushes in slowly until Su and the stump fills the middle third of the frame.",
+       "visual_zh": "苏清月跪在雪里，眼睛看着空荡荡的雪地，然后用沙哑低沉的声音自言自语了一句，不是对任何人说的，嘴唇轻轻动着，嘴唇干裂、眉头紧蹙；她的目光移到那截枯树桩上——侧面一小块圆形的玻璃周围，一圈薄薄的雪正在融化，她又自言自语了一句很短的，接着又是一句，然后朝树桩爬了两步，一只戴手套的手伸向那块玻璃。山坡上没有别人。 镜头慢慢推近，直到苏清月和树桩占满画面中间三分之一。",
+       "dialogue_indices": [
+        0,
+        1,
+        2
+       ]
+      }
+     ],
+     "sound_en": "A thin steady wind over the snow, her ragged breathing and her hoarse murmur. Voices stay close and clear.",
+     "sound_zh": "风吹过雪地细细而持续的声音、她粗重的喘息和她嘶哑的自语。人声近而清楚。",
+     "seed": 34807,
+     "dialogue_language": "zh"
+    }
+   ],
+   "dialogue_language": "zh"
+  }
+ ]
+}
