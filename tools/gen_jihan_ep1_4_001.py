@@ -52,7 +52,7 @@ STYLE = ("Photorealistic live-action post-apocalyptic survival drama with a cine
          "the blinding white heat of a summer world that does not know what is coming, and later a warm amber-lit hidden shelter set against a silent frozen white world of snow, ice and green aurora. "
          "Rich natural skin texture with visible pores, realistic fabrics, restrained cinematic color grading, and an ultra-wide 8:3 cinemascope frame in which the people are placed deliberately and the room is visible around them.")
 
-OUT = '合并稿/001_第1-4集_预言变卖囤货降临_制作稿'
+OUT = '合并稿/旧合并稿/001_第1-4集_预言变卖囤货降临_制作稿'   # 2026-10-13 起作废（英文台词＋欧美面孔＋碎镜头），被 002 取代，不要贴
 S = Session(None, OUT, 30000, title='极寒末日：我的隐秘安全屋｜第1–4集｜预言·变卖·囤货·降临', style=STYLE)
 
 # ---------------------------------------------------------------------------------------------- 外貌

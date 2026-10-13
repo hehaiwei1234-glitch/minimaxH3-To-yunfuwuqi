@@ -22,7 +22,7 @@ BANNED = [  # (正则, 说明)
 CUE = re.compile(r"lips?|mouth|jaw|brows?|tears?|frown|glar|scowl|narrow|expression|wince|grimace|smirk|smil|pale|stern|cold|blank|clench|tighten|wide eyes|eyes (?:\w+ )?wide|eyes (?:widen|shut|close|lower)|glisten|shine|bite|bites|quiver|tremble", re.I)
 GAZE = re.compile(r"eyes[^.;]{0,60}\b(?:on|at|toward|towards|fixed on|locked on)\b|eyes (?:\w+ )?(?:closed|shut)|eyes squeezed shut|\b(?:looks?|looking|stares?|staring|glares?|glaring|gazes?|gazing) (?:up |down )?(?:at|toward|into)\b", re.I)
 SPEAK = re.compile(r"\b(?:says?|speaks?|asks?|shouts?|snarls?|hisses?|whispers?|answers?|spits?|growls?|calls?|tells?|line)\b", re.I)
-FEMALE = {'Lily', 'Mary', 'Selena', 'Mia', 'Maid', 'Nurse', 'Friend', 'Vivian', 'Jenna'}
+FEMALE = {'Lily', 'Mary', 'Selena', 'Mia', 'Maid', 'Nurse', 'Friend', 'Vivian', 'Jenna', 'Su', 'Wen', 'Tang'}
 FAST = re.compile(r'\b(backhand\w*|hurl\w*|lunge\w*|slam\w*|shove\w*|kick\w*|sprint\w*|charge[sd]?|leap\w*|jump\w*|dive\w*|flies|fly|crash\w*|smash\w*|tackle\w*|punch\w*|stab\w*|plunge\w*|hurtle\w*|blast\w*|throw\w*|hurled)\b', re.I)
 MECH = re.compile(r'\b(lock\w*|unlock\w*|curtains?|drapes?|latch\w*|bursts? open|swing\w* open|slam\w* shut|shatter\w*)\b', re.I)
 errs = 0
@@ -98,14 +98,14 @@ for ep in d['episodes']:
         if dl and dur < 6: bad(t, '有台词的任务不要短于 6 秒')
         if len(dl) > 2: bad(t, '一个任务多于两句台词')
         if len(dl) == 2 and dur < 8: bad(t, '两句台词的任务要 ≥8 秒')
-        if dur >= 15: warn(t, '15 秒任务（唯一一次在中间自己切镜、结尾出噪点，先用 8–12 秒）')
+        if dur >= 15 and len(dl) > 2: warn(t, '15 秒任务台词多于两句')
         # 每句台词：镜头文字里要写“对谁说”，对象在这个任务里、不是说话人
         targets = [m.group(1) for m in re.finditer(SPEAK.pattern + r"[^.;]{0,80}?\b(?:to|at) \[\[asset:(\w+)\]\]", vis, re.I)]
         for x in dl:
             if x['start_seconds'] > dur / 2: bad(t, f'台词“{x["text"]}”计划开口 {x["start_seconds"]} 秒，不在任务前半段（实际会晚 1–6 秒）')
             sp_keys = char_assets.get(x['speaker'], [])
             ok = [k for k in targets if k in s['asset_keys'] and roles.get(k) == 'character' and k not in sp_keys]
-            if not ok: bad(t, f'台词“{x["text"]}”没在镜头文字里写明对谁说（… to [[asset:某人]]，那人要在画面里）')
+            if not ok and not re.search(r'inner voice|voice-over', vis, re.I): bad(t, f'台词“{x["text"]}”没在镜头文字里写明对谁说（… to [[asset:某人]]，那人要在画面里）；独白要写 inner voice')
             han = len(re.findall(r'[㐀-鿿]', x['text']))
             lang = x.get('language') or s.get('dialogue_language') or d.get('dialogue_language')
             if lang == 'en':

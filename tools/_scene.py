@@ -20,13 +20,14 @@ LOOKS = {}
 
 
 class Look:
-    def __init__(self, asset, char, outfit, eyes, pron):
+    def __init__(self, asset, char, outfit, eyes, pron, eth=''):
         self.asset, self.char, self.outfit, self.eyes, self.pron = asset, char, outfit, eyes, pron
+        self.eth = eth          # 人种／年龄的括号说明，例如 'a Chinese man'（新剧用；旧剧不填，输出不变）
         self.who = asset.split('_')[0].capitalize()          # 和 lint_draft 的取名规则一致
 
 
-def look(asset, char, outfit, eyes, pron):
-    LOOKS[asset] = Look(asset, char, outfit, eyes, pron)
+def look(asset, char, outfit, eyes, pron, eth=''):
+    LOOKS[asset] = Look(asset, char, outfit, eyes, pron, eth)
 
 
 class Scene:
@@ -51,14 +52,15 @@ def sentence(p):
     else:
         tt = t[4:] if t.startswith('obj:') else t
         eye = f"{L.pron} {p['eyes'] or L.eyes} eyes {p['verb']} {tt}"
-    return f"{L.who} at {pos}, {p['pose']}, {outfit}, {extra}{eye}, {p['expr']}."
+    head = f"{L.who} ({L.eth})" if L.eth else L.who
+    return f"{head} at {pos}, {p['pose']}, {outfit}, {extra}{eye}, {p['expr']}."
 
 
-def new_person(b, key, label, who, en, zh, core, expr, ref=None, full=False):
+def new_person(b, key, label, who, en, zh, core, expr, ref=None, full=False, eth=''):
     """一次写好人物素材的三段文字。who='man'/'woman'；en/zh 是素材描述（写清长相、衣着、特征）；core 是肖像提示词里的外貌短语。"""
     pron = 'He' if who == 'man' else 'She'
     shot = 'full-body' if full else 'half-body'
-    same = f"the same {who} as in the reference image" if ref else f"a {who}"
+    same = f"the same {who} as in the reference image" if ref else f"a {eth + ' ' if eth else ''}{who}"
     b.person(key, label, en + ' The portrait fixes identity, clothes and features, not staging.', zh + ' 肖像固定长相、衣着和特征，不固定姿势。',
              f"A photorealistic {shot} portrait of {same}, {core}. {pron} faces the camera with {expr}. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.", ref=ref)
 
@@ -187,7 +189,7 @@ class Session:
                 out.append((t['title'].split('｜')[1] + '，' + t['visual_zh']).replace('：', '，'))
                 for x in t['dialogue']:
                     out.append(f"{x['speaker']}：“{x['text']}”")
-            doc['episodes'].append({'title': title, 'summary': summary, 'script': '\n'.join(out), 'segments': b.tasks, 'dialogue_language': 'en'})
+            doc['episodes'].append({'title': title, 'summary': summary, 'script': '\n'.join(out), 'segments': b.tasks, 'dialogue_language': H.CFG['lang']})
         # 素材键必须都存在
         akeys = {a['key'] for a in doc['assets']}
         for e in doc['episodes']:

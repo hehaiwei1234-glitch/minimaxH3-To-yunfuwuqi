@@ -10,10 +10,11 @@ LEAD = "Live-action, cinematic, photorealistic with natural skin texture, shallo
 IMG = ("One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. "
        "Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. ")
 # 项目配置：写新剧时用 configure() 改文件夹和风格词；旧剧（Alpha）不调用，行为完全不变。
-CFG = {'folder': FOLDER, 'img': IMG, 'lead': LEAD}
+CFG = {'folder': FOLDER, 'img': IMG, 'lead': LEAD, 'lang': 'en'}   # lang: 台词语言，旧剧 en；新剧《极寒末日》发中国，用 zh
 
 
-def configure(folder=None, img=None, lead=None):
+def configure(folder=None, img=None, lead=None, lang=None):
+    if lang: CFG['lang'] = lang
     if folder: CFG['folder'] = folder
     if img: CFG['img'] = img
     if lead: CFG['lead'] = lead
@@ -24,7 +25,11 @@ NOVOICE_ZH = "录音里完全没有人声：没有说话、哼声、叹息、呼
 
 
 def line_seconds(text):
-    """复制插件 dialogue_plan.line_seconds 的英语算法（单词数 / 2 秒 + 标点停顿）。"""
+    """复制插件 dialogue_plan.line_seconds 的算法。英语：单词数 / 2 秒 + 标点停顿；中文：汉字数 / 4 秒（CPS=4.0）+ 标点停顿。"""
+    if CFG['lang'] == 'zh':
+        han = len(re.findall(r'[\u3400-\u9fff]', text))
+        pauses = len(re.findall(r'[、，,；;：:]', text)) * .12 + len(re.findall(r'[。！？!?]', text)) * .18
+        return max(.35, han / 4.0 + min(pauses, 1.5))
     words = len(re.findall(r"[A-Za-z0-9]+(?:['’][A-Za-z0-9]+)*", text))
     pauses = len(re.findall(r'[,;:]', text)) * .12 + len(re.findall(r'[!?]', text)) * .18
     return max(.35, words / 2.0 + min(pauses, 1.5))
@@ -51,7 +56,7 @@ def voiced(extra_en, extra_zh):
 class Batch:
     def __init__(self, base_json, title, seed0, style=None):
         if base_json is None:      # 新剧的第一批：从空白文档开始（style 必须给）
-            self.d = {'schema': 'h3-production-draft', 'version': 1, 'title': title, 'dialogue_language': 'en',
+            self.d = {'schema': 'h3-production-draft', 'version': 1, 'title': title, 'dialogue_language': CFG['lang'],
                       'style': style, 'assets': [], 'characters': {}, 'episodes': []}
         else:
             self.d = copy.deepcopy(json.load(open(os.path.join(CFG['folder'], base_json), encoding='utf-8')))
@@ -86,14 +91,14 @@ class Batch:
              'depends_on_previous': bool(cont), 'use_previous_episode_state': False, 'characters': chars,
              'asset_keys': list(assets), 'image_reference_keys': list(refs),
              'image_prompt': CFG['img'] + img + end, 'visual_zh': vis_zh, 'camera_zh': cam_zh,
-             'dialogue': [], 'shots': [], 'sound_en': sound[0], 'sound_zh': sound[1], 'seed': self.seed, 'dialogue_language': 'en'}
+             'dialogue': [], 'shots': [], 'sound_en': sound[0], 'sound_zh': sound[1], 'seed': self.seed, 'dialogue_language': CFG['lang']}
         if frame:
             s['opening_frame_key'] = frame
         spoken = list(lines) if lines else ([dlg] if dlg else [])
         for sp, tx, start in spoken:
             end_t = round(start + line_seconds(tx) + 0.05, 2)
             assert end_t <= dur - 1.0, (title, end_t, dur)   # 台词后至少留 1 秒
-            s['dialogue'].append({'speaker': sp, 'text': tx, 'start_seconds': start, 'end_seconds': end_t, 'language': 'en'})
+            s['dialogue'].append({'speaker': sp, 'text': tx, 'start_seconds': start, 'end_seconds': end_t, 'language': CFG['lang']})
         if shots:
             for a, z, en, zh, idx in shots:
                 s['shots'].append({'start_seconds': a, 'end_seconds': z, 'visual_en': CFG['lead'] + en, 'visual_zh': zh, 'dialogue_indices': idx})
@@ -109,7 +114,7 @@ class Batch:
             lines.append((t['title'].split('｜')[1] + '，' + t['visual_zh']).replace('：', '，'))
             for x in t['dialogue']:
                 lines.append(f"{x['speaker']}：“{x['text']}”")
-        self.d['episodes'] = [{'title': ep_title, 'summary': summary, 'script': '\n'.join(lines), 'segments': self.tasks, 'dialogue_language': 'en'}]
+        self.d['episodes'] = [{'title': ep_title, 'summary': summary, 'script': '\n'.join(lines), 'segments': self.tasks, 'dialogue_language': CFG['lang']}]
         out_json = os.path.join(CFG['folder'], out_name + '.json')
         json.dump(self.d, open(out_json, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
         open(os.path.join(CFG['folder'], out_name + '_全选复制粘贴.txt'), 'w', encoding='utf-8').write(json.dumps(self.d, ensure_ascii=False, indent=1))
