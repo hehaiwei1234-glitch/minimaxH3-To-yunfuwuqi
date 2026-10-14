@@ -24,7 +24,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from _jihan_base5 import *
 
 import _h3draft as _H
-_H.configure(smooth=True, fixed_seed=2026)   # hh 2026-10-14 16:20：台词顺滑写法＋全批固定视频种子
+_H.configure(smooth=True, fixed_seed=37407)   # hh 2026-10-14 16:20：台词顺滑写法＋全批固定视频种子
 OUT = '合并稿/012_第25-28集_拔线子留声机冰震冰窖阀门面包香_制作稿_追加'
 S = Session('合并稿/011_第21-24集_盲盒窄井越界幽灵电台_制作稿_追加.json', OUT, 44000)
 
