@@ -23,6 +23,8 @@ import os, sys, json
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from _jihan_base5 import *
 
+import _h3draft as _H
+_H.configure(smooth=True, fixed_seed=2026)   # hh 2026-10-14 16:20：台词顺滑写法＋全批固定视频种子
 OUT = '合并稿/012_第25-28集_拔线子留声机冰震冰窖阀门面包香_制作稿_追加'
 S = Session('合并稿/011_第21-24集_盲盒窄井越界幽灵电台_制作稿_追加.json', OUT, 44000)
 
@@ -162,7 +164,7 @@ TA('25-02', '02｜控制室：苏清月紧绷的肩膀放松下来，笑着问�
    'Medium two-shot, both from the head to the knees, in the middle third of the frame, at the control console.',
    "<su_silk> lets her shoulders drop and speaks the one line to <lin_home> in a light, knowing, teasing voice, a bright sweet smile spreading across her lips, her eyes sparkling and her brows lifted. <lin_home> turns toward her, his jaw loosening, one corner of his mouth lifting and his brows soft.",
    "苏清月紧绷的肩膀放松下来，用轻快、心里有数、带点逗弄的声音对林峰说出这一句，嘴角绽开明艳的甜笑、眼睛发亮、眉毛上扬。林峰转向她，下颌放松、嘴角微微上扬、眉毛舒展。",
-   SOUND_CTRL_SILENT, AES_TEAL, lines=[('su_silk', "不回复吗？那是几千条人命。", 1.0, 'Lin')],
+   SOUND_CTRL_SILENT, AES_TEAL, lines=[('su_silk', "那是几千条人命，你真不回复吗？", 1.0, 'Lin')],
    cam=push('both of them', '两人'), extra_assets=('radio_set',), room={'Su', 'Lin'}, new=True,
    bg='Beside them on the steel side table the olive-green military radio sits dark and silent, and the wall of six small monitors glows at frame-left.',
    holds='The frame holds exactly two people: Su and Lin, at the control console with the dark radio beside them, nobody else.')
@@ -250,7 +252,7 @@ TA('26-03', '03｜餐桌边：苏清月抓住林峰的手臂问那是什么，�
    'Medium two-shot, both from the head to the knees, in the middle third of the frame, at the dining table.',
    "<su_silk> speaks the first line to <lin_home> in a tight, frightened voice, her lips parted, her face gone pale and her brows pulled together. <lin_home> keeps typing without looking up and speaks the second line to <su_silk> in a low, grim voice, his jaw tight, his lips set flat and his brows low.",
    "苏清月用紧绷害怕的声音对林峰说出第一句，嘴唇微张、脸色发白、眉头拧在一起。林峰眼睛没抬，继续敲着键盘，用低沉凝重的声音对苏清月说出第二句，下颌绷紧、嘴唇抿平、眉头压低。",
-   SOUND_QUAKE_V, AES_DUSTRED, lines=[('su_silk', "那是什么？变异生物吗？", 0.8, 'Lin'), ('lin_home', "比变异生物可怕得多，是冰震。", 4.2, 'Su')],
+   SOUND_QUAKE_V, AES_DUSTRED, lines=[('su_silk', "那是变异生物吗？", 0.8, 'Lin'), ('lin_home', "比变异生物可怕得多，是冰震。", 4.2, 'Su')],
    cam=slide('left', '左', 'the two of them stand in the middle third of the frame', '两人占画面中间三分之一'), extra_assets=('radar_unit',), room={'Su', 'Lin'}, new=True,
    bg='Behind them the radar unit on its steel tripod pulses with a red lamp at frame-right and the two white bowls stand on the table.',
    holds='The frame holds exactly two people: Su and Lin, at the dining table, nobody else.')
@@ -279,7 +281,7 @@ TA('26-06', '06｜餐桌边：苏清月脸色惨白问怎么办、要逃出去�
    'Close medium two-shot, both from the head to the chest, in the middle third of the frame, at the dining table.',
    "<su_silk> speaks the first line to <lin_home> in a thin, shaking voice, her face drained pale, her lips trembling and her brows pulled high. <lin_home> answers with the second line to <su_silk> in a low, hard voice, his jaw tight, his eyes steady and his brows low.",
    "苏清月用发抖的细声对林峰说出第一句，脸色惨白、嘴唇发颤、眉毛高高挑起。林峰用低沉强硬的声音对苏清月答出第二句，下颌绷紧、眼神稳住、眉头压低。",
-   SOUND_QUAKE_V, AES_RED, lines=[('su_silk', "怎么办？要逃出去吗？", 0.8, 'Lin'), ('lin_home', "外面零下八十度，出去必死。", 4.0, 'Su')],
+   SOUND_QUAKE_V, AES_RED, lines=[('su_silk', "我们要逃出去吗？", 0.8, 'Lin'), ('lin_home', "外面零下八十度，出去必死。", 4.0, 'Su')],
    cam=slide('right', '右', 'the two of them stand in the middle third of the frame', '两人占画面中间三分之一'), extra_assets=('radar_unit',), room={'Su', 'Lin'}, new=True,
    bg='Behind them the radar unit on its steel tripod flashes its red lamp at frame-right and the wall of small monitors glows at frame-center-right.',
    holds='The frame holds exactly two people: Su and Lin, at the dining table, nobody else.')
@@ -403,7 +405,7 @@ TA('28-02', '02｜冰窖：两人坐在结冰的地上喘气，苏清月红着�
    'Close medium two-shot, both from the head to the waist, in the middle third of the frame, on the icy floor.',
    "<su_down> speaks the first line to <lin_arctic> in a shaking, furious, sobbing voice, her eyes red and brimming, her lips trembling and her brows pulled together. <lin_arctic> wipes the ice water from her cheek and speaks the second line to <su_down> in a low, warm voice, then the third line, his jaw loosening, a faint warm curve at one corner of his mouth and his brows soft.",
    "苏清月用发抖、愤怒带着哭腔的声音对林峰说出第一句，眼眶发红含泪、嘴唇发颤、眉头拧在一起。林峰擦掉她脸上的冰水，用低沉温暖的声音对苏清月说出第二句，接着说出第三句，下颌放松、嘴角带着一丝温暖的弧度、眉毛舒展。",
-   SOUND_AFTER_V, AES_ICEWARM, lines=[('su_down', "你这个疯子！差点没命！", 0.8, 'Lin'), ('lin_arctic', "只要你没事就行。", 4.4, 'Su'), ('lin_arctic', "走，回家。", 6.9, 'Su')],
+   SOUND_AFTER_V, AES_ICEWARM, lines=[('su_down', "你这个疯子！差点没命！", 0.8, 'Lin'), ('lin_arctic', "只要你没事就行。", 4.4, 'Su'), ('lin_arctic', "走，我们回家。", 6.9, 'Su')],
    cam=push1('the two of them', '两人'), room={'Lin', 'Su'}, new=True,
    bg='Behind them the open steel door glows orange at frame-left and thin mist drifts over the glazed floor.',
    holds='The frame holds exactly two people: Su and Lin, sitting on the icy floor, nobody else.')

@@ -10,10 +10,12 @@ LEAD = "Live-action, cinematic, photorealistic with natural skin texture, shallo
 IMG = ("One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. "
        "Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. ")
 # 项目配置：写新剧时用 configure() 改文件夹和风格词；旧剧（Alpha）不调用，行为完全不变。
-CFG = {'folder': FOLDER, 'img': IMG, 'lead': LEAD, 'lang': 'en'}   # lang: 台词语言，旧剧 en；新剧《极寒末日》发中国，用 zh
+CFG = {'folder': FOLDER, 'img': IMG, 'lead': LEAD, 'lang': 'en', 'smooth': False, 'fixed_seed': None}   # lang: 台词语言，旧剧 en；新剧《极寒末日》发中国，用 zh
 
 
-def configure(folder=None, img=None, lead=None, lang=None):
+def configure(folder=None, img=None, lead=None, lang=None, smooth=None, fixed_seed=None):
+    if smooth is not None: CFG['smooth'] = smooth       # 台词顺滑写法（2026-10-14）：去句内标点、任务按台词长度收紧、加“一口气”说明
+    if fixed_seed is not None: CFG['fixed_seed'] = fixed_seed   # 全批视频固定一个种子（hh 2026-10-14）
     if lang: CFG['lang'] = lang
     if folder: CFG['folder'] = folder
     if img: CFG['img'] = img
@@ -87,6 +89,7 @@ class Batch:
               shots=[(起, 止, 英文, 中文, [台词序号]), ...] 一个任务多个镜头（对比测试用，此时 shot_en/shot_zh 不用）；
               frame='素材键' 用现成图片当开场图（opening_frame_key）；cont=True 为续接（continue，同时必须承接前段）。"""
         self.seed += 1
+        if CFG.get('fixed_seed'): self.seed = CFG['fixed_seed']
         s = {'title': title, 'duration_seconds': dur, 'generation_seconds': dur, 'continuity': 'continue' if cont else 'cut',
              'depends_on_previous': bool(cont), 'use_previous_episode_state': False, 'characters': chars,
              'asset_keys': list(assets), 'image_reference_keys': list(refs),

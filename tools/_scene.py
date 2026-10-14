@@ -19,6 +19,39 @@ CUE = re.compile(r"lips?|mouth|jaw|brows?|tears?|frown|glar|scowl|narrow|express
 LOOKS = {}
 
 
+def smooth_text(tx):
+    """台词只留句末一个标点：句内逗号、顿号、省略号、感叹号、问号全去掉（“他们，还有救……”→“他们还有救。”）。"""
+    m = re.search(r'[。！？…]+$', tx)
+    run = m.group() if m else ''
+    end = '？' if '？' in run else ('！' if '！' in run else '。')
+    body = re.sub(r'[，、；：。！？…,.!?]+', '', tx)
+    return body + end
+
+
+TONE_FIX = [(', quiet voice', ', clear voice'), ('breathy voice', 'bright voice'), (', hoarse voice', ', rough voice')]
+
+
+def smooth_task(lines, dur, act_en, zh):
+    """把一个任务的台词改成“紧凑一口气”的写法并收紧任务长度。窗口 ≈ 自然说话时间 × 1.4。"""
+    new, t, tot = [], 0.6, 0.
+    for sp, tx, start, to in lines:
+        tx2 = smooth_text(tx); nat = H.line_seconds(tx2)
+        new.append((sp, tx2, round(t, 2), to)); t = t + nat + 0.25; tot += nat
+    n = len(new)
+    need = 0.75 + 1.4 * tot + 0.12 * (n - 1)
+    last_end = new[-1][2] + H.line_seconds(new[-1][1]) + 0.05
+    floor = {1: 6, 2: 7}.get(n, 8)
+    d = max(floor, int(-(-need // 1)), int(-(-(last_end + 1.0) // 1)))
+    for a, b in TONE_FIX: act_en = act_en.replace(a, b)
+    if n == 1:
+        act_en += ' The line is spoken naturally in one breath, with no pause inside the sentence.'
+        zh += ' 这句话自然地一口气说完，句中不停顿。'
+    else:
+        act_en += ' The lines are spoken briskly and naturally, each in one breath with no pause inside the sentence, and the next line follows right away.'
+        zh += ' 台词说得利落自然，每句一口气说完、句中不停顿，下一句紧接着开口。'
+    return new, d, act_en, zh
+
+
 class Look:
     def __init__(self, asset, char, outfit, eyes, pron, eth=''):
         self.asset, self.char, self.outfit, self.eyes, self.pron = asset, char, outfit, eyes, pron
@@ -103,6 +136,8 @@ class Session:
           room=None, enter=(), exit=(), groups=(), bg='', holds=None, st=None, trigger=None, effect=None,
           interrupt=(), new=False, extra_assets=(), speaker_extra=(), vo=()):
         b = self.cur
+        if H.CFG.get('smooth') and lines and not vo:
+            lines, dur, act_en, zh = smooth_task(lines, dur, act_en, zh)
         names = {}
         sents, chars, assets = [], [], []
         frame, gaze = {}, {}
@@ -211,9 +246,9 @@ class Session:
                     except Exception:
                         pass
         mine = [s['seed'] for e in doc['episodes'] for s in e['segments']]
-        assert len(set(mine)) == len(mine), '本稿内种子重复'
+        assert len(set(mine)) == len(mine) or H.CFG.get('fixed_seed'), '本稿内种子重复'
         clash = sorted(x for x in set(mine) if x in seen and x not in extra_allow_seeds)
-        assert not clash, f'与库里已有种子重复：{clash}'
+        assert not clash or H.CFG.get('fixed_seed'), f'与库里已有种子重复：{clash}'
         txt = json.dumps(doc, ensure_ascii=False, indent=1)
         open(os.path.join(H.CFG['folder'], self.out + '.json'), 'w', encoding='utf-8').write(txt)
         open(os.path.join(H.CFG['folder'], self.out + '_全选复制粘贴.txt'), 'w', encoding='utf-8').write(txt)
