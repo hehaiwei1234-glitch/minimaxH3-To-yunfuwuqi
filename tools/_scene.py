@@ -162,6 +162,11 @@ class Session:
             if k: span[k] += ' ' + sent; cur = k
         add = ' '.join(f"{t_} keeps {p['expr']}." for t_, p in zip(tokens, people) if not CUE.search(span[t_]))
         if add: act_en = act_en.rstrip() + ' ' + add
+        if H.CFG.get('smooth') and people and not groups:       # 视频文字里也锁人数（2026-10-14：009 的 59 个多人任务只有开场图没有锁，hh 回传的 3 段都多出一个人）
+            nm = [LOOKS[p['lk']].who for p in people]
+            word = {1: 'One person is', 2: 'Exactly two people are', 3: 'Exactly three people are'}[len(nm)]
+            act_en = act_en.rstrip() + f" {word} in the frame, {' and '.join(nm)}, nobody else, and no one appears twice."
+            zh = zh.rstrip() + '画面里只有' + '、'.join(nm) + '，没有别人，也没有谁出现两次。'
         n = len(people)
         if holds is None:
             word = {1: 'one person', 2: 'exactly two people', 3: 'exactly three people'}[n]
