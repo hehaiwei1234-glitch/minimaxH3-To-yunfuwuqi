@@ -1,34 +1,104 @@
 #!/usr/bin/env python3
-"""《极寒末日：我的隐秘安全屋》剧本第 51–54 集，追加稿 020（2026-10-15）。以 019（十二秒版）的 JSON 为底（style／素材／角色逐字复制），必须等 019 在插件里全部跑完再追加。
-hh 2026-10-15 13:15：“制作要求回到 29–44 阶段，保留 41–44 的制作需求。”本批严格用 016（第 41–44 集）的做法：
-  · 每个任务 5–10 秒（台词按 smooth 算长度），每任务最多 2 句台词、每句 ≤13 个汉字；台词顺滑写法＋全批视频种子 37407；
-  · 每个任务一句“光和空气”（AES_*）；运镜写“动作＋终点”；机械／物理变化只拍结果（石头砸落、电缆被切、门被顶开只拍结果）；
-  · 引发动作的台词和动作结果拆成两个任务；画外音（伊甸）用 TAV；每人看着谁写进开场图；最多 2 人同框。
-大纲：第 51 集 天崩地裂／第 52 集 体温的底线／第 53 集 黑暗中的外科手术／第 54 集 重见光明（见 /root/.claude/uploads 里的 70 集大纲第 51–54 集）。
+"""《极寒末日：我的隐秘安全屋》剧本第 51–54 集，追加稿 020（2026-10-15 重做）——A 写法（“正常快慢版”）。
+hh 2026-10-15 18:45：“A 叫做正常快慢版，B 叫做短剧快速版；请使用 A 的手法重新制作 51–54 集。”
+A 写法＝hh 早上说“非常好”的 45–46 集那套：对白任务 12–15 秒、4 句（或 3 句＋收尾动作）从 0.6 秒起一句接一句、句间约 0.9 秒、结尾带动作；
+  每任务一句“光和空气”；运镜每任务不同；台词只留句末标点、一口气说完；全批视频种子 37407；不收紧任务长度、不加“语速快两成”、不加“现场音写响”（fast=False）。
+上一版（B 快节奏版，35 个任务、每任务 ≤2 句）已存档：`合并稿/旧合并稿/020_第51-54集_B快节奏版_…`，脚本 `gen_jihan_ep51_54_020_B快节奏版.py`。
+以 019（第 47–50 集）的 JSON 为底（style／素材／角色逐字复制），必须等 019 在插件里全部跑完再追加；追加窗口不要勾每集／总／任务秒数。
 
-偏离大纲（交稿时告诉 hh）：
-  · 第 51 集：次声波只拍水面涟漪和石壁裂缝（结果）；钟乳石坠落只拍“两人抬头看”＋“砸在变形的门上”两个镜头（不拍坠落过程）；主电缆被切断只拍断头；灯光熄灭＋霜只拍熄灭后的暗和霜慢慢爬上头发；
-  · 第 52 集：手表温度数字不写（屏幕上的字读不出来），只拍荧光表盘和白气；亲吻改成吻额头；林峰潜水只拍水面气泡散开＋苏清月一个人守在岸边（嘴动的“回来”用画外低语）；
-  · 第 53 集：水下只拍林峰摸线缆、拔出（人在水下，脸朝侧面）；剥线和接线合成一个慢镜头；电火花只拍线头；液压杆压下只拍林峰用力，门缝开出半米只拍结果；
-  · 第 54 集：“滑行钻过去”改成苏清月侧身钻过窄缝＋林峰已经躺在门后喘气（结果）；备用电源箱推闸只拍林峰和一盏亮起的绿灯；暖色灯一排排亮起只拍亮起后的屋子；壁炉改成黑金炉灶旁的沙发（屋里没有壁炉）；结尾监控屏亮起只拍两个人愣住的脸（屏幕内容不拍，留给第 55 集）。
+内容（取自 70 集大纲第 51–54 集，与 B 版相同；只是把同地点同批人的相邻任务合并成 12–15 秒的多句对话任务，并补了几句过渡台词）：
+  第 51 集 天崩地裂：水面涟漪→石壁裂缝→林峰拉起苏清月（次声波共振）→奔跑→抬头→钟乳石砸坏防爆门（只拍结果）→主电缆被砸断→灯灭、霜爬上头发。
+  第 52 集 体温的底线：荧光腕表→“不能待在岸上，回温泉里去。”→滑进温泉→相拥、攥手腕、“阎王都收不走我，等我。”吻额头（合成一个 15 秒任务）→水面气泡→苏清月一个人数着时间低声“回来”。
+  第 53 集 黑暗中的外科手术：水下拔线缆→破水而出递给她（合成一个任务）→剥线接线→电火花（只拍线头）→“接通了，去压液压杆！”→压杆→门缝（结果）。
+  第 54 集 重见光明：“快！钻过去！”→侧身钻缝→门卡死、林峰躺地→推闸绿灯→伊甸“备用电源已激活”→灯光亮满→“二十六度，回家了。”→沙发拥抱、“外面那些疯子，还在吗？”→监控墙亮起两人愣住。
+偏离大纲（同 B 版）：次声波只拍涟漪和裂缝；钟乳石坠落、电缆被砸断、灯灭只拍结果；手表上的数字不写；亲吻改吻额头；林峰潜水只拍水下摸线缆和水面气泡；
+  水下只拍摸线缆、拔出；剥线接线合成一个任务；电火花只拍线头；液压杆压下只拍用力，门缝只拍结果；“滑行钻过去”改成侧身钻缝；壁炉改成黑金炉灶旁的沙发；结尾监控屏内容不拍（留给第 55 集）。
+本版新增的过渡台词（不改剧情）：第 51 集“整座山都在抖？”“门在前面！”“头顶，要塌了！”“这里没有电，会冻死的。”；第 52 集“可我腿都冻僵了。”“好，我信你。”和苏清月数时间的三句；
+  第 53 集“拿到了吗？”“我来剥线，你来接。”；第 54 集“那你怎么办？”“你怎么样？”“伊甸，开灯。”“我们回来了。”“我还以为回不来了。”等。
 H3 方面的风险（交稿时单列，不算我的错）：
-  · 51-01 水面涟漪、51-02 石壁裂缝；51-03 抓手腕；51-04 两人奔跑（动作快，可能被拉慢）；51-05 抬头；51-06 钟乳石砸变形的门（结果镜头，大块岩石与金属）；51-08 霜慢慢爬上头发；
-  · 52-03 滑进温泉；52-04 水里相拥；52-06 吻额头；52-07 水面气泡；
-  · 53-01 水下镜头（人在水里，头发漂动）；53-02 破水而出（快）；53-03 身上结薄冰；53-05 剥线接线的细小手部动作；53-06 电火花；53-08 压杠杆；53-09 门缝；
-  · 54-02 侧身钻缝；54-04 推闸亮灯；54-05 伊甸画外音可能被画成多出一个人；54-08 拥抱；54-10 监控屏亮起；
-  · 新场景 blast_door（被砸变形的合金防爆门）、dark_river（漆黑的地下暗河水下）没有数据；开场图约一成不按文字画；“同一处”场景用参照图。
+  · 15 秒任务可能在约 8 秒自己切镜；后几句台词可能被挤到片尾；约一成开场图不按文字画；
+  · 51-04 两人奔跑（持续快动作可能被拉慢）；51-05 抬头；51-06 钟乳石与金属（结果镜头）；51-08 霜慢慢爬上头发；
+  · 52-04 水里相拥＋攥手腕＋吻额头（四句台词＋三个小动作，最容易出问题）；52-03 滑进温泉；
+  · 53-01 水下（头发漂动）；53-02 破水而出（快）＋爬上岸；53-04 剥线接线的细小手部动作；53-08 压杠杆；
+  · 54-02 侧身钻缝；54-05 伊甸画外音与两个人的台词混排（可能被画成多出一个人，或画面里的人张嘴念）；54-07 暖风吹头发；54-09 沙发上拿遥控器；
+  · 新场景 blast_door、dark_river 没有数据。
 """
-import os, sys, json
+import os, sys, json, math
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import _jihan_base6 as B6
 from _jihan_base6 import *
-from _scene import smooth_task
+import _scene
+from _scene import smooth_text, TONE_FIX
 
 import _h3draft as _H
-_H.configure(smooth=True, fixed_seed=37407, cap=12, fast=True)   # 台词顺滑写法＋全批固定视频种子；cap 只是保险（本批任务都 ≤10 秒）
+_H.configure(smooth=True, fixed_seed=37407)   # A 写法：台词顺滑写法＋全批固定视频种子；不 cap、不 fast
 OUT = '合并稿/020_第51-54集_天崩地裂体温底线黑暗手术重见光明_制作稿_追加'
 S = Session('合并稿/019_第47-50集_十二秒版_顶级晚餐深雪地狱雪原幽灵绝对零度_制作稿_追加.json', OUT, 80000)
 B6.S = S
+
+# ---------------------------------------------------------------------------------------------- 本批的台词排时间（同 018 的 15 秒满内容）
+GAP = 0.9
+BRISK_EN = ' The lines follow one another at once with only a very short breath between them, each said in one breath with no pause inside the sentence.'
+BRISK_ZH = ' 台词一句紧接着一句，中间只有很短的换气，每句一口气说完、句中不停顿。'
+VOICE_ONLY = {'eden_voice'}
+
+
+def times(spec):
+    out, t = [], 0.6
+    for sp, tx, to in spec:
+        tx2 = smooth_text(tx)
+        out.append((sp, tx2, round(t, 2), to))
+        t = t + _H.line_seconds(tx2) + GAP
+    return out
+
+
+def smooth15(lines, dur, act_en, zh):
+    new = times([(a, b, d) for a, b, c, d in lines])
+    for a, b in TONE_FIX: act_en = act_en.replace(a, b)
+    return new, dur, act_en + BRISK_EN, zh + BRISK_ZH
+
+
+_scene.smooth_task = smooth15
+
+
+def LN(*spec):
+    return times(list(spec))
+
+
+# ---- 对白任务的文字由台词表自动拼：spec = [(说话人素材键, 台词, 对谁说的素材键, 英语语气, 中文语气)]
+ORD = ['first', 'second', 'third', 'fourth', 'fifth']
+ORD_ZH = ['第一句', '第二句', '第三句', '第四句', '第五句']
+ZN = {'su_cozy': '苏清月', 'lin_home': '林峰'}
+CH = {'su_cozy': 'Su', 'lin_home': 'Lin', 'eden_voice': 'Eden'}
+SELF = {'su_cozy': 'herself', 'lin_home': 'himself'}
+REPORT = []
+
+
+def DL(tid, title, scene, people, framing, spec, sound, aes, pre_en='', pre_zh='', post_en='', post_zh='', tail=2.0, mind=6, dur=None, **kw):
+    lines = LN(*[(a, t, CH[c]) for a, t, c, te, tz in spec])
+    last = lines[-1]
+    end = last[2] + _H.line_seconds(last[1])
+    d = dur or max(mind, min(15, math.ceil(end + tail)))
+    assert end + 0.8 <= d <= 15, (tid, end, d)
+    parts_en, parts_zh = [], []
+    for i, (a, t, c, te, tz) in enumerate(spec):
+        lead = 'then ' if i else ''
+        tgt = (SELF[a] + ' aloud') if a == c else f'<{c}>'
+        parts_en.append(f"{lead}<{a}> speaks the {ORD[i]} line to {tgt} in a {te} voice")
+        lead_zh = '接着' if i else ''
+        tgz = '自己低声' if a == c else ZN[c]
+        parts_zh.append(f"{lead_zh}{ZN[a]}用{tz}的声音对{tgz}说出{ORD_ZH[i]}")
+    act_en = (pre_en + ' ' if pre_en else '') + ', '.join(parts_en) + ('; ' + post_en if post_en else '.')
+    zh = (pre_zh if pre_zh else '') + '，'.join(parts_zh) + ('；' + post_zh if post_zh else '。')
+    REPORT.append((tid, d, round(end, 1), len(spec)))
+    if all(a == c for a, t, c, te, tz in spec):      # 一个人对自己说：站位表不允许“对自己说话”的在场台词，走旁白通道（同 B 版的 TAV）
+        return TA(tid, title, d, scene, people, framing, act_en, zh, sound, aes, vo=lines, **kw)
+    return TA(tid, title, d, scene, people, framing, act_en, zh, sound, aes, lines=lines, **kw)
+
+
+
+def arc(who_en, who_zh, to_en, to_zh):
+    return (f'The camera arcs slowly around {who_en} toward frame-right until {to_en}.', f'镜头缓缓绕着{who_zh}向右环绕，直到{to_zh}。')
 
 # ---------------------------------------------------------------------------------------------- 衣着
 SU_ROBE = "in a thick white terry bathrobe tied at the waist, her long black hair wet and pinned up with damp strands at her neck"
@@ -201,6 +271,14 @@ SOUND_COZY = breathy('The soft crackle of the stove, a slow steady breathing and
 SOUND_REMOTE = voiced('The soft crackle of the stove and one quiet click of a remote.', '炉灶轻轻的噼啪声和遥控器一声安静的按键声。')
 SOUND_SCREEN = breathy('A deep hush, the faint hum of the monitor wall and the soft crackle of the stove.', '深深的安静、监控墙细细的嗡鸣和炉灶轻轻的噼啪声。')
 
+# ---------------------------------------------------------------------------------------------- 有台词的任务用的声音（同 B 版的无台词声音，改成允许人声）
+SOUND_RUN_V = voiced('The slap of bare feet on wet rock, ragged breathing and a deep rumble shaking the cavern.', '赤脚拍在湿岩石上的啪嗒声、急促的喘息声和震动着整个溶洞的深沉隆隆声。')
+SOUND_LOOKUP_V = voiced('A tense rising creak of stone overhead and the patter of falling grit.', '头顶岩石紧绷渐强的吱嘎声和碎石粒落下的噼啪声。')
+SOUND_SURFACE_V = voiced('A great splash of water, a gasping tearing breath and water streaming off skin.', '一大片水花声、一口撕裂般的喘息声和水从皮肤上淌下的哗哗声。')
+SOUND_STRIP_V = voiced('A tiny scrape of steel on insulation, a steady slow breath and the faint tick of frost.', '钢刃刮过绝缘皮时一点极小的刮擦声、平稳缓慢的呼吸和霜细细的嘀嗒声。')
+SOUND_SPARK_V = voiced('A faint crackle of electricity from the glowing wires, a hoarse breath and the tick of frost.', '发光的线头细细的电流噼啪声、沙哑的呼吸和霜的嘀嗒声。')
+SOUND_FLOOR_V = voiced('A deep dead silence, a hoarse dragging breath and the soft tick of settling dust.', '深深的死寂、嘶哑拖长的喘息和尘土落定时细细的嘀嗒声。')
+
 # ================================================================================================ 第 51 集
 b51 = S.episode('剧本第51集｜天崩地裂', '溶洞温泉里，水面被一阵看不见的低频震颤震出一圈圈波纹，发光的苔藓石壁崩开一条黑色裂缝；林峰脸色大变，拉起苏清月说是次声波共振，快离开这；两人裹着浴袍沿岩石小路狂奔，头顶一块巨大的钟乳石断裂，砸在通往上层的防爆合金门前，门框变形卡死，粗电缆被碎石切断；灯全灭了，只剩幽蓝的苔藓光，苏清月湿漉漉的头发开始结霜，他们被困在断电的地底。', 51)
 new_scene(b51, 'blast_door', '被砸坏的防爆合金门（岩壁里一扇灰色的厚重合金门，门框被砸得向内弯曲变形，门脚横着一块断裂的苍白钟乳石和碎石）',
@@ -212,7 +290,7 @@ new_scene(b51, 'dark_river', '漆黑的地下暗河（水下，粗糙的岩壁�
           '漆黑狭窄的地下暗河水下，粗糙的岩壁上有一道细缝，缝里闪着一根银色的细线缆，上方滤下一线幽灵似的蓝光，银色的气泡往上冒。',
           'the rock wall, the seam with the silver cable and the rising bubbles')
 
-insert2('51-01', '01｜溶洞：碧绿的温泉水面微微发颤，一圈一圈的波纹从池中央往外扩散，白色的水雾贴着水面卷着', 6, HC_RIPPLE,
+insert2('51-01', '01｜溶洞：碧绿的温泉水面微微发颤，一圈一圈的波纹从池中央往外扩散，白色的水雾贴着水面卷着', 7, HC_RIPPLE,
         'Low close shot of the pool surface, the spreading rings in the middle third of the frame, nobody in the scene.',
         "Concentric rings of ripples spread outward across the turquoise water of the hot spring as the surface trembles faintly and white mist curls along it. Nothing else moves.",
         "碧绿的温泉水面微微发颤，一圈一圈同心的波纹从池中央往外扩散，白色的水雾贴着水面卷着。别的什么都不动。",
@@ -226,34 +304,45 @@ insert2('51-02', '02｜溶洞：发着幽蓝光的苔藓石壁上，一条黑色
         SOUND_CRACK, 'The frame holds the glowing rock wall with the long black crack, and nobody in the scene.',
         tilt('the long black crack', '那条长长的黑色裂缝'), AES_CRACK)
 
-TA('51-03', '03｜温泉边：苏清月披着浴袍坐在岩台上，林峰脸色大变，一把抓住她的手腕把她拉起来，说是次声波共振，快离开这', 7, HC_LEDGE,
+DL('51-03', '03｜温泉边：苏清月披着浴袍坐在岩台上，林峰脸色大变，说是次声波共振，整座山都在抖，快离开这，一把抓住她的手腕把她拉起来', HC_LEDGE,
    [P('su_cozy', 'left', "sitting on the smooth rock ledge in three-quarter profile facing frame-right, her bare feet in the water, her head turned up to him", 'Lin', "her eyes wide with alarm, her lips parted, her brows pulled together", outfit=SU_ROBE),
-    P('lin_home', 'right', "standing at the ledge in profile facing frame-left, his right hand gripping her left wrist at chest height, his head bent toward her", 'Su', "his face drawn tight, his jaw clenched, his eyes sharp and alarmed, his brows low", outfit=LIN_ROBE)],
+    P('lin_home', 'right', "standing at the ledge in profile facing frame-left, his right hand reaching down toward her left wrist, his head bent toward her", 'Su', "his face drawn tight, his jaw clenched, his eyes sharp and alarmed, his brows low", outfit=LIN_ROBE)],
    'Medium two-shot, both from the head to the waist, in the middle third of the frame, at the pool edge.',
-   "<su_cozy> looks up at <lin_home> and speaks the first line to <lin_home> in a thin worried voice, then <lin_home> grips her wrist and speaks the second line to <su_cozy> in a low urgent voice, her eyes wide with alarm, her lips parted and her brows pulled together, his face drawn tight, his jaw clenched, his eyes sharp and alarmed and his brows low.",
-   "苏清月抬头看着林峰，用发细担心的声音对他说出第一句，接着林峰攥着她的手腕，用低沉急迫的声音对苏清月说出第二句，她眼睛睁大满是惊慌、嘴唇微张、眉头拧在一起，他脸绷得紧紧的、下颌咬紧、眼神锐利惊觉、眉头压低。",
-   SOUND_GRAB, AES_GRAB, lines=[('su_cozy', "怎么了？", 0.8, 'Lin'), ('lin_home', "是次声波共振，快离开这！", 0.8, 'Su')],
-   cam=push('both of them', '两人'), room={'Su', 'Lin'}, new=True,
+   [('su_cozy', "怎么了？", 'lin_home', 'thin worried', '发细担心'),
+    ('lin_home', "是次声波共振！", 'su_cozy', 'low urgent', '低沉急迫'),
+    ('su_cozy', "整座山都在抖？", 'lin_home', 'shaking frightened', '发抖惊惶'),
+    ('lin_home', "快离开这！", 'su_cozy', 'sharp urgent', '尖锐急迫')],
+   SOUND_GRAB, AES_GRAB,
+   pre_en='The turquoise water trembles behind them.', pre_zh='身后碧绿的水面在发颤。',
+   post_en='after the last line <lin_home> grips her left wrist at chest height and pulls her up from the ledge onto her feet',
+   post_zh='最后一句之后，林峰攥住她的左手腕，把她从岩台上拉得站了起来',
+   tail=2.0, cam=push('both of them', '两人'), room={'Su', 'Lin'}, new=True,
    bg='Behind them the steaming turquoise pool and the wall of glowing blue moss fill the cavern.',
    holds='The frame holds exactly two people: Su and Lin, at the pool edge, nobody else.')
 
-TA('51-04', '04｜溶洞：两人裹着浴袍沿着池边的岩石小路拼命往前跑，林峰拉着苏清月的手，前面尽头是一扇灰色的合金大门', 6, HC_RUN,
+DL('51-04', '04｜溶洞：两人裹着浴袍沿着池边的岩石小路拼命往前跑，林峰拉着苏清月的手，前面尽头是一扇灰色的合金大门', HC_RUN,
    [P('lin_home', 'left', "running along the rock path in profile facing frame-right, his right hand holding her left hand and pulling her along, his eyes on the far door", 'obj:the heavy grey alloy door at the end of the path', "his jaw clenched, his eyes fierce and fixed, his brows low", outfit=LIN_ROBE),
     P('su_cozy', 'center', "running a half step behind him in profile facing frame-right, her robe flying open at the hem, her eyes on the far door", 'obj:the heavy grey alloy door at the end of the path', "her lips parted in a gasp, her eyes wide, her brows pulled together", outfit=SU_ROBE)],
    'Medium wide two-shot, both from head to toe, in the middle third of the frame, on the rock path.',
-   "<lin_home> runs along the rock path holding <su_cozy> by the hand and pulling her after him, his jaw clenched, his eyes fierce and fixed on the far door and his brows low, while <su_cozy> runs a half step behind him with her robe flying, her lips parted in a gasp, her eyes wide and her brows pulled together. They run steadily toward the door.",
-   "林峰拉着苏清月的手沿着岩石小路往前跑，下颌咬紧、眼神凶狠地盯着远处的门、眉头压低，苏清月落后他半步跑着，浴袍下摆飞起来，嘴唇微张喘着气、眼睛睁大、眉头拧在一起。他们稳稳地朝门跑去。",
-   SOUND_RUN, AES_RUN, cam=track('the two of them', '他们两个'), room={'Su', 'Lin'}, new=True,
+   [('lin_home', "跑，别回头！", 'su_cozy', 'hoarse urgent', '沙哑急迫'),
+    ('su_cozy', "门就在前面！", 'lin_home', 'breathless', '喘不上气的'),
+    ('lin_home', "别停，快跑！", 'su_cozy', 'rough fierce', '粗哑凶狠')],
+   SOUND_RUN_V, AES_RUN,
+   pre_en='They run steadily toward the door along the pool.', pre_zh='他们沿着水池稳稳地朝门跑去。',
+   tail=1.5, mind=8, cam=track('the two of them', '他们两个'), room={'Su', 'Lin'}, new=True,
    bg='Behind them the steaming turquoise pool and the walls of glowing blue moss streak past.',
    holds='The frame holds exactly two people: Lin and Su, on the rock path, nobody else.')
 
-TA('51-05', '05｜溶洞：两人在门前停下脚步，同时抬起头往头顶看，细细的碎石粒从上面筛下来', 6, HC_LOOKUP,
+DL('51-05', '05｜溶洞：两人在门前停下脚步，同时抬起头往头顶看，头顶一块巨大的钟乳石裂开，细细的碎石粒筛下来，林峰说头顶要塌了，让她护住头', HC_LOOKUP,
    [P('lin_home', 'left', "standing on the rock path in profile facing frame-right, his head tipped back, his arm out in front of her", 'obj:the huge cracked stalactite hanging from the ceiling', "his jaw clenched, his eyes wide with dread, his brows pulled high", outfit=LIN_ROBE),
     P('su_cozy', 'center', "standing close behind him in profile facing frame-right, her head tipped back, one hand gripping his robe", 'obj:the huge cracked stalactite hanging from the ceiling', "her lips parted, her eyes wide with terror, her brows pulled together", outfit=SU_ROBE)],
    'Medium two-shot, both from the head to the waist, in the middle third of the frame, in front of the door.',
-   "<lin_home> and <su_cozy> stop and tip their heads back to look up at the huge cracked stalactite overhead while fine grit sifts down on them, <lin_home> with his jaw clenched, his eyes wide with dread and his brows pulled high and his arm out in front of her, <su_cozy> with her lips parted, her eyes wide with terror and her brows pulled together, one hand gripping his robe.",
-   "林峰和苏清月停下来，仰起头看着头顶那块裂开的巨大钟乳石，细细的碎石粒落在他们身上，林峰下颌咬紧、眼睛因恐惧睁大、眉毛高高拧起，一只手臂挡在她前面，苏清月嘴唇微张、眼睛因恐惧睁大、眉头拧在一起，一只手攥着他的浴袍。",
-   SOUND_LOOKUP, AES_LOOKUP, cam=lowrise('the two upturned faces', '两张仰起的脸'), room={'Su', 'Lin'}, new=True,
+   [('lin_home', "头顶，要塌了！", 'su_cozy', 'hoarse alarmed', '沙哑惊觉'),
+    ('su_cozy', "往哪里躲？", 'lin_home', 'terrified', '惊恐'),
+    ('lin_home', "退后，护住头！", 'su_cozy', 'sharp commanding', '尖锐命令的')],
+   SOUND_LOOKUP_V, AES_LOOKUP,
+   pre_en='Fine grit sifts down on them from the cracked stalactite overhead.', pre_zh='头顶裂开的钟乳石上，细细的碎石粒筛落在他们身上。',
+   tail=2.0, mind=8, cam=lowrise('the two upturned faces', '两张仰起的脸'), room={'Su', 'Lin'}, new=True,
    bg='Above them a huge pale stalactite hangs from the ceiling with a black crack through its root, and the grey alloy blast door is set in the wall behind them.',
    holds='The frame holds exactly two people: Lin and Su, in front of the door, nobody else.')
 
@@ -271,182 +360,173 @@ insert2('51-07', '07｜碎石堆里：一根粗黑的主电缆被砸断成两截
         SOUND_CABLECUT, 'The frame holds the severed cable among the stones, and nobody in the scene.',
         push1('the two cut ends and the dying sparks', '断开的两个线头和熄灭的火花'), AES_CABLECUT)
 
-TA('51-08', '08｜溶洞：灯全灭了，只剩幽蓝的苔藓光，苏清月靠在林峰怀里小声说灯全灭了，林峰低声说别怕，我在，她湿漉漉的头发上慢慢爬上一层白霜', 8, HC_DARK_SIDE,
+DL('51-08', '08｜溶洞：灯全灭了，只剩幽蓝的苔藓光，苏清月靠在林峰怀里小声说灯全灭了、这里没有电会冻死的，林峰低声说别怕、我在，她湿漉漉的头发上慢慢爬上一层白霜', HC_DARK_SIDE,
    [P('su_cozy', 'left', "standing in his arms in profile facing frame-right, her head against his chest, her eyes on the dark cavern", 'obj:the dark cavern beyond the pool', "her lips trembling, her eyes wide and glistening, her brows pulled together", outfit=SU_ROBE_FROST),
     P('lin_home', 'right', "standing with both arms wrapped around her in profile facing frame-left, his chin over her hair, his eyes on the dark cavern", 'Su', "his jaw set, his eyes hard and steady, his brows low", outfit=LIN_ROBE)],
    'Medium close two-shot, both from the head to the chest, in the middle third of the frame, in the dark cavern.',
-   "<su_cozy> stands in the arms of <lin_home> and speaks the first line to <lin_home> in a small shaking voice, then <lin_home> speaks the second line to <su_cozy> in a low steady voice, her lips trembling, her eyes wide and glistening and her brows pulled together, his jaw set, his eyes hard and steady and his brows low, while thin white frost slowly creeps across her wet hair.",
-   "苏清月靠在林峰的怀里，用发抖的小声音对他说出第一句，接着林峰用低沉平稳的声音对苏清月说出第二句，她嘴唇发颤、眼睛睁大含着泪光、眉头拧在一起，他下颌绷紧、眼神冷硬而稳、眉头压低，薄薄的白霜慢慢爬上她湿漉漉的头发。",
-   SOUND_BLACKOUT, AES_BLACKOUT, lines=[('su_cozy', "灯，全灭了。", 0.8, 'Lin'), ('lin_home', "别怕，我在。", 0.8, 'Su')],
-   cam=push('both of them', '两人'), room={'Su', 'Lin'}, new=True,
+   [('su_cozy', "灯，全灭了。", 'lin_home', 'small shaking', '发抖的小'),
+    ('lin_home', "别怕，我在。", 'su_cozy', 'low steady', '低沉平稳'),
+    ('su_cozy', "这里没有电，会冻死的。", 'lin_home', 'trembling', '发颤'),
+    ('lin_home', "我想办法，你先别睡。", 'su_cozy', 'low firm', '低沉坚定')],
+   SOUND_BLACKOUT, AES_BLACKOUT,
+   post_en='thin white frost slowly creeps across her wet hair and a pale breath cloud drifts between their faces after the last line',
+   post_zh='最后一句之后，薄薄的白霜慢慢爬上她湿漉漉的头发，一团淡淡的白气在两张脸之间飘着',
+   tail=2.5, cam=push('both of them', '两人'), room={'Su', 'Lin'}, new=True,
    bg='Behind them the frost-furred rock ledge and the dark pool lie under only a faint blue moss glow.',
    holds='The frame holds exactly two people: Su and Lin, in the dark cavern, nobody else.')
 
 # ================================================================================================ 第 52 集
 b52 = S.episode('剧本第52集｜体温的底线', '黑暗的溶洞里，林峰的腕表发着微弱的荧光，他呼出一团团白气；他说不能待在岸上，回温泉里去；两人滑进四十度的温泉，只露出肩膀，躲在水里的岩洞死角紧紧相拥；苏清月冷得嘴唇发紫，说主电缆断了水迟早凉透，林峰说水下有备用线缆，我去接；她攥住他的手腕说水下两分钟你没有光，他说阎王都收不走我，等我，吻了吻她的额头，深吸一口气扎进漆黑的水里，水面只留下几个慢慢散开的气泡，苏清月一个人守在岸边低声说回来。', 52)
 
-TA('52-01', '01｜溶洞：林峰坐在结霜的岩台上，抬起手腕看着发荧光的腕表，呼出一团团白气，表盘上的光越来越弱', 6, HC_DARK_SIDE,
+TA('52-01', '01｜溶洞：林峰坐在结霜的岩台上，抬起手腕看着发荧光的腕表，呼出一团团白气，表盘上的光越来越弱，然后他放下手臂，转头看向身边的黑暗', 8, HC_DARK_SIDE,
    [P('lin_home', 'center', "sitting on the frost-furred rock ledge in three-quarter profile facing frame-left, his left forearm raised in front of his chest, his eyes on the wrist watch", 'obj:the faintly glowing wrist watch on his raised wrist', "his jaw clenched, his eyes narrowed and hard, his brows low", outfit=LIN_ROBE_ICE)],
    'Medium close shot, one man from the head to the chest, in the middle third of the frame, on the rock ledge.',
-   "<lin_home> sits on the frost-furred ledge and stares at the faintly glowing wrist watch on his raised wrist while thick white breath pours from his mouth, his jaw clenched, his eyes narrowed and hard and his brows low, and the green glow of the watch dial dims slowly.",
-   "林峰坐在结霜的岩台上，盯着抬起的手腕上那只发着微光的腕表，浓浓的白气从嘴里涌出来，下颌咬紧、眼睛眯起冷硬、眉头压低，表盘上的绿光慢慢暗下去。",
-   SOUND_WATCH, AES_WATCH, cam=push1('Lin and the dimming watch', '林峰和渐渐暗下去的腕表'), room={'Lin'}, new=True,
+   "<lin_home> sits on the frost-furred ledge and stares at the faintly glowing wrist watch on his raised wrist while thick white breath pours from his mouth, his jaw clenched, his eyes narrowed and hard and his brows low, and the green glow of the watch dial dims slowly; then he lowers his arm and turns his head toward the dark beside him.",
+   "林峰坐在结霜的岩台上，盯着抬起的手腕上那只发着微光的腕表，浓浓的白气从嘴里涌出来，下颌咬紧、眼睛眯起冷硬、眉头压低，表盘上的绿光慢慢暗下去，然后他放下手臂，转头看向身边的黑暗。",
+   SOUND_WATCH, AES_WATCH, cam=pull('the dimming watch dial', '渐渐暗下去的表盘', 'Lin sitting on the frost-furred ledge', '坐在结霜岩台上的林峰'), room={'Lin'}, new=True,
    bg='Behind him the dark pool steams faintly under a wall of dim blue moss.',
    holds='The frame holds exactly one person: Lin, on the rock ledge, nobody else.')
 
-TA('52-02', '02｜溶洞：两人缩在结霜的岩台上发抖，林峰呼出一口浓重的白气，对苏清月说不能待在岸上，回温泉里去', 7, HC_TWO,
+DL('52-02', '02｜溶洞：两人缩在结霜的岩台上发抖，林峰说不能待在岸上，回温泉里去，苏清月说腿都冻僵了，他说温泉四十度、我扶你，然后扶她起来', HC_TWO,
    [P('su_cozy', 'left', "sitting hunched on the frost-furred ledge in three-quarter profile facing frame-right, her arms wrapped around herself, her eyes up at him", 'Lin', "her lips pale and shaking, her eyes wide, her brows pulled together", outfit=SU_ROBE_FROST),
     P('lin_home', 'right', "sitting beside her in profile facing frame-left, one arm around her shoulders, his head bent toward her", 'Su', "his jaw set, his eyes hard and decisive, his brows low", outfit=LIN_ROBE_ICE)],
    'Medium two-shot, both from the head to the waist, in the middle third of the frame, on the rock ledge.',
-   "<lin_home> blows out a thick cloud of white breath and speaks the one line to <su_cozy> in a low firm voice, his jaw set, his eyes hard and decisive and his brows low, while <su_cozy> huddles against him with her arms wrapped around herself, her lips pale and shaking, her eyes wide and her brows pulled together.",
-   "林峰呼出一口浓重的白气，用低沉坚定的声音对苏清月说出这一句，下颌绷紧、眼神冷硬果断、眉头压低，苏清月缩在他身边抱着自己的手臂，嘴唇发白发抖、眼睛睁大、眉头拧在一起。",
-   SOUND_COLD, AES_SHIVER, lines=[('lin_home', "不能待在岸上，回温泉里去。", 0.8, 'Su')],
-   cam=push('both of them', '两人'), room={'Su', 'Lin'}, new=True,
+   [('lin_home', "不能待在岸上，回温泉里去。", 'su_cozy', 'low firm', '低沉坚定'),
+    ('su_cozy', "可我，腿都冻僵了。", 'lin_home', 'pale shaking', '发白发抖'),
+    ('lin_home', "温泉四十度，我扶你。", 'su_cozy', 'low steady', '低沉平稳'),
+    ('su_cozy', "好，我信你。", 'lin_home', 'soft cracked', '轻轻发破')],
+   SOUND_COLD, AES_SHIVER,
+   pre_en='Thick white breath clouds hang between their faces.', pre_zh='浓浓的白气悬在两张脸之间。',
+   post_en='after the last line <lin_home> wraps her arm around his neck and slowly lifts her up onto her feet',
+   post_zh='最后一句之后，林峰把她的手臂环到自己脖子上，慢慢把她扶得站了起来',
+   tail=3.0, cam=slide('toward frame-right', '右', 'the two of them fill the middle third of the frame', '两人占满画面中间三分之一'), room={'Su', 'Lin'}, new=True,
    bg='Behind them the dark pool steams under a wall of dim blue moss.',
    holds='The frame holds exactly two people: Su and Lin, on the rock ledge, nobody else.')
 
-TA('52-03', '03｜温泉：两人手拉着手慢慢滑进冒着热气的碧绿温泉里，水一点点漫过腰、漫过胸口，白色的蒸汽把他们的肩膀裹住', 7, HC_ALCOVE,
+TA('52-03', '03｜温泉：两人手拉着手慢慢滑进冒着热气的碧绿温泉里，水一点点漫过腰、漫过胸口，白色的蒸汽把他们的肩膀裹住', 8, HC_ALCOVE,
    [P('su_cozy', 'left', "lowering herself into the steaming turquoise water in three-quarter profile facing frame-right, the water up to her collarbone, her eyes closing", 'closed', "her lips parting in a shuddering sigh of relief, her brows relaxing", outfit=SU_ROBE_WET, shut='gently closed'),
     P('lin_home', 'right', "lowering himself into the water beside her in profile facing frame-left, the water up to his chest, his hand still holding hers, his eyes on her face", 'Su', "his jaw easing, his eyes dark and tense, his brows drawn together", outfit=LIN_ROBE_WET)],
    'Medium two-shot, both from the head to the chest, in the middle third of the frame, at the pool corner.',
    "<su_cozy> and <lin_home> slowly slide into the steaming turquoise water hand in hand until it reaches her collarbone and his chest, her eyes closing, her lips parting in a shuddering sigh of relief and her brows relaxing, his jaw easing, his eyes dark and tense on her face and his brows drawn together, while white steam rolls up around their shoulders.",
    "苏清月和林峰手拉着手慢慢滑进冒着热气的碧绿温泉里，水漫到她的锁骨、他的胸口，她闭上眼睛、嘴唇微张发出一声发颤的松气、眉头松开，他下颌放松、眼神深暗而紧绷地看着她、眉头拧着，白色的蒸汽在他们的肩膀周围卷起来。",
-   SOUND_SLIDEIN, AES_SLIDEIN, cam=push('both of them', '两人'), room={'Su', 'Lin'}, new=True,
+   SOUND_SLIDEIN, AES_SLIDEIN, cam=lowrise('the two of them in the steaming water', '水里冒着热气的两个人'), room={'Su', 'Lin'}, new=True,
    bg='Behind them the dark cavern walls glow faintly with blue moss and thin steam rolls over the water.',
    holds='The frame holds exactly two people: Su and Lin, in the pool, nobody else.')
 
-TA('52-04', '04｜温泉：两人躲在水里的岩洞死角紧紧相拥，苏清月冷得嘴唇发紫，说主电缆断了水迟早凉透，林峰说水下有备用线缆，我去接', 9, HC_ALCOVE,
+DL('52-04', '04｜温泉：两人躲在水里的岩洞死角紧紧相拥，苏清月说电缆断了水迟早凉透，林峰说水下有备用线缆我去接，她攥住他的手腕说水下两分钟你没有光，他说阎王都收不走我、等我，低头吻了吻她的额头', HC_ALCOVE,
    [P('su_cozy', 'left', "in the water up to her collarbone in profile facing frame-right, held tight against his chest, her head turned up to him", 'Lin', "her lips purple and trembling, her eyes sharp and clear, her brows pulled together", outfit=SU_ROBE_WET),
     P('lin_home', 'right', "in the water up to his chest in profile facing frame-left, both arms wrapped around her, his head bent down to her", 'Su', "his jaw set, his eyes dark and sharp, his brows low", outfit=LIN_ROBE_WET)],
    'Medium close two-shot, both from the head to the chest, in the middle third of the frame, in the rock alcove.',
-   "<su_cozy> speaks the first line to <lin_home> in a thin trembling clear voice, her lips purple and trembling, her eyes sharp and clear and her brows pulled together, then <lin_home> speaks the second line to <su_cozy> in a low steady voice, his jaw set, his eyes dark and sharp and his brows low, while white steam curls between their faces.",
-   "苏清月用发颤却清楚的细声音对林峰说出第一句，嘴唇发紫发颤、眼神清明锐利、眉头拧在一起，接着林峰用低沉平稳的声音对苏清月说出第二句，下颌绷紧、眼神深暗锐利、眉头压低，白色的蒸汽在两张脸之间卷着。",
-   SOUND_HUDDLE, AES_HUDDLE, lines=[('su_cozy', "主电缆断了，水迟早凉透。", 0.8, 'Lin'), ('lin_home', "水下有备用线缆，我去接。", 0.8, 'Su')],
-   cam=push('both of them', '两人'), room={'Su', 'Lin'}, new=True,
+   [('su_cozy', "电缆断了，水迟早凉透。", 'lin_home', 'thin trembling clear', '发颤却清楚的细'),
+    ('lin_home', "水下有备用线缆，我去接。", 'su_cozy', 'low steady', '低沉平稳'),
+    ('su_cozy', "水下两分钟，你没有光！", 'lin_home', 'cracked urgent', '发破急迫'),
+    ('lin_home', "阎王都收不走我，等我。", 'su_cozy', 'low fierce steady', '低沉凶狠而平稳')],
+   SOUND_HUDDLE, AES_HUDDLE,
+   pre_en='White steam curls between their faces.', pre_zh='白色的蒸汽在两张脸之间卷着。',
+   post_en='as she speaks the third line her right hand grips his left wrist at chest height above the water, and after the last line <lin_home> cups her face in both hands and presses his lips to her forehead for a moment while her eyes close',
+   post_zh='她说第三句时，右手紧紧攥住他水面上的左手腕；最后一句之后，林峰两手捧着她的脸，用嘴唇在她额头上贴了一下，她闭上了眼睛',
+   tail=1.5, cam=push('both of them', '两人'), room={'Su', 'Lin'}, new=True,
    bg='Behind them a curved rock wall glows faintly with blue moss and thin steam rolls off the water.',
    holds='The frame holds exactly two people: Su and Lin, in the rock alcove, nobody else.')
 
-TA('52-05', '05｜温泉：苏清月一把攥住林峰的手腕，对他说水下两分钟，你没有光', 7, HC_ALCOVE,
-   [P('su_cozy', 'left', "in the water up to her collarbone in profile facing frame-right, her right hand gripping his left wrist at chest height above the water, her head turned up to him", 'Lin', "her lips pale and shaking, her eyes blazing and wide, her brows pulled high", outfit=SU_ROBE_WET),
-    P('lin_home', 'right', "in the water up to his chest in profile facing frame-left, his left forearm raised in her grip, his head bent down to her", 'Su', "his jaw tight, his eyes dark and still, his brows low", outfit=LIN_ROBE_WET)],
-   'Medium close two-shot, both from the head to the chest, in the middle third of the frame, in the rock alcove.',
-   "<su_cozy> grips the wrist of <lin_home> tight with her right hand and speaks the one line to <lin_home> in a cracked urgent voice, her lips pale and shaking, her eyes blazing and wide and her brows pulled high, while <lin_home> looks down at her without moving, his jaw tight, his eyes dark and still and his brows low.",
-   "苏清月右手紧紧攥住林峰的手腕，用发破急迫的声音对他说出这一句，嘴唇发白发抖、眼睛瞪大灼灼发亮、眉头高高拧起，林峰一动不动地低头看着她，下颌绷紧、眼神深暗平静、眉头压低。",
-   SOUND_WRIST, AES_WRIST, lines=[('su_cozy', "水下两分钟，你没有光！", 0.8, 'Lin')],
-   cam=push('both of them', '两人'), room={'Su', 'Lin'}, new=True,
-   bg='Behind them a curved rock wall glows faintly with blue moss and thin steam rolls off the water.',
-   holds='The frame holds exactly two people: Su and Lin, in the rock alcove, nobody else.')
-
-TA('52-06', '06｜温泉：林峰低声说阎王都收不走我，等我，然后低下头，在苏清月的额头上轻轻吻了一下', 8, HC_ALCOVE,
-   [P('lin_home', 'right', "in the water up to his chest in profile facing frame-left, both hands cupping her face, his head bent down to her", 'Su', "his jaw easing, his eyes dark and fierce with a cold certainty, his brows low", outfit=LIN_ROBE_WET),
-    P('su_cozy', 'left', "in the water up to her collarbone in profile facing frame-right, her face tipped up in his hands, her eyes on his face", 'Lin', "her lips trembling, her eyes shining and wide, her brows pulled together", outfit=SU_ROBE_WET)],
-   'Medium close two-shot, both from the head to the chest, in the middle third of the frame, in the rock alcove.',
-   "<lin_home> holds her face in both hands and speaks the one line to <su_cozy> in a low, fierce, steady voice, his jaw easing, his eyes dark and fierce with a cold certainty and his brows low; then he bends his head and presses his lips to her forehead for a moment, while her lips tremble, her eyes shine wide and her brows pull together and then her eyes close.",
-   "林峰两手捧着她的脸，用低沉凶狠而平稳的声音对苏清月说出这一句，下颌放松、眼神深暗带着冰冷的笃定、眉头压低；然后他低下头，用嘴唇在她的额头上贴了一下，她嘴唇发颤、眼睛睁大闪着光、眉头拧在一起，然后闭上了眼睛。",
-   SOUND_KISS, AES_FOREHEAD, lines=[('lin_home', "阎王都收不走我，等我。", 0.8, 'Su')],
-   cam=push('both of them', '两人'), room={'Su', 'Lin'}, new=True,
-   bg='Behind them a curved rock wall glows faintly with blue moss and thin steam rolls off the water.',
-   holds='The frame holds exactly two people: Lin and Su, in the rock alcove, nobody else.')
-
-insert2('52-07', '07｜温泉：漆黑的水面上，几串银色的气泡慢慢升上来、一圈一圈地破开，然后水面渐渐平静下来，薄薄的蒸汽飘过', 6, HC_WATER,
+insert2('52-05', '05｜温泉：漆黑的水面上，几串银色的气泡慢慢升上来、一圈一圈地破开，然后水面渐渐平静下来，薄薄的蒸汽飘过', 7, HC_WATER,
         'Low close shot of the pool surface, the rising bubbles in the middle third of the frame, nobody visible.',
         "A few strings of silver bubbles rise through the dark turquoise water and burst in slow rings, then the surface smooths out and goes still while thin steam drifts over it. Nothing else moves.",
         "几串银色的气泡从深青绿色的水里升上来，一圈一圈地慢慢破开，然后水面渐渐平静下来，薄薄的蒸汽从上面飘过。别的什么都不动。",
         SOUND_BUBBLES, 'The frame holds the pool surface with the bubbles, and nobody visible.',
         push1('the last bubbles and the stilling water', '最后的气泡和渐渐平静的水面'), AES_BUBBLES)
 
-TAV('52-08', '08｜岸边：苏清月一个人趴在岩台边，低头盯着漆黑的水面，小声地对自己说回来', HC_LEDGE_DARK,
-    [P('su_cozy', 'right', "kneeling at the frost-furred edge of the ledge in profile facing frame-left, both hands pressed flat on the stone, leaning over the black water", 'obj:the still black water', "her lips pale and trembling, her eyes wide and wet, her brows pulled high", outfit=SU_ROBE_FROST)],
-    'Medium close shot, one woman from the head to the waist, in the middle third of the frame, at the pool edge.',
-    "<su_cozy> kneels at the edge of the ledge and stares down at the still black water, her lips pale and trembling, her eyes wide and wet and her brows pulled high, and she whispers the one line aloud to herself in a barely audible cracked voice.",
-    "苏清月跪在岩台边，低头盯着一动不动的漆黑水面，嘴唇发白发颤、眼睛睁大含着泪、眉毛高高拧起，用几乎听不见的破碎声音对自己低声说出这一句。",
-    SOUND_WAIT, AES_WAIT, [('su_cozy', "回来。", 0.8, 'Su')],
-    cam=push1('Su and the black water', '苏清月和漆黑的水面'), room={'Su'}, new=True,
-    bg='Behind her the pool lies black and still under a faint blue moss glow.',
-    holds='The frame holds exactly one person: Su, at the pool edge, nobody else.')
+DL('52-06', '06｜岸边：苏清月一个人跪在岩台边，低头盯着漆黑的水面，小声数着时间，说一分钟了、两分钟快到了、你说过会回来的、快回来', HC_LEDGE_DARK,
+   [P('su_cozy', 'right', "kneeling at the frost-furred edge of the ledge in profile facing frame-left, both hands pressed flat on the stone, leaning over the black water", 'obj:the still black water', "her lips pale and trembling, her eyes wide and wet, her brows pulled high", outfit=SU_ROBE_FROST)],
+   'Medium close shot, one woman from the head to the waist, in the middle third of the frame, at the pool edge.',
+   [('su_cozy', "一分钟了。", 'su_cozy', 'tiny cracked', '细小发破'),
+    ('su_cozy', "两分钟，快到了。", 'su_cozy', 'tiny trembling', '细小发颤'),
+    ('su_cozy', "你说过，会回来的。", 'su_cozy', 'barely audible trembling', '几乎听不见的发颤'),
+    ('su_cozy', "快回来。", 'su_cozy', 'broken whispering', '破碎的低语')],
+   SOUND_WAIT, AES_WAIT,
+   pre_en='A single drop falls from her hair into the black pool.', pre_zh='一滴水从她的发梢落进漆黑的水池。',
+   post_en='after the last line she presses her hands harder against the stone and stares at the water',
+   post_zh='最后一句之后，她把手更用力地按在石头上，死死盯着水面',
+   tail=2.0, mind=13, cam=push1('Su and the black water', '苏清月和漆黑的水面'), room={'Su'}, new=True,
+   bg='Behind her the pool lies black and still under a faint blue moss glow.',
+   holds='The frame holds exactly one person: Su, at the pool edge, nobody else.')
 
 # ================================================================================================ 第 53 集
 b53 = S.episode('剧本第53集｜黑暗中的外科手术', '漆黑的水下，林峰在岩壁的细缝里摸到那根备用的超导线缆，把它拔出来；他破水而出，大口喘气，爬上岸，身上结了一层薄冰，把线缆递给苏清月；苏清月握住线缆，外科医生的眼神回来了，说剥开绝缘层，这根线只有两毫米，接错就死；林峰用匕首剥开线皮，她稳稳地对接线芯，一团蓝白色的电火花爆开；她喊接通了，去压液压杆；林峰咬牙压下杠杆，变形的合金门被顶开了一条半米宽的缝。', 53)
 
-TA('53-01', '01｜水下：漆黑的暗河里，林峰顺着岩壁摸索，终于摸到岩缝里那根银色的细线缆，用力把它拔了出来', 8, RIVER,
+TA('53-01', '01｜水下：漆黑的暗河里，林峰顺着岩壁摸索，终于摸到岩缝里那根银色的细线缆，用力把它拔了出来', 9, RIVER,
    [P('lin_home', 'center', "swimming underwater in profile facing frame-right, his right hand running along the seam in the rock wall and closing on the thin silver cable, his left arm stretched forward, his hair drifting", 'obj:the thin silver cable in the rock seam', "his lips pressed tight, his jaw clenched, his eyes narrowed and fixed, his brows low", outfit=LIN_ROBE_WET)],
    'Medium shot underwater, one man from the head to the waist, in the middle third of the frame, at the rock wall.',
    "<lin_home> swims along the rock wall underwater and feels along the seam until his right hand closes on the thin silver cable, his lips pressed tight, his jaw clenched, his eyes narrowed and fixed and his brows low, and then he pulls the cable free of the seam while silver bubbles stream from his mouth and his hair drifts.",
    "林峰在水下顺着岩壁游，手沿着岩缝摸索，右手终于握住那根细细的银色线缆，嘴唇紧闭、下颌咬紧、眼睛眯起盯着、眉头压低，然后把线缆从缝里拔出来，银色的气泡从嘴边冒出来，头发飘着。",
-   SOUND_DIVE, AES_DIVE, cam=push1('Lin and the cable in his hand', '林峰和他手里的线缆'), room={'Lin'}, new=True,
+   SOUND_DIVE, AES_DIVE, cam=track('Lin', '林峰'), room={'Lin'}, new=True,
    bg='Behind him the rough black rock wall runs across the frame with silver bubbles rising.',
    holds='The frame holds exactly one person: Lin, underwater at the rock wall, nobody else.')
 
-TA('53-02', '02｜岸边：苏清月趴在岩台边死死盯着水面，林峰哗啦一声破水而出，大口大口地喘气，一只拳头里攥着那根细线缆', 7, HC_LEDGE_DARK,
+DL('53-02', '02｜岸边：林峰哗啦一声破水而出，大口喘气，拳头里攥着那根细线缆，苏清月趴在岩台边问拿到了吗，他说拿到了、接上它只有你行，她说手冻僵了，他说我来剥线你来接，爬上岩台把线缆递到她手里', HC_LEDGE_DARK,
    [P('su_cozy', 'right', "lying flat on the frost-furred ledge at the pool edge in profile facing frame-left, her head over the water, her eyes on the surface", 'Lin', "her lips parted, her eyes huge, her brows pulled high", outfit=SU_ROBE_FROST),
     P('lin_home', 'left', "bursting up out of the water in profile facing frame-right, the water streaming off his shoulders, his right fist raised holding a thin silver cable, his mouth open gasping", 'Su', "his jaw slack with exhaustion, his eyes wide and blazing, his brows pulled together", outfit=LIN_ROBE_WET)],
    'Medium two-shot, both from the head to the chest, in the middle third of the frame, at the pool edge.',
-   "<lin_home> bursts up out of the black water, gasping, with the thin silver cable gripped in his raised right fist, his jaw slack with exhaustion, his eyes wide and blazing and his brows pulled together, while <su_cozy> lies flat on the ledge right in front of him, her lips parted, her eyes huge and her brows pulled high.",
-   "林峰从漆黑的水里破水而出，大口喘着气，抬起的右拳里攥着那根细细的银色线缆，下颌因脱力而松开、眼睛睁大灼灼发亮、眉头拧在一起，苏清月就趴在他面前的岩台上，嘴唇微张、眼睛瞪得很大、眉毛高高拧起。",
-   SOUND_SURFACE, AES_SURFACE, cam=push('both of them', '两人'), room={'Su', 'Lin'}, new=True,
+   [('su_cozy', "拿到了吗？", 'lin_home', 'hoarse frantic', '沙哑慌乱'),
+    ('lin_home', "拿到了，接上它，只有你行。", 'su_cozy', 'rough hoarse', '粗哑'),
+    ('su_cozy', "我的手，都冻僵了。", 'lin_home', 'shaking', '发抖'),
+    ('lin_home', "我来剥线，你来接。", 'su_cozy', 'low certain', '低沉笃定')],
+   SOUND_SURFACE_V, AES_SURFACE,
+   post_en='after the last line <lin_home> hauls himself up onto the ledge with a thin skin of ice forming on his robe and puts the thin silver cable into her hands',
+   post_zh='最后一句之后，林峰撑着爬上岩台，湿袍子上结起一层薄冰，把细细的银色线缆放进她的手里',
+   tail=1.5, cam=push('both of them', '两人'), room={'Su', 'Lin'}, new=True,
    bg='Behind them the black pool steams and the wall of dim blue moss glows.',
    holds='The frame holds exactly two people: Lin and Su, at the pool edge, nobody else.')
 
-TA('53-03', '03｜岸边：林峰爬上岩台，身上结了一层薄冰，把线缆递到苏清月手里，说接上它，只有你行', 7, HC_ICE,
-   [P('lin_home', 'left', "kneeling on the frost-furred ledge in profile facing frame-right, his left hand holding out the thin silver cable to her, a thin skin of ice on his shoulders", 'Su', "his jaw shaking, his eyes fierce and certain, his brows low", outfit=LIN_ROBE_ICE),
-    P('su_cozy', 'right', "kneeling opposite him in profile facing frame-left, both hands reaching out to take the cable, her eyes on his face", 'Lin', "her lips trembling, her eyes wide and bright, her brows pulled together", outfit=SU_ROBE_FROST)],
-   'Medium two-shot, both from the head to the waist, in the middle third of the frame, on the ledge.',
-   "<lin_home> holds out the thin silver cable to <su_cozy> and speaks the one line to <su_cozy> in a rough hoarse voice, his jaw shaking, his eyes fierce and certain and his brows low, while <su_cozy> takes it with both hands, her lips trembling, her eyes wide and bright and her brows pulled together.",
-   "林峰把细细的银色线缆递到苏清月面前，用粗哑的声音对她说出这一句，下颌发抖、眼神凶狠而笃定、眉头压低，苏清月双手接过线缆，嘴唇发颤、眼睛睁大发亮、眉头拧在一起。",
-   SOUND_ICEHAND, AES_ICEHAND, lines=[('lin_home', "接上它，只有你行。", 0.8, 'Su')],
-   cam=push('both of them', '两人'), room={'Su', 'Lin'}, new=True,
-   bg='Behind them the black pool and the wall of dim blue moss lie in the dark.',
-   holds='The frame holds exactly two people: Lin and Su, on the ledge, nobody else.')
-
-TA('53-04', '04｜岸边：苏清月握住线缆的一瞬间，眼神变得极度专注，对林峰说剥开绝缘层，只有两毫米，接错就死', 10, HC_ICE,
+DL('53-03', '03｜岸边：苏清月握住线缆的一瞬间，眼神变得极度专注，说剥开绝缘层，只有两毫米，接错就死；林峰用匕首尖极轻地剥开外皮，她手抖了一下，然后稳稳地把两根线芯对在一起', HC_ICE,
    [P('su_cozy', 'right', "kneeling on the frost-furred ledge in profile facing frame-left, both hands holding the thin silver cable in front of her chest, her head bent over it", 'obj:the thin silver cable in her hands', "her lips pressed into a firm line, her eyes narrowed and perfectly steady, her brows low", outfit=SU_ROBE_FROST),
     P('lin_home', 'left', "kneeling beside her in profile facing frame-right, his right hand holding a slim dagger, his eyes on her face", 'Su', "his jaw set, his eyes dark and trusting, his brows low", outfit=LIN_ROBE_ICE)],
    'Medium close two-shot, both from the head to the chest, in the middle third of the frame, on the ledge.',
-   "<su_cozy> holds the thin silver cable in both hands and speaks the first line to <lin_home> in a low steady voice and then the second line in the same cool clear voice, her lips pressed into a firm line, her eyes narrowed and perfectly steady and her brows low, while <lin_home> listens with the slim dagger in his hand, his jaw set, his eyes dark and trusting and his brows low.",
-   "苏清月双手捧着细细的银色线缆，用低沉平稳的声音对林峰说出第一句，接着用同样冷静清楚的声音说出第二句，嘴唇抿成一条坚定的线、眼睛眯起稳得一动不动、眉头压低，林峰手里拿着细长的匕首听着，下颌绷紧、眼神深暗带着信任、眉头压低。",
-   SOUND_SURGEON, AES_SURGEON, lines=[('su_cozy', "剥开绝缘层。", 0.8, 'Lin'), ('su_cozy', "只有两毫米，接错就死。", 0.8, 'Lin')],
-   cam=push('both of them', '两人'), room={'Su', 'Lin'}, new=True,
+   [('su_cozy', "剥开绝缘层。", 'lin_home', 'low steady', '低沉平稳'),
+    ('su_cozy', "只有两毫米，接错就死。", 'lin_home', 'cool clear', '冷静清楚'),
+    ('lin_home', "你说停，我就停。", 'su_cozy', 'low calm', '低沉平静'),
+    ('su_cozy', "好，就是现在。", 'lin_home', 'quiet steady', '安静而稳')],
+   SOUND_STRIP_V, AES_STRIP,
+   post_en='after the last line <lin_home> slices the insulation off the thin cable with the tip of the slim dagger, then <su_cozy> holds the two bare cable ends in both hands and, after one small tremble, brings them steadily together',
+   post_zh='最后一句之后，林峰用匕首尖把细线缆的外皮轻轻划开，苏清月双手捏着两根露出来的线芯，手轻轻抖了一下，然后稳稳地把它们对在一起',
+   tail=3.0, cam=pull('their hands holding the thin cable', '他们握着线缆的手', 'the two of them kneeling on the ledge', '跪在岩台上的两个人'), room={'Su', 'Lin'}, new=True,
    bg='Behind them a faint blue moss glow outlines the frost-furred rock and the black pool.',
    holds='The frame holds exactly two people: Su and Lin, on the ledge, nobody else.')
 
-TA('53-05', '05｜岸边：林峰用匕首尖极轻地剥开线缆的外皮，苏清月双手捏着露出来的线芯，手抖了一下，然后稳稳地把两根线芯对在一起', 9, HC_ICE,
-   [P('lin_home', 'left', "kneeling on the ledge in profile facing frame-right, the tip of the slim dagger slicing the insulation of the thin cable held between them, his head bent over it", 'obj:the thin cable between them', "his lips pressed tight, his eyes narrowed and fixed, his brows low", outfit=LIN_ROBE_ICE),
-    P('su_cozy', 'right', "kneeling opposite him in profile facing frame-left, both hands holding the two exposed cable ends and bringing them together, her head bent over them", 'obj:the two exposed cable ends in her hands', "her lips pressed into a firm line, her eyes narrowed and perfectly steady, her brows low", outfit=SU_ROBE_FROST)],
-   'Medium close two-shot, both from the head to the chest, in the middle third of the frame, on the ledge.',
-   "<lin_home> slices the insulation off the thin cable with the tip of the slim dagger, his lips pressed tight, his eyes narrowed and fixed and his brows low, then <su_cozy> holds the two bare cable ends in both hands and, after one small tremble, brings them steadily together, her lips pressed into a firm line, her eyes narrowed and perfectly steady and her brows low. Nobody speaks.",
-   "林峰用匕首尖把细线缆的外皮轻轻划开，嘴唇抿紧、眼睛眯起盯着、眉头压低，然后苏清月双手捏着两根露出来的线芯，手轻轻抖了一下，接着稳稳地把它们对在一起，嘴唇抿成一条坚定的线、眼睛眯起稳得一动不动、眉头压低。没有人说话。",
-   SOUND_STRIP, AES_STRIP, cam=push('both of them', '两人'), room={'Su', 'Lin'}, new=True,
-   bg='Behind them a faint blue moss glow outlines the frost-furred rock.',
-   holds='The frame holds exactly two people: Lin and Su, on the ledge, nobody else.')
-
-insert2('53-06', '06｜岩台上：两根线芯接在一起的地方迸出一团耀眼的蓝白色电火花，照亮了周围的岩壁，然后沉成一点稳稳的小蓝光', 5, HC_ICE,
+insert2('53-04', '04｜岩台上：两根线芯接在一起的地方迸出一团耀眼的蓝白色电火花，照亮了周围的岩壁，然后沉成一点稳稳的小蓝光', 5, HC_ICE,
         'Close shot of the joined wires on the flat rock, the bright spark in the middle third of the frame, nobody in the scene.',
         "Two thin wires lie joined on the flat frost-furred rock and a blinding blue-white spark bursts at the joint and lights the cave wall before it settles into a small steady blue glow. Nothing else moves.",
         "两根细线接在一起放在结霜的平坦岩石上，接口处迸出一团耀眼的蓝白色电火花，照亮了溶洞的岩壁，然后沉成一点小小的、稳稳的蓝色光。别的什么都不动。",
         SOUND_SPARK, 'The frame holds the joined wires with the spark on the flat rock, and nobody in the scene.',
         push1('the joined wires and the settling blue glow', '接在一起的线头和沉下来的蓝光'), AES_SPARK)
 
-TA('53-07', '07｜岸边：蓝光亮起，苏清月抬起头对林峰喊接通了，去压液压杆', 6, HC_ICE,
+DL('53-05', '05｜岸边：蓝光亮起，苏清月抬起头对林峰喊接通了，去压液压杆，林峰说撑住我这就去，她说快、门缝只能开一次', HC_ICE,
    [P('su_cozy', 'right', "kneeling on the ledge in profile facing frame-left, the joined wires glowing blue in her hands, her head up to him", 'Lin', "her lips parted in a ragged gasp, her eyes blazing and bright, her brows pulled high", outfit=SU_ROBE_FROST),
-    P('lin_home', 'left', "rising from his knees in profile facing frame-right, his hand braced on the rock, his eyes on her face", 'Su', "his jaw clenched, his eyes fierce and alert, his brows low", outfit=LIN_ROBE_ICE)],
+    P('lin_home', 'left', "kneeling on one knee in profile facing frame-right, his hand braced on the rock, his eyes on her face", 'Su', "his jaw clenched, his eyes fierce and alert, his brows low", outfit=LIN_ROBE_ICE)],
    'Medium close two-shot, both from the head to the chest, in the middle third of the frame, on the ledge.',
-   "<su_cozy> looks up from the glowing blue wires in her hands and speaks the one line to <lin_home> in a hoarse sharp voice, her lips parted in a ragged gasp, her eyes blazing and bright and her brows pulled high, while <lin_home> starts to rise from his knees, his jaw clenched, his eyes fierce and alert and his brows low.",
-   "苏清月从手里发着蓝光的线头上抬起头，用沙哑尖锐的声音对林峰说出这一句，嘴唇微张喘着粗气、眼睛灼灼发亮、眉毛高高拧起，林峰从跪着的姿势开始站起来，下颌咬紧、眼神凶狠警觉、眉头压低。",
-   SOUND_SPARK, AES_CONNECTED, lines=[('su_cozy', "接通了，去压液压杆！", 0.8, 'Lin')],
-   cam=push('both of them', '两人'), room={'Su', 'Lin'}, new=True,
+   [('su_cozy', "接通了，去压液压杆！", 'lin_home', 'hoarse sharp', '沙哑尖锐'),
+    ('lin_home', "撑住，我这就去！", 'su_cozy', 'rough fierce', '粗哑凶狠'),
+    ('su_cozy', "快，门缝只能开一次！", 'lin_home', 'urgent cracked', '急迫发破')],
+   SOUND_SPARK_V, AES_CONNECTED,
+   post_en='after the last line <lin_home> rises from his knee to his feet',
+   post_zh='最后一句之后，林峰从单膝跪着的姿势站了起来',
+   tail=1.5, mind=8, cam=push('both of them', '两人'), room={'Su', 'Lin'}, new=True,
    bg='Behind them the frost-furred rock and the black pool lie under a faint blue glow.',
    holds='The frame holds exactly two people: Su and Lin, on the ledge, nobody else.')
 
-TA('53-08', '08｜门边：林峰双手攥住地上的钢制液压杆，全身的肌肉绷紧，张着嘴吼出声来，拼命往下压', 7, DOOR_LEVER,
+DL('53-06', '06｜门边：林峰双手攥住地上的钢制液压杆，全身的肌肉绷紧，吼着说给我开，拼命往下压', DOOR_LEVER,
    [P('lin_home', 'center', "standing at the steel hydraulic lever in profile facing frame-left, both hands gripping its thick handle and pushing it down with his whole body, his feet braced", 'obj:the steel hydraulic lever handle', "his teeth bared in a roar, his jaw clenched, his eyes blazing, his brows pulled low", outfit=LIN_ROBE_ICE)],
    'Medium shot, one man from the head to the knees, in the middle third of the frame, at the lever.',
-   "<lin_home> grips the thick steel lever handle with both hands and drives it downward with his whole body, his teeth bared in a roar, his jaw clenched, his eyes blazing and his brows pulled low, while the cords of his neck and forearms stand out and grey dust sifts down around him.",
-   "林峰双手攥住粗粗的钢制杠杆把手，用全身的力气把它往下压，龇着牙吼着、下颌咬紧、眼睛灼灼发亮、眉头压低，脖子和前臂的青筋绷出来，灰色的尘土在他周围筛落。",
-   SOUND_LEVER_NV, AES_LEVER, cam=push1('Lin and the groaning lever', '林峰和发出呻吟的杠杆'), room={'Lin'}, new=True,
+   [('lin_home', "给我，开！", 'lin_home', 'roaring effortful', '吼出来的、吃力的')],
+   SOUND_LEVER, AES_LEVER,
+   pre_en='The cords of his neck and forearms stand out and grey dust sifts down around him.', pre_zh='他脖子和前臂的青筋绷出来，灰色的尘土在他周围筛落。',
+   post_en='he drives the lever down with his whole body',
+   post_zh='他用全身的力气把杠杆往下压',
+   tail=4.0, mind=8, cam=push1('Lin and the groaning lever', '林峰和发出呻吟的杠杆'), room={'Lin'}, new=True,
    bg='Behind him the crumpled grey alloy door fills the left of the frame and broken stones lie on the floor.',
    holds='The frame holds exactly one person: Lin, at the lever, nobody else.')
 
-insert2('53-09', '09｜门边：被砸变形的灰色合金门被顶开了一条半米宽的缝，缝里透进来一线淡淡的蓝光，灰色的尘土悬在空气里，小石子往下掉', 6, DOOR_GAP,
+insert2('53-07', '07｜门边：被砸变形的灰色合金门被顶开了一条半米宽的缝，缝里透进来一线淡淡的蓝光，灰色的尘土悬在空气里，小石子往下掉', 7, DOOR_GAP,
         'Wide shot of the door, the gap in the middle third of the frame, nobody in the scene.',
         "The crumpled grey alloy door now stands forced open by a vertical gap half a metre wide and a thin slice of faint blue light slants through it while grey dust hangs in the air and small stones tick down. Nothing else moves.",
         "被砸变形的灰色合金门被顶开了一条半米宽的竖缝，一道淡淡的蓝光斜着从缝里透过去，灰色的尘土悬在空气里，小石子嘀嘀嗒嗒往下掉。别的什么都不动。",
@@ -454,16 +534,20 @@ insert2('53-09', '09｜门边：被砸变形的灰色合金门被顶开了一条
         push1('the narrow gap and the slice of light', '窄窄的门缝和那道光'), AES_GAP)
 
 # ================================================================================================ 第 54 集
-b54 = S.episode('剧本第54集｜重见光明', '林峰死死撑住液压杆，喊快钻过去；苏清月侧身挤过窄窄的门缝；门在身后彻底卡死，林峰已经躺在上层的地面上大口喘气；他踉跄着冲向备用电源箱，一把推上总闸，绿灯亮起；伊甸的声音说备用电源已激活，欢迎回家；暖黄色的灯一排排亮满整间屋子，通风口里吹出二十六度的暖风，苏清月闭着眼笑了；两人换上柔软的家居服，裹着羊绒毯子紧紧抱在一起；苏清月轻声问外面那些疯子还在吗，林峰拿起遥控器打开监控，屏幕亮起来，两个人愣住了。', 54)
+b54 = S.episode('剧本第54集｜重见光明', '林峰死死撑住液压杆，喊快钻过去；苏清月侧身挤过窄窄的门缝；门在身后彻底卡死，林峰已经躺在上层的地面上大口喘气；他踉跄着冲向备用电源箱，一把推上总闸，绿灯亮起；伊甸的声音说备用电源已激活，欢迎回家；暖黄色的灯一排排亮满整间屋子，通风口里吹出二十六度的暖风，苏清月笑了；两人换上柔软的家居服，裹着羊绒毯子紧紧抱在一起；苏清月轻声问外面那些疯子还在吗，林峰拿起遥控器打开监控，屏幕亮起来，两个人愣住了。', 54)
 
-TA('54-01', '01｜门边：林峰两手死死撑住液压杆，对门缝边的苏清月吼快钻过去', 7, DOOR_LEVER,
+DL('54-01', '01｜门边：林峰两手死死撑住液压杆，对门缝边的苏清月吼快钻过去，她问那你怎么办，他说我撑得住，她说你一定要跟上来', DOOR_LEVER,
    [P('lin_home', 'right', "standing at the steel hydraulic lever in profile facing frame-left, both hands braced on the handle holding it down, his feet planted, his head turned to her", 'Su', "his teeth gritted, his jaw clenched, his eyes blazing, his brows pulled low", outfit=LIN_ROBE_ICE),
     P('su_cozy', 'left', "standing at the edge of the half-metre gap in the door in profile facing frame-right, one hand on the cold metal, her head turned to him", 'Lin', "her lips parted, her eyes wide, her brows pulled together", outfit=SU_ROBE_FROST)],
    'Medium two-shot, both from head to knees, in the middle third of the frame, at the door.',
-   "<lin_home> holds the lever down with both hands and speaks the one line to <su_cozy> in a loud roaring effortful voice, his teeth gritted, his jaw clenched, his eyes blazing and his brows pulled low, while <su_cozy> stands at the edge of the gap, her lips parted, her eyes wide and her brows pulled together.",
-   "林峰两手把杠杆死死压住，用吼出来的、吃力的声音对苏清月说出这一句，龇牙咬紧、下颌绷紧、眼睛灼灼发亮、眉头压低，苏清月站在门缝边上，嘴唇微张、眼睛睁大、眉头拧在一起。",
-   SOUND_LEVER, AES_GAPHOLD, lines=[('lin_home', "快！钻过去！", 0.8, 'Su')],
-   cam=push('both of them', '两人'), room={'Su', 'Lin'}, new=True,
+   [('lin_home', "快！钻过去！", 'su_cozy', 'loud roaring effortful', '吼出来的、吃力的'),
+    ('su_cozy', "那你怎么办？", 'lin_home', 'cracked frightened', '发破惊惶'),
+    ('lin_home', "我撑得住，快！", 'su_cozy', 'rough roaring', '粗哑吼出来的'),
+    ('su_cozy', "你一定要跟上来！", 'lin_home', 'cracked fierce', '发破凶狠')],
+   SOUND_LEVER, AES_GAPHOLD,
+   post_en='after the last line <su_cozy> turns sideways toward the half-metre gap in the door',
+   post_zh='最后一句之后，苏清月侧过身，对着门上那条半米宽的缝',
+   tail=1.5, cam=arc('the two of them', '两个人', 'they fill the middle third of the frame', '他们占满画面中间三分之一'), room={'Su', 'Lin'}, new=True,
    bg='Behind them the crumpled grey alloy door stands forced open by a narrow gap and grey dust sifts down.',
    holds='The frame holds exactly two people: Lin and Su, at the door, nobody else.')
 
@@ -476,13 +560,18 @@ TA('54-02', '02｜门缝：苏清月侧着身子，一点一点挤过那条窄�
    bg='Behind her the half-metre gap in the crumpled door shows faint blue moss light.',
    holds='The frame holds exactly one person: Su, at the gap, nobody else.')
 
-TA('54-03', '03｜上层走廊：林峰仰面躺在漆黑的地面上大口喘气，苏清月跪在他身边，变形的合金门已经在他们身后彻底卡死', 7, DOOR_SHUT,
+DL('54-03', '03｜上层走廊：林峰仰面躺在漆黑的地面上大口喘气，苏清月跪在他身边问他怎么样，他说还活着、门卡死了，没有电，配电箱在生活区，然后撑着坐起来', DOOR_SHUT,
    [P('lin_home', 'left', "lying flat on his back on the dark concrete floor in profile, one arm thrown across his chest, his head turned toward her", 'Su', "his jaw slack with exhaustion, his eyes half-closed and bright, his brows pulled together", outfit=LIN_ROBE_ICE),
     P('su_cozy', 'center', "kneeling beside his shoulder in profile facing frame-left, one hand on his chest, her head bent over him", 'Lin', "her lips trembling, her eyes glistening and wide, her brows pulled together", outfit=SU_ROBE_FROST)],
    'Medium two-shot, both from head to waist, in the middle third of the frame, on the corridor floor.',
-   "<lin_home> lies on his back on the dark concrete floor gasping, his jaw slack with exhaustion, his eyes half-closed and bright and his brows pulled together, while <su_cozy> kneels beside him with one hand on his chest, her lips trembling, her eyes glistening and wide and her brows pulled together. Nobody speaks.",
-   "林峰仰面躺在漆黑的水泥地上大口喘着气，下颌因脱力而松开、眼睛半闭着发亮、眉头拧在一起，苏清月跪在他身边，一只手按在他胸口，嘴唇发颤、眼睛含着泪睁大、眉头拧在一起。没有人说话。",
-   SOUND_FLOOR, AES_FLOOR, cam=push('both of them', '两人'), room={'Su', 'Lin'}, new=True,
+   [('su_cozy', "你怎么样？", 'lin_home', 'trembling worried', '发颤担心'),
+    ('lin_home', "还活着，门卡死了。", 'su_cozy', 'hoarse breathless', '沙哑喘不上气'),
+    ('su_cozy', "没有电，怎么办？", 'lin_home', 'cracked', '发破'),
+    ('lin_home', "配电箱，在生活区。", 'su_cozy', 'rough firm', '粗哑坚定')],
+   SOUND_FLOOR_V, AES_FLOOR,
+   post_en='after the last line <lin_home> rolls onto his side and pushes himself up on one elbow',
+   post_zh='最后一句之后，林峰翻到侧面，用一只手肘撑着身子坐起来',
+   tail=1.5, cam=lowrise('the two of them on the floor', '地上的两个人'), room={'Su', 'Lin'}, new=True,
    bg='Behind them the crumpled alloy door is jammed shut in its bent frame with a thin dim blue line of light around its edge.',
    holds='The frame holds exactly two people: Lin and Su, on the corridor floor, nobody else.')
 
@@ -495,16 +584,18 @@ TA('54-04', '04｜生活区：漆黑的屋子里，林峰踉跄着扑到墙上�
    bg='Behind him the dark shapes of the open kitchen and the round wooden table are barely visible and the round steel hatch door stands in the wall.',
    holds='The frame holds exactly one person: Lin, at the breaker box, nobody else.')
 
-TAV('54-05', '05｜生活区：林峰和苏清月站在刚亮起绿灯的配电箱旁，墙上的扬声器里传出伊甸温柔的声音说备用电源已激活，欢迎回家，林先生，苏女士', DARK_LIVING,
-    [P('lin_home', 'right', "standing at the breaker box in profile facing frame-left, one hand still on the lever, his head tipped toward the speaker on the wall", 'obj:the wall speaker with the thin glowing blue ring', "his jaw loosening, his eyes drained and bright, his brows easing", outfit=LIN_ROBE_ICE),
-     P('su_cozy', 'center', "standing beside him in profile facing frame-left, her arms wrapped around herself, her head tipped toward the speaker on the wall", 'obj:the wall speaker with the thin glowing blue ring', "her lips parting, her eyes wide and wet, her brows lifting", outfit=SU_ROBE_FROST)],
-    'Medium two-shot, both from the head to the waist, in the middle third of the frame, at the breaker box.',
-    "A soft, calm, polite female synthetic voice from the flat wall speaker with the thin glowing blue ring speaks the first line and then the second line as a voice-over to <lin_home>. <lin_home> stands with one hand still on the lever, his jaw loosening, his eyes drained and bright and his brows easing, and <su_cozy> stands beside him with her arms wrapped around herself, her lips parting, her eyes wide and wet and her brows lifting.",
-    "墙上那块带着一圈细细蓝光的扁扁的扬声器里传出轻柔平静、礼貌的女性合成声音，以旁白的方式说出第一句，接着说出第二句，对着林峰说。林峰一只手还放在杠杆上，下颌松开、眼神疲惫发亮、眉头舒展，苏清月抱着自己的手臂站在他身边，嘴唇微张、眼睛睁大含着泪、眉毛抬起。",
-    SOUND_EDEN, AES_EDENWAKE, [('eden_voice', "备用电源已激活。", 0.8, 'Lin'), ('eden_voice', "欢迎回家，林先生，苏女士。", 4.8, 'Lin')],
-    cam=push('both of them', '两人'), room={'Su', 'Lin'}, new=True,
-    bg='On the wall above them a flat speaker panel with a thin glowing blue ring glows and the grey breaker box glows green.',
-    holds='The frame holds exactly two people: Lin and Su, at the breaker box, nobody else.')
+on, off = (lambda a: ([x for x in a if x[0] not in VOICE_ONLY], [x for x in a if x[0] in VOICE_ONLY]))(
+    times([('eden_voice', "备用电源已激活。", 'Lin'), ('lin_home', "伊甸，开灯。", 'Su'), ('eden_voice', "欢迎回家，林先生，苏女士。", 'Lin'), ('su_cozy', "我们回来了。", 'Lin')]))
+TA('54-05', '05｜生活区：林峰和苏清月站在刚亮起绿灯的配电箱旁，伊甸温柔的声音说备用电源已激活，林峰说伊甸开灯，伊甸说欢迎回家，林先生，苏女士，苏清月说我们回来了', 12, DARK_LIVING,
+   [P('lin_home', 'right', "standing at the breaker box in profile facing frame-left, one hand still on the lever, his head tipped toward the speaker on the wall", 'obj:the wall speaker with the thin glowing blue ring', "his jaw loosening, his eyes drained and bright, his brows easing", outfit=LIN_ROBE_ICE),
+    P('su_cozy', 'center', "standing beside him in profile facing frame-left, her arms wrapped around herself, her head tipped toward the speaker on the wall", 'obj:the wall speaker with the thin glowing blue ring', "her lips parting, her eyes wide and wet, her brows lifting", outfit=SU_ROBE_FROST)],
+   'Medium two-shot, both from the head to the waist, in the middle third of the frame, at the breaker box.',
+   "A soft, calm, polite female synthetic voice from the flat wall speaker with the thin glowing blue ring speaks the first line as a voice-over to <lin_home>, then <lin_home> speaks the second line toward the wall speaker in a low hoarse voice, then the speaker voice speaks the third line as a voice-over to <lin_home>, then <su_cozy> speaks the fourth line to <lin_home> in a soft shaking voice; <lin_home> stands with one hand still on the lever, his jaw loosening, his eyes drained and bright and his brows easing, and <su_cozy> stands beside him with her arms wrapped around herself, her lips parting, her eyes wide and wet and her brows lifting." + BRISK_EN,
+   "墙上那块带着一圈细细蓝光的扁扁的扬声器里传出轻柔平静、礼貌的女性合成声音，以旁白的方式对着林峰说出第一句，接着林峰用低沉沙哑的声音朝着墙上的扬声器说出第二句，扬声器里的声音再以旁白的方式对着林峰说出第三句，接着苏清月用轻轻发抖的声音对林峰说出第四句；林峰一只手还放在杠杆上，下颌松开、眼神疲惫发亮、眉头舒展，苏清月抱着自己的手臂站在他身边，嘴唇微张、眼睛睁大含着泪、眉毛抬起。" + BRISK_ZH,
+   SOUND_EDEN, AES_EDENWAKE, lines=on, vo=off,
+   cam=push('both of them', '两人'), room={'Su', 'Lin'}, new=True,
+   bg='On the wall above them a flat speaker panel with a thin glowing blue ring glows and the grey breaker box glows green.',
+   holds='The frame holds exactly two people: Lin and Su, at the breaker box, nobody else.')
 
 insert2('54-06', '06｜生活区：暖黄色的灯一排排亮满了整间屋子，金色的光洒在奶油色的地毯和大理石台面上，黑金炉灶透着炭火般的橙光，屋里一个人也没有', 7, LIV_LIT,
         'Wide shot of the living area, the cream rug and the lamps in the middle third of the frame, nobody in the scene.',
@@ -513,46 +604,46 @@ insert2('54-06', '06｜生活区：暖黄色的灯一排排亮满了整间屋子
         SOUND_LAMPS, 'The frame holds the lit living area, and nobody in the scene.',
         slide('toward frame-right', '右', 'the glowing stove and the warm lamps fill the frame', '发光的炉灶和暖灯占满画面'), AES_LAMPS)
 
-TA('54-07', '07｜生活区：暖风从天花板的通风口吹下来，吹起苏清月潮湿的头发，她闭着眼睛笑了，林峰低声说二十六度，回家了', 8, LIV_VENT,
-   [P('su_cozy', 'left', "standing on the cream rug in profile facing frame-right, her chin lifted and her eyes closed, her damp hair lifting in the warm air", 'closed', "her lips curving in a tired sweet smile, her brows relaxed", outfit=SU_ROBE_FROST, shut='gently closed'),
+DL('54-07', '07｜生活区：暖风从天花板的通风口吹下来，吹起苏清月潮湿的头发，林峰低声说二十六度，回家了，她说还以为回不来了，他说说好了会带你回来，她笑着说我信你', LIV_VENT,
+   [P('su_cozy', 'left', "standing on the cream rug in profile facing frame-right, her chin lifted, her damp hair lifting in the warm air, her eyes on his face", 'Lin', "her lips curving in a tired sweet smile, her eyes soft and wet, her brows relaxed", outfit=SU_ROBE_FROST),
     P('lin_home', 'right', "standing beside her in profile facing frame-left, one arm around her shoulders, his head bent toward her", 'Su', "his jaw loosening, his eyes dark and warm, one corner of his mouth lifting, his brows soft", outfit=LIN_ROBE_ICE)],
    'Medium close two-shot, both from the head to the chest, in the middle third of the frame, on the rug.',
-   "<lin_home> speaks the one line to <su_cozy> in a low warm hoarse voice, his jaw loosening, his eyes dark and warm, one corner of his mouth lifting and his brows soft, while <su_cozy> stands with her chin lifted and her eyes closed in the warm air, her lips curving in a tired sweet smile and her brows relaxed, and the frost in their hair slowly melts into drops of water.",
-   "林峰用低沉温暖沙哑的声音对苏清月说出这一句，下颌放松、眼神深暗温暖、嘴角微微上扬、眉头柔和，苏清月仰着下巴闭着眼睛站在暖风里，嘴唇弯起疲惫的柔软的笑、眉头舒展，他们头发上的霜慢慢化成小水珠。",
-   SOUND_WARMAIR, AES_WARMAIR, lines=[('lin_home', "二十六度，回家了。", 0.8, 'Su')],
-   cam=push('both of them', '两人'), room={'Su', 'Lin'}, new=True,
+   [('lin_home', "二十六度，回家了。", 'su_cozy', 'low warm hoarse', '低沉温暖沙哑'),
+    ('su_cozy', "我还以为，回不来了。", 'lin_home', 'soft tired', '轻轻疲惫'),
+    ('lin_home', "说好了，我会带你回来。", 'su_cozy', 'low warm', '低沉温暖'),
+    ('su_cozy', "嗯，我信你。", 'lin_home', 'soft sweet', '轻柔甜软')],
+   SOUND_WARMAIR, AES_WARMAIR,
+   post_en='the frost in their hair slowly melts into drops of water after the last line',
+   post_zh='最后一句之后，他们头发上的霜慢慢化成小水珠',
+   tail=2.0, cam=push('both of them', '两人'), room={'Su', 'Lin'}, new=True,
    bg='Above them a square ceiling air vent blows warm air and behind them the black-and-gold stove glows at frame-left.',
    holds='The frame holds exactly two people: Su and Lin, on the rug, nobody else.')
 
-TA('54-08', '08｜沙发上：换上柔软的家居服的两个人裹着灰色的羊绒毯子，紧紧抱在一起，苏清月的头靠在林峰的胸口，谁也没有说话', 10, SOFA_HOME,
-   [P('su_cozy', 'left', "sitting curled on the deep brown leather sofa in three-quarter profile facing frame-right, her head resting on his chest, the grey cashmere blanket wrapped around both of them", 'closed', "her lips softly parted, her face utterly relaxed, her brows smooth", outfit=SU_HOMEWEAR, shut='gently closed'),
-    P('lin_home', 'right', "sitting on the sofa in profile facing frame-left, both arms wrapped around her, his chin resting on her hair, the blanket over his shoulders", 'closed', "his jaw loose, his lips softly closed, his brows smooth", shut='gently closed')],
+DL('54-08', '08｜沙发上：换上柔软家居服的两个人裹着灰色的羊绒毯子紧紧抱在一起，苏清月说抱着你就不冷了，他说以后再不让你冷，她轻声问外面那些疯子还在吗，他说我看看，从茶几上拿起遥控器', SOFA_HOME,
+   [P('su_cozy', 'left', "sitting curled against his side on the deep brown leather sofa in three-quarter profile facing frame-right, her head resting on his chest and turned up to him, the grey cashmere blanket wrapped around both of them", 'Lin', "her lips soft, her eyes dark and tender, her brows smooth", outfit=SU_HOMEWEAR),
+    P('lin_home', 'right', "sitting on the sofa in profile facing frame-left, both arms around her, his chin near her hair, a black remote control lying on the coffee table beside him, his head bent toward her", 'Su', "his jaw loose, his eyes dark and warm, his brows soft", outfit="in a soft grey cotton henley and loose dark lounge pants")],
    'Medium close two-shot, both from the head to the chest, in the middle third of the frame, on the sofa.',
-   "<su_cozy> lies curled against the chest of <lin_home> on the sofa, wrapped with him in the grey cashmere blanket, her lips softly parted, her face utterly relaxed and her brows smooth, while <lin_home> holds her tight with his chin on her hair, his jaw loose, his lips softly closed and his brows smooth, and their chests rise and fall slowly together. Nobody speaks.",
-   "苏清月蜷在林峰胸口，和他一起裹在灰色的羊绒毯子里，嘴唇轻轻张开、整张脸完全放松、眉头舒展，林峰紧紧抱着她，下巴抵在她的头发上，下颌放松、嘴唇轻轻闭着、眉头舒展，两个人的胸口一起慢慢起伏。没有人说话。",
-   SOUND_COZY, AES_COZY, cam=push('both of them', '两人'), room={'Su', 'Lin'}, new=True,
-   bg='Behind them the black-and-gold stove glows ember-orange at frame-left.',
+   [('su_cozy', "抱着你，就不冷了。", 'lin_home', 'soft low', '轻轻低低'),
+    ('lin_home', "以后，再不让你冷。", 'su_cozy', 'low warm', '低沉温暖'),
+    ('su_cozy', "外面那些疯子，还在吗？", 'lin_home', 'soft uneasy', '轻轻不安'),
+    ('lin_home', "我看看。", 'su_cozy', 'low calm', '低沉平静')],
+   SOUND_REMOTE, AES_REMOTE,
+   pre_en='Their chests rise and fall slowly together under the blanket.', pre_zh='毯子下面，两个人的胸口一起慢慢起伏。',
+   post_en='after the last line <lin_home> lifts the black remote control from the coffee table with his right hand while his left arm stays around her',
+   post_zh='最后一句之后，林峰右手从茶几上拿起黑色遥控器，左臂仍然搂着她',
+   tail=1.5, cam=slide('toward frame-left', '左', 'the two of them fill the middle third of the frame', '两人占满画面中间三分之一'), room={'Su', 'Lin'}, new=True,
+   bg='Behind them the black-and-gold stove glows ember-orange at frame-left and a wall of dark monitors stands at frame-right.',
    holds='The frame holds exactly two people: Su and Lin, on the sofa, nobody else.')
 
-TA('54-09', '09｜沙发上：苏清月靠在林峰怀里轻声问外面那些疯子还在吗，林峰从茶几上拿起遥控器', 8, SOFA_HOME,
-   [P('su_cozy', 'left', "sitting curled against his side on the sofa in three-quarter profile facing frame-right, her head turned up to him, the blanket around her shoulders", 'Lin', "her lips soft, her eyes dark and uneasy, her brows drawn together", outfit=SU_HOMEWEAR),
-    P('lin_home', 'right', "sitting on the sofa in profile facing frame-left, his left arm around her and his right hand lifting a black remote control from the coffee table, his head bent toward her", 'Su', "his jaw easy, his eyes dark and calm, his brows low", outfit="in a soft grey cotton henley and loose dark lounge pants")],
-   'Medium close two-shot, both from the head to the chest, in the middle third of the frame, on the sofa.',
-   "<su_cozy> looks up at <lin_home> and speaks the one line to <lin_home> in a soft low voice, her lips soft, her eyes dark and uneasy and her brows drawn together, while <lin_home> lifts the black remote control from the coffee table with his right hand and looks down at her, his jaw easy, his eyes dark and calm and his brows low.",
-   "苏清月抬头看着林峰，用轻轻低低的声音对他说出这一句，嘴唇柔软、眼神深暗带着不安、眉头微蹙，林峰右手从茶几上拿起黑色遥控器，低头看着她，下颌放松、眼神深暗平静、眉头压低。",
-   SOUND_REMOTE, AES_REMOTE, lines=[('su_cozy', "外面那些疯子，还在吗？", 0.8, 'Lin')],
-   cam=push('both of them', '两人'), room={'Su', 'Lin'}, new=True,
-   bg='Behind them the black-and-gold stove glows ember-orange and a wall of dark monitors stands at frame-right.',
-   holds='The frame holds exactly two people: Su and Lin, on the sofa, nobody else.')
-
-TA('54-10', '10｜沙发上：身后的监控墙忽然亮起冷白色的光，苏清月和林峰同时转过头去看，两个人都愣住了', 6, SOFA_SCREEN,
+TA('54-09', '09｜沙发上：身后的监控墙忽然亮起冷白色的光，苏清月和林峰同时转过头去看，两个人都愣住了', 6, SOFA_SCREEN,
    [P('su_cozy', 'left', "sitting on the sofa in profile facing frame-right, the blanket slipping off her shoulder, her head turned toward the monitor wall", 'obj:the bright monitor wall', "her lips falling open, her eyes wide in shock, her brows pulled high", outfit=SU_HOMEWEAR),
     P('lin_home', 'right', "sitting beside her in profile facing frame-right, the black remote control frozen in his raised hand, his head turned toward the monitor wall", 'obj:the bright monitor wall', "his jaw slackening, his eyes wide and fixed, his brows pulled together", outfit="in a soft grey cotton henley and loose dark lounge pants")],
    'Medium two-shot, both from the head to the waist, in the middle third of the frame, on the sofa.',
    "<su_cozy> and <lin_home> turn their heads toward the monitor wall as it flares up with a cold white glow and then freeze, <su_cozy> with her lips falling open, her eyes wide in shock and her brows pulled high, <lin_home> with the remote frozen in his raised hand, his jaw slackening, his eyes wide and fixed and his brows pulled together. Nobody speaks.",
    "监控墙忽然亮起冷白色的光，苏清月和林峰同时把头转向它，然后都僵住了，苏清月嘴唇张开、眼睛因震惊睁大、眉毛高高抬起，林峰举起的手里遥控器停在半空，下颌松下来、眼睛睁大盯着、眉头拧在一起。没有人说话。",
-   SOUND_SCREEN, AES_SCREEN, cam=push('both of them', '两人'), room={'Su', 'Lin'}, new=True,
+   SOUND_SCREEN, AES_SCREEN, cam=pull('the cold white glow of the monitor wall', '监控墙冷白色的光', 'the two stunned faces on the sofa', '沙发上两张愣住的脸'), room={'Su', 'Lin'}, new=True,
    bg='In front of them the wall of small security monitors glows bright white and the warm amber room lies behind them.',
    holds='The frame holds exactly two people: Su and Lin, on the sofa, nobody else.')
 
+print('\n'.join(f'{t}: 任务 {d} 秒，最后一句说完约 {e} 秒，{n} 句' for t, d, e, n in REPORT))
 doc = S.finish()
