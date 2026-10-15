@@ -4,6 +4,7 @@
 const { spawn, spawnSync } = require('child_process');
 const fs = require('fs');
 const path = require('path');
+const os = require('os');
 
 const SR = 16000, W = 96, H = 36;
 
@@ -226,7 +227,7 @@ async function probeFull(bin, file) {
 }
 
 // 把若干个 mp4 按给定顺序接成一个成片（重新编码一次，保证声画同步；尺寸、帧率以第一个为准）
-async function mergeClips(bin, files, dst) {
+async function mergeDirect(bin, files, dst) {
   if (!files.length) throw new Error('没有可以合并的片段');
   if (files.length === 1) { fs.copyFileSync(files[0], dst); const i = await probeFull(bin, dst); return { count: 1, dur: i.dur }; }
   const infos = [];
@@ -256,6 +257,26 @@ async function mergeClips(bin, files, dst) {
   await run(bin, args);
   const out = await probeFull(bin, dst);
   return { count: files.length, dur: out.dur };
+}
+
+// 片段很多时（例如 131 个）一次性把所有片段写进一条 ffmpeg 命令，会超过 Windows 的命令行长度上限（报 spawn ENAMETOOLONG）。
+// 所以超过 CHUNK 个就先分组合成临时文件，再把这些临时文件合成最终成片（分组文件用同样的统一格式，最后一步不会改变画面规格）。
+const CHUNK = 30;
+async function mergeClips(bin, files, dst) {
+  if (files.length <= CHUNK) return mergeDirect(bin, files, dst);
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'h3merge_'));
+  try {
+    const parts = [];
+    for (let i = 0; i < files.length; i += CHUNK) {
+      const part = path.join(dir, `p${parts.length}.mp4`);
+      await mergeDirect(bin, files.slice(i, i + CHUNK), part);
+      parts.push(part);
+    }
+    const r = await mergeClips(bin, parts, dst);
+    return { count: files.length, dur: r.dur };
+  } finally {
+    try { fs.rmSync(dir, { recursive: true, force: true }); } catch (e) { /* 临时文件清不掉也不影响成片 */ }
+  }
 }
 
 module.exports = { findFfmpeg, analyze, render, mergeClips, probeFull, PRESETS };
