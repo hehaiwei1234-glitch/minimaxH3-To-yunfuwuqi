@@ -5,6 +5,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import _jihan_base7 as B7
 from _jihan_base7 import *
 import _jihan_base6 as B6
+import _h3draft as _H
 
 # ---------------------------------------------------------------------------------------------- 衣着
 SU_CLINIC = "in a cream knit sweater and black thermal leggings, thick grey socks, her long black hair loose"
@@ -70,3 +71,20 @@ CONVOY_FAR = Scene('snow_field', FIELD.end,
 B7.VD['lin_work'] = B7.VD['lin_flood']
 B7.VD['lin_home'] = B7.VD['lin_flood']
 AE = lambda en, zh: (en, zh)
+
+
+# ---------------------------------------------------------------------------------------------- 内心独白（画面里的人嘴闭着，独白在画面上方响起）
+def MONO(tid, title, scene, people, framing, act_en, zh, sound, aes, lines, tail=2.0, mind=6, **kw):
+    """独白任务：lines 是独白句子的列表（说话人就是画面里的第一个人）。时间按当前 A／B 模式排；嘴写成闭着不动。"""
+    import math
+    a = people[0]['lk']
+    timed = B7.times([(a, t, None) for t in lines])
+    end = timed[-1][2] + _H.line_seconds(timed[-1][1])
+    d = max(mind, min(15, math.ceil(end + tail)))
+    if end + 1.06 > d or d > 15:
+        B7.FAILS.append(f'{tid}: 独白最后一句说完约 {end:.1f} 秒，放不进任务（要 ≤13.9）')
+        return None
+    vo = [(a, tx, st, B7.who(a)) for _, tx, st, _ in timed]
+    en = act_en.rstrip() + ' The lines are his inner voice-over, heard over the scene while his lips stay closed and do not move.' if LOOKS[a].pron == 'his' else act_en.rstrip() + ' The lines are her inner voice-over, heard over the scene while her lips stay closed and do not move.'
+    zz = zh.rstrip() + ('这些话是他的内心独白，在画面上方响起，他的嘴唇一直闭着、不动。' if LOOKS[a].pron == 'his' else '这些话是她的内心独白，在画面上方响起，她的嘴唇一直闭着、不动。')
+    return B7.TAA(tid, title, d, scene, people, framing, en, zz, sound, aes, vo=vo, **kw)
