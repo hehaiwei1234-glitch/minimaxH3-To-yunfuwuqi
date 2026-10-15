@@ -111,7 +111,7 @@ for ep in d['episodes']:
             if x is dl[0] and x['start_seconds'] > dur / 2: bad(t, f'台词“{x["text"]}”计划开口 {x["start_seconds"]} 秒，不在任务前半段（实际会晚 1–6 秒）')
             sp_keys = char_assets.get(x['speaker'], [])
             ok = [k for k in targets if k in s['asset_keys'] and roles.get(k) == 'character' and k not in sp_keys]
-            if not ok and not re.search(r'inner voice|voice-over|to (?:himself|herself)', vis, re.I): bad(t, f'台词“{x["text"]}”没在镜头文字里写明对谁说（… to [[asset:某人]]，那人要在画面里）；独白要写 inner voice')
+            if not ok and not re.search(r'inner voice|voice-over|to (?:himself|herself)|into (?:the|a) [^.;,]{0,60}(?:handset|microphone|radio)', vis, re.I): bad(t, f'台词“{x["text"]}”没在镜头文字里写明对谁说（… to [[asset:某人]]，那人要在画面里）；独白要写 inner voice')
             han = len(re.findall(r'[㐀-鿿]', x['text']))
             lang = x.get('language') or s.get('dialogue_language') or d.get('dialogue_language')
             if lang == 'en':
