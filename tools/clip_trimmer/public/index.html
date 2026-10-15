@@ -67,6 +67,7 @@ video{width:100%;border-radius:8px;background:#000}
 </main>
 <script>
 const $ = s => document.querySelector(s);
+let running = false; // 正在整理／合成时，“全部整理并保存”保持灰色（refreshTop 也不能把它重新点亮）
 const items = [];     // {id,name,group,card,res}
 const groups = new Map();   // 集名（zip 名）-> {box, body}；直接拖进来的 mp4 集名是空的
 const drop = $('#drop'), fileIn = $('#file');
@@ -213,16 +214,22 @@ async function saveItem(it, force) {
 
 function refreshTop() {
   const ok = items.filter(i => i.res);
-  $('#all').disabled = !ok.length;
+  $('#all').disabled = running || !ok.length;
   const a = ok.reduce((s,i) => s + i.res.dur, 0), b = ok.reduce((s,i) => s + i.res.newDur, 0);
   $('#total').textContent = ok.length ? `共 ${ok.length} 个片段：${fmt(a)} 秒 → 约 ${fmt(b)} 秒（未算加速）` : '';
 }
 $('#all').onclick = async () => {
-  $('#all').disabled = true;
-  const ready = items.filter(i => i.res).sort(byItem);
-  for (const it of ready) await saveItem(it);
-  if ($('#doMerge').checked) await mergeAll(ready);
-  $('#all').disabled = false;
+  if (running) return;
+  running = true;
+  const btn = $('#all'), label = btn.textContent;
+  btn.disabled = true; btn.textContent = '正在整理并合成…';
+  try {
+    const ready = items.filter(i => i.res).sort(byItem);
+    for (const it of ready) await saveItem(it);
+    if ($('#doMerge').checked) await mergeAll(ready);
+  } finally {
+    running = false; btn.textContent = label; refreshTop();
+  }
 };
 
 async function mergeAll(ready) {
