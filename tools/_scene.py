@@ -136,6 +136,7 @@ class Session:
           room=None, enter=(), exit=(), groups=(), bg='', holds=None, st=None, trigger=None, effect=None,
           interrupt=(), new=False, extra_assets=(), speaker_extra=(), vo=()):
         b = self.cur
+        if H.CFG.get('cap') and dur > H.CFG['cap']: dur = H.CFG['cap']
         if H.CFG.get('smooth') and lines and not vo:
             lines, dur, act_en, zh = smooth_task(lines, dur, act_en, zh)
         names = {}
@@ -186,6 +187,11 @@ class Session:
         for x in speaker_extra:
             if x not in chars: chars.append(x)
         asset_list = ([scene.key] if scene else []) + assets + list(extra_assets)
+        if H.CFG.get('cap') and spoken:
+            need = max(st_ + H.line_seconds(tx_) + 0.05 for _c, tx_, st_ in spoken) + 1.0
+            if need > dur:
+                dur = min(13, int(need) + (need > int(need)))      # 放不下：最多放宽到 13 秒（009 里跑过 13 秒）
+                print('  [放宽到 %d 秒]' % dur, tid)
         s = b.task(title, dur, chars, asset_list, [scene.key] if scene else [], img, end, zh,
                    '0—%d秒，%s' % (dur, cam[1]), None, refs(act_en) + ' ' + cam[0], zh + ' ' + cam[1], sound, lines=spoken or None)
         s['depends_on_previous'] = dep

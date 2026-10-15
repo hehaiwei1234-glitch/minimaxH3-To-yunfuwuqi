@@ -46,29 +46,38 @@ import _scene
 from _scene import smooth_text, TONE_FIX
 import _h3draft as _H
 
-_H.configure(smooth=True, fixed_seed=37407)
-OUT = '补拍/补拍2_降临全城_苏清月的求生之路_手术信任_制作稿_追加'
-S = Session('合并稿/018_第45-46集_十五秒满内容先行测试版_制作稿_追加.json', OUT, 61000)
+_H.configure(smooth=True, fixed_seed=37407, cap=12)   # 2026-10-15：15 秒任务让 sage attention 崩溃，全部压到 12 秒以内
+OUT = '补拍/补拍2_十二秒版_降临全城_苏清月的求生之路_手术信任_制作稿_追加'
+S = Session('合并稿/018_第45-46集_十二秒版_制作稿_追加.json', OUT, 61000)
 B6.S = S
 
 # ---------------------------------------------------------------------------------------------- 台词排时间（同 018）
-GAP = 0.9
+GAP = 0.5
 BRISK_EN = ' The lines follow one another at once with only a very short breath between them, each said in one breath with no pause inside the sentence.'
 BRISK_ZH = ' 台词一句紧接着一句，中间只有很短的换气，每句一口气说完、句中不停顿。'
 
 
-def times(spec, t0=0.6):
-    """spec = [(look, text, to)] → [(look, 顺滑后的文字, 起点, to)]。"""
-    out, t = [], t0
-    for sp, tx, to in spec:
-        tx2 = smooth_text(tx)
-        out.append((sp, tx2, round(t, 2), to))
-        t = t + _H.line_seconds(tx2) + GAP
+def times(spec, t0=0.4, gap=None):
+    def run(g):
+        out, t = [], t0
+        for sp, tx, to in spec:
+            tx2 = smooth_text(tx)
+            out.append((sp, tx2, round(t, 2), to))
+            t = t + _H.line_seconds(tx2) + g
+        return out
+    if gap is not None: return run(gap)
+    out = run(GAP)
+    if out[-1][2] + _H.line_seconds(out[-1][1]) + 1.1 > 12: out = run(0.35)     # 12 秒放不下：句间收到 0.35 秒
     return out
 
 
 def smooth15(lines, dur, act_en, zh):
-    new = times([(a, b, d) for a, b, c, d in lines])
+    spec = [(a, b, d) for a, b, c, d in lines]
+    new = times(spec)
+    need = lambda n: n[-1][2] + _H.line_seconds(n[-1][1]) + 0.05 + 1.0
+    if need(new) > dur: new = times(spec, gap=0.35)           # 台词放不下：句间收到 0.35 秒
+    if need(new) > dur:
+        dur = min(13, int(need(new) + 0.99)); print('  [放宽到 %d 秒] ' % dur, act_en[:50])   # 仍放不下：最多放宽到 13 秒（009 里跑过 13 秒）
     for a, b in TONE_FIX: act_en = act_en.replace(a, b)
     return new, dur, act_en + BRISK_EN, zh + BRISK_ZH
 

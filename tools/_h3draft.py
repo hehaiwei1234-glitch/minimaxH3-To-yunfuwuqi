@@ -10,11 +10,12 @@ LEAD = "Live-action, cinematic, photorealistic with natural skin texture, shallo
 IMG = ("One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. "
        "Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. ")
 # 项目配置：写新剧时用 configure() 改文件夹和风格词；旧剧（Alpha）不调用，行为完全不变。
-CFG = {'folder': FOLDER, 'img': IMG, 'lead': LEAD, 'lang': 'en', 'smooth': False, 'fixed_seed': None}   # lang: 台词语言，旧剧 en；新剧《极寒末日》发中国，用 zh
+CFG = {'folder': FOLDER, 'img': IMG, 'lead': LEAD, 'lang': 'en', 'smooth': False, 'fixed_seed': None, 'cap': None}   # lang: 台词语言，旧剧 en；新剧《极寒末日》发中国，用 zh
 
 
-def configure(folder=None, img=None, lead=None, lang=None, smooth=None, fixed_seed=None):
+def configure(folder=None, img=None, lead=None, lang=None, smooth=None, fixed_seed=None, cap=None):
     if smooth is not None: CFG['smooth'] = smooth       # 台词顺滑写法（2026-10-14）：去句内标点、任务按台词长度收紧、加“一口气”说明
+    if cap is not None: CFG['cap'] = cap   # 任务时长上限（秒）；2026-10-15 15 秒任务让 sage attention 崩溃，改成 12
     if fixed_seed is not None: CFG['fixed_seed'] = fixed_seed   # 全批视频固定一个种子（hh 2026-10-14）
     if lang: CFG['lang'] = lang
     if folder: CFG['folder'] = folder
