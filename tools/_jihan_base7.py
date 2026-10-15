@@ -70,38 +70,49 @@ def who(a):
     return LOOKS[a].who
 
 
-def DL(tid, title, scene, people, framing, spec, sound, aes, pre_en='', pre_zh='', post_en='', post_zh='', tail=None, mind=None, dur=None, cam=None, **kw):
+def DL(tid, title, scene, people, framing, spec, sound, aes, pre_en='', pre_zh='', post_en='', post_zh='', tail=None, mind=None, dur=None, cam=None, vd=None, ld=None, **kw):
     """对白任务。spec = [(说话人素材键, 台词, 对谁说的素材键, 英语语气, 中文语气)]。
-    对谁说：画面里的另一个人；'eden_voice' 这样的只出声的对象，台词在站位表里按画面里另一个人处理、文字写成“对着扬声器”；说话人和对象相同＝自言自语。"""
+    说话人／对象都在画面里：普通台词；说话人＝对象：自言自语（走旁白通道）；
+    说话人不在画面里（伊甸、收音机、耳机里的人）：画外音，需要在 vd 或模块里的 VD 给“声音从哪来”的描述（英文，中文）；
+    对象不在画面里（对着耳机麦克风、对着墙上的扬声器说）：在 ld 里给“朝向哪”的描述（英文，中文），站位表按“对自己”处理，走旁白通道。"""
     m = MODE['m']
     tail = TAILM[m] if tail is None else tail
     mind = MINM[m] if mind is None else mind
+    vdd = dict(VD, **(vd or {}))
+    ldd = dict(ld or {})
     onscreen = [p['lk'] for p in people]
-    timed = times([(a, t, who(c) if c not in VOICE_ONLY else None) for a, t, c, te, tz in spec])
+    timed = times([(a, t, None) for a, t, c, te, tz in spec])
     lines, vo = [], []
     parts_en, parts_zh = [], []
     for i, ((a, t, c, te, tz), (sp, tx, st, _)) in enumerate(zip(spec, timed)):
         lead = 'then ' if i else ''
         lead_zh = '接着' if i else ''
-        if c in VOICE_ONLY:
-            others = [o for o in onscreen if o != a]
-            to_blk = who(others[0]) if others else who(a)
-            tgt_en, tgt_zh = f'toward {VD[c][0]}', f'朝着{VD[c][1]}所在的墙面'
-        elif a == c:
-            to_blk, tgt_en, tgt_zh = who(a), 'herself aloud' if LOOKS[a].pron == 'her' else 'himself aloud', '自己低声'
+        a_off = (a in VOICE_ONLY) or (a not in onscreen)
+        c_off = (c in VOICE_ONLY) or (c not in onscreen and c != a)
+        assert not (a_off and c_off), (tid, '说话人和对象都不在画面里', a, c)
+        if a == c:
+            to_blk = who(a)
+            tgt_en, tgt_zh = ('herself aloud' if LOOKS[a].pron == 'her' else 'himself aloud'), '自己低声'
+        elif c_off:
+            to_blk = who(a)
+            tgt_en, tgt_zh = ldd[c] if c in ldd else ('toward ' + VD[c][0], '朝着' + VD[c][1] + '所在的墙面')
         else:
-            to_blk, tgt_en, tgt_zh = who(c), f'<{c}>', ZN.get(c, who(c))
+            to_blk = who(c)
+            tgt_en, tgt_zh = f'<{c}>', ZN.get(c, who(c))
         entry = (a, tx, st, to_blk)
-        if a in VOICE_ONLY or a == c:
+        if a_off or a == c or c_off:
             vo.append(entry)
         else:
             lines.append(entry)
-        if a in VOICE_ONLY:
-            parts_en.append(f"{lead}{VD[a][0]} speaks the {ORD[i]} line as a voice-over to <{c}> in a {te} voice")
-            parts_zh.append(f"{lead_zh}{VD[a][1]}以旁白的方式对{ZN.get(c, who(c))}用{tz}的声音说出{ORD_ZH[i]}")
+        if a_off:
+            parts_en.append(f"{lead}{vdd[a][0]} speaks the {ORD[i]} line as a voice-over to <{c}> in a {te} voice")
+            parts_zh.append(f"{lead_zh}{vdd[a][1]}以旁白的方式对{ZN.get(c, who(c))}用{tz}的声音说出{ORD_ZH[i]}")
         else:
-            parts_en.append(f"{lead}<{a}> speaks the {ORD[i]} line to {tgt_en} in a {te} voice")
-            parts_zh.append(f"{lead_zh}{ZN.get(a, who(a))}用{tz}的声音对{tgt_zh}说出{ORD_ZH[i]}")
+            if c_off and isinstance(tgt_en, str) and not tgt_en.startswith('toward'):
+                parts_en.append(f"{lead}<{a}> speaks the {ORD[i]} line {tgt_en} in a {te} voice")
+            else:
+                parts_en.append(f"{lead}<{a}> speaks the {ORD[i]} line to {tgt_en} in a {te} voice")
+            parts_zh.append(f"{lead_zh}{ZN.get(a, who(a))}用{tz}的声音{'对' if not c_off else ''}{tgt_zh}说出{ORD_ZH[i]}")
     last = timed[-1]
     end = last[2] + _H.line_seconds(last[1])
     d = dur or max(mind, min(15, math.ceil(end + tail)))
