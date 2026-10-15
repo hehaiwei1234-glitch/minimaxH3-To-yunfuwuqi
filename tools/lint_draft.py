@@ -95,12 +95,12 @@ for ep in d['episodes']:
                     bad(t, f'开场图里人物 {k} 没写看着谁（eyes … on 某人／某物，或闭眼）')
         dl = s['dialogue']
         dur = s['duration_seconds']
-        if dl and dur < 6: bad(t, '有台词的任务不要短于 6 秒')
+        if dl and dur < 5: bad(t, '有台词的任务不要短于 5 秒（2026-10-15 快节奏写法；此前是 6 秒）')
         if len(dl) > 4: bad(t, '一个任务多于四句台词')
         if len(dl) == 4 and dur < 10: bad(t, '四句台词的任务要 ≥10 秒（2026-10-13 新剧第 5 集起测试 12–15 秒四句短话＋结尾动作，待验证）')
         if len(dl) == 4: warn(t, '四句台词（测试写法：每句 ≤ 约 8 个汉字，最后要有一个结尾动作）')
-        if len(dl) == 3 and dur < 8: bad(t, '三句台词的任务要 ≥8 秒（2026-10-13 新剧第 1–4 集 004 起允许 3 句短话，待验证）')
-        if len(dl) >= 2 and dur < 7: bad(t, '两句台词的任务要 ≥7 秒（2026-10-14 起台词顺滑写法，任务按台词长度收紧）')
+        if len(dl) == 3 and dur < 7: bad(t, '三句台词的任务要 ≥8 秒（2026-10-13 新剧第 1–4 集 004 起允许 3 句短话，待验证）')
+        if len(dl) >= 2 and dur < 6: bad(t, '两句台词的任务要 ≥6 秒（2026-10-14 起台词顺滑写法，任务按台词长度收紧）')
         if dur >= 15 and len(dl) > 2: warn(t, '15 秒任务台词多于两句')
         # 每句台词：镜头文字里要写“对谁说”，对象在这个任务里、不是说话人
         targets = [m.group(1) for m in re.finditer(SPEAK.pattern + r"[^.;]{0,80}?\b(?:to|at) \[\[asset:(\w+)\]\]", vis, re.I)]

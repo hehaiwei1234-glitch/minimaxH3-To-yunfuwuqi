@@ -33,16 +33,19 @@ TONE_FIX = [(', quiet voice', ', clear voice'), ('breathy voice', 'bright voice'
 
 def smooth_task(lines, dur, act_en, zh):
     """把一个任务的台词改成“紧凑一口气”的写法并收紧任务长度。窗口 ≈ 自然说话时间 × 1.4。"""
-    new, t, tot = [], 0.6, 0.
+    new, t, tot = [], H.CFG['start'], 0.
     for sp, tx, start, to in lines:
         tx2 = smooth_text(tx); nat = H.line_seconds(tx2)
-        new.append((sp, tx2, round(t, 2), to)); t = t + nat + 0.25; tot += nat
+        new.append((sp, tx2, round(t, 2), to)); t = t + nat + H.CFG['gap']; tot += nat
     n = len(new)
-    need = 0.75 + 1.4 * tot + 0.12 * (n - 1)
+    need = 0.75 + H.CFG['need_k'] * tot + 0.12 * (n - 1)
     last_end = new[-1][2] + H.line_seconds(new[-1][1]) + 0.05
-    floor = {1: 6, 2: 7}.get(n, 8)
+    floor = H.CFG['floors'].get(n, max(H.CFG['floors'].values()) + 1)
     d = max(floor, int(-(-need // 1)), int(-(-(last_end + 1.0) // 1)))
     for a, b in TONE_FIX: act_en = act_en.replace(a, b)
+    if H.CFG['fast_text']:
+        act_en += ' The dialogue is delivered at a fast, snappy pace, about twenty percent quicker than normal speech, with no lingering pauses.'
+        zh += ' 台词语速偏快利落，比平常说话快两成左右，没有拖沓的停顿。'
     if n == 1:
         act_en += ' The line is spoken naturally in one breath, with no pause inside the sentence.'
         zh += ' 这句话自然地一口气说完，句中不停顿。'

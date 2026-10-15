@@ -25,7 +25,7 @@ from _jihan_base6 import *
 from _scene import smooth_task
 
 import _h3draft as _H
-_H.configure(smooth=True, fixed_seed=37407, cap=12)   # 台词顺滑写法＋全批固定视频种子；cap 只是保险（本批任务都 ≤10 秒）
+_H.configure(smooth=True, fixed_seed=37407, cap=12, fast=True)   # 台词顺滑写法＋全批固定视频种子；cap 只是保险（本批任务都 ≤10 秒）
 OUT = '合并稿/020_第51-54集_天崩地裂体温底线黑暗手术重见光明_制作稿_追加'
 S = Session('合并稿/019_第47-50集_十二秒版_顶级晚餐深雪地狱雪原幽灵绝对零度_制作稿_追加.json', OUT, 80000)
 B6.S = S

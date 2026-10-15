@@ -10,10 +10,13 @@ LEAD = "Live-action, cinematic, photorealistic with natural skin texture, shallo
 IMG = ("One coherent first frame from a photorealistic live-action romantic thriller, ultra-wide 8:3 cinemascope composition. "
        "Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. ")
 # 项目配置：写新剧时用 configure() 改文件夹和风格词；旧剧（Alpha）不调用，行为完全不变。
-CFG = {'folder': FOLDER, 'img': IMG, 'lead': LEAD, 'lang': 'en', 'smooth': False, 'fixed_seed': None, 'cap': None}   # lang: 台词语言，旧剧 en；新剧《极寒末日》发中国，用 zh
+CFG = {'folder': FOLDER, 'img': IMG, 'lead': LEAD, 'lang': 'en', 'smooth': False, 'fixed_seed': None, 'cap': None,
+       'pace': 1.0, 'fast_text': False, 'gap': 0.25, 'start': 0.6, 'need_k': 1.4, 'floors': {1: 6, 2: 7}, 'sfx_loud': False}   # lang: 台词语言，旧剧 en；新剧《极寒末日》发中国，用 zh
 
 
-def configure(folder=None, img=None, lead=None, lang=None, smooth=None, fixed_seed=None, cap=None):
+def configure(folder=None, img=None, lead=None, lang=None, smooth=None, fixed_seed=None, cap=None, fast=None):
+    if fast:   # 快节奏写法（hh 2026-10-15：29–44 集太慢、现场音太弱）：台词窗口不能短于插件的自然语速（插件会拒收），所以提速只写进文字；句间更紧、对白任务地板降低、现场音写响
+        CFG.update(fast_text=True, gap=0.1, start=0.4, need_k=1.25, floors={1: 5, 2: 6}, sfx_loud=True)
     if smooth is not None: CFG['smooth'] = smooth       # 台词顺滑写法（2026-10-14）：去句内标点、任务按台词长度收紧、加“一口气”说明
     if cap is not None: CFG['cap'] = cap   # 任务时长上限（秒）；2026-10-15 15 秒任务让 sage attention 崩溃，改成 12
     if fixed_seed is not None: CFG['fixed_seed'] = fixed_seed   # 全批视频固定一个种子（hh 2026-10-14）
@@ -32,10 +35,10 @@ def line_seconds(text):
     if CFG['lang'] == 'zh':
         han = len(re.findall(r'[\u3400-\u9fff]', text))
         pauses = len(re.findall(r'[、，,；;：:]', text)) * .12 + len(re.findall(r'[。！？!?]', text)) * .18
-        return max(.35, han / 4.0 + min(pauses, 1.5))
+        return max(.35, han / 4.0 / CFG['pace'] + min(pauses, 1.5))
     words = len(re.findall(r"[A-Za-z0-9]+(?:['’][A-Za-z0-9]+)*", text))
     pauses = len(re.findall(r'[,;:]', text)) * .12 + len(re.findall(r'[!?]', text)) * .18
-    return max(.35, words / 2.0 + min(pauses, 1.5))
+    return max(.35, words / 2.0 / CFG['pace'] + min(pauses, 1.5))
 
 
 def silent(sfx_en, sfx_zh):
@@ -46,13 +49,25 @@ NOWORD_EN = "No one speaks and no words are heard: only breathing, small sounds 
 NOWORD_ZH = "没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。"
 
 
+LOUD_EN = "Every on-set sound effect is loud, crisp and close to the microphone, as prominent as the voices: footsteps, impacts, doors, wind, ice, machinery and fabric are all clearly heard. No music."
+LOUD_ZH = "所有现场音效都响亮、清脆、贴近话筒，和人声一样突出：脚步、撞击、开关门、风声、冰裂、机械和衣料摩擦都听得清清楚楚。没有配乐。"
+_WEAK = [('faint ', 'clear '), ('soft ', 'crisp '), ('gentle ', 'clear '), ('quiet ', 'distinct '), ('thin ', 'sharp '), ('muffled ', 'heavy '), ('light ', 'crisp '), ('Faint ', 'Clear '), ('Soft ', 'Crisp '), ('Gentle ', 'Clear ')]
+
+
+def _loud(sfx_en):
+    for a, b in _WEAK: sfx_en = sfx_en.replace(a, b)
+    return sfx_en
+
+
 def breathy(sfx_en, sfx_zh):
     """无台词片的新写法（第 11 集起）：只禁说话和字词，不禁呼吸／喘息／低吼。
     旧写法 silent() 连呼吸也禁；“禁呼吸 → 近乎静音”是假设 H（补拍包 2 在测），这里按新写法排。"""
+    if CFG['sfx_loud']: return (_loud(sfx_en) + ' ' + NOWORD_EN + ' ' + LOUD_EN, sfx_zh + ' ' + NOWORD_ZH + LOUD_ZH)
     return (sfx_en + ' ' + NOWORD_EN, sfx_zh + ' ' + NOWORD_ZH)
 
 
 def voiced(extra_en, extra_zh):
+    if CFG['sfx_loud']: return (_loud(extra_en) + ' ' + LOUD_EN + ' The voices are clear.', extra_zh + LOUD_ZH + '人声清楚。')
     return (extra_en + ' Voices stay close and clear.', extra_zh + '人声近而清楚。')
 
 
