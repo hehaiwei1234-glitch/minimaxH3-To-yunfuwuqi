@@ -31,13 +31,13 @@ import _scene
 from _scene import smooth_text, TONE_FIX
 import _h3draft as _H
 
-_H.configure(smooth=True, fixed_seed=37407, cap=12)   # 2026-10-15：15 秒任务让 sage attention 崩溃，全部压到 12 秒以内
+_H.configure(smooth=True, fixed_seed=37407, cap=12, fast=True)   # fast：hh 2026-10-15 要求对白更快、句间更紧、现场音写响   # 2026-10-15：15 秒任务让 sage attention 崩溃，全部压到 12 秒以内
 OUT = '合并稿/019_第47-50集_十二秒版_顶级晚餐深雪地狱雪原幽灵绝对零度_制作稿_追加'
 S = Session('合并稿/018_第45-46集_十二秒版_制作稿_追加.json', OUT, 70000)
 B6.S = S
 
 # ---------------------------------------------------------------------------------------------- 本批的台词排时间（同 018）
-GAP = 0.5
+GAP = 0.2
 BRISK_EN = ' The lines follow one another at once with only a very short breath between them, each said in one breath with no pause inside the sentence.'
 BRISK_ZH = ' 台词一句紧接着一句，中间只有很短的换气，每句一口气说完、句中不停顿。'
 VOICE_ONLY = {'eden_voice'}
@@ -54,7 +54,7 @@ def times(spec, gap=None):
         return out
     if gap is not None: return run(gap)
     out = run(GAP)
-    if out[-1][2] + _H.line_seconds(out[-1][1]) + 1.1 > 12: out = run(0.35)     # 12 秒放不下：句间收到 0.35 秒
+    if out[-1][2] + _H.line_seconds(out[-1][1]) + 1.1 > 12: out = run(0.1)     # 12 秒放不下：句间收到 0.1 秒
     return out
 
 
@@ -62,11 +62,13 @@ def smooth15(lines, dur, act_en, zh):
     spec = [(a, b, d) for a, b, c, d in lines]
     new = times(spec)
     need = lambda n: n[-1][2] + _H.line_seconds(n[-1][1]) + 0.05 + 1.0
-    if need(new) > dur: new = times(spec, gap=0.35)           # 台词放不下：句间收到 0.35 秒
+    if need(new) > dur: new = times(spec, gap=0.1)           # 台词放不下：句间收到 0.1 秒
     if need(new) > dur:
         dur = min(13, int(need(new) + 0.99)); print('  [放宽到 %d 秒] ' % dur, act_en[:50])   # 仍放不下：最多放宽到 13 秒（009 里跑过 13 秒）
+    tight = int(new[-1][2] + _H.line_seconds(new[-1][1]) + 1.6 + .99)   # 最后一句说完后留约 1.6 秒收尾动作；对白任务不拖空
+    if dur > tight: dur = max(6, tight)
     for a, b in TONE_FIX: act_en = act_en.replace(a, b)
-    return new, dur, act_en + BRISK_EN, zh + BRISK_ZH
+    return new, dur, act_en + BRISK_EN + ' The dialogue is delivered at a fast, snappy pace, about twenty percent quicker than normal speech.', zh + BRISK_ZH + ' 台词语速偏快利落，比平常快两成左右。'
 
 
 _scene.smooth_task = smooth15
