@@ -182,6 +182,7 @@ class Session:
             spoken.append((LOOKS[sp].char, tx, start))
             if LOOKS[sp].char not in chars: chars.append(LOOKS[sp].char)
             assert to in frame, (tid, '画外音的对象不在画面里')
+        spoken.sort(key=lambda x: x[2])             # 画外音和画面里的人混排时，按开口时间排
         for x in speaker_extra:
             if x not in chars: chars.append(x)
         asset_list = ([scene.key] if scene else []) + assets + list(extra_assets)
