@@ -33,9 +33,9 @@ LIN_WET = "in a charcoal henley soaked dark with water and clinging to his shoul
 SU_HEADSET = "in a cream knit sweater with the sleeves pushed up, black thermal leggings and soft boots, a black over-ear headset with a slim boom microphone on her head, her long black hair tied back"
 SU_HAGGARD = "in a rumpled cream knit sweater with the sleeves pulled down over her hands and black thermal leggings, her long black hair unbrushed and loose, dark shadows under her eyes, a black headset hanging around her neck"
 SU_ALONE = "in an oversized charcoal henley that is clearly a man's, the sleeves rolled many times at her wrists, black thermal leggings and thick grey socks, her long black hair tied back loosely"
-look('lin_rec', 'LinRec', "a flat wall speaker panel with a thin glowing blue ring", 'none', 'its')
+look('lin_rec', 'LinRec', "a flat wall speaker panel with a thin blue ring", 'none', 'its')
 B7.VOICE_ONLY.add('lin_rec')
-B7.VD['lin_rec'] = ("the low steady recorded voice of a man, with a faint tape hiss, coming from the flat wall speaker panel with the thin glowing blue ring", '从墙上那块带着一圈细细蓝光的扁扁扬声器里传出的、带着细细磁带嘶声的一个男人低沉平稳的录音')
+B7.VD['lin_rec'] = ("the low steady recorded voice of a man, with a faint tape hiss, coming from the flat wall speaker panel with the thin blue ring", '从墙上那块带着一圈细细蓝圈的扁扁扬声器里传出的、带着细细磁带嘶声的一个男人低沉平稳的录音')
 B7.ZN['lin_rec'] = '林峰的录音'
 LINREC_EN = LIN_EN + ' This is an old recording heard through a small wall speaker with a faint tape hiss, warm and tired.'
 LINREC_ZH = LIN_ZH + '这是一段旧录音，通过墙上的小扬声器传出，带着细细的磁带嘶声，温暖而疲惫。'
@@ -148,7 +148,7 @@ DL('67-06', '06｜控制室：苏清月对着耳机说你说话啊，伊甸说�
       "冷冷的绿色指示灯光勾着她湿润的脸颊和黑色耳机，头顶墙上扬声器那圈细细的蓝光亮着，一滴眼泪在光里闪了一下。"),
    post_en='after the last line she lowers the headset slowly from her ears and holds it against her chest',
    post_zh='最后一句之后，她把耳机慢慢从耳朵上拿下来，抱在胸口',
-   cam=push1('her face and the headset', '她的脸和耳机'), bg='On the wall above the console a flat speaker panel with a thin glowing blue ring glows.',
+   cam=push1('her face and the headset', '她的脸和耳机'), bg='On the wall above the console a flat speaker panel with a thin blue ring glows.',
    room={'Su'}, ld=SU_LD, tail=2.5)
 
 INS('67-07', '07｜闸门室：黑色的水面渐渐安静下来，几个细小的气泡一个接一个浮到水面上，漾开一圈圈涟漪，暗红色的光在水面上慢慢暗下去', 8, GATE_WATER,
@@ -176,7 +176,7 @@ DL('68-01', '01｜控制室：憔悴的苏清月坐在转椅里，伊甸说通�
       "冷冷的绿色指示灯光勾着她凹陷的脸颊，头顶墙上扬声器那圈细细的蓝光亮着，屏幕一片淡淡的灰白色光落在她散着的头发上。"),
    post_en='after the last line she stands up slowly from the chair with one hand on the console',
    post_zh='最后一句之后，她一只手扶着控制台，慢慢从转椅里站起来',
-   cam=lowrise('her face and the wall speaker above', '她的脸和头顶的扬声器'), bg='On the wall above the console a flat speaker panel with a thin glowing blue ring glows.',
+   cam=lowrise('her face and the wall speaker above', '她的脸和头顶的扬声器'), bg='On the wall above the console a flat speaker panel with a thin blue ring glows.',
    room={'Su'}, tail=2.5)
 
 INS('68-02', '02｜生活区走廊：洪水退去后的长走廊，地上是湿漉漉的灰色淤泥和浅浅的水洼，墙上留着一道水线，两个黄色的小维修机器人静静停在一边', 7, CORR_DRAINED,
@@ -247,7 +247,7 @@ DL('68-07', '07｜控制室：苏清月站在控制台前，伊甸问是否保�
       "冷冷的绿色指示灯光勾着她的脸颊，头顶墙上扬声器那圈细细的蓝光亮着，一盏温暖的琥珀色灯在她怀里的日志边上镀了一道柔和的金边。"),
    post_en='after the last line she wipes her cheek with the back of her hand and walks out through the steel door at frame-right with the notebook against her chest',
    post_zh='最后一句之后，她用手背擦了一下脸颊，抱着日志大步走出右边的钢门',
-   cam=push1('her face and the wall speaker', '她的脸和墙上的扬声器'), bg='On the wall above the console a flat speaker panel with a thin glowing blue ring glows.',
+   cam=push1('her face and the wall speaker', '她的脸和墙上的扬声器'), bg='On the wall above the console a flat speaker panel with a thin blue ring glows.',
    room={'Su'}, exit=('Su',), tail=2.5)
 
 # ================================================================================================ 第 69 集（A）
@@ -275,7 +275,7 @@ DL('69-02', '02｜厨房：苏清月穿着林峰的亨利衫站在灶台前煮�
       "柔和的晨金色灯光铺在桌面上，两只白瓷杯像珍珠一样发亮，壶里的热气卷过她的脸颊，炉灶琥珀色的光暖着画面的边缘。"),
    post_en='after the last line she sets the kettle down and slides the second cup an inch toward the empty chair',
    post_zh='最后一句之后，她放下茶壶，把第二只杯子朝空椅子那边推了一寸',
-   cam=push1('her face and the two cups', '她的脸和两只杯子'), bg='On the wall above the table a flat speaker panel with a thin glowing blue ring glows and the black-and-gold stove glows ember-orange at frame-left.',
+   cam=push1('her face and the two cups', '她的脸和两只杯子'), bg='On the wall above the table a flat speaker panel with a thin blue ring glows and the black-and-gold stove glows ember-orange at frame-left.',
    room={'Su'}, tail=2.5)
 
 DL('69-03', '03｜地下二层农场：苏清月站在小讲台前照着日志浇水，自言自语念着他写的字，说三号槽每天浇一次水，说番茄不要见光太久，说他连字都写得这么凶', EDEN_NOTE,
@@ -314,7 +314,7 @@ DL('69-05', '05｜地下二层农场：苏清月停在番茄藤前，伊甸说�
       "粉紫色的生长灯光透过叶子发亮，在她的脸颊和抬起的手指上勾出一圈柔和的边，身边那颗红番茄像一盏小灯笼一样发着光。"),
    post_en='after the last line she lets her hand drop and leaves the tomato hanging',
    post_zh='最后一句之后，她把手放下来，让那颗番茄继续挂在藤上',
-   cam=push1('her face and the red tomato', '她的脸和红番茄'), bg='On the wall behind the lectern a flat speaker panel with a thin glowing blue ring glows.',
+   cam=push1('her face and the red tomato', '她的脸和红番茄'), bg='On the wall behind the lectern a flat speaker panel with a thin blue ring glows.',
    room={'Su'}, tail=2.5)
 
 DL('69-06', '06｜控制室：伊甸说苏清月的体重下降了三公斤，她说我知道，伊甸说林先生留下了食谱，她说念给我听', CONTROL_C,
@@ -329,7 +329,7 @@ DL('69-06', '06｜控制室：伊甸说苏清月的体重下降了三公斤，�
       "冷冷的绿色指示灯光勾着她的脸颊，杯子里的热气在光里卷着，一盏温暖的琥珀色灯在那件宽大的袖子上镀了一道柔和的金边，头顶扬声器的蓝光亮着。"),
    post_en='after the last line she wraps both hands tighter around the mug and rests her cheek on her knee',
    post_zh='最后一句之后，她两只手把杯子握得更紧，把脸颊靠在膝盖上',
-   cam=push1('her face and the mug', '她的脸和马克杯'), bg='On the wall above the console a flat speaker panel with a thin glowing blue ring glows.',
+   cam=push1('her face and the mug', '她的脸和马克杯'), bg='On the wall above the console a flat speaker panel with a thin blue ring glows.',
    room={'Su'}, tail=2.5)
 
 TAA('69-07', '07｜厨房：傍晚，苏清月一个人站在灶台前，把煮好的番茄鸡蛋盛进碗里，尝了一小口，慢慢咽下去，轻轻点了点头，眼眶红了', 8, KITCH_TEA,
@@ -406,7 +406,7 @@ DL('70-05', '05｜控制室：伊甸说有一段林先生留下的录音，苏�
       "冷冷的绿色指示灯光勾着她湿润的脸颊，头顶墙上扬声器那圈细细的蓝光亮着，一盏温暖的琥珀色灯在她发抖的手上镀了一道柔和的金边。"),
    post_en='after the last line she lays her palm flat against the wall below the speaker and closes her eyes',
    post_zh='最后一句之后，她把手掌平平地按在扬声器下面的墙上，闭上眼睛',
-   cam=push1('her face and the wall speaker', '她的脸和墙上的扬声器'), bg='On the wall above the console a flat speaker panel with a thin glowing blue ring glows.',
+   cam=push1('her face and the wall speaker', '她的脸和墙上的扬声器'), bg='On the wall above the console a flat speaker panel with a thin blue ring glows.',
    room={'Su'}, tail=2.5, extra_assets=())
 
 TAA('70-06', '06｜控制室：苏清月把额头靠在扬声器下面的墙上，手掌贴着墙，肩膀轻轻颤抖，闭着眼睛，眼泪顺着脸颊流下来，嘴角却微微弯起', 8, CONTROL_C,
@@ -432,7 +432,7 @@ DL('70-07', '07｜控制室：伊甸报告地表温度升到零度，苏清月�
       "冷冷的绿色指示灯光勾着她的脸颊，头顶墙上扬声器那圈细细的蓝光亮着，屏幕一片淡淡的灰白色光落在日志上。"),
    post_en='after the last line she lifts her chin and tucks the notebook under her arm',
    post_zh='最后一句之后，她抬起下巴，把日志夹在胳膊底下',
-   cam=lowrise('her face and the wall speaker', '她的脸和墙上的扬声器'), bg='On the wall above the console a flat speaker panel with a thin glowing blue ring glows.',
+   cam=lowrise('her face and the wall speaker', '她的脸和墙上的扬声器'), bg='On the wall above the console a flat speaker panel with a thin blue ring glows.',
    room={'Su'}, tail=2.5)
 
 report()

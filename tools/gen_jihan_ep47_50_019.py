@@ -30,6 +30,7 @@ from _jihan_base6 import *
 import _scene
 from _scene import smooth_text, TONE_FIX
 import _h3draft as _H
+import _voiceins as VI
 
 _H.configure(smooth=True, fixed_seed=37407, cap=12, fast=True)   # fast：hh 2026-10-15 要求对白更快、句间更紧、现场音写响   # 2026-10-15：15 秒任务让 sage attention 崩溃，全部压到 12 秒以内
 OUT = '合并稿/019_第47-50集_十二秒版_顶级晚餐深雪地狱雪原幽灵绝对零度_制作稿_追加'
@@ -81,13 +82,26 @@ def MIX(spec):
     return on, off
 
 
+def VINS(tid, run, scene, sound, room, new):
+    """“只有声音”的台词（伊甸）→ 不带人的插镜（2026-10-16，见 _voiceins.py）。run = [(说话人, 台词, 英语语气, 中文语气)]。"""
+    def timer(spec):
+        t = times(spec)
+        for g in (0.1,):
+            if t[-1][2] + _H.line_seconds(t[-1][1]) + 1.06 > 12: t = times(spec, gap=g)
+        return t
+    r, d, end = VI.insert(S, tid, [(a, tx, None, te, tz) for a, tx, te, tz in run], scene, sound, room, new, timer,
+                          brisk=(BRISK_EN + ' The dialogue is delivered at a fast, snappy pace, about twenty percent quicker than normal speech.', BRISK_ZH + ' 台词语速偏快利落，比平常快两成左右。'))
+    print('  [插镜 %s：%d 秒，最后一句约 %.1f 秒]' % (tid, d, end))
+    return r
+
+
 def LN(*spec):
     """画面里的人的台词：spec = [(look, text, to)] → TA 的 lines 参数（起点已按 15 秒写法排好）。"""
     return times(list(spec))
 
 
 # ---------------------------------------------------------------------------------------------- 外貌／声音（018 里已有的）
-look('eden_voice', 'Eden', "a flat wall speaker panel with a thin glowing blue ring", 'none', 'its')
+look('eden_voice', 'Eden', "a flat wall speaker panel with a thin blue ring", 'none', 'its')
 LIN_ROBE = "in a thick grey terry bathrobe tied at the waist, his black hair damp"
 CN_M40 = 'a Chinese man in his forties'
 
@@ -240,6 +254,10 @@ SOUND_FROZEN = voiced('The howl of the blizzard, the idle growl of a heavy engin
 SOUND_ALARM = voiced('A sharp repeating alarm beep, a low electronic hum and a calm synthetic chime.', '尖锐反复的警报声、低低的电子嗡鸣和平静的合成提示音。')
 SOUND_AIRLOCK = voiced('The soft hiss of a vent, the muffled howl of a storm beyond a steel door and the creak of frosted fabric.', '通风口轻轻的嘶嘶声、钢门外闷闷的暴风雪呼啸和结霜的衣料嘎吱声。')
 SOUND_HATCH = voiced('A calm synthetic chime, the deep grinding of a heavy steel hatch swinging open and the sudden roar of a storm.', '平静的合成提示音、厚重钢门转开时深沉的摩擦声和风暴突然灌进来的轰鸣。')
+SOUND_BOOMQ = breathy('A deep muffled boom through the earth, a rattle of glass and the creak of a swinging lamp.', '穿过大地传来一声沉闷的轰响、玻璃的颤抖声和吊灯晃动的吱嘎声。')
+SOUND_ALARMQ = breathy('A sharp repeating alarm beep, a low electronic hum and the slow creak of a swivel chair.', '尖锐反复的警报声、低低的电子嗡鸣和转椅慢慢的吱呀声。')
+SOUND_HATCHQ = breathy('The deep grinding of a heavy steel hatch swinging open and the sudden roar of a storm pouring in.', '厚重钢门转开时深沉的摩擦声和风暴突然灌进来的轰鸣。')
+SOUND_EDENQ = voiced('A soft electronic chime and the low hum of the room.', '轻轻的电子鸣音和房间低低的嗡鸣。')
 SOUND_CRAWL = breathy('The howl of a blizzard, a soft rhythmic scrape of fabric on snow and his muffled breath.', '暴风雪的呼啸、衣料在雪上有节奏的轻轻摩擦声和他压低的呼吸。')
 SOUND_BOMBSITE = voiced('The howl of the blizzard, the clink of tools on steel and the creak of a swaying lamp.', '暴风雪的呼啸、工具敲在钢铁上的叮当声和灯架晃动的吱嘎声。')
 SOUND_BOLT = breathy('The howl of the blizzard and one sharp whisper of a crossbow bolt cutting through the air.', '暴风雪的呼啸和一支弩箭划破空气的一声尖细的轻响。')
@@ -324,16 +342,28 @@ TA('47-05', '05｜全息台前：林峰端着红酒杯走到全息台边，投�
    bg='Between them the round holographic table glows pale blue and the wall of six small monitors shows white blizzards at frame-left.',
    holds='The frame holds exactly two people: Su and Lin, at the holographic table, nobody else.')
 
-on, off = MIX([('eden_voice', "目标进入绝对防御圈。", 'Lin'), ('eden_voice', "他们在炮轰疑似入口。", 'Lin'), ('lin_white', "伊甸，启动深雪地狱协议。", 'Su')])
-TA('47-06', '06｜暖屋里：一声沉闷的炮响穿过冻土传下来，吊灯摇晃，杯中红酒荡起波纹，墙上的扬声器里伊甸报告目标进入防御圈，林峰仰头喝尽红酒，下令启动深雪地狱协议', 12, LIV_BOOM,
-   [P('su_cozy', 'left', "standing at the marble counter in profile facing frame-right, one hand on the counter, her eyes on the swinging lamp", 'obj:the swinging pendant lamp above the counter', "her lips parted, her eyes wide, her brows pulled together"),
-    P('lin_white', 'center-right', "standing at the counter in profile facing frame-left, a wine glass in one hand, his eyes on the swinging lamp", 'obj:the swinging pendant lamp above the counter', "his eyes cold and bright, his jaw loose, one corner of his mouth lifting coldly, his brows low", outfit="in a clean white dress shirt with the sleeves rolled to his forearms and dark trousers, his black hair neatly combed")],
+PEO_4706 = [P('su_cozy', 'left', "standing at the marble counter in profile facing frame-right, one hand on the counter, her eyes on the swinging lamp", 'obj:the swinging pendant lamp above the counter', "her lips parted, her eyes wide, her brows pulled together"),
+            P('lin_white', 'center-right', "standing at the counter in profile facing frame-left, a wine glass in one hand, his eyes on the swinging lamp", 'obj:the swinging pendant lamp above the counter', "his eyes cold and bright, his jaw loose, one corner of his mouth lifting coldly, his brows low", outfit="in a clean white dress shirt with the sleeves rolled to his forearms and dark trousers, his black hair neatly combed")]
+TA('47-06', '06｜暖屋里：一声沉闷的炮响穿过冻土传下来，吊灯摇晃，杯中红酒荡起波纹，苏清月抬头看着灯，林峰端着酒杯一动不动', 6, LIV_BOOM, PEO_4706,
    'Medium two-shot, both from the head to the waist, in the middle third of the frame, at the counter.',
-   "A soft, calm, polite female synthetic voice from the wall speaker speaks the first line and then the second line as a voice-over to <lin_white>, while the pendant lamp swings and the wine ripples in the glasses; then <lin_white> tips his head back and drains his glass, lowers it and speaks the third line toward the wall speaker in a low cold voice, his eyes cold and bright, one corner of his mouth lifting coldly and his brows low, while <su_cozy> watches him with her lips parted, her eyes wide and her brows pulled together.",
-   "墙上的扬声器里传出轻柔平静、礼貌的女性合成声音，以旁白的方式先说出第一句、再说出第二句，对着林峰说，吊灯摇晃，杯子里的红酒荡起波纹；接着林峰仰头喝尽杯中的酒，放下杯子，用低沉冰冷的声音朝着墙上的扬声器说出第三句，他眼神冰冷明亮、嘴角冷冷一挑、眉头压低，苏清月看着他，嘴唇微张、眼睛睁大、眉头拧在一起。" + BRISK_ZH,
+   "A deep muffled boom rolls through the ground and the pendant lamp above the counter swings, the red wine rippling in the glass in <lin_white>'s hand, <lin_white> standing with his eyes cold and bright, his jaw loose, one corner of his mouth lifting coldly and his brows low, while <su_cozy> holds the counter with her lips parted, her eyes wide and her brows pulled together.",
+   "一声沉闷的轰响穿过大地传来，柜台上方的吊灯摇晃起来，林峰手里杯中的红酒荡起波纹，他站着，眼神冰冷明亮、下颌放松、嘴角冷冷一挑、眉头压低，苏清月扶着台面，嘴唇微张、眼睛睁大、眉头拧在一起。",
+   SOUND_BOOMQ, AES_BOOM,
+   cam=push('both of them', '两人'), extra_assets=(), room={'Su', 'Lin'}, new=True,
+   bg='Above them a small round speaker grille is set into the concrete wall and the wall of small security monitors shows white blizzards at frame-center-right.',
+   holds='The frame holds exactly two people: Su and Lin, at the counter, nobody else.')
+
+VINS('47-06v', [('eden_voice', "目标进入绝对防御圈。", 'soft, calm', '轻柔平静'), ('eden_voice', "他们在炮轰疑似入口。", 'soft, calm', '轻柔平静')],
+     LIV_BOOM, SOUND_EDENQ, {'Su', 'Lin'}, False)
+
+_t = smooth_text("伊甸，启动深雪地狱协议。")
+TA('47-06p', '06｜暖屋里：林峰仰头喝尽杯中的红酒，放下杯子，朝着墙上的扬声器下令启动深雪地狱协议，苏清月看着他', 8, LIV_BOOM, PEO_4706,
+   'Medium two-shot, both from the head to the waist, in the middle third of the frame, at the counter.',
+   "<lin_white> tips his head back and drains his glass, lowers it and speaks the line toward the wall speaker in a low cold voice, his eyes cold and bright, one corner of his mouth lifting coldly and his brows low, while <su_cozy> watches him with her lips parted, her eyes wide and her brows pulled together.",
+   "林峰仰头喝尽杯中的酒，放下杯子，用低沉冰冷的声音朝着墙上的扬声器说出这句话，他眼神冰冷明亮、嘴角冷冷一挑、眉头压低，苏清月看着他，嘴唇微张、眼睛睁大、眉头拧在一起。",
    SOUND_BOOM, AES_BOOM,
-   lines=on, vo=off,
-   cam=pull('the swinging lamp and the two of them at the counter', '摇晃的吊灯和吧台边的两人', 'the whole warm room with the heavy hatch door in the distance', '整间暖屋和远处厚重的圆形钢门'), extra_assets=('hack_screen',), room={'Su', 'Lin'}, new=True,
+   vo=[('lin_white', _t, 2.6, 'Lin')],
+   cam=push('both of them', '两人'), extra_assets=(), room={'Su', 'Lin'}, new=False,
    bg='Above them a small round speaker grille is set into the concrete wall and the wall of small security monitors shows white blizzards at frame-center-right.',
    holds='The frame holds exactly two people: Su and Lin, at the counter, nobody else.')
 
@@ -415,17 +445,19 @@ TA('48-07', '07｜雪原：几百个暴徒冻在原地谁也不敢动，独眼�
    bg='Behind them hundreds of bundled men stand frozen in the white storm with their rifles lowered, none of them speaking, all sharp and in focus.',
    holds='The frame holds exactly two named men, Duyan and Pang, in front, and a large crowd of bundled men standing frozen behind them, everyone sharp and in focus.')
 
-on, off = MIX([('eden_voice', "警告，检测到温压弹反应。", 'Lin'), ('eden_voice', "正上方引爆，岩层六成会塌方。", 'Lin'), ('su_cozy', "那是我们的温泉！", 'Lin')])
-TA('48-08', '08｜控制室：红色警报灯狂闪，伊甸报告检测到温压弹，如果在正上方引爆，温泉岩层有六成概率塌方，苏清月脸色一变，林峰的眼神瞬间冷下来', 13, CTRL_ALARM,
+VINS('48-08v', [('eden_voice', "警告，检测到温压弹反应。", 'soft, calm', '轻柔平静'), ('eden_voice', "正上方引爆，岩层六成会塌方。", 'soft, calm', '轻柔平静')],
+     CTRL_ALARM, SOUND_EDENQ, {'Su', 'Lin'}, True)
+
+TA('48-08', '08｜控制室：红色警报灯狂闪，苏清月脸色一变抓住林峰的肩膀问那是我们的温泉，林峰一动不动，眼神瞬间冷下来', 8, CTRL_ALARM,
    [P('lin_home', 'right', "sitting in the black swivel chair at the console in profile facing frame-left, his hands flat on the desk, his eyes on the console", 'obj:the console in front of him', "his jaw clenched, his eyes cold and sharp, his brows low", outfit="in a soft grey henley and dark lounge pants"),
     P('su_cozy', 'center', "standing behind his chair in profile facing frame-left, one hand gripping his shoulder, her head turned to him", 'Lin', "her lips parted, her face pale, her brows pulled high")],
    'Medium two-shot, both from the head to the waist, in the middle third of the frame, at the control console.',
-   "A soft, calm, polite female synthetic voice from the speaker above the console speaks the first line and then the second line as a voice-over to <lin_home>; then <su_cozy> speaks the third line to <lin_home> in a tight breathless voice; <lin_home> sits motionless with his hands flat on the desk, his jaw clenched, his eyes cold and sharp and his brows low, while <su_cozy> grips his shoulder with her lips parted, her face pale and her brows pulled high, the red alarm pulse washing over them.",
-   "控制台上方的扬声器里传出轻柔平静、礼貌的女性合成声音，以旁白的方式先说出第一句、再说出第二句，对着林峰说；接着苏清月用紧绷、喘不上气的声音对林峰说出第三句；林峰一动不动地坐着，两手平放在桌上，下颌咬紧、眼神冰冷锐利、眉头压低，苏清月抓着他的肩膀，嘴唇微张、脸色发白、眉毛高高挑起，红色警报的光一阵阵洗过两个人。" + BRISK_ZH,
+   "<su_cozy> speaks the first line to <lin_home> in a tight breathless voice; <lin_home> sits motionless with his hands flat on the desk, his jaw clenched, his eyes cold and sharp and his brows low, while <su_cozy> grips his shoulder with her lips parted, her face pale and her brows pulled high, under the flashing red alarm light.",
+   "苏清月用紧绷、喘不上气的声音对林峰说出第一句；林峰一动不动地坐着，两手平放在桌上，下颌咬紧、眼神冰冷锐利、眉头压低，苏清月抓着他的肩膀，嘴唇微张、脸色发白、眉毛高高挑起，红色警报灯在狂闪。",
    SOUND_ALARM, AES_ALARM,
-   lines=on, vo=off,
-   cam=push('both of them', '两人'), extra_assets=('hack_screen',), room={'Su', 'Lin'}, new=True,
-   bg='Above the console a small round speaker grille glows faintly and the wall of six small monitors glows deep blue at frame-left.',
+   lines=LN(('su_cozy', "那是我们的温泉！", 'Lin')),
+   cam=push('both of them', '两人'), extra_assets=(), room={'Su', 'Lin'}, new=False,
+   bg='Above the console a small round speaker grille sits still and the wall of six small monitors glows deep blue at frame-left.',
    holds='The frame holds exactly two people: Lin and Su, at the control console, nobody else.')
 
 # ================================================================================================ 第 49 集
@@ -467,17 +499,29 @@ TA('49-01', '01｜监控室：林峰把橘子皮丢进盘子，冷冷说有几�
    bg='Behind them the wall of small security monitors glows cool blue and the glass bowl of mandarins and the white plate with the orange peel sit on the coffee table.',
    holds='The frame holds exactly two people: Su and Lin, at the sofa, nobody else.')
 
-on, off = MIX([('eden_voice', "外门风速九级。", 'Lin'), ('su_cozy', "最后一道闸门，只有你能关。", 'Lin'), ('lin_ghillie', "我知道，回来再关。", 'Su'), ('eden_voice', "外门开启。", 'Lin')])
-TA('49-02', '02｜缓冲舱：林峰穿着纯白色的吉利服站在厚重的暗门前，伊甸报告外面风速九级，苏清月说最后一道手动闸门只有他的手能关，他说回来再关，门转开，暴风雪灌进来', 14, AIR_OUT,
-   [P('su_cozy', 'left', "standing on the white tiles in profile facing frame-right, one hand reaching up to straighten the white scarf at his chin, her eyes on his face", 'Lin', "her eyes steady and worried, her lips pressed in a firm line, her brows pulled together"),
-    P('lin_ghillie', 'center-right', "standing in front of the closed hatch in profile facing frame-right, his head turned back toward her, a black crossbow slung across his white back", 'Su', "his eyes calm and warm, his jaw set, his brows level")],
+VINS('49-02v', [('eden_voice', "外门风速九级。", 'soft, calm', '轻柔平静')], AIR_OUT, SOUND_EDENQ, {'Su', 'Lin'}, True)
+
+PEO_4902 = [P('su_cozy', 'left', "standing on the white tiles in profile facing frame-right, one hand reaching up to straighten the white scarf at his chin, her eyes on his face", 'Lin', "her eyes steady and worried, her lips pressed in a firm line, her brows pulled together"),
+            P('lin_ghillie', 'center-right', "standing in front of the closed hatch in profile facing frame-right, his head turned back toward her, a black crossbow slung across his white back", 'Su', "his eyes calm and warm, his jaw set, his brows level")]
+TA('49-02', '02｜缓冲舱：苏清月一边帮林峰系紧白围巾，一边说最后一道手动闸门只有他的手能关，他说回来再关', 8, AIR_OUT, PEO_4902,
    'Medium two-shot, both from the head to the waist, in the middle third of the frame, in the airlock.',
-   "A soft, calm, polite female synthetic voice from the wall speaker speaks the first line as a voice-over; then <su_cozy> speaks the second line to <lin_ghillie> in a low firm voice as she tightens his scarf, and <lin_ghillie> answers with the third line to <su_cozy> in a low steady voice; then the synthetic voice speaks the fourth line and the heavy steel hatch swings open behind him, a roar of white storm pouring in as <lin_ghillie> pulls his goggles down and steps toward it, his eyes calm and warm, his jaw set and his brows level, her eyes steady and worried, her lips pressed in a firm line and her brows pulled together.",
-   "墙上的扬声器里传出轻柔平静、礼貌的女性合成声音，以旁白的方式说出第一句；接着苏清月一边帮他系紧围巾，一边用低而坚定的声音对林峰说出第二句，林峰用低沉平稳的声音对苏清月答出第三句；然后合成声音说出第四句，他身后厚重的钢门转开，白色的暴风雪轰地灌进来，林峰把护目镜拉下来，朝门走去，他眼神平静温暖、下颌绷住、眉毛平直，她眼神沉稳带着担心、嘴唇抿成一条线、眉头拧在一起。" + BRISK_ZH,
+   "<su_cozy> speaks the first line to <lin_ghillie> in a low firm voice as she tightens his scarf, and <lin_ghillie> answers with the second line to <su_cozy> in a low steady voice, his eyes calm and warm, his jaw set and his brows level, her eyes steady and worried, her lips pressed in a firm line and her brows pulled together.",
+   "苏清月一边帮他系紧围巾，一边用低而坚定的声音对林峰说出第一句，林峰用低沉平稳的声音对苏清月答出第二句，他眼神平静温暖、下颌绷住、眉毛平直，她眼神沉稳带着担心、嘴唇抿成一条线、眉头拧在一起。",
    SOUND_HATCH, AES_AIRLOCK,
-   lines=on, vo=off,
-   cam=push('both of them', '两人'), extra_assets=('hack_screen',), room={'Su', 'Lin'}, new=True,
-   bg='On the wall above the steel bench a small round speaker grille glows faintly and the heavy round steel hatch door fills the right of the frame.',
+   lines=LN(('su_cozy', "最后一道闸门，只有你能关。", 'Lin'), ('lin_ghillie', "我知道，回来再关。", 'Su')),
+   cam=push('both of them', '两人'), extra_assets=(), room={'Su', 'Lin'}, new=False,
+   bg='On the wall above the steel bench a small round speaker grille sits still and the heavy round steel hatch door fills the right of the frame.',
+   holds='The frame holds exactly two people: Su and Lin, in the airlock, nobody else.')
+
+VINS('49-02w', [('eden_voice', "外门开启。", 'soft, calm', '轻柔平静')], AIR_OUT, SOUND_EDENQ, {'Su', 'Lin'}, False)
+
+TA('49-02x', '02｜缓冲舱：林峰身后厚重的钢门转开，白色的暴风雪轰地灌进来，他把护目镜拉下来朝门走去，苏清月站在原地看着他', 6, AIR_OUT, PEO_4902,
+   'Medium two-shot, both from the head to the waist, in the middle third of the frame, in the airlock.',
+   "The heavy steel hatch swings open behind <lin_ghillie> and a roar of white storm pours in as he pulls his goggles down and steps toward it, his eyes calm and warm, his jaw set and his brows level, while <su_cozy> stays where she is watching him, her eyes steady and worried, her lips pressed in a firm line and her brows pulled together.",
+   "林峰身后厚重的钢门转开，白色的暴风雪轰地灌进来，他把护目镜拉下来，朝门走去，他眼神平静温暖、下颌绷住、眉毛平直，苏清月站在原地看着他，眼神沉稳带着担心、嘴唇抿成一条线、眉头拧在一起。",
+   SOUND_HATCHQ, AES_AIRLOCK,
+   cam=push('both of them', '两人'), extra_assets=(), room={'Su', 'Lin'}, new=False,
+   bg='On the wall above the steel bench a small round speaker grille sits still and the heavy round steel hatch door fills the right of the frame.',
    holds='The frame holds exactly two people: Su and Lin, in the airlock, nobody else.')
 
 TA('49-03', '03｜暴风雪里：纯白色的林峰趴在雪地里，用手肘一点一点往前爬，白色的吉利服和白色的暴风雪几乎融成一片，只有护目镜里透出一点淡淡的青光', 8, WHITEOUT,

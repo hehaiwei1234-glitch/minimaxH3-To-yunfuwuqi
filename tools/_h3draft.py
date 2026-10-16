@@ -82,21 +82,34 @@ class Batch:
         self.tasks = []
         self.seed = seed0
 
+    def _have(self, a):
+        """底稿里已经有同名素材：必须逐字相同，然后跳过（修订版模式：底稿是 026，已含 018–025 加的素材）。"""
+        for x in self.d['assets']:
+            if x['key'] == a['key']:
+                assert x == a, ('同名素材内容不同，不能改旧素材', a['key'])
+                return True
+        return False
+
     def scene(self, key, label, en, zh, prompt):
-        self.d['assets'].append({'key': key, 'kind': 'image', 'role': 'scene', 'label': label,
-                                 'description': {'en': en, 'zh': zh}, 'generate': {'image_prompt': prompt, 'reference_keys': []}})
+        a = {'key': key, 'kind': 'image', 'role': 'scene', 'label': label,
+                                 'description': {'en': en, 'zh': zh}, 'generate': {'image_prompt': prompt, 'reference_keys': []}}
+        if not self._have(a): self.d['assets'].append(a)
 
     def person(self, key, label, en, zh, prompt, ref=None):
-        self.d['assets'].append({'key': key, 'kind': 'image', 'role': 'character', 'label': label,
-                                 'description': {'en': en, 'zh': zh}, 'generate': {'image_prompt': prompt, 'reference_keys': [ref] if ref else []}})
+        a = {'key': key, 'kind': 'image', 'role': 'character', 'label': label,
+             'description': {'en': en, 'zh': zh}, 'generate': {'image_prompt': prompt, 'reference_keys': [ref] if ref else []}}
+        if not self._have(a): self.d['assets'].append(a)
 
     def prop(self, key, label, en, zh, prompt, ref=None):
         """道具／动物（第 7 集起的黑马）。role='prop'，写法检查不查它的表情。"""
-        self.d['assets'].append({'key': key, 'kind': 'image', 'role': 'prop', 'label': label,
-                                 'description': {'en': en, 'zh': zh}, 'generate': {'image_prompt': prompt, 'reference_keys': [ref] if ref else []}})
+        a = {'key': key, 'kind': 'image', 'role': 'prop', 'label': label,
+             'description': {'en': en, 'zh': zh}, 'generate': {'image_prompt': prompt, 'reference_keys': [ref] if ref else []}}
+        if not self._have(a): self.d['assets'].append(a)
 
     def character(self, name, image_key, voice_en, voice_zh):
-        self.d['characters'][name] = {'image_keys': [image_key], 'voice_description': {'en': voice_en, 'zh': voice_zh}}
+        c = {'image_keys': [image_key], 'voice_description': {'en': voice_en, 'zh': voice_zh}}
+        if name in self.d['characters']: assert self.d['characters'][name] == c, ('同名角色内容不同，不能改旧角色', name)
+        self.d['characters'][name] = c
 
     def task(self, title, dur, chars, assets, refs, img, end, vis_zh, cam_zh, dlg, shot_en, shot_zh, sound,
              lines=None, shots=None, frame=None, cont=False):

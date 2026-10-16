@@ -141,7 +141,7 @@ DL('55-05', '05｜监控室沙发：伊甸报告泄洪总闸的电动机构受�
       "沙发上方墙上扬声器那圈细细的蓝光亮着，琥珀色的灯光落在他们脸上，监控墙冷冷的光描出他们肩膀的轮廓。"),
    post_en='after the last line <lin_home> slowly closes his left hand on his knee and looks down at it',
    post_zh='最后一句之后，林峰把放在膝盖上的左手慢慢攥起来，低头看着它',
-   cam=lowrise('the two of them on the sofa', '沙发上的两个人'), bg='On the wall above the sofa a flat speaker panel with a thin glowing blue ring glows.')
+   cam=lowrise('the two of them on the sofa', '沙发上的两个人'), bg='On the wall above the sofa a flat speaker panel with a thin blue ring glows.')
 
 INS('55-06', '06｜沙发：林峰放在膝盖上的左手慢慢蜷起，五根手指只能合到一半就停住了，指尖微微发抖', 7, SOFA_HAND,
     'Close shot of his left hand on his knee, the fingers in the middle third of the frame, nobody else in the scene.',
@@ -215,7 +215,7 @@ DL('56-04', '04｜地下二层农场：苏清月用平板指挥机械臂再剪�
       "粉紫色的生长灯光透过他们头顶的葡萄发亮，一串深紫色的葡萄被机械臂放下来落进光柱里，经过时水珠闪着光。"),
    post_en='after the last line the robotic arm lowers a dark purple bunch of grapes into her open hand',
    post_zh='最后一句之后，机械臂把一串深紫色的葡萄放进她摊开的手里',
-   cam=tilt('the robotic arm and the grapes above them', '头顶的机械臂和葡萄'), bg='Behind them the white hydroponic channels glow under the pink-violet lamps and a flat speaker panel with a thin glowing blue ring is on the pillar.')
+   cam=tilt('the robotic arm and the grapes above them', '头顶的机械臂和葡萄'), bg='Behind them the white hydroponic channels glow under the pink-violet lamps and a flat speaker panel with a thin blue ring is on the pillar.')
 
 DL('56-05', '05｜厨房：林峰在灶台前煎牛排，苏清月靠在台边吃葡萄，他说今天不拆管道不打架，她说那就好好吃饭，她说你切给我，他把切好的一小块插在叉子上说张嘴，送进她嘴里', KITCH_MORN,
    [P('lin_home', 'left', "standing at the stove in profile facing frame-right, a fork with a cut piece of steak in his right hand and a black pan sizzling behind it, his head bent toward her", 'Su', "his lips easing into a relaxed half sweet smile, his eyes warm, his brows soft", outfit=LIN_CLINIC),
@@ -245,7 +245,7 @@ DL('56-06', '06｜厨房：伊甸忽然说地热溶洞出现异常生长，林�
       "灶台上方墙上扬声器那圈细细的蓝光亮着，琥珀色的炉火暖着他们的脸，最后一缕牛排的烟气卷过灯光。"),
    post_en='after the last line <lin_home> switches off the heat and <su_cozy> is already pulling him by the sleeve toward the hatch door',
    post_zh='最后一句之后，林峰关了火，苏清月已经拽着他的袖子往舱门那边拉',
-   cam=slide('toward frame-left', '左', 'the two of them fill the middle third of the frame', '两人占满画面中间三分之一'), bg='On the wall above the counter a flat speaker panel with a thin glowing blue ring glows.')
+   cam=slide('toward frame-left', '左', 'the two of them fill the middle third of the frame', '两人占满画面中间三分之一'), bg='On the wall above the counter a flat speaker panel with a thin blue ring glows.')
 
 INS('56-07', '07｜溶洞：温泉池边的岩台上长出一整片半人高的稻子，沉甸甸的稻穗发着淡淡的金绿色荧光，水雾在稻田上飘着', 8, PADDY_WIDE,
     'Wide shot of the paddy beside the pool, the glowing rice in the middle third of the frame, nobody in the scene.',
@@ -448,7 +448,7 @@ DL('58-06', '06｜餐厅：伊甸忽然说地表温度零下九度，苏清月�
    pre_en='The steam over the bowls hangs still.', pre_zh='碗上的热气停住不动。',
    post_en='after the last line <su_cozy> slowly sets her bowl down on the table',
    post_zh='最后一句之后，苏清月慢慢把碗放回桌上',
-   cam=pull('the frozen chopsticks', '停在半空的筷子', 'the two tense faces at the table', '桌边两张紧绷的脸'), bg='On the wall above the table a flat speaker panel with a thin glowing blue ring glows.')
+   cam=pull('the frozen chopsticks', '停在半空的筷子', 'the two tense faces at the table', '桌边两张紧绷的脸'), bg='On the wall above the table a flat speaker panel with a thin blue ring glows.')
 
 INS('58-07', '07｜泵房：透明大水箱里，一个红色的浮标在水面上轻轻往上浮了一格，旁边白色标尺上的刻度线在灯光下一闪', 7, BUOY,
     'Medium shot of the tank and its scale, the red float in the middle third of the frame, nobody in the scene.',

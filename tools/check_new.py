@@ -4,7 +4,9 @@
 import json, os, subprocess, sys
 new, base = sys.argv[1], sys.argv[2]
 need = sys.argv[3] if len(sys.argv) > 3 else '66'
-S = '/tmp/claude-0/-home-claude-minimaxh3-to-yunfuwuqi/62e44c31-630b-5947-ac4b-f3d3c75433c7/scratchpad'
+import glob
+S = next((d for d in [os.environ.get('H3_SCRATCH', '')] + sorted(glob.glob('/tmp/claude-0/*/*/scratchpad'), key=os.path.getmtime, reverse=True)
+          if d and os.path.exists(d + '/validate.py')), '')       # 插件格式校验脚本放在会话的 scratchpad 里（不进仓库）；找不到就跳过这一项
 ok = True
 r = subprocess.run([sys.executable, 'tools/lint_draft.py', new], capture_output=True, text=True)
 print((r.stdout + r.stderr).strip()[-1800:])
@@ -24,8 +26,8 @@ ok &= len(n['assets']) <= 200 and len(n['characters']) <= 100 and os.path.getsiz
 seeds = {s['seed'] for e in n['episodes'] for s in e['segments']}
 print('种子：', seeds); ok &= seeds == {37407}
 txt = new.replace('.json', '_全选复制粘贴.txt')
-if os.path.exists(S + '/validate.py'):
-    r = subprocess.run([sys.executable, S + '/validate.py', S + '/plugin/ComfyUI-H3-AutoDrama-Standalone', txt], capture_output=True, text=True)
+if S:
+    r = subprocess.run([sys.executable, S + '/validate.py', S + '/plugin', txt], capture_output=True, text=True)
     print('插件格式校验：', (r.stdout + r.stderr).strip()[-300:]); ok &= r.returncode == 0
 print('全部通过' if ok else '有未通过项')
 sys.exit(0 if ok else 1)

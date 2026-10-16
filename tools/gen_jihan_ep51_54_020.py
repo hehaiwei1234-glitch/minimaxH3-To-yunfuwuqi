@@ -31,6 +31,7 @@ import _scene
 from _scene import smooth_text, TONE_FIX
 
 import _h3draft as _H
+import _voiceins as VI
 _H.configure(smooth=True, fixed_seed=37407)   # A 写法：台词顺滑写法＋全批固定视频种子；不 cap、不 fast
 OUT = '合并稿/020_第51-54集_天崩地裂体温底线黑暗手术重见光明_制作稿_追加'
 S = Session('合并稿/019_第47-50集_十二秒版_顶级晚餐深雪地狱雪原幽灵绝对零度_制作稿_追加.json', OUT, 80000)
@@ -95,6 +96,13 @@ def DL(tid, title, scene, people, framing, spec, sound, aes, pre_en='', pre_zh='
         return TA(tid, title, d, scene, people, framing, act_en, zh, sound, aes, vo=lines, **kw)
     return TA(tid, title, d, scene, people, framing, act_en, zh, sound, aes, lines=lines, **kw)
 
+
+
+def VINS(tid, run, scene, sound, room, new):
+    """“只有声音”的台词（伊甸）→ 不带人的插镜（2026-10-16，见 _voiceins.py）。run = [(说话人, 台词, 英语语气, 中文语气)]。"""
+    r, d, end = VI.insert(S, tid, [(a, tx, None, te, tz) for a, tx, te, tz in run], scene, sound, room, new, times, brisk=(BRISK_EN, BRISK_ZH))
+    print('  [插镜 %s：%d 秒，最后一句约 %.1f 秒]' % (tid, d, end))
+    return r
 
 
 def arc(who_en, who_zh, to_en, to_zh):
@@ -182,7 +190,7 @@ AES_SCREEN = ("A cold white glow from the monitor wall floods their stunned face
               "监控墙发出的冷白色光涌满他们愣住的脸，把温暖的琥珀色屋子洗出一片强烈的青橙对比。")
 
 # ---------------------------------------------------------------------------------------------- 外貌
-look('eden_voice', 'Eden', "a flat wall speaker panel with a thin glowing blue ring", 'none', 'its')
+look('eden_voice', 'Eden', "a flat wall speaker panel with a thin blue ring", 'none', 'its')
 SU_HUSKY = None   # 声音沿用素材库里已有的 SuCozy／LinHome 等角色，本批没有新声音
 
 # ---------------------------------------------------------------------------------------------- 场景
@@ -584,22 +592,34 @@ TA('54-04', '04｜生活区：漆黑的屋子里，林峰踉跄着扑到墙上�
    bg='Behind him the dark shapes of the open kitchen and the round wooden table are barely visible and the round steel hatch door stands in the wall.',
    holds='The frame holds exactly one person: Lin, at the breaker box, nobody else.')
 
-on, off = (lambda a: ([x for x in a if x[0] not in VOICE_ONLY], [x for x in a if x[0] in VOICE_ONLY]))(
-    times([('eden_voice', "备用电源已激活。", 'Lin'), ('lin_home', "伊甸，开灯。", 'Su'), ('eden_voice', "欢迎回家，林先生，苏女士。", 'Lin'), ('su_cozy', "我们回来了。", 'Lin')]))
-TA('54-05', '05｜生活区：林峰和苏清月站在刚亮起绿灯的配电箱旁，伊甸温柔的声音说备用电源已激活，林峰说伊甸开灯，伊甸说欢迎回家，林先生，苏女士，苏清月说我们回来了', 12, DARK_LIVING,
-   [P('lin_home', 'right', "standing at the breaker box in profile facing frame-left, one hand still on the lever, his head tipped toward the speaker on the wall", 'obj:the wall speaker with the thin glowing blue ring', "his jaw loosening, his eyes drained and bright, his brows easing", outfit=LIN_ROBE_ICE),
-    P('su_cozy', 'center', "standing beside him in profile facing frame-left, her arms wrapped around herself, her head tipped toward the speaker on the wall", 'obj:the wall speaker with the thin glowing blue ring', "her lips parting, her eyes wide and wet, her brows lifting", outfit=SU_ROBE_FROST)],
+VINS('54-05v', [('eden_voice', "备用电源已激活。", 'soft, calm', '轻柔平静')], DARK_LIVING, SOUND_EDEN, {'Su', 'Lin'}, True)
+
+PEO_5405 = [P('lin_home', 'right', "standing at the breaker box in profile facing frame-left, one hand still on the lever, his head tipped toward the wall speaker", 'obj:the wall speaker with the thin blue ring', "his jaw loosening, his eyes drained and bright, his brows easing", outfit=LIN_ROBE_ICE),
+            P('su_cozy', 'center', "standing beside him in profile facing frame-left, her arms wrapped around herself, her head tipped toward the wall speaker", 'obj:the wall speaker with the thin blue ring', "her lips parting, her eyes wide and wet, her brows lifting", outfit=SU_ROBE_FROST)]
+_t = smooth_text("伊甸，开灯。")
+TA('54-05', '05｜生活区：林峰站在刚亮起绿灯的配电箱旁，朝着墙上的扬声器低声说伊甸开灯，苏清月抱着自己站在他身边', 5, DARK_LIVING, PEO_5405,
    'Medium two-shot, both from the head to the waist, in the middle third of the frame, at the breaker box.',
-   "A soft, calm, polite female synthetic voice from the flat wall speaker with the thin glowing blue ring speaks the first line as a voice-over to <lin_home>, then <lin_home> speaks the second line toward the wall speaker in a low hoarse voice, then the speaker voice speaks the third line as a voice-over to <lin_home>, then <su_cozy> speaks the fourth line to <lin_home> in a soft shaking voice; <lin_home> stands with one hand still on the lever, his jaw loosening, his eyes drained and bright and his brows easing, and <su_cozy> stands beside him with her arms wrapped around herself, her lips parting, her eyes wide and wet and her brows lifting." + BRISK_EN,
-   "墙上那块带着一圈细细蓝光的扁扁的扬声器里传出轻柔平静、礼貌的女性合成声音，以旁白的方式对着林峰说出第一句，接着林峰用低沉沙哑的声音朝着墙上的扬声器说出第二句，扬声器里的声音再以旁白的方式对着林峰说出第三句，接着苏清月用轻轻发抖的声音对林峰说出第四句；林峰一只手还放在杠杆上，下颌松开、眼神疲惫发亮、眉头舒展，苏清月抱着自己的手臂站在他身边，嘴唇微张、眼睛睁大含着泪、眉毛抬起。" + BRISK_ZH,
-   SOUND_EDEN, AES_EDENWAKE, lines=on, vo=off,
-   cam=push('both of them', '两人'), room={'Su', 'Lin'}, new=True,
-   bg='On the wall above them a flat speaker panel with a thin glowing blue ring glows and the grey breaker box glows green.',
+   "<lin_home> stands at the breaker box with one hand still on the lever and speaks the line toward the wall speaker in a low hoarse voice, his jaw loosening, his eyes drained and bright and his brows easing, while <su_cozy> stands beside him with her arms wrapped around herself, her lips parting, her eyes wide and wet and her brows lifting.",
+   "林峰一只手还放在杠杆上，用低沉沙哑的声音朝着墙上的扬声器说出这句话，下颌松开、眼神疲惫发亮、眉头舒展，苏清月抱着自己的手臂站在他身边，嘴唇微张、眼睛睁大含着泪、眉毛抬起。",
+   SOUND_EDEN, AES_EDENWAKE, vo=[('lin_home', _t, 0.8, 'Lin')],
+   cam=push('both of them', '两人'), room={'Su', 'Lin'}, new=False,
+   bg='On the wall above them a flat speaker panel with a thin blue ring sits still and the grey breaker box glows green.',
+   holds='The frame holds exactly two people: Lin and Su, at the breaker box, nobody else.')
+
+VINS('54-05w', [('eden_voice', "欢迎回家，林先生，苏女士。", 'soft, calm', '轻柔平静')], DARK_LIVING, SOUND_EDEN, {'Su', 'Lin'}, False)
+
+TA('54-05x', '05｜生活区：苏清月看着林峰，用轻轻发抖的声音说我们回来了，林峰低头看着她', 7, DARK_LIVING, PEO_5405,
+   'Medium two-shot, both from the head to the waist, in the middle third of the frame, at the breaker box.',
+   "<su_cozy> turns her face and speaks the line to <lin_home> in a soft shaking voice, her lips parting, her eyes wide and wet and her brows lifting, while <lin_home> looks down at her with his jaw loosening, his eyes drained and bright and his brows easing.",
+   "苏清月转脸看着林峰，用轻轻发抖的声音说出这句话，嘴唇微张、眼睛睁大含着泪、眉毛抬起，林峰低头看着她，下颌松开、眼神疲惫发亮、眉头舒展。",
+   SOUND_EDEN, AES_EDENWAKE, lines=LN(('su_cozy', "我们回来了。", 'Lin')),
+   cam=push('both of them', '两人'), room={'Su', 'Lin'}, new=False,
+   bg='On the wall above them a flat speaker panel with a thin blue ring sits still and the grey breaker box glows green.',
    holds='The frame holds exactly two people: Lin and Su, at the breaker box, nobody else.')
 
 insert2('54-06', '06｜生活区：暖黄色的灯一排排亮满了整间屋子，金色的光洒在奶油色的地毯和大理石台面上，黑金炉灶透着炭火般的橙光，屋里一个人也没有', 7, LIV_LIT,
         'Wide shot of the living area, the cream rug and the lamps in the middle third of the frame, nobody in the scene.',
-        "Row after row of warm amber lamps glow across the whole underground living area, golden light pooling on the cream rug and the marble counter while the black-and-gold stove glows ember-orange and a thin curl of steam rises from a kettle. Nothing else moves.",
+        "Row after row of warm amber lamps are lit across the whole underground living area, golden light pooling on the cream rug and the marble counter while the black-and-gold stove glows ember-orange and a thin curl of steam rises from a kettle. Nothing else moves.",
         "暖黄色的灯一排排亮满了整个地下生活区，金色的光洒在奶油色的地毯和大理石台面上，黑金炉灶透着炭火般的橙光，水壶里一缕薄薄的蒸汽升起来。别的什么都不动。",
         SOUND_LAMPS, 'The frame holds the lit living area, and nobody in the scene.',
         slide('toward frame-right', '右', 'the glowing stove and the warm lamps fill the frame', '发光的炉灶和暖灯占满画面'), AES_LAMPS)

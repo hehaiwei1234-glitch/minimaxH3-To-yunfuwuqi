@@ -28,6 +28,56 @@ def smooth_text(tx):
     return body + end
 
 
+# ---------------------------------------------------------------------------------------------- 光和空气词拦截（2026-10-16）
+# hh 10-16 回传的 11 个片段：突然“披上一层别的东西”、一个人变两个人，都对上了开场图／视频文字里的光边、轮廓、闪光、热气飘这类词
+# （例：“pale rim along her cheek and his shoulder”“glows like a fresh wound”“rims their shoulders”“steam curls through the beam”“frost-furred”）。
+# H3 和生图模型把它们当成真的东西画出来（一圈边、一层壳、第二个轮廓）。所以这些词不再写，剩下的光只写“光源＋颜色＋它照到哪”。
+BAN_AE = re.compile(r"\b(?:rim\w*|edges?|outlin\w*|halo\w*|auras?|shimmer\w*|sparkl\w*|glitter\w*|glint\w*|gleam\w*|beams?|rays?|shafts?|motes?|specks?|furr?\w*|lantern\w*|wounds?|veil\w*|bloom\w*|flare\w*|crystals?|translucent|stained|flicker\w*|puls\w*|wash\w*|curl\w*|drift\w*|swirl\w*|float\w*|hover\w*|steam\w*|mist\w*|haze|hazy|fog\w*|dust\w*|droplets?|spray\w*|sparks?|particles?|snowflakes?|flakes?|embers?|cinders?|smoke|graz\w+|spill\w*|glisten\w*|shin(?:e|es|ing|y)|lustre|luster|sheen|dappl\w*|streak\w*|ripple\w*|burns?|burning)\b|\blike an? |\bas if\b|\bglow\w* like\b|\bglow\w* (?:through|over|across|along|around|on|upon|against|from within|past|beyond)\b|\bglow\w* and\b|\bglow\w* (?:above|below|beside|behind|near|inside|within)\b|\blight (?:falls?|lies|lay|catches|lands|touches|sits)\b", re.I)
+BAN_AE_ZH = re.compile(r"边|轮廓|勾|描出|光束|光柱|光线|光晕|光环|闪|晶莹|晶体|冰晶|尘|粉雪|雪粒|热气|蒸汽|水汽|雾|卷|飘|像|仿佛|宛如|如同|洗过|罩|镀|镶|倒影|辉|耀|粼|折射|透亮|火星|火花|烟|余烬|涟漪|烧")
+_SPLIT_EN = re.compile(r",\s+(?:and\s+)?|\s+while\s+|;\s+", re.I)
+_BAD_START = re.compile(r"^(?:which|that|making|giving|casting|leaving|turning|lending|with|as|so|but|then|until|where|whose|creating|forming|adding)\b", re.I)
+
+
+def calm(ae):
+    """ae=(英文, 中文) 的“光和空气”句：逐个分句检查，带拦截词的分句整句丢掉，剩下的重新写成句子。可能返回 ('','')。"""
+    en, zh = ae
+    keep = []
+    for c in _SPLIT_EN.split(en.strip()):
+        c = c.strip().rstrip('.').strip()
+        if not c or BAN_AE.search(c) or _BAD_START.match(c): continue
+        keep.append(c[0].upper() + c[1:] + '.')
+    keep_zh = []
+    for c in re.split(r"[，；。]", zh.strip()):
+        c = c.strip()
+        if not c or BAN_AE_ZH.search(c): continue
+        keep_zh.append(c)
+    return (' '.join(keep), ('，'.join(keep_zh) + '。') if keep_zh else '')
+
+
+WORD_FIX = [(r'frost-furred', 'frost-covered'), (r'\bthin glowing blue ring\b', 'thin blue ring'),
+            (r'\beyes (?:shining|sparkling|glittering|gleaming)\b', 'eyes bright'), (r'\beyes glistening\b', 'eyes wet'), (r'\beyes burning\b', 'eyes fierce'),
+            (r'red-rimmed', 'reddened'), (r'\bglows? on (his|her|their) (faces?)\b', r'lights \1 \2'),
+            (r'flares up with a cold white glow', 'turns a cold bright white'),
+            (r'\bfurred with\b', 'crusted with'), (r'\bfurred\b', 'frosted'), (r'\bglistening\b', 'wet'), (r'\bember-orange\b', 'deep orange')]
+
+
+def fixw(text):
+    """个别会被画成“多出一层东西”的词换成平实的说法（眼睛发光、毛茸茸的霜、一圈红边）。"""
+    for a, b in WORD_FIX: text = re.sub(a, b, text)
+    return text
+
+
+LATERAL = re.compile(r"tracks sideways|slides slowly|arcs slowly around|slowly (?:left|right)\b", re.I)
+
+
+def safe_cam(cam, n_people):
+    """画面里有人时，不用左右平移／环绕（会露出一块新空间，H3 往里填人：2026-10-16 hh 的 11 个片段里 3 个）；改成推近。"""
+    if n_people and LATERAL.search(cam[0]):
+        who_en, who_zh = ('the person fills', '这个人占满') if n_people == 1 else ('both of them fill', '两人占满')
+        return (f'The camera pushes in slowly until {who_en} the middle third of the frame.', f'镜头慢慢推近，直到{who_zh}画面中间三分之一。')
+    return cam
+
+
 TONE_FIX = [(', quiet voice', ', clear voice'), ('breathy voice', 'bright voice'), (', hoarse voice', ', rough voice')]
 
 
@@ -53,6 +103,10 @@ def smooth_task(lines, dur, act_en, zh):
         act_en += ' The lines are spoken briskly and naturally, each in one breath with no pause inside the sentence, and the next line follows right away.'
         zh += ' 台词说得利落自然，每句一口气说完、句中不停顿，下一句紧接着开口。'
     return new, d, act_en, zh
+
+
+ENDS = set()
+RISK = []     # (任务编号, 位置, 词, 前后文)：生成后仍留在文字里的“光边／闪光／热气飘”类词，finish() 会列出
 
 
 class Look:
@@ -89,7 +143,8 @@ def sentence(p):
         tt = t[4:] if t.startswith('obj:') else t
         eye = f"{L.pron} {p['eyes'] or L.eyes} eyes {p['verb']} {tt}"
     head = f"{L.who} ({L.eth})" if L.eth else L.who
-    return f"{head} at {pos}, {p['pose']}, {outfit}, {extra}{eye}, {p['expr']}."
+    pose = re.sub(r"\b(?:standing |sitting |leaning )?(?:close |right |just )?behind (her|him)\b", r"beside \1", p['pose'])
+    return f"{head} at {pos}, {pose}, {outfit}, {extra}{eye}, {p['expr']}."
 
 
 def new_person(b, key, label, who, en, zh, core, expr, ref=None, full=False, eth=''):
@@ -112,6 +167,12 @@ def refs(text):
 
 class Session:
     def __init__(self, base_json, out_name, seed_base, title=None, style=None):
+        rev = os.environ.get('H3_REV')      # 修订版模式（2026-10-16）：所有脚本都以这一份 JSON 为底，输出到 合并稿/修订版/，文件名加“修订”
+        if rev and base_json is not None:
+            base_json = rev
+            d_, f_ = os.path.split(out_name)
+            out_name = os.path.join(d_, '修订版', f_.replace('_制作稿', '_制作稿_修订', 1))
+            os.makedirs(os.path.join(H.CFG['folder'], d_, '修订版'), exist_ok=True)
         self.base, self.out, self.seed_base, self.style = base_json, out_name, seed_base, style
         if base_json is None:      # 新剧第一批：空白底稿
             self.src = {'title': title, 'style': style, 'assets': [], 'characters': {}}
@@ -139,6 +200,7 @@ class Session:
           room=None, enter=(), exit=(), groups=(), bg='', holds=None, st=None, trigger=None, effect=None,
           interrupt=(), new=False, extra_assets=(), speaker_extra=(), vo=()):
         b = self.cur
+        cam = safe_cam(cam, len(people))
         if H.CFG.get('cap') and dur > H.CFG['cap']: dur = H.CFG['cap']
         if H.CFG.get('smooth') and lines and not vo:
             lines, dur, act_en, zh = smooth_task(lines, dur, act_en, zh)
@@ -177,6 +239,7 @@ class Session:
             holds = f"The frame holds {word}: " + ', '.join(LOOKS[p['lk']].who for p in people) + '.'
         img = framing + ' ' + ' '.join(sents) + ((' ' + bg) if bg else '') + ' ' + holds
         end = (scene.end + scene.layout) if scene else ''
+        if scene: ENDS.add(scene.end)
         spoken = []
         says = []
         for sp, tx, start, to in (lines or []):
@@ -185,18 +248,21 @@ class Session:
         for sp, tx, start, to in vo:                 # 画外音：说话的人不进画面，只出声；对象必须在画面里
             spoken.append((LOOKS[sp].char, tx, start))
             if LOOKS[sp].char not in chars: chars.append(LOOKS[sp].char)
-            assert to in frame, (tid, '画外音的对象不在画面里')
+            assert to is None or to in frame, (tid, '画外音的对象不在画面里')
         spoken.sort(key=lambda x: x[2])             # 画外音和画面里的人混排时，按开口时间排
         for x in speaker_extra:
             if x not in chars: chars.append(x)
+        for where_, text_ in (('视频', refs(act_en)), ('开场图', img + end)):
+            for m_ in BAN_AE.finditer(text_):
+                RISK.append((tid, where_, m_.group(0), text_[max(0, m_.start() - 45):m_.end() + 25].replace('\n', ' ')))
         asset_list = ([scene.key] if scene else []) + assets + list(extra_assets)
         if H.CFG.get('cap') and spoken:
             need = max(st_ + H.line_seconds(tx_) + 0.05 for _c, tx_, st_ in spoken) + 1.0
             if need > dur:
                 dur = min(13, int(need) + (need > int(need)))      # 放不下：最多放宽到 13 秒（009 里跑过 13 秒）
                 print('  [放宽到 %d 秒]' % dur, tid)
-        s = b.task(title, dur, chars, asset_list, [scene.key] if scene else [], img, end, zh,
-                   '0—%d秒，%s' % (dur, cam[1]), None, refs(act_en) + ' ' + cam[0], zh + ' ' + cam[1], sound, lines=spoken or None)
+        s = b.task(title, dur, chars, asset_list, [scene.key] if scene else [], fixw(img), fixw(end), zh,
+                   '0—%d秒，%s' % (dur, cam[1]), None, fixw(refs(act_en)) + ' ' + fixw(cam[0]), zh + ' ' + cam[1], sound, lines=spoken or None)
         s['depends_on_previous'] = dep
         # ---- 站位表 ----
         if new or self.last_blk is None or not self.groups:
@@ -235,7 +301,8 @@ class Session:
         doc['episodes'] = []
         for b, title, summary in self.eps:
             out = []
-            for t in b.tasks:
+            for i_, t in enumerate(b.tasks, 1):      # 拆出插入镜头后编号要连续
+                t['title'] = '%02d｜' % i_ + t['title'].split('｜', 1)[1]
                 out.append((t['title'].split('｜')[1] + '，' + t['visual_zh']).replace('：', '，'))
                 for x in t['dialogue']:
                     out.append(f"{x['speaker']}：“{x['text']}”")
@@ -268,6 +335,14 @@ class Session:
         open(os.path.join(H.CFG['folder'], self.out + '.json'), 'w', encoding='utf-8').write(txt)
         open(os.path.join(H.CFG['folder'], self.out + '_全选复制粘贴.txt'), 'w', encoding='utf-8').write(txt)
         n = len(mine); sec = sum(s['duration_seconds'] for e in doc['episodes'] for s in e['segments'])
+        if os.environ.get('H3_DUMP_END'):
+            open(os.environ['H3_DUMP_END'], 'a', encoding='utf-8').write('\n'.join(sorted(ENDS)) + '\n')
+        if RISK:
+            import collections
+            cnt = collections.Counter((w_, k_.lower()) for _t, w_, k_, _c in RISK)
+            print('仍留在文字里的光边／闪光／热气类词（视频文字／开场图文字，词：次数）：', dict(cnt.most_common(20)))
+            for _t, w_, k_, c_ in RISK[:200]:
+                if w_ == '视频': print('   ', _t, w_, '…' + c_ + '…')
         print(f'{len(doc["episodes"])} 集、{n} 个任务、约 {sec} 秒；文件 {len(txt.encode())/1024:.0f} KB → {self.out}')
         for e in doc['episodes']:
             print('  ', e['title'], len(e['segments']), '个任务', sum(s['duration_seconds'] for s in e['segments']), '秒')

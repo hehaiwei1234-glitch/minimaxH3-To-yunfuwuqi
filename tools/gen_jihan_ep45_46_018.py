@@ -27,6 +27,7 @@ from _jihan_base6 import *
 import _scene
 from _scene import smooth_text, TONE_FIX
 import _h3draft as _H
+import _voiceins as VI
 
 _H.configure(smooth=True, fixed_seed=37407, cap=12)   # 2026-10-15：15 秒任务让 sage attention 崩溃，全部压到 12 秒以内
 OUT = '合并稿/018_第45-46集_十二秒版_制作稿_追加'
@@ -84,6 +85,18 @@ def MIX(spec):
     return on, off
 
 
+def VINS(tid, run, scene, sound, room, new):
+    """“只有声音”的台词（伊甸、黑客 K 的录音）→ 不带人的插镜（2026-10-16，见 _voiceins.py）。run = [(说话人, 台词, 英语语气, 中文语气)]。"""
+    def timer(spec):
+        t = times(spec)
+        for g in (0.35, 0.2):
+            if t[-1][2] + _H.line_seconds(t[-1][1]) + 1.06 > 12: t = times(spec, gap=g)     # 12 秒放不下：句间收到 0.35、再放不下 0.2 秒
+        return t
+    r, d, end = VI.insert(S, tid, [(a, tx, None, te, tz) for a, tx, te, tz in run], scene, sound, room, new, timer, brisk=(BRISK_EN, BRISK_ZH))
+    print('  [插镜 %s：%d 秒，最后一句约 %.1f 秒]' % (tid, d, end))
+    return r
+
+
 # ---------------------------------------------------------------------------------------------- 光和空气（本批新增）
 AES_SV = ("Cold blue server light washes both of them while the glass cylinder pours a deep blue glow across the cabin, a slash of grey storm light cuts the floor and a warm work lamp edges the equipment case in orange.",
           "冷蓝色的服务器光洗过两个人，玻璃圆柱把深蓝色的光泼满整节车厢，一道灰色的风暴光切过地板，一盏暖色的工作灯把设备箱描上橙色的边。")
@@ -127,9 +140,11 @@ SOUND_FARMAUTO = voiced('The soft hiss of fine mist from the ceiling rails, the 
 SOUND_BCAST = voiced('A sharp repeating alarm beep, crackling long-wave static and the hum of the console.', '尖锐反复的警报声、长波噼啪作响的杂音和控制台的嗡鸣。')
 SOUND_SAT = voiced('A slow electronic ping, a sharp repeating alarm beep and the hum of the console.', '缓慢的电子嘀声、尖锐反复的警报声和控制台的嗡鸣。')
 SOUND_RAID = breathy('The grinding crawl of hundreds of heavy engines through snow and a long low howl of wind.', '成百上千台重型发动机碾过雪地缓慢的轰鸣和风长长的低啸。')
+SOUND_PLUG = breathy('A heavy click of a thick cable plug seating into its base, a rising low hum of power and the quiet clicking of relays.', '一根粗线缆插头推进底座沉重的咔嗒声、渐渐升高的低低电流嗡鸣和继电器细细的咔嗒声。')
+SOUND_ALARMQ = breathy('A sharp repeating alarm beep, a low hum of the console and the slow creak of a swivel chair.', '尖锐反复的警报声、控制台低低的嗡鸣和转椅慢慢的吱呀声。')
 
 # ---------------------------------------------------------------------------------------------- 外貌／声音
-look('eden_voice', 'Eden', "a flat wall speaker panel with a thin glowing blue ring", 'none', 'its')
+look('eden_voice', 'Eden', "a flat wall speaker panel with a thin blue ring", 'none', 'its')
 look('k_rec', 'KRec', "a wide black console screen showing a jagged red audio waveform", 'none', 'its')
 EDEN_EN = 'A soft, calm, polite female synthetic voice from a wall speaker, smooth and unhurried, speaking clear Mandarin Chinese.' + VT
 EDEN_ZH = '轻柔平静、礼貌的女性合成声音，从墙上的扬声器里传出，顺滑不急，普通话清楚。每个字都正常发声、清晰可辨。'
@@ -255,16 +270,29 @@ insert2('46-01', '01｜控制室：一道电蓝色的光波从左到右一块接
         SOUND_RIPPLE, 'The frame holds the control room with the glowing cylinder and the screens, and nobody in the scene.',
         slide('toward frame-left', '左', 'the whole wall of awakening monitors fills the left of the frame', '整面苏醒的监控墙占满画面左侧'), AES_RIPPLE, extra_assets=('ai_core',))
 
-on, off = MIX([('eden_voice', "系统重启完毕，伊甸为您服务。", 'Lin'), ('eden_voice', "农场湿度百分之四十五。", 'Lin'), ('eden_voice', "温泉水温四十一度。", 'Lin'), ('eden_voice', "外部风暴，八级。", 'Lin')])
-TA('46-02', '02｜控制室：林峰把核心的粗线缆插头用力推进底座，苏清月在旁边抱着手臂看，墙上的扬声器里传出温柔的合成女声，一连报出农场湿度、温泉水温和外面的风暴等级，苏清月忍不住弯起嘴角', 15, CTRL_CORE,
+TA('46-02', '02｜控制室：林峰把核心的粗线缆插头用力推进底座，苏清月在旁边抱着手臂看', 6, CTRL_CORE,
    [P('lin_work', 'right', "standing at the console in profile facing frame-left, both hands pushing a thick cable plug into the base of the glowing blue cylinder, his eyes on the plug", 'obj:the thick cable plug at the base of the glowing blue glass cylinder', "his jaw set, his eyes focused, one corner of his mouth lifting, his brows low", outfit=LIN_GUN),
     P('su_tac', 'left', "standing beside the console in profile facing frame-right, her arms folded, her eyes on the cylinder", 'obj:the glowing blue glass cylinder on the console', "her lips pressed in a curious thin line, her eyes bright, her brows lifted", outfit=SU_WAR)],
    'Medium two-shot, both from the head to the waist, in the middle third of the frame, at the control console.',
-   "A soft, calm, polite female synthetic voice from the small speaker grille in the wall above the console speaks the first line, then the second line, then the third line and then the fourth line one right after another as a voice-over to <lin_work>. <lin_work> pushes the cable plug home with both hands, his jaw set, his eyes focused, one corner of his mouth lifting and his brows low, while <su_tac> stands beside the console with her arms folded, her lips pressed in a curious thin line, her eyes bright and her brows lifted, and at the end her lips curve upward.",
-   "控制台上方墙里的小扬声器里传出轻柔平静、礼貌的女性合成声音，以旁白的方式一句接一句地说出第一句、第二句、第三句和第四句，对着林峰说。林峰双手把线缆插头推到底，下颌绷住、眼神专注、嘴角微微上扬、眉头压低，苏清月抱着手臂站在控制台旁边，嘴唇抿成一条好奇的细线、眼睛明亮、眉毛上扬，最后她的嘴角弯了起来。" + BRISK_ZH,
-   SOUND_EDENWAKE, AES_PLUG,
-   lines=on, vo=off,
-   cam=push1('the plug in his hands and the glowing cylinder', '他手里的插头和发光的圆柱'), extra_assets=('ai_core', 'hack_screen'), room={'Su', 'Lin'}, new=True,
+   "<lin_work> pushes the thick cable plug home into the base of the glowing blue cylinder with both hands until it seats with a click, his jaw set, his eyes focused, one corner of his mouth lifting and his brows low, while <su_tac> stands beside the console with her arms folded and watches the cylinder, her lips pressed in a curious thin line, her eyes bright and her brows lifted.",
+   "林峰双手把粗线缆插头推进发光的蓝色玻璃圆柱的底座，直到咔嗒一声插到底，下颌绷住、眼神专注、嘴角微微上扬、眉头压低，苏清月抱着手臂站在控制台旁边看着圆柱，嘴唇抿成一条好奇的细线、眼睛明亮、眉毛上扬。",
+   SOUND_PLUG, AES_PLUG,
+   cam=push1('the plug in his hands and the glowing cylinder', '他手里的插头和发光的圆柱'), extra_assets=('ai_core',), room={'Su', 'Lin'}, new=True,
+   bg='Above the console a small round speaker grille is set into the concrete wall and the wall of six small monitors glows deep blue at frame-left.',
+   holds='The frame holds exactly two people: Lin and Su, at the control console, nobody else.')
+
+VINS('46-02v', [('eden_voice', "系统重启完毕，伊甸为您服务。", 'soft, calm', '轻柔平静'), ('eden_voice', "农场湿度百分之四十五。", 'soft, calm', '轻柔平静'),
+                ('eden_voice', "温泉水温四十一度。", 'soft, calm', '轻柔平静'), ('eden_voice', "外部风暴，八级。", 'soft, calm', '轻柔平静')],
+     CTRL_CORE, SOUND_EDENWAKE, {'Su', 'Lin'}, False)
+
+TA('46-02r', '02｜控制室：苏清月看着发光的圆柱，嘴角慢慢弯起来，林峰侧头看了她一眼', 5, CTRL_CORE,
+   [P('lin_work', 'right', "standing at the console in profile facing frame-left, one hand resting on the cylinder base, his head turned toward her", 'Su', "his jaw loose, one corner of his mouth lifting, his brows soft", outfit=LIN_GUN),
+    P('su_tac', 'left', "standing beside the console in profile facing frame-right, her arms folded, her eyes on the cylinder", 'obj:the glowing blue glass cylinder on the console', "her eyes bright, the corners of her mouth curving upward, her brows lifted", outfit=SU_WAR)],
+   'Medium two-shot, both from the head to the waist, in the middle third of the frame, at the control console.',
+   "<su_tac> keeps her arms folded and watches the glowing cylinder while the corners of her mouth slowly curve upward, her eyes bright and her brows lifted, and <lin_work> turns his head and glances at her, his jaw loose, one corner of his mouth lifting and his brows soft.",
+   "苏清月抱着手臂看着发光的圆柱，嘴角慢慢弯了起来，眼睛明亮、眉毛上扬，林峰侧过头看了她一眼，下颌放松、嘴角微微上扬、眉头舒展。",
+   SOUND_PLUG, AES_PLUG,
+   cam=push('both of them', '两人'), extra_assets=('ai_core',), room={'Su', 'Lin'}, new=False,
    bg='Above the console a small round speaker grille is set into the concrete wall and the wall of six small monitors glows deep blue at frame-left.',
    holds='The frame holds exactly two people: Lin and Su, at the control console, nobody else.')
 
@@ -277,33 +305,37 @@ TA('46-03', '03｜地下农场：天花板轨道上的细银水雾缓缓喷下�
    SOUND_FARMAUTO, AES_FARMAUTO,
    lines=[('su_cozy', "它自己浇水施肥？", 0.8, 'Lin'), ('lin_home', "控温授粉，全包。", 0.8, 'Su'), ('su_cozy', "第一颗番茄结果了。", 0.8, 'Lin'), ('lin_home', "等它红了，我亲手摘。", 0.8, 'Su')],
    cam=drop('the two of them between the tiers', '两排水培架中间的两个人'), room={'Su', 'Lin'}, new=True,
-   bg='Above them thin silver sprinkler arms glide along the ceiling rails misting the plants and rows of pink-violet grow lamps glow along the tiers.',
+   bg='Above them thin silver sprinkler arms glide along the ceiling rails misting the plants and rows of pink-violet grow lamps hang over the tiers.',
    holds='The frame holds exactly two people: Su and Lin, between the tiers, nobody else.')
 
-on, off = MIX([('k_rec', "谁杀了我，坐标就发出去。", 'Lin'), ('k_rec', "黑血军团会来找你们。", 'Lin'), ('k_rec', "一起下地狱吧，哈哈哈！", 'Lin')])
-TA('46-04', '04｜控制室：红色警报灯狂闪，黑色屏幕上一条锯齿状的红色音频波形疯狂跳动，扬声器里传出黑客K疯狂失真的录音，林峰盯着屏幕，苏清月脸色发白抓紧他的肩膀', 15, CTRL_RED,
+VINS('46-04v', [('k_rec', "谁杀了我，坐标就发出去。", 'manic, cracking, gleeful', '疯狂发破、得意'), ('k_rec', "黑血军团会来找你们。", 'manic, cracking, gleeful', '疯狂发破、得意'),
+                ('k_rec', "一起下地狱吧，哈哈哈！", 'manic, cracking, gleeful', '疯狂发破、得意')],
+     CTRL_RED, SOUND_BCAST, {'Su', 'Lin'}, True)
+
+TA('46-04', '04｜控制室：红色警报灯狂闪，林峰坐在转椅里一动不动盯着屏幕，苏清月脸色发白抓紧他的肩膀', 7, CTRL_RED,
    [P('lin_home', 'right', "sitting in the black swivel chair at the console in profile facing frame-left, his hands flat on the desk, his eyes on the thrashing red waveform", 'obj:the jagged red waveform on the black screen', "his jaw clenched, his eyes cold and sharp, his brows low", outfit="in a soft grey henley and dark lounge pants"),
     P('su_cozy', 'center', "standing behind his chair in profile facing frame-left, one hand gripping his shoulder, her eyes on the screen", 'obj:the jagged red waveform on the black screen', "her lips parting, her face pale, her brows pulled high")],
    'Medium two-shot, both from the head to the waist, in the middle third of the frame, at the control console.',
-   "A manic, cracking, gleeful young man's voice with wild laughter from the speaker beside the screen speaks the first, second and third lines one right after another as a voice-over to <lin_home>. <lin_home> sits motionless with his hands flat on the desk, his jaw clenched, his eyes cold and sharp and his brows low, while <su_cozy> stands rigid behind him gripping his shoulder, her lips parting, her face pale and her brows pulled high, as the red alarm pulse washes over them.",
-   "屏幕旁边的扬声器里传出一个疯狂、发破、带着得意狂笑的年轻男声，以旁白的方式一句接一句地说出第一句、第二句和第三句，对着林峰说。林峰一动不动地坐着，两手平放在桌上，下颌咬紧、眼神冰冷锐利、眉头压低，苏清月僵直地站在他身后抓着他的肩膀，嘴唇微张、脸色发白、眉毛高高挑起，红色警报的光一阵阵洗过两个人。" + BRISK_ZH,
-   SOUND_BCAST, AES_BCAST,
-   lines=on, vo=off,
-   cam=push('both of them', '两人'), extra_assets=('hack_screen',), room={'Su', 'Lin'}, new=True,
-   bg='Beside the screen on the console a small round speaker grille glows faintly and the wall of six small monitors glows deep blue at frame-left.',
+   "<lin_home> sits motionless with his hands flat on the desk, his jaw clenched, his eyes cold and sharp and his brows low, while <su_cozy> stands rigid behind him gripping his shoulder, her lips parting, her face pale and her brows pulled high, as the red alarm pulse washes over them.",
+   "林峰一动不动地坐着，两手平放在桌上，下颌咬紧、眼神冰冷锐利、眉头压低，苏清月僵直地站在他身后抓着他的肩膀，嘴唇微张、脸色发白、眉毛高高挑起，红色警报的光一阵阵洗过两个人。",
+   SOUND_ALARMQ, AES_BCAST,
+   cam=push('both of them', '两人'), extra_assets=('hack_screen',), room={'Su', 'Lin'}, new=False,
+   bg='Beside the screen on the console a small round speaker grille sits still and the wall of six small monitors glows deep blue at frame-left.',
    holds='The frame holds exactly two people: Lin and Su, at the control console, nobody else.')
 
-on, off = MIX([('eden_voice', "五百人车队，两小时后到。", 'Lin'), ('su_cozy', "五百个全副武装的人？", 'Lin'), ('lin_home', "那得多备几把扫雪铲。", 'Su')])
-TA('46-05', '05｜控制室：雷达屏幕上一长串红点爬向基地中心，伊甸报出车队的人数和到达时间，苏清月脸色苍白地问五百个全副武装的人，林峰淡定地按掉警报，红光停了，说那得多备几把扫雪铲', 15, CTRL_SAT,
+VINS('46-05v', [('eden_voice', "五百人车队，两小时后到。", 'soft, calm', '轻柔平静')], CTRL_SAT, SOUND_SAT, {'Su', 'Lin'}, True)
+
+on = times([('su_cozy', "五百个全副武装的人？", 'Lin'), ('lin_home', "那得多备几把扫雪铲。", 'Su')])
+TA('46-05', '05｜控制室：雷达屏幕上一长串红点爬向基地中心，苏清月脸色苍白地问五百个全副武装的人，林峰淡定地按掉警报，红光停了，说那得多备几把扫雪铲', 8, CTRL_SAT,
    [P('lin_home', 'right', "sitting in the black swivel chair at the console in profile facing frame-left, one finger resting on a red alarm button on the console, his eyes on the screen", 'obj:the long column of red dots crawling across the screen', "his jaw loose, one corner of his mouth lifting coldly, his eyes calm and dark, his brows relaxed", outfit="in a soft grey henley and dark lounge pants"),
     P('su_cozy', 'center', "standing beside his chair in profile facing frame-left, one hand pressed to her collarbone, her eyes on the screen", 'obj:the long column of red dots crawling across the screen', "her lips parted, her face pale, her brows pulled together")],
    'Medium two-shot, both from the head to the waist, in the middle third of the frame, at the control console.',
-   "A soft, calm, polite female synthetic voice from the speaker beside the screen speaks the first line as a voice-over to <lin_home>; then <su_cozy> turns her face to <lin_home> and speaks the second line in a shaky voice, and <lin_home> answers with the third line to <su_cozy> in a calm low voice; as he finishes he presses the alarm button and the red pulse stops, his jaw loose, one corner of his mouth lifting coldly, his eyes calm and dark and his brows relaxed, while her lips stay parted, her face pale and her brows pulled together.",
-   "屏幕旁边的扬声器里传出轻柔平静、礼貌的女性合成声音，以旁白的方式说出第一句，对着林峰说；接着苏清月转脸看着林峰，用发抖的声音说出第二句，林峰用平静低沉的声音对苏清月答出第三句；他说完按下警报按钮，红光停了，他下颌放松、嘴角冷冷一挑、眼神平静深沉、眉头舒展，她的嘴唇仍微张、脸色发白、眉头拧在一起。" + BRISK_ZH,
+   "<su_cozy> turns her face and speaks the first line to <lin_home> in a shaky voice, and <lin_home> answers with the second line to <su_cozy> in a calm low voice; as he finishes he presses the alarm button and the red pulse stops, his jaw loose, one corner of his mouth lifting coldly, his eyes calm and dark and his brows relaxed, while her lips stay parted, her face pale and her brows pulled together.",
+   "苏清月转脸看着林峰，用发抖的声音说出第一句，林峰用平静低沉的声音对苏清月答出第二句；他说完按下警报按钮，红光停了，他下颌放松、嘴角冷冷一挑、眼神平静深沉、眉头舒展，她的嘴唇仍微张、脸色发白、眉头拧在一起。",
    SOUND_SAT, AES_SAT,
-   lines=on, vo=off,
-   cam=push('both of them', '两人'), extra_assets=('hack_screen',), room={'Su', 'Lin'}, new=True,
-   bg='On the console a small round speaker grille glows faintly beside the wide terrain screen and the wall of six small monitors glows deep blue at frame-left.',
+   lines=on,
+   cam=push('both of them', '两人'), extra_assets=('hack_screen',), room={'Su', 'Lin'}, new=False,
+   bg='On the console the wide terrain screen shows a long column of tiny red dots and the wall of six small monitors glows deep blue at frame-left.',
    holds='The frame holds exactly two people: Lin and Su, at the control console, nobody else.')
 
 insert2('46-06', '06｜雪原：成百上千盏车灯在黑色的雪原上拉成一条长长的发光的线，一长列黑色的重型装甲卡车拖着榴弹炮缓缓爬向画面中央，白色的尾气一缕缕升起', 10, RAIDERS,

@@ -285,7 +285,7 @@ DL('64-08', '08｜控制室：苏清月看着屏幕说钻机翻了车队散了�
       "冷冷的绿色指示灯光勾出她的脸颊和黑色耳机，墙上警报灯突然一闪的红光沿着她的侧脸勾出一道硬朗的红边。"),
    post_en='after the last line her hand curls into a fist on the console and she leans closer to the screen',
    post_zh='最后一句之后，她放在控制台上的手攥成拳头，身体向屏幕凑近',
-   cam=push1('her face and the screen glow', '她的脸和屏幕的光'), bg='On the wall above the console a flat speaker panel with a thin glowing blue ring glows and a small red alarm lamp is above it.',
+   cam=push1('her face and the screen glow', '她的脸和屏幕的光'), bg='On the wall above the console a flat speaker panel with a thin blue ring glows and a small red alarm lamp is above it.',
    room={'Su'})
 
 # ================================================================================================ 第 65 集（A）
@@ -392,7 +392,7 @@ DL('65-08', '08｜控制室：伊甸报告洪水已改道正涌向生活区，�
       "一阵脉动的红光洒满控制台，在她的侧脸勾出一道硬朗的红边，头顶墙上扬声器那圈细细的蓝光亮着。"),
    post_en='after the last line she grips the edge of the console until her knuckles whiten',
    post_zh='最后一句之后，她攥紧控制台的边缘，指节发白',
-   cam=push1('her face and the red glow', '她的脸和红光'), bg='On the wall above the console a flat speaker panel with a thin glowing blue ring glows.',
+   cam=push1('her face and the red glow', '她的脸和红光'), bg='On the wall above the console a flat speaker panel with a thin blue ring glows.',
    room={'Su'})
 
 # ================================================================================================ 第 66 集（A）
@@ -410,7 +410,7 @@ DL('66-01', '01｜控制室：伊甸说通道塌方已无法进入，苏清月�
       "一阵脉动的红光洒满控制台，在她湿润的脸颊上勾出一道硬朗的红边，画面边缘冷冷的绿色指示灯闪动。"),
    post_en='after the last line she slams her fist onto the console and the small status lights jump',
    post_zh='最后一句之后，她一拳砸在控制台上，小小的指示灯跳了一下',
-   cam=push1('her face and the red glow', '她的脸和红光'), bg='On the wall above the console a flat speaker panel with a thin glowing blue ring glows.',
+   cam=push1('her face and the red glow', '她的脸和红光'), bg='On the wall above the console a flat speaker panel with a thin blue ring glows.',
    room={'Su'})
 
 INS('66-02', '02｜闸门室：塌方后的小房间里，红色应急灯频闪，齐踝深的黑水慢慢涨高，黑铁手轮停在转了一半的位置，旁边墙上的黄铜板泛着暗光', 7, GATE_RUBBLE,

@@ -32,6 +32,8 @@ def bad(seg, msg):
 def warn(seg, msg):
     print(f'  ⚠ {seg}: {msg}')
 
+STRONG = re.compile(r"frost-furred|\bfurred\b|\brim-?lights?\b|\brim-?lit\b|\brims? (?:his|her|their|both|the)\b|\brimmed\b|\bglows? like\b|\blike an? (?:small |tiny )?(?:lantern|wound|ember|candle)\b|\bas if\b|\bhalo\b|\baura\b|\bedges (?:the|his|her|their)\b|\boutlines? (?:his|her|their|both)\b|\bglow(?:s|ing)? (?:through|over|across|along|around|upon|against|from within)\b|\bsteam(?:ing)? through the (?:beam|light)\b", re.I)
+LATERAL = re.compile(r"tracks sideways|slides slowly|arcs slowly around|slowly (?:left|right)\b", re.I)
 d = json.load(open(sys.argv[1], encoding='utf-8'))
 roles = {a['key']: a.get('role') for a in d.get('assets', [])}
 char_assets = {n: c['image_keys'] for n, c in d.get('characters', {}).items()}
@@ -95,15 +97,23 @@ for ep in d['episodes']:
                     bad(t, f'开场图里人物 {k} 没写看着谁（eyes … on 某人／某物，或闭眼）')
         dl = s['dialogue']
         dur = s['duration_seconds']
-        if dl and dur < 5: bad(t, '有台词的任务不要短于 5 秒（2026-10-15 快节奏写法；此前是 6 秒）')
+        # 2026-10-16（hh：系统播报几乎 100% 被配给女主的嘴）：只有声音的说话人（图是道具：音箱／收音机／耳机／屏幕）和人脸不能在同一个任务里
+        voice_only = {x['speaker'] for x in dl if char_assets.get(x['speaker']) and all(roles.get(k) != 'character' for k in char_assets[x['speaker']])}
+        n_person = len([k for k in s.get('asset_keys', []) if roles.get(k) == 'character'])
+        if voice_only and n_person: bad(t, f'只有声音的说话人 {sorted(voice_only)} 和人脸同框（H3 会把这个声音配给画面里的脸，女声配女主、男声配女主还多出一个人）：请把这些台词拆进不带人的插镜')
+        voice_insert = bool(dl) and n_person == 0 and len(voice_only) == len({x['speaker'] for x in dl}) 
+        for m_ in STRONG.finditer(vis + ' ' + ip):
+            bad(t, f'会被画成“多出一层东西”的写法（光边／发光物／毛茸茸）：“{m_.group(0)}”（2026-10-16）')
+        if n_person and LATERAL.search(re.split(r'(?<=\.)\s+', vis.strip())[-1]): bad(t, '画面里有人时不要左右平移／环绕（露出的新空间会被填成多出来的人，2026-10-16）')
+        if dl and dur < (4 if voice_insert else 5): bad(t, '有台词的任务不要短于 5 秒（2026-10-15 快节奏写法；此前是 6 秒）')
         if len(dl) > 6: bad(t, '一个任务多于六句台词')
         elif len(dl) > 4:
             if dur < 9: bad(t, '五六句台词的任务要 ≥9 秒（B 短剧快速写法）')
             else: warn(t, '五六句台词（B 短剧快速写法，句间 0.2 秒，待验证）')
-        if len(dl) == 4 and dur < 8: bad(t, '四句台词的任务要 ≥8 秒（2026-10-15 快节奏写法，句间 0.1–0.2 秒；此前是 10 秒）（2026-10-13 新剧第 5 集起测试 12–15 秒四句短话＋结尾动作，待验证）')
+        if len(dl) == 4 and dur < 8 and not voice_insert: bad(t, '四句台词的任务要 ≥8 秒（2026-10-15 快节奏写法，句间 0.1–0.2 秒；此前是 10 秒）（2026-10-13 新剧第 5 集起测试 12–15 秒四句短话＋结尾动作，待验证）')
         if len(dl) == 4: warn(t, '四句台词（测试写法：每句 ≤ 约 8 个汉字，最后要有一个结尾动作）')
-        if len(dl) == 3 and dur < 7: bad(t, '三句台词的任务要 ≥8 秒（2026-10-13 新剧第 1–4 集 004 起允许 3 句短话，待验证）')
-        if len(dl) >= 2 and dur < 6: bad(t, '两句台词的任务要 ≥6 秒（2026-10-14 起台词顺滑写法，任务按台词长度收紧）')
+        if len(dl) == 3 and dur < 7 and not voice_insert: bad(t, '三句台词的任务要 ≥8 秒（2026-10-13 新剧第 1–4 集 004 起允许 3 句短话，待验证）')
+        if len(dl) >= 2 and dur < 6 and not voice_insert: bad(t, '两句台词的任务要 ≥6 秒（2026-10-14 起台词顺滑写法，任务按台词长度收紧）')
         if dur >= 15 and len(dl) > 2: warn(t, '15 秒任务台词多于两句')
         # 每句台词：镜头文字里要写“对谁说”，对象在这个任务里、不是说话人
         targets = [m.group(1) for m in re.finditer(SPEAK.pattern + r"[^.;]{0,80}?\b(?:to|at) \[\[asset:(\w+)\]\]", vis, re.I)]
@@ -111,7 +121,7 @@ for ep in d['episodes']:
             if x is dl[0] and x['start_seconds'] > dur / 2: bad(t, f'台词“{x["text"]}”计划开口 {x["start_seconds"]} 秒，不在任务前半段（实际会晚 1–6 秒）')
             sp_keys = char_assets.get(x['speaker'], [])
             ok = [k for k in targets if k in s['asset_keys'] and roles.get(k) == 'character' and k not in sp_keys]
-            if not ok and not re.search(r'inner voice|voice-over|to (?:himself|herself)|into (?:the|a) [^.;,]{0,60}(?:handset|microphone|radio)', vis, re.I): bad(t, f'台词“{x["text"]}”没在镜头文字里写明对谁说（… to [[asset:某人]]，那人要在画面里）；独白要写 inner voice')
+            if not ok and not voice_insert and not re.search(r'inner voice|voice-over|to (?:himself|herself)|(?:into|toward|at) (?:the |a |an )?[^.;]{0,100}(?:handset|microphone|radio|speaker|headset|panel)', vis, re.I): bad(t, f'台词“{x["text"]}”没在镜头文字里写明对谁说（… to [[asset:某人]]，那人要在画面里）；独白要写 inner voice')
             han = len(re.findall(r'[㐀-鿿]', x['text']))
             lang = x.get('language') or s.get('dialogue_language') or d.get('dialogue_language')
             if lang == 'en':

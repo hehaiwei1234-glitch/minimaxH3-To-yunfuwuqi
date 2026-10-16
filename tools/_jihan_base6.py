@@ -1,7 +1,7 @@
 """《极寒末日》第 29 集起共用的定义（2026-10-14）：从 gen_jihan_ep29_32_013.py 原样复制（运镜 drop、光和空气 AES_*、TA／TAV／insert2、新外貌、场景、声音）。
 013 的生成脚本一字不动。014 起 `import _jihan_base6 as B6; B6.S = S; from _jihan_base6 import *`（TA／TAV／insert2 用的是本模块里的 S，所以要先把 Session 赋给 B6.S）。"""
 from _jihan_base5 import *
-from _scene import smooth_task
+from _scene import smooth_task, calm
 
 S = None   # 由使用它的生成脚本赋值（B6.S = Session(...)）
 
@@ -40,8 +40,9 @@ AES_SNOWRV = ("A green aurora curtain ripples over the snowfield and its light g
 
 
 def TA(tid, title, dur, scene, people, framing, act_en, zh, sound, aes, **kw):
+    aes = calm(aes)      # 2026-10-16：光边／轮廓／闪光／热气飘这类词整句删掉（见 _scene.calm）
     kw['bg'] = (kw.get('bg', '') + ' ' + aes[0]).strip()
-    return S.T(tid, title, dur, scene, people, framing, act_en.rstrip() + ' ' + aes[0], zh.rstrip() + aes[1], sound, **kw)
+    return S.T(tid, title, dur, scene, people, framing, (act_en.rstrip() + ' ' + aes[0]).strip(), zh.rstrip() + aes[1], sound, **kw)
 
 
 def TAV(tid, title, scene, people, framing, act_en, zh, sound, aes, lines, **kw):
@@ -51,7 +52,8 @@ def TAV(tid, title, scene, people, framing, act_en, zh, sound, aes, lines, **kw)
 
 
 def insert2(tid, title, dur, scene, framing, act_en, zh, snd, holds, cam, aes, extra_assets=(), groups=()):
-    return S.T(tid, title, dur, scene, [], framing, act_en.rstrip() + ' ' + aes[0], zh.rstrip() + aes[1], snd, cam=cam, holds=holds,
+    aes = calm(aes)
+    return S.T(tid, title, dur, scene, [], framing, (act_en.rstrip() + ' ' + aes[0]).strip(), zh.rstrip() + aes[1], snd, cam=cam, holds=holds,
                room={g[0] for g in groups}, groups=list(groups), new=True, bg=aes[0], extra_assets=extra_assets)
 
 

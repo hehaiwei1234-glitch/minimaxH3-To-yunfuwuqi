@@ -186,7 +186,7 @@ DL('59-06', '06｜控制室：伊甸说地表温度零下三度，苏清月问�
       "控制台冷冷的绿色指示灯光勾出他们脸的轮廓，头顶扬声器那圈细细的蓝光亮着，侧桌上温暖的琥珀色灯光落在林峰的肩上。"),
    post_en='after the last line <su_cozy> slowly closes her hand into a fist on the console edge',
    post_zh='最后一句之后，苏清月慢慢把放在控制台边的手攥成拳头',
-   cam=lowrise('the two of them at the console', '控制台边的两个人'), bg='On the wall above the console a flat speaker panel with a thin glowing blue ring glows.',
+   cam=lowrise('the two of them at the console', '控制台边的两个人'), bg='On the wall above the console a flat speaker panel with a thin blue ring glows.',
    extra_assets=('radio_set',))
 
 DL('59-07', '07｜控制室：收音机忽然沙沙响起周宁的声音，说他是周宁问他们还有没有暖气，林峰对苏清月说是周宁，苏清月问要不要回应，林峰说先听', CONTROL_RADIO,
@@ -287,7 +287,7 @@ DL('60-05', '05｜餐桌：伊甸报告十二公里外检测到外部振动，�
       "头顶墙上扬声器那圈细细的蓝光亮着，温暖的灯光落到他们脸上变冷了，地图上红铅笔的线条随着震动微微发颤。"),
    post_en='after the last line the mugs on the table shiver and <lin_home> lays the pencil down on the map',
    post_zh='最后一句之后，桌上的杯子微微发颤，林峰把铅笔放在地图上',
-   cam=lowrise('the two of them at the table', '桌边的两个人'), bg='On the wall above the table a flat speaker panel with a thin glowing blue ring glows.')
+   cam=lowrise('the two of them at the table', '桌边的两个人'), bg='On the wall above the table a flat speaker panel with a thin blue ring glows.')
 
 INS('60-06', '06｜控制室：橄榄绿的收音机特写，大圆调谐盘的琥珀色光里，指针停在一个频率上微微发抖，杂音沙沙', 6, RADIO_CLOSE,
     'Close shot of the radio dial, the round dial in the middle third of the frame, nobody in the scene.',
@@ -408,7 +408,7 @@ DL('61-08', '08｜控制室：红灯忽然闪烁，伊甸报告B3外壁出现微
       "一阵脉动的红光洒满控制台，在两张脸上勾出硬朗的红边，头顶墙上扬声器那圈细细的蓝光亮着。"),
    post_en='after the last line <lin_home> swings the toolbag onto his shoulder and strides out through the steel door at frame-right',
    post_zh='最后一句之后，林峰把工具包甩到肩上，大步走出右边的钢门',
-   cam=slide('toward frame-right', '右', 'the two of them fill the middle third of the frame', '两人占满画面中间三分之一'), bg='On the wall above the console a flat speaker panel with a thin glowing blue ring glows.',
+   cam=slide('toward frame-right', '右', 'the two of them fill the middle third of the frame', '两人占满画面中间三分之一'), bg='On the wall above the console a flat speaker panel with a thin blue ring glows.',
    exit=('Lin',))
 
 INS('61-09', '09｜泄洪舱：灰色钛合金墙板上一道头发丝一样细的裂缝，一条高压的细水柱从缝里横着喷过来，白色的水雾弥漫在空气里', 7, FLOOD_JET,

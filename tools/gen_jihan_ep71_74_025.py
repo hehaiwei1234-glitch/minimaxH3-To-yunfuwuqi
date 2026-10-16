@@ -486,7 +486,7 @@ DL('74-07', '07｜冰湖岸边：苏清月对着收音机说我在，陌生人�
 TAA('74-08', '08｜冰湖全景：极光下辽阔的冰湖岸边，苏清月是一个很小的深色身影，把收音机按在胸前，对岸山脊上一排小小的灯静静亮着，镜头缓缓升起', 10, ICE,
     [P('su_arctic', 'center', "standing very small and motionless on the snowy shore in profile facing frame-right, the small olive radio held against her chest in both gloved hands and her head lifted toward the far ridge", 'obj:the far ridge across the lake', "her lips parting, her eyes bright, her brows lifted", outfit=SU_OUT_BARE)],
     'Wide shot of the whole lake, the small figure in the middle third of the frame at the bottom, the aurora filling the sky above.',
-    "A broad green and violet aurora fills the sky over the vast frozen lake; <su_arctic> stands small and motionless on the snowy shore holding the radio against her chest, and far across the ice a short line of tiny warm lights glows along a ridge; the picture rises slowly above her and holds.",
+    "A broad green and violet aurora fills the sky over the vast frozen lake; <su_arctic> stands small and motionless on the snowy shore holding the radio against her chest, and far across the ice a short line of tiny warm lights shows along a ridge; the picture rises slowly above her and holds.",
     "宽阔的绿色和紫色的极光铺满了辽阔冰湖的天空；苏清月小小的、一动不动地站在雪岸上，把收音机按在胸前，远远的冰面对岸，山脊上有一小排温暖的小灯亮着；画面从她身后缓缓升高，然后停住。",
     Q('A long low sigh of wind across the ice, the faint hiss of radio static and the deep hush of the night.', '风掠过冰面长长低低的叹息声、收音机轻轻的沙沙声和夜晚深深的寂静。'),
     AE("Slow curtains of green and violet aurora pour cold colour over the glassy ice and along the far ridge the tiny warm lights glow like a string of embers while thin silver mist drifts across the lake.",
