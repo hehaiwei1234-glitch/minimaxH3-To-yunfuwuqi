@@ -1,0 +1,918 @@
+{
+ "schema": "h3-production-draft",
+ "version": 1,
+ "title": "极寒末日：我的隐秘安全屋｜第1–4集｜七天·半价·扫货·山里",
+ "dialogue_language": "zh",
+ "style": "Photorealistic live-action post-apocalyptic survival drama set in modern-day China, with a cinematic, high-contrast look. Two clear visual worlds: the blinding white heat of a summer world that does not know what is coming, and later a warm amber-lit hidden shelter set against a silent frozen white world of snow, ice and green aurora. Every named character is Chinese. Rich natural skin texture with visible pores, realistic fabrics, restrained cinematic color grading, and an ultra-wide 8:3 cinemascope frame in which the people are placed deliberately and the room is visible around them.",
+ "assets": [
+  {
+   "key": "lin_studio",
+   "kind": "image",
+   "role": "character",
+   "label": "林峰（深夜工作室：皱巴巴的白衬衫，一脸倦意）",
+   "description": {
+    "en": "Lin, a lean, athletic Chinese man in his early thirties with short messy black hair, a faint shadow of stubble and tired but steady dark-brown eyes, wearing a rumpled white dress shirt with the sleeves rolled to his forearms and a loosened collar. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "林峰，三十出头、身形精瘦结实的中国男性，黑色短发有些凌乱，下巴一层淡淡的胡茬，疲惫却沉稳的深褐色眼睛，穿着皱巴巴的白衬衫、袖子卷到小臂、领口松开。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of a Chinese man, short messy black hair, a faint shadow of stubble, tired but steady dark-brown eyes, wearing a rumpled white dress shirt with the sleeves rolled to his forearms and a loosened collar. He faces the camera with a tired, steady expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "su_suit",
+   "kind": "image",
+   "role": "character",
+   "label": "苏清月（黑色真丝衬衫，金丝眼镜）",
+   "description": {
+    "en": "Su, an elegant, strikingly beautiful Chinese woman in her late twenties with long glossy black hair falling straight over one shoulder, sharp dark-brown eyes behind thin gold-rimmed glasses, wearing a fitted black silk blouse and a black pencil skirt. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "苏清月，二十八岁左右、优雅而极其美丽的中国女性，乌黑的长直发光滑地垂在一边肩上，锐利的深褐色眼睛戴着细细的金丝眼镜，穿着合身的黑色真丝衬衫和黑色铅笔裙。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of a Chinese woman, long glossy black hair falling straight over one shoulder, sharp dark-brown eyes behind thin gold-rimmed glasses, wearing a fitted black silk blouse. She faces the camera with a composed, sharp expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "lin_arctic",
+   "kind": "image",
+   "role": "character",
+   "label": "林峰（纯白极地防寒服，兜帽、白色护目镜推在额头上）",
+   "description": {
+    "en": "Lin, the same lean, athletic Chinese man in his early thirties as in the reference, wearing a bulky pure-white polar expedition suit with the hood up, white goggles pushed up on his forehead and a white neck gaiter pulled down under his chin, his cheeks reddened by cold and a faint shadow of stubble. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "林峰，和参考图是同一位三十出头、身形精瘦结实的中国男性，穿着蓬松的纯白极地防寒服、戴着兜帽，白色护目镜推在额头上，白色围脖拉到下巴下面，脸颊被冻得发红，下巴上一层淡淡的胡茬。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic full-body portrait of the same man as in the reference image, a bulky pure-white polar expedition suit with the hood up, white goggles pushed up on his forehead, a white neck gaiter pulled down under his chin, cheeks reddened by cold, a faint shadow of stubble. He faces the camera with a hard, focused expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": [
+     "lin_studio"
+    ]
+   }
+  },
+  {
+   "key": "su_arctic",
+   "kind": "image",
+   "role": "character",
+   "label": "苏清月（纯白极地防寒服，兜帽、白色护目镜推在额头上，睫毛上有霜）",
+   "description": {
+    "en": "Su, the same elegant Chinese woman in her late twenties as in the reference, wearing a bulky pure-white polar expedition suit with the hood up, white goggles pushed up on her forehead and a white neck gaiter pulled down under her chin, frost on her lashes. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "苏清月，和参考图是同一位二十八岁左右、优雅美丽的中国女性，穿着臃肿的纯白色极地防寒服、兜帽戴着、白色护目镜推在额头上、白色颈套拉到下巴下面，睫毛上有霜。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of the same woman as in the reference image, wearing a bulky pure-white polar expedition suit with the hood up, white goggles pushed up on her forehead and a white neck gaiter pulled down under her chin, frost on her lashes. She faces the camera with a sharp, focused expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": [
+     "su_suit"
+    ]
+   }
+  },
+  {
+   "key": "snow_field",
+   "kind": "image",
+   "role": "scene",
+   "label": "地表雪原（一望无际的雪地，远处一线黑压压的松林，上空的绿色极光）",
+   "description": {
+    "en": "A vast open black-night snowfield rippled by the wind, a dark line of snow-laden pines far away along the horizon and a faint green aurora curtain hanging above. The reference fixes the layout and decor.",
+    "zh": "一片一望无际、被风吹出波纹的夜间雪原，远处地平线上一线黑压压挂满雪的松林，上空悬着一片淡淡的绿色极光。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a vast open black-night snowfield rippled by the wind, a dark line of snow-laden pines far away along the horizon and a faint green aurora curtain hanging above, nobody in the scene. The frame holds the open snowfield, the far dark pine line and the green aurora.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "ice_lake",
+   "kind": "image",
+   "role": "scene",
+   "label": "极光下的冰湖（宽阔的冰湖，深色玻璃般的冰面带着浅色裂纹，岸边有残雪和松树，远处有一座深色的山，天空有绿色和紫色的极光）",
+   "description": {
+    "en": "A vast frozen lake under a broad green and violet aurora, dark glassy ice with pale cracks, patches of old snow along the shore with a dark line of pines, and a dark mountain far in the distance. The reference fixes the layout and decor.",
+    "zh": "极光下一片辽阔的冰湖：深色玻璃般的冰面带着浅色的裂纹，岸边是残雪和一排深色的松树，远处是一座深色的山，天空中有绿色和紫色的宽阔极光。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a vast frozen lake under a broad green and violet aurora, dark glassy ice with pale cracks, patches of old snow along the shore with a dark line of pines, and a dark mountain far in the distance, nobody in the scene. The frame holds the frozen lake, the shore and the aurora.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "frost_forest",
+   "kind": "image",
+   "role": "scene",
+   "label": "雾凇森林（高高的松树和桦树，每一根树干树枝都裹着白色的霜花，雪地平整无痕，斜斜的淡淡阳光，低低的雾）",
+   "description": {
+    "en": "A hushed forest of tall pines and birches, every trunk and branch furred with white hoarfrost, smooth unmarked snow, slanting shafts of pale sunlight and low mist. The reference fixes the layout and decor.",
+    "zh": "一片寂静的树林，高高的松树和桦树，每一根树干和树枝都裹着白色的霜花，雪地平整、没有脚印，淡淡的阳光斜斜地穿过树干，雾低低地贴着地面。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a hushed forest of tall pines and birches, every trunk and branch furred with white hoarfrost, smooth unmarked snow, slanting shafts of pale sunlight and low mist, nobody in the scene. The frame holds the frost-furred trunks, the unmarked snow and the slanting sunlight.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "glacier_falls",
+   "kind": "image",
+   "role": "scene",
+   "label": "冰川峡谷（两侧是上百米高的蓝色层叠冰壁，中间一道巨大的冻瀑布像巨大的管风琴一样挂着长长的冰柱，谷底是平整的雪）",
+   "description": {
+    "en": "A deep blue glacier canyon with sheer layered blue ice walls and a huge frozen waterfall hanging like a giant organ of icicles in the middle, a smooth snow floor and a narrow strip of pale sky. The reference fixes the layout and decor.",
+    "zh": "一条深蓝色的冰川峡谷，两侧是笔直的层叠蓝色冰壁，中间挂着一道像巨大管风琴一样的冻瀑布，谷底是平整的雪，头顶只有一线苍白的天空。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a deep blue glacier canyon with sheer layered blue ice walls and a huge frozen waterfall hanging like a giant organ of icicles in the middle, a smooth snow floor and a narrow strip of pale sky, nobody in the scene. The frame holds the blue ice walls, the frozen waterfall and the snow floor.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "ice_coast",
+   "kind": "image",
+   "role": "scene",
+   "label": "冰封海岸（灰色的冻海，巨大的浅蓝色冰山冻在冰里，右边有一艘锈迹斑斑的货轮歪着搁浅在冰里，灰色的天，一轮低低的暗白色太阳）",
+   "description": {
+    "en": "A vast grey frozen sea with huge pale blue icebergs locked in the ice, a rusted cargo ship tilted and stuck in the ice at the right, a flat grey sky and a dull white sun low. The reference fixes the layout and decor.",
+    "zh": "一片辽阔的灰色冻海，巨大的浅蓝色冰山冻在冰里，右边一艘锈迹斑斑的货轮歪着搁浅在冰里，天空灰蒙蒙，一轮暗白色的太阳低低地挂着。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a vast grey frozen sea with huge pale blue icebergs locked in the ice, a rusted cargo ship tilted and stuck in the ice at the right, a flat grey sky and a dull white sun low, nobody in the scene. The frame holds the grey ice, the icebergs and the stranded ship.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "frozen_city_wide",
+   "kind": "image",
+   "role": "scene",
+   "label": "冰封的市中心（密密麻麻挂满长冰柱的玻璃大楼，中间一条安静的街，霜白色的车，白雾在楼之间飘，一轮苍白的太阳低低挂在灰蓝色的天上）",
+   "description": {
+    "en": "A dense frozen downtown of glass towers hung with long icicles, a silent street of frost-white cars, white mist drifting between the towers and a pale sun low in a grey-blue sky. The reference fixes the layout and decor.",
+    "zh": "冰封的市中心，密密麻麻的玻璃大楼挂满长长的冰柱，中间一条安静的街停着霜白色的车，白雾在大楼之间飘，一轮苍白的太阳低低地挂在灰蓝色的天空里。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a dense frozen downtown of glass towers hung with long icicles, a silent street of frost-white cars, white mist drifting between the towers and a pale sun low in a grey-blue sky, nobody in the scene. The frame holds the icicle-hung towers, the frost-white street and the drifting mist.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "frozen_street",
+   "kind": "image",
+   "role": "scene",
+   "label": "冰封的大街（宽阔安静的大街，霜白色的车和白色的行道树，两边的玻璃大楼挂着长长的冰柱，白雾贴着路面飘）",
+   "description": {
+    "en": "A wide silent city boulevard of frost-white cars and white frozen street trees, glass towers hung with long icicles on both sides and white mist drifting low along the road. The reference fixes the layout and decor.",
+    "zh": "宽阔安静的城市大街，霜白色的车和白色的行道树，两边的玻璃大楼挂着长长的冰柱，白雾贴着路面低低地飘。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a wide silent city boulevard of frost-white cars and white frozen street trees, glass towers hung with long icicles on both sides and white mist drifting low along the road, nobody in the scene. The frame holds the frost-white cars, the frozen trees and the icicle-hung towers.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "frozen_fair",
+   "kind": "image",
+   "role": "scene",
+   "label": "冰封的游乐场（空无一人，巨大的摩天轮被厚厚的白霜包着，吊舱挂满冰柱，旋转木马的木马长着霜毛，地上是雪）",
+   "description": {
+    "en": "A deserted frozen amusement park with a giant Ferris wheel under thick white frost, icicle-hung gondolas, frost-furred carousel horses and snow on the ground. The reference fixes the layout and decor.",
+    "zh": "空无一人的冰封游乐场，巨大的摩天轮被厚厚的白霜包着，吊舱挂满冰柱，旋转木马的木马长着一层霜毛，地上是雪。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a deserted frozen amusement park with a giant Ferris wheel under thick white frost, icicle-hung gondolas, frost-furred carousel horses and snow on the ground, nobody in the scene. The frame holds the frosted Ferris wheel, the carousel and the snowy ground.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "highway_calm",
+   "kind": "image",
+   "role": "scene",
+   "label": "冰封的高速公路（笔直宽阔的多车道高速，被透明的冰包住的车和卡车排成一条看不到头的长龙，积雪的护栏，灰蓝色的平原）",
+   "description": {
+    "en": "A wide straight multi-lane highway packed with a long unbroken line of cars and trucks encased in clear ice, snow-covered guardrails and a flat grey-blue plain. The reference fixes the layout and decor.",
+    "zh": "笔直宽阔的多车道高速公路，被透明的冰包住的车和卡车排成一条看不到头的长龙，护栏上盖着积雪，两边是灰蓝色的平原。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a wide straight multi-lane highway packed with a long unbroken line of cars and trucks encased in clear ice, snow-covered guardrails and a flat grey-blue plain, nobody in the scene. The frame holds the ice-encased cars and trucks, the guardrails and the vanishing point.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "star_night",
+   "kind": "image",
+   "role": "scene",
+   "label": "雪夜银河（平整的雪原泛着淡淡的蓝光，后面是一道深色的山脊剪影，上方黑色的天空里一条极其密集的银河横跨天空，没有任何灯光）",
+   "description": {
+    "en": "A snowfield glowing faint blue at night with a dark ridge silhouette at the back and an unbelievably dense Milky Way arcing across a black sky, no lights anywhere. The reference fixes the layout and decor.",
+    "zh": "夜里的雪原泛着淡淡的蓝光，后面是一道深色的山脊剪影，黑色的天空里一条极其密集的银河横跨天空，没有任何灯光。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a snowfield glowing faint blue at night with a dark ridge silhouette at the back and an unbelievably dense Milky Way arcing across a black sky, no lights anywhere, nobody in the scene. The frame holds the snowfield, the ridge silhouette and the Milky Way.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "sunrise_ice",
+   "kind": "image",
+   "role": "scene",
+   "label": "冰原日出（一望无际的冰原有浅色的冰脊和长长的柔和阴影，地平线上一轮暗白色的太阳正在升起，冰面被染成粉金色）",
+   "description": {
+    "en": "An endless frozen plain with pale pressure ridges and long soft shadows, a dull white sun rising on the horizon and the ice flushed pink and gold. The reference fixes the layout and decor.",
+    "zh": "一望无际的冰原，有浅色的冰脊和长长的柔和阴影，地平线上一轮暗白色的太阳正在升起，冰面被染成粉金色。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of an endless frozen plain with pale pressure ridges and long soft shadows, a dull white sun rising on the horizon and the ice flushed pink and gold, nobody in the scene. The frame holds the ice plain, the pressure ridges and the rising sun.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "ridge_dead_city",
+   "kind": "image",
+   "role": "scene",
+   "label": "山脊上看死城（前景是山脊顶上积雪的深色岩石，远处山谷里一整座没有任何灯光的城市，淡淡的蓝色黎明，低处的街上有雾）",
+   "description": {
+    "en": "A snowy ridge top with bare dark rocks in the foreground and a vast dark city with no lights spreading across the valley below under a faint blue dawn, mist in the low streets. The reference fixes the layout and decor.",
+    "zh": "山脊顶上积着雪的深色岩石在前景，下面的山谷里是一整座没有任何灯光的城市，天边是淡淡的蓝色黎明，低处的街上有雾。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a snowy ridge top with bare dark rocks in the foreground and a vast dark city with no lights spreading across the valley below under a faint blue dawn, mist in the low streets, nobody in the scene. The frame holds the snowy ridge, the dark rocks and the dead city below.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "spring_meadow",
+   "kind": "image",
+   "role": "scene",
+   "label": "温泉口的暖区（一圈融开的土地，湿润的黑土上有一片片鲜绿的草和小小的绿芽，围着一汪冒着白汽的清澈温泉水，四周是一圈高高的冰雪墙）",
+   "description": {
+    "en": "A ring of thawed ground with dark wet soil, patches of vivid green grass and tiny green sprouts around a pool of clear steaming water, a high wall of snow and ice all round the edge. The reference fixes the layout and decor.",
+    "zh": "一圈融开的土地，湿润的黑土上有一片片鲜绿的草和小小的绿芽，围着一汪冒着白汽的清澈温泉水，四周是一圈高高的冰雪墙。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a ring of thawed ground with dark wet soil, patches of vivid green grass and tiny green sprouts around a pool of clear steaming water, a high wall of snow and ice all round the edge, nobody in the scene. The frame holds the green grass, the steaming pool and the wall of snow.",
+    "reference_keys": []
+   }
+  }
+ ],
+ "characters": {
+  "LinArctic": {
+   "image_keys": [
+    "lin_arctic"
+   ],
+   "voice_description": {
+    "en": "A mature adult male voice, calm and level with a dry cold edge, speaking clear Mandarin Chinese. He never raises his voice. Every word is fully voiced and audible.",
+    "zh": "成熟成年男声，平稳镇定，带一点干冷的质感，普通话清楚。他从不提高音量。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "SuArctic": {
+   "image_keys": [
+    "su_arctic"
+   ],
+   "voice_description": {
+    "en": "A confident adult woman's voice, low, smooth and slightly husky, speaking clear Mandarin Chinese with a sharp, measured edge. Every word is fully voiced and audible.",
+    "zh": "自信的成年女声，低沉、顺滑、略带沙哑，普通话清楚，带着锐利而有分寸的质感。每个字都正常发声、清晰可辨。"
+   }
+  }
+ },
+ "episodes": [
+  {
+   "title": "补拍4A｜末日景色：冰雪自然（冰封森林、极光雪原、冰川峡谷冰瀑、冰封海岸）",
+   "summary": "四个纯景色切镜：雾凇森林里细小的冰晶往下飘、极光铺满雪原、蓝色冰壁间的冻瀑布、灰色冻海里搁浅的货轮。",
+   "script": "冰封森林，雾凇把每根树枝都裹成白色，细小的冰晶从斜斜的阳光里飘下来，镜头在树干之间低低地滑过去，细小的冰晶从斜斜的淡淡阳光里飘下来，几片松散的霜花从树枝上悄悄落下；雾贴着地面轻轻地动，别的什么都不动。\n极光雪原，一片绿紫色的极光铺满整个天空，光洒在平整的雪原上闪着，镜头缓缓从雪面抬起，一直摇到满天的极光，宽阔的绿紫色极光帷幕缓缓地在整个天空里流动，光洒在平整的雪面上闪着；一缕细细的粉雪被风吹着从地面上飘过。衬着深蓝色的阴影。\n冰川峡谷，蓝色的冰壁之间挂着一道巨大的冻瀑布，像管风琴一样垂着长长的冰柱，镜头从谷底慢慢升到瀑布的顶端，巨大的冻瀑布一动不动地挂在蓝色冰壁之间，细小的冰尘在冷光里闪着，瀑布边缘一根长长的冰柱慢慢地滴下一颗发亮的水珠。冷冷的蓝光从半透明的冰壁里面透出来，长长的冰柱每一个尖头都挂着一线白光。\n冰封海岸，灰色的冻海里冻着巨大的浅蓝色冰山，右边一艘锈迹斑斑的货轮歪着搁浅在冰里，一缕雪雾贴着冰面飘过，一缕薄薄的雪雾慢慢飘过灰色冰面，经过巨大的浅蓝色冰山前面，搁浅的锈迹斑斑的货轮歪在那里一动不动，栏杆上落下一线细细的霜。冰面泛着冷冷的珍珠色光泽。",
+   "segments": [
+    {
+     "title": "01｜冰封森林：雾凇把每根树枝都裹成白色，细小的冰晶从斜斜的阳光里飘下来，镜头在树干之间低低地滑过去",
+     "duration_seconds": 10,
+     "generation_seconds": 10,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [],
+     "asset_keys": [
+      "frost_forest"
+     ],
+     "image_reference_keys": [
+      "frost_forest"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Wide shot of the frost forest, the sunlit trunks centered in the middle third of the frame, nobody in the scene.  The frame holds the frost-covered trunks, the unmarked snow and the shafts of sunlight, nobody in the scene. A low pale sun filters through thin white mist and fine ice crystals drift in the still cold air. Fixed stage layout: a hushed forest of tall pines and birches fills the frame, every trunk and branch thickly crusted with white hoarfrost and glittering rime, the snowy ground smooth and unmarked, soft shafts of pale sunlight slanting between the trunks and mist lying low along the ground; nobody in the scene.",
+     "visual_zh": "细小的冰晶从斜斜的淡淡阳光里飘下来，几片松散的霜花从树枝上悄悄落下；雾贴着地面轻轻地动，别的什么都不动。",
+     "camera_zh": "0—10秒，镜头贴着雪地低低地向前滑过树干之间，直到一道穿过挂满霜花树枝的阳光占满画面中间。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 10,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. Fine ice crystals drift down through the slanting shafts of pale sunlight and a few loose flakes of rime fall silently from a branch; the mist stirs gently along the ground and nothing else moves. The camera glides forward low along the snow between the trunks until a shaft of sunlight shining through the rime-covered branches fills the middle of the frame.",
+       "visual_zh": "细小的冰晶从斜斜的淡淡阳光里飘下来，几片松散的霜花从树枝上悄悄落下；雾贴着地面轻轻地动，别的什么都不动。 镜头贴着雪地低低地向前滑过树干之间，直到一道穿过挂满霜花树枝的阳光占满画面中间。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "A long low sigh of wind through the rimed branches, the clear tinkle of falling ice and a distant crisp crack of a frozen trunk. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here. Every on-set sound effect is loud, crisp and close to the microphone, as prominent as the voices: footsteps, impacts, doors, wind, ice, machinery and fabric are all clearly heard. No music.",
+     "sound_zh": "风吹过挂满霜的树枝长长低低的叹息声、冰晶落下细细的叮当声和远处一棵冻住的树干轻轻开裂的声音。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。所有现场音效都响亮、清脆、贴近话筒，和人声一样突出：脚步、撞击、开关门、风声、冰裂、机械和衣料摩擦都听得清清楚楚。没有配乐。",
+     "seed": 37407,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "02｜极光雪原：一片绿紫色的极光铺满整个天空，光洒在平整的雪原上闪着，镜头缓缓从雪面抬起，一直摇到满天的极光",
+     "duration_seconds": 10,
+     "generation_seconds": 10,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [],
+     "asset_keys": [
+      "snow_field"
+     ],
+     "image_reference_keys": [
+      "snow_field"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Wide shot of the snowfield and the sky, the horizon line centered in the middle third of the frame, nobody in the scene.  The frame holds the snowfield, the dark line of pines and the sky of aurora, nobody in the scene. A broad green aurora ripples across the black sky and its light glitters on the snow, the air cold and crystal clear. Fixed stage layout: a vast smooth snowfield fills the lower half of the frame, a dark line of far pines along the horizon at the back, and a broad green and violet aurora band fills the whole sky above; nobody in the scene.",
+     "visual_zh": "宽阔的绿紫色极光帷幕缓缓地在整个天空里流动，光洒在平整的雪面上闪着；一缕细细的粉雪被风吹着从地面上飘过。衬着深蓝色的阴影。",
+     "camera_zh": "0—10秒，镜头从闪光的雪面开始，慢慢向上摇，直到满天的极光占满画面。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 10,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. The broad green and violet aurora band ripples slowly across the whole sky and its light glitters on the smooth snow; a thin ribbon of powder snow drifts across the ground in the wind. The camera starts low on the glittering snow and tilts up slowly until the whole sky of aurora fills the frame.",
+       "visual_zh": "宽阔的绿紫色极光帷幕缓缓地在整个天空里流动，光洒在平整的雪面上闪着；一缕细细的粉雪被风吹着从地面上飘过。衬着深蓝色的阴影。 镜头从闪光的雪面开始，慢慢向上摇，直到满天的极光占满画面。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "A long low sigh of wind over the open snow, the crisp hiss of drifting powder and a deep silence behind it. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here. Every on-set sound effect is loud, crisp and close to the microphone, as prominent as the voices: footsteps, impacts, doors, wind, ice, machinery and fabric are all clearly heard. No music.",
+     "sound_zh": "风掠过空旷雪原长长低低的叹息、粉雪飘过细细的沙沙声，和它背后深深的寂静。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。所有现场音效都响亮、清脆、贴近话筒，和人声一样突出：脚步、撞击、开关门、风声、冰裂、机械和衣料摩擦都听得清清楚楚。没有配乐。",
+     "seed": 37407,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "03｜冰川峡谷：蓝色的冰壁之间挂着一道巨大的冻瀑布，像管风琴一样垂着长长的冰柱，镜头从谷底慢慢升到瀑布的顶端",
+     "duration_seconds": 10,
+     "generation_seconds": 10,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [],
+     "asset_keys": [
+      "glacier_falls"
+     ],
+     "image_reference_keys": [
+      "glacier_falls"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Wide shot of the glacier canyon, the frozen waterfall centered in the middle third of the frame, nobody in the scene.  The frame holds the blue ice walls, the frozen waterfall and the snow floor, nobody in the scene. Cold blue light filters down between the ice walls and fine ice dust glitters in the still air. Fixed stage layout: a deep blue glacier canyon whose sheer walls of layered translucent blue ice rise on both sides of the frame, a huge frozen waterfall hanging from the wall in the middle of the frame like a giant organ of long icicles, a floor of smooth snow and a narrow strip of pale sky at the very top; nobody in the scene.",
+     "visual_zh": "巨大的冻瀑布一动不动地挂在蓝色冰壁之间，细小的冰尘在冷光里闪着，瀑布边缘一根长长的冰柱慢慢地滴下一颗发亮的水珠。冷冷的蓝光从半透明的冰壁里面透出来，长长的冰柱每一个尖头都挂着一线白光。",
+     "camera_zh": "0—10秒，镜头像吊臂一样从谷底缓缓升起，沿着冻瀑布一路向上，直到瀑布顶端和那一线苍白的天空占满画面。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 10,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. The huge frozen waterfall hangs motionless between the blue ice walls while fine ice dust sparkles in the cold light and one long icicle at its edge slowly drips a single bright drop. The camera rises slowly on a crane from the snow floor along the length of the frozen waterfall until its top and the strip of pale sky fill the frame.",
+       "visual_zh": "巨大的冻瀑布一动不动地挂在蓝色冰壁之间，细小的冰尘在冷光里闪着，瀑布边缘一根长长的冰柱慢慢地滴下一颗发亮的水珠。冷冷的蓝光从半透明的冰壁里面透出来，长长的冰柱每一个尖头都挂着一线白光。 镜头像吊臂一样从谷底缓缓升起，沿着冻瀑布一路向上，直到瀑布顶端和那一线苍白的天空占满画面。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "A deep resonant hush with a slow groan of shifting ice far below and the tiny sharp tick of one drop falling. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here. Every on-set sound effect is loud, crisp and close to the microphone, as prominent as the voices: footsteps, impacts, doors, wind, ice, machinery and fabric are all clearly heard. No music.",
+     "sound_zh": "深沉带着回声的寂静，远处冰层移动缓缓的呻吟，和一颗水珠滴落细细的一声脆响。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。所有现场音效都响亮、清脆、贴近话筒，和人声一样突出：脚步、撞击、开关门、风声、冰裂、机械和衣料摩擦都听得清清楚楚。没有配乐。",
+     "seed": 37407,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "04｜冰封海岸：灰色的冻海里冻着巨大的浅蓝色冰山，右边一艘锈迹斑斑的货轮歪着搁浅在冰里，一缕雪雾贴着冰面飘过",
+     "duration_seconds": 10,
+     "generation_seconds": 10,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [],
+     "asset_keys": [
+      "ice_coast"
+     ],
+     "image_reference_keys": [
+      "ice_coast"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Wide shot of the frozen coast, the ice plain centered in the middle third of the frame, nobody in the scene.  The frame holds the grey ice, the icebergs and the stranded ship, nobody in the scene. A dull white sun hangs low in a flat grey sky and a thin wind drags a veil of snow across the ice. Fixed stage layout: a vast grey frozen sea fills the lower half of the frame with huge pale blue icebergs locked in the ice, a rusted cargo ship tilted and stuck in the ice at frame-right, a flat grey sky and a dull white sun low at the back; nobody in the scene.",
+     "visual_zh": "一缕薄薄的雪雾慢慢飘过灰色冰面，经过巨大的浅蓝色冰山前面，搁浅的锈迹斑斑的货轮歪在那里一动不动，栏杆上落下一线细细的霜。冰面泛着冷冷的珍珠色光泽。",
+     "camera_zh": "0—10秒，镜头贴着冰面慢慢向前推，直到搁浅的货轮占满画面中间三分之一。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 10,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. A thin veil of snow drifts slowly across the grey ice in front of the huge pale blue icebergs, and the stranded rusted ship sits tilted and silent with a trickle of rime falling from its rail. The camera pushes forward slowly low across the ice until the stranded ship fills the middle third of the frame.",
+       "visual_zh": "一缕薄薄的雪雾慢慢飘过灰色冰面，经过巨大的浅蓝色冰山前面，搁浅的锈迹斑斑的货轮歪在那里一动不动，栏杆上落下一线细细的霜。冰面泛着冷冷的珍珠色光泽。 镜头贴着冰面慢慢向前推，直到搁浅的货轮占满画面中间三分之一。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "A broad low moan of wind across the open ice, a long slow creak of the ship's frozen hull and the distant boom of ice cracking. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here. Every on-set sound effect is loud, crisp and close to the microphone, as prominent as the voices: footsteps, impacts, doors, wind, ice, machinery and fabric are all clearly heard. No music.",
+     "sound_zh": "风掠过辽阔冰面宽宽低低的呜咽、货轮冻住的船体长长慢慢的吱嘎声，和远处冰层开裂的一声闷响。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。所有现场音效都响亮、清脆、贴近话筒，和人声一样突出：脚步、撞击、开关门、风声、冰裂、机械和衣料摩擦都听得清清楚楚。没有配乐。",
+     "seed": 37407,
+     "dialogue_language": "zh"
+    }
+   ],
+   "dialogue_language": "zh"
+  },
+  {
+   "title": "补拍4B｜末日景色：冻城废墟（冻城全景、冰封游乐场、冰封高速车队、男主走在冰封街上）",
+   "summary": "三个纯景色切镜：挂满冰柱的大楼之间滑行、冻住的摩天轮和旋转木马、一直排到天边的冰封车队；再加男主一个人走在冰封的街上，抬头看大楼。",
+   "script": "冻城全景，挂满长冰柱的玻璃大楼之间，一条霜白色的空街静静地伸向远处，白雾在楼之间飘，镜头像无人机一样在楼群之间向前滑去，白雾在挂满冰柱的玻璃大楼之间慢慢地飘，几片霜花从高处的窗沿落下来，下面那条长街上霜白色的车一动不动，一片寂静。街道里落满柔和的蓝色阴影。\n冰封游乐场，巨大的摩天轮被厚厚的白霜包着，吊舱挂满冰柱，旋转木马的木马长着霜毛，镜头缓缓向摩天轮推过去，一层薄薄的冰晶雾飘过空荡荡的地面，一根冰柱从吊舱上折断、悄悄掉进雪里，长着霜毛的旋转木马停在奔跑的姿势里一动不动。一轮苍白暗淡的太阳挂在摩天轮后面。\n冰封高速，笔直宽阔的高速公路上，被透明的冰包住的车和卡车排成一条看不到头的长龙，镜头从路面缓缓升到高空，整条高速公路上，被冰包住的车和卡车排成的长龙一动不动，一缕细细的雪尘被风吹着从路面上滑过。每一辆被冰包住的车身都泛着淡淡的蓝白色光泽，一线光沿着护栏延伸出去。\n冰封街头，男主一个人走在冰封的大街上，停下来，抬头看着挂满冰柱的大楼，镜头从他身边缓缓升起，林峰一个人慢慢地走在安静的大街中间，经过霜白色的车，呼出的白气飘着，然后停下来，仰起头看着挂满长冰柱的玻璃大楼；几片霜花从他身边飘落。镜头在他身边缓缓升起。大街里落满柔和的蓝色阴影，大楼上的冰柱挂着细细的亮线。画面里恰好是Lin，每个人只出现一次。",
+   "segments": [
+    {
+     "title": "01｜冻城全景：挂满长冰柱的玻璃大楼之间，一条霜白色的空街静静地伸向远处，白雾在楼之间飘，镜头像无人机一样在楼群之间向前滑去",
+     "duration_seconds": 10,
+     "generation_seconds": 10,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [],
+     "asset_keys": [
+      "frozen_city_wide"
+     ],
+     "image_reference_keys": [
+      "frozen_city_wide"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Wide shot of the frozen city, the street canyon centered in the middle third of the frame, nobody in the scene.  While a soft blue shadow fills the street canyon. The frame holds the icicle-hung towers, the frost-white street and the mist, nobody in the scene. A pale cold sun shows through thin white mist and a few flakes of rime drift down between the towers. Fixed stage layout: a dense downtown of tall glass towers hung with long icicles fills the frame, a silent street canyon of frost-white cars opening down the middle of the frame, white mist drifting between the towers and a pale sun low in a grey-blue sky; nobody in the scene.",
+     "visual_zh": "白雾在挂满冰柱的玻璃大楼之间慢慢地飘，几片霜花从高处的窗沿落下来，下面那条长街上霜白色的车一动不动，一片寂静。街道里落满柔和的蓝色阴影。",
+     "camera_zh": "0—10秒，镜头像无人机一样贴着楼顶的高度在大楼之间缓缓向前滑，直到前方那条长长的街道敞开、占满画面中间。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 10,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. White mist drifts slowly between the icicle-hung glass towers, a few flakes of rime fall from a high ledge and the long street of frost-white cars lies perfectly silent below. While a soft blue shadow fills the street canyon. The camera glides forward slowly at rooftop height between the towers like a drone until the long street canyon opens ahead and fills the middle of the frame.",
+       "visual_zh": "白雾在挂满冰柱的玻璃大楼之间慢慢地飘，几片霜花从高处的窗沿落下来，下面那条长街上霜白色的车一动不动，一片寂静。街道里落满柔和的蓝色阴影。 镜头像无人机一样贴着楼顶的高度在大楼之间缓缓向前滑，直到前方那条长长的街道敞开、占满画面中间。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "A long hollow sigh of wind through the empty street canyon, the clear tinkle of ice shards falling from the towers and a deep hush behind it. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here. Every on-set sound effect is loud, crisp and close to the microphone, as prominent as the voices: footsteps, impacts, doors, wind, ice, machinery and fabric are all clearly heard. No music.",
+     "sound_zh": "风穿过空荡荡的楼群之间长长空空的叹息声、冰碴从大楼上落下细细的叮当声，和它背后深深的寂静。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。所有现场音效都响亮、清脆、贴近话筒，和人声一样突出：脚步、撞击、开关门、风声、冰裂、机械和衣料摩擦都听得清清楚楚。没有配乐。",
+     "seed": 37407,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "02｜冰封游乐场：巨大的摩天轮被厚厚的白霜包着，吊舱挂满冰柱，旋转木马的木马长着霜毛，镜头缓缓向摩天轮推过去",
+     "duration_seconds": 10,
+     "generation_seconds": 10,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [],
+     "asset_keys": [
+      "frozen_fair"
+     ],
+     "image_reference_keys": [
+      "frozen_fair"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Wide shot of the frozen fair, the Ferris wheel centered in the middle third of the frame, nobody in the scene.  The icicles on the gondolas catch a thin line of silver light. The frame holds the Ferris wheel, the carousel and the snowy ground, nobody in the scene. A pale dim sun hangs in a grey sky and a thin mist of ice crystals drifts across the deserted ground. Fixed stage layout: a deserted amusement park with a giant Ferris wheel frozen under thick white frost at the centre of the frame, its gondolas hung with icicles, frost-covered carousel horses in the foreground and snow on the ground; nobody in the scene.",
+     "visual_zh": "一层薄薄的冰晶雾飘过空荡荡的地面，一根冰柱从吊舱上折断、悄悄掉进雪里，长着霜毛的旋转木马停在奔跑的姿势里一动不动。一轮苍白暗淡的太阳挂在摩天轮后面。",
+     "camera_zh": "0—10秒，镜头慢慢向前推，经过长着霜毛的旋转木马，直到巨大的摩天轮占满画面中间三分之一。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 10,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. A thin mist of ice crystals drifts across the deserted ground, an icicle breaks off a gondola and falls silently into the snow, and the frost-covered carousel horses stand frozen in mid-gallop. The icicles on the gondolas catch a thin line of silver light. The camera pushes forward slowly past the frost-covered carousel horses until the great Ferris wheel fills the middle third of the frame.",
+       "visual_zh": "一层薄薄的冰晶雾飘过空荡荡的地面，一根冰柱从吊舱上折断、悄悄掉进雪里，长着霜毛的旋转木马停在奔跑的姿势里一动不动。一轮苍白暗淡的太阳挂在摩天轮后面。 镜头慢慢向前推，经过长着霜毛的旋转木马，直到巨大的摩天轮占满画面中间三分之一。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "A long low moan of wind through the steel spokes of the wheel, a slow creak of frozen metal and the clear tick of falling ice. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here. Every on-set sound effect is loud, crisp and close to the microphone, as prominent as the voices: footsteps, impacts, doors, wind, ice, machinery and fabric are all clearly heard. No music.",
+     "sound_zh": "风吹过摩天轮钢辐条长长低低的呜咽、冻住的金属缓缓的吱嘎声，和冰块落下细细的嗒嗒声。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。所有现场音效都响亮、清脆、贴近话筒，和人声一样突出：脚步、撞击、开关门、风声、冰裂、机械和衣料摩擦都听得清清楚楚。没有配乐。",
+     "seed": 37407,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "03｜冰封高速：笔直宽阔的高速公路上，被透明的冰包住的车和卡车排成一条看不到头的长龙，镜头从路面缓缓升到高空",
+     "duration_seconds": 10,
+     "generation_seconds": 10,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [],
+     "asset_keys": [
+      "highway_calm"
+     ],
+     "image_reference_keys": [
+      "highway_calm"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Wide shot of the frozen highway, the road centered in the middle third of the frame, nobody in the scene.  A thin line of light running along the guardrails. The frame holds the long line of frozen vehicles and the vanishing point, nobody in the scene. A pale white sun shows through a high thin haze and the air over the road is perfectly still. Fixed stage layout: a wide multi-lane highway runs straight down the middle of the frame to the vanishing point, packed with a long unbroken line of cars and trucks encased in clear ice, snow-covered guardrails and a flat grey-blue plain on both sides; nobody in the scene.",
+     "visual_zh": "整条高速公路上，被冰包住的车和卡车排成的长龙一动不动，一缕细细的雪尘被风吹着从路面上滑过。每一辆被冰包住的车身都泛着淡淡的蓝白色光泽，一线光沿着护栏延伸出去。",
+     "camera_zh": "0—10秒，镜头像吊臂一样从路面的高度缓缓升起，直到整条高速公路和它那一眼望不到头的冻住的车队伸向天边、占满画面。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 10,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. The long line of ice-encased cars and trucks lies perfectly still along the whole highway while a thin ribbon of snow dust slides across the road in the wind. A thin line of light running along the guardrails. The camera rises slowly on a crane from road level until the whole highway with its endless line of frozen vehicles stretches to the horizon and fills the frame.",
+       "visual_zh": "整条高速公路上，被冰包住的车和卡车排成的长龙一动不动，一缕细细的雪尘被风吹着从路面上滑过。每一辆被冰包住的车身都泛着淡淡的蓝白色光泽，一线光沿着护栏延伸出去。 镜头像吊臂一样从路面的高度缓缓升起，直到整条高速公路和它那一眼望不到头的冻住的车队伸向天边、占满画面。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "A broad low whistle of wind along the empty road, the clear crystalline creak of ice-sheathed cars and the far crack of a frozen windshield. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here. Every on-set sound effect is loud, crisp and close to the microphone, as prominent as the voices: footsteps, impacts, doors, wind, ice, machinery and fabric are all clearly heard. No music.",
+     "sound_zh": "风吹过空荡荡的公路宽宽低低的呼啸声、被冰包住的车轻轻的晶体吱嘎声，和远处一块冻住的挡风玻璃开裂的脆响。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。所有现场音效都响亮、清脆、贴近话筒，和人声一样突出：脚步、撞击、开关门、风声、冰裂、机械和衣料摩擦都听得清清楚楚。没有配乐。",
+     "seed": 37407,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "04｜冰封街头：男主一个人走在冰封的大街上，停下来，抬头看着挂满冰柱的大楼，镜头从他身边缓缓升起",
+     "duration_seconds": 10,
+     "generation_seconds": 10,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "LinArctic"
+     ],
+     "asset_keys": [
+      "frozen_street",
+      "lin_arctic"
+     ],
+     "image_reference_keys": [
+      "frozen_street"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Wide shot, the man full-length and small in the middle third of the frame, on the boulevard. Lin (a Chinese man in his early thirties) at frame-center, standing in the middle of the frost-white boulevard in profile facing frame-left, his head tilted far back, his gloved hands hanging at his sides and a trail of boot prints beside him in the white frost, in a bulky pure-white polar expedition suit with the hood up, white goggles pushed up on his forehead and a white neck gaiter pulled down under his chin, his steady dark-brown eyes on the icicle-hung glass towers high above, his lips slightly parted, his eyes wide and quiet, his brows lifted a little. A soft blue shadow fills the boulevard and the icicles on the towers catch thin bright lines. The frame holds the man small on the frost-white boulevard, the frozen cars and the icicle-hung towers. A pale cold sun shows through thin white mist and a few flakes of rime drift down between the towers. Fixed stage layout: a wide silent city boulevard of frost-white cars and white frozen street trees recedes down the middle of the frame, glass towers hung with long icicles rising on both sides, white mist drifting low along the road.",
+     "visual_zh": "林峰一个人慢慢地走在安静的大街中间，经过霜白色的车，呼出的白气飘着，然后停下来，仰起头看着挂满长冰柱的玻璃大楼；几片霜花从他身边飘落。镜头在他身边缓缓升起。大街里落满柔和的蓝色阴影，大楼上的冰柱挂着细细的亮线。画面里恰好是Lin，每个人只出现一次。",
+     "camera_zh": "0—10秒，镜头像吊臂一样缓缓升高，直到大街上那个小小的男人和他身后整排挂满冰柱的大楼占满画面。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 10,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. [[asset:lin_arctic]] walks slowly down the middle of the silent boulevard past the frost-white cars, his breath streaming white, then stops and tilts his head back to look up at the glass towers hung with long icicles; a few flakes of rime drift down past him. The camera rises slowly beside him. A soft blue shadow fills the boulevard and the icicles on the towers catch thin bright lines. [[asset:lin_arctic]] keeps his lips slightly parted, his eyes wide and quiet, his brows lifted a little. One person is in the frame: Lin, each shown once. The camera rises slowly on a crane until the man small on the boulevard with the whole row of icicle-hung towers behind him fills the frame.",
+       "visual_zh": "林峰一个人慢慢地走在安静的大街中间，经过霜白色的车，呼出的白气飘着，然后停下来，仰起头看着挂满长冰柱的玻璃大楼；几片霜花从他身边飘落。镜头在他身边缓缓升起。大街里落满柔和的蓝色阴影，大楼上的冰柱挂着细细的亮线。画面里恰好是Lin，每个人只出现一次。 镜头像吊臂一样缓缓升高，直到大街上那个小小的男人和他身后整排挂满冰柱的大楼占满画面。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "The slow crunch of boots on frost, a long hollow sigh of wind between the towers and the clear tinkle of falling ice. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here. Every on-set sound effect is loud, crisp and close to the microphone, as prominent as the voices: footsteps, impacts, doors, wind, ice, machinery and fabric are all clearly heard. No music.",
+     "sound_zh": "靴子踩在白霜上缓缓的脆响、风在楼之间长长空空的叹息声，和冰碴落下细细的叮当声。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。所有现场音效都响亮、清脆、贴近话筒，和人声一样突出：脚步、撞击、开关门、风声、冰裂、机械和衣料摩擦都听得清清楚楚。没有配乐。",
+     "seed": 37407,
+     "dialogue_language": "zh"
+    }
+   ],
+   "dialogue_language": "zh"
+  },
+  {
+   "title": "补拍4C｜末日景色：天象与男主（雪夜银河、冰原日出、男主三段散步）",
+   "summary": "两个天象切镜：没有一盏灯的雪夜银河、冰原上的日出；再加男主三段一个人的散步：走过极光雪原、蹲在冰湖边看冰里的气泡、站在山脊上看黑掉的城市。",
+   "script": "雪夜银河，没有一盏灯的雪原上，一条极其密集的银河横跨黑色的天空，雪面泛着淡淡的蓝光，镜头从山脊剪影缓缓摇向银河中心，密集的银河横跨黑色的天空，雪面上淡淡的蓝光微微闪着，一颗流星悄悄地从山脊后面的天空里滑落。成千上万颗星星燃着冷白和金色的光。\n冰原日出，一轮暗白色的太阳从地平线上升起，冰面被染成粉金色，长长的柔和阴影从冰脊后面拉出来，镜头贴着冰面向前推，暗白色的太阳慢慢爬上地平线，粉色和金色的光漫过冰面，一层薄薄的冰晶在升起的光里闪着。粉色和金色的光贴着玻璃般的冰面拉出长长柔和的光带，每一道冰脊都拖着长长的蓝色影子。\n极光雪原，男主一个人走过极光下的雪原，身后一行长长的脚印，呼出的白气飘在冷空气里，镜头从侧面低低地跟着他，林峰在雪原上迈着长长均匀的步子往前走，呼出的白气飘着，身后的那行脚印越来越长；极光在他头顶的天空里流动，空气里的粉雪闪着光。镜头从侧面低低地跟着他。衬着深蓝色的阴影。画面里恰好是Lin，每个人只出现一次。\n冰湖边，男主蹲在冰湖边，低头看着冰里冻住的一排灰色气泡，伸出手套轻轻碰了碰冰面，镜头慢慢推近，林峰在冰湖边蹲下来，看着玻璃般的冰里冻住的一排排灰色气泡，然后把戴着手套的指尖轻轻按在冰面上，慢慢顺着一道浅色的裂纹划过去；他呼出的白气在冰面上散开。清凉的绿色极光给玻璃般的冰面铺上一层光。画面里恰好是Lin，每个人只出现一次。\n山脊上，男主一个人站在山脊顶上，看着山谷里那座一盏灯都没有的城市，只有他呼出的白气在冷空气里飘，镜头缓缓向他推近，林峰一动不动地站在积雪的山脊上，看着山谷里那座没有一盏灯的巨大黑色城市；他呼出的白气在冷空气里飘着，下面低处的街上一缕薄薄的雾慢慢爬过。深色的岩石上沾着一点霜。画面里恰好是Lin，每个人只出现一次。",
+   "segments": [
+    {
+     "title": "01｜雪夜银河：没有一盏灯的雪原上，一条极其密集的银河横跨黑色的天空，雪面泛着淡淡的蓝光，镜头从山脊剪影缓缓摇向银河中心",
+     "duration_seconds": 10,
+     "generation_seconds": 10,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [],
+     "asset_keys": [
+      "star_night"
+     ],
+     "image_reference_keys": [
+      "star_night"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Wide shot of the snowfield and the sky, the Milky Way arc centered in the middle third of the frame, nobody in the scene.  The frame holds the snowfield, the ridge silhouette and the Milky Way, nobody in the scene. The snow is faintly blue under the starlight, and the air is dry and absolutely still. Fixed stage layout: a vast snowfield glowing faint blue fills the lower third of the frame with a dark ridge silhouette along the back, and an unbelievably dense Milky Way arcs across the black sky above with thousands of stars; no lights anywhere; nobody in the scene.",
+     "visual_zh": "密集的银河横跨黑色的天空，雪面上淡淡的蓝光微微闪着，一颗流星悄悄地从山脊后面的天空里滑落。成千上万颗星星燃着冷白和金色的光。",
+     "camera_zh": "0—10秒，镜头从深色的山脊剪影开始，慢慢向上摇，直到银河明亮的中心占满画面中间。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 10,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. The dense Milky Way arcs across the black sky while the faint blue glow on the snow shimmers and a single meteor slides silently down the sky behind the ridge. The camera starts on the dark ridge silhouette and tilts up slowly until the bright core of the Milky Way fills the middle of the frame.",
+       "visual_zh": "密集的银河横跨黑色的天空，雪面上淡淡的蓝光微微闪着，一颗流星悄悄地从山脊后面的天空里滑落。成千上万颗星星燃着冷白和金色的光。 镜头从深色的山脊剪影开始，慢慢向上摇，直到银河明亮的中心占满画面中间。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "A deep dry silence, a very sharp whisper of wind over the snow and the clear squeak of cold snow settling. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here. Every on-set sound effect is loud, crisp and close to the microphone, as prominent as the voices: footsteps, impacts, doors, wind, ice, machinery and fabric are all clearly heard. No music.",
+     "sound_zh": "深深干燥的寂静，一缕极细的风声掠过雪面，和冷雪轻轻压实的细细吱响。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。所有现场音效都响亮、清脆、贴近话筒，和人声一样突出：脚步、撞击、开关门、风声、冰裂、机械和衣料摩擦都听得清清楚楚。没有配乐。",
+     "seed": 37407,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "02｜冰原日出：一轮暗白色的太阳从地平线上升起，冰面被染成粉金色，长长的柔和阴影从冰脊后面拉出来，镜头贴着冰面向前推",
+     "duration_seconds": 10,
+     "generation_seconds": 10,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [],
+     "asset_keys": [
+      "sunrise_ice"
+     ],
+     "image_reference_keys": [
+      "sunrise_ice"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Wide shot of the ice plain at sunrise, the rising sun centered in the middle third of the frame, nobody in the scene.  The frame holds the ice plain, the pressure ridges and the rising sun, nobody in the scene. A dull white sun climbs over the horizon and the cold air glows pink and gold. Fixed stage layout: an endless frozen plain stretches across the frame with pale pressure ridges of ice and long soft shadows, a dull white sun rising on the horizon at the back and the ice flushed pink and gold; nobody in the scene.",
+     "visual_zh": "暗白色的太阳慢慢爬上地平线，粉色和金色的光漫过冰面，一层薄薄的冰晶在升起的光里闪着。粉色和金色的光贴着玻璃般的冰面拉出长长柔和的光带，每一道冰脊都拖着长长的蓝色影子。",
+     "camera_zh": "0—10秒，镜头贴着冰面慢慢向太阳推过去，直到发光的地平线占满画面中间三分之一。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 10,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. The dull white sun climbs slowly over the horizon, the pink and gold light spreads across the ice and a thin veil of ice crystals glitters in the rising light. The camera pushes forward slowly low across the ice toward the sun until the glowing horizon fills the middle third of the frame.",
+       "visual_zh": "暗白色的太阳慢慢爬上地平线，粉色和金色的光漫过冰面，一层薄薄的冰晶在升起的光里闪着。粉色和金色的光贴着玻璃般的冰面拉出长长柔和的光带，每一道冰脊都拖着长长的蓝色影子。 镜头贴着冰面慢慢向太阳推过去，直到发光的地平线占满画面中间三分之一。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "A long low sigh of wind across the open ice, the high sharp tick of ice warming and cracking in the first crisp and a deep stillness. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here. Every on-set sound effect is loud, crisp and close to the microphone, as prominent as the voices: footsteps, impacts, doors, wind, ice, machinery and fabric are all clearly heard. No music.",
+     "sound_zh": "风掠过辽阔冰面长长低低的叹息、冰在第一缕光里受热开裂细细高高的嗒嗒声，和深深的寂静。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。所有现场音效都响亮、清脆、贴近话筒，和人声一样突出：脚步、撞击、开关门、风声、冰裂、机械和衣料摩擦都听得清清楚楚。没有配乐。",
+     "seed": 37407,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "03｜极光雪原：男主一个人走过极光下的雪原，身后一行长长的脚印，呼出的白气飘在冷空气里，镜头从侧面低低地跟着他",
+     "duration_seconds": 10,
+     "generation_seconds": 10,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "LinArctic"
+     ],
+     "asset_keys": [
+      "snow_field",
+      "lin_arctic"
+     ],
+     "image_reference_keys": [
+      "snow_field"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Wide shot, the man full-length in the middle third of the frame, on the snowfield. Lin (a Chinese man in his early thirties) at frame-center, walking steadily across the snow in profile facing frame-right with long even strides, his gloved hands swinging at his sides and a long line of boot prints trailing beside him, in a bulky pure-white polar expedition suit with the hood up, white goggles pushed up on his forehead and a white neck gaiter pulled down under his chin, his steady dark-brown eyes on the green aurora on the far horizon, his lips pressed together, his eyes calm and steady, his brows level. The frame holds the man walking across the snowfield, his line of footprints and the aurora sky. A broad green aurora ripples across the black sky and its light glitters on the snow, the air cold and crystal clear. Fixed stage layout: a vast smooth snowfield stretches across the middle of the frame with a long line of boot prints running across it, a dark line of far pines along the horizon at the back and a broad green and violet aurora band filling the sky above.",
+     "visual_zh": "林峰在雪原上迈着长长均匀的步子往前走，呼出的白气飘着，身后的那行脚印越来越长；极光在他头顶的天空里流动，空气里的粉雪闪着光。镜头从侧面低低地跟着他。衬着深蓝色的阴影。画面里恰好是Lin，每个人只出现一次。",
+     "camera_zh": "0—10秒，镜头慢慢推近，直到这个人占满画面中间三分之一。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 10,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. [[asset:lin_arctic]] trudges across the snowfield in long even strides, his breath streaming white and the line of boot prints growing longer behind him; the aurora ripples across the sky above him and powder snow glitters in the air. The camera tracks sideways low alongside him. [[asset:lin_arctic]] keeps his lips pressed together, his eyes calm and steady, his brows level. One person is in the frame: Lin, each shown once. The camera pushes in slowly until the person fills the middle third of the frame.",
+       "visual_zh": "林峰在雪原上迈着长长均匀的步子往前走，呼出的白气飘着，身后的那行脚印越来越长；极光在他头顶的天空里流动，空气里的粉雪闪着光。镜头从侧面低低地跟着他。衬着深蓝色的阴影。画面里恰好是Lin，每个人只出现一次。 镜头慢慢推近，直到这个人占满画面中间三分之一。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "The loud steady crunch of boots on snow, a long low sigh of wind and his slow even breathing. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here. Every on-set sound effect is loud, crisp and close to the microphone, as prominent as the voices: footsteps, impacts, doors, wind, ice, machinery and fabric are all clearly heard. No music.",
+     "sound_zh": "靴子踩在雪上响亮均匀的脆响、风长长低低的叹息声和他缓慢均匀的呼吸声。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。所有现场音效都响亮、清脆、贴近话筒，和人声一样突出：脚步、撞击、开关门、风声、冰裂、机械和衣料摩擦都听得清清楚楚。没有配乐。",
+     "seed": 37407,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "04｜冰湖边：男主蹲在冰湖边，低头看着冰里冻住的一排灰色气泡，伸出手套轻轻碰了碰冰面，镜头慢慢推近",
+     "duration_seconds": 10,
+     "generation_seconds": 10,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "LinArctic"
+     ],
+     "asset_keys": [
+      "ice_lake",
+      "lin_arctic"
+     ],
+     "image_reference_keys": [
+      "ice_lake"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium shot, the man from the head to the knees in the middle third of the frame, on the shore. Lin (a Chinese man in his early thirties) at frame-center, crouching at the edge of the shore in profile facing frame-right, one gloved hand resting flat on the dark glassy ice and his head bowed over it, in a bulky pure-white polar expedition suit with the hood up, white goggles pushed up on his forehead and a white neck gaiter pulled down under his chin, his steady dark-brown eyes on the row of grey bubbles trapped deep in the ice, his lips slightly parted, his eyes soft and curious, his brows drawn gently together. The frame holds the man crouched at the shore, the glassy ice and the trapped bubbles. A broad green aurora lays cold colour on the glassy ice and the air is cold and still. Fixed stage layout: the snowy shore is at the bottom of the frame and the dark glassy ice of the frozen lake fills the middle of the frame, a pale crack running across it and rows of grey frozen bubbles trapped deep inside; a broad aurora fills the sky.",
+     "visual_zh": "林峰在冰湖边蹲下来，看着玻璃般的冰里冻住的一排排灰色气泡，然后把戴着手套的指尖轻轻按在冰面上，慢慢顺着一道浅色的裂纹划过去；他呼出的白气在冰面上散开。清凉的绿色极光给玻璃般的冰面铺上一层光。画面里恰好是Lin，每个人只出现一次。",
+     "camera_zh": "0—10秒，镜头慢慢推近，直到他戴手套的手、冰面和冻住的气泡占满画面中间三分之一。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 10,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. [[asset:lin_arctic]] crouches at the edge of the frozen lake and studies the rows of grey bubbles trapped deep in the glassy ice, then lays his gloved fingertips on the ice and slowly follows a pale crack across it; his breath clouds white over the surface. One person is in the frame: Lin, each shown once. The camera pushes in slowly until his gloved hand on the ice and the trapped bubbles fills the middle third of the frame.",
+       "visual_zh": "林峰在冰湖边蹲下来，看着玻璃般的冰里冻住的一排排灰色气泡，然后把戴着手套的指尖轻轻按在冰面上，慢慢顺着一道浅色的裂纹划过去；他呼出的白气在冰面上散开。清凉的绿色极光给玻璃般的冰面铺上一层光。画面里恰好是Lin，每个人只出现一次。 镜头慢慢推近，直到他戴手套的手、冰面和冻住的气泡占满画面中间三分之一。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "The crisp squeak of a glove on glassy ice, a slow creak deep in the lake and his distinct breathing. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here. Every on-set sound effect is loud, crisp and close to the microphone, as prominent as the voices: footsteps, impacts, doors, wind, ice, machinery and fabric are all clearly heard. No music.",
+     "sound_zh": "手套在玻璃般的冰面上轻轻的吱响、湖深处缓缓的吱嘎声和他安静的呼吸声。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。所有现场音效都响亮、清脆、贴近话筒，和人声一样突出：脚步、撞击、开关门、风声、冰裂、机械和衣料摩擦都听得清清楚楚。没有配乐。",
+     "seed": 37407,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "05｜山脊上：男主一个人站在山脊顶上，看着山谷里那座一盏灯都没有的城市，只有他呼出的白气在冷空气里飘，镜头缓缓向他推近",
+     "duration_seconds": 10,
+     "generation_seconds": 10,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "LinArctic"
+     ],
+     "asset_keys": [
+      "ridge_dead_city",
+      "lin_arctic"
+     ],
+     "image_reference_keys": [
+      "ridge_dead_city"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Wide shot, the man full-length and small in the middle third of the frame, on the ridge. Lin (a Chinese man in his early thirties) at frame-center, standing on the snowy ridge top in profile facing frame-left, his gloved hands hanging at his sides and his white hood pushed back, in a bulky pure-white polar expedition suit with the hood up, white goggles pushed up on his forehead and a white neck gaiter pulled down under his chin, his steady dark-brown eyes on the dead dark city spread across the valley below, his lips pressed together, his eyes steady and quiet, his brows level. The frame holds the man standing small on the ridge, the dark rocks and the dead city below. A faint blue dawn glows on the horizon and mist lies in the valleys; the cold air is dead still. Fixed stage layout: a snowy ridge top with a few bare dark rocks fills the foreground, and far below it a vast dark city with no lights at all spreads across the valley under a faint blue dawn, mist in the low streets; nobody in the scene.",
+     "visual_zh": "林峰一动不动地站在积雪的山脊上，看着山谷里那座没有一盏灯的巨大黑色城市；他呼出的白气在冷空气里飘着，下面低处的街上一缕薄薄的雾慢慢爬过。深色的岩石上沾着一点霜。画面里恰好是Lin，每个人只出现一次。",
+     "camera_zh": "0—10秒，镜头慢慢推近，直到站在山脊上的男人占满画面中间三分之一。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 10,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. [[asset:lin_arctic]] stands motionless on the snowy ridge looking down at the vast dark city in the valley without a single light; his breath streams white in the cold air and a thin ribbon of mist creeps along the low streets below. One person is in the frame: Lin, each shown once. The camera pushes in slowly until the man standing on the ridge fills the middle third of the frame.",
+       "visual_zh": "林峰一动不动地站在积雪的山脊上，看着山谷里那座没有一盏灯的巨大黑色城市；他呼出的白气在冷空气里飘着，下面低处的街上一缕薄薄的雾慢慢爬过。深色的岩石上沾着一点霜。画面里恰好是Lin，每个人只出现一次。 镜头慢慢推近，直到站在山脊上的男人占满画面中间三分之一。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "A long low sigh of wind over the ridge, the clear creak of cold snow under his boots and a vast silence from the valley below. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here. Every on-set sound effect is loud, crisp and close to the microphone, as prominent as the voices: footsteps, impacts, doors, wind, ice, machinery and fabric are all clearly heard. No music.",
+     "sound_zh": "风吹过山脊长长低低的叹息声、他靴子下冷雪轻轻的吱嘎声，和山谷里一片辽阔的寂静。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。所有现场音效都响亮、清脆、贴近话筒，和人声一样突出：脚步、撞击、开关门、风声、冰裂、机械和衣料摩擦都听得清清楚楚。没有配乐。",
+     "seed": 37407,
+     "dialogue_language": "zh"
+    }
+   ],
+   "dialogue_language": "zh"
+  },
+  {
+   "title": "补拍4D｜末日景色：两个人（并肩走过极光雪原、冰封森林接雪粉、游乐场碰摩天轮的霜、山脊看日出、温泉口的绿芽）",
+   "summary": "男女主一起在末日景色里散步的五个切镜：他拉起她的领口并肩走、她在冰封森林里伸手接雪粉、她在冻住的游乐场里踮脚碰摩天轮上的霜、山脊上并肩看日出、温泉口融开的暖区里她蹲下摸一棵绿芽。",
+   "script": "极光雪原，男女主并肩走过极光下的雪原，他停下来，用戴手套的双手把她白色极地服的领口拉高盖住下巴，她抬头看着他，林峰和苏清月一直并肩走在雪原上，身后是两行并排的脚印；他停下来，转向她，用戴着手套的双手把她极地服的白色领口拉高、盖住下巴，她仰起脸看着他，两个人呼出的白气混成一团。极光在他们头顶流动。照亮了她睫毛上的霜。画面里恰好是Lin、Su，每个人只出现一次。\n冰封森林，男女主走在雾凇森林的小路上，她停下来，伸出戴手套的手掌去接从树枝上落下来的雪粉，他站在旁边看着她，苏清月和林峰慢慢走在挂满霜花的树下的小路上；她停下来，伸出戴手套的手掌，细细的雪粉从树枝上落到她的手心里，他站在她旁边看着她的脸。画面里恰好是Su、Lin，每个人只出现一次。\n冻住的游乐场，男女主走到摩天轮脚下，她踮起脚尖，伸出戴手套的手去碰挂着白霜的摩天轮钢辐条，他站在旁边看着她，苏清月和林峰慢慢走过空荡荡的游乐场；在摩天轮的脚下，她踮起脚尖，用戴手套的指尖划过挂满白霜的钢辐条，一道白霜被划落下来，他站在旁边安静而温柔地看着她。一轮苍白暗淡的太阳挂在摩天轮后面。画面里恰好是Su、Lin，每个人只出现一次。\n山脊日出，男女主并肩站在山脊上，看着太阳从死城后面升起，雪和雾被染成粉金色，两个人呼出的白气在面前混在一起，林峰和苏清月并肩站在积雪的山脊上，看着一轮暗白色的太阳从死城里霜白色的大楼后面升起来；粉色和金色的光漫过雪面和下面的雾，两个人呼出的白气升起来、混在一起。粉色和金色的阳光漫过山脊，长长柔和的影子拖在他们身后。画面里恰好是Lin、Su，每个人只出现一次。\n温泉口的暖区，男女主并肩走进雪墙中间融开的一圈暖地，她蹲下来，用戴手套的手指轻轻摸一棵刚冒出来的绿芽，他站在旁边看着她，苏清月和林峰并肩走进雪墙中间那一圈融开的暖地；她蹲下来，用戴手套的指尖轻轻碰一棵小小的绿芽，白色的蒸汽从温泉池面上飘过他们，他站在旁边安静而温柔地看着她。鲜绿的草在白色的雪墙前发亮，叶子上和她的手套上挂着发亮的小水珠。画面里恰好是Su、Lin，每个人只出现一次。",
+   "segments": [
+    {
+     "title": "01｜极光雪原：男女主并肩走过极光下的雪原，他停下来，用戴手套的双手把她白色极地服的领口拉高盖住下巴，她抬头看着他",
+     "duration_seconds": 10,
+     "generation_seconds": 10,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "LinArctic",
+      "SuArctic"
+     ],
+     "asset_keys": [
+      "snow_field",
+      "lin_arctic",
+      "su_arctic"
+     ],
+     "image_reference_keys": [
+      "snow_field"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium shot, the two of them from the head to the knees in the middle third of the frame, on the snowfield. Lin (a Chinese man in his early thirties) at frame-center-right, standing in profile facing frame-left, both gloved hands pulling the white neck gaiter of Su's suit up over her chin, in a bulky pure-white polar expedition suit with the hood up, white goggles pushed up on his forehead and a white neck gaiter pulled down under his chin, his steady dark-brown eyes on Su, his lips pressed gently together, his eyes soft and attentive, his brows level. Su (a Chinese woman in her late twenties) at frame-center-left, standing in profile facing frame-right, her chin lifted a little and her gloved hands hanging at her sides, in a bulky pure-white polar expedition suit with the hood up, white goggles pushed up on her forehead and a white neck gaiter pulled down under her chin, a few strands of black hair at her temples, frost on her lashes, her sharp dark-brown eyes on Lin, her lips slightly parted, her eyes warm and a little amused, her brows relaxed. The frame holds the two of them on the snowfield, their two lines of footprints and the aurora sky. A broad green aurora ripples across the black sky and its light glitters on the snow, the air cold and crystal clear. Fixed stage layout: a vast smooth snowfield stretches across the middle of the frame with a long line of boot prints running across it, a dark line of far pines along the horizon at the back and a broad green and violet aurora band filling the sky above.",
+     "visual_zh": "林峰和苏清月一直并肩走在雪原上，身后是两行并排的脚印；他停下来，转向她，用戴着手套的双手把她极地服的白色领口拉高、盖住下巴，她仰起脸看着他，两个人呼出的白气混成一团。极光在他们头顶流动。照亮了她睫毛上的霜。画面里恰好是Lin、Su，每个人只出现一次。",
+     "camera_zh": "0—10秒，镜头慢慢推近，直到两人占满画面中间三分之一。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 10,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. [[asset:lin_arctic]] and [[asset:su_arctic]] have been walking side by side across the snowfield, their two lines of boot prints behind them; he stops, turns to her and pulls the white neck gaiter of her suit up over her chin with both gloved hands, and she tilts her face up to him while their breath mingles in a white cloud. The aurora ripples above them. [[asset:lin_arctic]] keeps his lips pressed gently together, his eyes soft and attentive, his brows level. [[asset:su_arctic]] keeps her lips slightly parted, her eyes warm and a little amused, her brows relaxed. Exactly two people are in the frame: Lin and Su, each shown once. The camera pushes in slowly until the two of them fill the middle third of the frame.",
+       "visual_zh": "林峰和苏清月一直并肩走在雪原上，身后是两行并排的脚印；他停下来，转向她，用戴着手套的双手把她极地服的白色领口拉高、盖住下巴，她仰起脸看着他，两个人呼出的白气混成一团。极光在他们头顶流动。照亮了她睫毛上的霜。画面里恰好是Lin、Su，每个人只出现一次。 镜头慢慢推近，直到两人占满画面中间三分之一。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "The crisp crunch of two pairs of boots stopping in the snow, the rustle of thick fabric, a long low sigh of wind and their distinct breathing. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here. Every on-set sound effect is loud, crisp and close to the microphone, as prominent as the voices: footsteps, impacts, doors, wind, ice, machinery and fabric are all clearly heard. No music.",
+     "sound_zh": "两双靴子在雪里停下来轻轻的脆响、厚厚衣料的摩擦声、风长长低低的叹息声和两个人安静的呼吸声。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。所有现场音效都响亮、清脆、贴近话筒，和人声一样突出：脚步、撞击、开关门、风声、冰裂、机械和衣料摩擦都听得清清楚楚。没有配乐。",
+     "seed": 37407,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "02｜冰封森林：男女主走在雾凇森林的小路上，她停下来，伸出戴手套的手掌去接从树枝上落下来的雪粉，他站在旁边看着她",
+     "duration_seconds": 10,
+     "generation_seconds": 10,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "SuArctic",
+      "LinArctic"
+     ],
+     "asset_keys": [
+      "frost_forest",
+      "su_arctic",
+      "lin_arctic"
+     ],
+     "image_reference_keys": [
+      "frost_forest"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium shot, the two of them from the head to the knees in the middle third of the frame, on the forest path. Su (a Chinese woman in her late twenties) at frame-center-left, standing on the snowy path in profile facing frame-right, one gloved hand held out palm up in front of her to catch the falling snow dust, in a bulky pure-white polar expedition suit with the hood up, white goggles pushed up on her forehead and a white neck gaiter pulled down under her chin, a few strands of black hair at her temples, frost on her lashes, her sharp dark-brown eyes on the snow dust falling onto her gloved palm, her lips parted in a small sweet smile, her eyes wide and bright, her brows lifted gently. Lin (a Chinese man in his early thirties) at frame-center-right, standing beside her in profile facing frame-left with his gloved hands hanging at his sides, in a bulky pure-white polar expedition suit with the hood up, white goggles pushed up on his forehead and a white neck gaiter pulled down under his chin, his steady dark-brown eyes on Su, his lips pressed gently together, his eyes soft and warm, his brows level. The frame holds the two of them on the forest path and the frost-covered trees. A low pale sun filters through thin white mist and fine ice crystals drift in the still cold air. Fixed stage layout: a narrow path of smooth white snow winds down the middle of the frame between tall frost-covered pines and birches, fine ice crystals hanging in slanting shafts of pale sunlight, soft mist low along the ground.",
+     "visual_zh": "苏清月和林峰慢慢走在挂满霜花的树下的小路上；她停下来，伸出戴手套的手掌，细细的雪粉从树枝上落到她的手心里，他站在她旁边看着她的脸。画面里恰好是Su、Lin，每个人只出现一次。",
+     "camera_zh": "0—10秒，镜头慢慢推近，直到两人占满画面中间三分之一。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 10,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. [[asset:su_arctic]] and [[asset:lin_arctic]] walk slowly down the forest path under the frost-covered trees; she stops and holds out her gloved palm as a fine drift of snow dust falls from the branches onto it, and he stands beside her watching her face. [[asset:su_arctic]] keeps her lips parted in a small sweet smile, her eyes wide and bright, her brows lifted gently. [[asset:lin_arctic]] keeps his lips pressed gently together, his eyes soft and warm, his brows level. Exactly two people are in the frame: Su and Lin, each shown once. The camera pushes in slowly until both of them fill the middle third of the frame.",
+       "visual_zh": "苏清月和林峰慢慢走在挂满霜花的树下的小路上；她停下来，伸出戴手套的手掌，细细的雪粉从树枝上落到她的手心里，他站在她旁边看着她的脸。画面里恰好是Su、Lin，每个人只出现一次。 镜头慢慢推近，直到两人占满画面中间三分之一。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "The slow crisp crunch of snow underfoot, the tinkle of rime falling from the branches and their distinct breathing. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here. Every on-set sound effect is loud, crisp and close to the microphone, as prominent as the voices: footsteps, impacts, doors, wind, ice, machinery and fabric are all clearly heard. No music.",
+     "sound_zh": "脚下积雪缓缓轻轻的脆响、霜花从树枝上落下的叮当声和两个人安静的呼吸声。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。所有现场音效都响亮、清脆、贴近话筒，和人声一样突出：脚步、撞击、开关门、风声、冰裂、机械和衣料摩擦都听得清清楚楚。没有配乐。",
+     "seed": 37407,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "03｜冻住的游乐场：男女主走到摩天轮脚下，她踮起脚尖，伸出戴手套的手去碰挂着白霜的摩天轮钢辐条，他站在旁边看着她",
+     "duration_seconds": 10,
+     "generation_seconds": 10,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "SuArctic",
+      "LinArctic"
+     ],
+     "asset_keys": [
+      "frozen_fair",
+      "su_arctic",
+      "lin_arctic"
+     ],
+     "image_reference_keys": [
+      "frozen_fair"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium shot, the two of them from the head to the knees in the middle third of the frame, at the foot of the wheel. Su (a Chinese woman in her late twenties) at frame-center-left, standing on tiptoe at the foot of the Ferris wheel in profile facing frame-right, one gloved hand stretched up to touch a steel spoke thick with white frost, in a bulky pure-white polar expedition suit with the hood up, white goggles pushed up on her forehead and a white neck gaiter pulled down under her chin, a few strands of black hair at her temples, frost on her lashes, her sharp dark-brown eyes on the frost-covered steel spoke, her lips parted in a small sweet smile, her eyes wide and bright, her brows lifted gently. Lin (a Chinese man in his early thirties) at frame-center-right, standing beside her in profile facing frame-left with his gloved hands in front of him, in a bulky pure-white polar expedition suit with the hood up, white goggles pushed up on his forehead and a white neck gaiter pulled down under his chin, his steady dark-brown eyes on Su, his lips pressed gently together, his eyes soft and warm, his brows level. The frame holds the two of them at the foot of the frosted wheel, the carousel and the snowy path. A pale dim sun hangs in a grey sky and a thin mist of ice crystals drifts across the deserted ground. Fixed stage layout: the foot of a giant Ferris wheel thick with white frost fills the middle of the frame, a frosted carousel with frost-covered horses stands at frame-left, a deserted snowy path runs through the middle of the frame, and icicle-hung gondolas hang high above.",
+     "visual_zh": "苏清月和林峰慢慢走过空荡荡的游乐场；在摩天轮的脚下，她踮起脚尖，用戴手套的指尖划过挂满白霜的钢辐条，一道白霜被划落下来，他站在旁边安静而温柔地看着她。一轮苍白暗淡的太阳挂在摩天轮后面。画面里恰好是Su、Lin，每个人只出现一次。",
+     "camera_zh": "0—10秒，镜头慢慢推近，直到两人占满画面中间三分之一。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 10,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. [[asset:su_arctic]] and [[asset:lin_arctic]] walk slowly through the deserted fair; at the foot of the Ferris wheel she rises on tiptoe and brushes a gloved fingertip along the frosted steel spoke so a line of frost falls away, and he stands beside her watching her with quiet warmth. [[asset:su_arctic]] keeps her lips parted in a small sweet smile, her eyes wide and bright, her brows lifted gently. [[asset:lin_arctic]] keeps his lips pressed gently together, his eyes soft and warm, his brows level. Exactly two people are in the frame: Su and Lin, each shown once. The camera pushes in slowly until the two of them fill the middle third of the frame.",
+       "visual_zh": "苏清月和林峰慢慢走过空荡荡的游乐场；在摩天轮的脚下，她踮起脚尖，用戴手套的指尖划过挂满白霜的钢辐条，一道白霜被划落下来，他站在旁边安静而温柔地看着她。一轮苍白暗淡的太阳挂在摩天轮后面。画面里恰好是Su、Lin，每个人只出现一次。 镜头慢慢推近，直到两人占满画面中间三分之一。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "The crisp crunch of boots on snow, the clear scrape of a glove on frosted steel, a long low sigh of wind through the spokes and the tick of falling ice. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here. Every on-set sound effect is loud, crisp and close to the microphone, as prominent as the voices: footsteps, impacts, doors, wind, ice, machinery and fabric are all clearly heard. No music.",
+     "sound_zh": "靴子踩在雪上轻轻的脆响、手套划过结霜钢铁细细的摩擦声、风吹过辐条长长低低的叹息声和冰块落下的嗒嗒声。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。所有现场音效都响亮、清脆、贴近话筒，和人声一样突出：脚步、撞击、开关门、风声、冰裂、机械和衣料摩擦都听得清清楚楚。没有配乐。",
+     "seed": 37407,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "04｜山脊日出：男女主并肩站在山脊上，看着太阳从死城后面升起，雪和雾被染成粉金色，两个人呼出的白气在面前混在一起",
+     "duration_seconds": 10,
+     "generation_seconds": 10,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "LinArctic",
+      "SuArctic"
+     ],
+     "asset_keys": [
+      "ridge_dead_city",
+      "lin_arctic",
+      "su_arctic"
+     ],
+     "image_reference_keys": [
+      "ridge_dead_city"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Wide shot, the two of them full-length and small in the middle third of the frame, on the ridge. Lin (a Chinese man in his early thirties) at frame-center-right, standing on the snowy ridge top in profile facing frame-left, his white hood pushed back and his gloved hands hanging at his sides, in a bulky pure-white polar expedition suit with the hood up, white goggles pushed up on his forehead and a white neck gaiter pulled down under his chin, his steady dark-brown eyes on the rising sun behind the dead city, his lips pressed gently together, his eyes steady and warm, his brows level. Su (a Chinese woman in her late twenties) at frame-center-left, standing beside him in profile facing frame-right with her white hood pushed back and her gloved hand resting lightly in his, in a bulky pure-white polar expedition suit with the hood up, white goggles pushed up on her forehead and a white neck gaiter pulled down under her chin, a few strands of black hair at her temples, frost on her lashes, her sharp dark-brown eyes on the rising sun behind the dead city, her lips parted in a small sweet smile, her eyes bright and wet, her brows relaxed. The frame holds the two of them small on the ridge, the dead city below and the rising sun. A dull white sun rises over the city and the cold air glows pink and gold. Fixed stage layout: a snowy ridge top with a few bare dark rocks fills the foreground, and far below it a vast dead city of frost-white towers spreads across the valley, a dull white sun rising behind it and flushing the snow and the mist pink and gold.",
+     "visual_zh": "林峰和苏清月并肩站在积雪的山脊上，看着一轮暗白色的太阳从死城里霜白色的大楼后面升起来；粉色和金色的光漫过雪面和下面的雾，两个人呼出的白气升起来、混在一起。粉色和金色的阳光漫过山脊，长长柔和的影子拖在他们身后。画面里恰好是Lin、Su，每个人只出现一次。",
+     "camera_zh": "0—10秒，镜头慢慢推近，直到两人占满画面中间三分之一。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 10,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. [[asset:lin_arctic]] and [[asset:su_arctic]] stand side by side on the snowy ridge watching the dull white sun climb out from behind the frost-white towers of the dead city; the pink and gold light spreads across the snow and the mist below, and their breath rises and mingles in a white cloud. [[asset:lin_arctic]] keeps his lips pressed gently together, his eyes steady and warm, his brows level. [[asset:su_arctic]] keeps her lips parted in a small sweet smile, her eyes bright and wet, her brows relaxed. Exactly two people are in the frame: Lin and Su, each shown once. The camera pushes in slowly until the two of them fill the middle third of the frame.",
+       "visual_zh": "林峰和苏清月并肩站在积雪的山脊上，看着一轮暗白色的太阳从死城里霜白色的大楼后面升起来；粉色和金色的光漫过雪面和下面的雾，两个人呼出的白气升起来、混在一起。粉色和金色的阳光漫过山脊，长长柔和的影子拖在他们身后。画面里恰好是Lin、Su，每个人只出现一次。 镜头慢慢推近，直到两人占满画面中间三分之一。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "A long low sigh of wind over the ridge, the clear creak of snow under their boots and their slow distinct breathing. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here. Every on-set sound effect is loud, crisp and close to the microphone, as prominent as the voices: footsteps, impacts, doors, wind, ice, machinery and fabric are all clearly heard. No music.",
+     "sound_zh": "风吹过山脊长长低低的叹息声、他们靴子下雪轻轻的吱嘎声和两个人缓慢安静的呼吸声。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。所有现场音效都响亮、清脆、贴近话筒，和人声一样突出：脚步、撞击、开关门、风声、冰裂、机械和衣料摩擦都听得清清楚楚。没有配乐。",
+     "seed": 37407,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "05｜温泉口的暖区：男女主并肩走进雪墙中间融开的一圈暖地，她蹲下来，用戴手套的手指轻轻摸一棵刚冒出来的绿芽，他站在旁边看着她",
+     "duration_seconds": 10,
+     "generation_seconds": 10,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "SuArctic",
+      "LinArctic"
+     ],
+     "asset_keys": [
+      "spring_meadow",
+      "su_arctic",
+      "lin_arctic"
+     ],
+     "image_reference_keys": [
+      "spring_meadow"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium shot, the two of them from the head to the knees in the middle third of the frame, on the thawed ground. Su (a Chinese woman in her late twenties) at frame-center-left, crouching on the thawed dark soil in profile facing frame-right, one gloved fingertip gently touching a tiny green sprout, in a bulky pure-white polar expedition suit with the hood up, white goggles pushed up on her forehead and a white neck gaiter pulled down under her chin, a few strands of black hair at her temples, frost on her lashes, her sharp dark-brown eyes on the tiny green sprout, her lips parted in a soft sweet smile, her eyes bright, her brows lifted gently. Lin (a Chinese man in his early thirties) at frame-center-right, standing beside her in profile facing frame-left with his hood pushed back and his gloved hands hanging at his sides, in a bulky pure-white polar expedition suit with the hood up, white goggles pushed up on his forehead and a white neck gaiter pulled down under his chin, his steady dark-brown eyes on Su, his lips pressed gently together, his eyes soft and warm, his brows level. The frame holds the two of them on the thawed ground, the steaming pool and the walls of snow. Pale warm light falls through drifting steam and the air over the thawed ground is soft and damp. Fixed stage layout: a ring of thawed ground fills the middle of the frame, dark wet soil with patches of vivid green grass and tiny green sprouts around a pool of clear steaming water, white steam rising from it, a high wall of snow and ice all around the edge of the ring; a narrow trodden path of footprints leads in from frame-left.",
+     "visual_zh": "苏清月和林峰并肩走进雪墙中间那一圈融开的暖地；她蹲下来，用戴手套的指尖轻轻碰一棵小小的绿芽，白色的蒸汽从温泉池面上飘过他们，他站在旁边安静而温柔地看着她。鲜绿的草在白色的雪墙前发亮，叶子上和她的手套上挂着发亮的小水珠。画面里恰好是Su、Lin，每个人只出现一次。",
+     "camera_zh": "0—10秒，镜头从高处开始，像吊臂一样缓缓降下来，直到两人占满画面中间三分之一。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 10,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. [[asset:su_arctic]] and [[asset:lin_arctic]] walk side by side into the ring of thawed ground between the walls of snow; she crouches and touches a gloved fingertip to a tiny green sprout while white steam drifts across them from the pool, and he stands beside her watching her with quiet warmth. [[asset:su_arctic]] keeps her lips parted in a soft sweet smile, her eyes bright, her brows lifted gently. [[asset:lin_arctic]] keeps his lips pressed gently together, his eyes soft and warm, his brows level. Exactly two people are in the frame: Su and Lin, each shown once. The camera starts high above and sinks slowly on a crane until the two of them fill the middle third of the frame.",
+       "visual_zh": "苏清月和林峰并肩走进雪墙中间那一圈融开的暖地；她蹲下来，用戴手套的指尖轻轻碰一棵小小的绿芽，白色的蒸汽从温泉池面上飘过他们，他站在旁边安静而温柔地看着她。鲜绿的草在白色的雪墙前发亮，叶子上和她的手套上挂着发亮的小水珠。画面里恰好是Su、Lin，每个人只出现一次。 镜头从高处开始，像吊臂一样缓缓降下来，直到两人占满画面中间三分之一。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "The crisp squelch of boots on damp soil, the clear bubbling of the spring, a low sigh of steam and their distinct breathing. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here. Every on-set sound effect is loud, crisp and close to the microphone, as prominent as the voices: footsteps, impacts, doors, wind, ice, machinery and fabric are all clearly heard. No music.",
+     "sound_zh": "靴子踩在湿土上轻轻的噗叽声、温泉轻柔的咕嘟声、蒸汽低低的叹息声和两个人安静的呼吸声。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。所有现场音效都响亮、清脆、贴近话筒，和人声一样突出：脚步、撞击、开关门、风声、冰裂、机械和衣料摩擦都听得清清楚楚。没有配乐。",
+     "seed": 37407,
+     "dialogue_language": "zh"
+    }
+   ],
+   "dialogue_language": "zh"
+  }
+ ]
+}

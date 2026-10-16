@@ -2879,7 +2879,7 @@
      "image_reference_keys": [
       "gate_room"
      ],
-     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Close shot of the water surface, the bubbles and rings in the middle third of the frame, nobody in the scene.  The last dim red glow slides over the water and fades. The frame holds the black water surface, and nobody in the scene. A last dim red glow fades over a chamber of still black water. Fixed stage layout: a close view of a calm black water surface filling the middle of the frame with a few small bubbles rising to the surface and widening rings of ripples, a dim red glow lying on the water; the sealed round steel gate looms soft behind; nobody in the scene.",
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Close shot of the water surface, the bubbles and rings in the middle third of the frame, nobody in the scene.  The frame holds the black water surface, and nobody in the scene. A last dim red glow fades over a chamber of still black water. Fixed stage layout: a close view of a calm black water surface filling the middle of the frame with a few small bubbles rising to the surface and widening rings of ripples, a dim red glow lying on the water; the sealed round steel gate looms soft behind; nobody in the scene.",
      "visual_zh": "一片平静的黑色水面，几个细小的气泡一个接一个浮上来破开，水面上漾开一圈圈涟漪，倒映在水里的暗红色光慢慢暗成一片黑。别的什么都不动。最后一点暗红色的光从水面上滑过、渐渐消失，一个银色的气泡在上升时映着光。",
      "camera_zh": "0—8秒，镜头像吊臂一样从高处缓缓降下来，停在街面的高度，水面和最后的涟漪占满画面。",
      "dialogue": [],
@@ -2887,7 +2887,7 @@
       {
        "start_seconds": 0,
        "end_seconds": 8,
-       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. A calm black water surface fills the frame as a few small bubbles rise one after another and break, widening rings of ripples across it, the dim red glow lying on the water slowly fading to darkness. Nothing else moves. The last dim red glow slides over the water and fades. The camera descends slowly on a crane from high above until it hangs at street level and the water surface and the last rings fills the frame.",
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. A calm black water surface fills the frame as a few small bubbles rise one after another and break, widening rings of ripples across it, the dim red glow lying on the water slowly fading to darkness. Nothing else moves. The camera descends slowly on a crane from high above until it hangs at street level and the water surface and the last rings fills the frame.",
        "visual_zh": "一片平静的黑色水面，几个细小的气泡一个接一个浮上来破开，水面上漾开一圈圈涟漪，倒映在水里的暗红色光慢慢暗成一片黑。别的什么都不动。最后一点暗红色的光从水面上滑过、渐渐消失，一个银色的气泡在上升时映着光。 镜头像吊臂一样从高处缓缓降下来，停在街面的高度，水面和最后的涟漪占满画面。",
        "dialogue_indices": []
       }

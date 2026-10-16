@@ -32,7 +32,7 @@ def smooth_text(tx):
 # hh 10-16 回传的 11 个片段：突然“披上一层别的东西”、一个人变两个人，都对上了开场图／视频文字里的光边、轮廓、闪光、热气飘这类词
 # （例：“pale rim along her cheek and his shoulder”“glows like a fresh wound”“rims their shoulders”“steam curls through the beam”“frost-furred”）。
 # H3 和生图模型把它们当成真的东西画出来（一圈边、一层壳、第二个轮廓）。所以这些词不再写，剩下的光只写“光源＋颜色＋它照到哪”。
-BAN_AE = re.compile(r"\b(?:rim\w*|edges?|outlin\w*|halo\w*|auras?|shimmer\w*|sparkl\w*|glitter\w*|glint\w*|gleam\w*|beams?|rays?|shafts?|motes?|specks?|furr?\w*|lantern\w*|wounds?|veil\w*|bloom\w*|flare\w*|crystals?|translucent|stained|flicker\w*|puls\w*|wash\w*|curl\w*|drift\w*|swirl\w*|float\w*|hover\w*|steam\w*|mist\w*|haze|hazy|fog\w*|dust\w*|droplets?|spray\w*|sparks?|particles?|snowflakes?|flakes?|embers?|cinders?|smoke|graz\w+|spill\w*|glisten\w*|shin(?:e|es|ing|y)|lustre|luster|sheen|dappl\w*|streak\w*|ripple\w*|burns?|burning)\b|\blike an? |\bas if\b|\bglow\w* like\b|\bglow\w* (?:through|over|across|along|around|on|upon|against|from within|past|beyond)\b|\bglow\w* and\b|\bglow\w* (?:above|below|beside|behind|near|inside|within)\b|\blight (?:falls?|lies|lay|catches|lands|touches|sits)\b", re.I)
+BAN_AE = re.compile(r"\b(?:rim\w*|edges?|outlin\w*|halo\w*|auras?|shimmer\w*|sparkl\w*|glitter\w*|glint\w*|gleam\w*|beams?|rays?|shafts?|motes?|specks?|furr?\w*|lantern\w*|wounds?|veil\w*|bloom\w*|flare\w*|crystals?|translucent|stained|flicker\w*|puls\w*|wash\w*|slid\w*|curl\w*|drift\w*|swirl\w*|float\w*|hover\w*|steam\w*|mist\w*|haze|hazy|fog\w*|dust\w*|droplets?|spray\w*|sparks?|particles?|snowflakes?|flakes?|embers?|cinders?|smoke|graz\w+|spill\w*|glisten\w*|shin(?:e|es|ing|y)|lustre|luster|sheen|dappl\w*|streak\w*|ripple\w*|burns?|burning)\b|\blike an? |\bas if\b|\bglow\w* like\b|\bglow\w* (?:through|over|across|along|around|on|upon|against|from within|past|beyond)\b|\bglow\w* and\b|\bglow\w* (?:above|below|beside|behind|near|inside|within)\b|\blight (?:falls?|lies|lay|catches|lands|touches|sits)\b", re.I)
 BAN_AE_ZH = re.compile(r"边|轮廓|勾|描出|光束|光柱|光线|光晕|光环|闪|晶莹|晶体|冰晶|尘|粉雪|雪粒|热气|蒸汽|水汽|雾|卷|飘|像|仿佛|宛如|如同|洗过|罩|镀|镶|倒影|辉|耀|粼|折射|透亮|火星|火花|烟|余烬|涟漪|烧")
 _SPLIT_EN = re.compile(r",\s+(?:and\s+)?|\s+while\s+|;\s+", re.I)
 _BAD_START = re.compile(r"^(?:which|that|making|giving|casting|leaving|turning|lending|with|as|so|but|then|until|where|whose|creating|forming|adding)\b", re.I)
@@ -54,7 +54,7 @@ def calm(ae):
     return (' '.join(keep), ('，'.join(keep_zh) + '。') if keep_zh else '')
 
 
-WORD_FIX = [(r'frost-furred', 'frost-covered'), (r'\bthin glowing blue ring\b', 'thin blue ring'),
+WORD_FIX = [(r'with a thin line of pink-violet light glowing around its edges', 'with a small pink-violet lit panel'), (r'\bsun glows through\b', 'sun shows through'), (r'\b(gold|silver|thin|round|metal|black|steel)-rimmed\b', r'\1-framed'), (r' like a lone wolf\'s', ''), (r'frost-furred', 'frost-covered'), (r'\bthin glowing blue ring\b', 'thin blue ring'),
             (r'\beyes (?:shining|sparkling|glittering|gleaming)\b', 'eyes bright'), (r'\beyes glistening\b', 'eyes wet'), (r'\beyes burning\b', 'eyes fierce'),
             (r'red-rimmed', 'reddened'), (r'\bglows? on (his|her|their) (faces?)\b', r'lights \1 \2'),
             (r'flares up with a cold white glow', 'turns a cold bright white'),

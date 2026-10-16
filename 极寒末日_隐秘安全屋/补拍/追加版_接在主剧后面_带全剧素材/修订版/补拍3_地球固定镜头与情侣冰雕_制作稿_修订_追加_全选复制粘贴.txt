@@ -1,0 +1,2832 @@
+{
+ "schema": "h3-production-draft",
+ "version": 1,
+ "title": "极寒末日：我的隐秘安全屋｜第1–4集｜七天·半价·扫货·山里",
+ "dialogue_language": "zh",
+ "style": "Photorealistic live-action post-apocalyptic survival drama set in modern-day China, with a cinematic, high-contrast look. Two clear visual worlds: the blinding white heat of a summer world that does not know what is coming, and later a warm amber-lit hidden shelter set against a silent frozen white world of snow, ice and green aurora. Every named character is Chinese. Rich natural skin texture with visible pores, realistic fabrics, restrained cinematic color grading, and an ultra-wide 8:3 cinemascope frame in which the people are placed deliberately and the room is visible around them.",
+ "assets": [
+  {
+   "key": "lin_studio",
+   "kind": "image",
+   "role": "character",
+   "label": "林峰（深夜工作室：皱巴巴的白衬衫，一脸倦意）",
+   "description": {
+    "en": "Lin, a lean, athletic Chinese man in his early thirties with short messy black hair, a faint shadow of stubble and tired but steady dark-brown eyes, wearing a rumpled white dress shirt with the sleeves rolled to his forearms and a loosened collar. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "林峰，三十出头、身形精瘦结实的中国男性，黑色短发有些凌乱，下巴一层淡淡的胡茬，疲惫却沉稳的深褐色眼睛，穿着皱巴巴的白衬衫、袖子卷到小臂、领口松开。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of a Chinese man, short messy black hair, a faint shadow of stubble, tired but steady dark-brown eyes, wearing a rumpled white dress shirt with the sleeves rolled to his forearms and a loosened collar. He faces the camera with a tired, steady expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "lin_bank",
+   "kind": "image",
+   "role": "character",
+   "label": "林峰（银行里：炭灰色西装外套，白衬衫）",
+   "description": {
+    "en": "Lin, the same lean, athletic Chinese man in his early thirties as in the reference, clean-shaven with short neatly combed black hair and steady dark-brown eyes, wearing a fitted charcoal blazer over a white open-collar shirt. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "林峰，和参考图是同一位三十出头、身形精瘦结实的中国男性，胡子刮得干净，黑色短发梳得整齐，沉稳的深褐色眼睛，穿着合身的炭灰色西装外套、里面是白色开领衬衫。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of the same man as in the reference image, short neatly combed black hair, clean-shaven, steady dark-brown eyes, wearing a fitted charcoal blazer over a white open-collar shirt. He faces the camera with a calm, level expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": [
+     "lin_studio"
+    ]
+   }
+  },
+  {
+   "key": "lin_work",
+   "kind": "image",
+   "role": "character",
+   "label": "林峰（深灰亨利衫，橄榄绿多口袋工装背心）",
+   "description": {
+    "en": "Lin, the same lean, athletic Chinese man in his early thirties as in the reference, with short black hair and a faint shadow of stubble, steady dark-brown eyes, wearing a charcoal henley under a dark olive utility vest with many pockets and dark cargo pants. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "林峰，和参考图是同一位三十出头、身形精瘦结实的中国男性，黑色短发，带一点淡淡的胡茬，沉稳的深褐色眼睛，穿着深灰色亨利衫、外面是深橄榄绿多口袋工装背心，深色工装裤。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of the same man as in the reference image, short black hair, a faint shadow of stubble, steady dark-brown eyes, wearing a charcoal henley under a dark olive utility vest with many pockets. He faces the camera with a calm, level expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": [
+     "lin_studio"
+    ]
+   }
+  },
+  {
+   "key": "lin_home",
+   "kind": "image",
+   "role": "character",
+   "label": "林峰（在安全屋里：灰色棉质家居服，光脚）",
+   "description": {
+    "en": "Lin, the same lean, athletic Chinese man in his early thirties as in the reference, with short black hair still damp from a shower, steady dark-brown eyes, wearing a soft grey cotton long-sleeve henley and loose dark lounge pants, barefoot. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "林峰，和参考图是同一位三十出头、身形精瘦结实的中国男性，黑色短发刚洗过还带着湿气，沉稳的深褐色眼睛，穿着柔软的灰色棉质长袖亨利衫和宽松的深色家居裤，光着脚。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic full-body portrait of the same man as in the reference image, short black hair still damp from a shower, steady dark-brown eyes, wearing a soft grey cotton long-sleeve henley and loose dark lounge pants, barefoot. He faces the camera with a relaxed, content expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": [
+     "lin_studio"
+    ]
+   }
+  },
+  {
+   "key": "su_suit",
+   "kind": "image",
+   "role": "character",
+   "label": "苏清月（黑色真丝衬衫，金丝眼镜）",
+   "description": {
+    "en": "Su, an elegant, strikingly beautiful Chinese woman in her late twenties with long glossy black hair falling straight over one shoulder, sharp dark-brown eyes behind thin gold-rimmed glasses, wearing a fitted black silk blouse and a black pencil skirt. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "苏清月，二十八岁左右、优雅而极其美丽的中国女性，乌黑的长直发光滑地垂在一边肩上，锐利的深褐色眼睛戴着细细的金丝眼镜，穿着合身的黑色真丝衬衫和黑色铅笔裙。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of a Chinese woman, long glossy black hair falling straight over one shoulder, sharp dark-brown eyes behind thin gold-rimmed glasses, wearing a fitted black silk blouse. She faces the camera with a composed, sharp expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "wen_blazer",
+   "kind": "image",
+   "role": "character",
+   "label": "文助理（苏清月的助理，藏青色西装外套）",
+   "description": {
+    "en": "Wen, a brisk young Chinese woman in her mid-twenties with black hair in a neat low ponytail, clear dark eyes and a smooth fair face, wearing a navy blazer over a white blouse. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "文助理，二十五岁左右干练的年轻中国女性，黑色头发扎成利落的低马尾，清亮的深色眼睛，皮肤白净，穿着藏青色西装外套、里面是白衬衫。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of a Chinese woman, black hair in a neat low ponytail, clear dark eyes, a smooth fair face, wearing a navy blazer over a white blouse. She faces the camera with an attentive, alert expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "ning_partner",
+   "kind": "image",
+   "role": "character",
+   "label": "周宁（林峰的合伙人，灰色卫衣，披着深色羽绒外套）",
+   "description": {
+    "en": "Ning, a rumpled Chinese man in his early thirties with messy short black hair, a few days of stubble, a round tired face and bleary dark eyes, wearing a grey hooded sweatshirt with a dark puffer coat draped over his shoulders. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "周宁，三十出头、一脸疲态的中国男性，黑色短发凌乱，有几天没刮的胡茬，一张圆脸，睡眼惺忪的深色眼睛，穿着灰色连帽卫衣、肩上披着一件深色羽绒外套。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of a Chinese man, messy short black hair, a few days of stubble, a round tired face, bleary dark eyes, wearing a grey hooded sweatshirt with a dark puffer coat draped over his shoulders. He faces the camera with a sleepy, worried expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "liang_banker",
+   "kind": "image",
+   "role": "character",
+   "label": "梁经理（银行客户经理，浅灰色套装）",
+   "description": {
+    "en": "Manager Liang, a polished Chinese woman in her early forties with a neat shoulder-length black bob, composed dark eyes and a courteous bearing, wearing a tailored dove-grey skirt suit over a white blouse with small pearl earrings. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "梁经理，四十出头、一丝不苟的中国女性，齐肩的黑色短发整齐利落，沉着的深色眼睛，举止得体，穿着剪裁合身的浅灰色套装、里面是白衬衫，戴着小小的珍珠耳钉。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of a Chinese woman, a neat shoulder-length black bob, composed dark eyes, small pearl earrings, wearing a tailored dove-grey skirt suit over a white blouse. She faces the camera with a polite, composed expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "sun_agent",
+   "kind": "image",
+   "role": "character",
+   "label": "中介小孙（短袖白衬衫，松开的浅蓝领带）",
+   "description": {
+    "en": "Agent Sun, a nervous Chinese man in his mid-thirties with sweat-damp short black hair, a thin face and anxious dark eyes, wearing a short-sleeved white shirt with a loosened pale blue tie. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "中介小孙，三十五岁左右、神情紧张的中国男性，短发被汗打湿，一张瘦脸，焦虑的深色眼睛，穿着短袖白衬衫、浅蓝色领带松松地挂着。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of a Chinese man, sweat-damp short black hair, a thin face, anxious dark eyes, wearing a short-sleeved white shirt with a loosened pale blue tie. He faces the camera with a sweaty, nervous expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "ma_outdoor",
+   "kind": "image",
+   "role": "character",
+   "label": "户外店马老板（红色POLO衫，帆布围裙，光头）",
+   "description": {
+    "en": "Boss Ma, a stout, jovial Chinese man in his fifties with a bald head shiny with sweat, a round red face and small cheerful dark eyes, wearing a straining red polo shirt under a canvas shop apron. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "马老板，五十多岁、矮胖爱笑的中国男性，光头上泛着汗光，一张圆圆的红脸，小而爱笑的深色眼睛，穿着绷得很紧的红色POLO衫、外面系着帆布店员围裙。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of a Chinese man, a bald head shiny with sweat, a round red face, small cheerful dark eyes, wearing a straining red polo shirt under a canvas shop apron. He faces the camera with a cheerful, shrewd expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "gu_coal",
+   "kind": "image",
+   "role": "character",
+   "label": "煤场顾老板（沾着煤灰的灰衬衫，脖子上搭毛巾，黄色安全帽）",
+   "description": {
+    "en": "Boss Gu, a weathered Chinese man in his fifties with deeply tanned skin, a squarish coal-dusted face and squinting dark eyes, wearing a coal-streaked grey work shirt, a damp towel around his neck and a yellow hard hat. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "顾老板，五十多岁、饱经风霜的中国男性，皮肤晒得黝黑，方脸上沾着煤灰，眯缝着深色眼睛，穿着沾着煤灰的灰色工作衬衫、脖子上搭着一条湿毛巾、戴着黄色安全帽。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of a Chinese man, deeply tanned skin, a squarish coal-dusted face, squinting dark eyes, wearing a coal-streaked grey work shirt, a damp towel around his neck and a yellow hard hat. He faces the camera with a weary, squinting expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "xiao_agri",
+   "kind": "image",
+   "role": "character",
+   "label": "农资公司销售小肖（绿色POLO衫，卡其围裙，高马尾）",
+   "description": {
+    "en": "Xiao, a bright Chinese woman in her mid-twenties with her black hair in a high ponytail, a fresh round face and eager dark eyes, wearing a bright green company polo shirt under a khaki apron. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "小肖，二十五岁左右、爽朗的中国女性，黑色头发扎成高马尾，一张清爽的圆脸，热切的深色眼睛，穿着亮绿色公司POLO衫、外面系着卡其色围裙。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of a Chinese woman, her black hair in a high ponytail, a fresh round face, eager dark eyes, wearing a bright green company polo shirt under a khaki apron. She faces the camera with a bright, polite expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "ranger_old",
+   "kind": "image",
+   "role": "character",
+   "label": "老护林员（褪色的橄榄绿护林外套，旧草帽）",
+   "description": {
+    "en": "The old ranger, a lean Chinese man in his late sixties with a deeply weathered face, white stubble and deep-set dark eyes, wearing a faded olive forestry jacket and a battered straw hat. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "老护林员，六十多岁、精瘦的中国男性，一张被风吹日晒得满是沟壑的脸，下巴上是白色胡茬，深陷的深色眼睛，穿着褪色的橄榄绿护林外套、戴着一顶旧草帽。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of a Chinese man, a deeply weathered face, white stubble, deep-set dark eyes, wearing a faded olive forestry jacket and a battered straw hat. He faces the camera with a dry, watchful expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "zhao_boss",
+   "kind": "image",
+   "role": "character",
+   "label": "赵虎（物流老板，黑色皮背心，金链子）",
+   "description": {
+    "en": "Zhao Hu, a heavy-set Chinese man in his fifties with a shaved head, a thick neck, small dark eyes and a gold chain at his neck, wearing a sleeveless black leather vest over a sweat-stained grey t-shirt. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "赵虎，五十岁左右、体格粗壮的中国男性，光头，脖子粗，小而黑的眼睛，脖子上戴着金链子，穿着无袖黑色皮背心、里面是被汗浸湿的灰色T恤。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of a Chinese man, a shaved head, a thick neck, small dark eyes, a gold chain at his neck, wearing a sleeveless black leather vest over a sweat-stained grey t-shirt. He faces the camera with a sly, greedy expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "biao_thug",
+   "kind": "image",
+   "role": "character",
+   "label": "彪子（赵虎的小弟，灰色连帽衫，反戴棒球帽）",
+   "description": {
+    "en": "Biao, a lean wiry Chinese man in his twenties with a thin stubbled face and restless dark eyes, wearing a faded grey hoodie and a backwards baseball cap over short black hair. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "彪子，二十多岁、瘦而精悍的中国男性，一张长着胡茬的瘦脸，不安分的深色眼睛，穿着褪色的灰色连帽衫、反戴着棒球帽，帽下是黑色短发。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of a Chinese man, a thin stubbled face, restless dark eyes, wearing a faded grey hoodie and a backwards baseball cap over short black hair. He faces the camera with an eager, nervous expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "bunker_living",
+   "kind": "image",
+   "role": "scene",
+   "label": "安全屋的生活区（暖黄灯，25℃）",
+   "description": {
+    "en": "The cozy living area of an underground hideout: an open kitchen with a black-and-gold stove and a marble counter at the left, a thick cream wool rug and a small round wooden dining table in the middle, a wall of small security monitors at the center-right, a heavy round steel hatch door in the right wall, warm amber light from soft recessed lamps. The reference fixes the layout and decor.",
+    "zh": "地下藏身处温馨的生活区：左边是开放式厨房、黑金色炉灶和大理石台面，中间是厚厚的奶白色羊毛地毯和一张小小的圆形木餐桌，中右是一整面小监控屏墙，右墙是一扇厚重的圆形钢制舱门，柔和的嵌灯投下暖琥珀色的光。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of the cozy living area of an underground hideout: an open kitchen with a black-and-gold stove and a marble counter at the left, a thick cream wool rug and a small round wooden dining table in the middle, a wall of small security monitors at the center-right, a heavy round steel hatch door in the right wall, warm amber light from soft recessed lamps, nobody in the scene. The frame holds the kitchen, the rug, the dining table, the monitor wall and the hatch.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "studio_night",
+   "kind": "image",
+   "role": "scene",
+   "label": "林峰的气候建模工作室（深夜）",
+   "description": {
+    "en": "A late-night climate-modeling studio in a Chinese city: a long desk with two large monitors showing a pale satellite map of a volcanic ash cloud and several orange prediction curves falling downward at the left, a worn brown leather sofa with a rumpled blanket at the right, cold coffee cups on the desk, a floor-to-ceiling window across the back wall showing a warm night cityscape with a long ribbon of car headlights on an elevated road and rows of lit apartment windows, warm amber lamp light. The reference fixes the layout and decor.",
+    "zh": "深夜里中国某城市的气候建模工作室：左边是一张长桌，上面两块大屏幕，显示着火山灰扩散的苍白卫星图和几条向下落的橙色预测曲线，右边是一张旧的棕色皮沙发、上面一条皱巴巴的毯子，桌上有凉掉的咖啡杯，后墙是落地窗、窗外是暖色的夜景——高架桥上一长串车灯、一排排亮着的住宅窗户，暖琥珀色的台灯光。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a late-night climate-modeling studio in a Chinese city: a long desk with two large monitors showing a pale satellite map of a volcanic ash cloud and several orange prediction curves falling downward at the left, a worn brown leather sofa with a rumpled blanket at the right, cold coffee cups on the desk, a floor-to-ceiling window across the back wall showing a warm night cityscape with a long ribbon of car headlights on an elevated road and rows of lit apartment windows, warm amber lamp light, nobody in the scene. The frame holds the desk with the two monitors, the sofa and the window with the city lights.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "bank_room",
+   "kind": "image",
+   "role": "scene",
+   "label": "银行的贵宾洽谈室（清晨阳光）",
+   "description": {
+    "en": "A private banking room in a Chinese city bank in bright morning sunlight: a long walnut meeting table in the middle of the room with a stack of thick documents and a pen on it, floor-to-ceiling windows across the back wall showing a sunlit skyline, a glass door in the right wall, a potted palm in the left corner, spotless and quiet. The reference fixes the layout and decor.",
+    "zh": "中国某城市银行清晨阳光里的贵宾洽谈室：房间中间是一张长长的胡桃木会议桌，桌上放着一摞厚厚的文件和一支笔，后墙是落地窗、窗外是阳光下的天际线，右墙是一扇玻璃门，左边角落摆着一盆盆栽，整洁安静。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a private banking room in a Chinese city bank in bright morning sunlight: a long walnut meeting table in the middle of the room with a stack of thick documents and a pen on it, floor-to-ceiling windows across the back wall showing a sunlit skyline, a glass door in the right wall, a potted palm in the left corner, spotless and quiet, nobody in the scene. The frame holds the walnut table, the sunlit windows, the glass door and the palm.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "penthouse",
+   "kind": "image",
+   "role": "scene",
+   "label": "市中心豪华大平层（冷气很足，窗外是烈日）",
+   "description": {
+    "en": "A luxury penthouse living room in a Chinese city: a glass dining table in the middle of the room, floor-to-ceiling windows across the back wall showing a white-hot skyline of glass towers under a blazing sun, a white sectional sofa against the left wall, a wide entry hall at the right with three black tactical backpacks lined up on the floor beside it, cool air-conditioned light. The reference fixes the layout and decor.",
+    "zh": "中国某城市的豪华大平层客厅：房间中间是一张玻璃餐桌，后墙是落地窗、窗外是烈日下白热的玻璃幕墙天际线，左墙边是白色组合沙发，右边是宽敞的玄关、旁边地上并排放着三个黑色战术背包，冷色的空调光。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a luxury penthouse living room in a Chinese city: a glass dining table in the middle of the room, floor-to-ceiling windows across the back wall showing a white-hot skyline of glass towers under a blazing sun, a white sectional sofa against the left wall, a wide entry hall at the right with three black tactical backpacks lined up on the floor beside it, cool air-conditioned light, nobody in the scene. The frame holds the glass table, the windows, the sofa and the entry hall with the backpacks.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "outdoor_store",
+   "kind": "image",
+   "role": "scene",
+   "label": "夏天的户外用品店（外面烈日）",
+   "description": {
+    "en": "A well-stocked outdoor-gear store in a Chinese city in midsummer: racks of thick down parkas, ski jackets and sleeping bags along the left wall, a checkout counter with a cash register at the middle-right, a broad glass shopfront at the right showing a white-hot summer street, cool air-conditioned light. The reference fixes the layout and decor.",
+    "zh": "中国某城市盛夏里货品齐全的户外用品店：左墙边是一排排厚厚的羽绒服、滑雪服和睡袋，中右是带收银机的收银台，右边是宽大的玻璃橱窗、窗外是白热的夏日街道，冷色的空调光。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a well-stocked outdoor-gear store in a Chinese city in midsummer: racks of thick down parkas, ski jackets and sleeping bags along the left wall, a checkout counter with a cash register at the middle-right, a broad glass shopfront at the right showing a white-hot summer street, cool air-conditioned light, nobody in the scene. The frame holds the parka racks, the checkout counter and the sunlit shopfront.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "coal_yard",
+   "kind": "image",
+   "role": "scene",
+   "label": "夏天的煤场（热浪）",
+   "description": {
+    "en": "A coal yard on the outskirts of a Chinese city in midsummer: huge black mountains of anthracite filling the left half of the yard, a small brick office with a weighbridge at the middle-right, a yellow wheel loader parked at the right, hazy white sun and heat shimmering over the coal dust. The reference fixes the layout and decor.",
+    "zh": "盛夏里中国某城市郊外的煤场：左半边是巨大的黑色无烟煤山，中右是带地磅的小砖房，右边停着一辆黄色轮式装载机，白晃晃的太阳，热浪在煤灰上方抖动。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a coal yard on the outskirts of a Chinese city in midsummer: huge black mountains of anthracite filling the left half of the yard, a small brick office with a weighbridge at the middle-right, a yellow wheel loader parked at the right, hazy white sun and heat shimmering over the coal dust, nobody in the scene. The frame holds the coal mountains, the brick office and the loader.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "agri_store",
+   "kind": "image",
+   "role": "scene",
+   "label": "农资公司的展厅",
+   "description": {
+    "en": "A neat, modern agricultural-supply showroom in a Chinese city: tall shelves of full-spectrum grow lamps and rows of colorful vegetable seed packets along the left wall, a long counter in the middle with stacks of white foam seedling blocks, seed trays and jugs of nutrient solution on it, a glass front door at the right showing a hot bright street, bright white shop light. The reference fixes the layout and decor.",
+    "zh": "中国某城市整洁现代的农资公司展厅：左墙边是高高的全光谱生长灯货架和一排排五颜六色的蔬菜种子，中间是一条长柜台、台面上堆着白色海绵育苗块、育苗盘和一桶桶营养液，右边是玻璃大门、门外是炎热明亮的街道，明亮的白色店内灯光。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a neat, modern agricultural-supply showroom in a Chinese city: tall shelves of full-spectrum grow lamps and rows of colorful vegetable seed packets along the left wall, a long counter in the middle with stacks of white foam seedling blocks, seed trays and jugs of nutrient solution on it, a glass front door at the right showing a hot bright street, bright white shop light, nobody in the scene. The frame holds the grow-lamp shelves, the seed packets, the counter and the glass door.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "freight_yard",
+   "kind": "image",
+   "role": "scene",
+   "label": "货运站（碎石院子，卡车排成一排）",
+   "description": {
+    "en": "A dusty gravel freight yard of a trucking company in midsummer: a small yard office with a rolled-up shutter at the left, a row of box trucks along the back, stacks of wooden pallets at the middle-right, an open chain-link yard gate at the right with a dirt road leading out of it, hard white sunlight and heat shimmering. The reference fixes the layout and decor.",
+    "zh": "盛夏里一家货运公司尘土飞扬的碎石货运站：左边是卷帘门拉起的小办公室，后面一排厢式卡车，中右是几摞木托盘，右边是敞开的铁丝网院门、门外一条土路，白花花的硬光，热浪抖动。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a dusty gravel freight yard of a trucking company in midsummer: a small yard office with a rolled-up shutter at the left, a row of box trucks along the back, stacks of wooden pallets at the middle-right, an open chain-link yard gate at the right with a dirt road leading out of it, hard white sunlight and heat shimmering, nobody in the scene. The frame holds the office, the row of trucks, the pallets and the open gate.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "shelter_old",
+   "kind": "image",
+   "role": "scene",
+   "label": "深山里的旧防空洞口（老铁门半开）",
+   "description": {
+    "en": "A quiet overgrown forest hillside in China: an old concrete shelter portal covered in vines with a rusted steel door standing half open, cut into the hillside at the left, a narrow dirt trail through the middle, tall pine trees all around and a pale hazy sky between the treetops, no vehicles, soft hazy noon light. The reference fixes the layout and decor.",
+    "zh": "中国深山里安静而杂草丛生的树林山坡：左边山坡上有一个爬满藤蔓的旧混凝土防空洞口、生锈的铁门半开着，中间是一条窄窄的土路，四周是高高的松树、树梢之间露出苍白朦胧的天空，没有车，柔和朦胧的正午光。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a quiet overgrown forest hillside in China: an old concrete shelter portal covered in vines with a rusted steel door standing half open, cut into the hillside at the left, a narrow dirt trail through the middle, tall pine trees all around and a pale hazy sky between the treetops, no vehicles, soft hazy noon light, nobody in the scene. The frame holds the old shelter portal, the trail, the pines and the pale sky.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "bunker_empty",
+   "kind": "image",
+   "role": "scene",
+   "label": "空荡荡的防空洞大厅（地下水渠）",
+   "description": {
+    "en": "A vast empty three-storey concrete hall of an abandoned civil-defense shelter: bare walls, rusty railings along two upper levels at the back, a shallow concrete channel of clear running water crossing the foreground from left to right, a row of round concrete pillars at the right, dust hanging in pale flashlight beams. The reference fixes the layout and decor.",
+    "zh": "废弃防空洞里巨大而空荡荡的三层混凝土大厅：墙面光秃秃的，后面两层楼的生锈栏杆，一条浅浅的混凝土水渠、清澈的水从前景左边流向右边，右边是一排圆形混凝土立柱，灰尘悬在苍白的手电光束里。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a vast empty three-storey concrete hall of an abandoned civil-defense shelter: bare walls, rusty railings along two upper levels at the back, a shallow concrete channel of clear running water crossing the foreground from left to right, a row of round concrete pillars at the right, dust hanging in pale flashlight beams, nobody in the scene. The frame holds the bare hall, the water channel and the pillars.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "bunker_work",
+   "kind": "image",
+   "role": "scene",
+   "label": "堆满货的防空洞大厅里的工作台",
+   "description": {
+    "en": "A steel workbench in a vast underground concrete hall packed with supplies: the bench at the center with a shallow tub of clear water, a stack of white foam seeding blocks and an open seed packet on it, towering stacks of steel crates, pallets of boxes, generators and big water tanks filling the hall behind it and along both sides, hard white work lamps overhead. The reference fixes the layout and decor.",
+    "zh": "堆满物资的巨大地下混凝土大厅里的一张钢制工作台：台子在中间，上面放着一盆清水、一摞白色海绵育苗块和一包打开的种子，后面和两侧是高高的钢箱、成托盘的货箱、发电机和巨大的水箱，头顶是白色的硬质工作灯。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a steel workbench in a vast underground concrete hall packed with supplies: the bench at the center with a shallow tub of clear water, a stack of white foam seeding blocks and an open seed packet on it, towering stacks of steel crates, pallets of boxes, generators and big water tanks filling the hall behind it and along both sides, hard white work lamps overhead, nobody in the scene. The frame holds the workbench with the water tub, and the stacked supplies behind it.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "tunnel_mouth",
+   "kind": "image",
+   "role": "scene",
+   "label": "深山里的隧道口（同一处旧防空洞，铁门大开，卡车在右）",
+   "description": {
+    "en": "The same forested mountain hillside in summer as in the reference image: the old concrete shelter portal covered in vines with its rusted steel door swung wide open on a black interior, cut into the hillside at the left, a gravel clearing in the middle, a large box truck with its rear door rolled up and crates stacked at its back at the right, tall pine trees all around, hard noon light. The reference fixes the layout and decor.",
+    "zh": "和参考图是同一座夏天的深山树林山坡：左边山坡上是那个爬满藤蔓的旧混凝土防空洞口、生锈的铁门大开着露出黑洞洞的里面，中间是一片碎石空地，右边停着一辆后门卷起、后面堆着箱子的大型厢式卡车，四周是高高的松树，正午的硬光。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of the same forested mountain hillside in summer as in the reference image: the old concrete shelter portal covered in vines with its rusted steel door swung wide open on a black interior, cut into the hillside at the left, a gravel clearing in the middle, a large box truck with its rear door rolled up and crates stacked at its back at the right, tall pine trees all around, hard noon light, nobody in the scene. The frame holds the open dark portal, the gravel clearing, the box truck and the pines.",
+    "reference_keys": [
+     "shelter_old"
+    ]
+   }
+  },
+  {
+   "key": "hill_hidden",
+   "kind": "image",
+   "role": "scene",
+   "label": "同一座山坡（入口已被伪装，只剩青苔岩石和枯树桩，卡车还在右边）",
+   "description": {
+    "en": "The same forested mountain hillside in summer as in the reference image, now with no tunnel mouth: a moss-covered boulder and a dead tree stump sit on the slope at the left where the tunnel mouth was, a gravel clearing in the middle, the same large box truck still standing at the right, tall pine trees all around, hard noon light. The reference fixes the layout and decor.",
+    "zh": "和参考图是同一座夏天的深山树林山坡，只是隧道口不见了：左边坡上原本是隧道口的位置现在是一块长满青苔的岩石和一截枯树桩，中间是碎石空地，右边还是那辆大型厢式卡车，四周是高高的松树，正午的硬光。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of the same forested mountain hillside in summer as in the reference image, now with no tunnel mouth: a moss-covered boulder and a dead tree stump sit on the slope at the left where the tunnel mouth was, a gravel clearing in the middle, the same large box truck still standing at the right, tall pine trees all around, hard noon light, nobody in the scene. The frame holds the boulder, the stump, the clearing, the truck and the pines.",
+    "reference_keys": [
+     "tunnel_mouth"
+    ]
+   }
+  },
+  {
+   "key": "lin_arctic",
+   "kind": "image",
+   "role": "character",
+   "label": "林峰（纯白极地防寒服，兜帽、白色护目镜推在额头上）",
+   "description": {
+    "en": "Lin, the same lean, athletic Chinese man in his early thirties as in the reference, wearing a bulky pure-white polar expedition suit with the hood up, white goggles pushed up on his forehead and a white neck gaiter pulled down under his chin, his cheeks reddened by cold and a faint shadow of stubble. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "林峰，和参考图是同一位三十出头、身形精瘦结实的中国男性，穿着蓬松的纯白极地防寒服、戴着兜帽，白色护目镜推在额头上，白色围脖拉到下巴下面，脸颊被冻得发红，下巴上一层淡淡的胡茬。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic full-body portrait of the same man as in the reference image, a bulky pure-white polar expedition suit with the hood up, white goggles pushed up on his forehead, a white neck gaiter pulled down under his chin, cheeks reddened by cold, a faint shadow of stubble. He faces the camera with a hard, focused expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": [
+     "lin_studio"
+    ]
+   }
+  },
+  {
+   "key": "su_down",
+   "kind": "image",
+   "role": "character",
+   "label": "苏清月（长款奶白色羽绒服，金丝眼镜，睫毛上有霜）",
+   "description": {
+    "en": "Su, the same elegant Chinese woman in her late twenties as in the reference, with her long black hair tied back, thin gold-rimmed glasses on her nose and frost on her lashes, wearing a long cream down coat zipped to the chin over her black silk blouse. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "苏清月，和参考图是同一位二十八岁左右、优雅美丽的中国女性，乌黑的长发束在脑后，鼻梁上架着细金丝眼镜，睫毛上结着霜，穿着拉到下巴的长款奶白色羽绒服，里面是黑色真丝衬衫。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of the same woman as in the reference image, long black hair tied back, thin gold-rimmed glasses, frost on her lashes, wearing a long cream down coat zipped to the chin. She faces the camera with a pinched, determined expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": [
+     "su_suit"
+    ]
+   }
+  },
+  {
+   "key": "su_trek",
+   "kind": "image",
+   "role": "character",
+   "label": "苏清月（三层黑白羽绒服，黑围巾，滑雪护目镜推在额头上，背着登山包）",
+   "description": {
+    "en": "Su, the same elegant Chinese woman in her late twenties as in the reference but without glasses, wearing layered white and black down jackets, a black scarf wound up to her chin, ski goggles pushed up on her forehead and a heavy hiking backpack on her shoulders, frost on her lashes and cheeks, her long black hair tucked under a dark knit hat. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "苏清月，和参考图是同一位二十八岁左右、优雅美丽的中国女性，但不戴眼镜，穿着三层黑白相间的羽绒服，黑围巾一直绕到下巴，滑雪护目镜推在额头上，肩上背着沉重的登山包，睫毛和脸颊上都是霜，乌黑的长发塞在深色针织帽里。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic full-body portrait of the same woman as in the reference image, no glasses, layered white and black down jackets, a black scarf wound up to her chin, ski goggles pushed up on her forehead, frost on her lashes and cheeks, a dark knit hat. She faces the camera with an exhausted, determined expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": [
+     "su_suit"
+    ]
+   }
+  },
+  {
+   "key": "gaunt_drifter",
+   "kind": "image",
+   "role": "character",
+   "label": "流浪者甲（瘦得脱相，破旧的多层冬衣，拖着一根铁棍）",
+   "description": {
+    "en": "A gaunt Chinese man in his forties with hollow cheeks, cracked lips and sunken bloodshot eyes, wearing a layered tattered winter coat with a frost-crusted scarf pulled down under his chin, dragging a bent iron bar. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "一个四十多岁、瘦得脱相的中国男性，两颊凹陷，嘴唇开裂，眼窝深陷、布满血丝，穿着多层破旧的冬衣，结着霜的围巾拉到下巴下面，拖着一根弯了的铁棍。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of a Chinese man, hollow cheeks, cracked lips, sunken bloodshot eyes, wearing a layered tattered winter coat with a frost-crusted scarf pulled down under his chin. He faces the camera with an exhausted, hollow expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "bearded_drifter",
+   "kind": "image",
+   "role": "character",
+   "label": "流浪者乙（结着冰碴的黑胡子，破旧的棉夹克，针织帽）",
+   "description": {
+    "en": "A stocky Chinese man in his forties with a matted black beard crusted with ice, red-rimmed eyes, a ragged padded jacket and a knitted cap, carrying a short iron pipe. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "一个四十多岁、敦实的中国男性，黑胡子纠结着结满冰碴，眼眶发红，穿着破旧的棉夹克、戴着针织帽，手里拿着一截短铁管。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of a Chinese man, a matted black beard crusted with ice, red-rimmed eyes, a ragged padded jacket and a knitted cap. He faces the camera with a numb, bitter expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "brute_raider",
+   "kind": "image",
+   "role": "character",
+   "label": "暴徒（壮实的中年男人，脏棉袄，破围巾遮着口鼻，拿大锤）",
+   "description": {
+    "en": "A heavy-set Chinese man in his thirties with a stubbled broad face and wild bloodshot eyes, wearing a stained quilted coat with a ragged scarf pulled up over his nose, holding a sledgehammer. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "一个三十多岁、体格粗壮的中国男性，宽脸上胡子拉碴，眼睛布满血丝、神情凶狠，穿着脏兮兮的棉袄，破围巾拉起来遮住口鼻，手里拿着一把大锤。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of a Chinese man, a stubbled broad face, wild bloodshot eyes, wearing a stained quilted coat with a ragged scarf pulled up over his nose. He faces the camera with a savage, desperate expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "studio_day",
+   "kind": "image",
+   "role": "scene",
+   "label": "林峰的工作室（同一间，清晨的冷灰光，窗外城市安静）",
+   "description": {
+    "en": "The same late-night climate-modeling studio as in the reference image, now in cold grey early-morning light: the long desk with two large monitors still glowing with steeply falling orange curves at the left, the worn brown leather sofa at the center-right, a glass studio door at the right beyond the sofa, a floor-to-ceiling window across the back wall showing a pale grey dawn over a quiet city. The reference fixes the layout and decor.",
+    "zh": "和参考图是同一间气候建模工作室，现在是清晨冷灰色的光：左边长桌上两块大屏幕还亮着，橙色曲线陡直下落，中右是那张旧皮沙发，右边沙发后面是一扇玻璃门，后墙是落地窗、窗外是安静的城市灰蒙蒙的黎明。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of the same late-night climate-modeling studio as in the reference image, now in cold grey early-morning light: the long desk with two large monitors still glowing with steeply falling orange curves at the left, the worn brown leather sofa at the center-right, a glass studio door at the right beyond the sofa, a floor-to-ceiling window across the back wall showing a pale grey dawn over a quiet city, nobody in the scene. The frame holds the desk with the two monitors, the sofa, the glass door and the grey dawn window.",
+    "reference_keys": [
+     "studio_night"
+    ]
+   }
+  },
+  {
+   "key": "bunker_control",
+   "kind": "image",
+   "role": "scene",
+   "label": "地下控制室（红色按钮、监控墙、红色倒计时钟）",
+   "description": {
+    "en": "A compact underground concrete control room: a steel control console in the middle of the room with rows of small green status lights and one big red push-button under a clear flip-up cover, a wall of six small monitors at the left, a large red digital countdown clock hanging high on the back wall at center-right, a heavy steel door in the right wall, cool green indicator glow and pale work-lamp light. The reference fixes the layout and decor.",
+    "zh": "地下紧凑的混凝土控制室：房间中间是一张钢制控制台，上面一排排小小的绿色指示灯和一个罩着透明翻盖的大红色按钮，左边是一整面六块小屏幕的监控墙，中右的后墙高处挂着一个大红色电子倒计时钟，右墙是一扇厚重的钢门，冷冷的绿色指示灯光和苍白的工作灯光。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a compact underground concrete control room: a steel control console in the middle of the room with rows of small green status lights and one big red push-button under a clear flip-up cover, a wall of six small monitors at the left, a large red digital countdown clock hanging high on the back wall at center-right, a heavy steel door in the right wall, cool green indicator glow and pale work-lamp light, nobody in the scene. The frame holds the console with the red button, the monitor wall, the red clock and the steel door.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "street_summer",
+   "kind": "image",
+   "role": "scene",
+   "label": "中午的市中心大街（远处一堵白色的雾墙）",
+   "description": {
+    "en": "A wide city boulevard between glass office towers at midday under a blinding white sun: the street receding down the middle, a line of stopped cars filling both lanes, leafy trees along the sidewalks, and at the far end of the street a towering wall of white mist filling the sky. The reference fixes the layout and decor.",
+    "zh": "中午刺眼的白色阳光下，玻璃写字楼之间一条宽阔的市中心大街：街道向画面深处延伸，两条车道上停着一长排车，人行道两边是枝叶茂盛的行道树，街的尽头一堵高耸的白色雾墙遮住了天空。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a wide city boulevard between glass office towers at midday under a blinding white sun: the street receding down the middle, a line of stopped cars filling both lanes, leafy trees along the sidewalks, and at the far end of the street a towering wall of white mist filling the sky, nobody in the scene. The frame holds the boulevard, the stopped cars, the trees and the white wall of mist at the far end.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "street_frozen",
+   "kind": "image",
+   "role": "scene",
+   "label": "同一条大街（冻成冰蓝色，车被冰裹住，人形冻在路边）",
+   "description": {
+    "en": "The same wide city boulevard as in the reference image, now frozen in dim grey-blue light and a thin white mist: the stopped cars encased in ice, bare frost-furred trees along the sidewalks, people frozen mid-stride in white ice along the sidewalks, the glass towers furred with frost. The reference fixes the layout and decor.",
+    "zh": "和参考图是同一条宽阔的市中心大街，现在冻在昏暗的灰蓝色光里、飘着一层薄薄的白雾：停着的车被冰裹住，人行道边的行道树光秃秃的、结满霜，路边的人保持着迈步的姿势被冻在白色的冰里，玻璃写字楼上也结了一层霜。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of the same wide city boulevard as in the reference image, now frozen in dim grey-blue light and a thin white mist: the stopped cars encased in ice, bare frost-furred trees along the sidewalks, people frozen mid-stride in white ice along the sidewalks, the glass towers furred with frost, nobody in the scene. The frame holds the iced cars, the frost-furred trees, the frozen figures and the frosted towers.",
+    "reference_keys": [
+     "street_summer"
+    ]
+   }
+  },
+  {
+   "key": "wine_cellar",
+   "kind": "image",
+   "role": "scene",
+   "label": "苏清月大平层下面的酒窖（石墙，冷，一盏昏黄的灯）",
+   "description": {
+    "en": "A bitterly cold stone-walled private wine cellar beneath a luxury apartment tower: racks of wine bottles along the left wall, stacked cases of canned food and bottled water in the middle, three concrete steps rising to a heavy steel security door at the right, a small round thermometer on the wall above the cases, one dim yellow bulb, frost furring the bottles. The reference fixes the layout and decor.",
+    "zh": "豪华公寓楼下面一间冷得刺骨的石墙私人酒窖：左墙是一排排酒架，中间堆着成箱的罐头和瓶装水，右边三级混凝土台阶通向一扇厚重的钢制防盗门，货箱上方的墙上挂着一个小圆温度计，一盏昏黄的灯泡，酒瓶上结着一层霜。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a bitterly cold stone-walled private wine cellar beneath a luxury apartment tower: racks of wine bottles along the left wall, stacked cases of canned food and bottled water in the middle, three concrete steps rising to a heavy steel security door at the right, a small round thermometer on the wall above the cases, one dim yellow bulb, frost furring the bottles, nobody in the scene. The frame holds the wine racks, the stacked cases, the steps and the heavy steel door.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "airlock",
+   "kind": "image",
+   "role": "scene",
+   "label": "缓冲舱（白瓷砖，钢长凳，挂着白色防寒服，圆形钢舱门）",
+   "description": {
+    "en": "A narrow white-tiled decontamination airlock: a long steel bench with two hanging white polar suits and a shelf of white goggles along the left wall, a bare white-tiled floor in the middle, a heavy round steel hatch door in the right wall, hard white strip lights. The reference fixes the layout and decor.",
+    "zh": "一间狭长的白瓷砖缓冲舱：左墙边是一条钢制长凳、上面挂着两套白色防寒服、旁边一层架子上放着白色护目镜，中间是光洁的白瓷砖地面，右墙是一扇厚重的圆形钢舱门，白色的硬质灯管光。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a narrow white-tiled decontamination airlock: a long steel bench with two hanging white polar suits and a shelf of white goggles along the left wall, a bare white-tiled floor in the middle, a heavy round steel hatch door in the right wall, hard white strip lights, nobody in the scene. The frame holds the bench with the hanging white suits, the tiled floor and the round steel hatch.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "snow_hatch",
+   "kind": "image",
+   "role": "scene",
+   "label": "雪林里的枯树洞暗门（树洞里有黑洞洞的通道，腰深的雪）",
+   "description": {
+    "en": "A silent frozen pine forest at night buried in waist-deep snow under a black sky with a faint green aurora: at the left a hollow dead tree trunk whose camouflaged hatch stands open on a black passage, snow-laden pines all around, the white snow glowing. The reference fixes the layout and decor.",
+    "zh": "夜里一片寂静的冰封松林，积雪深到腰部，黑色的天空里有一点淡淡的绿色极光：左边是一截中空的枯树干，伪装的暗门敞开着、露出黑洞洞的通道，四周是压满雪的松树，白雪泛着微光。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a silent frozen pine forest at night buried in waist-deep snow under a black sky with a faint green aurora: at the left a hollow dead tree trunk whose camouflaged hatch stands open on a black passage, snow-laden pines all around, the white snow glowing, nobody in the scene. The frame holds the open hollow-trunk hatch, the deep snow and the snow-laden pines.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "snow_vent",
+   "kind": "image",
+   "role": "scene",
+   "label": "雪林里被冰封住的排气管",
+   "description": {
+    "en": "A silent frozen pine forest at night buried in deep snow under a black sky with a faint green aurora: a thick steel exhaust pipe sticking out of the snow at center-right with its mouth sealed in a heavy block of ice, snow-laden pines behind it, the white snow glowing. The reference fixes the layout and decor.",
+    "zh": "夜里一片寂静的冰封松林，积雪很深，黑色的天空里有一点淡淡的绿色极光：中右处一根粗钢排气管从雪里伸出来，管口被一大块厚冰封死，后面是压满雪的松树，白雪泛着微光。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a silent frozen pine forest at night buried in deep snow under a black sky with a faint green aurora: a thick steel exhaust pipe sticking out of the snow at center-right with its mouth sealed in a heavy block of ice, snow-laden pines behind it, the white snow glowing, nobody in the scene. The frame holds the ice-sealed steel pipe, the deep snow and the snow-laden pines.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "snow_trek",
+   "kind": "image",
+   "role": "scene",
+   "label": "一望无际的雪原（远处山脊上一排冻成冰的人形）",
+   "description": {
+    "en": "A vast frozen snowfield at night under a black sky with a faint green aurora: open deep snow filling the middle, a few leafless frozen trees at the right, and far at the back a line of white ice-encased human figures frozen mid-run along a low ridge, the white snow glowing. The reference fixes the layout and decor.",
+    "zh": "夜里黑色天空下一望无际的冰封雪原，有一点淡淡的绿色极光：中间是开阔的深雪，右边有几棵光秃秃的冻树，远处低矮的山脊上有一排冻成白冰的人形、保持着奔跑的姿势，白雪泛着微光。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a vast frozen snowfield at night under a black sky with a faint green aurora: open deep snow filling the middle, a few leafless frozen trees at the right, and far at the back a line of white ice-encased human figures frozen mid-run along a low ridge, the white snow glowing, nobody in the scene. The frame holds the open snowfield, the frozen trees and the ice-encased figures on the ridge.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "snow_stump",
+   "kind": "image",
+   "role": "scene",
+   "label": "同一座山坡变成雪地（青苔岩石盖着雪，枯树桩侧面有一小块镜头玻璃）",
+   "description": {
+    "en": "The same forested mountain hillside as in the reference image, now buried in snow at night under a black sky with a faint green aurora: a snow-capped boulder at the left, a dead tree stump at center-left with a small round dark glass lens set in its side and a thin patch of snow melting around the glass, an open snowfield in the middle, snow-laden pines in the background. The reference fixes the layout and decor.",
+    "zh": "和参考图是同一座深山树林山坡，现在夜里被大雪埋住，黑色的天空里有一点淡淡的绿色极光：左边是盖着雪的岩石，中左是那截枯树桩、侧面嵌着一小块圆形的深色玻璃，玻璃周围一小圈雪正在融化，中间是开阔的雪地，后面是压满雪的松树。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of the same forested mountain hillside as in the reference image, now buried in snow at night under a black sky with a faint green aurora: a snow-capped boulder at the left, a dead tree stump at center-left with a small round dark glass lens set in its side and a thin patch of snow melting around the glass, an open snowfield in the middle, snow-laden pines in the background, nobody in the scene. The frame holds the snow-capped boulder, the stump with the small glass lens and the open snowfield.",
+    "reference_keys": [
+     "hill_hidden"
+    ]
+   }
+  },
+  {
+   "key": "bunker_sprouts",
+   "kind": "image",
+   "role": "scene",
+   "label": "同一张工作台（海绵块里冒出了第一批嫩绿的芽，头顶亮着粉紫色生长灯）",
+   "description": {
+    "en": "The same steel workbench in the vast supply-packed underground hall as in the reference image, now with a white tray of foam seeding blocks each topped with tiny pale-green seedlings in the shallow tub of clear water under a hanging white-purple grow lamp, towering stacks of steel crates, pallets, generators and water tanks behind it and along both sides. The reference fixes the layout and decor.",
+    "zh": "和参考图是同一张钢制工作台、同一个堆满货的巨大地下大厅，现在浅浅的清水盆里的白色托盘上，每块海绵块顶上都冒出了小小的淡绿色嫩芽，头顶吊着一盏粉紫色的生长灯，后面和两侧是高高的钢箱、货箱、发电机和水箱。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of the same steel workbench in the vast supply-packed underground hall as in the reference image, now with a white tray of foam seeding blocks each topped with tiny pale-green seedlings in the shallow tub of clear water under a hanging white-purple grow lamp, towering stacks of steel crates, pallets, generators and water tanks behind it and along both sides, nobody in the scene. The frame holds the workbench, the tray of sprouting seedlings under the grow lamp and the stacked supplies.",
+    "reference_keys": [
+     "bunker_work"
+    ]
+   }
+  },
+  {
+   "key": "lin_white",
+   "kind": "image",
+   "role": "character",
+   "label": "林峰（干净的白衬衫，袖子卷到小臂，深色长裤）",
+   "description": {
+    "en": "Lin, the same lean, athletic Chinese man in his early thirties as in the reference, with short neatly combed black hair, wearing a clean white dress shirt with the sleeves rolled to his forearms and dark trousers. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "林峰，和参考图是同一位三十出头、身形精瘦结实的中国男性，黑色短发梳得整齐，穿着干净的白衬衫、袖子卷到小臂，深色长裤。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of the same man as in the reference image, short neatly combed black hair, wearing a clean white dress shirt with the sleeves rolled to his forearms and dark trousers. He faces the camera with a calm, level expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": [
+     "lin_studio"
+    ]
+   }
+  },
+  {
+   "key": "su_cozy",
+   "kind": "image",
+   "role": "character",
+   "label": "苏清月（宽大的奶白色针织毛衣，黑色保暖打底裤，灰色厚袜子，长发披着）",
+   "description": {
+    "en": "Su, the same elegant Chinese woman in her late twenties as in the reference but without glasses, wearing an oversized soft cream knit sweater, black thermal leggings and thick grey socks, her long black hair loose over her shoulders. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "苏清月，和参考图是同一位二十八岁左右、优雅美丽的中国女性，但不戴眼镜，穿着宽大柔软的奶白色针织毛衣、黑色保暖打底裤和灰色厚袜子，乌黑的长发披在肩上。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic full-body portrait of the same woman as in the reference image, no glasses, wearing an oversized soft cream knit sweater, black thermal leggings, thick grey socks, long black hair loose over her shoulders. She faces the camera with a soft, tired expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": [
+     "su_suit"
+    ]
+   }
+  },
+  {
+   "key": "su_surgeon",
+   "kind": "image",
+   "role": "character",
+   "label": "苏清月（黑色贴身长袖打底衫，白色手术手套，金丝眼镜，头发盘成紧紧的发髻）",
+   "description": {
+    "en": "Su, the same elegant Chinese woman in her late twenties as in the reference, with her long black hair pinned in a tight bun and thin gold-rimmed glasses on her nose, wearing a fitted black long-sleeve thermal top, dark trousers and white surgical gloves. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "苏清月，和参考图是同一位二十八岁左右、优雅美丽的中国女性，乌黑的长发盘成紧紧的发髻，鼻梁上架着细金丝眼镜，穿着贴身的黑色长袖打底衫、深色长裤，戴着白色手术手套。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of the same woman as in the reference image, long black hair pinned in a tight bun, thin gold-rimmed glasses, wearing a fitted black long-sleeve thermal top, dark trousers and white surgical gloves. She faces the camera with a focused, professional expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": [
+     "su_suit"
+    ]
+   }
+  },
+  {
+   "key": "bunker_sofa",
+   "kind": "image",
+   "role": "scene",
+   "label": "安全屋生活区的沙发角（深棕皮沙发，灰色羊绒毯，矮木茶几）",
+   "description": {
+    "en": "The same cozy underground living area as in the reference image, now showing its sofa corner: a deep brown leather sofa with a thick grey cashmere blanket in the middle of the frame facing the room, a low wooden coffee table in front of it, the open kitchen with the black-and-gold stove at the left, a wall of small security monitors at the center-right behind the sofa, the heavy round steel hatch door in the right wall, warm amber light from soft recessed lamps. The reference fixes the layout and decor.",
+    "zh": "和参考图是同一个温馨的地下生活区，现在拍的是沙发角：画面中间一张朝着房间的深棕色皮沙发、上面铺着厚厚的灰色羊绒毯，前面是一张矮矮的木茶几，左边是开放式厨房和黑金色炉灶，沙发后面中右是一整面小监控屏墙，右墙是厚重的圆形钢制舱门，柔和的嵌灯投下暖琥珀色的光。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of the same cozy underground living area as in the reference image, now showing its sofa corner: a deep brown leather sofa with a thick grey cashmere blanket in the middle of the frame facing the room, a low wooden coffee table in front of it, the open kitchen with the black-and-gold stove at the left, a wall of small security monitors at the center-right behind the sofa, the heavy round steel hatch door in the right wall, warm amber light from soft recessed lamps, nobody in the scene. The frame holds the leather sofa with the cashmere blanket, the coffee table, the kitchen, the monitor wall and the hatch.",
+    "reference_keys": [
+     "bunker_living"
+    ]
+   }
+  },
+  {
+   "key": "med_room",
+   "kind": "image",
+   "role": "scene",
+   "label": "地下室里的简易手术室（手术无影灯，钢手术台铺着蓝色无菌布，银色金属盒）",
+   "description": {
+    "en": "A small windowless underground medical room with white-tiled walls: a steel operating table covered with a sterile blue drape in the middle under a round surgical lamp, a steel instrument tray with an open silver metal case at the left, a plain steel chair at the right, hard white light. The reference fixes the layout and decor.",
+    "zh": "地下一间没有窗的小手术室，墙面是白瓷砖：中间是一张铺着蓝色无菌布的钢制手术台，上方是一盏圆形手术无影灯，左边是一个钢制器械托盘、上面放着打开的银色金属盒，右边是一把朴素的钢椅，白色的硬质灯光。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a small windowless underground medical room with white-tiled walls: a steel operating table covered with a sterile blue drape in the middle under a round surgical lamp, a steel instrument tray with an open silver metal case at the left, a plain steel chair at the right, hard white light, nobody in the scene. The frame holds the operating table with the blue drape, the surgical lamp, the instrument tray and the steel chair.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "eden_door",
+   "kind": "image",
+   "role": "scene",
+   "label": "混凝土走廊尽头的钢门（门缝里透出粉紫色的光，门旁有密码键盘）",
+   "description": {
+    "en": "A bare underground concrete corridor ending at a heavy steel door with a keypad on the right, a thin line of pink-violet light glowing around the edges of the door, cool concrete light. The reference fixes the layout and decor.",
+    "zh": "地下光秃秃的混凝土走廊，尽头右边是一扇装着密码键盘的厚重钢门，门缘周围透出一圈细细的粉紫色的光，冷色的混凝土灯光。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a bare underground concrete corridor ending at a heavy steel door with a keypad on the right, a thin line of pink-violet light glowing around the edges of the door, cool concrete light, nobody in the scene. The frame holds the concrete corridor, the steel door with the keypad and the pink-violet glow around its edges.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "pump_room",
+   "kind": "image",
+   "role": "scene",
+   "label": "水泵房（透明大水箱，透明水管，绿色启动键）",
+   "description": {
+    "en": "A compact damp underground concrete pump room: a huge clear acrylic water tank at the right, thick transparent pipes running along the left wall to a steel pump station, a control panel with one big green start button in the middle, a damp floor with a drain, hard white work-lamp light. The reference fixes the layout and decor.",
+    "zh": "地下潮湿紧凑的混凝土水泵房：右边是一个巨大的透明亚克力水箱，左墙上是一排粗粗的透明水管、通向钢制泵站，中间是一块控制面板、上面一个大大的绿色启动键，地面潮湿、有地漏，白色的硬质工作灯光。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a compact damp underground concrete pump room: a huge clear acrylic water tank at the right, thick transparent pipes running along the left wall to a steel pump station, a control panel with one big green start button in the middle, a damp floor with a drain, hard white work-lamp light, nobody in the scene. The frame holds the clear tank, the transparent pipes, the pump station and the control panel with the green button.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "bathroom",
+   "kind": "image",
+   "role": "scene",
+   "label": "浴室（磨砂玻璃淋浴门，木凳上叠着毛巾和一件灰色棉质长袖衫，蒸汽）",
+   "description": {
+    "en": "A warm tiled underground bathroom: a frosted-glass shower door with a rainfall shower head behind it at center-left, a wooden bench with folded white towels and a folded grey cotton shirt at the right, white tile walls, thick white steam. The reference fixes the layout and decor.",
+    "zh": "地下温暖的瓷砖浴室：中左是一扇磨砂玻璃淋浴门、门后是顶喷花洒，右边是一张木凳、上面叠着白毛巾和一件灰色棉质长袖衫，墙面是白瓷砖，到处是浓浓的白色蒸汽。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a warm tiled underground bathroom: a frosted-glass shower door with a rainfall shower head behind it at center-left, a wooden bench with folded white towels and a folded grey cotton shirt at the right, white tile walls, thick white steam, nobody in the scene. The frame holds the frosted shower door, the bench with the towels and the grey shirt, and the steam.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "eden",
+   "kind": "image",
+   "role": "scene",
+   "label": "地下二层的“伊甸园”（一排排粉紫色生长灯下的水培架，孵化箱）",
+   "description": {
+    "en": "A vast underground farm level: long tiers of white hydroponic channels full of young lettuce and tomato seedlings under rows of hanging pink-violet full-spectrum grow lamps filling the middle of the frame, a warm incubator box with a glass window and a red heat lamp at the right, a steel staircase at the left, concrete walls. The reference fixes the layout and decor.",
+    "zh": "地下巨大的农场层：画面中间是一排排长长的白色水培槽，里面长着嫩嫩的生菜和番茄苗，头顶吊着一排排粉紫色的全光谱生长灯，右边是一个带玻璃窗和红色保温灯的孵化箱，左边是一道钢楼梯，周围是混凝土墙。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a vast underground farm level: long tiers of white hydroponic channels full of young lettuce and tomato seedlings under rows of hanging pink-violet full-spectrum grow lamps filling the middle of the frame, a warm incubator box with a glass window and a red heat lamp at the right, a steel staircase at the left, concrete walls, nobody in the scene. The frame holds the hydroponic channels with seedlings, the pink-violet grow lamps, the incubator box and the steel staircase.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "cold_store",
+   "kind": "image",
+   "role": "scene",
+   "label": "冷库（成排的钢货架，火锅底料盒，厚重的保温门）",
+   "description": {
+    "en": "A walk-in underground cold store: steel shelving stacked with white boxes of frozen meat, seafood and vegetables filling the left and middle of the frame, an eye-level shelf with brightly packaged hotpot base boxes in the middle, a heavy insulated door at the right, frosty cold white light. The reference fixes the layout and decor.",
+    "zh": "地下的大型冷库：左边和中间是成排的钢货架、上面堆着一箱箱白色的冷冻肉、海鲜和蔬菜，中间一层与视线齐平的货架上摆着包装鲜艳的火锅底料盒，右边是一扇厚重的保温门，冷冷的白色灯光。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a walk-in underground cold store: steel shelving stacked with white boxes of frozen meat, seafood and vegetables filling the left and middle of the frame, an eye-level shelf with brightly packaged hotpot base boxes in the middle, a heavy insulated door at the right, frosty cold white light, nobody in the scene. The frame holds the shelves of white boxes, the hotpot base boxes at eye level and the insulated door.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "su_arctic",
+   "kind": "image",
+   "role": "character",
+   "label": "苏清月（纯白极地防寒服，兜帽、白色护目镜推在额头上，睫毛上有霜）",
+   "description": {
+    "en": "Su, the same elegant Chinese woman in her late twenties as in the reference, wearing a bulky pure-white polar expedition suit with the hood up, white goggles pushed up on her forehead and a white neck gaiter pulled down under her chin, frost on her lashes. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "苏清月，和参考图是同一位二十八岁左右、优雅美丽的中国女性，穿着臃肿的纯白色极地防寒服、兜帽戴着、白色护目镜推在额头上、白色颈套拉到下巴下面，睫毛上有霜。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of the same woman as in the reference image, wearing a bulky pure-white polar expedition suit with the hood up, white goggles pushed up on her forehead and a white neck gaiter pulled down under her chin, frost on her lashes. She faces the camera with a sharp, focused expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": [
+     "su_suit"
+    ]
+   }
+  },
+  {
+   "key": "snow_solar",
+   "kind": "image",
+   "role": "scene",
+   "label": "雪林里的光伏板阵列（三排黑色太阳能板半埋在雪里）",
+   "description": {
+    "en": "A silent frozen pine clearing under a black sky with a faint green aurora: three rows of black solar panels on steel frames, half buried in snow, stand in the middle of the frame; a long low snow bank runs along the foreground; a wide snow slope rises far behind the panels at the right; snow-laden pines stand on both sides. The reference fixes the layout and decor.",
+    "zh": "寂静冰封的松林空地，黑色天空里有淡淡的绿色极光：画面中间是三排立在钢架上、半埋在雪里的黑色太阳能板；前景有一道长长的低矮雪堤；板阵后面右侧是一面宽阔的远处雪坡；两侧是挂满雪的松树。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a silent frozen pine clearing under a black sky with a faint green aurora: three rows of black solar panels on steel frames, half buried in snow, stand in the middle of the frame; a long low snow bank runs along the foreground; a wide snow slope rises far behind the panels at the right; snow-laden pines stand on both sides, nobody in the scene. The frame holds the three rows of snow-covered solar panels, the low snow bank in front and the far snow slope.",
+    "reference_keys": [
+     "snow_hatch"
+    ]
+   }
+  },
+  {
+   "key": "zhao_frost",
+   "kind": "image",
+   "role": "character",
+   "label": "赵虎（冻伤后：破旧皮毛大衣、针织帽，左手缠黑布只剩三根手指）",
+   "description": {
+    "en": "Zhao Hu, the same heavy-set Chinese man in his fifties as in the reference but gaunt now, wearing a filthy patchwork fur-lined coat hanging open over his black leather vest, a dirty knitted cap pulled low over his shaved head, frost clumped in his stubble, his left hand wrapped in a blackened rag with only three fingers showing. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "赵虎，和参考图是同一位五十岁左右的中国男性，但现在瘦削憔悴，穿着肮脏的拼接毛皮内衬大衣、敞开着，里面是黑色皮背心，脏针织帽压得很低盖住光头，胡茬上结着霜，左手缠着发黑的破布、只露出三根手指。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of the same man as in the reference image, gaunt, frost clumped in his stubble, wearing a filthy patchwork fur-lined coat hanging open over a black leather vest and a dirty knitted cap pulled low, his left hand wrapped in a blackened rag with only three fingers showing. He faces the camera with a feverish, greedy expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": [
+     "zhao_boss"
+    ]
+   }
+  },
+  {
+   "key": "biao_frost",
+   "kind": "image",
+   "role": "character",
+   "label": "彪子（冻僵：打补丁的鼓鼓囊囊羽绒服，围巾裹到鼻子，棒球帽下压着针织帽）",
+   "description": {
+    "en": "Biao, the same lean wiry Chinese man in his twenties as in the reference, wearing an oversized puffer jacket patched with tape and stuffed with newspaper at the seams, a dirty scarf wound up to his nose and his backwards baseball cap pulled over a knitted hat, frost on his lashes. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "彪子，和参考图是同一位二十多岁、瘦而精悍的中国男性，穿着打满胶带补丁、接缝处塞着报纸的肥大羽绒服，脏围巾裹到鼻子，反戴的棒球帽压在针织帽上，睫毛上有霜。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of the same man as in the reference image, wearing an oversized puffer jacket patched with tape and stuffed with newspaper at the seams, a dirty scarf wound up to his nose and his backwards baseball cap pulled over a knitted hat, frost on his lashes. He faces the camera with a shivering, anxious expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": [
+     "biao_thug"
+    ]
+   }
+  },
+  {
+   "key": "imager",
+   "kind": "image",
+   "role": "prop",
+   "label": "军用地质热成像探测仪（橄榄绿金属箱，圆形黑镜头，橙蓝热感屏幕，连着小汽油发电机）",
+   "description": {
+    "en": "A bulky olive-drab military thermal-imaging probe: a scuffed metal case on a rusty hand cart with a round black lens on a short mast, a small screen glowing with orange and blue heat colors and a thick black cable to a small petrol generator. The reference fixes its shape.",
+    "zh": "一台笨重的橄榄绿军用热成像探测仪：磨损的金属箱放在生锈的手推车上，短桅杆上有一个圆形黑色镜头，一块小屏幕亮着橙蓝色热感图，一根粗黑电缆连着一台小汽油发电机。参考图固定它的外形。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic product shot of a bulky olive-drab military thermal-imaging probe: a scuffed metal case on a rusty hand cart with a round black lens on a short mast, a small screen glowing with orange and blue heat colors and a thick black cable to a small petrol generator, standing on a frosty concrete floor against a plain neutral gray background.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "ruin_market",
+   "kind": "image",
+   "role": "scene",
+   "label": "被砸烂的冰封大超市（中间一个快熄灭的火桶）",
+   "description": {
+    "en": "The wrecked interior of a huge supermarket at night: toppled empty shelves and smashed freezer cases coated in thick white frost, a dented oil barrel with a nearly dead orange fire at the center of the frame, frost-furred walls, a long cracked checkout counter at the left and smashed dark front windows at the right. The reference fixes the layout and decor.",
+    "zh": "深夜被砸烂的巨大超市内部：倒塌的空货架和砸碎的冷柜上盖着厚厚的白霜，画面中间是一个快熄灭的橙色火桶，墙上长满白霜，左边是裂开的长收银台，右边是砸碎的黑漆漆的橱窗。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of the wrecked interior of a huge supermarket at night: toppled empty shelves and smashed freezer cases coated in thick white frost, a dented oil barrel with a nearly dead orange fire at the center of the frame, frost-furred walls, a long cracked checkout counter at the left and smashed dark front windows at the right, nobody in the scene. The frame holds the dying barrel fire in the middle, the frosted toppled shelves, the cracked checkout counter and the smashed windows.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "ruin_front",
+   "kind": "image",
+   "role": "scene",
+   "label": "被砸烂的大超市外景（玻璃门脸碎光，里面有微弱橙光）",
+   "description": {
+    "en": "A frozen night street in front of a huge wrecked supermarket: the glass front smashed out and sheeted in thick frost, a faint orange glow flickering deep inside, a row of shopping carts half buried in snow in the foreground, dead streetlamps at both sides. The reference fixes the layout and decor.",
+    "zh": "冰封的夜晚，一座巨大的被砸烂的超市门前：玻璃门脸被砸碎、盖着厚厚的白霜，深处有微弱的橙色火光在闪，前景是半埋在雪里的一排购物车，两侧是熄灭的路灯。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a frozen night street in front of a huge wrecked supermarket: the glass front smashed out and sheeted in thick frost, a faint orange glow flickering deep inside, a row of shopping carts half buried in snow in the foreground, dead streetlamps at both sides, nobody in the scene. The frame holds the wrecked supermarket front with its faint orange glow, the half-buried shopping carts and the dead streetlamps.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "plow_road",
+   "kind": "image",
+   "role": "scene",
+   "label": "冰封的大街上，绑满防滑链的重型推雪车开着大灯驶向远处",
+   "description": {
+    "en": "A frozen boulevard at night between ice-furred buildings: ice-encased cars line both sides, a heavy snowplow truck with chains wound round its huge tyres and a wide steel blade stands in the middle with its headlights blazing and a dozen small dark figures clinging to its sides and roof, white mist at the far end. The reference fixes the layout and decor.",
+    "zh": "夜晚冰封的大街，两边是长满白霜的楼：两侧是冻在冰里的汽车，中间一辆轮胎绑满防滑链、装着宽钢铲的重型推雪车大灯亮着，车身和车顶挂着十来个很小的深色人影，远处一片白雾。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a frozen boulevard at night between ice-furred buildings: ice-encased cars line both sides, a heavy snowplow truck with chains wound round its huge tyres and a wide steel blade stands in the middle with its headlights blazing and a dozen small dark figures clinging to its sides and roof, white mist at the far end, nobody in the scene. The frame holds the boulevard receding between ice-furred buildings, the ice-encased cars and the heavy snowplow truck with its blazing headlights.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "forest_edge",
+   "kind": "image",
+   "role": "scene",
+   "label": "雪原边缘的树林：推雪车亮着大灯停在左侧",
+   "description": {
+    "en": "A black night at the edge of a vast snowfield under a faint green aurora: a heavy snowplow truck with blazing headlights stands at the left, a long low snow mound lies in the middle of the open snowfield, a dark wall of snow-laden pines along the back. The reference fixes the layout and decor.",
+    "zh": "黑夜里，广阔雪原的边缘，淡淡的绿色极光下：左边停着一辆大灯亮着的重型推雪车，空旷的雪原中间有一道长长的低矮雪包，后面是一排黑压压的挂满雪的松树。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a black night at the edge of a vast snowfield under a faint green aurora: a heavy snowplow truck with blazing headlights stands at the left, a long low snow mound lies in the middle of the open snowfield, a dark wall of snow-laden pines along the back, nobody in the scene. The frame holds the snowplow truck with its blazing headlights at the left, the long snow mound in the middle and the dark pines.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "dig_site",
+   "kind": "image",
+   "role": "scene",
+   "label": "雪包上挖开了一半的壕沟（雪原边缘）",
+   "description": {
+    "en": "A black night under a faint green aurora: a long low snow mound with a half-dug trench cut into it in the middle of the frame, shovels and piles of dug snow along the trench, snow-laden pines behind, and the truck headlights glowing far at the left. The reference fixes the layout and decor.",
+    "zh": "黑夜里淡淡的绿色极光下：画面中间是一道长长的低矮雪包，上面挖开了一半的壕沟，沟边是铁锹和挖出来的雪堆，后面是挂满雪的松树，远处左边亮着卡车的大灯。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a black night under a faint green aurora: a long low snow mound with a half-dug trench cut into it in the middle of the frame, shovels and piles of dug snow along the trench, snow-laden pines behind, and the truck headlights glowing far at the left, nobody in the scene. The frame holds the long snow mound with its half-dug trench, the piles of snow and the pines.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "grille_pit",
+   "kind": "image",
+   "role": "scene",
+   "label": "挖开两米深积雪后露出的方坑，坑底是一块冒着微弱白汽的黑色金属格栅",
+   "description": {
+    "en": "A deep square pit dug through two metres of snow, a large black steel grille set in the frozen ground at its bottom with a thin curl of white vapor rising through its bars, steep snow walls around it, snow-laden pines behind the rim and the truck headlights glowing far at the left. The reference fixes the layout and decor.",
+    "zh": "挖穿两米积雪后露出的深深的方形大坑，坑底冻土里嵌着一块巨大的黑色钢格栅，细细一缕白汽从栅条里冒出来，四周是陡峭的雪壁，坑沿后面是挂满雪的松树，远处左边亮着卡车的大灯。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a deep square pit dug through two metres of snow, a large black steel grille set in the frozen ground at its bottom with a thin curl of white vapor rising through its bars, steep snow walls around it, snow-laden pines behind the rim and the truck headlights glowing far at the left, nobody in the scene. The frame holds the deep square pit with the black steel grille at its bottom and the steep snow walls.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "su_silk",
+   "kind": "image",
+   "role": "character",
+   "label": "苏清月（酒红色长袖真丝睡袍，高领系腰带，毛巾搭在脖子上，湿发披肩）",
+   "description": {
+    "en": "Su, the same elegant Chinese woman in her late twenties as in the reference, wearing a long wine-red satin robe-style nightgown with long sleeves and a high neckline belted at the waist, a white towel around her neck, her damp long black hair loose over her shoulders. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "苏清月，和参考图是同一位二十八岁左右、优雅美丽的中国女性，穿着长袖高领、腰间系带的酒红色真丝睡袍，脖子上搭着一条白毛巾，湿的长黑发披在肩上。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of the same woman as in the reference image, wearing a long wine-red satin robe-style nightgown with long sleeves and a high neckline belted at the waist, a white towel around her neck, her damp long black hair loose over her shoulders. She faces the camera with a soft, relaxed expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": [
+     "su_cozy"
+    ]
+   }
+  },
+  {
+   "key": "radio_set",
+   "kind": "image",
+   "role": "prop",
+   "label": "军用长波收音机（橄榄绿钢壳，大圆形调谐盘亮着琥珀色，一根杆状天线，布面扬声器）",
+   "description": {
+    "en": "An olive-green steel military long-wave radio with a large round tuning dial glowing amber, two big knobs, a pole antenna on top and a cloth-covered speaker grille. The reference fixes its shape.",
+    "zh": "一台橄榄绿钢壳的军用长波收音机：大圆形调谐盘亮着琥珀色的光，两个大旋钮，顶上一根杆状天线，布面的扬声器。参考图固定它的外形。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic product shot of an olive-green steel military long-wave radio with a large round tuning dial glowing amber, two big knobs, a pole antenna on top and a cloth-covered speaker grille, standing on a steel side table against a plain neutral gray background.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "supply_hall",
+   "kind": "image",
+   "role": "scene",
+   "label": "地下三层物资大厅（钢货架堆满米面罐头，后墙是一整面酒和雪茄箱）",
+   "description": {
+    "en": "A vast underground supply hall: tall steel shelves packed with sacks of rice and flour and cases of canned food fill the left half, a wall of wine and liquor bottles with stacked cigar crates fills the back wall, a wide concrete aisle runs through the middle, and a pallet with three large black sealed plastic boxes stands in the corner at the right. The reference fixes the layout and decor.",
+    "zh": "宽阔的地下物资大厅：左半边是堆满米面袋和罐头箱的高大钢货架，后墙是一整面酒瓶和叠着的雪茄箱，中间是一条宽阔的水泥过道，右边墙角的托盘上放着三个大黑色密封塑料箱。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a vast underground supply hall: tall steel shelves packed with sacks of rice and flour and cases of canned food fill the left half, a wall of wine and liquor bottles with stacked cigar crates fills the back wall, a wide concrete aisle runs through the middle, and a pallet with three large black sealed plastic boxes stands in the corner at the right, nobody in the scene. The frame holds the tall steel shelves, the wall of bottles and cigar crates and the pallet of black boxes in the corner.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "service_shaft",
+   "kind": "image",
+   "role": "scene",
+   "label": "狭窄的混凝土检修井（只比肩膀宽一点，有一条粗保温管，尽头是一个生锈的红色阀门轮）",
+   "description": {
+    "en": "A very narrow horizontal concrete maintenance shaft, barely wider than a person's shoulders, with dim yellow work-lamp light, a thick insulated pipe with a flanged joint along its upper wall, a rusted red valve wheel at the far left end and damp concrete walls on both sides. The reference fixes the layout and decor.",
+    "zh": "一条非常狭窄的水平混凝土检修井，只比人的肩膀宽一点，昏黄的工作灯光，上方井壁上有一条带法兰接头的粗保温管，左边尽头是一个生锈的红色阀门轮，两侧是潮湿的混凝土墙。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a very narrow horizontal concrete maintenance shaft, barely wider than a person's shoulders, with dim yellow work-lamp light, a thick insulated pipe with a flanged joint along its upper wall, a rusted red valve wheel at the far left end and damp concrete walls on both sides, nobody in the scene. The frame holds the narrow shaft, the insulated pipe with its flanged joint and the rusted red valve wheel at the end.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "bunker_hall",
+   "kind": "image",
+   "role": "scene",
+   "label": "地下的裸混凝土服务走廊（暖黄灯、天花板管线）",
+   "description": {
+    "en": "A bare concrete service corridor with warm lamps at regular intervals, thick pipes along the ceiling and a heavy steel door at the far end. The reference fixes the layout and decor.",
+    "zh": "裸混凝土的服务走廊，等距的暖黄灯，天花板上是粗管线，远端是一扇厚重的钢门。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a bare concrete service corridor with warm lamps at regular intervals, thick pipes along the ceiling and a heavy steel door at the far end, nobody in the scene. The frame holds the long corridor receding with its pipes and warm lamps.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "gramophone",
+   "kind": "image",
+   "role": "prop",
+   "label": "手摇留声机（黄铜大喇叭、深色胡桃木底座、黑胶唱片、细长唱臂）",
+   "description": {
+    "en": "A hand-crank gramophone with a polished brass horn, a dark walnut wooden base, a black vinyl record on the turntable and a slim chrome tonearm. The reference fixes its shape.",
+    "zh": "一台手摇留声机：抛光的黄铜大喇叭、深色胡桃木底座、转盘上放着一张黑胶唱片、一根细长的银色唱臂。参考图固定它的外形。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic product shot of a hand-crank gramophone with a polished brass horn, a dark walnut wooden base, a black vinyl record on the turntable and a slim chrome tonearm, standing on a small wooden cabinet against a plain neutral gray background.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "radar_unit",
+   "kind": "image",
+   "role": "prop",
+   "label": "便携地质雷达仪（橄榄绿钢壳、圆形绿色屏幕、顶上一盏小红灯、钢三脚架）",
+   "description": {
+    "en": "A rugged olive-drab portable geological radar unit with a round dark screen, two knobs, a small red lamp on top and a slim steel tripod stand. The reference fixes its shape.",
+    "zh": "一台橄榄绿钢壳的便携地质雷达仪：圆形的屏幕，两个旋钮，顶上有一盏小红灯，下面是细长的钢三脚架。参考图固定它的外形。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic product shot of a rugged olive-drab portable geological radar unit with a round dark screen, two knobs, a small red lamp on top and a slim steel tripod stand, against a plain neutral gray background.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "ice_hall",
+   "kind": "image",
+   "role": "scene",
+   "label": "地下四层冰窖（结满白霜的管道、冰柱、尽头一米多宽的红色生铁齿轮阀门）",
+   "description": {
+    "en": "A freezing underground hall furred with white hoar frost: thick pipes along the ceiling and the right wall, long icicles hanging overhead, a glazed icy concrete floor, a heavy round steel isolation door at the left with white fog rolling out, and at the far end a huge red cast-iron gear valve over a metre across, rimed with ice. The reference fixes the layout and decor.",
+    "zh": "一座结满白霜的地下冰窖：天花板和右墙上是粗管道，头顶挂着长长的冰柱，水泥地面结了一层冰，左边是一扇厚重的圆形钢制隔离门、白雾正从门里涌出来，尽头是一个一米多宽、裹着冰的红色生铁齿轮阀门。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a freezing underground hall furred with white hoar frost: thick pipes along the ceiling and the right wall, long icicles hanging overhead, a glazed icy concrete floor, a heavy round steel isolation door at the left with white fog rolling out, and at the far end a huge red cast-iron gear valve over a metre across, rimed with ice, nobody in the scene. The frame holds the frost-furred pipes, the icicles, the open steel door with its fog and the huge red gear valve at the far end.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "scout",
+   "kind": "image",
+   "role": "character",
+   "label": "外骨骼侦察兵（哑光白色极地军用外骨骼装甲，全遮脸的白色头盔和黑色护目面罩）",
+   "description": {
+    "en": "A tall armored soldier in a sleek matte-white military polar exoskeleton armor with articulated servo joints, a full white helmet with a black tinted faceplate hiding his whole face and a slim black survey probe in one gloved hand. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "一个高大的披甲士兵，穿着流线型的哑光白色极地军用外骨骼装甲，关节处有伺服机构，戴着全遮脸的白色头盔和黑色护目面罩，一只戴手套的手里拿着一根细长的黑色探测杆。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of a tall armored man, a tall figure in sleek matte-white military polar exoskeleton armor with articulated servo joints, a full white helmet with a black tinted faceplate hiding his whole face, a slim black survey probe in one gloved hand. He faces the camera with a tinted faceplate hiding his whole face. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "jam_jar",
+   "kind": "image",
+   "role": "prop",
+   "label": "一罐自己种的草莓熬的果酱（透明玻璃罐，红宝石色，里面能看见整颗的草莓，罐里插着一把小勺）",
+   "description": {
+    "en": "A clear glass jar of thick ruby-red homemade strawberry jam with whole berries visible inside and a small spoon resting in it. The reference fixes its shape.",
+    "zh": "一个透明的玻璃罐，里面是浓稠的红宝石色自制草莓酱，能看见整颗的草莓，罐里搁着一把小勺。参考图固定它的外形。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic product shot of a clear glass jar of thick ruby-red homemade strawberry jam with whole berries visible inside and a small spoon resting in it, on a wooden board against a plain neutral gray background.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "breach_disc",
+   "kind": "image",
+   "role": "prop",
+   "label": "定向破甲炸弹（哑光黑金属圆盘，餐盘大小，中心一点红灯）",
+   "description": {
+    "en": "A round matte-black metal disc the size of a dinner plate with a thick flat rim and a small red light at its center. The reference fixes its shape.",
+    "zh": "一个哑光黑色的金属圆盘，餐盘大小，边缘厚实平整，中心有一点红灯。参考图固定它的外形。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic product shot of a round matte-black metal disc the size of a dinner plate with a thick flat rim and a small red light at its center, against a plain neutral gray background.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "snow_field",
+   "kind": "image",
+   "role": "scene",
+   "label": "地表雪原（一望无际的雪地，远处一线黑压压的松林，上空的绿色极光）",
+   "description": {
+    "en": "A vast open black-night snowfield rippled by the wind, a dark line of snow-laden pines far away along the horizon and a faint green aurora curtain hanging above. The reference fixes the layout and decor.",
+    "zh": "一片一望无际、被风吹出波纹的夜间雪原，远处地平线上一线黑压压挂满雪的松林，上空悬着一片淡淡的绿色极光。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a vast open black-night snowfield rippled by the wind, a dark line of snow-laden pines far away along the horizon and a faint green aurora curtain hanging above, nobody in the scene. The frame holds the open snowfield, the far dark pine line and the green aurora.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "su_tac",
+   "kind": "image",
+   "role": "character",
+   "label": "苏清月（黑色棉服式战术防寒外套拉到锁骨，黑色保暖内衣，黑裤、黑手套，高马尾）",
+   "description": {
+    "en": "Su, the same elegant Chinese woman in her late twenties as in the reference, wearing a black quilted tactical cold-weather jacket zipped to the collarbone over a black thermal top, black trousers and black gloves, her long black hair in a high ponytail. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "苏清月，和参考图是同一位二十八岁左右、优雅美丽的中国女性，穿着拉到锁骨的黑色棉服式战术防寒外套，里面是黑色保暖上衣，黑裤子、黑手套，一头长黑发扎成高马尾。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of the same woman as in the reference image, wearing a black quilted tactical cold-weather jacket zipped to the collarbone over a black thermal top, black trousers and black gloves, her long black hair in a high ponytail. She faces the camera with a determined, excited expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": [
+     "su_cozy"
+    ]
+   }
+  },
+  {
+   "key": "armored_rv",
+   "kind": "image",
+   "role": "prop",
+   "label": "履带式全地形装甲房车（八米长，哑光黑防弹装甲，车头厚重的钢制破冰铲，车顶热成像雷达圆罩，宽履带）",
+   "description": {
+    "en": "An eight-metre long armoured tracked all-terrain motorhome in matte black, with a heavy steel ice-breaker blade at its front, a thermal-radar dome on its roof, wide tracks and a dark armoured windshield. The reference fixes its shape.",
+    "zh": "一辆八米长的履带式全地形装甲房车：哑光黑色装甲，车头是厚重的钢制破冰铲，车顶有热成像雷达圆罩，宽宽的履带，深色的装甲挡风玻璃。参考图固定它的外形。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic product shot of an eight-metre long armoured tracked all-terrain motorhome in matte black with a heavy steel ice-breaker blade at its front, a thermal-radar dome on its roof, wide tracks and a dark armoured windshield, three-quarter view against a plain neutral gray background.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "garage_wall",
+   "kind": "image",
+   "role": "scene",
+   "label": "地下二层走廊尽头（灰色混凝土走廊，尽头是一整面拉丝钢大墙，墙上一块亮着微弱绿光的指纹板）",
+   "description": {
+    "en": "A long grey concrete underground corridor that ends at a huge seamless brushed-steel wall, a small fingerprint pad with a faint green glow set into the wall at the right and a red emergency lamp on the ceiling at the left. The reference fixes the layout and decor.",
+    "zh": "一条长长的灰色混凝土地下走廊，尽头是一整面无缝的拉丝钢大墙，墙的右边嵌着一块亮着微弱绿光的指纹板，左边天花板上有一盏红色的应急灯。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a long grey concrete underground corridor that ends at a huge seamless brushed-steel wall, a small fingerprint pad with a faint green glow set into the wall at the right and a red emergency lamp on the ceiling at the left, nobody in the scene. The frame holds the long grey corridor, the huge brushed-steel wall and the glowing fingerprint pad.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "bunker_garage",
+   "kind": "image",
+   "role": "scene",
+   "label": "地下二层隐蔽车库（空旷高大的灰色混凝土大厅，中间停着一辆黑色装甲房车，左侧金属墙已裂开）",
+   "description": {
+    "en": "A vast, high grey concrete underground garage hall lit by cool white floodlights, with a matte-black armoured tracked motorhome parked in the middle and the huge steel wall split open at the left showing the corridor beyond. The reference fixes the layout and decor.",
+    "zh": "一座空旷高大的灰色混凝土地下车库大厅，冷白色的泛光灯照着，中间停着一辆哑光黑色的履带装甲房车，左侧巨大的钢墙已经裂开，露出后面的走廊。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a vast, high grey concrete underground garage hall lit by cool white floodlights, with a matte-black armoured tracked motorhome parked in the middle and the huge steel wall split open at the left showing the corridor beyond, nobody in the scene. The frame holds the vast grey garage hall, the matte-black armoured motorhome in the middle and the split-open steel wall at the left.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "su_tacfit",
+   "kind": "image",
+   "role": "character",
+   "label": "苏清月（黑色长袖保暖上衣，黑裤，黑色棉服外套叠在腿上，高马尾）",
+   "description": {
+    "en": "Su, the same elegant Chinese woman in her late twenties as in the reference, wearing a fitted black long-sleeve thermal top and black trousers, her black quilted jacket folded over her knees, her long black hair in a high ponytail. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "苏清月，和参考图是同一位二十八岁左右、优雅美丽的中国女性，穿着修身的黑色长袖保暖上衣和黑裤子，黑色棉服外套叠放在膝盖上，一头长黑发扎成高马尾。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of the same woman as in the reference image, wearing a fitted black long-sleeve thermal top and black trousers, her black quilted jacket folded over her knees, her long black hair in a high ponytail. She faces the camera with a relaxed, content expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": [
+     "su_cozy"
+    ]
+   }
+  },
+  {
+   "key": "rv_cab",
+   "kind": "image",
+   "role": "scene",
+   "label": "装甲房车驾驶舱（两张皮质座椅并排，中间两个冒热气的咖啡杯，仪表盘上的小雷达屏，宽大的装甲挡风玻璃外是蓝白雪原和极光）",
+   "description": {
+    "en": "The compact warm cab of an armoured motorhome in a cutaway side view: two leather bucket seats side by side facing a wide armoured windshield, a console between them with two steaming paper cups, a short steel control lever and a small round radar screen in the dashboard, with a vast blue-white snowfield and a green aurora beyond the glass. The reference fixes the layout and decor.",
+    "zh": "一辆装甲房车温暖紧凑的驾驶舱，侧剖视角：两张皮质座椅并排，面向宽大的装甲挡风玻璃，中间的控制台上放着两个冒着热气的纸杯，旁边有一根短短的钢制操纵杆，仪表盘上嵌着一块圆形的小雷达屏，玻璃外是辽阔的蓝白雪原和绿色的极光。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of the compact warm cab of an armoured motorhome in a cutaway side view: two leather bucket seats side by side facing a wide armoured windshield, a console between them with two steaming paper cups, a short steel control lever and a small round radar screen in the dashboard, with a vast blue-white snowfield and a green aurora beyond the glass, nobody in the scene. The frame holds the two leather seats, the two steaming cups, the small radar screen and the windshield with the snowfield and aurora.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "captain",
+   "kind": "image",
+   "role": "character",
+   "label": "车队队长（四十来岁的中国军官，白色冬季迷彩作战服，头戴黑色对讲耳机，毛边风帽拉在脑后，手里拿着平板）",
+   "description": {
+    "en": "A Chinese military officer in his forties with a hard weathered face, wearing a white winter-camouflage military parka with a black radio headset on his head and the fur-trimmed hood pushed back, a tablet in one gloved hand. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "一个四十来岁、面庞粗硬饱经风霜的中国军官，穿着白色冬季迷彩作战服，头戴黑色对讲耳机，毛边风帽拉在脑后，一只戴手套的手里拿着一块平板。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of a a Chinese military officer in his forties man, wearing a white winter-camouflage military parka with a black radio headset on his head and the fur-trimmed hood pushed back, a tablet in one gloved hand. He faces the camera with a hard, eager expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "convoy",
+   "kind": "image",
+   "role": "prop",
+   "label": "军用车队（五辆白色涂装的重型军用越野车和一辆长长的导弹发射车，亮着车灯）",
+   "description": {
+    "en": "A convoy of five heavy white-painted military off-road trucks and one long missile launcher truck in a line on a snowy road with their headlights blazing. The reference fixes their look.",
+    "zh": "一队军用车：五辆白色涂装的重型军用越野车和一辆长长的导弹发射车排成一行，开在雪路上，车灯亮着。参考图固定它们的外形。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic shot of a convoy of five heavy white-painted military off-road trucks and one long missile launcher truck in a line on a snowy road at night with their headlights blazing, seen from a high three-quarter angle, against a plain dark background.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "ice_valley",
+   "kind": "image",
+   "role": "scene",
+   "label": "一线天冰谷（两侧上百米高的悬崖、谷底的积雪、窄窄一线绿色极光的天空）",
+   "description": {
+    "en": "A narrow frozen canyon with sheer snow-laden cliffs a hundred metres high on both sides, deep snow on the canyon floor and a thin strip of faint green aurora sky above. The reference fixes the layout and decor.",
+    "zh": "一条狭窄的冰封峡谷，两侧是上百米高、挂满积雪的悬崖，谷底是深深的积雪，头顶是窄窄一线淡淡绿色极光的天空。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a narrow frozen canyon with sheer snow-laden cliffs a hundred metres high on both sides, deep snow on the canyon floor and a thin strip of faint green aurora sky above, nobody in the scene. The frame holds the sheer snow-laden cliffs, the deep snow on the canyon floor and the strip of aurora sky.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "cliff_top",
+   "kind": "image",
+   "role": "scene",
+   "label": "冰谷上方的悬崖顶（悬崖边压着厚厚的雪檐，远处谷底有一线小小的车灯）",
+   "description": {
+    "en": "The very edge of a high snow-laden cliff with a thick overhanging slab of snow hanging over the drop, the dark canyon far below with a line of tiny headlights and a faint green aurora above. The reference fixes the layout and decor.",
+    "zh": "一座挂满积雪的高高悬崖的边缘，压着一块厚厚的悬空雪檐，下面是黑漆漆的深谷，谷底有一线小小的车灯，上空是淡淡的绿色极光。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of the very edge of a high snow-laden cliff with a thick overhanging slab of snow hanging over the drop, the dark canyon far below with a line of tiny headlights and a faint green aurora above, nobody in the scene. The frame holds the cliff edge, the overhanging slab of snow and the dark canyon below.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "ice_cave",
+   "kind": "image",
+   "role": "scene",
+   "label": "天然冰洞（巨大的拱形洞口，蓝色冰壁闪着光，垂着长长的冰柱，洞外是白茫茫的暴风雪）",
+   "description": {
+    "en": "A huge natural ice cave with a great arched mouth, walls and ceiling of glittering blue ice and long icicles hanging, a roaring white blizzard beyond the arch. The reference fixes the layout and decor.",
+    "zh": "一座巨大的天然冰洞，洞口是高大的拱形，四壁和洞顶都是闪着光的蓝色冰，垂着长长的冰柱，拱口外是呼啸的白茫茫的暴风雪。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a huge natural ice cave with a great arched mouth, walls and ceiling of glittering blue ice and long icicles hanging, a roaring white blizzard beyond the arch, nobody in the scene. The frame holds the arched cave mouth, the glittering blue ice walls and the long icicles.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "rv_lounge",
+   "kind": "image",
+   "role": "scene",
+   "label": "装甲房车后舱休息区（深棕色皮沙发靠着后墙，前面铺着厚厚的奶白色羊毛地毯，沙发扶手上叠着一条灰色羊毛毯，沙发上方两扇厚玻璃小窗）",
+   "description": {
+    "en": "The cozy rear lounge of an armoured motorhome: a deep brown leather sofa along the back wall, a thick cream wool rug on the floor, a grey wool blanket folded over one arm of the sofa and two small thick-glass windows above the sofa white with blowing snow. The reference fixes the layout and decor.",
+    "zh": "一辆装甲房车温暖的后舱休息区：深棕色的皮沙发靠着后墙，地上铺着厚厚的奶白色羊毛地毯，沙发一边的扶手上叠着一条灰色羊毛毯，沙发上方是两扇被暴风雪拍白的厚玻璃小窗。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of the cozy rear lounge of an armoured motorhome: a deep brown leather sofa along the back wall, a thick cream wool rug on the floor, a grey wool blanket folded over one arm of the sofa and two small thick-glass windows above the sofa white with blowing snow, nobody in the scene. The frame holds the brown leather sofa, the cream wool rug, the grey blanket and the two small thick-glass windows.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "bio_detector",
+   "kind": "image",
+   "role": "prop",
+   "label": "深层生物热能探测仪（黑色哑光边框的宽屏，屏幕上是深色的地层剖面，中间一团发光的红橙色热源）",
+   "description": {
+    "en": "A wide dark detector screen in a matte black frame showing a dark underground cross-section with a huge glowing red-orange heat bloom in its center. The reference fixes its look.",
+    "zh": "一块黑色哑光边框的宽屏探测仪，屏幕上是深色的地层剖面，中间有一团发光的红橙色热源。参考图固定它的外形。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic product shot of a wide dark detector screen in a matte black frame showing a dark underground cross-section with a huge glowing red-orange heat bloom in its center, against a plain neutral gray background.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "buffer_chamber",
+   "kind": "image",
+   "role": "scene",
+   "label": "废料缓冲舱（不到十平米的光秃秃的钢铁舱室，天花板上四个圆形喷头，地上一个排水口，远端是一扇巨大的外侧合金闸门，内侧是一扇厚厚的防爆玻璃门）",
+   "description": {
+    "en": "A bare steel waste buffer chamber of about ten square metres with four round spray nozzles in the ceiling, a floor drain, a huge outer alloy gate at its far end and a thick armoured-glass door on the inner side. The reference fixes the layout and decor.",
+    "zh": "一间不到十平米的光秃秃的钢铁废料缓冲舱，天花板上四个圆形喷头，地上一个排水口，远端是一扇巨大的外侧合金闸门，内侧是一扇厚厚的防爆玻璃门。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a bare steel waste buffer chamber of about ten square metres with four round spray nozzles in the ceiling, a floor drain, a huge outer alloy gate at its far end and a thick armoured-glass door on the inner side, nobody in the scene. The frame holds the bare steel chamber, its four ceiling nozzles, the floor drain and the huge outer gate.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "mutant_bear",
+   "kind": "image",
+   "role": "prop",
+   "label": "变异巨熊（体长四米的北极熊，浑身长满一块块白色的锯齿状冰甲，眼睛是猩红色，爪子巨大，毛上冒着寒霜）",
+   "description": {
+    "en": "A colossal four-metre mutated polar bear covered in thick jagged plates of white ice armor over its shoulders and back, glowing red eyes, huge claws and frost smoking from its fur. The reference fixes its look.",
+    "zh": "一头体长四米的变异北极熊，肩背上长满一块块厚厚的白色锯齿状冰甲，眼睛猩红发光，爪子巨大，毛上冒着寒霜。参考图固定它的外形。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic shot of a colossal four-metre mutated polar bear covered in thick jagged plates of white ice armor over its shoulders and back, glowing red eyes, huge claws and frost smoking from its fur, standing on all fours in a three-quarter view against a plain dark background.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "butcher_room",
+   "kind": "image",
+   "role": "scene",
+   "label": "处理间（白色瓷砖墙的明亮房间，中间一张长长的不锈钢台，右边一辆钢制推车，左边一个钢水槽，头顶悬着手术灯）",
+   "description": {
+    "en": "A bright white-tiled processing room with a long stainless-steel table in the middle, a steel rolling cart at frame-right, a steel sink at frame-left and hanging surgical lamps. The reference fixes the layout and decor.",
+    "zh": "一间明亮的白色瓷砖墙处理间，中间是一张长长的不锈钢台，右边是一辆钢制推车，左边是一个钢水槽，头顶悬着手术灯。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a bright white-tiled processing room with a long stainless-steel table in the middle, a steel rolling cart at frame-right, a steel sink at frame-left and hanging surgical lamps, nobody in the scene. The frame holds the long steel table, the rolling cart, the sink and the white tiles.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "dug_tunnel",
+   "kind": "image",
+   "role": "scene",
+   "label": "巨熊挖出来的地洞（一条粗糙的圆形隧道，穿过冻土和冰层，两侧的冻土壁上全是深深的爪痕，尽头一线淡淡的蓝光）",
+   "description": {
+    "en": "A rough round tunnel clawed through frozen soil and ice by a giant bear, deep claw gouges scored across its frost-furred walls and a faint blue glow far at its end. The reference fixes the layout and decor.",
+    "zh": "一条被巨熊挖出来的粗糙的圆形隧道，穿过冻土和冰层，结霜的洞壁上全是深深的爪痕，尽头有一线淡淡的蓝光。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a rough round tunnel clawed through frozen soil and ice by a giant bear, deep claw gouges scored across its frost-furred walls and a faint blue glow far at its end, nobody in the scene. The frame holds the rough clawed tunnel, the frost on its walls and the faint blue glow at its end.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "hot_cave",
+   "kind": "image",
+   "role": "scene",
+   "label": "地底天然溶洞（洞壁和洞顶长满发着柔和蓝光的苔藓，像一整片星空，中央是一汪冒着热气的碧绿色温泉，四周是光滑的岩台）",
+   "description": {
+    "en": "A vast natural underground cavern with walls and ceiling thickly covered in softly glowing blue moss like a night sky, a steaming turquoise hot spring pool in its middle with white mist rolling off it and smooth rock shelves around its edge. The reference fixes the layout and decor.",
+    "zh": "一座巨大的地底天然溶洞，洞壁和洞顶长满发着柔和蓝光的苔藓，像一整片星空，中央是一汪冒着热气的碧绿色温泉，白色的雾气翻起来，四周是光滑的岩台。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a vast natural underground cavern with walls and ceiling thickly covered in softly glowing blue moss like a night sky, a steaming turquoise hot spring pool in its middle with white mist rolling off it and smooth rock shelves around its edge, nobody in the scene. The frame holds the glowing blue moss, the steaming turquoise pool and the smooth rock shelves.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "blind_fish",
+   "kind": "image",
+   "role": "prop",
+   "label": "盲鱼（身体苍白、半透明、没有眼睛的小鱼，体长一掌，在温暖的水里慢慢游）",
+   "description": {
+    "en": "A small pale translucent eyeless cave fish about a hand long with a smooth white body, gliding slowly in warm clear water. The reference fixes its look.",
+    "zh": "一条身体苍白半透明、没有眼睛的洞穴小鱼，体长一掌，在温暖清澈的水里慢慢游。参考图固定它的外形。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic close shot of a small pale translucent eyeless cave fish about a hand long with a smooth white body, gliding in clear warm water against a plain soft blue background.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "hack_screen",
+   "kind": "image",
+   "role": "prop",
+   "label": "主控台上的宽屏（黑色宽屏，屏幕上是一列列密密的绿色字符，看不清字，旁边有一个小扬声器）",
+   "description": {
+    "en": "A wide black console screen showing dense columns of tiny unreadable green characters with a small round speaker grille beside it. The reference fixes its look.",
+    "zh": "一块黑色的宽屏，上面是一列列密密的、看不清的绿色小字符，旁边有一个圆形的小扬声器。参考图固定它的外形。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic product shot of a wide black console screen showing dense columns of tiny unreadable green characters with a small round speaker grille beside it, against a plain neutral gray background.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "combat_drone",
+   "kind": "image",
+   "role": "prop",
+   "label": "武装无人机（黑色的、机身扁平的四旋翼无人机，机腹有一个小炮口和针尖一样的红色传感器灯）",
+   "description": {
+    "en": "A small flat-bodied black four-rotor armed drone with a tiny cannon muzzle and a pinprick red sensor light on its underside. The reference fixes its look.",
+    "zh": "一架黑色的机身扁平的四旋翼武装无人机，机腹有一个小炮口和针尖一样的红色传感器灯。参考图固定它的外形。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic shot of a small flat-bodied black four-rotor armed drone with a tiny cannon muzzle and a pinprick red sensor light on its underside, seen from below in a three-quarter view against a plain dark gray background.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "fortress_truck",
+   "kind": "image",
+   "role": "prop",
+   "label": "极地全地形堡垒车（白色涂装、比装甲房车大一倍的巨型移动指挥中心，车顶一门长长的电磁轨道炮）",
+   "description": {
+    "en": "A colossal white-painted polar all-terrain fortress truck twice the size of an armoured motorhome with huge wheels, thick armor plates and a long electromagnetic railgun on its roof. The reference fixes its look.",
+    "zh": "一辆白色涂装的极地全地形堡垒车，比装甲房车大一倍，轮子巨大，装甲板厚重，车顶有一门长长的电磁轨道炮。参考图固定它的外形。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic shot of a colossal white-painted polar all-terrain fortress truck twice the size of an armoured motorhome with huge wheels, thick armor plates and a long electromagnetic railgun on its roof, seen from a low three-quarter angle against a plain dark gray background.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "ice_highway",
+   "kind": "image",
+   "role": "scene",
+   "label": "冰封的高速公路（宽阔的高速公路，两侧是被冰包住的废弃汽车和盖满雪的护栏，漫天暴风雪）",
+   "description": {
+    "en": "A wide frozen highway lined with ice-encased abandoned cars and snow-covered guardrails under a white blizzard. The reference fixes the layout and decor.",
+    "zh": "一条宽阔的冰封高速公路，两侧是被冰包住的废弃汽车和盖满雪的护栏，漫天是白色的暴风雪。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a wide frozen highway lined with ice-encased abandoned cars and snow-covered guardrails under a white blizzard, nobody in the scene. The frame holds the frozen highway, the ice-encased cars and the snow-covered guardrails.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "ai_core",
+   "kind": "image",
+   "role": "prop",
+   "label": "量子 AI 辅助计算核心（一米高的圆柱形玻璃设备，里面一波波深蓝色的光往上爬，细细的白色光丝在颤动，底座连着粗电缆）",
+   "description": {
+    "en": "A tall one-metre glass cylinder computing core with pulses of deep blue light climbing slowly up inside it and tiny threads of white light shivering within, a metal base with thick cables at its bottom. The reference fixes its look.",
+    "zh": "一台一米高的圆柱形玻璃计算核心，里面一波波深蓝色的光慢慢往上爬，细细的白色光丝在颤动，金属底座连着粗电缆。参考图固定它的外形。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic shot of a tall one-metre glass cylinder computing core with pulses of deep blue light climbing slowly up inside it and tiny threads of white light shivering within, a metal base with thick cables, against a plain dark background.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "hacker_k",
+   "kind": "image",
+   "role": "character",
+   "label": "黑客 K（二十来岁、极其瘦弱的中国青年，洗得发白的灰色连帽衫，圆框金属眼镜滑到鼻尖，头发乱糟糟）",
+   "description": {
+    "en": "A thin pale Chinese man in his late twenties with a frightened face, wearing a washed-out grey hoodie with the hood down, thin round metal glasses sliding down his nose and a tangle of unwashed black hair. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "一个二十来岁、瘦弱苍白、一脸惊恐的中国青年，穿着洗得发白的灰色连帽衫，帽子放在脑后，圆框金属眼镜滑到鼻尖，一头乱糟糟没洗的黑头发。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of a a thin pale Chinese man in his late twenties man, wearing a washed-out grey hoodie with the hood down, thin round metal glasses sliding down his nose and a tangle of unwashed black hair. He faces the camera with a frightened, wide-eyed expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "airbase",
+   "kind": "image",
+   "role": "scene",
+   "label": "废弃空军基地（一片辽阔的冰封停机坪，远处是黑色的雷达天线，旧塔台，漫天暴风雪）",
+   "description": {
+    "en": "A vast frozen abandoned airbase apron under a blizzard with dark radar dishes far away and an old control tower. The reference fixes the layout and decor.",
+    "zh": "一片辽阔的冰封废弃机场停机坪，漫天暴风雪，远处是黑色的雷达天线和一座旧塔台。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a vast frozen abandoned airbase apron under a blizzard with dark radar dishes far away and an old control tower, nobody in the scene. The frame holds the frozen apron, the radar dishes and the old control tower.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "server_cabin",
+   "kind": "image",
+   "role": "scene",
+   "label": "堡垒车的服务器车厢（狭长的装甲车厢，两侧从地板到天花板全是服务器机架，亮着成千上万个小小的蓝色指示灯，一张黑色转椅配着一排暗屏，车厢尽头是一个发蓝光的玻璃圆柱）",
+   "description": {
+    "en": "A long narrow armoured cabin with floor-to-ceiling server racks lit by thousands of tiny blue lights on both walls, a black swivel chair and a desk of dark screens, and a glowing blue glass cylinder at the far end. The reference fixes the layout and decor.",
+    "zh": "一节狭长的装甲车厢，两侧从地板到天花板全是服务器机架，亮着成千上万个小小的蓝色指示灯，一张黑色转椅配着一排暗屏，车厢尽头是一个发蓝光的玻璃圆柱。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a long narrow armoured cabin with floor-to-ceiling server racks lit by thousands of tiny blue lights on both walls, a black swivel chair and a desk of dark screens, and a glowing blue glass cylinder at the far end, nobody in the scene. The frame holds the server racks, the black swivel chair with its dark screens and the glowing blue cylinder.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "raider_column",
+   "kind": "image",
+   "role": "prop",
+   "label": "黑血军团车队（一长列黑色重型装甲卡车，车头有尖刺撞板，后面拖着榴弹炮，白色的尾气）",
+   "description": {
+    "en": "A very long column of black heavy armoured trucks with spiked front ram plates and towed howitzers, headlights blazing and white exhaust plumes rising. The reference fixes its look.",
+    "zh": "一长列黑色重型装甲卡车，车头是尖刺撞板，后面拖着榴弹炮，车灯亮着，白色尾气升起。参考图固定它的外形。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic shot of a very long column of black heavy armoured trucks with spiked front ram plates and towed howitzers on a snowfield at night, headlights blazing, against a dark background.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "rock_gate",
+   "kind": "image",
+   "role": "scene",
+   "label": "山体上的隐蔽石门（陡峭的积雪山坡，中间一整块灰色的巨大岩石门板，一条压实的雪坡通向它）",
+   "description": {
+    "en": "A steep snow-covered mountain flank at night with a huge slab of grey rock set into it like a door and a ramp of packed snow leading up to it. The reference fixes the layout and decor.",
+    "zh": "夜里一座陡峭的积雪山坡，中间嵌着一整块巨大的灰色岩石门板，一条压实的雪坡通向它。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a steep snow-covered mountain flank at night with a huge slab of grey rock set into it like a door and a ramp of packed snow leading up to it, nobody in the scene. The frame holds the steep snowy flank, the huge grey rock slab and the packed-snow ramp.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "duyan_boss",
+   "kind": "image",
+   "role": "character",
+   "label": "独眼统帅（四十多岁，脸上有疤、左眼戴黑色皮眼罩，毛领黑色军大衣、红袖标，胡茬上结霜）",
+   "description": {
+    "en": "Duyan, a gaunt scarred Chinese man in his forties with a hard cruel face, a black leather patch over his left eye and frost crusted in his stubble, wearing a heavy black fur-collared military greatcoat with a red armband. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "独眼统帅，一个四十多岁、瘦削带疤的中国男性，面相冷硬残忍，左眼戴着黑色皮眼罩，胡茬上结着霜，穿着毛领的黑色军大衣，臂上戴着红袖标。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of a Chinese man, a hard cruel scarred face, a black leather patch over his left eye, frost crusted in his stubble, a heavy black fur-collared military greatcoat with a red armband. He faces the camera with a cold, hard, commanding expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "pang_aide",
+   "kind": "image",
+   "role": "character",
+   "label": "副官老庞（三十多岁，壮实，白灰色雪地迷彩棉袄、兜帽拉起，围巾拉到下巴）",
+   "description": {
+    "en": "Pang, a stocky Chinese man in his thirties with a nervous round face, wearing a dirty white-and-grey winter camouflage parka with the hood up and a frosted scarf pulled down under his chin. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "副官老庞，一个三十多岁、身材壮实的中国男性，圆脸神情紧张，穿着脏兮兮的白灰色雪地迷彩棉袄、兜帽拉起，结霜的围巾拉到下巴下面。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of a Chinese man, a nervous round face, a dirty white-and-grey winter camouflage parka with the hood up, a frosted scarf pulled down under his chin. He faces the camera with a tense, nervous expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "war_cab",
+   "kind": "image",
+   "role": "scene",
+   "label": "重型指挥车驾驶舱（狭窄的装甲车厢，两张钢板长凳面对面，中间窄桌上嵌着发绿光的导航屏，后墙一扇结霜的舷窗外是白色暴风雪）",
+   "description": {
+    "en": "A cramped armoured cab of a heavy command vehicle with two padded steel bench seats facing each other across a narrow table with a glowing green navigation screen set into its top and a small frost-crusted porthole in the back wall showing a white blizzard. The reference fixes the layout and decor.",
+    "zh": "重型指挥车狭窄的装甲车厢，两张钢板长凳面对面，中间窄桌上嵌着发绿光的导航屏，后墙一扇结霜的舷窗外是白色暴风雪。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a cramped armoured cab of a heavy command vehicle with two padded steel bench seats facing each other across a narrow table with a glowing green navigation screen set into its top and a small frost-crusted porthole in the back wall showing a white blizzard, nobody in the scene. The frame holds the bench seats, the glowing navigation table and the frosted porthole.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "tou_thug",
+   "kind": "image",
+   "role": "character",
+   "label": "小头目（三十多岁，精瘦，灰白色棉袄，步枪斜挎在胸前，围巾遮到鼻子）",
+   "description": {
+    "en": "Tou, a lean Chinese man in his thirties with a wary bloodshot gaze, wearing a stained grey-white padded coat with a rifle slung across his chest and a frosted scarf pulled up over his nose. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "小头目，一个三十多岁、精瘦的中国男性，眼睛布满血丝、警惕地打量，穿着脏污的灰白色棉袄，步枪斜挎在胸前，结霜的围巾拉到鼻子上。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of a Chinese man, a wary bloodshot gaze, a stained grey-white padded coat with a rifle slung across his chest and a frosted scarf pulled up over his nose. He faces the camera with a wary, tense expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "lin_ghillie",
+   "kind": "image",
+   "role": "character",
+   "label": "林峰（纯白色的吉利服，破布条似的白条覆盖全身，兜帽拉起，白色热成像护目镜推在额头上，白围巾裹着下巴）",
+   "description": {
+    "en": "Lin, the same lean, athletic Chinese man in his early thirties as in the reference, wearing a pure-white ghillie suit of frayed white strips with the hood up over a charcoal henley, white thermal goggles pushed up on his forehead and a white scarf around his chin. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "林峰，和参考图是同一位三十出头、身形精瘦结实的中国男性，穿着纯白色的吉利服，破布条似的白条覆盖全身，兜帽拉起，里面是炭灰色亨利衫，白色热成像护目镜推在额头上，白围巾裹着下巴。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of the same man as in the reference image, a pure-white ghillie suit of frayed white strips with the hood up, white thermal goggles pushed up on his forehead and a white scarf around his chin. He faces the camera with a calm, cold, level expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": [
+     "lin_work"
+    ]
+   }
+  },
+  {
+   "key": "qian_chief",
+   "kind": "image",
+   "role": "character",
+   "label": "爆破组长老钱（四十多岁，鼓鼓囊囊的橄榄绿棉工装，腰挂工具带，厚毛手套，针织面罩卷到鼻子上）",
+   "description": {
+    "en": "Qian, a stocky Chinese man in his forties with a rough squinting face, wearing a bulky olive-drab padded coverall with a tool belt, thick fur-lined gloves and a frosted knitted mask rolled up over his nose. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "爆破组长老钱，一个四十多岁、壮实的中国男性，面相粗糙、眯着眼，穿着鼓鼓囊囊的橄榄绿棉工装，腰挂工具带，戴着厚毛手套，结霜的针织面罩卷到鼻子上。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of a Chinese man, a rough squinting face, a bulky olive-drab padded coverall with a tool belt, thick fur-lined gloves and a frosted knitted mask rolled up over his nose. He faces the camera with a tense, irritable expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "xiaoliu_bomber",
+   "kind": "image",
+   "role": "character",
+   "label": "爆破手小刘（二十多岁，橄榄绿棉工装，带护耳的毛帽，脸颊冻得通红）",
+   "description": {
+    "en": "Xiaoliu, a young Chinese man in his twenties with raw red cheeks and watery eyes, wearing an olive-drab padded coverall and a fur-lined hat with ear flaps and thick gloves. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "爆破手小刘，一个二十多岁的年轻中国男性，脸颊冻得通红、眼睛湿润，穿着橄榄绿棉工装，戴着带护耳的毛帽和厚手套。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of a Chinese man, raw red cheeks and watery eyes, an olive-drab padded coverall, a fur-lined hat with ear flaps and thick gloves. He faces the camera with a shivering, tired expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "thermo_bomb",
+   "kind": "image",
+   "role": "prop",
+   "label": "军用温压弹（一个油桶大小的橄榄绿圆柱形炸弹，躺在钢板雪橇上，弹头罩打开）",
+   "description": {
+    "en": "A huge olive-drab thermobaric bomb the size of an oil drum lying on a steel sled with its nose cone open. The reference fixes its look.",
+    "zh": "一个油桶大小的橄榄绿色圆柱形温压弹，躺在钢板雪橇上，弹头罩打开。参考图固定它的外形。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic shot of a huge olive-drab thermobaric bomb the size of an oil drum lying on a steel sled with its nose cone open, on snow, against a dark background.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "detonator",
+   "kind": "image",
+   "role": "prop",
+   "label": "起爆器（一个巴掌大的灰色金属盒，带铰链盖的开关和一盏小红灯）",
+   "description": {
+    "en": "A palm-sized grey metal detonator box with a hinged switch cover and a small red LED. The reference fixes its look.",
+    "zh": "一个巴掌大的灰色金属盒起爆器，带铰链盖的开关和一盏小红灯。参考图固定它的外形。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic close shot of a palm-sized grey metal detonator box with a hinged switch cover and a small red LED, resting on dark steel, against a dark background.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "blast_door",
+   "kind": "image",
+   "role": "scene",
+   "label": "被砸坏的防爆合金门（岩壁里一扇灰色的厚重合金门，门框被砸得向内弯曲变形，门脚横着一块断裂的苍白钟乳石和碎石）",
+   "description": {
+    "en": "A heavy grey alloy blast door set in a rock wall with its metal frame crumpled and bent inward and a huge broken pale stalactite lying across its base amid rubble, faint blue moss light on the walls on both sides. The reference fixes the layout and decor.",
+    "zh": "岩壁里一扇灰色的厚重合金防爆门，门框被砸得向内弯曲变形，门脚横着一块断裂的苍白钟乳石和碎石，两边的岩壁上亮着淡淡的蓝色苔藓光。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a heavy grey alloy blast door set in a rock wall with its metal frame crumpled and bent inward and a huge broken pale stalactite lying across its base amid rubble, faint blue moss light on the walls on both sides, nobody in the scene. The frame holds the crumpled alloy door, the broken stalactite and the rubble.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "dark_river",
+   "kind": "image",
+   "role": "scene",
+   "label": "漆黑的地下暗河（水下，粗糙的岩壁上有一道细缝，缝里闪着一根银色细线缆，上方滤下一线幽灵似的蓝光）",
+   "description": {
+    "en": "An underwater view of a narrow black underground river channel with a rough rock wall running across the frame, a thin dark seam in it with a thin silver cable glinting inside, faint ghostly blue light filtering down from above and silver bubbles rising. The reference fixes the layout and decor.",
+    "zh": "漆黑狭窄的地下暗河水下，粗糙的岩壁上有一道细缝，缝里闪着一根银色的细线缆，上方滤下一线幽灵似的蓝光，银色的气泡往上冒。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of an underwater view of a narrow black underground river channel with a rough rock wall running across the frame, a thin dark seam in it with a thin silver cable glinting inside, faint ghostly blue light filtering down from above and silver bubbles rising, nobody in the scene. The frame holds the rock wall, the seam with the silver cable and the rising bubbles.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "ice_army",
+   "kind": "image",
+   "role": "scene",
+   "label": "冻成冰雕的五百人的雪原（血红的满月和绿色极光，密密麻麻的人形和卡车全裹在透明的冰里）",
+   "description": {
+    "en": "A vast night snowfield under a blood-red full moon and a faint green aurora, hundreds of men in black winter gear and fur hats and a dozen heavy black tracked trucks all sheathed in clear glittering ice, frozen in violent poses. The reference fixes the layout and decor.",
+    "zh": "血红的满月和淡淡的绿色极光下，一望无际的雪原上，几百个穿黑色冬装、戴毛皮帽的男人和十几辆黑色履带卡车全都裹在闪亮的透明冰里，凝固在狂乱的姿势里。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a vast night snowfield under a blood-red full moon and a faint green aurora, hundreds of men in black winter gear and fur hats and a dozen heavy black tracked trucks all sheathed in clear glittering ice, frozen in violent poses, nobody in the scene. The frame holds the field of ice-sheathed men and trucks.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "ice_chief",
+   "kind": "image",
+   "role": "scene",
+   "label": "冰雕统帅的特写（左眼戴黑色眼罩的男人从头到脚裹在透明的冰里，举着对讲机，嘴张开像在尖叫，睫毛上挂着霜）",
+   "description": {
+    "en": "A close view of a frozen man with a black eye patch encased in clear ice from head to boots, a black radio handset clenched in his raised fist, his mouth open in a scream, frost on his lashes, ranks of ice figures standing sharp and still behind. The reference fixes the layout and decor.",
+    "zh": "一个左眼戴黑色眼罩的男人从头到脚裹在透明的冰里，高举的拳头里攥着黑色对讲机，嘴张开像在尖叫，睫毛上挂着霜，背后是模糊的一排排冰雕。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a close view of a frozen man with a black eye patch encased in clear ice from head to boots, a black radio handset clenched in his raised fist, his mouth open in a scream, frost on his lashes, ranks of ice figures standing sharp and still behind, nobody in the scene. The frame holds the iced man with the radio handset.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "paddy_cave",
+   "kind": "image",
+   "role": "scene",
+   "label": "溶洞里的荧光稻田（温泉池边的梯田，半人高的稻子，沉甸甸的稻穗发着淡淡的金绿色光，蓝色苔藓石壁，白色水雾）",
+   "description": {
+    "en": "A vast steaming natural cavern with walls of softly glowing blue moss, a turquoise hot spring pool and along its edge a terraced paddy of waist-high rice stalks with heavy grain heads glowing a pale gold-green. The reference fixes the layout and decor.",
+    "zh": "一个冒着热气的巨大天然溶洞，石壁上长满发着柔和蓝光的苔藓，中间是碧绿的温泉池，池边是梯田一样的半人高稻子，沉甸甸的稻穗发着淡淡的金绿色光。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a vast steaming natural cavern with walls of softly glowing blue moss, a turquoise hot spring pool and along its edge a terraced paddy of waist-high rice stalks with heavy grain heads glowing a pale gold-green, nobody in the scene. The frame holds the terraced glowing paddy beside the pool.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "periscope_room",
+   "kind": "image",
+   "role": "scene",
+   "label": "潜望镜室（小小的圆形混凝土房间，一根粗黑的钢制潜望镜立柱，橡胶目镜，墙上有个盘子大的圆形屏幕）",
+   "description": {
+    "en": "A small circular concrete room with a thick vertical black steel periscope column rising into the ceiling and a padded rubber eyepiece at chest height, and a round view screen the size of a dinner plate glowing on the wall. The reference fixes the layout and decor.",
+    "zh": "一间小小的圆形混凝土房间，一根粗粗的黑色钢制潜望镜立柱升进天花板，胸口高度有橡胶目镜，墙上有一块盘子大小发亮的圆形屏幕。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a small circular concrete room with a thick vertical black steel periscope column rising into the ceiling and a padded rubber eyepiece at chest height, and a round view screen the size of a dinner plate glowing on the wall, nobody in the scene. The frame holds the periscope column and the round view screen.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "flood_bay",
+   "kind": "image",
+   "role": "scene",
+   "label": "B3 泄洪舱（又长又窄的混凝土舱，左边是巨大的灰色钛合金墙板，铆钉接缝，银色管道，钢梯）",
+   "description": {
+    "en": "A long narrow concrete flood-control bay with a huge grey titanium wall panel with riveted seams filling its left side, thick silver pipes along the ceiling and a steel ladder at the far end. The reference fixes the layout and decor.",
+    "zh": "一个又长又窄的混凝土泄洪舱，左边是巨大的灰色钛合金墙板，铆钉接缝，天花板上有粗粗的银色管道，远端有一架钢梯。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a long narrow concrete flood-control bay with a huge grey titanium wall panel with riveted seams filling its left side, thick silver pipes along the ceiling and a steel ladder at the far end, nobody in the scene. The frame holds the titanium wall panel and the ladder.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "gate_room",
+   "kind": "image",
+   "role": "scene",
+   "label": "B4 手动闸门室（朴素的混凝土小房间，后墙是两米高的圆形钢闸门，门中央一个车轮大的黑铁手轮，旁边墙上嵌着一块有手掌凹槽的黄铜板）",
+   "description": {
+    "en": "A small bare concrete chamber whose back wall is filled by a massive round steel gate door with a big black iron hand-wheel at its centre and a rectangular brass plate with a hand-shaped recess set into the wall beside it. The reference fixes the layout and decor.",
+    "zh": "一个朴素的混凝土小房间，后墙被一扇巨大的圆形钢闸门占满，门中央是一个黑铁大手轮，旁边墙上嵌着一块有手掌凹槽的长方形黄铜板。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a small bare concrete chamber whose back wall is filled by a massive round steel gate door with a big black iron hand-wheel at its centre and a rectangular brass plate with a hand-shaped recess set into the wall beside it, nobody in the scene. The frame holds the round gate, the hand-wheel and the brass plate.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "lin_flood",
+   "kind": "image",
+   "role": "character",
+   "label": "林峰（潜水服）",
+   "description": {
+    "en": "The same man in a black neoprene wetsuit with an orange life vest, a dive mask pushed up onto his wet hair and a small headlamp on his forehead, water running down his face. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "同一个男人，穿黑色氯丁橡胶潜水服和橙色救生背心，潜水面罩推到湿漉漉的头发上，额头上戴着小头灯，水顺着脸往下淌。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of the same man as in the reference image, in a black neoprene wetsuit with an orange life vest, a dive mask pushed up onto his wet hair and a small headlamp on his forehead, water running down his face. He faces the camera with a calm focused expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": [
+     "lin_work"
+    ]
+   }
+  },
+  {
+   "key": "siege_field",
+   "kind": "image",
+   "role": "scene",
+   "label": "被军阀围困的雪原（正在融化的雪地，二十辆黑色装甲车、一台高高的黑色履带钻机和一辆载着铁笼的平板卡车排成一线）",
+   "description": {
+    "en": "A vast thawing snowfield at dawn with a line of twenty matte-black armoured trucks, a tall black tracked drilling rig and a flatbed truck carrying an iron cage standing across it. The reference fixes the layout and decor.",
+    "zh": "黎明时一片正在融化的广阔雪原，二十辆哑光黑的装甲车、一台高高的黑色履带钻机和一辆载着铁笼的平板卡车排成一线。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a vast thawing snowfield at dawn with a line of twenty matte-black armoured trucks, a tall black tracked drilling rig and a flatbed truck carrying an iron cage standing across it, nobody in the scene. The frame holds the line of armoured trucks and the drilling rig.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "cage_truck",
+   "kind": "image",
+   "role": "scene",
+   "label": "卡车平板上的铁笼（锈迹斑斑的粗铁栏杆，笼角有一只凹陷的钢桶）",
+   "description": {
+    "en": "The open flatbed of a truck carrying a rusty iron cage with thick bars and a dented steel bucket in one corner. The reference fixes the layout and decor.",
+    "zh": "卡车的平板上载着一个锈迹斑斑的铁笼，栏杆很粗，笼角有一只凹陷的钢桶。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of the open flatbed of a truck carrying a rusty iron cage with thick bars and a dented steel bucket in one corner, nobody in the scene. The frame holds the iron cage.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "flood_corridor",
+   "kind": "image",
+   "role": "scene",
+   "label": "被洪水灌满的长走廊（灰色混凝土走廊，黑色的水从远端涌来，红色应急频闪，近端一扇关着的圆形钢舱门）",
+   "description": {
+    "en": "A long grey concrete corridor with dark churning water pouring down it from the far end, red emergency strobes pulsing along the ceiling and a heavy round steel hatch door closed at the near end. The reference fixes the layout and decor.",
+    "zh": "一条长长的灰色混凝土走廊，黑色的水从远端翻涌过来，天花板上红色应急灯频闪，近端有一扇关着的厚重圆形钢舱门。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a long grey concrete corridor with dark churning water pouring down it from the far end, red emergency strobes pulsing along the ceiling and a heavy round steel hatch door closed at the near end, nobody in the scene. The frame holds the flooded corridor and the hatch door.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "pei_warlord",
+   "kind": "image",
+   "role": "character",
+   "label": "裴远山（军阀）",
+   "description": {
+    "en": "A cold-eyed Chinese man in his fifties with short swept-back silver hair and a lean lined face, in a long black wool greatcoat with a thick dark fur collar and black leather gloves. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "一个五十来岁、眼神冰冷的中国男人，银灰色的短发向后梳，脸瘦削有皱纹，穿黑色长款羊毛大衣、厚厚的深色毛领，戴黑色皮手套。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of a a Chinese man in his fifties man, in a long black wool greatcoat with a thick dark fur collar and black leather gloves, short silver hair swept back, a lean lined face. He faces the camera with a cold, level, unreadable expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "thaw_forest",
+   "kind": "image",
+   "role": "scene",
+   "label": "正在融化的山林（滴水的松树，棕色的湿泥和残雪，融水细细地流成小溪，天空发蓝）",
+   "description": {
+    "en": "A thawing mountain forest with dripping pines, brown wet mud and patches of old snow, thin streams of meltwater running through it and a soft blue sky. The reference fixes the layout and decor.",
+    "zh": "一片正在融化的山林：滴着水的松树，棕色的湿泥和残雪，融水细细地流成小溪，天空泛着柔和的蓝色。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a thawing mountain forest with dripping pines, brown wet mud and patches of old snow, thin streams of meltwater running through it and a soft blue sky, nobody in the scene. The frame holds the mud trail, the streams and the dripping pines.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "ice_lake",
+   "kind": "image",
+   "role": "scene",
+   "label": "极光下的冰湖（宽阔的冰湖，深色玻璃般的冰面带着浅色裂纹，岸边有残雪和松树，远处有一座深色的山，天空有绿色和紫色的极光）",
+   "description": {
+    "en": "A vast frozen lake under a broad green and violet aurora, dark glassy ice with pale cracks, patches of old snow along the shore with a dark line of pines, and a dark mountain far in the distance. The reference fixes the layout and decor.",
+    "zh": "极光下一片辽阔的冰湖：深色玻璃般的冰面带着浅色的裂纹，岸边是残雪和一排深色的松树，远处是一座深色的山，天空中有绿色和紫色的宽阔极光。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a vast frozen lake under a broad green and violet aurora, dark glassy ice with pale cracks, patches of old snow along the shore with a dark line of pines, and a dark mountain far in the distance, nobody in the scene. The frame holds the frozen lake, the shore and the aurora.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "earth_blue",
+   "kind": "image",
+   "role": "scene",
+   "label": "太空里看地球（蓝色的地球弧线横在画面下半部，白色旋涡云，右侧被阳光照亮，左侧夜面有零星金色灯火，极冠一圈白色，上半部是黑色星空）",
+   "description": {
+    "en": "The Earth seen from space, a huge blue curved limb across the lower half of the frame with white spiral clouds, the sunlit side at frame-right, faint gold city lights on the night side at frame-left, a white polar ice band and a black star-filled sky above. The reference fixes the layout and decor.",
+    "zh": "从太空看到的地球：蓝色的巨大弧线横在画面下半部，白色旋涡状的云，右侧被阳光照亮，左侧夜面有零星金色灯火，极冠是一圈白色，上半部是布满星星的黑色太空。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of the Earth seen from space, a huge blue curved limb across the lower half of the frame with white spiral clouds, the sunlit side at frame-right, faint gold city lights on the night side at frame-left, a white polar ice band and a black star-filled sky above, nobody in the scene. The frame holds the blue curve of the Earth, the white clouds and the black starry sky.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "earth_white",
+   "kind": "image",
+   "role": "scene",
+   "label": "太空里看冻住的地球（同一个构图，地球整个被白色和浅蓝灰色的冰盖住，厚厚的白云，夜面没有任何灯火，极点上方有一圈淡淡的绿色极光）",
+   "description": {
+    "en": "The Earth seen from space in the same composition, its whole surface buried under dull white and pale blue-grey ice and thick white cloud, no city lights on the night side, and a faint green aurora ring over the pole. The reference fixes the layout and decor.",
+    "zh": "从太空看到的冻住的地球，构图和前一张相同，整个星球被白色和浅蓝灰色的冰盖住，云层厚白，夜面没有任何灯火，极点上方有一圈淡淡的绿色极光。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of the Earth seen from space in the same composition, its whole surface buried under dull white and pale blue-grey ice and thick white cloud, no city lights on the night side, and a faint green aurora ring over the pole, nobody in the scene. The frame holds the white ice-covered Earth, the aurora ring and the black starry sky.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "footbridge",
+   "kind": "image",
+   "role": "scene",
+   "label": "黄昏的城市天桥（玻璃护栏、灰色钢板桥面，桥下是停住的车流，身后一排玻璃大楼，左边远处一道巨大的白色雾墙正翻过楼顶压过来）",
+   "description": {
+    "en": "A city pedestrian footbridge at dusk with a glass railing and a grey steel deck, stopped cars on the boulevard below, glass towers behind it and a huge white wall of mist rolling over the towers at the far left. The reference fixes the layout and decor.",
+    "zh": "黄昏的城市行人天桥，玻璃护栏，灰色钢板桥面，桥下是停住的车流，身后是一排玻璃大楼，左边远处一道巨大的白色雾墙正翻过楼顶压过来。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a city pedestrian footbridge at dusk with a glass railing and a grey steel deck, stopped cars on the boulevard below, glass towers behind it and a huge white wall of mist rolling over the towers at the far left, nobody in the scene. The frame holds the glass railing, the steel deck, the stopped cars and the wall of mist at the far end.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "footbridge_frost",
+   "kind": "image",
+   "role": "scene",
+   "label": "冻住的城市天桥（同一座天桥，玻璃护栏和桥面都厚厚地结满白霜，桥下是白霜覆盖的车，身后的玻璃大楼挂满长长的冰柱，白雾低低地飘着）",
+   "description": {
+    "en": "The same city footbridge frozen solid, its glass railing and steel deck thick with white frost, frost-white cars on the boulevard below, glass towers hung with long icicles and low white mist drifting. The reference fixes the layout and decor.",
+    "zh": "同一座城市天桥已经冻住，玻璃护栏和钢板桥面都结着厚厚的白霜，桥下是白霜覆盖的车，身后的玻璃大楼挂满长长的冰柱，白雾低低地飘着。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of the same city footbridge frozen solid, its glass railing and steel deck thick with white frost, frost-white cars on the boulevard below, glass towers hung with long icicles and low white mist drifting, nobody in the scene. The frame holds the frosted railing, the white rime deck, the frost-white cars and the icicle-hung towers.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "chenyu",
+   "kind": "image",
+   "role": "character",
+   "label": "陈屿（二十多岁的中国男青年，炭灰色羊毛大衣，灰色圆领毛衣，短黑发，被风吹乱）",
+   "description": {
+    "en": "A Chinese man in his late twenties with short neat black hair, a clean-shaven kind face and steady dark-brown eyes, wearing a charcoal wool overcoat over a grey crewneck sweater. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "一个二十多岁的中国男青年，黑色短发整齐，脸干净而温和，眼睛是沉稳的深棕色，穿着炭灰色羊毛大衣，里面是灰色圆领毛衣。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of a Chinese man, short neat black hair, a clean-shaven kind face, steady dark-brown eyes, wearing a charcoal wool overcoat over a grey crewneck sweater. He faces the camera with a gentle, steady expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "xuran",
+   "kind": "image",
+   "role": "character",
+   "label": "许然（二十多岁的中国女青年，驼色长款羊毛大衣，奶白色毛衣，披着长黑发）",
+   "description": {
+    "en": "A Chinese woman in her late twenties with long black hair, a soft oval face and warm dark-brown eyes, wearing a long camel wool coat over a cream knit sweater. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "一个二十多岁的中国女青年，披着黑色长发，脸型柔和偏椭圆，眼睛是温暖的深棕色，穿着驼色长款羊毛大衣，里面是奶白色毛衣。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of a Chinese woman, long black hair, a soft oval face, warm dark-brown eyes, wearing a long camel wool coat over a cream knit sweater. She faces the camera with a soft, gentle expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "bbq_street",
+   "kind": "image",
+   "role": "scene",
+   "label": "正午的城市街边烧烤位（路边一张矮折叠桌，桌上纸盘里的烤串和一瓶啤酒，塑料凳，左边一个冒烟的炭烤炉，身后是一条两边停着车、种着行道树、立着玻璃大楼的长街，远处一道巨大的白色雾墙正滚过来）",
+   "description": {
+    "en": "A roadside barbecue spot on a wide city street at noon, a low folding table with a paper plate of skewers and a beer bottle, a plastic stool, a smoking charcoal grill at the left, and behind it a long street lined with parked cars, street trees and glass towers with a huge white wall of mist rolling in at the far end. The reference fixes the layout and decor.",
+    "zh": "正午城市宽街上的路边烧烤位：一张矮折叠桌，桌上纸盘里放着烤串和一瓶啤酒，一个塑料凳，左边一个冒着烟的炭烤炉，身后是一条两边停着车、种着行道树、立着玻璃大楼的长街，街的尽头一道巨大的白色雾墙正滚过来。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a roadside barbecue spot on a wide city street at noon, a low folding table with a paper plate of skewers and a beer bottle, a plastic stool, a smoking charcoal grill at the left, and behind it a long street lined with parked cars, street trees and glass towers with a huge white wall of mist rolling in at the far end, nobody in the scene. The frame holds the low table, the skewers, the grill and the long street with the wall of mist at its end.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "bbq_street_frost",
+   "kind": "image",
+   "role": "scene",
+   "label": "冻住的街边烧烤位（同一个位置，矮桌、塑料凳、烤炉和整条街的车、树、玻璃大楼全部结满白霜，大楼挂着长长的冰柱，白雾低低地飘着）",
+   "description": {
+    "en": "The same roadside barbecue spot frozen solid, the low table, plastic stool, grill, parked cars, street trees and glass towers all coated in thick white frost and hung with icicles, low white mist drifting along the street. The reference fixes the layout and decor.",
+    "zh": "同一个街边烧烤位已经冻住，矮桌、塑料凳、烤炉、整条街的车、行道树和玻璃大楼都结着厚厚的白霜，挂着长长的冰柱，白雾低低地飘在街上。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of the same roadside barbecue spot frozen solid, the low table, plastic stool, grill, parked cars, street trees and glass towers all coated in thick white frost and hung with icicles, low white mist drifting along the street, nobody in the scene. The frame holds the frosted table, stool, grill, cars, trees and icicle-hung towers.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "street_guy",
+   "kind": "image",
+   "role": "character",
+   "label": "街边吃烧烤的老哥（三十多岁，圆脸，乱糟糟的短发和胡茬，红黄相间的花衬衫，金链子，人字拖，爱凑热闹的样子）",
+   "description": {
+    "en": "A stocky cheerful Chinese man in his thirties with a round face, messy short black hair and a scruffy stubble beard, wearing a loud red-and-yellow floral beach shirt, a thin gold chain and flip-flops. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "一个三十多岁、敦实又爱热闹的中国男性，圆脸，乱糟糟的黑色短发，满脸胡茬，穿着红黄相间的花衬衫，戴着一条细金链子，脚上是人字拖。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of a Chinese man, a round face, messy short black hair, a scruffy stubble beard, wearing a loud red-and-yellow floral beach shirt and a thin gold chain. He faces the camera with a cheerful, goofy expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  }
+ ],
+ "characters": {
+  "LinStudio": {
+   "image_keys": [
+    "lin_studio"
+   ],
+   "voice_description": {
+    "en": "A mature adult male voice, calm and level with a dry cold edge, speaking clear Mandarin Chinese. He never raises his voice. Every word is fully voiced and audible.",
+    "zh": "成熟成年男声，平稳镇定，带一点干冷的质感，普通话清楚。他从不提高音量。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "LinBank": {
+   "image_keys": [
+    "lin_bank"
+   ],
+   "voice_description": {
+    "en": "A mature adult male voice, calm and level with a dry cold edge, speaking clear Mandarin Chinese. He never raises his voice. Every word is fully voiced and audible.",
+    "zh": "成熟成年男声，平稳镇定，带一点干冷的质感，普通话清楚。他从不提高音量。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "LinWork": {
+   "image_keys": [
+    "lin_work"
+   ],
+   "voice_description": {
+    "en": "A mature adult male voice, calm and level with a dry cold edge, speaking clear Mandarin Chinese. He never raises his voice. Every word is fully voiced and audible.",
+    "zh": "成熟成年男声，平稳镇定，带一点干冷的质感，普通话清楚。他从不提高音量。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "LinHome": {
+   "image_keys": [
+    "lin_home"
+   ],
+   "voice_description": {
+    "en": "A mature adult male voice, calm and level with a dry cold edge, speaking clear Mandarin Chinese. He never raises his voice. Every word is fully voiced and audible.",
+    "zh": "成熟成年男声，平稳镇定，带一点干冷的质感，普通话清楚。他从不提高音量。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "Su": {
+   "image_keys": [
+    "su_suit"
+   ],
+   "voice_description": {
+    "en": "A confident adult woman's voice, low, smooth and slightly husky, speaking clear Mandarin Chinese with a sharp, measured edge. Every word is fully voiced and audible.",
+    "zh": "自信的成年女声，低沉、顺滑、略带沙哑，普通话清楚，带着锐利而有分寸的质感。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "Wen": {
+   "image_keys": [
+    "wen_blazer"
+   ],
+   "voice_description": {
+    "en": "A young adult woman's voice, brisk and attentive, speaking clear Mandarin Chinese. Every word is fully voiced and audible.",
+    "zh": "年轻成年女声，干练、专注，普通话清楚。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "Ning": {
+   "image_keys": [
+    "ning_partner"
+   ],
+   "voice_description": {
+    "en": "A young adult male voice, hoarse and weary, speaking clear Mandarin Chinese. Every word is fully voiced and audible.",
+    "zh": "年轻成年男声，沙哑、疲惫，普通话清楚。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "Liang": {
+   "image_keys": [
+    "liang_banker"
+   ],
+   "voice_description": {
+    "en": "A mature adult woman's voice, polished, courteous and precise, speaking clear Mandarin Chinese. Every word is fully voiced and audible.",
+    "zh": "成熟成年女声，圆润、有礼貌、吐字精准，普通话清楚。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "Sun": {
+   "image_keys": [
+    "sun_agent"
+   ],
+   "voice_description": {
+    "en": "A young adult male voice, thin and anxious, speaking clear Mandarin Chinese. Every word is fully voiced and audible.",
+    "zh": "年轻成年男声，发细、焦虑，普通话清楚。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "Ma": {
+   "image_keys": [
+    "ma_outdoor"
+   ],
+   "voice_description": {
+    "en": "A heavy adult male voice, loud and jovial, speaking clear Mandarin Chinese. Every word is fully voiced and audible.",
+    "zh": "浑厚的成年男声，嗓门大、爱笑，普通话清楚。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "Gu": {
+   "image_keys": [
+    "gu_coal"
+   ],
+   "voice_description": {
+    "en": "A gravelly adult male voice, hoarse from coal dust and slow, speaking clear Mandarin Chinese. Every word is fully voiced and audible.",
+    "zh": "沙哑的成年男声，被煤灰熏得嘶哑、语速慢，普通话清楚。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "Xiao": {
+   "image_keys": [
+    "xiao_agri"
+   ],
+   "voice_description": {
+    "en": "A young adult woman's voice, bright, polite and eager, speaking clear Mandarin Chinese. Every word is fully voiced and audible.",
+    "zh": "年轻成年女声，明亮、礼貌、热切，普通话清楚。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "Ranger": {
+   "image_keys": [
+    "ranger_old"
+   ],
+   "voice_description": {
+    "en": "An old adult male voice, dry, slow and raspy, speaking clear Mandarin Chinese. Every word is fully voiced and audible.",
+    "zh": "年老的成年男声，干涩、缓慢、嘶哑，普通话清楚。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "Zhao": {
+   "image_keys": [
+    "zhao_boss"
+   ],
+   "voice_description": {
+    "en": "A heavy adult male voice, gravelly and smug, speaking clear Mandarin Chinese. Every word is fully voiced and audible.",
+    "zh": "粗重的成年男声，沙砾般粗糙、得意，普通话清楚。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "Biao": {
+   "image_keys": [
+    "biao_thug"
+   ],
+   "voice_description": {
+    "en": "A young adult male voice, nasal and eager, speaking clear Mandarin Chinese. Every word is fully voiced and audible.",
+    "zh": "年轻成年男声，带鼻音、急切，普通话清楚。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "LinArctic": {
+   "image_keys": [
+    "lin_arctic"
+   ],
+   "voice_description": {
+    "en": "A mature adult male voice, calm and level with a dry cold edge, speaking clear Mandarin Chinese. He never raises his voice. Every word is fully voiced and audible.",
+    "zh": "成熟成年男声，平稳镇定，带一点干冷的质感，普通话清楚。他从不提高音量。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "SuDown": {
+   "image_keys": [
+    "su_down"
+   ],
+   "voice_description": {
+    "en": "A confident adult woman's voice, low, smooth and slightly husky, speaking clear Mandarin Chinese with a sharp, measured edge. Every word is fully voiced and audible.",
+    "zh": "自信的成年女声，低沉、顺滑、略带沙哑，普通话清楚，带着锐利而有分寸的质感。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "SuTrek": {
+   "image_keys": [
+    "su_trek"
+   ],
+   "voice_description": {
+    "en": "A confident adult woman's voice, low, smooth and slightly husky, speaking clear Mandarin Chinese with a sharp, measured edge. Every word is fully voiced and audible.",
+    "zh": "自信的成年女声，低沉、顺滑、略带沙哑，普通话清楚，带着锐利而有分寸的质感。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "Gaunt": {
+   "image_keys": [
+    "gaunt_drifter"
+   ],
+   "voice_description": {
+    "en": "A hoarse adult male voice, cracked and exhausted, speaking clear Mandarin Chinese. Every word is fully voiced and audible.",
+    "zh": "嘶哑的成年男声，干裂、筋疲力尽，普通话清楚。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "Bearded": {
+   "image_keys": [
+    "bearded_drifter"
+   ],
+   "voice_description": {
+    "en": "A heavy adult male voice, numb and bitter, speaking clear Mandarin Chinese. Every word is fully voiced and audible.",
+    "zh": "低沉的成年男声，麻木、苦涩，普通话清楚。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "Brute": {
+   "image_keys": [
+    "brute_raider"
+   ],
+   "voice_description": {
+    "en": "A rough adult male voice, savage and hoarse, speaking clear Mandarin Chinese. Every word is fully voiced and audible.",
+    "zh": "粗野的成年男声，凶狠、嘶哑，普通话清楚。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "LinWhite": {
+   "image_keys": [
+    "lin_white"
+   ],
+   "voice_description": {
+    "en": "A mature adult male voice, calm and level with a dry cold edge, speaking clear Mandarin Chinese. He never raises his voice. Every word is fully voiced and audible.",
+    "zh": "成熟成年男声，平稳镇定，带一点干冷的质感，普通话清楚。他从不提高音量。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "SuCozy": {
+   "image_keys": [
+    "su_cozy"
+   ],
+   "voice_description": {
+    "en": "A confident adult woman's voice, low, smooth and slightly husky, speaking clear Mandarin Chinese with a sharp, measured edge. Every word is fully voiced and audible.",
+    "zh": "自信的成年女声，低沉、顺滑、略带沙哑，普通话清楚，带着锐利而有分寸的质感。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "SuSurgeon": {
+   "image_keys": [
+    "su_surgeon"
+   ],
+   "voice_description": {
+    "en": "A confident adult woman's voice, low, smooth and slightly husky, speaking clear Mandarin Chinese with a sharp, measured edge. Every word is fully voiced and audible.",
+    "zh": "自信的成年女声，低沉、顺滑、略带沙哑，普通话清楚，带着锐利而有分寸的质感。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "SuArctic": {
+   "image_keys": [
+    "su_arctic"
+   ],
+   "voice_description": {
+    "en": "A confident adult woman's voice, low, smooth and slightly husky, speaking clear Mandarin Chinese with a sharp, measured edge. Every word is fully voiced and audible.",
+    "zh": "自信的成年女声，低沉、顺滑、略带沙哑，普通话清楚，带着锐利而有分寸的质感。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "ZhaoFrost": {
+   "image_keys": [
+    "zhao_frost"
+   ],
+   "voice_description": {
+    "en": "A heavy adult male voice, hoarse and cracked from the cold, gravelly and feverish, speaking clear Mandarin Chinese. Every word is fully voiced and audible.",
+    "zh": "粗重的成年男声，被寒冷冻得沙哑开裂，沙砾般粗糙而亢奋，普通话清楚。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "BiaoFrost": {
+   "image_keys": [
+    "biao_frost"
+   ],
+   "voice_description": {
+    "en": "A young adult male voice, nasal and shivering, eager and afraid, speaking clear Mandarin Chinese. Every word is fully voiced and audible.",
+    "zh": "年轻成年男声，带鼻音、发着抖，急切又害怕，普通话清楚。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "SuSilk": {
+   "image_keys": [
+    "su_silk"
+   ],
+   "voice_description": {
+    "en": "A confident adult woman's voice, low, smooth and slightly husky, speaking clear Mandarin Chinese with a sharp, measured edge. Every word is fully voiced and audible.",
+    "zh": "自信的成年女声，低沉、顺滑、略带沙哑，普通话清楚，带着锐利而有分寸的质感。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "RadioOp": {
+   "image_keys": [
+    "radio_set"
+   ],
+   "voice_description": {
+    "en": "A thin, exhausted adult woman's voice heard through crackling radio static, hoarse and halting, speaking clear Mandarin Chinese. Every word is fully voiced and audible.",
+    "zh": "隔着收音机沙沙杂音传来的、疲惫沙哑、断断续续的成年女声，普通话清楚。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "RadioNing": {
+   "image_keys": [
+    "radio_set"
+   ],
+   "voice_description": {
+    "en": "A hoarse adult male voice heard through crackling radio static, frantic and pleading, breaking into a shout, speaking clear Mandarin Chinese. Every word is fully voiced and audible.",
+    "zh": "隔着收音机沙沙杂音传来的、嘶哑的成年男声，慌乱又哀求，说到后面喊了起来，普通话清楚。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "Scout": {
+   "image_keys": [
+    "scout"
+   ],
+   "voice_description": {
+    "en": "A flat, cold synthetic adult male voice filtered through a helmet speaker, speaking clear Mandarin Chinese. Every word is fully voiced and audible.",
+    "zh": "经过头盔扬声器处理的、平板冰冷的合成感成年男声，普通话清楚。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "RadioCmd": {
+   "image_keys": [
+    "radio_set"
+   ],
+   "voice_description": {
+    "en": "A stern, cold, authoritative middle-aged man's voice, deep and slow, heard through crackling radio static, speaking clear Mandarin Chinese. Every word is fully voiced and audible.",
+    "zh": "威严冰冷的中年男声，低沉缓慢，带着收音机沙沙的杂音，普通话清楚。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "SuTac": {
+   "image_keys": [
+    "su_tac"
+   ],
+   "voice_description": {
+    "en": "A confident adult woman's voice, low, smooth and slightly husky, speaking clear Mandarin Chinese with a sharp, measured edge. Every word is fully voiced and audible.",
+    "zh": "自信的成年女声，低沉、顺滑、略带沙哑，普通话清楚，带着锐利而有分寸的质感。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "SuTacfit": {
+   "image_keys": [
+    "su_tacfit"
+   ],
+   "voice_description": {
+    "en": "A confident adult woman's voice, low, smooth and slightly husky, speaking clear Mandarin Chinese with a sharp, measured edge. Every word is fully voiced and audible.",
+    "zh": "自信的成年女声，低沉、顺滑、略带沙哑，普通话清楚，带着锐利而有分寸的质感。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "Captain": {
+   "image_keys": [
+    "captain"
+   ],
+   "voice_description": {
+    "en": "A rough, loud, hurried adult male voice, clipped and commanding, speaking clear Mandarin Chinese. Every word is fully voiced and audible.",
+    "zh": "粗犷、响亮、急促的成年男声，短促而带命令的口气，普通话清楚。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "Ghost": {
+   "image_keys": [
+    "hack_screen"
+   ],
+   "voice_description": {
+    "en": "A flat, cold, androgynous synthetic voice from a console speaker, slow and unhurried, speaking clear Mandarin Chinese. Every word is fully voiced and audible.",
+    "zh": "平板冰冷、听不出男女的合成声音，从控制台扬声器里传出，缓慢不急，普通话清楚。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "HackerK": {
+   "image_keys": [
+    "hacker_k"
+   ],
+   "voice_description": {
+    "en": "A thin, high, shaky young adult male voice, breathless and pleading, speaking clear Mandarin Chinese. Every word is fully voiced and audible.",
+    "zh": "细细发高、发着抖的年轻成年男声，喘不上气地哀求，普通话清楚。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "Eden": {
+   "image_keys": [
+    "hack_screen"
+   ],
+   "voice_description": {
+    "en": "A soft, calm, polite female synthetic voice from a wall speaker, smooth and unhurried, speaking clear Mandarin Chinese. Every word is fully voiced and audible.",
+    "zh": "轻柔平静、礼貌的女性合成声音，从墙上的扬声器里传出，顺滑不急，普通话清楚。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "KRec": {
+   "image_keys": [
+    "hack_screen"
+   ],
+   "voice_description": {
+    "en": "A manic, cracking, gleeful young adult male voice with wild laughter, a distorted old recording from a speaker, speaking clear Mandarin Chinese. Every word is fully voiced and audible.",
+    "zh": "疯狂、发破、带着得意的年轻成年男声，夹着狂笑，是一段失真的旧录音，从扬声器里传出，普通话清楚。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "Duyan": {
+   "image_keys": [
+    "duyan_boss"
+   ],
+   "voice_description": {
+    "en": "A harsh, gravelly adult male voice, ragged from shouting in the cold, cruel and commanding, speaking clear Mandarin Chinese. Every word is fully voiced and audible.",
+    "zh": "粗哑沙哑的成年男声，在寒风里吼得发破，残忍又带着命令的口气，普通话清楚。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "Pang": {
+   "image_keys": [
+    "pang_aide"
+   ],
+   "voice_description": {
+    "en": "A tense adult male voice, thin and nervous, speaking clear Mandarin Chinese. Every word is fully voiced and audible.",
+    "zh": "紧张的成年男声，细而发紧，普通话清楚。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "Tou": {
+   "image_keys": [
+    "tou_thug"
+   ],
+   "voice_description": {
+    "en": "A wary adult male voice, low and hoarse, speaking clear Mandarin Chinese. Every word is fully voiced and audible.",
+    "zh": "警惕的成年男声，低沉沙哑，普通话清楚。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "LinGhillie": {
+   "image_keys": [
+    "lin_ghillie"
+   ],
+   "voice_description": {
+    "en": "A mature adult male voice, calm and level with a dry cold edge, speaking clear Mandarin Chinese. He never raises his voice. Every word is fully voiced and audible.",
+    "zh": "成熟成年男声，平稳镇定，带一点干冷的质感，普通话清楚。他从不提高音量。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "Qian": {
+   "image_keys": [
+    "qian_chief"
+   ],
+   "voice_description": {
+    "en": "A rough, hoarse middle-aged male voice, gruff and irritable, speaking clear Mandarin Chinese. Every word is fully voiced and audible.",
+    "zh": "粗哑的中年男声，粗声粗气、不耐烦，普通话清楚。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "Xiaoliu": {
+   "image_keys": [
+    "xiaoliu_bomber"
+   ],
+   "voice_description": {
+    "en": "A shivering young adult male voice, cracked by the cold, speaking clear Mandarin Chinese. Every word is fully voiced and audible.",
+    "zh": "冻得发抖的年轻成年男声，被寒冷弄得发破，普通话清楚。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "LinFlood": {
+   "image_keys": [
+    "lin_flood"
+   ],
+   "voice_description": {
+    "en": "A mature adult male voice, calm and level with a dry cold edge, speaking clear Mandarin Chinese. He never raises his voice. Every word is fully voiced and audible.",
+    "zh": "成熟成年男声，平稳镇定，带一点干冷的质感，普通话清楚。他从不提高音量。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "RadioPei": {
+   "image_keys": [
+    "radio_set"
+   ],
+   "voice_description": {
+    "en": "A cold, courteous, unhurried deep middle-aged man's voice heard through crackling radio static, speaking clear Mandarin Chinese. Every word is fully voiced and audible.",
+    "zh": "隔着收音机沙沙杂音传来的、冷静客气、不紧不慢的低沉中年男声，普通话清楚。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "Pei": {
+   "image_keys": [
+    "pei_warlord"
+   ],
+   "voice_description": {
+    "en": "A cold, courteous, unhurried deep middle-aged man's voice, speaking clear Mandarin Chinese. Every word is fully voiced and audible.",
+    "zh": "冷静客气、不紧不慢的低沉中年男声，普通话清楚。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "LinRec": {
+   "image_keys": [
+    "radio_set"
+   ],
+   "voice_description": {
+    "en": "A mature adult male voice, calm and level with a dry cold edge, speaking clear Mandarin Chinese. He never raises his voice. Every word is fully voiced and audible. This is an old recording heard through a small wall speaker with a faint tape hiss, warm and tired.",
+    "zh": "成熟成年男声，平稳镇定，带一点干冷的质感，普通话清楚。他从不提高音量。每个字都正常发声、清晰可辨。这是一段旧录音，通过墙上的小扬声器传出，带着细细的磁带嘶声，温暖而疲惫。"
+   }
+  },
+  "Stranger": {
+   "image_keys": [
+    "radio_set"
+   ],
+   "voice_description": {
+    "en": "A careful, tired young man's voice heard through crackling radio static, speaking clear Mandarin Chinese, hopeful and a little out of breath. Every word is fully voiced and audible.",
+    "zh": "隔着收音机沙沙杂音传来的、小心而疲惫的年轻男声，普通话清楚，带着希望，有一点喘。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "Chenyu": {
+   "image_keys": [
+    "chenyu"
+   ],
+   "voice_description": {
+    "en": "A warm, steady young man's voice, low and gentle, speaking clear Mandarin Chinese. Every word is fully voiced and audible.",
+    "zh": "温暖而沉稳的年轻男声，低沉温和，普通话清楚。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "Xuran": {
+   "image_keys": [
+    "xuran"
+   ],
+   "voice_description": {
+    "en": "A soft young woman's voice, trembling a little, speaking clear Mandarin Chinese. Every word is fully voiced and audible.",
+    "zh": "轻柔的年轻女声，微微发颤，普通话清楚。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "Streetguy": {
+   "image_keys": [
+    "street_guy"
+   ],
+   "voice_description": {
+    "en": "A loud, gravelly, hilariously excitable Chinese man's voice, booming and cracking with comic glee, speaking clear Mandarin Chinese. Every word is fully voiced and audible.",
+    "zh": "洪亮、沙哑、爱起哄的中国男声，兴奋得破音，带着滑稽的狂喜，普通话清楚。每个字都正常发声、清晰可辨。"
+   }
+  }
+ },
+ "episodes": [
+  {
+   "title": "补拍3｜地球两个固定镜头＋情侣相拥冻成冰雕（插入补拍2的降临段）",
+   "summary": "开场放地球固定镜头（蓝色地球），降临段中间插入一对情侣在天桥相拥、白雾逼近、同机位已成冰雕、拉远看整座冰封的天桥；最后一镜放整个地球变白。",
+   "script": "太空，蓝色的地球静静悬在黑色星空里，白色的云慢慢飘过海洋，右边被太阳照亮，左边夜面有零星的金色灯火（固定镜头），地球静静地悬在布满星星的黑色太空里，白色的旋涡状云慢慢地飘过深蓝色的海洋，右边的边缘被太阳照得发亮，左边的夜面有几点零星的金色城市灯火在闪。别的什么都不动。刺眼的白色阳光沿着那一线薄薄的蓝色大气划过，星星在深深的黑色里稳稳地燃着。\n天桥，黄昏的天桥上，陈屿紧紧抱着许然，远处一道白色的雾墙正翻过楼顶压过来，他低声说别怕，她说别松手，他们身后桥的左边尽头，一大片白色雾墙稳稳地翻过玻璃大楼朝天桥压过来，冷风吹起她的头发和他大衣的下摆；两个人紧紧抱着彼此，陈屿用低沉温和的声音对许然说出第一句，接着许然用轻柔发颤的声音对陈屿说出第二句；最后一句之后，他把手臂收得更紧，她闭上眼睛把脸埋进他的胸口，第一缕薄薄的白雾顺着桥面爬到他们的脚边。 台词一句紧接着一句，中间只有很短的换气，每句一口气说完、句中不停顿。形成浓郁的琥珀与青色对比。画面里恰好是Chenyu、Xuran，每个人只出现一次。\nChenyu：“别怕我在这儿。”\nXuran：“嗯别松手。”\n天桥，同一个机位，两个人已经成了冰雕，保持着相拥的样子，睫毛挂着白霜，白雾静静飘过他们的脚边，陈屿和许然保持着刚才同样的拥抱，一动不动，被封在晶莹发亮的冰里，脸被一层白霜盖着，平静，嘴里不再冒白气。只有薄薄的白雾慢慢飘过他们的脚边，空气里几粒细小的冰晶在闪。一轮苍白冰冷的太阳透过他们周身的透明冰层折出淡淡的彩虹光斑，落在白色的桥面上，冻住的拥抱泛着柔和的蓝白色光，衬着身后暗灰色的大楼。画面里恰好是Chenyu、Xuran，每个人只出现一次。\n天桥，冰封天桥的全景，桥中间两个相拥的冰雕小小的立在那里，白雾在桥面上慢慢飘，镜头缓缓推近，陈屿和许然保持着拥抱，被封在晶莹的冰里，立在冰封天桥的正中间，一动不动，薄薄的白雾慢慢飘过白霜覆盖的桥面。桥下的大街两边是白霜覆盖的、一片寂静的车，身后的玻璃大楼挂满长长的冰柱。一轮苍白暗淡的太阳低低地挂在挂满冰柱的大楼后面，长长的冷色影子横过白霜覆盖的桥面。画面里恰好是Chenyu、Xuran，每个人只出现一次。\n太空，同一个构图，整个地球已经被白色的冰盖住，云层厚白，夜面没有一点灯火，极点上空一圈淡淡的绿色极光（固定镜头），地球静静地悬在布满星星的黑色太空里，整个表面被灰白和浅蓝灰色的冰盖住，厚厚的白色云带慢慢地爬过，夜面没有一点灯火，极点上空一圈淡淡的绿色极光在轻轻地一明一暗。别的什么都不动。夜面完全沉在黑暗里，星星稳稳地亮着。",
+   "segments": [
+    {
+     "title": "01｜太空：蓝色的地球静静悬在黑色星空里，白色的云慢慢飘过海洋，右边被太阳照亮，左边夜面有零星的金色灯火（固定镜头）",
+     "duration_seconds": 6,
+     "generation_seconds": 6,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [],
+     "asset_keys": [
+      "earth_blue"
+     ],
+     "image_reference_keys": [
+      "earth_blue"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Wide shot of the Earth from space, the blue curve across the lower half of the frame and the globe centered in the middle third of the frame, nobody in the scene.  The frame holds the Earth, the stars, and nobody in the scene. Hard white sunlight rakes across the curve of the planet from frame-right and the stars burn steady and cold in the black. Fixed stage layout: the great curved limb of the Earth sweeps across the lower half of the frame like a huge blue arc, deep blue oceans streaked with white spiral clouds, a thin glowing blue line of atmosphere along its edge, the sunlit side bright at frame-right and the night side dark at frame-left with faint scattered gold city lights, a thin glittering white band of polar ice at the top of the globe; the upper half of the frame is black space full of tiny stars; nobody in the scene.",
+     "visual_zh": "地球静静地悬在布满星星的黑色太空里，白色的旋涡状云慢慢地飘过深蓝色的海洋，右边的边缘被太阳照得发亮，左边的夜面有几点零星的金色城市灯火在闪。别的什么都不动。刺眼的白色阳光沿着那一线薄薄的蓝色大气划过，星星在深深的黑色里稳稳地燃着。",
+     "camera_zh": "0—6秒，镜头固定不动。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 6,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. The Earth hangs silent in the black star-filled space, white spiral clouds drifting very slowly over the deep blue oceans, the sunlit edge glowing at frame-right and a few faint gold city lights twinkling on the dark side at frame-left. Nothing else moves. The camera holds still.",
+       "visual_zh": "地球静静地悬在布满星星的黑色太空里，白色的旋涡状云慢慢地飘过深蓝色的海洋，右边的边缘被太阳照得发亮，左边的夜面有几点零星的金色城市灯火在闪。别的什么都不动。刺眼的白色阳光沿着那一线薄薄的蓝色大气划过，星星在深深的黑色里稳稳地燃着。 镜头固定不动。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "A deep, low, silent hum of space and, far underneath it, one clear distant rumble like the planet drawing a slow breath. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here. Every on-set sound effect is loud, crisp and close to the microphone, as prominent as the voices: footsteps, impacts, doors, wind, ice, machinery and fabric are all clearly heard. No music.",
+     "sound_zh": "太空里深深的、低低的寂静嗡鸣，最底下隐隐有一声遥远的低沉轰鸣，像这颗星球缓缓吸了一口气。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。所有现场音效都响亮、清脆、贴近话筒，和人声一样突出：脚步、撞击、开关门、风声、冰裂、机械和衣料摩擦都听得清清楚楚。没有配乐。",
+     "seed": 37407,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "02｜天桥：黄昏的天桥上，陈屿紧紧抱着许然，远处一道白色的雾墙正翻过楼顶压过来，他低声说别怕，她说别松手",
+     "duration_seconds": 7,
+     "generation_seconds": 7,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "Chenyu",
+      "Xuran"
+     ],
+     "asset_keys": [
+      "footbridge",
+      "chenyu",
+      "xuran"
+     ],
+     "image_reference_keys": [
+      "footbridge"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium shot, the two of them from the head to the knees, in the middle third of the frame, on the bridge. Chenyu (a Chinese man in his late twenties) at frame-center-right, standing on the steel deck of the footbridge in profile facing frame-left, both arms wrapped around Xuran's back with both hands holding her shoulder blades, his chin resting lightly against her forehead, in a charcoal wool overcoat over a grey crewneck sweater and dark trousers, his short neat black hair tousled by the wind, his steady dark-brown eyes on Xuran, his jaw set, his eyes steady and gentle, his brows level. Xuran (a Chinese woman in her late twenties) at frame-center-left, standing in profile facing frame-right pressed against his chest, both hands gripping the back of his overcoat, her face tilted up toward his, in a long camel wool coat over a cream knit sweater, her long black hair loose and lifted by the wind, her soft dark-brown eyes on Chenyu, her lips trembling, her eyes wide and wet, her brows drawn together. A huge white wall of mist fills the far end of the bridge behind them. A rich amber-and-teal contrast. The frame holds exactly two people: Chenyu, Xuran. A low amber dusk sun shows through thin haze and a cold wind lifts loose hair and coat hems. Fixed stage layout: a long city pedestrian footbridge with a clear glass railing and a grey steel deck runs across the frame from frame-right to frame-left; below it a wide boulevard of stopped cars; a skyline of glass towers stands at the back of the frame, and over the towers at the far left end of the bridge a huge white wall of mist is rolling in; the sky is amber and grey.",
+     "visual_zh": "他们身后桥的左边尽头，一大片白色雾墙稳稳地翻过玻璃大楼朝天桥压过来，冷风吹起她的头发和他大衣的下摆；两个人紧紧抱着彼此，陈屿用低沉温和的声音对许然说出第一句，接着许然用轻柔发颤的声音对陈屿说出第二句；最后一句之后，他把手臂收得更紧，她闭上眼睛把脸埋进他的胸口，第一缕薄薄的白雾顺着桥面爬到他们的脚边。 台词一句紧接着一句，中间只有很短的换气，每句一口气说完、句中不停顿。形成浓郁的琥珀与青色对比。画面里恰好是Chenyu、Xuran，每个人只出现一次。",
+     "camera_zh": "0—7秒，镜头慢慢推近，直到两人占满画面中间三分之一。",
+     "dialogue": [
+      {
+       "speaker": "Chenyu",
+       "text": "别怕我在这儿。",
+       "start_seconds": 0.6,
+       "end_seconds": 2.33,
+       "language": "zh"
+      },
+      {
+       "speaker": "Xuran",
+       "text": "嗯别松手。",
+       "start_seconds": 3.18,
+       "end_seconds": 4.41,
+       "language": "zh"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 7,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. Far behind them at the left end of the bridge the huge white wall of mist rolls steadily over the glass towers toward the bridge while a cold wind whips her hair and the hem of his overcoat; the two of them hold each other, [[asset:chenyu]] speaks the first line to [[asset:xuran]] in a low gentle voice, then [[asset:xuran]] speaks the second line to [[asset:chenyu]] in a soft trembling voice; after the last line he tightens his arms around her and she closes her eyes and presses her face against his chest while the first thin tendrils of white mist crawl across the deck beside their feet. The lines follow one another at once with only a very short breath between them, each said in one breath with no pause inside the sentence. A rich amber-and-teal contrast. [[asset:xuran]] keeps her lips trembling, her eyes wide and wet, her brows drawn together. Exactly two people are in the frame: Chenyu and Xuran, each shown once. The camera pushes in slowly until the two of them fill the middle third of the frame.",
+       "visual_zh": "他们身后桥的左边尽头，一大片白色雾墙稳稳地翻过玻璃大楼朝天桥压过来，冷风吹起她的头发和他大衣的下摆；两个人紧紧抱着彼此，陈屿用低沉温和的声音对许然说出第一句，接着许然用轻柔发颤的声音对陈屿说出第二句；最后一句之后，他把手臂收得更紧，她闭上眼睛把脸埋进他的胸口，第一缕薄薄的白雾顺着桥面爬到他们的脚边。 台词一句紧接着一句，中间只有很短的换气，每句一口气说完、句中不停顿。形成浓郁的琥珀与青色对比。画面里恰好是Chenyu、Xuran，每个人只出现一次。 镜头慢慢推近，直到两人占满画面中间三分之一。",
+       "dialogue_indices": [
+        0,
+        1
+       ]
+      }
+     ],
+     "sound_en": "A cold wind whistling across the bridge, the rustle of coats and a low far rumble of the mist rolling closer. Every on-set sound effect is loud, crisp and close to the microphone, as prominent as the voices: footsteps, impacts, doors, wind, ice, machinery and fabric are all clearly heard. No music. The voices are clear.",
+     "sound_zh": "冷风掠过天桥的呼啸声、大衣衣料的摩擦声和远处雾墙滚过来的低沉轰鸣。所有现场音效都响亮、清脆、贴近话筒，和人声一样突出：脚步、撞击、开关门、风声、冰裂、机械和衣料摩擦都听得清清楚楚。没有配乐。人声清楚。",
+     "seed": 37407,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "03｜天桥：同一个机位，两个人已经成了冰雕，保持着相拥的样子，睫毛挂着白霜，白雾静静飘过他们的脚边",
+     "duration_seconds": 8,
+     "generation_seconds": 8,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "Chenyu",
+      "Xuran"
+     ],
+     "asset_keys": [
+      "footbridge_frost",
+      "chenyu",
+      "xuran"
+     ],
+     "image_reference_keys": [
+      "footbridge_frost"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium shot, the two of them from the head to the knees, in the middle third of the frame, on the bridge. Chenyu (a Chinese man in his late twenties) at frame-center-right, standing on the frost-white deck of the footbridge in profile facing frame-left, both arms wrapped around Xuran's back with both hands holding her shoulder blades, his chin resting lightly against her forehead, in a charcoal wool overcoat completely sealed in clear glittering ice and thick white frost, long icicles hanging from the sleeves and the hem, his black hair stiff with white rime, his eyes gently closed, his face calm under a layer of white frost, tiny ice crystals clinging to his lashes and brows. Xuran (a Chinese woman in her late twenties) at frame-center-left, standing in profile facing frame-right pressed against his chest, both hands gripping the back of his overcoat, her face tilted up toward his, in a long camel wool coat completely sealed in clear glittering ice and thick white frost, icicles hanging from the hem, her long black hair stiff with white rime and frozen mid-air, her eyes gently closed, her face calm and peaceful under a layer of white frost, one tiny frozen tear on her cheek. A pale cold sun refracts through the clear ice around them. The frozen embrace glows softly blue-white against the dim grey towers. The frame holds the two of them frozen in their embrace, the frosted bridge and the icicle-hung towers. A pale dim white sun shows through a grey sky and drifting white mist lies low across the frozen city; the air is utterly still. Fixed stage layout: a long city pedestrian footbridge with its glass railing thick with white frost and its grey steel deck coated in white rime runs across the frame from frame-right to frame-left; below it a wide boulevard of frost-white silent cars; a skyline of glass towers hung with long icicles stands at the back of the frame under drifting white mist; the sky is pale grey.",
+     "visual_zh": "陈屿和许然保持着刚才同样的拥抱，一动不动，被封在晶莹发亮的冰里，脸被一层白霜盖着，平静，嘴里不再冒白气。只有薄薄的白雾慢慢飘过他们的脚边，空气里几粒细小的冰晶在闪。一轮苍白冰冷的太阳透过他们周身的透明冰层折出淡淡的彩虹光斑，落在白色的桥面上，冻住的拥抱泛着柔和的蓝白色光，衬着身后暗灰色的大楼。画面里恰好是Chenyu、Xuran，每个人只出现一次。",
+     "camera_zh": "0—8秒，镜头固定不动。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 8,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. [[asset:chenyu]] and [[asset:xuran]] stand perfectly still in the same embrace as before, sealed in clear glittering ice, their faces calm under a layer of white frost, their breath no longer clouding. Nothing moves except thin white mist drifting slowly past their feet and a few fine ice crystals glittering in the air. A pale cold sun refracts through the clear ice around them. The frozen embrace glows softly blue-white against the dim grey towers. [[asset:xuran]] keeps her face calm and peaceful under a layer of white frost, one tiny frozen tear on her cheek. Exactly two people are in the frame: Chenyu and Xuran, each shown once. The camera holds still.",
+       "visual_zh": "陈屿和许然保持着刚才同样的拥抱，一动不动，被封在晶莹发亮的冰里，脸被一层白霜盖着，平静，嘴里不再冒白气。只有薄薄的白雾慢慢飘过他们的脚边，空气里几粒细小的冰晶在闪。一轮苍白冰冷的太阳透过他们周身的透明冰层折出淡淡的彩虹光斑，落在白色的桥面上，冻住的拥抱泛着柔和的蓝白色光，衬着身后暗灰色的大楼。画面里恰好是Chenyu、Xuran，每个人只出现一次。 镜头固定不动。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "A deep hush, one sharp breath of wind and, very faint, the tick of ice settling around them. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here. Every on-set sound effect is loud, crisp and close to the microphone, as prominent as the voices: footsteps, impacts, doors, wind, ice, machinery and fabric are all clearly heard. No music.",
+     "sound_zh": "深深的寂静，一缕细细的风声，和很轻很轻的、冰在他们身边凝紧的细响。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。所有现场音效都响亮、清脆、贴近话筒，和人声一样突出：脚步、撞击、开关门、风声、冰裂、机械和衣料摩擦都听得清清楚楚。没有配乐。",
+     "seed": 37407,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "04｜天桥：冰封天桥的全景，桥中间两个相拥的冰雕小小的立在那里，白雾在桥面上慢慢飘，镜头缓缓推近",
+     "duration_seconds": 8,
+     "generation_seconds": 8,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "Chenyu",
+      "Xuran"
+     ],
+     "asset_keys": [
+      "footbridge_frost",
+      "chenyu",
+      "xuran"
+     ],
+     "image_reference_keys": [
+      "footbridge_frost"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Wide shot of the whole footbridge, the two frozen figures small in the middle third of the frame, on the bridge. Chenyu (a Chinese man in his late twenties) at frame-center-right, standing on the frost-white deck of the footbridge in profile facing frame-left, both arms wrapped around Xuran's back with both hands holding her shoulder blades, his chin resting lightly against her forehead, in a charcoal wool overcoat completely sealed in clear glittering ice and thick white frost, long icicles hanging from the sleeves and the hem, his black hair stiff with white rime, his eyes gently closed, his face calm under a layer of white frost, tiny ice crystals clinging to his lashes and brows. Xuran (a Chinese woman in her late twenties) at frame-center-left, standing in profile facing frame-right pressed against his chest, both hands gripping the back of his overcoat, her face tilted up toward his, in a long camel wool coat completely sealed in clear glittering ice and thick white frost, icicles hanging from the hem, her long black hair stiff with white rime and frozen mid-air, her eyes gently closed, her face calm and peaceful under a layer of white frost, one tiny frozen tear on her cheek. A pale dim sun hangs low behind the icicle-hung towers and their long cold shadows stretch across the frost-white deck. The frame holds the two frozen figures at the centre of the frosted bridge, the frost-white cars and the icicle-hung towers. A pale dim white sun shows through a grey sky and drifting white mist lies low across the frozen city; the air is utterly still. Fixed stage layout: a long city pedestrian footbridge with its glass railing thick with white frost and its grey steel deck coated in white rime runs across the frame from frame-right to frame-left; below it a wide boulevard of frost-white silent cars; a skyline of glass towers hung with long icicles stands at the back of the frame under drifting white mist; the sky is pale grey.",
+     "visual_zh": "陈屿和许然保持着拥抱，被封在晶莹的冰里，立在冰封天桥的正中间，一动不动，薄薄的白雾慢慢飘过白霜覆盖的桥面。桥下的大街两边是白霜覆盖的、一片寂静的车，身后的玻璃大楼挂满长长的冰柱。一轮苍白暗淡的太阳低低地挂在挂满冰柱的大楼后面，长长的冷色影子横过白霜覆盖的桥面。画面里恰好是Chenyu、Xuran，每个人只出现一次。",
+     "camera_zh": "0—8秒，镜头慢慢推近，直到两个冰封的身影占满画面中间三分之一。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 8,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. [[asset:chenyu]] and [[asset:xuran]] stand sealed in clear ice in their embrace at the centre of the frozen footbridge, perfectly still, while thin white mist drifts slowly across the frost-white deck. Below the bridge the boulevard is lined with frost-white silent cars, and behind it the glass towers hang with long icicles. A pale dim sun hangs low behind the icicle-hung towers and their long cold shadows stretch across the frost-white deck. [[asset:xuran]] keeps her face calm and peaceful under a layer of white frost, one tiny frozen tear on her cheek. Exactly two people are in the frame: Chenyu and Xuran, each shown once. The camera pushes in slowly until the two frozen figures fill the middle third of the frame.",
+       "visual_zh": "陈屿和许然保持着拥抱，被封在晶莹的冰里，立在冰封天桥的正中间，一动不动，薄薄的白雾慢慢飘过白霜覆盖的桥面。桥下的大街两边是白霜覆盖的、一片寂静的车，身后的玻璃大楼挂满长长的冰柱。一轮苍白暗淡的太阳低低地挂在挂满冰柱的大楼后面，长长的冷色影子横过白霜覆盖的桥面。画面里恰好是Chenyu、Xuran，每个人只出现一次。 镜头慢慢推近，直到两个冰封的身影占满画面中间三分之一。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "A deep hush, the long low sigh of the wind across the empty bridge and one clear far crack of ice from the towers. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here. Every on-set sound effect is loud, crisp and close to the microphone, as prominent as the voices: footsteps, impacts, doors, wind, ice, machinery and fabric are all clearly heard. No music.",
+     "sound_zh": "深深的寂静，风掠过空空的天桥长长低低的叹息，和远处大楼上传来的一声很轻的冰裂声。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。所有现场音效都响亮、清脆、贴近话筒，和人声一样突出：脚步、撞击、开关门、风声、冰裂、机械和衣料摩擦都听得清清楚楚。没有配乐。",
+     "seed": 37407,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "05｜太空：同一个构图，整个地球已经被白色的冰盖住，云层厚白，夜面没有一点灯火，极点上空一圈淡淡的绿色极光（固定镜头）",
+     "duration_seconds": 6,
+     "generation_seconds": 6,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [],
+     "asset_keys": [
+      "earth_white"
+     ],
+     "image_reference_keys": [
+      "earth_white"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Wide shot of the Earth from space, the pale curve across the lower half of the frame and the globe centered in the middle third of the frame, nobody in the scene.  The dark side lies in total blackness among the steady stars. The frame holds the white Earth, the stars, and nobody in the scene. A cold white glow rakes across the curve of the planet from frame-right and the stars burn steady and cold in the black. Fixed stage layout: the great curved limb of the Earth sweeps across the lower half of the frame like a huge pale arc, every ocean and continent buried under dull white and pale blue-grey ice and thick white swirling cloud, a thin faint blue line of atmosphere along its edge, the sunlit side bright at frame-right and the night side completely dark at frame-left with no city lights at all, a faint green aurora ring shimmering over the top of the globe; the upper half of the frame is black space full of tiny stars; nobody in the scene.",
+     "visual_zh": "地球静静地悬在布满星星的黑色太空里，整个表面被灰白和浅蓝灰色的冰盖住，厚厚的白色云带慢慢地爬过，夜面没有一点灯火，极点上空一圈淡淡的绿色极光在轻轻地一明一暗。别的什么都不动。夜面完全沉在黑暗里，星星稳稳地亮着。",
+     "camera_zh": "0—6秒，镜头固定不动。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 6,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. The Earth hangs silent in the black star-filled space, its whole surface buried under dull white and pale blue-grey ice, thick white cloud bands creeping very slowly over it, the dark side without a single light and a faint green aurora ring pulsing gently over the pole. Nothing else moves. The dark side lies in total blackness among the steady stars. The camera holds still.",
+       "visual_zh": "地球静静地悬在布满星星的黑色太空里，整个表面被灰白和浅蓝灰色的冰盖住，厚厚的白色云带慢慢地爬过，夜面没有一点灯火，极点上空一圈淡淡的绿色极光在轻轻地一明一暗。别的什么都不动。夜面完全沉在黑暗里，星星稳稳地亮着。 镜头固定不动。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "A deep, low, silent hum of space, a long clear groan of ice settling and then a stillness that goes on and on. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here. Every on-set sound effect is loud, crisp and close to the microphone, as prominent as the voices: footsteps, impacts, doors, wind, ice, machinery and fabric are all clearly heard. No music.",
+     "sound_zh": "太空里深深的、低低的寂静嗡鸣，一声长长的、很轻的冰层凝紧的呻吟，然后是一片绵绵不断的寂静。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。所有现场音效都响亮、清脆、贴近话筒，和人声一样突出：脚步、撞击、开关门、风声、冰裂、机械和衣料摩擦都听得清清楚楚。没有配乐。",
+     "seed": 37407,
+     "dialogue_language": "zh"
+    }
+   ],
+   "dialogue_language": "zh"
+  },
+  {
+   "title": "补拍3b｜搞笑恶搞：街边吃烧烤的老哥背对寒潮，对着镜头喊台词，冻成冰雕（插入补拍2的降临段，放在人群奔跑之后、落地窗之前）",
+   "summary": "正午街边，老哥坐在塑料凳上美滋滋吃烧烤，镜头在他前面，身后远处一道白色雾墙滚过来；雾墙逼近，车和树一路结霜，他停住嚼的动作，对着镜头喊“卧槽，大场面，大制作啊。我看到显卡在燃烧！”，然后耸肩继续吃；同一机位，他已经冻成冰雕，手里还举着烤串、咧着嘴竖着大拇指。",
+   "script": "街边烧烤，老哥坐在塑料凳上美滋滋地吃烤串，腮帮子鼓鼓的，身后街的尽头一道白色雾墙正滚过来，他没发现，老哥用牙从串上撕下一块肉，美滋滋地嚼着，一脸傻乐，然后拿起啤酒瓶灌了一口。他身后街的尽头，一大片白色雾墙稳稳地朝这边滚过来，他一点都没发现。和这条热烘烘的亮堂堂的街形成对比。画面里恰好是Street，每个人只出现一次。\n街边烧烤，雾墙逼近，车和树一路结霜，老哥突然停住，对着镜头喊卧槽大场面大制作啊，我看到显卡在燃烧，喊完耸耸肩继续啃，他身后，巨大的白色雾墙沿着街飞快压过来，停着的车和行道树一辆接一辆、一棵接一棵地变白；他举着烤串停在离嘴一寸远的地方，瞪圆了眼睛直直地看向镜头，Street用洪亮、夸张又兴奋的声音正对着镜头像主持人一样说出第一句，接着Street用带着滑稽的狂喜大喊的声音正对着镜头像主持人一样说出第二句；最后一句之后，他耸耸肩，把烤串塞进嘴里继续嚼，霜顺着他身后的凳子爬上来，白雾扫过他的肩膀。 台词一句紧接着一句，中间只有很短的换气，每句一口气说完、句中不停顿。 台词语速偏快利落，比平常说话快两成左右，没有拖沓的停顿。把冷冷的蓝白光打在他的脸上，他身后的车和树上飞快漫过一层白霜的光。画面里恰好是Street，每个人只出现一次。\nStreetguy：“卧槽大场面大制作啊。”\nStreetguy：“我看到显卡在燃烧！”\n街边烧烤，同一个机位，老哥已经成了冰雕，咧着嘴，一手举着烤串一手竖大拇指，镜头缓缓升高，整条街都冻住了，老哥一动不动地坐在凳子上，被封在晶莹发亮的冰里，脸上凝固着一个傻乎乎的咧嘴笑，右手举着烤串，左手高高竖着大拇指，嘴里不再冒白气。只有薄薄的白雾慢慢飘过结霜的桌子。镜头升高，露出他身后整条街白霜覆盖的车、冻住的树和挂满冰柱的大楼。一轮苍白冰冷的太阳透过他周身的透明冰层折出淡淡的彩虹光斑，落在结霜的桌子上，那个冻住的傻乎乎的笑容泛着柔和的蓝白色光，衬着暗灰色的街道。画面里恰好是Street，每个人只出现一次。",
+   "segments": [
+    {
+     "title": "01｜街边烧烤：老哥坐在塑料凳上美滋滋地吃烤串，腮帮子鼓鼓的，身后街的尽头一道白色雾墙正滚过来，他没发现",
+     "duration_seconds": 6,
+     "generation_seconds": 6,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "Streetguy"
+     ],
+     "asset_keys": [
+      "bbq_street",
+      "street_guy"
+     ],
+     "image_reference_keys": [
+      "bbq_street"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium shot, the man from the head to the waist, in the middle third of the frame, at the table. Street (a Chinese man in his thirties) at frame-center, sitting on the plastic stool at the low table front-on to the viewer, a skewer in his right hand raised to his mouth and a beer bottle in his left hand resting on the table, in a loud red-and-yellow floral beach shirt with a thin gold chain and flip-flops, his messy short black hair and stubble beard, his bright dark-brown eyes on the skewer in his hand, his cheeks bulging with food, his eyes half closed in bliss, his brows relaxed. The frame holds the man at the table, the grill and the long street with the wall of mist far behind him. A bright hot noon sun beats down and cooking smoke drifts lazily through the heat. Fixed stage layout: a low folding table with a paper plate of skewers and a beer bottle and a plastic stool stand in the middle of the frame, a smoking charcoal grill at frame-left; behind the table a long wide city street recedes down the middle of the frame lined with parked cars, green street trees and glass towers, and a huge white wall of mist is rolling toward the camera at the far end of the street.",
+     "visual_zh": "老哥用牙从串上撕下一块肉，美滋滋地嚼着，一脸傻乐，然后拿起啤酒瓶灌了一口。他身后街的尽头，一大片白色雾墙稳稳地朝这边滚过来，他一点都没发现。和这条热烘烘的亮堂堂的街形成对比。画面里恰好是Street，每个人只出现一次。",
+     "camera_zh": "0—6秒，镜头慢慢推近，直到这个男人占满画面中间三分之一。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 6,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. [[asset:street_guy]] tears a piece of meat off the skewer with his teeth and chews it with a blissful, goofy face, then lifts the beer bottle and takes a swig. Far behind him at the end of the street the huge white wall of mist rolls steadily closer and he has not noticed. One person is in the frame: Street, each shown once. The camera pushes in slowly until the man fills the middle third of the frame.",
+       "visual_zh": "老哥用牙从串上撕下一块肉，美滋滋地嚼着，一脸傻乐，然后拿起啤酒瓶灌了一口。他身后街的尽头，一大片白色雾墙稳稳地朝这边滚过来，他一点都没发现。和这条热烘烘的亮堂堂的街形成对比。画面里恰好是Street，每个人只出现一次。 镜头慢慢推近，直到这个男人占满画面中间三分之一。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "The sizzle of the charcoal grill, happy loud munching and, far behind, a low rumble rolling closer. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here. Every on-set sound effect is loud, crisp and close to the microphone, as prominent as the voices: footsteps, impacts, doors, wind, ice, machinery and fabric are all clearly heard. No music.",
+     "sound_zh": "炭烤炉滋滋的响声、大声又满足的咀嚼声，和远处越来越近的低沉轰鸣。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。所有现场音效都响亮、清脆、贴近话筒，和人声一样突出：脚步、撞击、开关门、风声、冰裂、机械和衣料摩擦都听得清清楚楚。没有配乐。",
+     "seed": 37407,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "02｜街边烧烤：雾墙逼近，车和树一路结霜，老哥突然停住，对着镜头喊卧槽大场面大制作啊，我看到显卡在燃烧，喊完耸耸肩继续啃",
+     "duration_seconds": 7,
+     "generation_seconds": 7,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "Streetguy"
+     ],
+     "asset_keys": [
+      "bbq_street",
+      "street_guy"
+     ],
+     "image_reference_keys": [
+      "bbq_street"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium shot, the man from the head to the waist, in the middle third of the frame, at the table. Street (a Chinese man in his thirties) at frame-center, sitting on the plastic stool at the low table front-on to the viewer, a skewer held in his raised right hand an inch from his mouth and his left hand gripping the edge of the table, in a loud red-and-yellow floral beach shirt with a thin gold chain and flip-flops, his messy short black hair and stubble beard, his bright dark-brown eyes staring straight at the camera lens like a presenter, his eyes bulging, his jaw dropped and his eyebrows shooting up in over-the-top comic awe. A huge white wall of mist fills the back half of the street behind him. The frame holds one person: Street. A bright hot noon sun beats down and cooking smoke drifts lazily through the heat. Fixed stage layout: a low folding table with a paper plate of skewers and a beer bottle and a plastic stool stand in the middle of the frame, a smoking charcoal grill at frame-left; behind the table the huge white wall of mist has rolled up close and fills the back half of the street, frost racing white across the parked cars and the street trees right behind the table.",
+     "visual_zh": "他身后，巨大的白色雾墙沿着街飞快压过来，停着的车和行道树一辆接一辆、一棵接一棵地变白；他举着烤串停在离嘴一寸远的地方，瞪圆了眼睛直直地看向镜头，Street用洪亮、夸张又兴奋的声音正对着镜头像主持人一样说出第一句，接着Street用带着滑稽的狂喜大喊的声音正对着镜头像主持人一样说出第二句；最后一句之后，他耸耸肩，把烤串塞进嘴里继续嚼，霜顺着他身后的凳子爬上来，白雾扫过他的肩膀。 台词一句紧接着一句，中间只有很短的换气，每句一口气说完、句中不停顿。 台词语速偏快利落，比平常说话快两成左右，没有拖沓的停顿。把冷冷的蓝白光打在他的脸上，他身后的车和树上飞快漫过一层白霜的光。画面里恰好是Street，每个人只出现一次。",
+     "camera_zh": "0—7秒，镜头固定不动。",
+     "dialogue": [
+      {
+       "speaker": "Streetguy",
+       "text": "卧槽大场面大制作啊。",
+       "start_seconds": 0.4,
+       "end_seconds": 2.88,
+       "language": "zh"
+      },
+      {
+       "speaker": "Streetguy",
+       "text": "我看到显卡在燃烧！",
+       "start_seconds": 3.03,
+       "end_seconds": 5.26,
+       "language": "zh"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 7,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. Behind him the huge white wall of mist races down the street while frost whitens the parked cars and street trees one after another; he freezes with the skewer an inch from his mouth, turns his wide eyes straight into the camera and [[asset:street_guy]] speaks the first line straight into the camera lens like a presenter in a booming, hilariously over-excited voice, then [[asset:street_guy]] speaks the second line straight into the camera lens like a presenter in a screaming with comic glee voice; after the last line he shrugs, jams the skewer into his mouth and keeps chewing while frost creeps over the back of his stool and white mist rolls across the street behind him. The lines follow one another at once with only a very short breath between them, each said in one breath with no pause inside the sentence. The dialogue is delivered at a fast, snappy pace, about twenty percent quicker than normal speech, with no lingering pauses. One person is in the frame: Street, each shown once. The camera holds still.",
+       "visual_zh": "他身后，巨大的白色雾墙沿着街飞快压过来，停着的车和行道树一辆接一辆、一棵接一棵地变白；他举着烤串停在离嘴一寸远的地方，瞪圆了眼睛直直地看向镜头，Street用洪亮、夸张又兴奋的声音正对着镜头像主持人一样说出第一句，接着Street用带着滑稽的狂喜大喊的声音正对着镜头像主持人一样说出第二句；最后一句之后，他耸耸肩，把烤串塞进嘴里继续嚼，霜顺着他身后的凳子爬上来，白雾扫过他的肩膀。 台词一句紧接着一句，中间只有很短的换气，每句一口气说完、句中不停顿。 台词语速偏快利落，比平常说话快两成左右，没有拖沓的停顿。把冷冷的蓝白光打在他的脸上，他身后的车和树上飞快漫过一层白霜的光。画面里恰好是Street，每个人只出现一次。 镜头固定不动。",
+       "dialogue_indices": [
+        0,
+        1
+       ]
+      }
+     ],
+     "sound_en": "The roar of the rolling mist, the crackling snap of frost racing over cars and the crunch of ice behind him. Every on-set sound effect is loud, crisp and close to the microphone, as prominent as the voices: footsteps, impacts, doors, wind, ice, machinery and fabric are all clearly heard. No music. The voices are clear.",
+     "sound_zh": "雾墙滚过来的呼啸、霜在车上飞快蔓延的噼啪脆响和他身后冰层咔咔作响的声音。所有现场音效都响亮、清脆、贴近话筒，和人声一样突出：脚步、撞击、开关门、风声、冰裂、机械和衣料摩擦都听得清清楚楚。没有配乐。人声清楚。",
+     "seed": 37407,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "03｜街边烧烤：同一个机位，老哥已经成了冰雕，咧着嘴，一手举着烤串一手竖大拇指，镜头缓缓升高，整条街都冻住了",
+     "duration_seconds": 8,
+     "generation_seconds": 8,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "Streetguy"
+     ],
+     "asset_keys": [
+      "bbq_street_frost",
+      "street_guy"
+     ],
+     "image_reference_keys": [
+      "bbq_street_frost"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium shot, the man from the head to the waist, in the middle third of the frame, at the frosted table. Street (a Chinese man in his thirties) at frame-center, sitting on the plastic stool at the low table front-on to the viewer, a skewer in his right hand held in front of his open mouth and his left thumb raised high, in a loud floral beach shirt completely sealed in clear glittering ice and thick white frost, icicles hanging from his sleeves and the table edge, his messy black hair stiff with white rime, his bright dark-brown eyes staring straight at the camera lens, his mouth stretched in a frozen goofy grin, his eyes bulging, white frost over his hair and stubble. A pale cold sun refracts through the clear ice around him. The frozen goofy grin glows softly blue-white against the dim grey street. The frame holds the frozen man at the frosted table, and the frost-white street behind him. A pale dim white sun shows through a grey sky and drifting white mist lies low along the frozen street; the air is utterly still. Fixed stage layout: a low folding table, a plastic stool and a charcoal grill at frame-left stand in the middle of the frame, all coated in white frost; behind them a long wide city street of frost-white silent cars, white frozen street trees and glass towers hung with long icicles recedes down the middle of the frame under drifting white mist.",
+     "visual_zh": "老哥一动不动地坐在凳子上，被封在晶莹发亮的冰里，脸上凝固着一个傻乎乎的咧嘴笑，右手举着烤串，左手高高竖着大拇指，嘴里不再冒白气。只有薄薄的白雾慢慢飘过结霜的桌子。镜头升高，露出他身后整条街白霜覆盖的车、冻住的树和挂满冰柱的大楼。一轮苍白冰冷的太阳透过他周身的透明冰层折出淡淡的彩虹光斑，落在结霜的桌子上，那个冻住的傻乎乎的笑容泛着柔和的蓝白色光，衬着暗灰色的街道。画面里恰好是Street，每个人只出现一次。",
+     "camera_zh": "0—8秒，镜头像吊臂一样缓缓升高，直到整条冰封的街和前面桌边那个小小的冻住的男人占满画面。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 8,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. [[asset:street_guy]] sits perfectly still on the stool, sealed in clear glittering ice with a frozen goofy grin, a skewer in his right hand and his left thumb raised, his breath no longer clouding. Nothing moves except thin white mist drifting past the frosted table. The camera rises, revealing behind him the whole street of frost-white cars, frozen trees and icicle-hung towers. A pale cold sun refracts through the clear ice around him. The frozen goofy grin glows softly blue-white against the dim grey street. One person is in the frame: Street, each shown once. The camera rises slowly on a crane until the whole frozen street with the small frozen man at the table in front of it fills the frame.",
+       "visual_zh": "老哥一动不动地坐在凳子上，被封在晶莹发亮的冰里，脸上凝固着一个傻乎乎的咧嘴笑，右手举着烤串，左手高高竖着大拇指，嘴里不再冒白气。只有薄薄的白雾慢慢飘过结霜的桌子。镜头升高，露出他身后整条街白霜覆盖的车、冻住的树和挂满冰柱的大楼。一轮苍白冰冷的太阳透过他周身的透明冰层折出淡淡的彩虹光斑，落在结霜的桌子上，那个冻住的傻乎乎的笑容泛着柔和的蓝白色光，衬着暗灰色的街道。画面里恰好是Street，每个人只出现一次。 镜头像吊臂一样缓缓升高，直到整条冰封的街和前面桌边那个小小的冻住的男人占满画面。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "A deep hush, one sharp breath of wind and a tiny tick of ice settling, then the clear far crack of a frozen tree. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here. Every on-set sound effect is loud, crisp and close to the microphone, as prominent as the voices: footsteps, impacts, doors, wind, ice, machinery and fabric are all clearly heard. No music.",
+     "sound_zh": "深深的寂静，一缕细细的风声，一声极小的冰层凝紧的细响，然后远处一棵冻住的树传来一声很轻的开裂声。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。所有现场音效都响亮、清脆、贴近话筒，和人声一样突出：脚步、撞击、开关门、风声、冰裂、机械和衣料摩擦都听得清清楚楚。没有配乐。",
+     "seed": 37407,
+     "dialogue_language": "zh"
+    }
+   ],
+   "dialogue_language": "zh"
+  }
+ ]
+}

@@ -29,7 +29,11 @@ while True:   # 素材生成时引用的参考图也要留
 d['assets'] = [a for a in d['assets'] if a['key'] in keys]
 d['characters'] = {k: v for k, v in chars.items() if k in names}
 import os
-out = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(src))), '单独版_新建一部剧直接贴', os.path.basename(src).replace('.json', '_单独版.json'))
+sd = os.path.dirname(os.path.abspath(src))
+if os.path.basename(sd) == '修订版': sd = os.path.dirname(sd)      # 修订版稿 → 单独版_…/修订版/
+dd = os.path.join(os.path.dirname(sd), '单独版_新建一部剧直接贴') + ('/修订版' if os.path.basename(os.path.dirname(os.path.abspath(src))) == '修订版' else '')
+os.makedirs(dd, exist_ok=True)
+out = os.path.join(dd, os.path.basename(src).replace('.json', '_单独版.json'))
 txt = json.dumps(d, ensure_ascii=False, indent=1)
 open(out, 'w', encoding='utf-8').write(txt)
 open(out.replace('.json', '_全选复制粘贴.txt'), 'w', encoding='utf-8').write(txt)

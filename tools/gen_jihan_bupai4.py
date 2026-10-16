@@ -62,7 +62,7 @@ FAIR_WHEEL = Scene('frozen_fair', FAIR.end,
                    " Fixed stage layout: the foot of a giant Ferris wheel thick with white frost fills the middle of the frame, a frosted carousel with frost-furred horses stands at frame-left, a deserted snowy path runs through the middle of the frame, and icicle-hung gondolas hang high above.")
 HIGHWAY = Scene('highway_calm', " A pale white sun glows through a high thin haze and the air over the road is perfectly still.",
                 " Fixed stage layout: a wide multi-lane highway runs straight down the middle of the frame to the vanishing point, packed with a long unbroken line of cars and trucks encased in clear ice, snow-covered guardrails and a flat grey-blue plain on both sides; nobody in the scene.")
-STARS = Scene('star_night', " Starlight lays a faint cold blue glow over the snow, and the air is dry and absolutely still.",
+STARS = Scene('star_night', " The snow is faintly blue under the starlight, and the air is dry and absolutely still.",
               " Fixed stage layout: a vast snowfield glowing faint blue fills the lower third of the frame with a dark ridge silhouette along the back, and an unbelievably dense Milky Way arcs across the black sky above with thousands of stars; no lights anywhere; nobody in the scene.")
 SUNRISE = Scene('sunrise_ice', " A dull white sun climbs over the horizon and the cold air glows pink and gold.",
                 " Fixed stage layout: an endless frozen plain stretches across the frame with pale pressure ridges of ice and long soft shadows, a dull white sun rising on the horizon at the back and the ice flushed pink and gold; nobody in the scene.")

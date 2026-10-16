@@ -462,7 +462,7 @@ TA('C-04', '04｜钢门前（替换剧本第10集06号的前半）：林峰把�
    SOUND_DOOR2, AES_C04,
    lines=[('lin_home', "跟我来。", 0.8, 'Su'), ('su_cozy', "去哪儿？", 0.8, 'Lin'), ('lin_home', "我们的伊甸园。", 0.8, 'Su'), ('su_cozy', "你真的做到了？", 0.8, 'Lin')],
    cam=push('both of them', '两人'), room={'Su', 'Lin'}, new=True,
-   bg='The heavy steel door with the keypad stands at frame-right with a thin line of pink-violet light glowing around its edges.',
+   bg='The heavy steel door with the keypad stands at frame-right with a small pink-violet lit panel.',
    holds='The frame holds exactly two people, Su and Lin, and nobody else, in the concrete corridor beside the steel door with the keypad.')
 
 insert2('C-05', '05｜插镜（替换剧本第10集06号的后半）：钢门敞开了，粉紫色的光像潮水一样涌出来，铺满走廊的地面，光里隐约有绿叶', 6, EDENDOOR,

@@ -200,7 +200,7 @@ DL('F-02', '02｜街边烧烤：雾墙逼近，车和树一路结霜，老哥突
       "巨大的白色雾墙占满了画面后半部，把冷冷的蓝白光打在他的脸上，炭烤炉温暖的橙光还在勾着他圆圆的脸颊，他身后的车和树上飞快漫过一层白霜的光。"),
    pre_en="Behind him the huge white wall of mist races down the street while frost whitens the parked cars and street trees one after another; he freezes with the skewer an inch from his mouth, turns his wide eyes straight into the camera and",
    pre_zh="他身后，巨大的白色雾墙沿着街飞快压过来，停着的车和行道树一辆接一辆、一棵接一棵地变白；他举着烤串停在离嘴一寸远的地方，瞪圆了眼睛直直地看向镜头，",
-   post_en='after the last line he shrugs, jams the skewer into his mouth and keeps chewing while frost creeps over the back of his stool and white mist sweeps over his shoulders',
+   post_en='after the last line he shrugs, jams the skewer into his mouth and keeps chewing while frost creeps over the back of his stool and white mist rolls across the street behind him',
    post_zh='最后一句之后，他耸耸肩，把烤串塞进嘴里继续嚼，霜顺着他身后的凳子爬上来，白雾扫过他的肩膀',
    cam=FIX, ld={'viewer': ('straight into the camera lens like a presenter', '正对着镜头像主持人一样')}, bg='A huge white wall of mist fills the back half of the street behind him.', tail=1.5)
 

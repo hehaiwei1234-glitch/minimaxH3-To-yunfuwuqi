@@ -20,9 +20,10 @@ H3 方面的风险（交稿时单列，不算我的错）：
 import os, sys, json
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from _jihan_base5 import *
-from _scene import smooth_task
+from _scene import smooth_task, calm
 
 import _h3draft as _H
+import _voiceins as VI
 _H.configure(smooth=True, fixed_seed=37407)   # hh 2026-10-14 16:20：台词顺滑写法＋全批固定视频种子
 OUT = '合并稿/013_第29-32集_草莓酱电磁处决黑色巨兽冰原狂飙_制作稿_追加'
 S = Session('合并稿/012_第25-28集_拔线子留声机冰震冰窖阀门面包香_制作稿_追加.json', OUT, 45000)
@@ -62,6 +63,7 @@ AES_SNOWRV = ("A green aurora curtain ripples over the snowfield and its light g
 
 
 def TA(tid, title, dur, scene, people, framing, act_en, zh, sound, aes, **kw):
+    if os.environ.get('H3_REV'): aes = calm(aes)      # 2026-10-16 修订：光边／轮廓／闪光这类描写整句删掉（见 _scene.calm）
     kw['bg'] = (kw.get('bg', '') + ' ' + aes[0]).strip()
     return S.T(tid, title, dur, scene, people, framing, act_en.rstrip() + ' ' + aes[0], zh.rstrip() + aes[1], sound, **kw)
 
@@ -72,7 +74,13 @@ def TAV(tid, title, scene, people, framing, act_en, zh, sound, aes, lines, **kw)
     return TA(tid, title, d, scene, people, framing, a, z, sound, aes, vo=new, **kw)
 
 
+def VINS(tid, run, scene, sound, room, new):
+    """“只有声音”的台词（收音机里的指挥官）→ 不带人的插镜（2026-10-16 修订，见 _voiceins.py；原稿把声音放在有人的任务里，被配给了画面里的脸）。"""
+    return VI.vins(S, tid, run, scene, sound, room, new)
+
+
 def insert2(tid, title, dur, scene, framing, act_en, zh, snd, holds, cam, aes, extra_assets=(), groups=()):
+    if os.environ.get('H3_REV'): aes = calm(aes)
     return S.T(tid, title, dur, scene, [], framing, act_en.rstrip() + ' ' + aes[0], zh.rstrip() + aes[1], snd, cam=cam, holds=holds,
                room={g[0] for g in groups}, groups=list(groups), new=True, bg=aes[0], extra_assets=extra_assets)
 
@@ -318,27 +326,57 @@ TA('30-07', '07｜餐桌边：林峰坐回桌边吃剩下的半片面包，苏�
    bg='Behind them the black-and-gold stove glows warm at frame-left and the wall of small monitors glows cool blue at frame-right.',
    holds='The frame holds exactly two people: Su and Lin, at the dining table, nobody else.')
 
-TAV('30-08', '08｜控制室：收音机的琥珀色刻度盘忽然亮起，传出一个威严的声音喊猎犬一号收到请回答，猎犬一号已失联，林峰和苏清月同时转头', CONTROL_R,
-    [P('lin_home', 'right', "standing at the steel side table in profile facing frame-left, one hand holding the last piece of bread, his eyes on the radio", 'obj:the olive-green military radio on the side table', "his jaw tight, his lips set flat, his brows low", outfit="in a soft grey henley and dark lounge pants"),
-     P('su_cozy', 'left', "standing beside him in profile facing frame-right, her arms folded tight, her eyes on the radio", 'obj:the olive-green military radio on the side table', "her lips parting, her brows pulled together")],
-    'Medium two-shot, both from the head to the knees, in the middle third of the frame, at the control console with the radio beside them.',
-    "A stern, cold, authoritative middle-aged man's voice from the radio speaks the first line as a voice-over, then the second line, edged with static. <lin_home> stands without moving, his jaw tight, his lips set flat and his brows low. <su_cozy> freezes beside him, her lips parting and her brows pulled together.",
-    "收音机里传出一个威严冰冷的中年男声，以旁白的方式说出第一句，接着说出第二句，带着沙沙的杂音。林峰站着一动不动，下颌绷紧、嘴唇抿平、眉头压低。苏清月在他身边僵住，嘴唇微张、眉头拧在一起。",
-    SOUND_RADIO, AES_TEAL, lines=[('radio_cmd', "猎犬一号，收到请回答。", 0.8, 'Lin'), ('radio_cmd', "猎犬一号已失联。", 3.2, 'Lin')],
-    cam=push('both of them', '两人'), extra_assets=('radio_set',), room={'Su', 'Lin'}, new=True,
-    bg='Beside them on the steel side table the olive-green military radio glows with its amber dial, and the wall of six small monitors glows at frame-left.',
-    holds='The frame holds exactly two people: Su and Lin, at the control console with the radio beside them, nobody else.')
+if os.environ.get('H3_REV'):
+    VINS('30-08v', [('radio_cmd', "猎犬一号，收到请回答。", 'stern, authoritative', '威严冰冷'), ('radio_cmd', "猎犬一号已失联。", 'stern, authoritative', '威严冰冷')],
+         CONTROL_R, SOUND_RADIO, {'Su', 'Lin'}, True)
 
-TAV('30-09', '09｜控制室：收音机里的声音说目标极度危险，启动备用计划，带上钻地导弹去深山；苏清月和林峰对视，红灯闪起、警报声响起', CONTROL_R,
-    [P('lin_home', 'right', "standing at the steel side table in profile facing frame-left, turning his head to meet her eyes", 'Su', "his jaw tight, his eyes cold and steady, his brows low", outfit="in a soft grey henley and dark lounge pants"),
-     P('su_cozy', 'left', "standing beside him in profile facing frame-right, turning her head to meet his eyes", 'Lin', "her lips pressed tight, her face pale, her brows pulled together")],
-    'Close medium two-shot, both from the head to the chest, in the middle third of the frame, at the control console with the radio beside them.',
-    "A stern, cold, authoritative middle-aged man's voice from the radio speaks the first line as a voice-over, then the second line, edged with static, while a small red alarm lamp on the wall begins to pulse. <su_cozy> and <lin_home> turn their heads and hold each other's eyes, her lips pressed tight, her face pale and her brows pulled together, and his jaw tight, his eyes cold and steady and his brows low.",
-    "收音机里传出一个威严冰冷的中年男声，以旁白的方式说出第一句，接着说出第二句，带着沙沙的杂音，墙上的一盏小红灯开始一闪一闪。苏清月和林峰转过头，目光对在一起，她嘴唇紧抿、脸色发白、眉头拧在一起，他下颌绷紧、眼神冰冷而沉稳、眉头压低。",
-    SOUND_RADIO_ALARM, AES_TEAL, lines=[('radio_cmd', "目标极度危险，启动备用计划。", 0.8, 'Lin'), ('radio_cmd', "带上钻地导弹，去深山。", 4.2, 'Lin')],
-    cam=push('both of them', '两人'), extra_assets=('radio_set',), room={'Su', 'Lin'}, new=True,
-    bg='Beside them on the steel side table the olive-green military radio glows with its amber dial, a small red alarm lamp on the wall behind them pulses red, and the wall of six small monitors glows at frame-left.',
-    holds='The frame holds exactly two people: Su and Lin, at the control console, nobody else.')
+    TA('30-08', '08｜控制室：林峰和苏清月同时转头盯着收音机，一动不动', 5, CONTROL_R,
+       [P('lin_home', 'right', "standing at the steel side table in profile facing frame-left, one hand holding the last piece of bread, his eyes on the radio", 'obj:the olive-green military radio on the side table', "his jaw tight, his lips set flat, his brows low", outfit="in a soft grey henley and dark lounge pants"),
+        P('su_cozy', 'left', "standing beside him in profile facing frame-right, her arms folded tight, her eyes on the radio", 'obj:the olive-green military radio on the side table', "her lips parting, her brows pulled together")],
+       'Medium two-shot, both from the head to the knees, in the middle third of the frame, at the control console with the radio beside them.',
+       "<lin_home> stands without moving, his jaw tight, his lips set flat and his brows low. <su_cozy> freezes beside him, her lips parting and her brows pulled together. Neither of them speaks.",
+       "林峰站着一动不动，下颌绷紧、嘴唇抿平、眉头压低。苏清月在他身边僵住，嘴唇微张、眉头拧在一起。两个人都没有说话。",
+       VI.unvoice(SOUND_RADIO), AES_TEAL,
+       cam=push('both of them', '两人'), extra_assets=('radio_set',), room={'Su', 'Lin'}, new=False,
+       bg='Beside them on the steel side table the olive-green military radio stands with its amber dial, and the wall of six small monitors is lit at frame-left.',
+       holds='The frame holds exactly two people: Su and Lin, at the control console with the radio beside them, nobody else.')
+else:
+    TAV('30-08', '08｜控制室：收音机的琥珀色刻度盘忽然亮起，传出一个威严的声音喊猎犬一号收到请回答，猎犬一号已失联，林峰和苏清月同时转头', CONTROL_R,
+        [P('lin_home', 'right', "standing at the steel side table in profile facing frame-left, one hand holding the last piece of bread, his eyes on the radio", 'obj:the olive-green military radio on the side table', "his jaw tight, his lips set flat, his brows low", outfit="in a soft grey henley and dark lounge pants"),
+         P('su_cozy', 'left', "standing beside him in profile facing frame-right, her arms folded tight, her eyes on the radio", 'obj:the olive-green military radio on the side table', "her lips parting, her brows pulled together")],
+        'Medium two-shot, both from the head to the knees, in the middle third of the frame, at the control console with the radio beside them.',
+        "A stern, cold, authoritative middle-aged man's voice from the radio speaks the first line as a voice-over, then the second line, edged with static. <lin_home> stands without moving, his jaw tight, his lips set flat and his brows low. <su_cozy> freezes beside him, her lips parting and her brows pulled together.",
+        "收音机里传出一个威严冰冷的中年男声，以旁白的方式说出第一句，接着说出第二句，带着沙沙的杂音。林峰站着一动不动，下颌绷紧、嘴唇抿平、眉头压低。苏清月在他身边僵住，嘴唇微张、眉头拧在一起。",
+        SOUND_RADIO, AES_TEAL, lines=[('radio_cmd', "猎犬一号，收到请回答。", 0.8, 'Lin'), ('radio_cmd', "猎犬一号已失联。", 3.2, 'Lin')],
+        cam=push('both of them', '两人'), extra_assets=('radio_set',), room={'Su', 'Lin'}, new=False,
+        bg='Beside them on the steel side table the olive-green military radio glows with its amber dial, and the wall of six small monitors glows at frame-left.',
+        holds='The frame holds exactly two people: Su and Lin, at the control console with the radio beside them, nobody else.')
+
+if os.environ.get('H3_REV'):
+    VINS('30-09v', [('radio_cmd', "目标极度危险，启动备用计划。", 'stern, authoritative', '威严冰冷'), ('radio_cmd', "带上钻地导弹，去深山。", 'stern, authoritative', '威严冰冷')],
+         CONTROL_R, SOUND_RADIO_ALARM, {'Su', 'Lin'}, False)
+
+    TA('30-09', '09｜控制室：苏清月和林峰转头对视，墙上的红灯一闪一闪，警报声响起', 5, CONTROL_R,
+       [P('lin_home', 'right', "standing at the steel side table in profile facing frame-left, turning his head to meet her eyes", 'Su', "his jaw tight, his eyes cold and steady, his brows low", outfit="in a soft grey henley and dark lounge pants"),
+        P('su_cozy', 'left', "standing beside him in profile facing frame-right, turning her head to meet his eyes", 'Lin', "her lips pressed tight, her face pale, her brows pulled together")],
+       'Close medium two-shot, both from the head to the chest, in the middle third of the frame, at the control console with the radio beside them.',
+       "A small red alarm lamp on the wall behind them begins to pulse. <su_cozy> and <lin_home> turn their heads and hold each other's eyes, her lips pressed tight, her face pale and her brows pulled together, and his jaw tight, his eyes cold and steady and his brows low. Neither of them speaks.",
+       "他们身后墙上的一盏小红灯开始一闪一闪。苏清月和林峰转过头，目光对在一起，她嘴唇紧抿、脸色发白、眉头拧在一起，他下颌绷紧、眼神冰冷而沉稳、眉头压低。两个人都没有说话。",
+       VI.unvoice(SOUND_RADIO_ALARM), AES_TEAL,
+       cam=push('both of them', '两人'), extra_assets=('radio_set',), room={'Su', 'Lin'}, new=False,
+       bg='Beside them on the steel side table the olive-green military radio stands with its amber dial, a small red alarm lamp on the wall behind them pulses red, and the wall of six small monitors is lit at frame-left.',
+       holds='The frame holds exactly two people: Su and Lin, at the control console, nobody else.')
+else:
+    TAV('30-09', '09｜控制室：收音机里的声音说目标极度危险，启动备用计划，带上钻地导弹去深山；苏清月和林峰对视，红灯闪起、警报声响起', CONTROL_R,
+        [P('lin_home', 'right', "standing at the steel side table in profile facing frame-left, turning his head to meet her eyes", 'Su', "his jaw tight, his eyes cold and steady, his brows low", outfit="in a soft grey henley and dark lounge pants"),
+         P('su_cozy', 'left', "standing beside him in profile facing frame-right, turning her head to meet his eyes", 'Lin', "her lips pressed tight, her face pale, her brows pulled together")],
+        'Close medium two-shot, both from the head to the chest, in the middle third of the frame, at the control console with the radio beside them.',
+        "A stern, cold, authoritative middle-aged man's voice from the radio speaks the first line as a voice-over, then the second line, edged with static, while a small red alarm lamp on the wall begins to pulse. <su_cozy> and <lin_home> turn their heads and hold each other's eyes, her lips pressed tight, her face pale and her brows pulled together, and his jaw tight, his eyes cold and steady and his brows low.",
+        "收音机里传出一个威严冰冷的中年男声，以旁白的方式说出第一句，接着说出第二句，带着沙沙的杂音，墙上的一盏小红灯开始一闪一闪。苏清月和林峰转过头，目光对在一起，她嘴唇紧抿、脸色发白、眉头拧在一起，他下颌绷紧、眼神冰冷而沉稳、眉头压低。",
+        SOUND_RADIO_ALARM, AES_TEAL, lines=[('radio_cmd', "目标极度危险，启动备用计划。", 0.8, 'Lin'), ('radio_cmd', "带上钻地导弹，去深山。", 4.2, 'Lin')],
+        cam=push('both of them', '两人'), extra_assets=('radio_set',), room={'Su', 'Lin'}, new=True,
+        bg='Beside them on the steel side table the olive-green military radio glows with its amber dial, a small red alarm lamp on the wall behind them pulses red, and the wall of six small monitors glows at frame-left.',
+        holds='The frame holds exactly two people: Su and Lin, at the control console, nobody else.')
 
 # ================================================================================================ 第 31 集
 b31 = S.episode('剧本第31集｜黑色巨兽', '截获的电台里，威严的声音还在下令：钻地导弹已装车，四十分钟后抵达目标雪山；苏清月咬着嘴唇说我们的外壳防不住，必须转移；林峰说这是我的家，谁也别想让我搬走，连人带弹，一起送上天；他走到地下二层尽头的一面金属墙前按下指纹，金属墙向两边裂开，里面是一辆八米长的黑色哑光履带装甲房车，车头一把重型破冰铲，车顶一个热成像雷达圆罩；他把一套黑色防寒战术服递给苏清月：换上，今天带你兜风；五分钟后，黑色的钢铁巨兽冲进零下八十度的雪原，画面拉黑。', 31)
@@ -361,16 +399,31 @@ new_scene(b31, 'bunker_garage', '地下二层隐蔽车库（空旷高大的灰�
           '一座空旷高大的灰色混凝土地下车库大厅，冷白色的泛光灯照着，中间停着一辆哑光黑色的履带装甲房车，左侧巨大的钢墙已经裂开，露出后面的走廊。',
           'the vast grey garage hall, the matte-black armoured motorhome in the middle and the split-open steel wall at the left')
 
-TAV('31-01', '01｜控制室：收音机里的威严声音继续下令，说钻地导弹已装车、四十分钟后抵达目标雪山，林峰和苏清月站在红灯下听着', CONTROL_R,
-    [P('lin_home', 'right', "standing at the steel side table in profile facing frame-left, both arms folded, his eyes on the radio", 'obj:the olive-green military radio on the side table', "his jaw tight, his lips set flat, his brows low", outfit="in a soft grey henley and dark lounge pants"),
-     P('su_cozy', 'left', "standing beside him in profile facing frame-right, one hand pressed against her mouth, her eyes on the radio", 'obj:the olive-green military radio on the side table', "her lips pressing tight, her brows pulled together")],
-    'Medium two-shot, both from the head to the knees, in the middle third of the frame, at the control console with the radio beside them.',
-    "A stern, cold, authoritative middle-aged man's voice from the radio speaks the first line as a voice-over, then the second line, edged with static, while a small red alarm lamp on the wall pulses behind them. <lin_home> stands without moving, his jaw tight, his lips set flat and his brows low. <su_cozy> stands rigid beside him, her lips pressing tight and her brows pulled together.",
-    "收音机里传出一个威严冰冷的中年男声，以旁白的方式说出第一句，接着说出第二句，带着沙沙的杂音，他们身后墙上的一盏小红灯一闪一闪。林峰站着一动不动，下颌绷紧、嘴唇抿平、眉头压低。苏清月僵在他身边，嘴唇紧抿、眉头拧在一起。",
-    SOUND_RADIO, AES_TEAL, lines=[('radio_cmd', "钻地导弹已装车。", 0.8, 'Lin'), ('radio_cmd', "四十分钟后抵达目标雪山。", 3.0, 'Lin')],
-    cam=push('both of them', '两人'), extra_assets=('radio_set',), room={'Su', 'Lin'}, new=True,
-    bg='Beside them on the steel side table the olive-green military radio glows with its amber dial, a small red alarm lamp on the wall behind them pulses red, and the wall of six small monitors glows at frame-left.',
-    holds='The frame holds exactly two people: Su and Lin, at the control console, nobody else.')
+if os.environ.get('H3_REV'):
+    VINS('31-01v', [('radio_cmd', "钻地导弹已装车。", 'stern, authoritative', '威严冰冷'), ('radio_cmd', "四十分钟后抵达目标雪山。", 'stern, authoritative', '威严冰冷')],
+         CONTROL_R, SOUND_RADIO, {'Su', 'Lin'}, True)
+
+    TA('31-01', '01｜控制室：林峰和苏清月站在红灯下听着，一动不动', 5, CONTROL_R,
+       [P('lin_home', 'right', "standing at the steel side table in profile facing frame-left, both arms folded, his eyes on the radio", 'obj:the olive-green military radio on the side table', "his jaw tight, his lips set flat, his brows low", outfit="in a soft grey henley and dark lounge pants"),
+        P('su_cozy', 'left', "standing beside him in profile facing frame-right, one hand pressed against her mouth, her eyes on the radio", 'obj:the olive-green military radio on the side table', "her lips pressing tight, her brows pulled together")],
+       'Medium two-shot, both from the head to the knees, in the middle third of the frame, at the control console with the radio beside them.',
+       "A small red alarm lamp on the wall pulses behind them. <lin_home> stands without moving, his jaw tight, his lips set flat and his brows low. <su_cozy> stands rigid beside him, her lips pressing tight and her brows pulled together. Neither of them speaks.",
+       "他们身后墙上的一盏小红灯一闪一闪。林峰站着一动不动，下颌绷紧、嘴唇抿平、眉头压低。苏清月僵在他身边，嘴唇紧抿、眉头拧在一起。两个人都没有说话。",
+       VI.unvoice(SOUND_RADIO), AES_TEAL,
+       cam=push('both of them', '两人'), extra_assets=('radio_set',), room={'Su', 'Lin'}, new=False,
+       bg='Beside them on the steel side table the olive-green military radio stands with its amber dial, a small red alarm lamp on the wall behind them pulses red, and the wall of six small monitors is lit at frame-left.',
+       holds='The frame holds exactly two people: Su and Lin, at the control console, nobody else.')
+else:
+    TAV('31-01', '01｜控制室：收音机里的威严声音继续下令，说钻地导弹已装车、四十分钟后抵达目标雪山，林峰和苏清月站在红灯下听着', CONTROL_R,
+        [P('lin_home', 'right', "standing at the steel side table in profile facing frame-left, both arms folded, his eyes on the radio", 'obj:the olive-green military radio on the side table', "his jaw tight, his lips set flat, his brows low", outfit="in a soft grey henley and dark lounge pants"),
+         P('su_cozy', 'left', "standing beside him in profile facing frame-right, one hand pressed against her mouth, her eyes on the radio", 'obj:the olive-green military radio on the side table', "her lips pressing tight, her brows pulled together")],
+        'Medium two-shot, both from the head to the knees, in the middle third of the frame, at the control console with the radio beside them.',
+        "A stern, cold, authoritative middle-aged man's voice from the radio speaks the first line as a voice-over, then the second line, edged with static, while a small red alarm lamp on the wall pulses behind them. <lin_home> stands without moving, his jaw tight, his lips set flat and his brows low. <su_cozy> stands rigid beside him, her lips pressing tight and her brows pulled together.",
+        "收音机里传出一个威严冰冷的中年男声，以旁白的方式说出第一句，接着说出第二句，带着沙沙的杂音，他们身后墙上的一盏小红灯一闪一闪。林峰站着一动不动，下颌绷紧、嘴唇抿平、眉头压低。苏清月僵在他身边，嘴唇紧抿、眉头拧在一起。",
+        SOUND_RADIO, AES_TEAL, lines=[('radio_cmd', "钻地导弹已装车。", 0.8, 'Lin'), ('radio_cmd', "四十分钟后抵达目标雪山。", 3.0, 'Lin')],
+        cam=push('both of them', '两人'), extra_assets=('radio_set',), room={'Su', 'Lin'}, new=True,
+        bg='Beside them on the steel side table the olive-green military radio glows with its amber dial, a small red alarm lamp on the wall behind them pulses red, and the wall of six small monitors glows at frame-left.',
+        holds='The frame holds exactly two people: Su and Lin, at the control console, nobody else.')
 
 TA('31-02', '02｜控制室：苏清月咬着嘴唇，手心全是汗，对林峰说外壳防不住，我们必须转移', 7, CONTROL_R,
    [P('su_cozy', 'left', "standing at the control console in profile facing frame-right, her fingers twisting in front of her, her head turned to him", 'Lin', "her lips caught between her teeth, her face pale, her brows pulled high"),

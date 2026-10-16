@@ -24,10 +24,16 @@ from _jihan_base6 import *
 from _scene import smooth_task
 
 import _h3draft as _H
+import _voiceins as VI
 _H.configure(smooth=True, fixed_seed=37407)   # hh 2026-10-14 16:20：台词顺滑写法＋全批固定视频种子
 OUT = '合并稿/015_第37-40集_请君入瓮熊排溶洞温泉幽灵黑客_制作稿_追加'
 S = Session('合并稿/014_第33-36集_雪崩冰洞心跳吻里的末日巨熊_制作稿_追加.json', OUT, 47000)
 B6.S = S
+
+
+def VINS(tid, run, scene, sound, room, new):
+    """“只有声音”的台词（屏幕旁扬声器里的合成声音）→ 不带人的插镜（2026-10-16 修订，见 _voiceins.py）。"""
+    return VI.vins(S, tid, run, scene, sound, room, new)
 
 # ---------------------------------------------------------------------------------------------- 光和空气（本批新增）
 AES_RED = ("A slow red warning pulse washes the room and rim-lights the edges of everything, with a deep darkness falling off at the edges of the frame.",
@@ -477,16 +483,30 @@ insert2('40-06', '06｜插镜：宽宽的黑色屏幕上，密密麻麻的绿色
         SOUND_CODE, 'The frame holds the wide black screen with the streaming green characters, and nobody in the scene.',
         pull('the streaming green characters', '倾泻的绿色字符', 'the whole wide screen and the console', '整块宽屏和控制台'), AES_CODE, extra_assets=('hack_screen',))
 
-TAV('40-07', '07｜控制室：屏幕上所有的字符忽然全部停住，亮着一片淡绿色的光，控制台的小扬声器里传出一个合成的声音说我看到你了，林峰和苏清月一动不动', CTRL_STILL,
-    [P('lin_home', 'right', "sitting in the black swivel chair at the console in profile facing frame-left, his hands frozen above the keyboard, his eyes on the glowing screen", 'obj:the wide black screen glowing steady pale green', "his jaw tight, his eyes sharp and cold, his brows low", outfit="in a soft grey henley and dark lounge pants"),
-     P('su_cozy', 'center', "standing behind his chair in profile facing frame-left, her hand gripping the chair back, her eyes on the screen", 'obj:the wide black screen glowing steady pale green', "her lips parting, her face going pale, her brows pulled high")],
-    'Medium two-shot, both from the head to the waist, in the middle third of the frame, at the control console.',
-    "A flat, cold, androgynous synthetic voice from the small speaker beside the screen speaks the one line as a voice-over. <lin_home> sits motionless with his hands frozen above the keyboard, his jaw tight, his eyes sharp and cold and his brows low, and <su_cozy> stands rigid behind him, her lips parting, her face going pale and her brows pulled high.",
-    "控制台屏幕旁边的小扬声器里传出一个平板冰冷、听不出男女的合成声音，以旁白的方式说出这一句。林峰一动不动地坐着，两手僵在键盘上方，下颌绷紧、眼神锐利冰冷、眉头压低，苏清月僵直地站在他身后，嘴唇微张、脸色发白、眉毛高高挑起。",
-    SOUND_GHOST, AES_STILL, lines=[('ghost_voice', "我看到你了。", 0.8, 'Lin')],
-    cam=push('both of them', '两人'), extra_assets=('hack_screen',), room={'Su', 'Lin'}, new=True,
-    bg='Beside the screen on the console a small round speaker grille glows faintly and the wall of six small monitors glows at frame-left.',
-    holds='The frame holds exactly two people: Lin and Su, at the control console, nobody else.')
+if os.environ.get('H3_REV'):
+    VINS('40-07v', [('ghost_voice', "我看到你了。", 'flat, cold', '平板冰冷')], CTRL_STILL, SOUND_GHOST, {'Su', 'Lin'}, True)
+
+    TA('40-07', '07｜控制室：林峰两手僵在键盘上方，苏清月站在他身后，两个人一动不动盯着屏幕', 5, CTRL_STILL,
+       [P('lin_home', 'right', "sitting in the black swivel chair at the console in profile facing frame-left, his hands frozen above the keyboard, his eyes on the screen", 'obj:the wide black screen showing still green characters', "his jaw tight, his eyes sharp and cold, his brows low", outfit="in a soft grey henley and dark lounge pants"),
+        P('su_cozy', 'center', "standing behind his chair in profile facing frame-left, her hand gripping the chair back, her eyes on the screen", 'obj:the wide black screen showing still green characters', "her lips parting, her face going pale, her brows pulled high")],
+       'Medium two-shot, both from the head to the waist, in the middle third of the frame, at the control console.',
+       "<lin_home> sits motionless with his hands frozen above the keyboard, his jaw tight, his eyes sharp and cold and his brows low, and <su_cozy> stands rigid behind him, her lips parting, her face going pale and her brows pulled high. Neither of them speaks.",
+       "林峰一动不动地坐着，两手僵在键盘上方，下颌绷紧、眼神锐利冰冷、眉头压低，苏清月僵直地站在他身后，嘴唇微张、脸色发白、眉毛高高挑起。两个人都没有说话。",
+       VI.unvoice(SOUND_GHOST), AES_STILL,
+       cam=push('both of them', '两人'), extra_assets=('hack_screen',), room={'Su', 'Lin'}, new=False,
+       bg='Beside the screen on the console a small round speaker grille sits dark and the wall of six small monitors is lit at frame-left.',
+       holds='The frame holds exactly two people: Lin and Su, at the control console, nobody else.')
+else:
+    TAV('40-07', '07｜控制室：屏幕上所有的字符忽然全部停住，亮着一片淡绿色的光，控制台的小扬声器里传出一个合成的声音说我看到你了，林峰和苏清月一动不动', CTRL_STILL,
+        [P('lin_home', 'right', "sitting in the black swivel chair at the console in profile facing frame-left, his hands frozen above the keyboard, his eyes on the glowing screen", 'obj:the wide black screen glowing steady pale green', "his jaw tight, his eyes sharp and cold, his brows low", outfit="in a soft grey henley and dark lounge pants"),
+         P('su_cozy', 'center', "standing behind his chair in profile facing frame-left, her hand gripping the chair back, her eyes on the screen", 'obj:the wide black screen glowing steady pale green', "her lips parting, her face going pale, her brows pulled high")],
+        'Medium two-shot, both from the head to the waist, in the middle third of the frame, at the control console.',
+        "A flat, cold, androgynous synthetic voice from the small speaker beside the screen speaks the one line as a voice-over. <lin_home> sits motionless with his hands frozen above the keyboard, his jaw tight, his eyes sharp and cold and his brows low, and <su_cozy> stands rigid behind him, her lips parting, her face going pale and her brows pulled high.",
+        "控制台屏幕旁边的小扬声器里传出一个平板冰冷、听不出男女的合成声音，以旁白的方式说出这一句。林峰一动不动地坐着，两手僵在键盘上方，下颌绷紧、眼神锐利冰冷、眉头压低，苏清月僵直地站在他身后，嘴唇微张、脸色发白、眉毛高高挑起。",
+        SOUND_GHOST, AES_STILL, lines=[('ghost_voice', "我看到你了。", 0.8, 'Lin')],
+        cam=push('both of them', '两人'), extra_assets=('hack_screen',), room={'Su', 'Lin'}, new=True,
+        bg='Beside the screen on the console a small round speaker grille glows faintly and the wall of six small monitors glows at frame-left.',
+        holds='The frame holds exactly two people: Lin and Su, at the control console, nobody else.')
 
 TA('40-08', '08｜控制室：苏清月脸色发白，对林峰说外面都死绝了，还有谁在线，林峰盯着屏幕，嘴角冷冷一挑，说真正的对手，来了', 10, CTRL_STILL,
    [P('su_cozy', 'center', "standing behind his chair in profile facing frame-left, her hand gripping the chair back, her head turned down to him", 'Lin', "her face pale, her lips trembling, her brows pulled high"),

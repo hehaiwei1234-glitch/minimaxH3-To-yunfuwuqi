@@ -1,0 +1,118 @@
+{
+ "schema": "h3-production-draft",
+ "version": 1,
+ "title": "极寒末日：我的隐秘安全屋｜第1–4集｜七天·半价·扫货·山里",
+ "dialogue_language": "zh",
+ "style": "Photorealistic live-action post-apocalyptic survival drama set in modern-day China, with a cinematic, high-contrast look. Two clear visual worlds: the blinding white heat of a summer world that does not know what is coming, and later a warm amber-lit hidden shelter set against a silent frozen white world of snow, ice and green aurora. Every named character is Chinese. Rich natural skin texture with visible pores, realistic fabrics, restrained cinematic color grading, and an ultra-wide 8:3 cinemascope frame in which the people are placed deliberately and the room is visible around them.",
+ "assets": [
+  {
+   "key": "chenyu",
+   "kind": "image",
+   "role": "character",
+   "label": "陈屿（二十多岁的中国男青年，炭灰色羊毛大衣，灰色圆领毛衣，短黑发，被风吹乱）",
+   "description": {
+    "en": "A Chinese man in his late twenties with short neat black hair, a clean-shaven kind face and steady dark-brown eyes, wearing a charcoal wool overcoat over a grey crewneck sweater. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "一个二十多岁的中国男青年，黑色短发整齐，脸干净而温和，眼睛是沉稳的深棕色，穿着炭灰色羊毛大衣，里面是灰色圆领毛衣。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of a Chinese man, short neat black hair, a clean-shaven kind face, steady dark-brown eyes, wearing a charcoal wool overcoat over a grey crewneck sweater. He faces the camera with a gentle, steady expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "xuran",
+   "kind": "image",
+   "role": "character",
+   "label": "许然（二十多岁的中国女青年，驼色长款羊毛大衣，奶白色毛衣，披着长黑发）",
+   "description": {
+    "en": "A Chinese woman in her late twenties with long black hair, a soft oval face and warm dark-brown eyes, wearing a long camel wool coat over a cream knit sweater. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "一个二十多岁的中国女青年，披着黑色长发，脸型柔和偏椭圆，眼睛是温暖的深棕色，穿着驼色长款羊毛大衣，里面是奶白色毛衣。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of a Chinese woman, long black hair, a soft oval face, warm dark-brown eyes, wearing a long camel wool coat over a cream knit sweater. She faces the camera with a soft, gentle expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "snow_plaza",
+   "kind": "image",
+   "role": "scene",
+   "label": "大雪里的城市广场（两条大街交叉的宽广场被深深的雪埋住，两边和身后是挂满长冰柱的玻璃大楼，车埋在雪里只露出窗户，右边一根红绿灯杆灭着，广场上几十个被透明冰封住的人一动不动站在大雪里）",
+   "description": {
+    "en": "A wide city plaza at the crossing of two boulevards buried under deep smooth snow, glass towers hung with long icicles on both sides and behind, cars buried to their windows in snow, a dead traffic light on a pole at the right, and dozens of people sealed in clear ice standing perfectly still across the plaza in heavy falling snow. The reference fixes the layout and decor.",
+    "zh": "两条大街交叉的城市宽广场被深深的雪埋住，两边和身后是挂满长冰柱的玻璃大楼，车埋在雪里只露出窗户，右边一根红绿灯杆灭着，广场上几十个被透明冰封住的人一动不动站在大雪里。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a wide city plaza at the crossing of two boulevards buried under deep smooth snow, glass towers hung with long icicles on both sides and behind, cars buried to their windows in snow, a dead traffic light on a pole at the right, and dozens of people sealed in clear ice standing perfectly still across the plaza in heavy falling snow, nobody in the scene. The frame holds the deep snow, the icicle-hung towers, the buried cars and the frozen people across the plaza.",
+    "reference_keys": []
+   }
+  }
+ ],
+ "characters": {
+  "Chenyu": {
+   "image_keys": [
+    "chenyu"
+   ],
+   "voice_description": {
+    "en": "A warm, steady young man's voice, low and gentle, speaking clear Mandarin Chinese. Every word is fully voiced and audible.",
+    "zh": "温暖而沉稳的年轻男声，低沉温和，普通话清楚。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "Xuran": {
+   "image_keys": [
+    "xuran"
+   ],
+   "voice_description": {
+    "en": "A soft young woman's voice, trembling a little, speaking clear Mandarin Chinese. Every word is fully voiced and audible.",
+    "zh": "轻柔的年轻女声，微微发颤，普通话清楚。每个字都正常发声、清晰可辨。"
+   }
+  }
+ },
+ "episodes": [
+  {
+   "title": "补拍5｜大雪里的冰封人群（接在补拍3 的情侣冰雕之后）",
+   "summary": "大雪纷飞的广场上，那对相拥的情侣已是冰雕，镜头贴着雪面向前滑过他们同时缓缓升高，露出整个广场上几十个保持着各种姿势的冰封的人。",
+   "script": "大雪广场，大片雪花斜着落，前景是那对相拥的冰雕，镜头贴着雪面向前滑过他们同时缓缓升高，露出整个广场上几十个保持着各种姿势的冰封的人，陈屿和许然在前景保持着拥抱，被封在晶莹发亮的冰里，肩上和头发上堆着厚厚的雪，一动不动。他们身后，整个广场上还有几十个人被封在透明发亮的冰里，保持着冻住那一刻的姿势，有的跑到一半手臂向前伸着，有的蹲着，有的朝对方伸着手，还有成对的、成小群抱在一起的，每个人都一动不动，头上肩上堆着雪。大片的雪花顺着风斜斜地慢慢落下，细细的雪粉贴着地面流过。除了落雪和飘动的雪粉，什么都不动。镜头贴着雪面低低地向前滑过相拥的两个人，同时像吊臂一样缓缓升高，直到整个广场、两个小小的相拥的身影和几十个冰封的人占满画面。一轮低低的苍白太阳从厚厚的雪云缝隙里透出来，冰封的人在深雪上拉出长长的蓝色影子。",
+   "segments": [
+    {
+     "title": "01｜大雪广场：大片雪花斜着落，前景是那对相拥的冰雕，镜头贴着雪面向前滑过他们同时缓缓升高，露出整个广场上几十个保持着各种姿势的冰封的人",
+     "duration_seconds": 12,
+     "generation_seconds": 12,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "Chenyu",
+      "Xuran"
+     ],
+     "asset_keys": [
+      "snow_plaza",
+      "chenyu",
+      "xuran"
+     ],
+     "image_reference_keys": [
+      "snow_plaza"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium-wide low-angle shot just above the snow, the two embracing figures from the head to the knees in the middle third of the frame in the foreground, and behind them the whole plaza. Chenyu (a Chinese man in his late twenties) at frame-center-right, standing in the foreground in profile facing frame-left, both arms wrapped around Xuran's back with both hands holding her shoulder blades, his chin resting lightly against her forehead, in a charcoal wool overcoat completely sealed in clear glittering ice and thick white frost, long icicles hanging from the sleeves and the hem, his black hair stiff with white rime, his eyes gently closed, his face calm under a layer of white frost, tiny ice crystals clinging to his lashes and brows. Xuran (a Chinese woman in her late twenties) at frame-center-left, standing in the foreground in profile facing frame-right pressed against his chest, both hands gripping the back of his overcoat, her face tilted up toward his, in a long camel wool coat completely sealed in clear glittering ice and thick white frost, icicles hanging from the hem, her long black hair stiff with white rime and frozen mid-air, her eyes gently closed, her face calm and peaceful under a layer of white frost, one tiny frozen tear on her cheek. Behind them dozens of frozen people stand across the snowy plaza, all sharp and clear, none blurred, in poses of running, crouching, reaching and holding each other, with the icicle-hung towers at the back. While long blue shadows of the ice figures stretch across the deep snow. The frame holds the two embracing frozen figures in the foreground, dozens of other frozen people standing sharp and clear across the plaza, the buried cars and the icicle-hung towers. Heavy snow falls in big slow flakes through cold blue-grey air and a low pale sun glows behind the cloud. Fixed stage layout: a wide city plaza at the crossing of two boulevards lies buried under deep smooth snow, glass towers hung with long icicles rising on both sides and at the back of the frame, snow-buried cars standing silent up to their windows, a dead traffic light on a pole at frame-right, and across the whole plaza dozens of people sealed in clear ice stand perfectly still in the falling snow.",
+     "visual_zh": "陈屿和许然在前景保持着拥抱，被封在晶莹发亮的冰里，肩上和头发上堆着厚厚的雪，一动不动。他们身后，整个广场上还有几十个人被封在透明发亮的冰里，保持着冻住那一刻的姿势：有的跑到一半手臂向前伸着，有的蹲着，有的朝对方伸着手，还有成对的、成小群抱在一起的，每个人都一动不动，头上肩上堆着雪。大片的雪花顺着风斜斜地慢慢落下，细细的雪粉贴着地面流过。除了落雪和飘动的雪粉，什么都不动。镜头贴着雪面低低地向前滑过相拥的两个人，同时像吊臂一样缓缓升高，直到整个广场、两个小小的相拥的身影和几十个冰封的人占满画面。一轮低低的苍白太阳从厚厚的雪云缝隙里透出来，冰封的人在深雪上拉出长长的蓝色影子。",
+     "camera_zh": "0—12秒，镜头贴着雪面低低地向前滑过相拥的两个人，同时像吊臂一样缓缓升高，直到整个广场和几十个冰封的人占满画面。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 12,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. [[asset:chenyu]] and [[asset:xuran]] stand sealed in clear ice in their embrace in the foreground, snow piled thick on their shoulders and hair, perfectly still. Behind them across the plaza dozens of other people stand sealed in clear glittering ice in the poses they froze in: some caught mid-run with an arm stretched forward, some crouched, some reaching toward each other, pairs and small groups huddled together, every one of them perfectly still with snow piled on their heads and shoulders. Heavy snow falls in big slow flakes that slant on the wind, and fine powder snow streams low along the ground. Nothing moves except the falling snow and the drifting powder. The camera glides forward low over the snow past the embracing figures while rising slowly on a crane until the whole plaza with the two small embracing figures and the dozens of frozen people fills the frame. While long blue shadows of the ice figures stretch across the deep snow. [[asset:chenyu]] keeps his face calm under a layer of white frost, tiny ice crystals clinging to his lashes and brows. [[asset:xuran]] keeps her face calm and peaceful under a layer of white frost, one tiny frozen tear on her cheek. The camera glides forward low over the snow past the embracing figures while rising slowly on a crane until the whole plaza and the dozens of frozen people fill the frame.",
+       "visual_zh": "陈屿和许然在前景保持着拥抱，被封在晶莹发亮的冰里，肩上和头发上堆着厚厚的雪，一动不动。他们身后，整个广场上还有几十个人被封在透明发亮的冰里，保持着冻住那一刻的姿势：有的跑到一半手臂向前伸着，有的蹲着，有的朝对方伸着手，还有成对的、成小群抱在一起的，每个人都一动不动，头上肩上堆着雪。大片的雪花顺着风斜斜地慢慢落下，细细的雪粉贴着地面流过。除了落雪和飘动的雪粉，什么都不动。镜头贴着雪面低低地向前滑过相拥的两个人，同时像吊臂一样缓缓升高，直到整个广场、两个小小的相拥的身影和几十个冰封的人占满画面。一轮低低的苍白太阳从厚厚的雪云缝隙里透出来，冰封的人在深雪上拉出长长的蓝色影子。 镜头贴着雪面低低地向前滑过相拥的两个人，同时像吊臂一样缓缓升高，直到整个广场和几十个冰封的人占满画面。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "The long low howl of a snowstorm wind sweeping across the empty plaza, the hiss of snow driven over ice, the crisp rustle of heavy flakes and, far off, one slow crack of ice from a tower. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here. Every on-set sound effect is loud, crisp and close to the microphone, as prominent as the voices: footsteps, impacts, doors, wind, ice, machinery and fabric are all clearly heard. No music.",
+     "sound_zh": "暴风雪长长低低的呼啸掠过空荡荡的广场、雪粒被风吹过冰面的嘶嘶声、大片雪花轻轻的沙沙声，远处一座大楼传来一声缓慢的冰裂声。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。所有现场音效都响亮、清脆、贴近话筒，和人声一样突出：脚步、撞击、开关门、风声、冰裂、机械和衣料摩擦都听得清清楚楚。没有配乐。",
+     "seed": 37407,
+     "dialogue_language": "zh"
+    }
+   ],
+   "dialogue_language": "zh"
+  }
+ ]
+}
