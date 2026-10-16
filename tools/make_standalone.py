@@ -28,7 +28,8 @@ while True:   # 素材生成时引用的参考图也要留
     keys |= more
 d['assets'] = [a for a in d['assets'] if a['key'] in keys]
 d['characters'] = {k: v for k, v in chars.items() if k in names}
-out = src.replace('.json', '_单独版.json')
+import os
+out = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(src))), '单独版_新建一部剧直接贴', os.path.basename(src).replace('.json', '_单独版.json'))
 txt = json.dumps(d, ensure_ascii=False, indent=1)
 open(out, 'w', encoding='utf-8').write(txt)
 open(out.replace('.json', '_全选复制粘贴.txt'), 'w', encoding='utf-8').write(txt)

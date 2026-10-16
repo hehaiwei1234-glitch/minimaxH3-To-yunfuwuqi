@@ -22,7 +22,7 @@ import _jihan_base8 as B8
 from _jihan_base8 import *
 import _h3draft as _H
 _H.configure(smooth=True, fixed_seed=37407, cap=12)   # hh 2026-10-16：每个任务最长 12 秒（他开最高分辨率，15 秒容易中断）
-OUT = '补拍/补拍3_地球固定镜头与情侣冰雕_制作稿_追加'
+OUT = '补拍/追加版_接在主剧后面_带全剧素材/补拍3_地球固定镜头与情侣冰雕_制作稿_追加'
 S = Session('合并稿/026_第55-74集_合并_冰川墓碑到陌生人的声音_制作稿_追加.json', OUT, 96000)
 B6.S = S
 B7.S = S

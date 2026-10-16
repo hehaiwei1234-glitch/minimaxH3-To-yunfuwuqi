@@ -24,8 +24,8 @@ import _jihan_base8 as B8
 from _jihan_base8 import *
 import _h3draft as _H
 _H.configure(smooth=True, fixed_seed=37407, cap=12)
-OUT = '补拍/补拍4_末日景色十八个_制作稿_追加'
-S = Session('补拍/补拍3_地球固定镜头与情侣冰雕_制作稿_追加.json', OUT, 97000)
+OUT = '补拍/追加版_接在主剧后面_带全剧素材/补拍4_末日景色十八个_制作稿_追加'
+S = Session('补拍/追加版_接在主剧后面_带全剧素材/补拍3_地球固定镜头与情侣冰雕_制作稿_追加.json', OUT, 97000)
 B6.S = S
 B7.S = S
 AE = lambda en, zh: (en, zh)

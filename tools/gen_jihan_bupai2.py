@@ -47,7 +47,7 @@ from _scene import smooth_text, TONE_FIX
 import _h3draft as _H
 
 _H.configure(smooth=True, fixed_seed=37407, cap=12, fast=True)   # fast：hh 2026-10-15 要求对白更快、句间更紧、现场音写响   # 2026-10-15：15 秒任务让 sage attention 崩溃，全部压到 12 秒以内
-OUT = '补拍/补拍2_十二秒版_降临全城_苏清月的求生之路_手术信任_制作稿_追加'
+OUT = '补拍/追加版_接在主剧后面_带全剧素材/补拍2_十二秒版_降临全城_苏清月的求生之路_手术信任_制作稿_追加'
 S = Session('合并稿/018_第45-46集_十二秒版_制作稿_追加.json', OUT, 61000)
 B6.S = S
 
