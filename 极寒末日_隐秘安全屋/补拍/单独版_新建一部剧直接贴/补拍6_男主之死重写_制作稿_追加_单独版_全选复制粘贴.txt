@@ -1,0 +1,1223 @@
+{
+ "schema": "h3-production-draft",
+ "version": 1,
+ "title": "极寒末日：我的隐秘安全屋｜第1–4集｜七天·半价·扫货·山里",
+ "dialogue_language": "zh",
+ "style": "Photorealistic live-action post-apocalyptic survival drama set in modern-day China, with a cinematic, high-contrast look. Two clear visual worlds: the blinding white heat of a summer world that does not know what is coming, and later a warm amber-lit hidden shelter set against a silent frozen white world of snow, ice and green aurora. Every named character is Chinese. Rich natural skin texture with visible pores, realistic fabrics, restrained cinematic color grading, and an ultra-wide 8:3 cinemascope frame in which the people are placed deliberately and the room is visible around them.",
+ "assets": [
+  {
+   "key": "lin_studio",
+   "kind": "image",
+   "role": "character",
+   "label": "林峰（深夜工作室：皱巴巴的白衬衫，一脸倦意）",
+   "description": {
+    "en": "Lin, a lean, athletic Chinese man in his early thirties with short messy black hair, a faint shadow of stubble and tired but steady dark-brown eyes, wearing a rumpled white dress shirt with the sleeves rolled to his forearms and a loosened collar. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "林峰，三十出头、身形精瘦结实的中国男性，黑色短发有些凌乱，下巴一层淡淡的胡茬，疲惫却沉稳的深褐色眼睛，穿着皱巴巴的白衬衫、袖子卷到小臂、领口松开。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of a Chinese man, short messy black hair, a faint shadow of stubble, tired but steady dark-brown eyes, wearing a rumpled white dress shirt with the sleeves rolled to his forearms and a loosened collar. He faces the camera with a tired, steady expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "lin_work",
+   "kind": "image",
+   "role": "character",
+   "label": "林峰（深灰亨利衫，橄榄绿多口袋工装背心）",
+   "description": {
+    "en": "Lin, the same lean, athletic Chinese man in his early thirties as in the reference, with short black hair and a faint shadow of stubble, steady dark-brown eyes, wearing a charcoal henley under a dark olive utility vest with many pockets and dark cargo pants. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "林峰，和参考图是同一位三十出头、身形精瘦结实的中国男性，黑色短发，带一点淡淡的胡茬，沉稳的深褐色眼睛，穿着深灰色亨利衫、外面是深橄榄绿多口袋工装背心，深色工装裤。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of the same man as in the reference image, short black hair, a faint shadow of stubble, steady dark-brown eyes, wearing a charcoal henley under a dark olive utility vest with many pockets. He faces the camera with a calm, level expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": [
+     "lin_studio"
+    ]
+   }
+  },
+  {
+   "key": "su_suit",
+   "kind": "image",
+   "role": "character",
+   "label": "苏清月（黑色真丝衬衫，金丝眼镜）",
+   "description": {
+    "en": "Su, an elegant, strikingly beautiful Chinese woman in her late twenties with long glossy black hair falling straight over one shoulder, sharp dark-brown eyes behind thin gold-rimmed glasses, wearing a fitted black silk blouse and a black pencil skirt. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "苏清月，二十八岁左右、优雅而极其美丽的中国女性，乌黑的长直发光滑地垂在一边肩上，锐利的深褐色眼睛戴着细细的金丝眼镜，穿着合身的黑色真丝衬衫和黑色铅笔裙。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic half-body portrait of a Chinese woman, long glossy black hair falling straight over one shoulder, sharp dark-brown eyes behind thin gold-rimmed glasses, wearing a fitted black silk blouse. She faces the camera with a composed, sharp expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "bunker_control",
+   "kind": "image",
+   "role": "scene",
+   "label": "地下控制室（红色按钮、监控墙、红色倒计时钟）",
+   "description": {
+    "en": "A compact underground concrete control room: a steel control console in the middle of the room with rows of small green status lights and one big red push-button under a clear flip-up cover, a wall of six small monitors at the left, a large red digital countdown clock hanging high on the back wall at center-right, a heavy steel door in the right wall, cool green indicator glow and pale work-lamp light. The reference fixes the layout and decor.",
+    "zh": "地下紧凑的混凝土控制室：房间中间是一张钢制控制台，上面一排排小小的绿色指示灯和一个罩着透明翻盖的大红色按钮，左边是一整面六块小屏幕的监控墙，中右的后墙高处挂着一个大红色电子倒计时钟，右墙是一扇厚重的钢门，冷冷的绿色指示灯光和苍白的工作灯光。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a compact underground concrete control room: a steel control console in the middle of the room with rows of small green status lights and one big red push-button under a clear flip-up cover, a wall of six small monitors at the left, a large red digital countdown clock hanging high on the back wall at center-right, a heavy steel door in the right wall, cool green indicator glow and pale work-lamp light, nobody in the scene. The frame holds the console with the red button, the monitor wall, the red clock and the steel door.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "su_cozy",
+   "kind": "image",
+   "role": "character",
+   "label": "苏清月（宽大的奶白色针织毛衣，黑色保暖打底裤，灰色厚袜子，长发披着）",
+   "description": {
+    "en": "Su, the same elegant Chinese woman in her late twenties as in the reference but without glasses, wearing an oversized soft cream knit sweater, black thermal leggings and thick grey socks, her long black hair loose over her shoulders. The portrait fixes identity, clothes and features, not staging.",
+    "zh": "苏清月，和参考图是同一位二十八岁左右、优雅美丽的中国女性，但不戴眼镜，穿着宽大柔软的奶白色针织毛衣、黑色保暖打底裤和灰色厚袜子，乌黑的长发披在肩上。 肖像固定长相、衣着和特征，不固定姿势。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic full-body portrait of the same woman as in the reference image, no glasses, wearing an oversized soft cream knit sweater, black thermal leggings, thick grey socks, long black hair loose over her shoulders. She faces the camera with a soft, tired expression. Soft even studio light, plain neutral gray background, natural skin texture with visible pores.",
+    "reference_keys": [
+     "su_suit"
+    ]
+   }
+  },
+  {
+   "key": "gate_room",
+   "kind": "image",
+   "role": "scene",
+   "label": "B4 手动闸门室（朴素的混凝土小房间，后墙是两米高的圆形钢闸门，门中央一个车轮大的黑铁手轮，旁边墙上嵌着一块有手掌凹槽的黄铜板）",
+   "description": {
+    "en": "A small bare concrete chamber whose back wall is filled by a massive round steel gate door with a big black iron hand-wheel at its centre and a rectangular brass plate with a hand-shaped recess set into the wall beside it. The reference fixes the layout and decor.",
+    "zh": "一个朴素的混凝土小房间，后墙被一扇巨大的圆形钢闸门占满，门中央是一个黑铁大手轮，旁边墙上嵌着一块有手掌凹槽的长方形黄铜板。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a small bare concrete chamber whose back wall is filled by a massive round steel gate door with a big black iron hand-wheel at its centre and a rectangular brass plate with a hand-shaped recess set into the wall beside it, nobody in the scene. The frame holds the round gate, the hand-wheel and the brass plate.",
+    "reference_keys": []
+   }
+  },
+  {
+   "key": "flood_corridor",
+   "kind": "image",
+   "role": "scene",
+   "label": "被洪水灌满的长走廊（灰色混凝土走廊，黑色的水从远端涌来，红色应急频闪，近端一扇关着的圆形钢舱门）",
+   "description": {
+    "en": "A long grey concrete corridor with dark churning water pouring down it from the far end, red emergency strobes pulsing along the ceiling and a heavy round steel hatch door closed at the near end. The reference fixes the layout and decor.",
+    "zh": "一条长长的灰色混凝土走廊，黑色的水从远端翻涌过来，天花板上红色应急灯频闪，近端有一扇关着的厚重圆形钢舱门。 参考图固定布局与陈设。"
+   },
+   "generate": {
+    "image_prompt": "A photorealistic ultra-wide 8:3 cinemascope shot of a long grey concrete corridor with dark churning water pouring down it from the far end, red emergency strobes pulsing along the ceiling and a heavy round steel hatch door closed at the near end, nobody in the scene. The frame holds the flooded corridor and the hatch door.",
+    "reference_keys": []
+   }
+  }
+ ],
+ "characters": {
+  "LinWork": {
+   "image_keys": [
+    "lin_work"
+   ],
+   "voice_description": {
+    "en": "A mature adult male voice, calm and level with a dry cold edge, speaking clear Mandarin Chinese. He never raises his voice. Every word is fully voiced and audible.",
+    "zh": "成熟成年男声，平稳镇定，带一点干冷的质感，普通话清楚。他从不提高音量。每个字都正常发声、清晰可辨。"
+   }
+  },
+  "SuCozy": {
+   "image_keys": [
+    "su_cozy"
+   ],
+   "voice_description": {
+    "en": "A confident adult woman's voice, low, smooth and slightly husky, speaking clear Mandarin Chinese with a sharp, measured edge. Every word is fully voiced and audible.",
+    "zh": "自信的成年女声，低沉、顺滑、略带沙哑，普通话清楚，带着锐利而有分寸的质感。每个字都正常发声、清晰可辨。"
+   }
+  }
+ },
+ "episodes": [
+  {
+   "title": "补拍6A｜塌方：出口被碎石完全封死，炸不得、挖不通，洪水九分钟后冲到生活区（接在剧本第 65 集火球爆炸之后，替换第 65 集 06 号起）",
+   "summary": "火球爆炸后闸门室塌方，门口被碎石完全封死没有缝；林峰推不动，苏清月要炸，他说炸会震裂闸门、挖通要三天；她说冰水里撑不过一小时；洪水改道九分钟后冲到生活区；他说你没有五分钟。",
+   "script": "闸门室，爆炸后墙上落着碎石渣，林峰放开转了一半的手轮，慢慢走过脚踝深的黑水，停在被碎石完全封死的门口前，林峰放开转了一半的手轮，慢慢走过脚踝深的黑水，走向那个从地面到天花板被碎混凝土和扭曲钢筋完全堵死的门口、一点缝都没有，他停在它面前，裂开的天花板上还有碎渣在往下掉。一盏红色应急灯均匀地照着房间，黑水显出暗红色。画面里恰好是Lin，每个人只出现一次。\n闸门室，林峰用两只手掌和肩膀拼命顶那堵碎石墙，碎石一点不动，没有任何缝，他喘着气把额头抵在冰冷的混凝土上，林峰用两只手掌和肩膀拼命顶那堵实心的碎石墙，可是一点不动，也没有任何缝；然后他停下来，喘着气，把额头抵在冰冷的混凝土上。一盏红色应急灯均匀地照着房间，黑水显出暗红色。画面里恰好是Lin，每个人只出现一次。\n控制室，苏清月站起来按住耳机，对着麦克风喊林峰听得见吗，回答我，苏清月用锐利喘着气的声音对着耳机上细细的麦克风说出第一句，接着苏清月用锐利的声音对着耳机上细细的麦克风说出第二句；最后一句之后，她僵着身子，眼睛盯着监控墙，听着。 台词一句紧接着一句，中间只有很短的换气，每句一口气说完、句中不停顿。冷绿色的指示灯和一盏温暖的琥珀色灯均匀地照着她的脸。画面里恰好是Su，每个人只出现一次。\nSuCozy：“林峰听得见吗？”\nSuCozy：“回答我！”\n闸门室，林峰按着耳机，对苏清月说通道塌了我出不去，闸门只关了一半，林峰用低沉沙哑的声音对着别在下巴边的细细麦克风说出第一句，接着林峰用低沉凝重的声音对着别在下巴边的细细麦克风说出第二句；最后一句之后，他转头看了一眼身后转了一半的手轮。 台词一句紧接着一句，中间只有很短的换气，每句一口气说完、句中不停顿。一盏红色应急灯均匀地照着房间，黑水显出暗红色。画面里恰好是Lin，每个人只出现一次。\nLinWork：“通道塌了我出不去。”\nLinWork：“闸门只关了一半。”\n控制室，苏清月一巴掌拍在控制台上，说我来炸开它，苏清月用锐利凶狠的声音对着耳机上细细的麦克风说出第一句；最后一句之后，她攥紧控制台的边缘，指节发白。 台词一句紧接着一句，中间只有很短的换气，每句一口气说完、句中不停顿。冷绿色的指示灯和一盏温暖的琥珀色灯均匀地照着她的脸。画面里恰好是Su，每个人只出现一次。\nSuCozy：“我来炸开它！”\n闸门室，林峰说别炸闸门一震就裂，说挖通要三天他等不到，林峰用低沉平稳的声音对着别在下巴边的细细麦克风说出第一句，接着林峰用低沉温柔的声音对着别在下巴边的细细麦克风说出第二句；最后一句之后，他放下举着的手，低头看着靴子周围的黑水。 台词一句紧接着一句，中间只有很短的换气，每句一口气说完、句中不停顿。一盏红色应急灯均匀地照着房间，黑水显出暗红色。画面里恰好是Lin，每个人只出现一次。\nLinWork：“别炸闸门一震就会裂。”\nLinWork：“挖通要三天我等不到。”\n控制室，苏清月慢慢松开拳头，低声说我知道，冰水里撑不过一小时，苏清月用低沉发颤的声音对着耳机上细细的麦克风说出第一句，接着苏清月用低沉发抖的声音对着耳机上细细的麦克风说出第二句；最后一句之后，她闭上眼睛，一滴眼泪顺着脸颊流下来。 台词一句紧接着一句，中间只有很短的换气，每句一口气说完、句中不停顿。冷绿色的指示灯和一盏温暖的琥珀色灯均匀地照着她的脸。画面里恰好是Su，每个人只出现一次。\nSuCozy：“我知道。”\nSuCozy：“冰水里撑不过一小时。”\n生活区走廊，黑色的洪水从长走廊远端翻涌过来，水位越涨越高，近端那扇圆形钢舱门紧紧关着，黑色的洪水从长长的灰色混凝土走廊远端翻涌着朝镜头涌来，水位一点点上涨，天花板上一排红色应急灯亮着，近端一扇厚重的圆形钢舱门紧紧关着。别的什么都不动。红色应急灯均匀地照着走廊，黑水显出暗红色。\n闸门室，林峰说洪水改道了，九分钟后就冲到你那里，我算过了，林峰用低沉平稳的声音对着别在下巴边的细细麦克风说出第一句，接着林峰用低沉温柔的声音对着别在下巴边的细细麦克风说出第二句；最后一句之后，他低头看着放在手轮上的左手，慢慢蜷起手指。 台词一句紧接着一句，中间只有很短的换气，每句一口气说完、句中不停顿。一盏红色应急灯均匀地照着房间，黑水显出暗红色。画面里恰好是Lin，每个人只出现一次。\nLinWork：“洪水改道了九分钟后就到你那里。”\nLinWork：“我算过了。”\n控制室，苏清月对着麦克风说不准关，再给我五分钟，苏清月用锐利发颤的声音对着耳机上细细的麦克风说出第一句，接着苏清月用锐利恳求的声音对着耳机上细细的麦克风说出第二句；最后一句之后，她屏住呼吸，眼睛盯着监控墙。 台词一句紧接着一句，中间只有很短的换气，每句一口气说完、句中不停顿。冷绿色的指示灯和一盏温暖的琥珀色灯均匀地照着她的脸。画面里恰好是Su，每个人只出现一次。\nSuCozy：“不准关！”\nSuCozy：“再给我五分钟！”",
+   "segments": [
+    {
+     "title": "01｜闸门室：爆炸后墙上落着碎石渣，林峰放开转了一半的手轮，慢慢走过脚踝深的黑水，停在被碎石完全封死的门口前",
+     "duration_seconds": 7,
+     "generation_seconds": 7,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "LinWork"
+     ],
+     "asset_keys": [
+      "gate_room",
+      "lin_work"
+     ],
+     "image_reference_keys": [
+      "gate_room"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Wide shot of the whole chamber, the man small at frame-right and the sealed doorway at frame-left, in the middle third of the frame. Lin (a Chinese man in his early thirties) at frame-right, standing in the ankle-deep black water in profile facing frame-left, his right hand just lowered from the half-turned wheel, his head turned toward the doorway, in a charcoal henley with the sleeves pushed up to his forearms and dark cargo trousers, a small headset earpiece in his right ear and a slim microphone clipped at his jaw, his steady dark-brown eyes on the solid wall of broken concrete filling the doorway, his jaw tight, his eyes wide, his brows pulled together. A red emergency lamp lights the chamber evenly and the black water shows a dull red. The frame holds the half-turned wheel, the brass plate, the solid sealed doorway with no gap, and one person: Lin. A single caged work lamp and a red emergency lamp light a cold concrete chamber, the air thick with settling grit. Fixed stage layout: a small concrete chamber with ankle-deep black water on the floor; the massive round steel gate door two metres tall with a big black iron hand-wheel the size of a car tyre, left stopped half-turned, fills the back wall; a rectangular brass plate with a hand-shaped recess is set into the wall at frame-right beside the gate; at frame-left the only doorway is completely filled from floor to ceiling by a solid mass of broken concrete slabs and bent steel bars, with no gap and no light showing through, and thin trickles of water run out of its seams; a cracked ceiling above.",
+     "visual_zh": "林峰放开转了一半的手轮，慢慢走过脚踝深的黑水，走向那个从地面到天花板被碎混凝土和扭曲钢筋完全堵死的门口、一点缝都没有，他停在它面前，裂开的天花板上还有碎渣在往下掉。一盏红色应急灯均匀地照着房间，黑水显出暗红色。画面里恰好是Lin，每个人只出现一次。",
+     "camera_zh": "0—7秒，镜头在林峰身后以步行的速度跟着，直到他停在被封死的门口前。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 7,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. [[asset:lin_work]] lowers his hand from the half-turned wheel and walks slowly through the ankle-deep black water toward the doorway, which is completely filled from floor to ceiling with broken concrete and bent steel bars with no gap, and stops in front of it while grit still trickles down from the cracked ceiling. A red emergency lamp lights the chamber evenly and the black water shows a dull red. [[asset:lin_work]] keeps his jaw tight, his eyes wide, his brows pulled together. One person is in the frame: Lin, each shown once. The camera follows behind Lin at walking pace until he stops in front of the sealed doorway.",
+       "visual_zh": "林峰放开转了一半的手轮，慢慢走过脚踝深的黑水，走向那个从地面到天花板被碎混凝土和扭曲钢筋完全堵死的门口、一点缝都没有，他停在它面前，裂开的天花板上还有碎渣在往下掉。一盏红色应急灯均匀地照着房间，黑水显出暗红色。画面里恰好是Lin，每个人只出现一次。 镜头在林峰身后以步行的速度跟着，直到他停在被封死的门口前。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "The slow slosh of water around boots, the crisp patter of falling grit and a deep low rumble fading in the walls. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here. Every on-set sound effect is loud, crisp and close to the microphone, as prominent as the voices: footsteps, impacts, doors, wind, ice, machinery and fabric are all clearly heard. No music.",
+     "sound_zh": "水在靴子边缓缓晃动的声音、碎渣掉落的轻轻噼啪声和墙里渐渐远去的低沉隆隆声。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。所有现场音效都响亮、清脆、贴近话筒，和人声一样突出：脚步、撞击、开关门、风声、冰裂、机械和衣料摩擦都听得清清楚楚。没有配乐。",
+     "seed": 37407,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "02｜闸门室：林峰用两只手掌和肩膀拼命顶那堵碎石墙，碎石一点不动，没有任何缝，他喘着气把额头抵在冰冷的混凝土上",
+     "duration_seconds": 6,
+     "generation_seconds": 6,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "LinWork"
+     ],
+     "asset_keys": [
+      "gate_room",
+      "lin_work"
+     ],
+     "image_reference_keys": [
+      "gate_room"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium shot, the man from the head to the waist, in the middle third of the frame, in front of the rubble wall. Lin (a Chinese man in his early thirties) at frame-center, standing in front of the wall of rubble in profile facing frame-left, both palms flat against the broken slabs and his shoulder driving into them, his headset earpiece in his right ear, in a charcoal henley with the sleeves pushed up to his forearms and dark cargo trousers, a small headset earpiece in his right ear and a slim microphone clipped at his jaw, his steady dark-brown eyes on the solid wall of rubble, his teeth clenched, his eyes narrowed, his brows low. Behind him nothing but the solid wall of broken concrete with no gap anywhere. A red emergency lamp lights the chamber evenly and the black water shows a dull red. The frame holds the solid wall of rubble with no gap, and one person: Lin. A single caged work lamp and a red emergency lamp light a cold concrete chamber, the air thick with settling grit. Fixed stage layout: a close view of the sealed doorway: a solid wall of broken concrete slabs and bent steel bars with no gap anywhere fills the whole back of the frame, thin trickles of water running out of its seams down into ankle-deep black water at the bottom of the frame.",
+     "visual_zh": "林峰用两只手掌和肩膀拼命顶那堵实心的碎石墙，可是一点不动，也没有任何缝；然后他停下来，喘着气，把额头抵在冰冷的混凝土上。一盏红色应急灯均匀地照着房间，黑水显出暗红色。画面里恰好是Lin，每个人只出现一次。",
+     "camera_zh": "0—6秒，镜头慢慢推近，直到他的手和碎石墙占满画面中间三分之一。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 6,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. [[asset:lin_work]] shoves both palms and his shoulder against the solid wall of broken slabs with all his strength, but nothing moves and no gap opens; then he stops, breathing hard, and rests his forehead against the cold concrete. A red emergency lamp lights the chamber evenly and the black water shows a dull red. One person is in the frame: Lin, each shown once. The camera pushes in slowly until his hands and the rubble fills the middle third of the frame.",
+       "visual_zh": "林峰用两只手掌和肩膀拼命顶那堵实心的碎石墙，可是一点不动，也没有任何缝；然后他停下来，喘着气，把额头抵在冰冷的混凝土上。一盏红色应急灯均匀地照着房间，黑水显出暗红色。画面里恰好是Lin，每个人只出现一次。 镜头慢慢推近，直到他的手和碎石墙占满画面中间三分之一。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "The grunt of effort, the scrape of palms on rough concrete, the slosh of water and a deep hush behind the rubble. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here. Every on-set sound effect is loud, crisp and close to the microphone, as prominent as the voices: footsteps, impacts, doors, wind, ice, machinery and fabric are all clearly heard. No music.",
+     "sound_zh": "用力的闷哼声、手掌擦过粗糙混凝土的声音、水的晃动声和碎石后面深深的寂静。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。所有现场音效都响亮、清脆、贴近话筒，和人声一样突出：脚步、撞击、开关门、风声、冰裂、机械和衣料摩擦都听得清清楚楚。没有配乐。",
+     "seed": 37407,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "03｜控制室：苏清月站起来按住耳机，对着麦克风喊林峰听得见吗，回答我",
+     "duration_seconds": 7,
+     "generation_seconds": 7,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "SuCozy"
+     ],
+     "asset_keys": [
+      "bunker_control",
+      "su_cozy"
+     ],
+     "image_reference_keys": [
+      "bunker_control"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium shot, the woman from the head to the waist, in the middle third of the frame, at the console. Su (a Chinese woman in her late twenties) at frame-center, standing up fast from the black swivel chair at the control console in profile facing frame-right, one hand pressing the headset earpiece to her ear and the other flat on the console, her head turned toward the monitor wall, in a cream knit sweater with the sleeves pushed up, black thermal leggings and soft boots, a black over-ear headset with a slim boom microphone on her head, her long black hair tied back, her soft dark-brown eyes on the wall of small monitors, her lips parting, her eyes wide and wet, her brows pulled together. Behind her the wall of small monitors glows. Cool green status lights and a warm amber lamp light her face evenly. The frame holds one person: Su. Cool green indicator glow and pale work-lamp light fill the compact underground control room. Fixed stage layout: the steel control console with rows of small green status lights and one big red push-button under a clear flip-up cover stands in the middle of the frame; a wall of six small monitors is at frame-left; a large red digital countdown clock hangs high on the back wall at center-right; a heavy steel door stands in the right wall at frame-right. A black swivel chair stands in front of the console.",
+     "visual_zh": "苏清月用锐利喘着气的声音对着耳机上细细的麦克风说出第一句，接着苏清月用锐利的声音对着耳机上细细的麦克风说出第二句；最后一句之后，她僵着身子，眼睛盯着监控墙，听着。 台词一句紧接着一句，中间只有很短的换气，每句一口气说完、句中不停顿。冷绿色的指示灯和一盏温暖的琥珀色灯均匀地照着她的脸。画面里恰好是Su，每个人只出现一次。",
+     "camera_zh": "0—7秒，镜头慢慢推近，直到她的脸和耳机占满画面中间三分之一。",
+     "dialogue": [
+      {
+       "speaker": "SuCozy",
+       "text": "林峰听得见吗？",
+       "start_seconds": 0.6,
+       "end_seconds": 2.33,
+       "language": "zh"
+      },
+      {
+       "speaker": "SuCozy",
+       "text": "回答我！",
+       "start_seconds": 3.18,
+       "end_seconds": 4.16,
+       "language": "zh"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 7,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. [[asset:su_cozy]] speaks the first line into the slim boom microphone of her headset in a sharp breathless voice, then [[asset:su_cozy]] speaks the second line into the slim boom microphone of her headset in a sharp voice; after the last line she stays rigid, listening with her eyes fixed on the monitor wall. The lines follow one another at once with only a very short breath between them, each said in one breath with no pause inside the sentence. Cool green status lights and a warm amber lamp light her face evenly. [[asset:su_cozy]] keeps her lips parting, her eyes wide and wet, her brows pulled together. One person is in the frame: Su, each shown once. The camera pushes in slowly until her face and the headset fills the middle third of the frame.",
+       "visual_zh": "苏清月用锐利喘着气的声音对着耳机上细细的麦克风说出第一句，接着苏清月用锐利的声音对着耳机上细细的麦克风说出第二句；最后一句之后，她僵着身子，眼睛盯着监控墙，听着。 台词一句紧接着一句，中间只有很短的换气，每句一口气说完、句中不停顿。冷绿色的指示灯和一盏温暖的琥珀色灯均匀地照着她的脸。画面里恰好是Su，每个人只出现一次。 镜头慢慢推近，直到她的脸和耳机占满画面中间三分之一。",
+       "dialogue_indices": [
+        0,
+        1
+       ]
+      }
+     ],
+     "sound_en": "The clear crackle of radio static in an earpiece, the hum of the console and a quick breath. Every on-set sound effect is loud, crisp and close to the microphone, as prominent as the voices: footsteps, impacts, doors, wind, ice, machinery and fabric are all clearly heard. No music. The voices are clear.",
+     "sound_zh": "耳机里电流细细的沙沙声、控制台的嗡鸣和一声急促的呼吸。所有现场音效都响亮、清脆、贴近话筒，和人声一样突出：脚步、撞击、开关门、风声、冰裂、机械和衣料摩擦都听得清清楚楚。没有配乐。人声清楚。",
+     "seed": 37407,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "04｜闸门室：林峰按着耳机，对苏清月说通道塌了我出不去，闸门只关了一半",
+     "duration_seconds": 8,
+     "generation_seconds": 8,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "LinWork"
+     ],
+     "asset_keys": [
+      "gate_room",
+      "lin_work"
+     ],
+     "image_reference_keys": [
+      "gate_room"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium shot, the man from the head to the knees, in the middle third of the frame, in the gate chamber. Lin (a Chinese man in his early thirties) at frame-center, standing in the ankle-deep black water in profile facing frame-left, one hand pressed to the earpiece of his headset, his back to the half-turned wheel, his head turned toward the sealed wall of rubble, in a charcoal henley with the sleeves pushed up to his forearms and dark cargo trousers, a small headset earpiece in his right ear and a slim microphone clipped at his jaw, his steady dark-brown eyes on the solid wall of rubble, his jaw tight, his eyes steady and wet, his brows drawn together. Behind him the sealed wall of rubble fills the frame-left and the massive round steel gate with its half-turned wheel fills the back wall. A red emergency lamp lights the chamber evenly and the black water shows a dull red. The frame holds one person: Lin. A single caged work lamp and a red emergency lamp light a cold concrete chamber, the air thick with settling grit. Fixed stage layout: a small concrete chamber with ankle-deep black water on the floor; the massive round steel gate door two metres tall with a big black iron hand-wheel the size of a car tyre, left stopped half-turned, fills the back wall; a rectangular brass plate with a hand-shaped recess is set into the wall at frame-right beside the gate; at frame-left the only doorway is completely filled from floor to ceiling by a solid mass of broken concrete slabs and bent steel bars, with no gap and no light showing through, and thin trickles of water run out of its seams; a cracked ceiling above.",
+     "visual_zh": "林峰用低沉沙哑的声音对着别在下巴边的细细麦克风说出第一句，接着林峰用低沉凝重的声音对着别在下巴边的细细麦克风说出第二句；最后一句之后，他转头看了一眼身后转了一半的手轮。 台词一句紧接着一句，中间只有很短的换气，每句一口气说完、句中不停顿。一盏红色应急灯均匀地照着房间，黑水显出暗红色。画面里恰好是Lin，每个人只出现一次。",
+     "camera_zh": "0—8秒，镜头慢慢推近，直到他的脸和耳机占满画面中间三分之一。",
+     "dialogue": [
+      {
+       "speaker": "LinWork",
+       "text": "通道塌了我出不去。",
+       "start_seconds": 0.6,
+       "end_seconds": 2.83,
+       "language": "zh"
+      },
+      {
+       "speaker": "LinWork",
+       "text": "闸门只关了一半。",
+       "start_seconds": 3.68,
+       "end_seconds": 5.66,
+       "language": "zh"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 8,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. [[asset:lin_work]] speaks the first line into the slim microphone clipped at his jaw in a low rough voice, then [[asset:lin_work]] speaks the second line into the slim microphone clipped at his jaw in a low grim voice; after the last line he turns his head and looks at the half-turned wheel behind him. The lines follow one another at once with only a very short breath between them, each said in one breath with no pause inside the sentence. A red emergency lamp lights the chamber evenly and the black water shows a dull red. One person is in the frame: Lin, each shown once. The camera pushes in slowly until his face and the earpiece fills the middle third of the frame.",
+       "visual_zh": "林峰用低沉沙哑的声音对着别在下巴边的细细麦克风说出第一句，接着林峰用低沉凝重的声音对着别在下巴边的细细麦克风说出第二句；最后一句之后，他转头看了一眼身后转了一半的手轮。 台词一句紧接着一句，中间只有很短的换气，每句一口气说完、句中不停顿。一盏红色应急灯均匀地照着房间，黑水显出暗红色。画面里恰好是Lin，每个人只出现一次。 镜头慢慢推近，直到他的脸和耳机占满画面中间三分之一。",
+       "dialogue_indices": [
+        0,
+        1
+       ]
+      }
+     ],
+     "sound_en": "The slow slosh of water, the crackle of radio static in an earpiece and a low breath. Every on-set sound effect is loud, crisp and close to the microphone, as prominent as the voices: footsteps, impacts, doors, wind, ice, machinery and fabric are all clearly heard. No music. The voices are clear.",
+     "sound_zh": "水缓缓晃动的声音、耳机里电流的沙沙声和一声低低的呼吸。所有现场音效都响亮、清脆、贴近话筒，和人声一样突出：脚步、撞击、开关门、风声、冰裂、机械和衣料摩擦都听得清清楚楚。没有配乐。人声清楚。",
+     "seed": 37407,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "05｜控制室：苏清月一巴掌拍在控制台上，说我来炸开它",
+     "duration_seconds": 6,
+     "generation_seconds": 6,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "SuCozy"
+     ],
+     "asset_keys": [
+      "bunker_control",
+      "su_cozy"
+     ],
+     "image_reference_keys": [
+      "bunker_control"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium shot, the woman from the head to the waist, in the middle third of the frame, at the console. Su (a Chinese woman in her late twenties) at frame-center, standing at the control console in profile facing frame-right, one hand pressing the headset to her ear and the other fist pressed flat on the console, her head turned toward the monitor wall, in a cream knit sweater with the sleeves pushed up, black thermal leggings and soft boots, a black over-ear headset with a slim boom microphone on her head, her long black hair tied back, her soft dark-brown eyes on the wall of small monitors, her teeth bared, her eyes fierce and wet, her brows low. Behind her the wall of small monitors glows. Cool green status lights and a warm amber lamp light her face evenly. The frame holds one person: Su. Cool green indicator glow and pale work-lamp light fill the compact underground control room. Fixed stage layout: the steel control console with rows of small green status lights and one big red push-button under a clear flip-up cover stands in the middle of the frame; a wall of six small monitors is at frame-left; a large red digital countdown clock hangs high on the back wall at center-right; a heavy steel door stands in the right wall at frame-right. A black swivel chair stands in front of the console.",
+     "visual_zh": "苏清月用锐利凶狠的声音对着耳机上细细的麦克风说出第一句；最后一句之后，她攥紧控制台的边缘，指节发白。 台词一句紧接着一句，中间只有很短的换气，每句一口气说完、句中不停顿。冷绿色的指示灯和一盏温暖的琥珀色灯均匀地照着她的脸。画面里恰好是Su，每个人只出现一次。",
+     "camera_zh": "0—6秒，镜头慢慢推近，直到她的拳头和脸占满画面中间三分之一。",
+     "dialogue": [
+      {
+       "speaker": "SuCozy",
+       "text": "我来炸开它！",
+       "start_seconds": 0.6,
+       "end_seconds": 2.08,
+       "language": "zh"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 6,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. [[asset:su_cozy]] speaks the first line into the slim boom microphone of her headset in a sharp fierce voice; after the last line she grips the console tightly until her knuckles whiten. The lines follow one another at once with only a very short breath between them, each said in one breath with no pause inside the sentence. Cool green status lights and a warm amber lamp light her face evenly. [[asset:su_cozy]] keeps her teeth bared, her eyes fierce and wet, her brows low. One person is in the frame: Su, each shown once. The camera pushes in slowly until her fist and her face fills the middle third of the frame.",
+       "visual_zh": "苏清月用锐利凶狠的声音对着耳机上细细的麦克风说出第一句；最后一句之后，她攥紧控制台的边缘，指节发白。 台词一句紧接着一句，中间只有很短的换气，每句一口气说完、句中不停顿。冷绿色的指示灯和一盏温暖的琥珀色灯均匀地照着她的脸。画面里恰好是Su，每个人只出现一次。 镜头慢慢推近，直到她的拳头和脸占满画面中间三分之一。",
+       "dialogue_indices": [
+        0
+       ]
+      }
+     ],
+     "sound_en": "The crackle of radio static in an earpiece, the thump of a fist on a console and a ragged breath. Every on-set sound effect is loud, crisp and close to the microphone, as prominent as the voices: footsteps, impacts, doors, wind, ice, machinery and fabric are all clearly heard. No music. The voices are clear.",
+     "sound_zh": "耳机里电流的沙沙声、拳头砸在控制台上的闷响和一声粗重的喘息。所有现场音效都响亮、清脆、贴近话筒，和人声一样突出：脚步、撞击、开关门、风声、冰裂、机械和衣料摩擦都听得清清楚楚。没有配乐。人声清楚。",
+     "seed": 37407,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "06｜闸门室：林峰说别炸闸门一震就裂，说挖通要三天他等不到",
+     "duration_seconds": 9,
+     "generation_seconds": 9,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "LinWork"
+     ],
+     "asset_keys": [
+      "gate_room",
+      "lin_work"
+     ],
+     "image_reference_keys": [
+      "gate_room"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium shot, the man from the head to the knees, in the middle third of the frame, in the gate chamber. Lin (a Chinese man in his early thirties) at frame-center, standing in the ankle-deep black water in profile facing frame-left, one hand pressed to the earpiece of his headset, his other hand raised palm-out in a calming gesture, his head turned toward the sealed wall of rubble, in a charcoal henley with the sleeves pushed up to his forearms and dark cargo trousers, a small headset earpiece in his right ear and a slim microphone clipped at his jaw, his steady dark-brown eyes on the solid wall of rubble, his jaw tight, his eyes steady and wet, his brows drawn together. Behind him the sealed wall of rubble fills the frame-left and the massive round steel gate fills the back wall. A red emergency lamp lights the chamber evenly and the black water shows a dull red. The frame holds one person: Lin. A single caged work lamp and a red emergency lamp light a cold concrete chamber, the air thick with settling grit. Fixed stage layout: a small concrete chamber with ankle-deep black water on the floor; the massive round steel gate door two metres tall with a big black iron hand-wheel the size of a car tyre, left stopped half-turned, fills the back wall; a rectangular brass plate with a hand-shaped recess is set into the wall at frame-right beside the gate; at frame-left the only doorway is completely filled from floor to ceiling by a solid mass of broken concrete slabs and bent steel bars, with no gap and no light showing through, and thin trickles of water run out of its seams; a cracked ceiling above.",
+     "visual_zh": "林峰用低沉平稳的声音对着别在下巴边的细细麦克风说出第一句，接着林峰用低沉温柔的声音对着别在下巴边的细细麦克风说出第二句；最后一句之后，他放下举着的手，低头看着靴子周围的黑水。 台词一句紧接着一句，中间只有很短的换气，每句一口气说完、句中不停顿。一盏红色应急灯均匀地照着房间，黑水显出暗红色。画面里恰好是Lin，每个人只出现一次。",
+     "camera_zh": "0—9秒，镜头慢慢推近，直到他的脸和耳机占满画面中间三分之一。",
+     "dialogue": [
+      {
+       "speaker": "LinWork",
+       "text": "别炸闸门一震就会裂。",
+       "start_seconds": 0.6,
+       "end_seconds": 3.08,
+       "language": "zh"
+      },
+      {
+       "speaker": "LinWork",
+       "text": "挖通要三天我等不到。",
+       "start_seconds": 3.93,
+       "end_seconds": 6.41,
+       "language": "zh"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 9,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. [[asset:lin_work]] speaks the first line into the slim microphone clipped at his jaw in a low steady voice, then [[asset:lin_work]] speaks the second line into the slim microphone clipped at his jaw in a low gentle voice; after the last line he lowers his raised hand and looks down at the black water around his boots. The lines follow one another at once with only a very short breath between them, each said in one breath with no pause inside the sentence. A red emergency lamp lights the chamber evenly and the black water shows a dull red. One person is in the frame: Lin, each shown once. The camera pushes in slowly until his face and the earpiece fills the middle third of the frame.",
+       "visual_zh": "林峰用低沉平稳的声音对着别在下巴边的细细麦克风说出第一句，接着林峰用低沉温柔的声音对着别在下巴边的细细麦克风说出第二句；最后一句之后，他放下举着的手，低头看着靴子周围的黑水。 台词一句紧接着一句，中间只有很短的换气，每句一口气说完、句中不停顿。一盏红色应急灯均匀地照着房间，黑水显出暗红色。画面里恰好是Lin，每个人只出现一次。 镜头慢慢推近，直到他的脸和耳机占满画面中间三分之一。",
+       "dialogue_indices": [
+        0,
+        1
+       ]
+      }
+     ],
+     "sound_en": "The slow slosh of water, the crackle of radio static in an earpiece and a low breath. Every on-set sound effect is loud, crisp and close to the microphone, as prominent as the voices: footsteps, impacts, doors, wind, ice, machinery and fabric are all clearly heard. No music. The voices are clear.",
+     "sound_zh": "水缓缓晃动的声音、耳机里电流的沙沙声和一声低低的呼吸。所有现场音效都响亮、清脆、贴近话筒，和人声一样突出：脚步、撞击、开关门、风声、冰裂、机械和衣料摩擦都听得清清楚楚。没有配乐。人声清楚。",
+     "seed": 37407,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "07｜控制室：苏清月慢慢松开拳头，低声说我知道，冰水里撑不过一小时",
+     "duration_seconds": 8,
+     "generation_seconds": 8,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "SuCozy"
+     ],
+     "asset_keys": [
+      "bunker_control",
+      "su_cozy"
+     ],
+     "image_reference_keys": [
+      "bunker_control"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium shot, the woman from the head to the waist, in the middle third of the frame, at the console. Su (a Chinese woman in her late twenties) at frame-center, standing at the control console in profile facing frame-right, both hands pressing the headset to her ears, her head slowly bowing, in a cream knit sweater with the sleeves pushed up, black thermal leggings and soft boots, a black over-ear headset with a slim boom microphone on her head, her long black hair tied back, her soft dark-brown eyes on the console, her lips trembling, her eyes streaming, her brows pulled up. Behind her the wall of small monitors glows. Cool green status lights and a warm amber lamp light her face evenly. The frame holds one person: Su. Cool green indicator glow and pale work-lamp light fill the compact underground control room. Fixed stage layout: the steel control console with rows of small green status lights and one big red push-button under a clear flip-up cover stands in the middle of the frame; a wall of six small monitors is at frame-left; a large red digital countdown clock hangs high on the back wall at center-right; a heavy steel door stands in the right wall at frame-right. A black swivel chair stands in front of the console.",
+     "visual_zh": "苏清月用低沉发颤的声音对着耳机上细细的麦克风说出第一句，接着苏清月用低沉发抖的声音对着耳机上细细的麦克风说出第二句；最后一句之后，她闭上眼睛，一滴眼泪顺着脸颊流下来。 台词一句紧接着一句，中间只有很短的换气，每句一口气说完、句中不停顿。冷绿色的指示灯和一盏温暖的琥珀色灯均匀地照着她的脸。画面里恰好是Su，每个人只出现一次。",
+     "camera_zh": "0—8秒，镜头慢慢推近，直到她的脸和耳机占满画面中间三分之一。",
+     "dialogue": [
+      {
+       "speaker": "SuCozy",
+       "text": "我知道。",
+       "start_seconds": 0.6,
+       "end_seconds": 1.58,
+       "language": "zh"
+      },
+      {
+       "speaker": "SuCozy",
+       "text": "冰水里撑不过一小时。",
+       "start_seconds": 2.43,
+       "end_seconds": 4.91,
+       "language": "zh"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 8,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. [[asset:su_cozy]] speaks the first line into the slim boom microphone of her headset in a low breaking voice, then [[asset:su_cozy]] speaks the second line into the slim boom microphone of her headset in a low shaking voice; after the last line she closes her eyes and a tear runs down her cheek. The lines follow one another at once with only a very short breath between them, each said in one breath with no pause inside the sentence. Cool green status lights and a warm amber lamp light her face evenly. One person is in the frame: Su, each shown once. The camera pushes in slowly until her face and the headset fills the middle third of the frame.",
+       "visual_zh": "苏清月用低沉发颤的声音对着耳机上细细的麦克风说出第一句，接着苏清月用低沉发抖的声音对着耳机上细细的麦克风说出第二句；最后一句之后，她闭上眼睛，一滴眼泪顺着脸颊流下来。 台词一句紧接着一句，中间只有很短的换气，每句一口气说完、句中不停顿。冷绿色的指示灯和一盏温暖的琥珀色灯均匀地照着她的脸。画面里恰好是Su，每个人只出现一次。 镜头慢慢推近，直到她的脸和耳机占满画面中间三分之一。",
+       "dialogue_indices": [
+        0,
+        1
+       ]
+      }
+     ],
+     "sound_en": "A sharp electronic hiss in an earpiece, the hum of the console and a shaky breath. Every on-set sound effect is loud, crisp and close to the microphone, as prominent as the voices: footsteps, impacts, doors, wind, ice, machinery and fabric are all clearly heard. No music. The voices are clear.",
+     "sound_zh": "耳机里细细的电子嘶声、控制台的嗡鸣和一声发颤的呼吸。所有现场音效都响亮、清脆、贴近话筒，和人声一样突出：脚步、撞击、开关门、风声、冰裂、机械和衣料摩擦都听得清清楚楚。没有配乐。人声清楚。",
+     "seed": 37407,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "08｜生活区走廊：黑色的洪水从长走廊远端翻涌过来，水位越涨越高，近端那扇圆形钢舱门紧紧关着",
+     "duration_seconds": 7,
+     "generation_seconds": 7,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [],
+     "asset_keys": [
+      "flood_corridor"
+     ],
+     "image_reference_keys": [
+      "flood_corridor"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Wide shot of the corridor, the churning water in the middle third of the frame, nobody in the scene.  Red emergency lamps light the corridor evenly and the black water shows a dull red. The frame holds the flooded corridor and the hatch door, and nobody in the scene. A red emergency lamp lights a long concrete corridor filled with the roar of water. Fixed stage layout: a long grey concrete corridor recedes down the middle of the frame; dark churning water pours down it from the far end toward the camera, knee-deep and rising; red emergency lamps run along the ceiling; a heavy round steel hatch door stands closed at the near end at frame-right; nobody in the scene.",
+     "visual_zh": "黑色的洪水从长长的灰色混凝土走廊远端翻涌着朝镜头涌来，水位一点点上涨，天花板上一排红色应急灯亮着，近端一扇厚重的圆形钢舱门紧紧关着。别的什么都不动。红色应急灯均匀地照着走廊，黑水显出暗红色。",
+     "camera_zh": "0—7秒，镜头在洪水的前锋身后以步行的速度跟着，直到黑色的水涌到近端的舱门。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 7,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. Dark churning water pours down the long grey concrete corridor from the far end toward the camera, the level rising steadily, red emergency lamps running along the ceiling and a heavy round steel hatch door standing closed at the near end. Nothing else moves. Red emergency lamps light the corridor evenly and the black water shows a dull red. The camera follows behind the front of the flood at walking pace until the dark water reaches the hatch door at the near end.",
+       "visual_zh": "黑色的洪水从长长的灰色混凝土走廊远端翻涌着朝镜头涌来，水位一点点上涨，天花板上一排红色应急灯亮着，近端一扇厚重的圆形钢舱门紧紧关着。别的什么都不动。红色应急灯均匀地照着走廊，黑水显出暗红色。 镜头在洪水的前锋身后以步行的速度跟着，直到黑色的水涌到近端的舱门。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "The thundering roar of rushing water, the metallic ring of a sealed hatch and a steady alarm tone. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here. Every on-set sound effect is loud, crisp and close to the microphone, as prominent as the voices: footsteps, impacts, doors, wind, ice, machinery and fabric are all clearly heard. No music.",
+     "sound_zh": "洪水奔涌的雷鸣般的轰响、封死的舱门金属的回响和一声持续的警报。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。所有现场音效都响亮、清脆、贴近话筒，和人声一样突出：脚步、撞击、开关门、风声、冰裂、机械和衣料摩擦都听得清清楚楚。没有配乐。",
+     "seed": 37407,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "09｜闸门室：林峰说洪水改道了，九分钟后就冲到你那里，我算过了",
+     "duration_seconds": 9,
+     "generation_seconds": 9,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "LinWork"
+     ],
+     "asset_keys": [
+      "gate_room",
+      "lin_work"
+     ],
+     "image_reference_keys": [
+      "gate_room"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium shot, the man from the head to the knees, in the middle third of the frame, in the gate chamber. Lin (a Chinese man in his early thirties) at frame-center, standing in the knee-deep black water in profile facing frame-left, one hand pressed to the earpiece of his headset and the other resting on the rim of the half-turned wheel, his head turned toward the sealed wall of rubble, in a charcoal henley with the sleeves pushed up to his forearms and dark cargo trousers, a small headset earpiece in his right ear and a slim microphone clipped at his jaw, his steady dark-brown eyes on the solid wall of rubble, his jaw set, his eyes steady and wet, his brows level. Behind him the sealed wall of rubble fills the frame-left and the massive round steel gate fills the back wall. A red emergency lamp lights the chamber evenly and the black water shows a dull red. The frame holds one person: Lin. A single caged work lamp and a red emergency lamp light a cold concrete chamber, the black water now knee-deep. Fixed stage layout: a small concrete chamber with knee-deep black water; the massive round steel gate door with a big black iron hand-wheel stopped half-turned fills the back wall; a rectangular brass plate with a hand-shaped recess is set into the wall at frame-right beside the gate; at frame-left the only doorway is completely filled from floor to ceiling by a solid mass of broken concrete slabs and bent steel bars, with no gap and no light showing through, and thin trickles of water run out of its seams.",
+     "visual_zh": "林峰用低沉平稳的声音对着别在下巴边的细细麦克风说出第一句，接着林峰用低沉温柔的声音对着别在下巴边的细细麦克风说出第二句；最后一句之后，他低头看着放在手轮上的左手，慢慢蜷起手指。 台词一句紧接着一句，中间只有很短的换气，每句一口气说完、句中不停顿。一盏红色应急灯均匀地照着房间，黑水显出暗红色。画面里恰好是Lin，每个人只出现一次。",
+     "camera_zh": "0—9秒，镜头慢慢推近，直到他的脸和耳机占满画面中间三分之一。",
+     "dialogue": [
+      {
+       "speaker": "LinWork",
+       "text": "洪水改道了九分钟后就到你那里。",
+       "start_seconds": 0.6,
+       "end_seconds": 4.33,
+       "language": "zh"
+      },
+      {
+       "speaker": "LinWork",
+       "text": "我算过了。",
+       "start_seconds": 5.18,
+       "end_seconds": 6.41,
+       "language": "zh"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 9,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. [[asset:lin_work]] speaks the first line into the slim microphone clipped at his jaw in a low steady voice, then [[asset:lin_work]] speaks the second line into the slim microphone clipped at his jaw in a low gentle voice; after the last line he looks down at his left hand on the wheel and bends its fingers slowly. The lines follow one another at once with only a very short breath between them, each said in one breath with no pause inside the sentence. A red emergency lamp lights the chamber evenly and the black water shows a dull red. One person is in the frame: Lin, each shown once. The camera pushes in slowly until his face and the earpiece fills the middle third of the frame.",
+       "visual_zh": "林峰用低沉平稳的声音对着别在下巴边的细细麦克风说出第一句，接着林峰用低沉温柔的声音对着别在下巴边的细细麦克风说出第二句；最后一句之后，他低头看着放在手轮上的左手，慢慢蜷起手指。 台词一句紧接着一句，中间只有很短的换气，每句一口气说完、句中不停顿。一盏红色应急灯均匀地照着房间，黑水显出暗红色。画面里恰好是Lin，每个人只出现一次。 镜头慢慢推近，直到他的脸和耳机占满画面中间三分之一。",
+       "dialogue_indices": [
+        0,
+        1
+       ]
+      }
+     ],
+     "sound_en": "The slow slosh of rising water, the crackle of radio static in an earpiece and a low breath. Every on-set sound effect is loud, crisp and close to the microphone, as prominent as the voices: footsteps, impacts, doors, wind, ice, machinery and fabric are all clearly heard. No music. The voices are clear.",
+     "sound_zh": "上涨的水缓缓晃动的声音、耳机里电流的沙沙声和一声低低的呼吸。所有现场音效都响亮、清脆、贴近话筒，和人声一样突出：脚步、撞击、开关门、风声、冰裂、机械和衣料摩擦都听得清清楚楚。没有配乐。人声清楚。",
+     "seed": 37407,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "10｜控制室：苏清月对着麦克风说不准关，再给我五分钟",
+     "duration_seconds": 7,
+     "generation_seconds": 7,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "SuCozy"
+     ],
+     "asset_keys": [
+      "bunker_control",
+      "su_cozy"
+     ],
+     "image_reference_keys": [
+      "bunker_control"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium shot, the woman from the head to the waist, in the middle third of the frame, at the console. Su (a Chinese woman in her late twenties) at frame-center, leaning over the control console in profile facing frame-right, both hands gripping the console and the headset on her head, her head lifted toward the monitor wall, in a cream knit sweater with the sleeves pushed up, black thermal leggings and soft boots, a black over-ear headset with a slim boom microphone on her head, her long black hair tied back, her soft dark-brown eyes on the wall of small monitors, her lips pulled tight, her eyes wide and streaming, her brows pulled together. Behind her the wall of small monitors glows. Cool green status lights and a warm amber lamp light her face evenly. The frame holds one person: Su. Cool green indicator glow and pale work-lamp light fill the compact underground control room. Fixed stage layout: the steel control console with rows of small green status lights and one big red push-button under a clear flip-up cover stands in the middle of the frame; a wall of six small monitors is at frame-left; a large red digital countdown clock hangs high on the back wall at center-right; a heavy steel door stands in the right wall at frame-right. A black swivel chair stands in front of the console.",
+     "visual_zh": "苏清月用锐利发颤的声音对着耳机上细细的麦克风说出第一句，接着苏清月用锐利恳求的声音对着耳机上细细的麦克风说出第二句；最后一句之后，她屏住呼吸，眼睛盯着监控墙。 台词一句紧接着一句，中间只有很短的换气，每句一口气说完、句中不停顿。冷绿色的指示灯和一盏温暖的琥珀色灯均匀地照着她的脸。画面里恰好是Su，每个人只出现一次。",
+     "camera_zh": "0—7秒，镜头慢慢推近，直到她的脸和耳机占满画面中间三分之一。",
+     "dialogue": [
+      {
+       "speaker": "SuCozy",
+       "text": "不准关！",
+       "start_seconds": 0.6,
+       "end_seconds": 1.58,
+       "language": "zh"
+      },
+      {
+       "speaker": "SuCozy",
+       "text": "再给我五分钟！",
+       "start_seconds": 2.43,
+       "end_seconds": 4.16,
+       "language": "zh"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 7,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. [[asset:su_cozy]] speaks the first line into the slim boom microphone of her headset in a sharp breaking voice, then [[asset:su_cozy]] speaks the second line into the slim boom microphone of her headset in a sharp pleading voice; after the last line she holds her breath, her eyes fixed on the monitor wall. The lines follow one another at once with only a very short breath between them, each said in one breath with no pause inside the sentence. Cool green status lights and a warm amber lamp light her face evenly. [[asset:su_cozy]] keeps her lips pulled tight, her eyes wide and streaming, her brows pulled together. One person is in the frame: Su, each shown once. The camera pushes in slowly until her face and the headset fills the middle third of the frame.",
+       "visual_zh": "苏清月用锐利发颤的声音对着耳机上细细的麦克风说出第一句，接着苏清月用锐利恳求的声音对着耳机上细细的麦克风说出第二句；最后一句之后，她屏住呼吸，眼睛盯着监控墙。 台词一句紧接着一句，中间只有很短的换气，每句一口气说完、句中不停顿。冷绿色的指示灯和一盏温暖的琥珀色灯均匀地照着她的脸。画面里恰好是Su，每个人只出现一次。 镜头慢慢推近，直到她的脸和耳机占满画面中间三分之一。",
+       "dialogue_indices": [
+        0,
+        1
+       ]
+      }
+     ],
+     "sound_en": "The crackle of radio static in an earpiece, the hum of the console and a ragged breath. Every on-set sound effect is loud, crisp and close to the microphone, as prominent as the voices: footsteps, impacts, doors, wind, ice, machinery and fabric are all clearly heard. No music. The voices are clear.",
+     "sound_zh": "耳机里电流的沙沙声、控制台的嗡鸣和一声粗重的喘息。所有现场音效都响亮、清脆、贴近话筒，和人声一样突出：脚步、撞击、开关门、风声、冰裂、机械和衣料摩擦都听得清清楚楚。没有配乐。人声清楚。",
+     "seed": 37407,
+     "dialogue_language": "zh"
+    }
+   ],
+   "dialogue_language": "zh"
+  },
+  {
+   "title": "补拍6B｜手轮：闸门只认他的手掌，他对她说你没有五分钟，告别，转手轮（替换剧本第 66 集）",
+   "summary": "林峰说你没有五分钟，外科医生只做最后一刀，把右手按进铜板；两只手握住手轮，左手手指合不拢；他对她说遇见你是我最好的决定；苏清月说我来接你；他用全身的力气转动手轮，水涨到腰。",
+   "script": "闸门室，林峰说你没有五分钟，外科医生只做最后一刀，然后把右手按进黄铜板的手掌凹槽，林峰用低沉平稳的声音对着别在下巴边的细细麦克风说出第一句，接着林峰用低沉温柔的声音对着别在下巴边的细细麦克风说出第二句；最后一句之后，他把手从耳机上放下来，把右手掌平平按进墙上黄铜板的手掌凹槽里。 台词一句紧接着一句，中间只有很短的换气，每句一口气说完、句中不停顿。一盏红色应急灯均匀地照着房间，黑水显出暗红色。画面里恰好是Lin，每个人只出现一次。\nLinWork：“你没有五分钟。”\nLinWork：“外科医生只做最后一刀。”\n闸门室，两只手握着黑铁手轮的边缘，右手握得很紧，左手的五根手指只能蜷到一半，黑水慢慢漫上手轮的底座，两只手握着黑铁大手轮的边缘，右手握得很紧，左手的五根手指只能蜷到一半，在微微发抖，黑色的水慢慢漫上手轮的底座。别的什么都不动。红色应急灯均匀地照着湿漉漉的铁和苍白的指关节。\n闸门室，林峰握着手轮，流着泪对苏清月说遇见你是我最好的决定，好好吃饭别熬夜，林峰用低沉温暖的声音对着别在下巴边的细细麦克风说出第一句，接着林峰用低沉温柔的声音对着别在下巴边的细细麦克风说出第二句；最后一句之后，他抬起眼睛望向那扇厚重的钢闸门，咬紧牙关。 台词一句紧接着一句，中间只有很短的换气，每句一口气说完、句中不停顿。一盏红色应急灯均匀地照着房间，黑水显出暗红色。画面里恰好是Lin，每个人只出现一次。\nLinWork：“遇见你是我最好的决定。”\nLinWork：“好好吃饭别熬夜。”\n控制室，苏清月哭着对麦克风喊闭嘴我来接你，你说好会回来的，苏清月用锐利发颤的声音对着耳机上细细的麦克风说出第一句，接着苏清月用锐利带着哭腔的声音对着耳机上细细的麦克风说出第二句；最后一句之后，她整个人伏在控制台上，额头抵着台面。 台词一句紧接着一句，中间只有很短的换气，每句一口气说完、句中不停顿。冷绿色的指示灯和一盏温暖的琥珀色灯均匀地照着她的脸。画面里恰好是Su，每个人只出现一次。\nSuCozy：“闭嘴我来接你！”\nSuCozy：“你说好会回来的！”\n闸门室，林峰用全身的力气一圈一圈转动沉重的手轮，水涨到他的腰，最后手轮停住不动，林峰用全身的力气转动沉重的黑铁手轮，一圈接着一圈，手臂和肩膀的肌肉绷紧；最后手轮转到头停住，再也转不动，他用两只手扶着它，大口喘气。一盏红色应急灯均匀地照着房间，黑水显出暗红色。画面里恰好是Lin，每个人只出现一次。",
+   "segments": [
+    {
+     "title": "01｜闸门室：林峰说你没有五分钟，外科医生只做最后一刀，然后把右手按进黄铜板的手掌凹槽",
+     "duration_seconds": 9,
+     "generation_seconds": 9,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "LinWork"
+     ],
+     "asset_keys": [
+      "gate_room",
+      "lin_work"
+     ],
+     "image_reference_keys": [
+      "gate_room"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium shot, the man from the head to the knees, in the middle third of the frame, in the gate chamber. Lin (a Chinese man in his early thirties) at frame-right, standing in the knee-deep black water in profile facing frame-left, one hand pressed to the earpiece of his headset, his head turned toward the black iron hand-wheel at the gate, in a charcoal henley with the sleeves pushed up to his forearms and dark cargo trousers, a small headset earpiece in his right ear and a slim microphone clipped at his jaw, his steady dark-brown eyes on the black iron hand-wheel, his jaw set, his eyes steady and wet, his brows soft. Behind him the massive round steel gate with its black iron hand-wheel fills the back wall and the brass plate is on the wall at frame-right. A red emergency lamp lights the chamber evenly and the black water shows a dull red. The frame holds one person: Lin. A single caged work lamp and a red emergency lamp light a cold concrete chamber, the black water now knee-deep. Fixed stage layout: a small concrete chamber with knee-deep black water; the massive round steel gate door with a big black iron hand-wheel stopped half-turned fills the back wall; a rectangular brass plate with a hand-shaped recess is set into the wall at frame-right beside the gate; at frame-left the only doorway is completely filled from floor to ceiling by a solid mass of broken concrete slabs and bent steel bars, with no gap and no light showing through, and thin trickles of water run out of its seams.",
+     "visual_zh": "林峰用低沉平稳的声音对着别在下巴边的细细麦克风说出第一句，接着林峰用低沉温柔的声音对着别在下巴边的细细麦克风说出第二句；最后一句之后，他把手从耳机上放下来，把右手掌平平按进墙上黄铜板的手掌凹槽里。 台词一句紧接着一句，中间只有很短的换气，每句一口气说完、句中不停顿。一盏红色应急灯均匀地照着房间，黑水显出暗红色。画面里恰好是Lin，每个人只出现一次。",
+     "camera_zh": "0—9秒，镜头慢慢推近，直到他的手和黄铜板占满画面中间三分之一。",
+     "dialogue": [
+      {
+       "speaker": "LinWork",
+       "text": "你没有五分钟。",
+       "start_seconds": 0.6,
+       "end_seconds": 2.33,
+       "language": "zh"
+      },
+      {
+       "speaker": "LinWork",
+       "text": "外科医生只做最后一刀。",
+       "start_seconds": 3.18,
+       "end_seconds": 5.91,
+       "language": "zh"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 9,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. [[asset:lin_work]] speaks the first line into the slim microphone clipped at his jaw in a low steady voice, then [[asset:lin_work]] speaks the second line into the slim microphone clipped at his jaw in a low gentle voice; after the last line he lowers his hand from the earpiece and presses his right palm flat into the hand-shaped recess of the brass plate on the wall. The lines follow one another at once with only a very short breath between them, each said in one breath with no pause inside the sentence. A red emergency lamp lights the chamber evenly and the black water shows a dull red. One person is in the frame: Lin, each shown once. The camera pushes in slowly until his hand and the brass plate fills the middle third of the frame.",
+       "visual_zh": "林峰用低沉平稳的声音对着别在下巴边的细细麦克风说出第一句，接着林峰用低沉温柔的声音对着别在下巴边的细细麦克风说出第二句；最后一句之后，他把手从耳机上放下来，把右手掌平平按进墙上黄铜板的手掌凹槽里。 台词一句紧接着一句，中间只有很短的换气，每句一口气说完、句中不停顿。一盏红色应急灯均匀地照着房间，黑水显出暗红色。画面里恰好是Lin，每个人只出现一次。 镜头慢慢推近，直到他的手和黄铜板占满画面中间三分之一。",
+       "dialogue_indices": [
+        0,
+        1
+       ]
+      }
+     ],
+     "sound_en": "The slow slosh of rising water, the crackle of radio static in an earpiece and the crisp click of a brass plate. Every on-set sound effect is loud, crisp and close to the microphone, as prominent as the voices: footsteps, impacts, doors, wind, ice, machinery and fabric are all clearly heard. No music. The voices are clear.",
+     "sound_zh": "上涨的水缓缓晃动的声音、耳机里电流的沙沙声和铜板轻轻的一声咔哒。所有现场音效都响亮、清脆、贴近话筒，和人声一样突出：脚步、撞击、开关门、风声、冰裂、机械和衣料摩擦都听得清清楚楚。没有配乐。人声清楚。",
+     "seed": 37407,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "02｜闸门室：两只手握着黑铁手轮的边缘，右手握得很紧，左手的五根手指只能蜷到一半，黑水慢慢漫上手轮的底座",
+     "duration_seconds": 6,
+     "generation_seconds": 6,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [],
+     "asset_keys": [
+      "gate_room"
+     ],
+     "image_reference_keys": [
+      "gate_room"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Close shot of the two hands on the wheel in the middle third of the frame, nobody else in the scene.  A red emergency lamp lights the wet iron and the pale knuckles evenly. The frame holds the two hands and the wheel, and nobody else in the scene. A single caged work lamp and a red emergency lamp light a cold concrete chamber, the black water now knee-deep. Fixed stage layout: a close view of two hands gripping the outer ring of the big black iron hand-wheel in the middle of the frame, the left hand's fingers only half curled around the rim, black water rising around the base of the wheel; the dull steel gate behind; nobody else in the scene.",
+     "visual_zh": "两只手握着黑铁大手轮的边缘，右手握得很紧，左手的五根手指只能蜷到一半，在微微发抖，黑色的水慢慢漫上手轮的底座。别的什么都不动。红色应急灯均匀地照着湿漉漉的铁和苍白的指关节。",
+     "camera_zh": "0—6秒，镜头慢慢推近，直到蜷到一半的左手占满画面中间三分之一。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 6,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. Two hands grip the outer ring of the big black iron hand-wheel, the right hand gripping tight and the left hand's five fingers only half bent and trembling, black water slowly rising around the base of the wheel. Nothing else moves. A red emergency lamp lights the wet iron and the pale knuckles evenly. The camera pushes in slowly until the half-bent left hand fills the middle third of the frame.",
+       "visual_zh": "两只手握着黑铁大手轮的边缘，右手握得很紧，左手的五根手指只能蜷到一半，在微微发抖，黑色的水慢慢漫上手轮的底座。别的什么都不动。红色应急灯均匀地照着湿漉漉的铁和苍白的指关节。 镜头慢慢推近，直到蜷到一半的左手占满画面中间三分之一。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "The slow slosh of rising water against iron and a deep hush. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here. Every on-set sound effect is loud, crisp and close to the microphone, as prominent as the voices: footsteps, impacts, doors, wind, ice, machinery and fabric are all clearly heard. No music.",
+     "sound_zh": "上涨的水拍着铁手轮的缓慢声音和深深的寂静。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。所有现场音效都响亮、清脆、贴近话筒，和人声一样突出：脚步、撞击、开关门、风声、冰裂、机械和衣料摩擦都听得清清楚楚。没有配乐。",
+     "seed": 37407,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "03｜闸门室：林峰握着手轮，流着泪对苏清月说遇见你是我最好的决定，好好吃饭别熬夜",
+     "duration_seconds": 9,
+     "generation_seconds": 9,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "LinWork"
+     ],
+     "asset_keys": [
+      "gate_room",
+      "lin_work"
+     ],
+     "image_reference_keys": [
+      "gate_room"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium close shot, the man from the head to the chest, in the middle third of the frame, in the flooded gate chamber. Lin (a Chinese man in his early thirties) at frame-right, standing in the waist-deep black water in profile facing frame-left, both hands gripping the outer ring of the black iron hand-wheel, his headset earpiece in his right ear, his head turned toward the wheel, in a charcoal henley soaked dark with water and clinging to his shoulders, a small headset earpiece in his right ear and a slim microphone clipped at his jaw, his black hair dripping, his steady dark-brown eyes on the black iron hand-wheel, his lips curving in a faint tender sweet smile, his eyes wet with tears running down his cheeks, his brows soft. Behind him the massive round steel gate fills the back wall. A red emergency lamp lights the chamber evenly and the black water shows a dull red. The frame holds one person: Lin. A single caged work lamp and a red emergency lamp light a cold concrete chamber, the black water now knee-deep. Fixed stage layout: a small concrete chamber with waist-deep black water; the massive round steel gate door with a big black iron hand-wheel fills the back wall; a rectangular brass plate with a hand-shaped recess is set into the wall at frame-right beside the gate; at frame-left the only doorway is completely filled from floor to ceiling by a solid mass of broken concrete slabs and bent steel bars, with no gap and no light showing through, and thin trickles of water run out of its seams.",
+     "visual_zh": "林峰用低沉温暖的声音对着别在下巴边的细细麦克风说出第一句，接着林峰用低沉温柔的声音对着别在下巴边的细细麦克风说出第二句；最后一句之后，他抬起眼睛望向那扇厚重的钢闸门，咬紧牙关。 台词一句紧接着一句，中间只有很短的换气，每句一口气说完、句中不停顿。一盏红色应急灯均匀地照着房间，黑水显出暗红色。画面里恰好是Lin，每个人只出现一次。",
+     "camera_zh": "0—9秒，镜头慢慢推近，直到他的脸和手轮占满画面中间三分之一。",
+     "dialogue": [
+      {
+       "speaker": "LinWork",
+       "text": "遇见你是我最好的决定。",
+       "start_seconds": 0.6,
+       "end_seconds": 3.33,
+       "language": "zh"
+      },
+      {
+       "speaker": "LinWork",
+       "text": "好好吃饭别熬夜。",
+       "start_seconds": 4.18,
+       "end_seconds": 6.16,
+       "language": "zh"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 9,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. [[asset:lin_work]] speaks the first line into the slim microphone clipped at his jaw in a low warm voice, then [[asset:lin_work]] speaks the second line into the slim microphone clipped at his jaw in a low gentle voice; after the last line he lifts his eyes to the heavy steel gate and sets his jaw. The lines follow one another at once with only a very short breath between them, each said in one breath with no pause inside the sentence. A red emergency lamp lights the chamber evenly and the black water shows a dull red. One person is in the frame: Lin, each shown once. The camera pushes in slowly until his face and the wheel fills the middle third of the frame.",
+       "visual_zh": "林峰用低沉温暖的声音对着别在下巴边的细细麦克风说出第一句，接着林峰用低沉温柔的声音对着别在下巴边的细细麦克风说出第二句；最后一句之后，他抬起眼睛望向那扇厚重的钢闸门，咬紧牙关。 台词一句紧接着一句，中间只有很短的换气，每句一口气说完、句中不停顿。一盏红色应急灯均匀地照着房间，黑水显出暗红色。画面里恰好是Lin，每个人只出现一次。 镜头慢慢推近，直到他的脸和手轮占满画面中间三分之一。",
+       "dialogue_indices": [
+        0,
+        1
+       ]
+      }
+     ],
+     "sound_en": "The slow slosh of waist-deep water, the crackle of radio static in an earpiece and a crisp shaky breath. Every on-set sound effect is loud, crisp and close to the microphone, as prominent as the voices: footsteps, impacts, doors, wind, ice, machinery and fabric are all clearly heard. No music. The voices are clear.",
+     "sound_zh": "齐腰深的水缓缓晃动的声音、耳机里电流的沙沙声和一声轻轻发抖的呼吸。所有现场音效都响亮、清脆、贴近话筒，和人声一样突出：脚步、撞击、开关门、风声、冰裂、机械和衣料摩擦都听得清清楚楚。没有配乐。人声清楚。",
+     "seed": 37407,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "04｜控制室：苏清月哭着对麦克风喊闭嘴我来接你，你说好会回来的",
+     "duration_seconds": 8,
+     "generation_seconds": 8,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "SuCozy"
+     ],
+     "asset_keys": [
+      "bunker_control",
+      "su_cozy"
+     ],
+     "image_reference_keys": [
+      "bunker_control"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium shot, the woman from the head to the waist, in the middle third of the frame, at the console. Su (a Chinese woman in her late twenties) at frame-center, standing at the control console in profile facing frame-right, both hands pressing the headset to her ears, her head bowed over the console, in a cream knit sweater with the sleeves pushed up, black thermal leggings and soft boots, a black over-ear headset with a slim boom microphone on her head, her long black hair tied back, her soft dark-brown eyes on the console, her lips trembling, her eyes streaming, her brows pulled up. Behind her the wall of small monitors glows. Cool green status lights and a warm amber lamp light her face evenly. The frame holds one person: Su. Cool green indicator glow and pale work-lamp light fill the compact underground control room. Fixed stage layout: the steel control console with rows of small green status lights and one big red push-button under a clear flip-up cover stands in the middle of the frame; a wall of six small monitors is at frame-left; a large red digital countdown clock hangs high on the back wall at center-right; a heavy steel door stands in the right wall at frame-right. A black swivel chair stands in front of the console.",
+     "visual_zh": "苏清月用锐利发颤的声音对着耳机上细细的麦克风说出第一句，接着苏清月用锐利带着哭腔的声音对着耳机上细细的麦克风说出第二句；最后一句之后，她整个人伏在控制台上，额头抵着台面。 台词一句紧接着一句，中间只有很短的换气，每句一口气说完、句中不停顿。冷绿色的指示灯和一盏温暖的琥珀色灯均匀地照着她的脸。画面里恰好是Su，每个人只出现一次。",
+     "camera_zh": "0—8秒，镜头慢慢推近，直到她的脸和耳机占满画面中间三分之一。",
+     "dialogue": [
+      {
+       "speaker": "SuCozy",
+       "text": "闭嘴我来接你！",
+       "start_seconds": 0.6,
+       "end_seconds": 2.33,
+       "language": "zh"
+      },
+      {
+       "speaker": "SuCozy",
+       "text": "你说好会回来的！",
+       "start_seconds": 3.18,
+       "end_seconds": 5.16,
+       "language": "zh"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 8,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. [[asset:su_cozy]] speaks the first line into the slim boom microphone of her headset in a sharp breaking voice, then [[asset:su_cozy]] speaks the second line into the slim boom microphone of her headset in a sharp sobbing voice; after the last line she slumps over the console with her forehead against it. The lines follow one another at once with only a very short breath between them, each said in one breath with no pause inside the sentence. Cool green status lights and a warm amber lamp light her face evenly. [[asset:su_cozy]] keeps her lips trembling, her eyes streaming, her brows pulled up. One person is in the frame: Su, each shown once. The camera pushes in slowly until her face and the headset fills the middle third of the frame.",
+       "visual_zh": "苏清月用锐利发颤的声音对着耳机上细细的麦克风说出第一句，接着苏清月用锐利带着哭腔的声音对着耳机上细细的麦克风说出第二句；最后一句之后，她整个人伏在控制台上，额头抵着台面。 台词一句紧接着一句，中间只有很短的换气，每句一口气说完、句中不停顿。冷绿色的指示灯和一盏温暖的琥珀色灯均匀地照着她的脸。画面里恰好是Su，每个人只出现一次。 镜头慢慢推近，直到她的脸和耳机占满画面中间三分之一。",
+       "dialogue_indices": [
+        0,
+        1
+       ]
+      }
+     ],
+     "sound_en": "The crackle of radio static in an earpiece, the hum of the console and a sobbing breath. Every on-set sound effect is loud, crisp and close to the microphone, as prominent as the voices: footsteps, impacts, doors, wind, ice, machinery and fabric are all clearly heard. No music. The voices are clear.",
+     "sound_zh": "耳机里电流的沙沙声、控制台的嗡鸣和一声带着哭腔的呼吸。所有现场音效都响亮、清脆、贴近话筒，和人声一样突出：脚步、撞击、开关门、风声、冰裂、机械和衣料摩擦都听得清清楚楚。没有配乐。人声清楚。",
+     "seed": 37407,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "05｜闸门室：林峰用全身的力气一圈一圈转动沉重的手轮，水涨到他的腰，最后手轮停住不动",
+     "duration_seconds": 8,
+     "generation_seconds": 8,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "LinWork"
+     ],
+     "asset_keys": [
+      "gate_room",
+      "lin_work"
+     ],
+     "image_reference_keys": [
+      "gate_room"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium shot, the man from the head to the waist, in the middle third of the frame, in the flooded gate chamber. Lin (a Chinese man in his early thirties) at frame-right, standing in the waist-deep black water in profile facing frame-left, both hands gripping the outer ring of the heavy black iron hand-wheel and turning it with his whole body, his headset earpiece in his right ear, in a charcoal henley soaked dark with water and clinging to his shoulders, a small headset earpiece in his right ear and a slim microphone clipped at his jaw, his black hair dripping, his steady dark-brown eyes on the black iron hand-wheel, his teeth clenched, his eyes narrowed and wet, his brows low. Behind him the massive round steel gate fills the back wall. A red emergency lamp lights the chamber evenly and the black water shows a dull red. The frame holds the wheel and the gate, and one person: Lin. A single caged work lamp and a red emergency lamp light a cold concrete chamber, the black water now knee-deep. Fixed stage layout: a small concrete chamber with waist-deep black water; the massive round steel gate door with a big black iron hand-wheel fills the back wall; a rectangular brass plate with a hand-shaped recess is set into the wall at frame-right beside the gate; at frame-left the only doorway is completely filled from floor to ceiling by a solid mass of broken concrete slabs and bent steel bars, with no gap and no light showing through, and thin trickles of water run out of its seams.",
+     "visual_zh": "林峰用全身的力气转动沉重的黑铁手轮，一圈接着一圈，手臂和肩膀的肌肉绷紧；最后手轮转到头停住，再也转不动，他用两只手扶着它，大口喘气。一盏红色应急灯均匀地照着房间，黑水显出暗红色。画面里恰好是Lin，每个人只出现一次。",
+     "camera_zh": "0—8秒，镜头慢慢推近，直到他握着手轮的手占满画面中间三分之一。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 8,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. [[asset:lin_work]] turns the heavy black iron hand-wheel with his whole body, one slow full turn after another, the muscles of his arms and shoulders tensing; at the end the wheel stops against its stop and does not move any more, and he holds on to it with both hands, breathing hard. A red emergency lamp lights the chamber evenly and the black water shows a dull red. [[asset:lin_work]] keeps his teeth clenched, his eyes narrowed and wet, his brows low. One person is in the frame: Lin, each shown once. The camera pushes in slowly until his hands on the wheel fills the middle third of the frame.",
+       "visual_zh": "林峰用全身的力气转动沉重的黑铁手轮，一圈接着一圈，手臂和肩膀的肌肉绷紧；最后手轮转到头停住，再也转不动，他用两只手扶着它，大口喘气。一盏红色应急灯均匀地照着房间，黑水显出暗红色。画面里恰好是Lin，每个人只出现一次。 镜头慢慢推近，直到他握着手轮的手占满画面中间三分之一。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "The heavy grinding groan of the iron wheel turning, a deep low rumble of water behind the gate and a ragged laboured breathing that ends in a dull heavy thud. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here. Every on-set sound effect is loud, crisp and close to the microphone, as prominent as the voices: footsteps, impacts, doors, wind, ice, machinery and fabric are all clearly heard. No music.",
+     "sound_zh": "铁手轮沉重的吱呀碾磨声、闸门后水深沉的低低轰响和吃力粗重的喘息，最后是一声闷重的撞击。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。所有现场音效都响亮、清脆、贴近话筒，和人声一样突出：脚步、撞击、开关门、风声、冰裂、机械和衣料摩擦都听得清清楚楚。没有配乐。",
+     "seed": 37407,
+     "dialogue_language": "zh"
+    }
+   ],
+   "dialogue_language": "zh"
+  },
+  {
+   "title": "补拍6C｜最后一道闸门：闸门关死，水声停了，他吃番茄、写日志、摘下耳麦挂在手轮上（替换剧本第 67 集）",
+   "summary": "闸门关死，林峰靠着它，水到胸口；苏清月听见水声停了，他说关好了我在这儿；他掏出口袋里的番茄吃了，说很甜你的书没白读；他在日志最后一页写字，画外独白；他摘下耳麦挂在手轮上；苏清月叫他，没人回答；水面静止，耳麦挂在手轮上。",
+   "script": "闸门室，林峰的手从手轮上滑落，整个人靠在彻底关死的圆形钢闸门上，水漫到胸口，他头向后仰，闭上眼睛长长地吐出一口气，林峰的手从黑铁手轮的边上滑下来，靠在彻底关死的圆形闸门上，平静的黑水漫到胸口，头向后仰，眼睛闭上，长长地缓缓吐出一口气，在冰冷的空气里呼出一团白气。一盏红色应急灯均匀地照着房间，黑水显出暗红色。画面里恰好是Lin，每个人只出现一次。\n控制室，苏清月听着耳机里一片寂静，低声说水声停了，林峰你说话，苏清月用低沉发颤的声音对着耳机上细细的麦克风说出第一句，接着苏清月用低沉发颤的声音对着耳机上细细的麦克风说出第二句；最后一句之后，她闭上眼睛，把耳机更用力地按在耳朵上。 台词一句紧接着一句，中间只有很短的换气，每句一口气说完、句中不停顿。冷绿色的指示灯和一盏温暖的琥珀色灯均匀地照着她的脸。画面里恰好是Su，每个人只出现一次。\nSuCozy：“水声停了。”\nSuCozy：“林峰你说话。”\n闸门室，林峰靠着关死的闸门，闭着眼睛轻声说关好了，我在这儿，林峰用低沉轻柔的声音对着别在下巴边的细细麦克风说出第一句，接着林峰用低沉温柔的声音对着别在下巴边的细细麦克风说出第二句；最后一句之后，他把手从耳机上放下，垂进水里。 台词一句紧接着一句，中间只有很短的换气，每句一口气说完、句中不停顿。一盏红色应急灯均匀地照着房间，黑水显出暗红色。画面里恰好是Lin，每个人只出现一次。\nLinWork：“关好了。”\nLinWork：“我在这儿。”\n闸门室，林峰从湿透的胸口口袋里掏出一颗红色的小番茄，对苏清月说口袋里还有一颗番茄，咬了一口，说很甜，你的书没白读，他从湿透的亨利衫胸口的口袋里掏出一颗红色的小番茄。林峰用低沉温柔的声音对着别在下巴边的细细麦克风说出第一句，接着林峰用低沉温暖的声音对着别在下巴边的细细麦克风说出第二句；最后一句之后，他缓缓咬了一口番茄。 台词一句紧接着一句，中间只有很短的换气，每句一口气说完、句中不停顿。红色应急灯均匀地照着房间，他湿漉漉的手里那颗小番茄显出鲜红色。画面里恰好是Lin，每个人只出现一次。\nLinWork：“口袋里还有一颗番茄。”\nLinWork：“很甜你的书没白读。”\n闸门室，林峰一只手把日志举在水面上，另一只手握着铅笔，在最后一页上写字，他的嘴唇闭着，画外传来他的内心独白，你读到这页，门已关好，别怪这扇门，也别怪我，往后的春天，都归你，林峰用左手托着那本磨旧的黑色日志举在平静的黑水上面，右手握着短铅笔在最后一页慢慢写字，头低着，下颌放松，嘴唇闭着，眉头舒展，一道细细的泪痕顺着脸颊流下来。这些话是他的内心独白，在画面上方响起，他的嘴唇一直闭着、不动。一盏红色应急灯均匀地照着房间，黑水显出暗红色。画面里恰好是Lin，每个人只出现一次。\nLinWork：“你读到这页门已关好。”\nLinWork：“别怪这扇门也别怪我。”\nLinWork：“往后的春天都归你。”\n闸门室，林峰把日志装进透明塑封袋放到铁台上，然后抬手摘下头上的耳麦，挂在手轮的边上，手慢慢垂进水里，林峰把磨旧的日志装进透明塑封袋，放在手轮旁高出水面的一块锈铁台上，然后抬手摘下耳朵上的小耳麦，用线挂在黑铁手轮的边上，手慢慢垂进水里。一盏红色应急灯均匀地照着房间，黑水显出暗红色。画面里恰好是Lin，每个人只出现一次。\n控制室，苏清月对着耳机叫林峰，耳机里一片死寂，她慢慢把耳机从耳朵上拿下来抱在胸口，苏清月用低沉发颤的声音对着耳机上细细的麦克风说出第一句，接着苏清月用低沉发抖的声音对着耳机上细细的麦克风说出第二句；最后一句之后，她把耳机慢慢从耳朵上拿下来，抱在胸口。 台词一句紧接着一句，中间只有很短的换气，每句一口气说完、句中不停顿。冷绿色的指示灯和一盏温暖的琥珀色灯均匀地照着她的脸。画面里恰好是Su，每个人只出现一次。\nSuCozy：“林峰。”\nSuCozy：“你说话啊。”\n闸门室，黑色的水面静静地不动，一副小耳麦挂在黑铁手轮的边上轻轻晃着，暗红色的灯光慢慢暗下去，一副黑色的小耳麦用线挂在黑铁大手轮的边上，轻轻晃着，下面是一片平静的黑色水面；暗红色的灯光慢慢暗成一片黑。别的什么都不动。最后一点暗红色的灯光慢慢从房间里退去，只剩下一片黑。",
+   "segments": [
+    {
+     "title": "01｜闸门室：林峰的手从手轮上滑落，整个人靠在彻底关死的圆形钢闸门上，水漫到胸口，他头向后仰，闭上眼睛长长地吐出一口气",
+     "duration_seconds": 8,
+     "generation_seconds": 8,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "LinWork"
+     ],
+     "asset_keys": [
+      "gate_room",
+      "lin_work"
+     ],
+     "image_reference_keys": [
+      "gate_room"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium shot, the man from the head to the chest, in the middle third of the frame, in the flooded gate chamber. Lin (a Chinese man in his early thirties) at frame-right, leaning back against the sealed round steel gate chest-deep in still black water in profile facing frame-left, his hands dropping from the outer ring of the black iron hand-wheel and dropping into the water, his head tipped back against the gate, in a charcoal henley soaked dark with water and clinging to his shoulders, a small headset earpiece in his right ear and a slim microphone clipped at his jaw, his black hair dripping, his eyes gently closed, his jaw loosening, his lips parting in a long slow breath, his brows easing. A red emergency lamp lights the chamber evenly and the black water shows a dull red. The frame holds the sealed gate, and one person: Lin. A red emergency lamp lights a flooded concrete chamber, the black water now still. Fixed stage layout: a small concrete chamber flooded with chest-deep still black water; the massive round steel gate door, now fully sealed with its big black iron hand-wheel at rest at its centre, fills the back wall; a rusty iron ledge above the waterline runs along the wall beside the wheel at frame-right; at frame-left the only doorway is completely filled from floor to ceiling by a solid mass of broken concrete slabs and bent steel bars, with no gap and no light showing through, and thin trickles of water run out of its seams.",
+     "visual_zh": "林峰的手从黑铁手轮的边上滑下来，靠在彻底关死的圆形闸门上，平静的黑水漫到胸口，头向后仰，眼睛闭上，长长地缓缓吐出一口气，在冰冷的空气里呼出一团白气。一盏红色应急灯均匀地照着房间，黑水显出暗红色。画面里恰好是Lin，每个人只出现一次。",
+     "camera_zh": "0—8秒，镜头慢慢推近，直到他闭着的眼睛和长长的呼气占满画面中间三分之一。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 8,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. [[asset:lin_work]] lets his hands fall from the outer ring of the black iron hand-wheel and leans back against the sealed round gate with the still black water at his chest, his head tipping back and his eyes closing as he lets out one long slow breath that shows white in the cold air. A red emergency lamp lights the chamber evenly and the black water shows a dull red. One person is in the frame: Lin, each shown once. The camera pushes in slowly until his closed eyes and the long breath fills the middle third of the frame.",
+       "visual_zh": "林峰的手从黑铁手轮的边上滑下来，靠在彻底关死的圆形闸门上，平静的黑水漫到胸口，头向后仰，眼睛闭上，长长地缓缓吐出一口气，在冰冷的空气里呼出一团白气。一盏红色应急灯均匀地照着房间，黑水显出暗红色。画面里恰好是Lin，每个人只出现一次。 镜头慢慢推近，直到他闭着的眼睛和长长的呼气占满画面中间三分之一。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "The slow slosh of black water settling, a deep hush behind the sealed gate and one long exhale. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here. Every on-set sound effect is loud, crisp and close to the microphone, as prominent as the voices: footsteps, impacts, doors, wind, ice, machinery and fabric are all clearly heard. No music.",
+     "sound_zh": "黑水缓缓平息的声音、关死的闸门后深深的寂静和一声长长的呼气。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。所有现场音效都响亮、清脆、贴近话筒，和人声一样突出：脚步、撞击、开关门、风声、冰裂、机械和衣料摩擦都听得清清楚楚。没有配乐。",
+     "seed": 37407,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "02｜控制室：苏清月听着耳机里一片寂静，低声说水声停了，林峰你说话",
+     "duration_seconds": 7,
+     "generation_seconds": 7,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "SuCozy"
+     ],
+     "asset_keys": [
+      "bunker_control",
+      "su_cozy"
+     ],
+     "image_reference_keys": [
+      "bunker_control"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium shot, the woman from the head to the waist, in the middle third of the frame, at the console. Su (a Chinese woman in her late twenties) at frame-center, sitting forward on the black swivel chair at the control console in profile facing frame-right, one hand pressing the headset earpiece to her ear and the other flat on the console, her head turned toward the monitor wall, in a cream knit sweater with the sleeves pushed up, black thermal leggings and soft boots, a black over-ear headset with a slim boom microphone on her head, her long black hair tied back, her soft dark-brown eyes on the wall of small monitors, her lips parting, her eyes wide and wet, her brows pulled together. Behind her the wall of small monitors glows. Cool green status lights and a warm amber lamp light her face evenly. The frame holds one person: Su. Cool green indicator glow and pale work-lamp light fill the compact underground control room. Fixed stage layout: the steel control console with rows of small green status lights and one big red push-button under a clear flip-up cover stands in the middle of the frame; a wall of six small monitors is at frame-left; a large red digital countdown clock hangs high on the back wall at center-right; a heavy steel door stands in the right wall at frame-right. A black swivel chair stands in front of the console.",
+     "visual_zh": "苏清月用低沉发颤的声音对着耳机上细细的麦克风说出第一句，接着苏清月用低沉发颤的声音对着耳机上细细的麦克风说出第二句；最后一句之后，她闭上眼睛，把耳机更用力地按在耳朵上。 台词一句紧接着一句，中间只有很短的换气，每句一口气说完、句中不停顿。冷绿色的指示灯和一盏温暖的琥珀色灯均匀地照着她的脸。画面里恰好是Su，每个人只出现一次。",
+     "camera_zh": "0—7秒，镜头慢慢推近，直到她的脸和耳机占满画面中间三分之一。",
+     "dialogue": [
+      {
+       "speaker": "SuCozy",
+       "text": "水声停了。",
+       "start_seconds": 0.6,
+       "end_seconds": 1.83,
+       "language": "zh"
+      },
+      {
+       "speaker": "SuCozy",
+       "text": "林峰你说话。",
+       "start_seconds": 2.68,
+       "end_seconds": 4.16,
+       "language": "zh"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 7,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. [[asset:su_cozy]] speaks the first line into the slim boom microphone of her headset in a low trembling voice, then [[asset:su_cozy]] speaks the second line into the slim boom microphone of her headset in a low breaking voice; after the last line she closes her eyes and presses the earpiece harder against her ear. The lines follow one another at once with only a very short breath between them, each said in one breath with no pause inside the sentence. Cool green status lights and a warm amber lamp light her face evenly. [[asset:su_cozy]] keeps her lips parting, her eyes wide and wet, her brows pulled together. One person is in the frame: Su, each shown once. The camera pushes in slowly until her face and the headset fills the middle third of the frame.",
+       "visual_zh": "苏清月用低沉发颤的声音对着耳机上细细的麦克风说出第一句，接着苏清月用低沉发颤的声音对着耳机上细细的麦克风说出第二句；最后一句之后，她闭上眼睛，把耳机更用力地按在耳朵上。 台词一句紧接着一句，中间只有很短的换气，每句一口气说完、句中不停顿。冷绿色的指示灯和一盏温暖的琥珀色灯均匀地照着她的脸。画面里恰好是Su，每个人只出现一次。 镜头慢慢推近，直到她的脸和耳机占满画面中间三分之一。",
+       "dialogue_indices": [
+        0,
+        1
+       ]
+      }
+     ],
+     "sound_en": "A deep hush in the control room, the clear crackle of radio static in an earpiece and a shaky breath. Every on-set sound effect is loud, crisp and close to the microphone, as prominent as the voices: footsteps, impacts, doors, wind, ice, machinery and fabric are all clearly heard. No music. The voices are clear.",
+     "sound_zh": "控制室深深的寂静、耳机里电流细细的沙沙声和一声发颤的呼吸。所有现场音效都响亮、清脆、贴近话筒，和人声一样突出：脚步、撞击、开关门、风声、冰裂、机械和衣料摩擦都听得清清楚楚。没有配乐。人声清楚。",
+     "seed": 37407,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "03｜闸门室：林峰靠着关死的闸门，闭着眼睛轻声说关好了，我在这儿",
+     "duration_seconds": 6,
+     "generation_seconds": 6,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "LinWork"
+     ],
+     "asset_keys": [
+      "gate_room",
+      "lin_work"
+     ],
+     "image_reference_keys": [
+      "gate_room"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium close shot, the man from the head to the chest, in the middle third of the frame, in the flooded gate chamber. Lin (a Chinese man in his early thirties) at frame-right, leaning back against the sealed gate chest-deep in still black water in profile facing frame-left, his head resting against the gate and one hand lifted weakly to the earpiece of his headset, in a charcoal henley soaked dark with water and clinging to his shoulders, a small headset earpiece in his right ear and a slim microphone clipped at his jaw, his black hair dripping, his eyes gently closed, his lips curving in a faint tender sweet smile, his brows soft. Behind him the massive sealed round steel gate fills the back wall. A red emergency lamp lights the chamber evenly and the black water shows a dull red. The frame holds one person: Lin. A red emergency lamp lights a flooded concrete chamber, the black water now still. Fixed stage layout: a small concrete chamber flooded with chest-deep still black water; the massive round steel gate door, now fully sealed with its big black iron hand-wheel at rest at its centre, fills the back wall; a rusty iron ledge above the waterline runs along the wall beside the wheel at frame-right; at frame-left the only doorway is completely filled from floor to ceiling by a solid mass of broken concrete slabs and bent steel bars, with no gap and no light showing through, and thin trickles of water run out of its seams.",
+     "visual_zh": "林峰用低沉轻柔的声音对着别在下巴边的细细麦克风说出第一句，接着林峰用低沉温柔的声音对着别在下巴边的细细麦克风说出第二句；最后一句之后，他把手从耳机上放下，垂进水里。 台词一句紧接着一句，中间只有很短的换气，每句一口气说完、句中不停顿。一盏红色应急灯均匀地照着房间，黑水显出暗红色。画面里恰好是Lin，每个人只出现一次。",
+     "camera_zh": "0—6秒，镜头慢慢推近，直到他的脸占满画面中间三分之一。",
+     "dialogue": [
+      {
+       "speaker": "LinWork",
+       "text": "关好了。",
+       "start_seconds": 0.6,
+       "end_seconds": 1.58,
+       "language": "zh"
+      },
+      {
+       "speaker": "LinWork",
+       "text": "我在这儿。",
+       "start_seconds": 2.43,
+       "end_seconds": 3.66,
+       "language": "zh"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 6,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. [[asset:lin_work]] speaks the first line into the slim microphone clipped at his jaw in a low soft voice, then [[asset:lin_work]] speaks the second line into the slim microphone clipped at his jaw in a low gentle voice; after the last line he lowers his hand from the earpiece into the water. The lines follow one another at once with only a very short breath between them, each said in one breath with no pause inside the sentence. A red emergency lamp lights the chamber evenly and the black water shows a dull red. One person is in the frame: Lin, each shown once. The camera pushes in slowly until his face fills the middle third of the frame.",
+       "visual_zh": "林峰用低沉轻柔的声音对着别在下巴边的细细麦克风说出第一句，接着林峰用低沉温柔的声音对着别在下巴边的细细麦克风说出第二句；最后一句之后，他把手从耳机上放下，垂进水里。 台词一句紧接着一句，中间只有很短的换气，每句一口气说完、句中不停顿。一盏红色应急灯均匀地照着房间，黑水显出暗红色。画面里恰好是Lin，每个人只出现一次。 镜头慢慢推近，直到他的脸占满画面中间三分之一。",
+       "dialogue_indices": [
+        0,
+        1
+       ]
+      }
+     ],
+     "sound_en": "The slow slosh of still water, the crackle of radio static in an earpiece and a crisp breath. Every on-set sound effect is loud, crisp and close to the microphone, as prominent as the voices: footsteps, impacts, doors, wind, ice, machinery and fabric are all clearly heard. No music. The voices are clear.",
+     "sound_zh": "平静的水缓缓晃动的声音、耳机里电流的沙沙声和一声轻轻的呼吸。所有现场音效都响亮、清脆、贴近话筒，和人声一样突出：脚步、撞击、开关门、风声、冰裂、机械和衣料摩擦都听得清清楚楚。没有配乐。人声清楚。",
+     "seed": 37407,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "04｜闸门室：林峰从湿透的胸口口袋里掏出一颗红色的小番茄，对苏清月说口袋里还有一颗番茄，咬了一口，说很甜，你的书没白读",
+     "duration_seconds": 9,
+     "generation_seconds": 9,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "LinWork"
+     ],
+     "asset_keys": [
+      "gate_room",
+      "lin_work"
+     ],
+     "image_reference_keys": [
+      "gate_room"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium close shot, the man from the head to the chest, in the middle third of the frame, in the flooded gate chamber. Lin (a Chinese man in his early thirties) at frame-right, leaning back against the sealed gate chest-deep in still black water in profile facing frame-left, a small bright red tomato held up in his right hand in front of his face, his headset earpiece in his right ear, his head turned toward the tomato, in a charcoal henley soaked dark with water and clinging to his shoulders, a small headset earpiece in his right ear and a slim microphone clipped at his jaw, his black hair dripping, his steady dark-brown eyes on the small red tomato in his hand, his lips curving in a faint tender sweet smile, his eyes wet and bright, his brows soft. Behind him the massive sealed round steel gate fills the back wall. A red emergency lamp lights the chamber evenly and the small tomato shows a vivid red in his wet hand. The frame holds one person: Lin. A red emergency lamp lights a flooded concrete chamber, the black water now still. Fixed stage layout: a small concrete chamber flooded with chest-deep still black water; the massive round steel gate door, now fully sealed with its big black iron hand-wheel at rest at its centre, fills the back wall; a rusty iron ledge above the waterline runs along the wall beside the wheel at frame-right; at frame-left the only doorway is completely filled from floor to ceiling by a solid mass of broken concrete slabs and bent steel bars, with no gap and no light showing through, and thin trickles of water run out of its seams.",
+     "visual_zh": "他从湿透的亨利衫胸口的口袋里掏出一颗红色的小番茄。林峰用低沉温柔的声音对着别在下巴边的细细麦克风说出第一句，接着林峰用低沉温暖的声音对着别在下巴边的细细麦克风说出第二句；最后一句之后，他缓缓咬了一口番茄。 台词一句紧接着一句，中间只有很短的换气，每句一口气说完、句中不停顿。红色应急灯均匀地照着房间，他湿漉漉的手里那颗小番茄显出鲜红色。画面里恰好是Lin，每个人只出现一次。",
+     "camera_zh": "0—9秒，镜头慢慢推近，直到他的脸和那颗番茄占满画面中间三分之一。",
+     "dialogue": [
+      {
+       "speaker": "LinWork",
+       "text": "口袋里还有一颗番茄。",
+       "start_seconds": 0.6,
+       "end_seconds": 3.08,
+       "language": "zh"
+      },
+      {
+       "speaker": "LinWork",
+       "text": "很甜你的书没白读。",
+       "start_seconds": 3.93,
+       "end_seconds": 6.16,
+       "language": "zh"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 9,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. He takes a small red tomato out of the chest pocket of his soaked henley. [[asset:lin_work]] speaks the first line into the slim microphone clipped at his jaw in a low gentle voice, then [[asset:lin_work]] speaks the second line into the slim microphone clipped at his jaw in a low warm voice; after the last line he takes one slow bite of the tomato. The lines follow one another at once with only a very short breath between them, each said in one breath with no pause inside the sentence. A red emergency lamp lights the chamber evenly and the small tomato shows a vivid red in his wet hand. One person is in the frame: Lin, each shown once. The camera pushes in slowly until his face and the tomato fills the middle third of the frame.",
+       "visual_zh": "他从湿透的亨利衫胸口的口袋里掏出一颗红色的小番茄。林峰用低沉温柔的声音对着别在下巴边的细细麦克风说出第一句，接着林峰用低沉温暖的声音对着别在下巴边的细细麦克风说出第二句；最后一句之后，他缓缓咬了一口番茄。 台词一句紧接着一句，中间只有很短的换气，每句一口气说完、句中不停顿。红色应急灯均匀地照着房间，他湿漉漉的手里那颗小番茄显出鲜红色。画面里恰好是Lin，每个人只出现一次。 镜头慢慢推近，直到他的脸和那颗番茄占满画面中间三分之一。",
+       "dialogue_indices": [
+        0,
+        1
+       ]
+      }
+     ],
+     "sound_en": "The slow slosh of still water, the crackle of radio static in an earpiece and a crisp wet bite. Every on-set sound effect is loud, crisp and close to the microphone, as prominent as the voices: footsteps, impacts, doors, wind, ice, machinery and fabric are all clearly heard. No music. The voices are clear.",
+     "sound_zh": "平静的水缓缓晃动的声音、耳机里电流的沙沙声和一声轻轻的湿润的咬东西的声音。所有现场音效都响亮、清脆、贴近话筒，和人声一样突出：脚步、撞击、开关门、风声、冰裂、机械和衣料摩擦都听得清清楚楚。没有配乐。人声清楚。",
+     "seed": 37407,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "05｜闸门室：林峰一只手把日志举在水面上，另一只手握着铅笔，在最后一页上写字，他的嘴唇闭着，画外传来他的内心独白：你读到这页，门已关好，别怪这扇门，也别怪我，往后的春天，都归你",
+     "duration_seconds": 11,
+     "generation_seconds": 11,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "LinWork"
+     ],
+     "asset_keys": [
+      "gate_room",
+      "lin_work"
+     ],
+     "image_reference_keys": [
+      "gate_room"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium close shot, the man from the head to the chest, in the middle third of the frame, in the flooded gate chamber. Lin (a Chinese man in his early thirties) at frame-right, leaning back against the sealed gate chest-deep in still black water in profile facing frame-left, a worn black notebook held open above the water on his left palm and a short pencil in his right hand writing on its last page, his head bowed toward the page, in a charcoal henley soaked dark with water and clinging to his shoulders, a small headset earpiece in his right ear and a slim microphone clipped at his jaw, his black hair dripping, his steady dark-brown eyes on the open notebook in his hand, his jaw relaxed, his lips closed, his eyes calm and wet, his brows soft. A red emergency lamp lights the chamber evenly and the black water shows a dull red. The frame holds the sealed gate, and one person: Lin. A red emergency lamp lights a flooded concrete chamber, the black water now still. Fixed stage layout: a small concrete chamber flooded with chest-deep still black water; the massive round steel gate door, now fully sealed with its big black iron hand-wheel at rest at its centre, fills the back wall; a rusty iron ledge above the waterline runs along the wall beside the wheel at frame-right; at frame-left the only doorway is completely filled from floor to ceiling by a solid mass of broken concrete slabs and bent steel bars, with no gap and no light showing through, and thin trickles of water run out of its seams.",
+     "visual_zh": "林峰用左手托着那本磨旧的黑色日志举在平静的黑水上面，右手握着短铅笔在最后一页慢慢写字，头低着，下颌放松，嘴唇闭着，眉头舒展，一道细细的泪痕顺着脸颊流下来。这些话是他的内心独白，在画面上方响起，他的嘴唇一直闭着、不动。一盏红色应急灯均匀地照着房间，黑水显出暗红色。画面里恰好是Lin，每个人只出现一次。",
+     "camera_zh": "0—11秒，镜头慢慢推近，直到铅笔和那一页纸占满画面中间三分之一。",
+     "dialogue": [
+      {
+       "speaker": "LinWork",
+       "text": "你读到这页门已关好。",
+       "start_seconds": 0.6,
+       "end_seconds": 3.08,
+       "language": "zh"
+      },
+      {
+       "speaker": "LinWork",
+       "text": "别怪这扇门也别怪我。",
+       "start_seconds": 3.93,
+       "end_seconds": 6.41,
+       "language": "zh"
+      },
+      {
+       "speaker": "LinWork",
+       "text": "往后的春天都归你。",
+       "start_seconds": 7.26,
+       "end_seconds": 9.49,
+       "language": "zh"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 11,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. [[asset:lin_work]] holds the worn black notebook open above the still black water on his left palm and writes slowly on its last page with a short pencil, his head bowed over the page, his jaw relaxed, his lips closed and his brows soft, a thin tear running down his cheek. The lines are his inner voice-over, heard over the scene while his lips stay closed and do not move. A red emergency lamp lights the chamber evenly and the black water shows a dull red. One person is in the frame: Lin, each shown once. The camera pushes in slowly until the pencil and the page fills the middle third of the frame.",
+       "visual_zh": "林峰用左手托着那本磨旧的黑色日志举在平静的黑水上面，右手握着短铅笔在最后一页慢慢写字，头低着，下颌放松，嘴唇闭着，眉头舒展，一道细细的泪痕顺着脸颊流下来。这些话是他的内心独白，在画面上方响起，他的嘴唇一直闭着、不动。一盏红色应急灯均匀地照着房间，黑水显出暗红色。画面里恰好是Lin，每个人只出现一次。 镜头慢慢推近，直到铅笔和那一页纸占满画面中间三分之一。",
+       "dialogue_indices": [
+        0,
+        1,
+        2
+       ]
+      }
+     ],
+     "sound_en": "The slow slosh of still water, the clear scratch of a pencil on paper and only his calm inner voice-over spoken. Every on-set sound effect is loud, crisp and close to the microphone, as prominent as the voices: footsteps, impacts, doors, wind, ice, machinery and fabric are all clearly heard. No music. The voices are clear.",
+     "sound_zh": "平静的水缓缓晃动的声音、铅笔在纸上细细的沙沙声，只有他平静的内心独白在说话。所有现场音效都响亮、清脆、贴近话筒，和人声一样突出：脚步、撞击、开关门、风声、冰裂、机械和衣料摩擦都听得清清楚楚。没有配乐。人声清楚。",
+     "seed": 37407,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "06｜闸门室：林峰把日志装进透明塑封袋放到铁台上，然后抬手摘下头上的耳麦，挂在手轮的边上，手慢慢垂进水里",
+     "duration_seconds": 8,
+     "generation_seconds": 8,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "LinWork"
+     ],
+     "asset_keys": [
+      "gate_room",
+      "lin_work"
+     ],
+     "image_reference_keys": [
+      "gate_room"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium close shot, the man from the head to the chest, in the middle third of the frame, in the flooded gate chamber. Lin (a Chinese man in his early thirties) at frame-right, leaning back against the sealed gate chest-deep in still black water in profile facing frame-left, one hand lifting the small headset off his ear and hanging it by its cord on the outer ring of the black iron hand-wheel beside him, his head turned toward the wheel, in a charcoal henley soaked dark with water and clinging to his shoulders, a small headset earpiece in his right ear and a slim microphone clipped at his jaw, his black hair dripping, his steady dark-brown eyes on the black iron hand-wheel, his lips curving in a faint tired sweet smile, his eyes wet and calm, his brows soft. Beside him the black iron hand-wheel and a rusty iron ledge above the waterline. A red emergency lamp lights the chamber evenly and the black water shows a dull red. The frame holds the sealed gate, the wheel and the ledge, and one person: Lin. A red emergency lamp lights a flooded concrete chamber, the black water now still. Fixed stage layout: a small concrete chamber flooded with chest-deep still black water; the massive round steel gate door, now fully sealed with its big black iron hand-wheel at rest at its centre, fills the back wall; a rusty iron ledge above the waterline runs along the wall beside the wheel at frame-right; at frame-left the only doorway is completely filled from floor to ceiling by a solid mass of broken concrete slabs and bent steel bars, with no gap and no light showing through, and thin trickles of water run out of its seams.",
+     "visual_zh": "林峰把磨旧的日志装进透明塑封袋，放在手轮旁高出水面的一块锈铁台上，然后抬手摘下耳朵上的小耳麦，用线挂在黑铁手轮的边上，手慢慢垂进水里。一盏红色应急灯均匀地照着房间，黑水显出暗红色。画面里恰好是Lin，每个人只出现一次。",
+     "camera_zh": "0—8秒，镜头慢慢推近，直到他的手和手轮占满画面中间三分之一。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 8,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. [[asset:lin_work]] slips the worn notebook into a clear zip-seal bag and sets it on the rusty iron ledge above the water beside the wheel, then lifts the small headset off his ear and hangs it by its cord on the outer ring of the black iron hand-wheel, and lets his hand sink slowly into the water. A red emergency lamp lights the chamber evenly and the black water shows a dull red. One person is in the frame: Lin, each shown once. The camera pushes in slowly until his hand and the wheel fills the middle third of the frame.",
+       "visual_zh": "林峰把磨旧的日志装进透明塑封袋，放在手轮旁高出水面的一块锈铁台上，然后抬手摘下耳朵上的小耳麦，用线挂在黑铁手轮的边上，手慢慢垂进水里。一盏红色应急灯均匀地照着房间，黑水显出暗红色。画面里恰好是Lin，每个人只出现一次。 镜头慢慢推近，直到他的手和手轮占满画面中间三分之一。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "The slow slosh of still water, the crisp rustle of plastic and a clear click of a cord on iron. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here. Every on-set sound effect is loud, crisp and close to the microphone, as prominent as the voices: footsteps, impacts, doors, wind, ice, machinery and fabric are all clearly heard. No music.",
+     "sound_zh": "平静的水缓缓晃动的声音、塑料袋轻轻的窸窣声和线挂在铁上细细的一声咔哒。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。所有现场音效都响亮、清脆、贴近话筒，和人声一样突出：脚步、撞击、开关门、风声、冰裂、机械和衣料摩擦都听得清清楚楚。没有配乐。",
+     "seed": 37407,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "07｜控制室：苏清月对着耳机叫林峰，耳机里一片死寂，她慢慢把耳机从耳朵上拿下来抱在胸口",
+     "duration_seconds": 6,
+     "generation_seconds": 6,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [
+      "SuCozy"
+     ],
+     "asset_keys": [
+      "bunker_control",
+      "su_cozy"
+     ],
+     "image_reference_keys": [
+      "bunker_control"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Medium shot, the woman from the head to the waist, in the middle third of the frame, at the console. Su (a Chinese woman in her late twenties) at frame-center, sitting forward on the black swivel chair at the control console in profile facing frame-right, both hands pressing the headset to her ears, her head bowed toward the console, in a cream knit sweater with the sleeves pushed up, black thermal leggings and soft boots, a black over-ear headset with a slim boom microphone on her head, her long black hair tied back, her soft dark-brown eyes on the console, her lips trembling, her eyes wide and streaming, her brows pulled up. Behind her the wall of small monitors glows. Cool green status lights and a warm amber lamp light her face evenly. The frame holds one person: Su. Cool green indicator glow and pale work-lamp light fill the compact underground control room. Fixed stage layout: the steel control console with rows of small green status lights and one big red push-button under a clear flip-up cover stands in the middle of the frame; a wall of six small monitors is at frame-left; a large red digital countdown clock hangs high on the back wall at center-right; a heavy steel door stands in the right wall at frame-right. A black swivel chair stands in front of the console.",
+     "visual_zh": "苏清月用低沉发颤的声音对着耳机上细细的麦克风说出第一句，接着苏清月用低沉发抖的声音对着耳机上细细的麦克风说出第二句；最后一句之后，她把耳机慢慢从耳朵上拿下来，抱在胸口。 台词一句紧接着一句，中间只有很短的换气，每句一口气说完、句中不停顿。冷绿色的指示灯和一盏温暖的琥珀色灯均匀地照着她的脸。画面里恰好是Su，每个人只出现一次。",
+     "camera_zh": "0—6秒，镜头慢慢推近，直到她的脸和耳机占满画面中间三分之一。",
+     "dialogue": [
+      {
+       "speaker": "SuCozy",
+       "text": "林峰。",
+       "start_seconds": 0.6,
+       "end_seconds": 1.33,
+       "language": "zh"
+      },
+      {
+       "speaker": "SuCozy",
+       "text": "你说话啊。",
+       "start_seconds": 2.18,
+       "end_seconds": 3.41,
+       "language": "zh"
+      }
+     ],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 6,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. [[asset:su_cozy]] speaks the first line into the slim boom microphone of her headset in a low breaking voice, then [[asset:su_cozy]] speaks the second line into the slim boom microphone of her headset in a low shaking voice; after the last line she lowers the headset slowly from her ears and holds it against her chest. The lines follow one another at once with only a very short breath between them, each said in one breath with no pause inside the sentence. Cool green status lights and a warm amber lamp light her face evenly. [[asset:su_cozy]] keeps her lips trembling, her eyes wide and streaming, her brows pulled up. One person is in the frame: Su, each shown once. The camera pushes in slowly until her face and the headset fills the middle third of the frame.",
+       "visual_zh": "苏清月用低沉发颤的声音对着耳机上细细的麦克风说出第一句，接着苏清月用低沉发抖的声音对着耳机上细细的麦克风说出第二句；最后一句之后，她把耳机慢慢从耳朵上拿下来，抱在胸口。 台词一句紧接着一句，中间只有很短的换气，每句一口气说完、句中不停顿。冷绿色的指示灯和一盏温暖的琥珀色灯均匀地照着她的脸。画面里恰好是Su，每个人只出现一次。 镜头慢慢推近，直到她的脸和耳机占满画面中间三分之一。",
+       "dialogue_indices": [
+        0,
+        1
+       ]
+      }
+     ],
+     "sound_en": "A sharp electronic hiss that drops to silence, the hum of the console and a shaky breath. Every on-set sound effect is loud, crisp and close to the microphone, as prominent as the voices: footsteps, impacts, doors, wind, ice, machinery and fabric are all clearly heard. No music. The voices are clear.",
+     "sound_zh": "一声细细的电子嘶声渐渐掉进寂静里、控制台的嗡鸣和一声发颤的呼吸。所有现场音效都响亮、清脆、贴近话筒，和人声一样突出：脚步、撞击、开关门、风声、冰裂、机械和衣料摩擦都听得清清楚楚。没有配乐。人声清楚。",
+     "seed": 37407,
+     "dialogue_language": "zh"
+    },
+    {
+     "title": "08｜闸门室：黑色的水面静静地不动，一副小耳麦挂在黑铁手轮的边上轻轻晃着，暗红色的灯光慢慢暗下去",
+     "duration_seconds": 8,
+     "generation_seconds": 8,
+     "continuity": "cut",
+     "depends_on_previous": false,
+     "use_previous_episode_state": false,
+     "characters": [],
+     "asset_keys": [
+      "gate_room"
+     ],
+     "image_reference_keys": [
+      "gate_room"
+     ],
+     "image_prompt": "One coherent first frame from a photorealistic live-action post-apocalyptic survival drama set in modern China, ultra-wide 8:3 cinemascope composition. Natural skin with visible pores, realistic fabric and materials. The fixed scene reference defines the place, and the character portraits define only the named people. Close shot of the outer ring of the wheel and the water, the hanging headset in the middle third of the frame, nobody in the scene.  The last dim red light fades slowly from the chamber until only black remains. The frame holds the hanging headset, the outer ring of the wheel and the water, and nobody in the scene. A last dim red lamp is on over a chamber of still black water. Fixed stage layout: a close view of the outer ring of the big black iron hand-wheel at frame-right with a small black headset hanging by its cord from it, a calm black water surface filling the bottom half of the frame; the sealed round steel gate behind; nobody in the scene.",
+     "visual_zh": "一副黑色的小耳麦用线挂在黑铁大手轮的边上，轻轻晃着，下面是一片平静的黑色水面；暗红色的灯光慢慢暗成一片黑。别的什么都不动。最后一点暗红色的灯光慢慢从房间里退去，只剩下一片黑。",
+     "camera_zh": "0—8秒，镜头像吊臂一样从高处缓缓降下来，停在街面的高度，挂着的耳麦和静止的水面占满画面。",
+     "dialogue": [],
+     "shots": [
+      {
+       "start_seconds": 0,
+       "end_seconds": 8,
+       "visual_en": "Live-action, cinematic, photorealistic with natural skin texture, naturalistic high-contrast lighting, ultra-wide 8:3 cinemascope frame. A small black headset hangs by its cord from the outer ring of the big black iron hand-wheel and sways a little, above a calm black water surface; the dim red light slowly fades to darkness. Nothing else moves. The last dim red light fades slowly from the chamber until only black remains. The camera descends slowly on a crane from high above until it hangs at street level and the hanging headset and the still water fills the frame.",
+       "visual_zh": "一副黑色的小耳麦用线挂在黑铁大手轮的边上，轻轻晃着，下面是一片平静的黑色水面；暗红色的灯光慢慢暗成一片黑。别的什么都不动。最后一点暗红色的灯光慢慢从房间里退去，只剩下一片黑。 镜头像吊臂一样从高处缓缓降下来，停在街面的高度，挂着的耳麦和静止的水面占满画面。",
+       "dialogue_indices": []
+      }
+     ],
+     "sound_en": "The clear creak of a cord on iron, one crisp drip of water and a long deep hush. No one speaks and no words are heard: only breathing, small sounds of movement and the sounds listed here. Every on-set sound effect is loud, crisp and close to the microphone, as prominent as the voices: footsteps, impacts, doors, wind, ice, machinery and fabric are all clearly heard. No music.",
+     "sound_zh": "线在铁上细细的一声吱嘎、一声轻轻的滴水声和一片长长的深深的寂静。 没有人说话，也听不到任何字词：只有呼吸声、细小的动作声和上面写的这些声音。所有现场音效都响亮、清脆、贴近话筒，和人声一样突出：脚步、撞击、开关门、风声、冰裂、机械和衣料摩擦都听得清清楚楚。没有配乐。",
+     "seed": 37407,
+     "dialogue_language": "zh"
+    }
+   ],
+   "dialogue_language": "zh"
+  }
+ ]
+}
